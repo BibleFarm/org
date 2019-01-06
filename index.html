@@ -1,0 +1,483 @@
+<!-- BibleFarm.org index v0.01 html -->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="application-name" content="BibleFarm.org">
+  <!-- Add to home screen for Chrome on Android -->
+  <link rel="icon" sizes="192x192" href="/images/touch/touch-icon-192x192.png">
+  <link rel="icon" sizes="128x128" href="/images/touch/touch-icon-128x128.png">
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#303F9F">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="apple-touch-icon-precomposed" href="/images/touch/touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#303F9F">
+  <meta name="apple-mobile-web-app-title" content="BibleFarm.org">
+  <link rel="apple-touch-startup-image" href="torah_farm_launch_screen_640x1136.png">
+  <!-- Tile icon for Win8 -->
+  <meta name="msapplication-TileImage" content="/images/touch/touch-icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#3372DF">
+  <meta name="msapplication-navbutton-color" content="#303F9F">
+  <meta name="description" content="meta name desc be a part of the BibleFarm.org team">
+  <meta name="image" content="http://biblefarm.org/BibleFarm_Facebook_Profile_Picture.png">
+  <meta itemprop="name" content="itemprop name be a part of the BibleFarm.org team">
+  <meta itemprop="description" content="itemprop desc be a part of the BibleFarm.org team">
+  <meta itemprop="image" content="http://biblefarm.org/BibleFarm_Facebook_Profile_Picture.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="twitter title be a part of the BibleFarm.org team">
+  <meta name="twitter:description" content="twitter desc be a part of the BibleFarm.org team">
+  <meta name="twitter:site" content="@biblefarm">
+  <meta name="twitter:creator" content="@biblefarm">
+  <meta name="twitter:image:src" content="http://biblefarm.org/BibleFarm_Facebook_Profile_Picture.png">
+  <meta name="twitter:image:alt" content="twitter image alt be a part of the BibleFarm.org team">
+  <meta property="og:title" content="be a part of the BibleFarm.org team" />
+  <meta property="og:description" content="fulfilling Mat 25:31-40 one visit at a time" />
+  <meta property="og:image" content="http://biblefarm.org/_BibleFarm_og_image_1200x630.png" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="http://biblefarm.org/" />
+  <meta property="og:site_name" content="og site name be a part of the BibleFarm.org team" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="fb:admins" content="356077414586259" />
+  <meta property="fb:app_id" content="205604789951385" />
+  <meta property="og:type" content="website" />
+  <meta name="p:domain_verify" content="e3f86f5a3fa4999b9c17c1605383d4a8"/>
+  <title>BibleFarm.org</title>
+  <!-- ////////////////////////// -->
+  <!-- BEGIN CSS website dependencies -->
+  <!-- ////////////////////////// -->
+  <!-- animate -->
+  <link href="offline_dependency_2018-06-26_animate_3.4.0.min.css" rel="stylesheet">
+  <!-- ////////////////////////// -->
+  <!-- ////////////////////////// -->
+  <!-- ////////////////////////// -->
+<!--
+  <link rel="stylesheet" type="text/css" href="index.css">
+-->
+  <!-- ////////////////////////// -->
+  <!-- ////////////////////////// -->
+  <!-- ////////////////////////// -->
+  <!-- END CSS website dependencies -->
+  <!-- ////////////////////////// -->
+
+  <!-- ////////////////////////// -->
+  <!-- BEGIN CSS app dependencies -->
+  <!-- ////////////////////////// -->
+  <!-- ////////////////////////// -->
+  <!-- END CSS app dependencies -->
+  <!-- ////////////////////////// -->
+
+  
+  <style>
+  
+  @font-face {
+  font-family: "PT_Sans-Narrow-Web-Regular";
+  src: url(PT_Sans-Narrow-Web-Regular.ttf) format("truetype");
+}
+
+  html,
+  body {
+    position: relative;
+    height: 100%;
+         font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
+         font-size: calc(16px + (32 - 16) * ( (100vw - 320px) / (4096 - 320)));
+         color: #ae9c80;
+         margin: 0 auto;
+         background: black;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+    .bf_loadersmall {
+    display: inline-block;
+    text-align: center;
+    margin: 10px auto;
+    border: 5px solid none;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    border-top: 5px solid #d5ad6d;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  .box_shadow {
+    box-shadow: 5px 3px 30px black;
+  }
+
+  .bf_lock_n_load_wrap {
+position: fixed;
+    margin: 0 auto;
+    /* top: 4px; */
+    /* bottom: 4px; */
+    /* right: 4px; */
+    /* left: 4px; */
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background: black;
+  }
+  .bf_lock_n_load {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #d5ad6d;
+    text-align: center;
+    text-shadow: 2px 2px 1px #000000;
+    z-index: 7;
+    background: none;
+  }
+  .bf_intro_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #d5ad6d;
+    text-align: center;
+    text-shadow: 2px 2px 1px #000000;
+  }
+  .bf_intro_splash_text_wrap {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .bf_intro_splash_text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #d5ad6d;
+    text-align: center;
+    text-shadow: 2px 2px 1px #000000;
+    z-index: 6;
+  }
+  .bf_intro_splash_text h1 {
+    border-bottom: 0px;
+  }
+  .bf_intro_splash_text > p.msg2 {
+  padding-right: 1% !important;
+  }
+  .bf_intro_splash_bg {
+    position: fixed;
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+  }
+  
+  
+    .bgc-0007 {
+    background: hsl(80, 100%, 15%) !important;
+    background: -moz-radial-gradient(
+      center,
+      ellipse cover,
+      hsl(80, 100%, 15%)0%,
+      hsl(80, 100%, 15%)100%
+    ) !important;
+    background: -webkit-gradient(
+      radial,
+      center center,
+      0px,
+      center center,
+      100%,
+      color-stop(0%, hsl(80, 100%, 15%)),
+      color-stop(100%, hsl(0, 0%, 0%))
+    ) !important;
+    background: -webkit-radial-gradient(
+      center,
+      ellipse cover,
+      hsl(100, 100%, 20%) 0%,
+      hsl(0, 0%, 0%) 100%
+    ) !important;
+    background: -o-radial-gradient(
+      center,
+      ellipse cover,
+      hsl(50, 100%, 20%) 0%,
+      hsl(0, 0%, 0%) 100%
+    ) !important;
+    background: -ms-radial-gradient(
+      center,
+      ellipse cover,
+      hsl(80, 100%, 15%) 0%,
+      hsl(0, 0%, 0%) 100%
+    ) !important;
+    background: radial-gradient(
+      ellipse at center,
+      hsl(80, 100%, 15%) 0%,
+      hsl(0, 0%, 0%) 100%
+    ) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(
+        startColorstr="hsl(80,100%,15%)",
+        endColorstr="#0",
+        GradientType=1
+      ) !important;
+  }
+  
+iframe#featured_video {
+min-height: 280px;
+}
+#featured_video {
+  display: block;
+  margin: auto;
+  max-width: calc(100% - 8px);
+  max-height: calc(100vh - 380px);
+}
+.container_video {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.container_video > .centered {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+/* gofundme widget container */
+.gofundme_widget {
+    border: 5px solid #141a00;
+	-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+	}
+.youtube_video {
+    border: 5px solid #141a00;
+	-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+	}
+
+  </style>
+  
+  
+  
+  
+  
+  
+  
+  
+</head>
+
+<body class="bgc-0007">
+
+
+
+  <div class="bf_lock_n_load_wrap">
+    <div class="bf_lock_n_load">
+      <div class="bf_loadersmall"></div>
+    </div>
+  </div>
+
+  <div class="bf_intro_splash_bg bgc-0007"></div>
+  <div class="">
+    <div class="bf_intro_splash_text">
+  		  <p class="msg1" data-in-effect="rotateInDownRight" data-out-effect="hinge">
+  		  	we're just a small group
+  		  <h1>biblefarm.org</h1>
+  		  <p class="msg2" data-in-effect="bounceInDown">
+  		  	learning to be disciples
+  		  </p>
+    </div>
+  </div>
+
+  
+  
+  
+  
+<div class="container_video">
+  <div class="centered">
+<!--  
+  <div class="gofundme_widget">
+	<iframe class='gfm-media-widget' image='0' coinfo='0' width='100%' height='100%' frameborder='0' id='biblefarmorg-example-campaign'></iframe><script src='//funds.gofundme.com/js/5.0/media-widget.js'></script>
+  </div>
+-->
+  
+  
+  <div class="youtube_video">
+    <iframe id="featured_video" width="1280" height="768" src="https://www.youtube.com/embed/videoseries?list=PL-SXzhnj1OgLUY7MqL-RW1FrJSXTpXltA&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+
+	
+  </div>
+</div>  
+  
+  
+  
+  
+
+  
+  <!-- ////////////////////////// -->
+  <!-- BEGIN JS website dependencies -->
+  <!-- ////////////////////////// -->
+  <!-- jQuery -->
+  <script src="offline_dependency_2017-11-16_jquery-3.2.1.min.js" type="text/javascript"></script>
+  <!-- FitText -->
+  <script src="offline_dependency_2018-06-26_FitText_1.2.js"></script>
+  <!-- lettering -->
+  <script src="offline_dependency_2018-06-26_lettering_0.7.0..min.js"></script>
+  <!-- highlight -->
+  <script src="offline_dependency_2018-06-26_highlight_9.12.0.js"></script>
+  <!-- textillate -->
+  <script src="offline_dependency_2018-06-26_jquery.textillate.min_0.4.0.js"></script>
+  <!-- initHighlightingOnLoad -->
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- ////////////////////////// -->
+  <!-- END JS website dependencies -->
+  <!-- ////////////////////////// -->
+
+  <!-- ////////////////////////// -->
+  <!-- js entire site & app ///// -->
+  <!-- ////////////////////////// -->
+<!--
+    <script type="text/javascript" src="index.js"></script>
+-->
+  <!-- ////////////////////////// -->
+  <!-- ////////////////////////// -->
+  <!-- ////////////////////////// -->
+    
+	
+	
+	
+	
+<script>
+///////////////////////////////////////////////
+//BEGIN website welcome splash ////////////////
+///////////////////////////////////////////////
+//////////////////////
+///// BEGIN textillate
+//////////////////////
+$(document).ready(function() {
+  $(".bf_intro_splash_text h1")
+    .fitText(0.7, { maxFontSize: 100 })
+    .textillate({ in: { effect: "flipInY" } });
+
+  $(".bf_intro_splash_text p.msg1")
+    .fitText(3.0, { minFontSize: 25, maxFontSize: 48 })
+    .textillate({
+      initialDelay: 2000,
+      in: { delay: 3, shuffle: true },
+      callback: function() {
+        setTimeout(function() {
+          $(".bf_intro_splash_text p.msg1").textillate("out");
+        }, 1500);
+      }
+    });
+
+  $(".bf_intro_splash_text p.msg2")
+    .fitText(3.0, { minFontSize: 25, maxFontSize: 48 })
+    .textillate({ initialDelay: 4900, in: { delay: 8, shuffle: true } });
+//////////////////////
+///// END textillate /
+//////////////////////
+// remove splash after intro completed
+  setTimeout(function() {
+    $(".bf_lock_n_load_wrap").css("display", "none");
+    $(".bf_lock_n_load").css("display", "none");
+  }, 1000);
+  setTimeout(function() {
+    $(".bf_intro_splash_bg, .bf_intro_splash_text").hide("slow");
+  }, 15000);
+  // automatically move to forced desired page
+  //       setTimeout(function() {
+  // $('.move_to_bf_farm').trigger('click', function() {
+  // });
+  //       }, 16000);
+});
+///////////////////////////////////////////////
+// END website welcome splash ////////////////
+///////////////////////////////////////////////
+
+	
+</script>
+	
+	
+	
+	
+	
+	
+	
+<script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '7f1570e3-a978-430a-82a3-fccff55a8707', f: true }); done = true; } }; })();</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+
+</html>
