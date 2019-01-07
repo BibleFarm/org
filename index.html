@@ -85,7 +85,6 @@
   font-family: "PT_Sans-Narrow-Web-Regular";
   src: url(PT_Sans-Narrow-Web-Regular.ttf) format("truetype");
 }
-
   html,
   body {
     position: relative;
@@ -100,9 +99,6 @@
     margin: 0;
     padding: 0;
   }
-
-
-
     .bf_loadersmall {
     display: inline-block;
     text-align: center;
@@ -139,11 +135,9 @@
       transform: rotate(360deg);
     }
   }
-
   .box_shadow {
     box-shadow: 5px 3px 30px black;
   }
-
   .bf_lock_n_load_wrap {
 position: fixed;
     margin: 0 auto;
@@ -306,7 +300,6 @@ min-height: 280px;
   text-align: center;
 }
 /* gofundme widget container */
-
 .youtube_video {
     border: 5px solid #141a00;
 	-webkit-border-radius: 8px;
@@ -331,7 +324,27 @@ position: fixed;
     z-index: 11111111111;
           cursor: pointer;
       }
-
+      
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+flex-flow: row wrap;
+}
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+.gofundme_widget {
+display: block;
+min-width: 350px;
+}
+      
+      
+      
+      
   </style>
   
   
@@ -379,6 +392,12 @@ position: fixed;
     <iframe id="featured_video" width="1280" height="768" src="https://www.youtube.com/embed/videoseries?list=PL-SXzhnj1OgLUY7MqL-RW1FrJSXTpXltA&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
       
+      
+      
+      
+      
+<div class="flex-container">
+    
   <div class="gofundme_widget">
 	<iframe class='gfm-media-widget' image='1' coinfo='0' width='100%' height='100%' frameborder='0' id='lets-build-the-greenhouse-for-name'></iframe><script src='//funds.gofundme.com/js/5.0/media-widget.js'>
       </script>
@@ -399,6 +418,8 @@ position: fixed;
 	<iframe class='gfm-media-widget' image='1' coinfo='0' width='100%' height='100%' frameborder='0' id='lets-build-the-greenhouse-for-name'></iframe><script src='//funds.gofundme.com/js/5.0/media-widget.js'>
       </script>
   </div>
+
+</div>
 	
   </div>
 </div>  
@@ -452,7 +473,6 @@ $(document).ready(function() {
   $(".bf_intro_splash_text h1")
     .fitText(0.7, { maxFontSize: 100 })
     .textillate({ in: { effect: "flipInY" } });
-
   $(".bf_intro_splash_text p.msg1")
     .fitText(3.0, { minFontSize: 25, maxFontSize: 48 })
     .textillate({
@@ -464,7 +484,6 @@ $(document).ready(function() {
         }, 1500);
       }
     });
-
   $(".bf_intro_splash_text p.msg2")
     .fitText(3.0, { minFontSize: 25, maxFontSize: 48 })
     .textillate({ initialDelay: 4900, in: { delay: 8, shuffle: true } });
@@ -502,7 +521,6 @@ $("#purechat_show_contact_info").fadeOut("slow");
 ///////////////////////////////////////////////
 // END  auto show purechat contact ////////////////
 ///////////////////////////////////////////////
-
 });
 </script>
 	
