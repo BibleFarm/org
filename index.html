@@ -320,13 +320,14 @@ border-radius: 8px;
 	}
       #purechat_show_contact_info {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 0;
+    /* right: 10px; */
     font-size: 30px;
+    color: black;
     display: block;
-    height: 50px;
-    width: 200px;
-    background: blue;
+    /* height: 50px; */
+    width: 100%;
+    background: orange;
     text-align: center;
     z-index: 11111111111;
       }
@@ -370,7 +371,7 @@ border-radius: 8px;
   
 <div class="container_video">
     
-<div id="purechat_show_contact_info">contacts</div>
+<div id="purechat_show_contact_info">contact BibleFarm.org</div>
     
   <div class="centered">
       
@@ -495,6 +496,8 @@ $(document).ready(function() {
 // maybe future button
 $("#purechat_show_contact_info").on("click",function(e){
 $(".purechat-actions").trigger("click");
+$("#purechat_show_contact_info").hide("slow");
+    
 });
 ///////////////////////////////////////////////
 // END  auto show purechat contact ////////////////
