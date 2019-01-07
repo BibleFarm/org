@@ -53,7 +53,7 @@
   <meta property="fb:app_id" content="205604789951385" />
   <meta property="og:type" content="website" />
   <meta name="p:domain_verify" content="e3f86f5a3fa4999b9c17c1605383d4a8"/>
-  <title>added image BibleFarm.org</title>
+  <title>purechat BibleFarm.org</title>
   <!-- ////////////////////////// -->
   <!-- BEGIN CSS website dependencies -->
   <!-- ////////////////////////// -->
@@ -411,13 +411,13 @@ border-radius: 8px;
 	
 	
 <script>
+$(document).ready(function() {
 ///////////////////////////////////////////////
 //BEGIN website welcome splash ////////////////
 ///////////////////////////////////////////////
 //////////////////////
 ///// BEGIN textillate
 //////////////////////
-$(document).ready(function() {
   $(".bf_intro_splash_text h1")
     .fitText(0.7, { maxFontSize: 100 })
     .textillate({ in: { effect: "flipInY" } });
@@ -453,12 +453,24 @@ $(document).ready(function() {
   // $('.move_to_bf_farm').trigger('click', function() {
   // });
   //       }, 16000);
-});
 ///////////////////////////////////////////////
 // END website welcome splash ////////////////
 ///////////////////////////////////////////////
+///////////////////////////////////////////////
+// BEGIN  auto show purechat contact ////////////////
+///////////////////////////////////////////////
+  setInterval(function() {
+$(".purechat-actions").trigger("click");
+  }, 8000);
+// maybe future button
+// $("#purechat_show_contact_info").on("click",function(e){
+// $(".purechat-actions").trigger("click");
+// });
+///////////////////////////////////////////////
+// END  auto show purechat contact ////////////////
+///////////////////////////////////////////////
 
-	
+});
 </script>
 	
 	
