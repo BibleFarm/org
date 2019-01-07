@@ -53,7 +53,7 @@
   <meta property="fb:app_id" content="205604789951385" />
   <meta property="og:type" content="website" />
   <meta name="p:domain_verify" content="e3f86f5a3fa4999b9c17c1605383d4a8"/>
-  <title>multiple BibleFarm.org</title>
+  <title>contacts BibleFarm.org</title>
   <!-- ////////////////////////// -->
   <!-- BEGIN CSS website dependencies -->
   <!-- ////////////////////////// -->
@@ -318,6 +318,18 @@ border-radius: 8px;
 -moz-border-radius: 8px;
 border-radius: 8px;
 	}
+      #purechat_show_contact_info {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 30px;
+    display: block;
+    height: 50px;
+    width: 200px;
+    background: blue;
+    text-align: center;
+    z-index: 11111111111;
+      }
 
   </style>
   
@@ -357,6 +369,9 @@ border-radius: 8px;
   
   
 <div class="container_video">
+    
+<div id="purechat_show_contact_info">contacts</div>
+    
   <div class="centered">
       
   <div class="youtube_video">
@@ -383,9 +398,6 @@ border-radius: 8px;
 	<iframe class='gfm-media-widget' image='1' coinfo='0' width='100%' height='100%' frameborder='0' id='lets-build-the-greenhouse-for-name'></iframe><script src='//funds.gofundme.com/js/5.0/media-widget.js'>
       </script>
   </div>
-  
-  
-
 	
   </div>
 </div>  
@@ -477,13 +489,13 @@ $(document).ready(function() {
 ///////////////////////////////////////////////
 // BEGIN  auto show purechat contact ////////////////
 ///////////////////////////////////////////////
-  setInterval(function() {
-$(".purechat-actions").trigger("click");
-  }, 8000);
-// maybe future button
-// $("#purechat_show_contact_info").on("click",function(e){
+//   setInterval(function() {
 // $(".purechat-actions").trigger("click");
-// });
+//   }, 8000);
+// maybe future button
+$("#purechat_show_contact_info").on("click",function(e){
+$(".purechat-actions").trigger("click");
+});
 ///////////////////////////////////////////////
 // END  auto show purechat contact ////////////////
 ///////////////////////////////////////////////
