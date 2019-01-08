@@ -53,7 +53,7 @@
   <meta property="fb:app_id" content="205604789951385" />
   <meta property="og:type" content="website" />
   <meta name="p:domain_verify" content="e3f86f5a3fa4999b9c17c1605383d4a8"/>
-  <title>55 BibleFarm.org</title>
+  <title>if BibleFarm.org</title>
   <!-- ////////////////////////// -->
   <!-- BEGIN CSS website dependencies -->
   <!-- ////////////////////////// -->
@@ -289,11 +289,9 @@ min-height: 280px;
   max-width: 100%;
   max-height: calc(100vh - 380px);
 }
-.container_video {
+.adjust_30px_small_phones {
     padding-left: 30px;
 
-}
-.container_video > .centered {
 }
 /* gofundme widget container */
 .youtube_video {
@@ -334,7 +332,7 @@ min-width: 350px;
 }
 .hide-organizer.responsive-wrapper {
 }
-      
+      }      
       
       
   </style>
@@ -375,7 +373,7 @@ min-width: 350px;
 
   
   
-<div class="container_video">
+<div class="adjust_30px_small_phones">
     
     
   <div class="centered">
@@ -522,10 +520,40 @@ $("#purechat_show_contact_info").fadeOut("slow");
 ///////////////////////////////////////////////
 // BEGIN  scrollTo centering when viewport is too small
 ///////////////////////////////////////////////
-  setTimeout(function() {
+    
+    
+jQuery(window).on('resize',function()
+   {
+         var viewportWidth = jQuery(window).width();
 
-$("body").scrollTo({ top:0, left:55}, 800);
+         if (viewportWidth < 350)
+         {  
+  setTimeout(function() {
+      $("body").scrollTo({ top:0, left:60}, 800);
               }, 20000);
+         }
+         else
+         {
+$(".adjust_30px_small_phones").removeClass("adjust_30px_small_phones");
+         }
+   });
+    
+         var viewportWidth = jQuery(window).width();
+
+         if (viewportWidth < 350)
+         {  
+setTimeout(function() {
+      $("body").scrollTo({ top:0, left:60}, 800);
+}, 20000);
+         }
+         else
+         {
+setTimeout(function() {
+$(".adjust_30px_small_phones").removeClass("adjust_30px_small_phones");
+}, 20000);
+
+         }
+    
 
 ///////////////////////////////////////////////
 // END  scrollTo centering when viewport is too small
