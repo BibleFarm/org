@@ -441,6 +441,9 @@ min-width: 350px;
   <script src="offline_dependency_2018-06-26_jquery.textillate.min_0.4.0.js"></script>
   <!-- initHighlightingOnLoad -->
   <script>hljs.initHighlightingOnLoad();</script>
+    <!-- scrollTo js -->
+    <script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+
   <!-- ////////////////////////// -->
   <!-- END JS website dependencies -->
   <!-- ////////////////////////// -->
@@ -518,7 +521,16 @@ $("#purechat_show_contact_info").fadeOut("slow");
 ///////////////////////////////////////////////
 // END  auto show purechat contact ////////////////
 ///////////////////////////////////////////////
-});
+///////////////////////////////////////////////
+// BEGIN  scrollTo centering when viewport is too small
+///////////////////////////////////////////////
+$("#browsing_mode_scrollTo_div_for_nav_left").scrollTo("#browsing_mode_scrollTo_nav_left_Teaching_landing", 1000, {offset:-8});
+///////////////////////////////////////////////
+// END  scrollTo centering when viewport is too small
+///////////////////////////////////////////////
+
+    
+   }); 
 </script>
 	
 	
