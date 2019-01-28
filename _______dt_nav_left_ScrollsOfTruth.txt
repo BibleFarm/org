@@ -1,0 +1,7 @@
+{
+  "data": [
+["28","תְּהִלִּים","T<sup>e</sup>hillim","Psalms"],
+["29","מִשְׁלֵי","Mishlei","Proverbs"],
+["30","אִיּוֹב","’Iyov","Job"]
+]
+}

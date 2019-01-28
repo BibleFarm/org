@@ -1,0 +1,4 @@
+<div class="c230_134">
+<div id="v230.134.1"><span class="H2009 s">MIRAD</span><span class="H1288 s">, bendecid</span><span class="H3068 s"> á Jehová</span><span class="H3605 s">, vosotros todos</span><span class="H5650 s"> los siervos</span><span class="H3068 s"> de Jehová</span><span class="H1004 s">, los que en la casa</span><span class="H3068 s"> de Jehová</span><span class="H5975 s"> estáis</span><span class="H3915 s"> por las noches</span>.</div>
+<div id="v230.134.2"><span class="H5375 s">Alzad</span><span class="H3027 s"> vuestras manos</span><span class="H6944 s"> al santuario</span><span class="H1288 s">, y bendecid</span><span class="H3068 s"> á Jehová</span>.</div>
+<div id="v230.134.3"><span class="H3068 s">Bendígate Jehová</span><span class="H6726 s"> desde Sión</span><span class="H6213 s">, el cual ha hecho</span><span class="H8064 s"> los cielos</span><span class="H776 s"> y la tierra</span>.</div></div>

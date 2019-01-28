@@ -1,0 +1,5 @@
+{
+  "data": [
+["510","מַעֲשֵׂי הַשְּׁלִיחִים","Ma‘asei Hash<sup>e</sup>lichim","Acts"]
+]
+}

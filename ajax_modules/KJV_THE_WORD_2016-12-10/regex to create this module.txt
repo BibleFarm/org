@@ -1,0 +1,52 @@
+STEP 1 // clean up all double spaces
+
+
+STEP 2 // add † to triple strongs
+find: (<WH[0-9]{1,4}>)(<WH[0-9]{1,4}>)(<WH[0-9]{1,4}>)
+replace: \1\ †\2\ †\3
+
+
+STEP 3 // add † to double strongs
+find: (<WH[0-9]{1,4}>)(<WH[0-9]{1,4}>)
+replace: \1\ †\2
+
+
+STEP 4 // remove <CM>
+find: <CM>
+replace: nothing
+
+
+STEP 5 // pass groups of 4 RF's to next line
+find: (<RF>.*?<Rf><RF>.*?<Rf><RF>.*?<Rf><RF>.*?<Rf>)
+replace: \r\n\1
+
+
+STEP 6 // pass groups of 3 RF's to next line
+find: (<RF>.*?<Rf><RF>.*?<Rf><RF>.*?<Rf>)
+replace: \r\n\1
+
+
+STEP 7 // pass groups of 2 RF's to next line
+find: (<RF>.*?<Rf><RF>.*?<Rf>)
+replace: \r\n\1
+
+
+STEP 8 // pass groups of 1 RF's to next line
+find: <RF>.*?<Rf>
+replace: \r\n\1
+
+
+STEP 9 // change tag of RF's to open with $% and close with %$
+find: (<RF>)(.*?)(<Rf>)
+replace: $%RF%$\2$%Rf%$
+
+
+
+STEP // to invert and insert spans
+find: (.*?[\[\]A-Za-záÁàÀâÂäÄãÃåÅæÆçÇéÉèÈêÊëËíÍìÌîÎïÏîĩĨĬĭñÑóÓòÒôÔöÖœŒßúÚùÙûÛüÜýÝŷŶŸÿüÜ†])(\ )(H[0-9]{1,4}|G[0-9]{1,4})
+
+replace: <span class="\3">\1</span>
+
+
+
+

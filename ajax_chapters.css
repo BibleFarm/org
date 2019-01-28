@@ -1,0 +1,14 @@
+/* hide the audio referrals */
+.audio_book_id {display: none;}
+.audio_ch_id {display: none;}
+#hidden_page_id {display: none;}
+
+/*body {font-size: 12px;} */
+
+
+.he_txt {
+	direction: rtl;
+	font-family: David;
+/*	font-size: 12px; */
+	line-height: 16px;
+	}

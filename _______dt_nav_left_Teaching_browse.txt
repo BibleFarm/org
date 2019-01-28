@@ -1,0 +1,9 @@
+{
+  "data": [
+["10","בְּרֵאשִׁית","B<sup>e</sup>réshit","Genesis"],
+["20","שְׁמוֹת","Sh<sup>e</sup>mot","Exodus"],
+["30","וַיִּקְרָא","Vaiyiqra","Leviticus"],
+["40","בְּמִדְבַּר","B<sup>e</sup>midbar","Numbers"],
+["50","דְּבָרִים","D<sup>e</sup>varim","Deuteronomy"]
+]
+}

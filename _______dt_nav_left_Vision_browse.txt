@@ -1,0 +1,5 @@
+{
+  "data": [
+["730","הִתגַלוּת","Hitgalut","Revelation"]
+]
+}

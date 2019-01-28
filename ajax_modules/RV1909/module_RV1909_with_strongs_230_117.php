@@ -1,0 +1,3 @@
+<div class="c230_117">
+<div id="v230.117.1"><span class="H1984 s">ALABAD</span><span class="H3068 s"> á Jehová</span><span class="H1471 s">, naciones</span><span class="H3605 s"> todas</span><span class="H523 s">; pueblos</span><span class="H3605 s"> todos</span><span class="H7623 s">, alabadle</span>.</div>
+<div id="v230.117.2"><span class="H3588 s">Porque</span><span class="H1396 s"> ha engrandecido</span><span class="H5921 s"> sobre</span><span class="H587 s"> nosotros</span><span class="H2617 s"> su misericordia</span><span class="H571 s">; y la verdad</span><span class="H3068 s"> de Jehová</span><span class="H5769 s"> es para siempre</span><span class="H1984 s">. Aleluya</span><span class="H3050 s"> †</span>.</div></div>

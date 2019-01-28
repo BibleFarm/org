@@ -1,0 +1,1 @@
+<div class="c230_52"><div id="v230.52.1">א</div><div id="v230.52.2">ב</div><div id="v230.52.3">ג</div><div id="v230.52.4">ד</div><div id="v230.52.5">ה</div><div id="v230.52.6">ו</div><div id="v230.52.7">ז</div><div id="v230.52.8">ח</div><div id="v230.52.9">ט</div></div>

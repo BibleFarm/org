@@ -1,0 +1,9 @@
+{
+  "data": [
+["260","שִׁיר הַשִּׁירִים","Shir Hashirim","Song of Songs"],
+["80","רוּת","Rut","Ruth"],
+["310","אֵיכָה","’Eikhah","Lamentations"],
+["250","קֹהֶלֶת","Qohelet","Ecclesiastes"],
+["190","אֶסְתֵּר","’Estér","Esther"]
+]
+}

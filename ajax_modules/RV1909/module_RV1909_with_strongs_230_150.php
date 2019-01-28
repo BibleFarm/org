@@ -1,0 +1,7 @@
+<div class="c230_150">
+<div id="v230.150.1"><span class="H1984 s">ALABAD</span><span class="H410 s"> á Dios</span><span class="H6944 s"> en su santuario</span><span class="H1984 s">: alabadle</span><span class="H7549 s"> en la extensión</span><span class="H5797 s"> de su fortaleza</span>.</div>
+<div id="v230.150.2"><span class="H1984 s">Alabadle</span><span class="H1369 s"> por sus proezas</span><span class="H1984 s">: alabadle</span><span class="H7230 s"> conforme á la muchedumbre</span><span class="H1433 s"> de su grandeza</span>.</div>
+<div id="v230.150.3"><span class="H1984 s">Alabadle</span><span class="H8629 s"> á son</span><span class="H7782 s"> de bocina</span><span class="H1984 s">: alabadle</span><span class="H5035 s"> con salterio</span><span class="H3658 s"> y arpa</span>.</div>
+<div id="v230.150.4"><span class="H1984 s">Alabadle</span><span class="H8596 s"> con adufe</span><span class="H1984 s"> y flauta: alabadle</span><span class="H4482 s"> con cuerdas</span><span class="H5748 s"> y órgano</span>.</div>
+<div id="v230.150.5"><span class="H1984 s">Alabadle</span><span class="H6767 s"> con címbalos</span><span class="H8088 s"> resonantes</span><span class="H1984 s">: alabadle</span><span class="H6767 s"> con címbalos</span><span class="H8643 s"> de júbilo</span>.</div>
+<div id="v230.150.6"><span class="H3605 s">Todo</span><span class="H5397 s"> lo que respira</span><span class="H1984 s"> alabe</span><span class="H3050 s"> á JAH</span><span class="H1984 s">. Aleluya</span><span class="H3050 s"> †</span>.</div></div>

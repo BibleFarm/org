@@ -1,0 +1,13 @@
+{
+  "data": [
+["520","רוֹמִיִּים","Romiyim","Romans"],
+["530","קוֹרִנְתִּים א","Qorintim Alef","1 Corinthians"],
+["540","קוֹרִנְתִּים ב","Qorintim Bet","2 Corinthians"],
+["550","גָּלָטִים","Galatim","Galatians"],
+["560","אֶפֶסִים","’Efessim","Ephesians"],
+["570","פִילִיפִּיִּים","Filipiyim","Philippians"],
+["580","קוֹלוֹסִים","Qolossim","Colossians"],
+["590","תֶּסָּלוֹנִיקִיּים א","Tessaloniqiym Alef","1 Thessalonians"],
+["600","תֶּסָּלוֹנִיקִיּים ב","Tessaloniqiym Bet","2 Thessalonians"]
+]
+}

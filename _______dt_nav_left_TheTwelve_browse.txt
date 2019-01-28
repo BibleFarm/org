@@ -1,0 +1,16 @@
+{
+  "data": [
+["350","הוֹשֵׁעַ","Hoshéa‘","Hosea"],
+["360","יוֹאֵל","Yo’él","Joel"],
+["370","עָמוֹס","‘Amos","Amos"],
+["380","עֹבַדְיָה","‘Ovadyah","Obadiah"],
+["390","יוֹנָה","Yonah","Jonah"],
+["400","מִיכָה","Mikhah","Micah"],
+["410","נַחוּם","Nachum","Nahum"],
+["420","חֲבַקּוּק","Chavaqquq","Habakkuk"],
+["430","צְפַנְיָה","Tz<sup>e</sup>fanyah","Zephaniah"],
+["440","חַגַּי","Chaggai","Haggai"],
+["450","זְכַרְיָה","Z<sup>e</sup>kharyah","Zechariah"],
+["460","מַלְאָכִי","Mal’akhi","Malachi"]
+]
+}

@@ -1,0 +1,13 @@
+{
+  "data": [
+["45","רוֹמִיִּים","Romiyim","Romans"],
+["46","קוֹרִנְתִּים א","Qorintim Alef","1 Corinthians"],
+["47","קוֹרִנְתִּים ב","Qorintim Bet","2 Corinthians"],
+["48","גָּלָטִים","Galatim","Galatians"],
+["49","אֶפֶסִים","’Efessim","Ephesians"],
+["50","פִילִיפִּיִּים","Filipiyim","Philippians"],
+["51","קוֹלוֹסִים","Qolossim","Colossians"],
+["52","תֶּסָּלוֹנִיקִיּים א","Tessaloniqiym Alef","1 Thessalonians"],
+["53","תֶּסָּלוֹנִיקִיּים ב","Tessaloniqiym Bet","2 Thessalonians"]
+]
+}

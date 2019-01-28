@@ -1,0 +1,8 @@
+{
+  "data": [
+["36","עֶזְרָא","‘Ezra","Ezra"],
+["37","נְחֶמְיָה","N<sup>e</sup>chemyah","Nehemiah"],
+["38","דִּבְרֵי הַיָּמִים א","Divrei Haiyamim Alef","1 Chronicles"],
+["39","דִּבְרֵי הַיָּמִים ב","Divrei Haiyamim Bet","2 Chronicles"]
+]
+}

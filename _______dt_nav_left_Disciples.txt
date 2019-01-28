@@ -1,0 +1,16 @@
+{
+  "data": [
+["54","טִימוֹתִיּוֹס א","Timotiyos Alef","1 Timothy"],
+["55","טִימוֹתִיּוֹס ב","Timotiyos Bet","2 Timothy"],
+["56","טִיטוֹס","Titos","Titus"],
+["57","פִילֵימוֹן","Fileimon","Philemon"],
+["58","עִבְרִיִּים","‘Ivriyim","Hebrews"],
+["59","יַעֲקֹב","Ya‘aqov","James"],
+["60","כֵּיפָא א","Keifa Alef","1 Peter"],
+["61","כֵּיפָא ב","Keifa Bet","2 Peter"],
+["62","יוֹחָנָן א","Yochanan Alef","1 John"],
+["63","יוֹחָנָן ב","Yochanan Bet","2 John"],
+["64","יוֹחָנָן ג","Yochanan Gimel","3 John"],
+["65","יְהוּדָה","Y<sup>e</sup>hudah","Jude"]
+]
+}

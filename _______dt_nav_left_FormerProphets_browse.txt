@@ -1,0 +1,10 @@
+{
+  "data": [
+["60","יְהוֹשֻׁעַ","Y<sup>e</sup>hoshua‘","Joshua"],
+["70","שׁוֹפְטִים","Shof<sup>e</sup>tim","Judges"],
+["90","שְׁמוּאֵל א","Sh<sup>e</sup>mu’él Alef","1 Samuel"],
+["100","שְׁמוּאֵל ב","Sh<sup>e</sup>mu’él Bet","2 Samuel"],
+["110","מְלָכִים א","M<sup>e</sup>lakhim Alef","1 Kings"],
+["120","מְלָכִים ב","M<sup>e</sup>lakhim Bet","2 Kings"]
+]
+}

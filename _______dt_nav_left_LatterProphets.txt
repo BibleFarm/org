@@ -1,0 +1,8 @@
+{
+  "data": [
+["12","יְשַׁעְיָהוּ","Y<sup>e</sup>sha‘yahu","Isaiah"],
+["13","יִרְמְיָהוּ","Yirm<sup>e</sup>yahu","Jeremiah"],
+["14","יְחֶזְקֵאל","Y<sup>e</sup>chezqél","Ezekiel"],
+["15","דָּנִיֵּאל","Daniyél","Daniel"]
+]
+}

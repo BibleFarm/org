@@ -1,0 +1,43 @@
+Removed and added new classes:
+<VX			class="VX_Scr"
+<CM> // <FI> // <Fi>			class="written_to_italic"
+class="V1_"
+class="V2_"
+Added new attr: wvariant_g
+
+
+
+<div id="v10.1.1">        
+<verse osisID="Gen.1.1">          
+<w lemma="b/7225" n="1.0" morph="HR/Ncfsa">בְּ/רֵאשִׁ֖ית</w>          
+<w lemma="1254 a" morph="HVqp3ms">בָּרָ֣א</w>          
+<w lemma="430" n="1" morph="HNcmpa">אֱלֹהִ֑ים</w>          
+<w lemma="853" morph="HTo">אֵ֥ת</w>          
+<w lemma="d/8064" n="0.0" morph="HTd/Ncmpa">הַ/שָּׁמַ֖יִם</w>          
+<w lemma="c/853" morph="HC/To">וְ/אֵ֥ת</w>          
+<w lemma="d/776" n="0" morph="HTd/Ncfsa">הָ/אָֽרֶץ</w>
+<seg type="x-sof-pasuq">׃</seg>        
+</verse>
+</div>
+
+STEP 1
+find: (<VX)(.*?)(«RF q="Scr."»«Rf»>)
+replace: <span class="VX_Scr">\ \2</span>
+// replaced 75 occurrences
+// I included a space before the greek content, so check for double spaces later
+
+STEP 2
+find: (<wt>)(.*?)(<WG)([0-9]{1,4})(><WT)(.*?)(\ )(l=")(.*?)(">)
+replace: <w wstrong_g="G\4" wparse_g="\6" wlemma_g="\9">\2</w>
+
+STEP 3
+find: («wt»)(.*?)(«WG)([0-9]{1,4})(»«WT)(.*?)(\ )(l=")(.*?)("»)
+replace: <w wstrong_g="G\4" wparse_g="\6" wlemma_g="\9">\2</w>
+
+STEP 4
+find: (<V1\{>)(.*?)(<V1\}>)(<V2)(.*?)(«RF q=")(.*?)("»)(«Rf»)(>)
+
+
+replace: <span class="V1_">\2</span><span class="V2_" wvariant_g="\7">\5</span>
+
+
