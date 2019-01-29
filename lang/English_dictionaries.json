@@ -1,0 +1,24 @@
+{
+    "sEmptyTable":     "No data available in table",
+    "sInfo":           "_START_ thru _END_ of _TOTAL_ words ",
+    "sInfoEmpty":      "",
+    "sInfoPostFix":    "",
+    "sInfoThousands":  ",",
+    "sLengthMenu":     "Show _MENU_ words",
+    "sLoadingRecords": "<i>welcome!<br>just a moment, please...</i><br><i>We are loading all words in the Bible for you...<br>You can study without internet after this :)</i><br><br><i>Help & Support are free.<br>Write any comments or questions right here:<br>_ input _ and _ submit _<br>We will answer as soon as possible.</i><br><a href=\"http://torah.menu/comments_questions_answers.html\">Browse all comments, questions & answers</a>",
+    "sInfoFiltered":   "filtered",
+    "sProcessing":     "Processing...",
+    "sSearch":         "Search:",
+    "sZeroRecords":    "<i>Nope, there is nothing like that in the Bible!<br>Please check your spelling.</i>",
+    "oPaginate": {
+        "sFirst":    "First",
+        "sLast":     "Last",
+        "sNext":     "more",
+        "sPrevious": "back"
+    },
+    "oAria": {
+        "sSortAscending":  ": activate to sort column ascending",
+        "sSortDescending": ": activate to sort column descending"
+    }
+}
+
