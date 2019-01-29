@@ -810,7 +810,7 @@ $(document).ready(function() {
   // This key only works for this demo on GitHub
   // You must create your own at:
   // https://developers.google.com/youtube/v3/getting-started
-  window.api_key = "AIzaSyDI4rWo_wVAxRZEIgF6_8sRZDj8OCOZZ38";
+  window.api_key = "AIzaSyCE8bj2-elbAKq6f_2lwIep-7wi2wkvW14";
   // Start all players on the page with default options
   // $('.RYPP').rypp('AIzaSyA1rpTMrNjth1R6-LfLe0UG8v1946nj3Xw');
   // Start two players by ID, with default settings
