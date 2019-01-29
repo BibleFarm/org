@@ -1,11 +1,3 @@
-<html>
-
-<head>
-</head>
-
-<body>
-
-
 <div class="c50_6">
 <div id="v50.6.1"><span class="H4687 s">Now these <i>are</i> the commandments</span><span class="H2706 s">, the statutes</span><span class="H4941 s">, and the judgments</span><span class="H3068 s">, which the LORD</span><span class="H430 s"> your God</span><span class="H6680 s"> commanded</span><span class="H3925 s"> to teach</span><span class="H6213 s"> you, that ye might do</span><span class="H776 s"> <i>them</i> in the land</span><span class="H5674 s"> whither ye go</span><span class="H3423 s"> to possess</span> it: <span class="notes">Notes by the 1611 King James Bible Translators: (go: Heb. pass over)</span></div>
 <div id="v50.6.2"><span class="H3372 s">That thou mightest fear</span><span class="H3068 s"> the LORD</span><span class="H430 s"> thy God</span><span class="H8104 s">, to keep</span><span class="H2708 s"> all his statutes</span><span class="H4687 s"> and his commandments</span><span class="H6680 s">, which I command</span><span class="H1121 s"> thee, thou, and thy son</span><span class="H1121 s">, and thy son's</span><span class="H1121 s"> son</span><span class="H3117 s">, all the days</span><span class="H2416 s"> of thy life</span><span class="H3117 s">; and that thy days</span><span class="H748 s"> may be prolonged</span>.</div>
@@ -32,7 +24,3 @@
 <div id="v50.6.23"><span class="H3318 s">And he brought us out</span><span class="H935 s"> from thence, that he might bring us in</span><span class="H5414 s">, to give</span><span class="H776 s"> us the land</span><span class="H7650 s"> which he sware</span><span class="H1 s"> unto our fathers</span>.</div>
 <div id="v50.6.24"><span class="H3068 s">And the LORD</span><span class="H6680 s"> commanded</span><span class="H6213 s"> us to do</span><span class="H2706 s"> all these statutes</span><span class="H3372 s">, to fear</span><span class="H3068 s"> the LORD</span><span class="H430 s"> our God</span><span class="H2896 s">, for our good</span><span class="H3117 s"> always</span><span class="H2421 s">, that he might preserve us alive</span><span class="H3117 s">, as <i>it is</i> at this day</span>.</div>
 <div id="v50.6.25"><span class="H6666 s">And it shall be our righteousness</span><span class="H8104 s">, if we observe</span><span class="H6213 s"> to do</span><span class="H2063 s"> all these</span><span class="H4687 s"> commandments</span><span class="H6440 s"> before</span><span class="H3068 s"> the LORD</span><span class="H430 s"> our God</span><span class="H6680 s">, as he hath commanded</span> us.</div></div>
-
-</body>
-
-</html>
