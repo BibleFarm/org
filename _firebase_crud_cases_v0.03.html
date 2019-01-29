@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <title>_firebase_crud_cases_v0.03</title><!-- jquery -->
+
+  <script src="offline_dependency_2017-11-16_jquery-3.2.1.min.js" type="text/javascript">
+  </script>
+  <link href="_o_v1.10.13_jquery.dataTables.min.css" rel="stylesheet">
+  <script src="_o_v1.10.13_jquery.dataTables.min.js" type="text/javascript">
+  </script>
+
+
+
+  <link href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" rel="stylesheet">
+  <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js" type="text/javascript">
+  </script>
+
+
+
+  <script src="http://momentjs.com/downloads/moment.min.js" type="text/javascript">
+  </script><!-- BEGIN offline dependencies -->
+
+  
+    <!-- mark -->
+    <link rel="stylesheet" type="text/css" href="_o_datatables.mark_2_0_0.min.css" />
+    <!-- accent neutralise js -->
+    <script type="text/javascript" src="_o_accent-neutralise_1_10_13.js"></script>
+<!-- this newer version does not work 
+<script type="text/javascript" src="_o_8.4.0_jquery.mark.es6.min.js"></script>
+-->
+    <!-- mark js -->
+    <script type="text/javascript" src="_o_jquery.mark_6_1_0.min.js"></script>
+<!-- this newer version does not work 
+<script type="text/javascript" src="_o_2.0.0_datatables.mark.es6.min.js"></script>
+-->
+    <!-- datatables mark js -->
+    <script type="text/javascript" src="_o_datatables.mark_2_0_0.min.js"></script>
+    <!-- scrollTo js -->
+    <script type="text/javascript" src="jquery.scrollTo-min.js"></script>
+
+ 
+  
+  <!-- BEGIN firebase auth app -->
+
+  <script src="offline_dependency_2017-11-16_firebase-4.6.2.js" type="text/javascript">
+  </script>
+  <script src="sample-config.js">
+  </script>
+  <script src="common.js">
+  </script>
+  <link href="firebase_app_style.css" media="screen" rel="stylesheet" type="text/css">
+  <script src="offline_dependency_2017-11-16_firebaseui-2.4.1.js">
+  </script>
+  <link href="offline_dependency_2017-11-16_firebaseui-2.4.1.css" rel="stylesheet" type="text/css"><!-- END firebase auth app -->
+  
+  
+  <!-- fontawesome -->
+  <link href="https://static.fontawesome.com/css/fontawesome-app.css" rel="stylesheet">
+  
+  <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" rel="stylesheet">
+  <script src="https://pro.fontawesome.com/releases/v5.0.13/js/all.js" type="text/javascript">
+  </script>
+  
+  <!-- BEGIN this app dependencies -->
+  <script src="_firebase_crud_cases_v0.03.js" type="text/javascript">
+  </script><!-- css -->
+  <link href="_firebase_crud_cases_v0.03.css" rel="stylesheet">
+  <!-- END this app dependencies -->
+
+  
+</head>
+<body>
+  <div class="wrap">
+    <!--======================== BEGIN login button ===============================-->
+    <div class="wrap_top">
+      <span id="authentication">login a</span>
+    </div>
+    <!--======================== END login button =================================-->
+    <!--======================== BEGIN login show/hide ============================-->
+    <!-- BEGIN wrap_login_or_not -->
+    <div class="wrap_login_or_not">
+      <!-- BEGIN login_or_not -->
+      <div class="login_or_not">
+        <!-- BEGIN firebase login/out interface -->
+        <div id="container">
+          <h3>FirebaseUI Demo</h3>
+          <div id="loading">
+            Loading...
+          </div>
+          <div class="hidden" id="loaded">
+            <div id="main">
+              <div class="hidden" id="user-signed-in">
+                <div id="user-info">
+                  <div id="photo-container"><img id="photo"></div>
+                  <div id="name"></div>
+                  <div id="email"></div>
+                  <div id="phone"></div>
+                  <div class="clearfix"></div>
+                </div><!-- BEGIN wrap_standard_multi_item -->
+                <div class="wrap_standard_multi_item">
+                  <!-- BEGIN standard_multi_item -->
+                  <div class="standard_multi_item">
+                    <!-- BEGIN standard_multi_item_left -->
+                    <div class="standard_multi_item_left link_hover_styling" id="sign-out">
+                      sign out
+                    </div><!-- END standard_multi_item_left -->
+                    <!-- BEGIN standard_multi_item_right -->
+                    <div class="standard_multi_item_right link_hover_styling" id="delete-account">
+                      delete account
+                    </div><!-- END standard_multi_item_right -->
+                  </div><!-- END standard_multi_item -->
+                </div><!-- END wrap_standard_multi_item -->
+              </div>
+              <div class="hidden" id="user-signed-out">
+                <h4>You are signed out.</h4>
+                <fieldset>
+                  <legend>Configuration</legend> reCAPTCHA mode for Phone Auth: <label for="recaptcha-normal"><input id="recaptcha-normal" name="recaptcha" type="radio" value="normal"> Normal</label> <label for="recaptcha-invisible"><input id="recaptcha-invisible" name="recaptcha" type="radio" value="invisible"> Invisible</label>
+                </fieldset>
+                <p><button id="sign-in-with-redirect">Sign In with Redirect</button> <button id="sign-in-with-popup">Sign In with Popup</button></p>
+                <div id="firebaseui-spa">
+                  <h5>Single Page Application mode:</h5>
+                  <div id="firebaseui-container"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- END firebase login/out interface -->
+        <!-- BEGIN wrap_standard_single_item_align_center -->
+        <div class="wrap_standard_single_item_align_center">
+          logged in users can read only. The same as public.
+        </div><!-- END wrap_standard_single_item_align_center -->
+        <!-- BEGIN wrap_standard_single_item_align_center -->
+        <div class="wrap_standard_single_item_align_center">
+          You're logged in as an admin. You can perform full CRUD operations.
+        </div><!-- END wrap_standard_single_item_align_center -->
+        <!-- BEGIN wrap_standard_single_item_align_center -->
+        <div class="wrap_standard_single_item_align_center link_hover_styling" id="continue_as_a_visitor_or_ok">
+          continue as a visitor
+        </div><!-- END wrap_standard_single_item_align_center -->
+      </div><!-- END login_or_not -->
+    </div><!-- END wrap_login_or_not -->
+    <!--================================== END login show/hide ============================-->
+    <!--========== BEGIN case_1_a >> admin CRUD & public read only // ==============-->
+    <!-- BEGIN wrap_case_1_a -->
+    <div class="wrap_case_1_a">
+	<div id="last_change">last_change</div>
+      <div class="title_case_1_a">
+        title_case_1_a = admin CRUD & public read only
+      </div>
+      <table class="table_case_1_a" style="width:100%" id="table_case_1_a">
+        <thead>
+          <tr>
+            <th><div class="background_test">
+			<span id="child_rows_open"><span class="wrap_svg"><i data-fa-symbol="toggle_on" class="fas fa-toggle-on fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#toggle_on"></use></svg></span></span>
+			<span id="child_rows_close"><span class="wrap_svg"><i data-fa-symbol="toggle_off" class="fas fa-toggle-off fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#toggle_off"></use></svg></span></span>
+			</div></th>
+            <th class="table_case_1_a_th">Column 1</th>
+            <th class="table_case_1_a_th">Column 2</th>
+            <th class="table_case_1_a_th">Column 3</th>
+            <th class="table_case_1_a_th">Column 4</th>
+            <th class="table_case_1_a_th">Column 5</th>
+            <th class="all" data-priority="1"></th>
+            <th class="all" data-priority="2"></th>
+          </tr>
+        </thead>
+        <tbody id="tbody_case_1_a"></tbody>
+      </table>
+      <div class="table_empty">table is empty
+      </div>
+      <div id="wrap_form_case_1_a">
+        <form id="form_case_1_a" name="form_case_1_a">
+          <div class="form-group">
+            <div class="">
+              <label for="column_1_case_1_a">Column 1</label>
+			  <span id="bump_it">bump it</span>
+            </div>
+            <div class="">
+              <input class="form-control" id="column_1_case_1_a" name="column_1_case_1_a" type="text" value="">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="">
+              <label for="column_2_case_1_a">Column 2</label>
+            </div>
+            <div class="">
+              <input class="form-control" id="column_2_case_1_a" name="column_2_case_1_a" type="text" value="">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="">
+              <label for="column_3_case_1_a">Column 3</label>
+            </div>
+            <div class="">
+              <input class="form-control" id="column_3_case_1_a" name="column_3_case_1_a" type="text" value="">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="">
+              <label for="column_4_case_1_a">Column 4</label>
+            </div>
+            <div class="">
+              <input class="form-control" id="column_4_case_1_a" name="column_4_case_1_a" type="text" value="">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="">
+              <label for="column_5_case_1_a">Column 5</label>
+            </div>
+            <div class="">
+              <input class="form-control" id="column_5_case_1_a" name="column_5_case_1_a" type="text" value="">
+            </div>
+          </div>
+          <div class="">
+            <input id="create_or_update_case_1_a" name="" type="submit" value="Create"> <span class="cancel_new_or_edit_case_1_a">cancel</span>
+          </div>
+        </form>
+      </div>
+    </div><!-- END wrap_case_1_a -->
+    <!-- BEGIN wrap_case_1_b -->
+    <div class="wrap_case_1_b">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    </div><!-- END wrap_case_1_b -->
+    <!--========== END case_1 >> admin CRUD & public read only // ==============-->
+    <!--========== BEGIN case_2 >> admin CRUD & users read only // ==============-->
+    <!-- BEGIN wrap_case_2 -->
+    <div class="wrap_case_2">
+      <div>
+        case 2 = admin CRUD & users read only
+      </div>
+      <div class="create_case_2">
+        create
+      </div>
+      <div class="questions_answers_close_edit">
+        x
+      </div>
+    </div><!--========== END case_2 >> admin CRUD & users read only // ==============-->
+    <!--========== BEGIN case_3 >> admin CRUD & users read only but pertaining to each // ===-->
+    <!-- BEGIN wrap_case_3 -->
+    <div class="wrap_case_3">
+      <div>
+        case 3 = admin CRUD & users read only but pertaining to each
+      </div>
+      <div class="create_case_3">
+        create
+      </div>
+      <div class="questions_answers_close_edit">
+        x
+      </div>
+    </div><!--========== END case_3 >> admin CRUD & users read only but pertaining to each // ===-->
+    <!--========== BEGIN case_4 >> admin/users CRUD & public read only // ==============-->
+    <!-- BEGIN wrap_case_4 -->
+    <div class="wrap_case_4">
+      <div>
+        case 4 = admin/users CRUD & public read only
+      </div>
+      <div class="create_case_4">
+        create
+      </div>
+      <div class="questions_answers_close_edit">
+        x
+      </div>
+    </div><!--========== END case_4 >> admin/users CRUD & public read only // ==============-->
+    <!--========== BEGIN case_5 >> admin/users CRUD & users read but pertaining to each // ==============-->
+    <!-- BEGIN wrap_case_5 -->
+    <div class="wrap_case_5">
+      <div>
+        case 5 = admin/users CRUD & users read but pertaining to each
+      </div>
+      <div class="create_case_5">
+        create
+      </div>
+      <div class="questions_answers_close_edit">
+        x
+      </div>
+    </div><!--========== END case_5 >> admin/users CRUD & users read but pertaining to each // ==============-->
+    <div class="wrap_bot">
+      <span class="toggle_case_1">case 1</span> <span class="toggle_case_2">case 2</span> <span class="toggle_case_3">case 3</span> <span class="toggle_case_4">case 4</span> <span class="toggle_case_5">case 5</span>
+    </div>
+  </div><!-- END wrap -->
+  <script src="app.js">
+  </script>
+</body>
+</html>
+
+
+
+<!--
+
+
+STILL NN
+
+
+
+
+
+
+
+
+
+
+
+
+-->
