@@ -7021,7 +7021,7 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       var data_spanish = "";
       $.ajax({
         ///////////////////////////////// change this for each page
-        url: 'ajax_modules/RV1909/module_RV1909_with_strongs_' + ajax_book_chapter + '.php',
+        url: 'https://www.biblefarm.org/ajax_modules/RV1909/module_RV1909_with_strongs_' + ajax_book_chapter + '.php',
         dataType: "html",
         type: "post",
         data: postData,
@@ -7048,7 +7048,7 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       var postData = "";
       $.ajax({
         ///////////////////////////////// change this for each page
-        url: 'ajax_modules/KJV_THE_WORD_2016-12-10/module_KJV_PCEbeta_with_strongs_' + ajax_book_chapter + '.php',
+        url: 'https://www.biblefarm.org/ajax_modules/KJV_THE_WORD_2016-12-10/module_KJV_PCEbeta_with_strongs_' + ajax_book_chapter + '.php',
         dataType: "html",
         type: "post",
         data: postData,
