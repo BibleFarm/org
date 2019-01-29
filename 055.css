@@ -742,7 +742,7 @@ table {
   }
   /* BEGIN page wrappers */
   .bf_wrap {
-    position: fixed;
+    position: ;
     width: calc(100% - 8px);
     height: calc(100% - 8px);
     top: 4px;
@@ -888,7 +888,7 @@ table {
   }
   .wrap_website_jovi {
     /* remove this for standalone full viewport */
-    position: fixed;
+    position: ;
     top: 52px;
     width: calc(100% - 8px);
     display: ;
