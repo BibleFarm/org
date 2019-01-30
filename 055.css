@@ -742,7 +742,7 @@ table {
   }
   /* BEGIN page wrappers */
   .bf_wrap {
-    position: relative;
+    position: fixed;
     width: calc(100% - 8px);
     height: calc(100% - 8px);
     top: 4px;
@@ -757,7 +757,7 @@ table {
     display: block;
     width: calc(100% - 8px);
     height: 44px;
-    z-index: 11111111;
+    z-index: 3;
   }
   .bf_wrap_top {
     top: 4px;
@@ -887,10 +887,15 @@ table {
     color: #dac4a2;
   }
   .wrap_website_jovi {
-    position: relative;
-    top: 48px;
-    width: calc(100% - 0px);
+    /* remove this for standalone full viewport */
+    position: fixed;
+    top: 52px;
+    width: calc(100% - 8px);
+    display: ;
+    /* this needs to be display: none; when it's inside the website */
+    height: calc(100% - 104px);
     z-index: 10000000;
+    left: 4px;
   }
   .wrap_website_jovi > .swiper-container {
     width: 100%;
@@ -962,11 +967,11 @@ table {
     margin: 0 auto;
   }
   .go_bottom {
-    position: fixed;
+    position: absolute;
     width: 100%;
     padding-top: 6px;
     margin: 0 auto;
-    bottom: 92px;
+    bottom: 0;
     background: rgba(1, 1, 1, 0.8) !important;
   }
   .between_arrows {
@@ -1383,6 +1388,7 @@ table {
     position: absolute;
     width: 100%;
     top: calc(44px + 44px);
+    height: calc(100% - 44px - 86px - 44px);
     margin: 0 auto;
     left: 0;
     right: 0;
