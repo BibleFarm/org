@@ -1,3 +1,5 @@
+
+
 /* bf.css v0.03 */
 /* ** BEGIN reset ****************************************************** */
 /* css reset https://cdn.rawgit.com/mblode/marx/master/css/marx.min.css */
@@ -1013,6 +1015,14 @@ table {
     color: #dac4a2;
     text-decoration: none;
   }
+  a.move_to_bf_app {
+    color: #d5ad6d;
+  }
+  a.move_to_bf_app:hover,
+  a.move_to_bf_app:focus {
+    color: #dac4a2;
+    text-decoration: none;
+  }
   a.load_bf_app {
     color: #d5ad6d;
   }
@@ -1020,6 +1030,18 @@ table {
   a.load_bf_app:focus {
     color: #dac4a2;
     text-decoration: none;
+  }
+  .waiting_to_load_app {
+    display: none;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+  }
+  .waiting_to_load_app > .bf_loadersmall {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    margin: 0 auto;
   }
   a.move_to_bf_farm {
     color: #d5ad6d;
@@ -1374,6 +1396,16 @@ table {
     overflow: hidden;
   }
   .bf_facebook_container {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 44px);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    overflow: hidden;
+  }
+  .bf_app_container {
     position: absolute;
     width: 100%;
     height: calc(100% - 44px);
@@ -1803,6 +1835,25 @@ table {
     text-shadow: 2px 2px 1px #000000;
   }
 
+  .wrap_inner_app_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #d5ad6d;
+    text-align: center;
+    text-shadow: 2px 2px 1px #000000;
+  }
+
   .facebook_patience {
     font-size: 20px;
     padding-left: 10px;
@@ -1936,6 +1987,11 @@ background: transparent;
     right: 80px !important;
     bottom: 0px !important;
   }
+img.app_shared_verse_example {
+width: calc(100% - 8px);
+max-width: 600px;
+margin-right: 0px !important;
+}
 .app_wrap {
   display: none;
 }
@@ -2072,7 +2128,7 @@ position: fixed;
   height: 50px;
 }
 @-webkit-keyframes spin {
-  0% { 
+  0% {
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -2084,7 +2140,7 @@ position: fixed;
   }
 }
 @keyframes spin {
-  0% { 
+  0% {
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);

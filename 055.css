@@ -887,15 +887,11 @@ table {
     color: #dac4a2;
   }
   .wrap_website_jovi {
-    /* remove this for standalone full viewport */
-    position: ;
-    top: 52px;
-    width: calc(100% - 8px);
-    display: ;
-    /* this needs to be display: none; when it's inside the website */
-    height: calc(100% - 104px);
+    position: relative;
+    top: 48px;
+    width: calc(100% - 0px);
+    height: calc(100% - 96px);
     z-index: 10000000;
-    left: 4px;
   }
   .wrap_website_jovi > .swiper-container {
     width: 100%;
