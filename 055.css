@@ -742,7 +742,7 @@ table {
   }
   /* BEGIN page wrappers */
   .bf_wrap {
-    position: ;
+    position: relative;
     width: calc(100% - 8px);
     height: calc(100% - 8px);
     top: 4px;
@@ -757,7 +757,7 @@ table {
     display: block;
     width: calc(100% - 8px);
     height: 44px;
-    z-index: 3;
+    z-index: 11111111;
   }
   .bf_wrap_top {
     top: 4px;
@@ -890,7 +890,6 @@ table {
     position: relative;
     top: 48px;
     width: calc(100% - 0px);
-    height: calc(100% - 96px);
     z-index: 10000000;
   }
   .wrap_website_jovi > .swiper-container {
@@ -963,11 +962,11 @@ table {
     margin: 0 auto;
   }
   .go_bottom {
-    position: absolute;
+    position: fixed;
     width: 100%;
     padding-top: 6px;
     margin: 0 auto;
-    bottom: 0;
+    bottom: 92px;
     background: rgba(1, 1, 1, 0.8) !important;
   }
   .between_arrows {
@@ -1384,7 +1383,6 @@ table {
     position: absolute;
     width: 100%;
     top: calc(44px + 44px);
-    height: calc(100% - 44px - 86px - 44px);
     margin: 0 auto;
     left: 0;
     right: 0;
