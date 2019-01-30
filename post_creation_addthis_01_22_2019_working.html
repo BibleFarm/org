@@ -288,8 +288,42 @@ text-align: center;
    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(0,0%,15%)', endColorstr='#0',GradientType=1 ) !important;
 }
 
+.std_title_44_center {
+  color: #ae9c80;
+  text-shadow: 2px 2px 1px #000000;
+  font-size: 20px;
+  line-height: 44px;
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+a.load_bf_app {
+  color: #d5ad6d;
+  text-decoration: none;
+}
+a.load_bf_app:hover,
+a.load_bf_app:focus {
+  color: #dac4a2;
+  text-decoration: none;
+}
+
+
+
 /* END css for posting pages */
 </style>
+
+<!-- BEGIN AdSense -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-2529105511061596",
+    enable_page_level_ads: true
+  });
+</script>
+<!-- END AdSense -->
+
+
 
 </head>
 
@@ -346,14 +380,31 @@ text-align: center;
     <!-- BEGIN wrap_show_options -->
     <div class="wrap_show_options">
     <div class="show_menu_options">
-    <div class="">menu options
-    </div>
+
+      <div class="std_title_44_center">
+      <a href="#app-loaded" id="" class="load_bf_app">
+      change this verse's background colour
+      </a>
+      </div>
+
+      <div class="std_title_44_center">
+      <a href="#app-loaded" id="" class="load_bf_app">
+      donate & get better nutrition for the kids
+      </a>
+      </div>
+
+      <div class="std_title_44_center">
+      <a href="#app-loaded" id="" class="load_bf_app">
+      contact us
+      </a>
+      </div>
+
     </div>
     </div>
 
     <div class="wrap_show_options">
     <div class="show_sharing_options">
-    <div class="addthis_inline_share_toolbox_9mgj addthis_align">
+    <div class="addthis_inline_share_toolbox_ascx addthis_align">
     </div>
     </div>
     </div>
@@ -513,7 +564,7 @@ function countdown() {
       .css("font-size", "20px");
     $(".addthis_inline_share_toolbox_izpd")
       .find(".at-label")
-      .css("color", "#ffffff").css("font-family", "'PT_Sans-Narrow-Web-Regular', sans-serif");
+      .css("color", "#D5AD6D").css("font-family", "'PT_Sans-Narrow-Web-Regular', sans-serif");
     $(".addthis_inline_share_toolbox_izpd")
       .find(".at-label")
       .css("margin", "0");
@@ -547,7 +598,7 @@ function countdown() {
       .css("font-size", "20px");
     $(".addthis_inline_share_toolbox_wnl0")
       .find(".at-label")
-      .css("color", "red").css("font-family", "'PT Sans Narrow', sans-serif");
+      .css("color", "#D5AD6D").css("font-family", "'PT Sans Narrow', sans-serif");
     $(".addthis_inline_share_toolbox_wnl0")
       .find(".at-label")
       .css("margin", "0");
@@ -571,6 +622,12 @@ function countdown() {
     $(".addthis_inline_share_toolbox_wnl0")
       .find(divs)
       .removeClass("at-share-tbx-element");
+
+      $("svg.at-icon").css("width", "50px").css("height", "50px").css("line-height", "50px").css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))").css("filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))");
+
+
+
+
   }
 
   var stopWhenCompleted = setInterval(function() {
