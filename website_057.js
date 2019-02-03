@@ -188,7 +188,7 @@ $(document).ready(function() {
   //////////// END fbFetch Facebook first image of each post
   ////////////////////////////////////////////////
   var waitFor_fbFetch_completed = setInterval(function() {
-    if ($(".lazy_farm").children().length > 9) {
+    if ($(".lazy_farm").children().length > 3) {
       console.log(
         "///////////////// fbFetch is completed // now executing slick"
       );
@@ -224,8 +224,14 @@ $(document).ready(function() {
         }
       });
       setTimeout(function() {
-        $(".lazy_farm").slick("slickGoTo", 49);
-      }, 1000);
+        $(".lazy_farm").slick("slickGoTo", 2);
+      }, 10);
+        setTimeout(function() {
+        $(".lazy_farm").slick("slickGoTo", 1);
+      }, 200);
+        setTimeout(function() {
+        $(".lazy_farm").slick("slickGoTo", 0);
+      }, 300);
     }
   }, 1000);
 
