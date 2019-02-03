@@ -3,8 +3,8 @@
 // when landing in landscape, ask to rotate, let them know we're reloading, then reload automatically
 $(document).ready(function() {
   if ($(window).height() < 480 && $(window).height() < $(window).width()) {
-console.log("arrived in landscape");
-  $(".bf_please_rotate_your_phone_vertically").show();
+    console.log("arrived in landscape");
+    $(".bf_please_rotate_your_phone_vertically").show();
     $(".bf_please_rotate_your_phone_vertically_wrap").show();
     $(window).on("resize", function() {
       $(".bf_hold_on_please_wrap").show();
@@ -39,10 +39,10 @@ $(document).ready(function() {
   $(".bf_intro_splash_text p.msg2")
     .fitText(3.0, { minFontSize: 25, maxFontSize: 48 })
     .textillate({ initialDelay: 4900, in: { delay: 8, shuffle: true } });
-//////////////////////
-///// END textillate /
-//////////////////////
-// remove splash after intro completed
+  //////////////////////
+  ///// END textillate /
+  //////////////////////
+  // remove splash after intro completed
   setTimeout(function() {
     $(".bf_lock_n_load_wrap").css("display", "none");
     $(".bf_lock_n_load").css("display", "none");
@@ -59,8 +59,6 @@ $(document).ready(function() {
 ///////////////////////////////////////////////
 // END website welcome splash ////////////////
 ///////////////////////////////////////////////
-
-
 
 //////////////////////////////////
 ///// BEGIN swiper bf navigation /
@@ -117,9 +115,9 @@ $(document).ready(function() {
   $(".move_to_bf_made_with_love").click(swiper_jovi, function() {
     swiper_jovi.slideTo(6);
   });
-////////////////////////////////////////////////////////
-//////////// BEGIN populating facebook feed with slick /
-////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////
+  //////////// BEGIN populating facebook feed with slick /
+  ////////////////////////////////////////////////////////
   ////////////////////////////////////////////////
   //////////// BEGIN fbFetch Facebook first image of each post
   ////////////////////////////////////////////////
@@ -173,7 +171,7 @@ $(document).ready(function() {
         }
       });
 
-      html += '</div>';
+      html += "</div>";
 
       //A little animation once fetched
       //    $(".lazy_farm").animate({ opacity: 0 }, 500, function() {
@@ -195,9 +193,9 @@ $(document).ready(function() {
         "///////////////// fbFetch is completed // now executing slick"
       );
       clearInterval(waitFor_fbFetch_completed);
-////////////////////////////////////////////////
-//////////// BEGIN slick.js lazy_farm
-////////////////////////////////////////////////
+      ////////////////////////////////////////////////
+      //////////// BEGIN slick.js lazy_farm
+      ////////////////////////////////////////////////
       var slick_slider_lazy_farm = $(".lazy_farm").slick({
         lazyLoad: "progressive",
         dots: false,
@@ -225,26 +223,24 @@ $(document).ready(function() {
           $(this).slick("slickNext");
         }
       });
-setTimeout(function() {
-      $(".lazy_farm").slick("slickGoTo", 49);
-  }, 1000);
+      setTimeout(function() {
+        $(".lazy_farm").slick("slickGoTo", 49);
+      }, 1000);
     }
   }, 1000);
 
-
-
-////////////////////////////////////////////////
-//////////// END slick.js lazy_farm
-////////////////////////////////////////////////
-////////////////////////////////////////////////////////
-//////////// END populating facebook feed with slick /
-////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////
-//////////// BEGIN populating thank_you feed with slick /
-////////////////////////////////////////////////////////
-////////////////////////////////////////////////
-//////////// BEGIN slick.js lazy_responsive
-////////////////////////////////////////////////
+  ////////////////////////////////////////////////
+  //////////// END slick.js lazy_farm
+  ////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////
+  //////////// END populating facebook feed with slick /
+  ////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////
+  //////////// BEGIN populating thank_you feed with slick /
+  ////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////
+  //////////// BEGIN slick.js lazy_responsive
+  ////////////////////////////////////////////////
   var slick_slider_lazy_responsive = $(".lazy_responsive").slick({
     lazyLoad: "progressive",
     dots: false,
@@ -273,26 +269,19 @@ setTimeout(function() {
     }
   });
 
-
-
-////////////////////////////////////////////////
-//////////// END slick.js lazy_responsive
-////////////////////////////////////////////////
-////////////////////////////////////////////////////////
-//////////// END populating thank_you feed with slick /
-////////////////////////////////////////////////////////
-
-
-
+  ////////////////////////////////////////////////
+  //////////// END slick.js lazy_responsive
+  ////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////
+  //////////// END populating thank_you feed with slick /
+  ////////////////////////////////////////////////////////
 
   // when landing in portrait, user rotates, tell them to go back to portrait
   $(window).on("resize", function(e) {
     if ($(window).height() < 480 && $(window).height() < $(window).width()) {
       $(".bf_please_rotate_your_phone_vertically_wrap").show();
       $(".bf_please_rotate_your_phone_vertically").show();
-    } else if (
-      $(window).height() > $(window).width()
-    ) {
+    } else if ($(window).height() > $(window).width()) {
       $(".bf_please_rotate_your_phone_vertically_wrap").hide();
       $(".bf_please_rotate_your_phone_vertically").hide();
       setTimeout(function() {
@@ -305,37 +294,29 @@ setTimeout(function() {
       }, 300);
     }
 
-
-
-  $("#made_with_love").on("click", function(e) {
-console.log("///////// returning from app to site");
+    $("#made_with_love").on("click", function(e) {
+      console.log("///////// returning from app to site");
       setTimeout(function() {
-$('.lazy_responsive').slick('reinit');
-console.log("///////// waited 500 millisecs and slick reinit");
+        $(".lazy_responsive").slick("reinit");
+        console.log("///////// waited 500 millisecs and slick reinit");
       }, 500);
       setTimeout(function() {
-$('.lazy_farm').slick('reinit');
-console.log("///////// waited 5500 millisecs and slick reinit");
+        $(".lazy_farm").slick("reinit");
+        console.log("///////// waited 5500 millisecs and slick reinit");
       }, 5500);
-  });
-
-
-
-
+    });
   });
   // when returning from the app, just in case they've rotated
   $("#made_with_love").on("click", function(e) {
-$(".app_wrap").hide();
-$(".bf_wrap").show("slow");
+    $(".app_wrap").hide();
+    $(".bf_wrap").show("slow");
     if ($(window).height() < 480 && $(window).height() < $(window).width()) {
       $(".bf_please_rotate_your_phone_vertically_wrap").show();
       $(".bf_please_rotate_your_phone_vertically").show();
-    } else if (
-      $(window).height() > $(window).width()
-    ) {
+    } else if ($(window).height() > $(window).width()) {
       $(".bf_please_rotate_your_phone_vertically_wrap").hide();
       $(".bf_please_rotate_your_phone_vertically").hide();
-// prepend and remove slide to fix swiper discrepancy
+      // prepend and remove slide to fix swiper discrepancy
       setTimeout(function() {
         swiper_jovi.prependSlide(
           '<div class="swiper-slide">prepended slide"</div>'
@@ -344,45 +325,30 @@ $(".bf_wrap").show("slow");
       setTimeout(function() {
         swiper_jovi.removeSlide(0);
       }, 300);
-// move to #donate
+      // move to #donate
       setTimeout(function() {
-    swiper_jovi.slideTo(5);
+        swiper_jovi.slideTo(5);
       }, 400);
     }
-// prepend and remove slide anyways for possible desktop/notebook resize
-      setTimeout(function() {
-        swiper_jovi.prependSlide(
-          '<div class="swiper-slide">prepended slide"</div>'
-        );
-      }, 200);
-      setTimeout(function() {
-        swiper_jovi.removeSlide(0);
-      }, 300);
-// move to #donate
-      setTimeout(function() {
-    swiper_jovi.slideTo(5);
-      }, 400);
+    // prepend and remove slide anyways for possible desktop/notebook resize
+    setTimeout(function() {
+      swiper_jovi.prependSlide(
+        '<div class="swiper-slide">prepended slide"</div>'
+      );
+    }, 200);
+    setTimeout(function() {
+      swiper_jovi.removeSlide(0);
+    }, 300);
+    // move to #donate
+    setTimeout(function() {
+      swiper_jovi.slideTo(5);
+    }, 400);
   });
 });
 //////////////////////////////////////////////////////////////////////////
 /////////////////////////
 ///// END swiper bf navigation
 /////////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /////////////////////////////////////////////////////
 // BEGIN youtube api
@@ -856,7 +822,7 @@ $(document).ready(function() {
       console.log(
         "/////////////////////////////////////////////////////// first video is ready to play"
       );
-$(".bf_youtube_container .bf_loadersmall").css("display", "none");
+      $(".bf_youtube_container .bf_loadersmall").css("display", "none");
     }
   }, 1000);
 });
@@ -942,4 +908,48 @@ $(document).ready(function() {
 });
 ////////////////////////////////////////////////////
 // END donation process
+////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////
+// BEGIN addthis
+////////////////////////////////////////////////////
+
+$(document).ready(function() {
+  var waitFor_addThis_to_load = setInterval(function() {
+    if ($("#at-svg-messenger-8").length > 0) {
+      console.log("///////////////// addThis is loaded and ready to hack");
+      clearInterval(waitFor_addThis_to_load);
+
+      setTimeout(function() {
+        $(".addthis_inline_follow_toolbox")
+          .find(".addthis_toolbox a.at300b, .addthis_toolbox a.at300m")
+          .css("width", "50px")
+          .css("height", "50px")
+          .css("margin", "11px")
+          .css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))")
+          .css("filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))");
+        $(".addthis_inline_follow_toolbox")
+          .find(".at-icon-wrapper")
+          .css("width", "50px")
+          .css("height", "50px")
+          .css("line-height", "50px")
+          .css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))")
+          .css("filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))");
+        $(".addthis_inline_follow_toolbox")
+          .find("svg.at-icon")
+          .css("width", "50px")
+          .css("height", "50px")
+          .css("line-height", "50px")
+          .css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))")
+          .css("filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))");
+        $(".addthis_inline_follow_toolbox")
+          .find(".addthis_toolbox")
+          .css("margin-top", "-18px");
+      }, 1000);
+    }
+  }, 1000);
+});
+
+////////////////////////////////////////////////////
+// END addthis
 ////////////////////////////////////////////////////
