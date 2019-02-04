@@ -1000,10 +1000,15 @@ a.move_to_bf_app:focus {
   text-decoration: none;
 }
 a.load_bf_app {
+  display: none;
+}
+a.load_bf_app, a.requeest_bf_app_access {
   color: #d5ad6d;
 }
 a.load_bf_app:hover,
-a.load_bf_app:focus {
+a.load_bf_app:focus,
+a.requeest_bf_app_access:hover,
+a.requeest_bf_app_access:focus {
   color: #dac4a2;
   text-decoration: none;
 }
@@ -1967,3 +1972,111 @@ img.app_shared_verse_example {
   max-width: 600px;
   margin-right: 0px !important;
 }
+
+/* /////////////////////////// */
+/* BEGIN share this page first */
+/* /////////////////////////// */
+.wrap_sharing_modal_for_requested_access {
+  display: none;
+  position: absolute;
+top: 50%;
+left: 50%;
+display: block;
+margin: 0 auto;
+width: 100%;
+max-width: 600px;
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+-o-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+font-size: 20px;
+color: #d5ad6d;
+text-align: center;
+text-shadow: 2px 2px 1px #000000;
+background: black;
+}
+.sharing_modal_container_for_requested_access {
+}
+.show_sharing_options {
+    width: 100vw;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 312px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+.sharing_modal_filter_mode, .sharing_modal_browsing_mode {
+  padding: 20px;
+  background-color:black;
+  border: 10px solid black;
+border-radius: 10px;
+}
+.modal_multi_item_share_bf_yes_or_no {
+  height: 64px;
+  text-align: justify;
+  border: 0px solid black;
+  font-size: 0.1px;
+  width: 100%;
+}
+.modal_multi_item_share_bf_yes_or_no > .modal_multi_item_left_share_bf_yes_or_no {
+  height: 64px;
+  width: 150px;
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 64px;
+  cursor: pointer;
+  background: #002900;
+  margin-left: 3px;
+}
+.modal_multi_item_share_bf_yes_or_no > .modal_multi_item_right_share_bf_yes_or_no {
+  height: 64px;
+  width: 150px;
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 64px;
+  cursor: pointer;
+  background: #2e0000;
+  margin-left: 6px;
+}
+.modal_multi_item_left_share_bf_yes_or_no:after, .modal_multi_item_right_share_bf_yes_or_no:after {
+  content: "";
+  width: 100%;
+  /* Ensures there are at least 2 lines of text, so justification works */
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.at-resp-share-element.at-mobile .at-share-btn {
+    margin-right: 2px !important;
+  }
+  .show_sharing_options_align_center {
+  width: 100vw;
+  margin: 0 auto;
+  text-align: center;
+  }
+  .addthis_align {
+    display: block;
+    padding-top: 10px;
+    width: 100vw;
+    max-width: 312px;
+    text-align: center;
+  }
+  /* /////////////////////////// */
+  /* END share this page first */
+  /* /////////////////////////// */
