@@ -760,6 +760,9 @@ open live requests & questions
 
 
   <script type="text/javascript">
+
+  $(document).ready(function() {
+
   var url= "https://www.biblefarm.org/";
           $.ajax({
           type: 'POST',
@@ -768,6 +771,10 @@ open live requests & questions
                  console.log("data scraped is: " + data);
              }
       });
+
+    });
+
+
 </script>
 
 
