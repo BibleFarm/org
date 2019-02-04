@@ -959,3 +959,33 @@ $(document).ready(function() {
 ////////////////////////////////////////////////////
 // END addthis
 ////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////
+// BEGIN request access to app & share before you go
+////////////////////////////////////////////////////
+
+$(".wrap_sharing_modal_for_requested_access").hide("slow");
+
+$(".requeest_bf_app_access").on("click", function() {
+
+$(".wrap_sharing_modal_for_requested_access").show("slow");
+
+$(".addthis_inline_share_toolbox_ascx").on("click", function() {
+
+$("a.load_bf_app").show("slow");
+
+  });
+
+  });
+
+$("#sharing_modal_yes_share_bf_yes_or_no").on("click", function() {
+console.log("Thank you! We pray that our Father in heaven will bless you and keep you.");
+  });
+$("#sharing_modal_no_share_bf_yes_or_no").on("click", function() {
+console.log("Don't worry. We pray that Jesus will show you how much you can help by sharing.");
+  });
+
+  ////////////////////////////////////////////////////
+  // END request access to app & share before you go
+  ////////////////////////////////////////////////////
