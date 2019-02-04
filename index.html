@@ -82,13 +82,13 @@
 <meta name="twitter:description" content="fulfilling Mat 25:31-40 one visit at a time">
 <meta name="twitter:site" content="@biblefarm">
 <meta name="twitter:creator" content="@biblefarm">
-<meta name="twitter:image:src" content="https://www.biblefarm.org/_BibleFarm_og_image_1200x630.png">
+<meta name="twitter:image:src" content="https://www.biblefarm.org/_BibleFarm_og_image_1200x630_2019_02_03">
 <meta name="twitter:image:alt" content="be a part of the BibleFarm.org team">
 
   <!-- DONE Open Graph -->
   <meta property="og:title" content="be a part of the BibleFarm.org team" />
   <meta property="og:description" content="fulfilling Mat 25:31-40 one visit at a time" />
-  <meta property="og:image" content="https://www.biblefarm.org/_BibleFarm_og_image_1200x630.png" />
+  <meta property="og:image" content="https://www.biblefarm.org/_BibleFarm_og_image_1200x630_2019_02_03" />
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -753,6 +753,31 @@ open live requests & questions
 
   <!-- Go to www.addthis.com/dashboard to customize your tools -->
   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53f4628f4f316c50"></script>
+
+
+
+
+
+
+  <script type="text/javascript">
+  var url= "https://www.biblefarm.org/";
+          $.ajax({
+          type: 'POST',
+          url: 'https://graph.facebook.com?id='+url+'&scrape=true',
+              success: function(data){
+                 console.log("data scraped is: " + data);
+             }
+      });
+</script>
+
+
+
+
+
+
+
+
+
 
 </body>
 
