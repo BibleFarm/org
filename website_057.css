@@ -1647,13 +1647,14 @@ summary {
 }
 .RYPP .RYPP-playlist ol li.selected:before {
   /*content: '▶';*/
-  font-size: 10px;
+  font-size: 16px;
   color: #c03636;
 }
 .RYPP .RYPP-playlist ol li:before {
   counter-increment: item;
   content: counter(item);
-  font-size: 80%;
+  font-size: 16px;
+  padding-right: 10px;
 }
 
 .RYPP-items::-webkit-scrollbar {
@@ -1732,7 +1733,7 @@ summary {
 .RYPP .RYPP-playlist ol li.selected:before {
   color: #d5ad6d !important;
   text-shadow: 2px 2px 1px black;
-  padding-right: 4px;
+  padding-right: 10px;
 }
 .RYPP .RYPP-playlist ol li > p {
   width: 62%;
