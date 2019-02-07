@@ -924,15 +924,23 @@ $(document).ready(function() {
   var stopWhenCompleted = setInterval(function() {
   if ($(".facebook_patience").find('.at-icon-messenger title:contains("Messenger")').length > 0) {
 console.log("addthis is loaded. Let's hack");
-// adthis shadow hack to SHARING AND FLLOW
+// addthis shadow hack to SHARING AND FOLLOW
       $(".wrap_sharing_panel").find("svg.at-icon").css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))");
 console.log("/////// applied addthis shadow SHARING hack");
-// adthis FOLLOW size hack
-      $(".facebook_patience").find(".at-icon-wrapper, svg.at-icon").css("width", "68px").css("height", "68px").css("line-height", "68px").css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))");
+// addthis FOLLOW margin hack
+$(".facebook_patience").find(".addthis_toolbox a").css("margin-left", "5px").css("margin-right", "5px");
+console.log("/////// applied addthis margin FOLLOW hack");
+// addthis FOLLOW size hack
+setTimeout(function() {
+  $(".facebook_patience").find(".at-icon-wrapper, svg.at-icon").css("width", "49px").css("height", "49px").css("line-height", "49px").css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))");
 console.log("/////// applied addthis shadow FOLLOW hack");
+}, 1500);
+
+
+
       clearInterval(stopWhenCompleted);
   }
-  }, 100);
+}, 500);
 });
 ////////////////////////////////////////////////////
 // END addthis

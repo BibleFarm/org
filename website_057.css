@@ -1010,6 +1010,9 @@ a.bf_links:focus {
   color: #dac4a2;
   text-decoration: none;
 }
+.special_margin_left {
+  margin-left: 10px;
+}
 .waiting_to_load_app {
   display: none;
   width: 24px;
@@ -1814,7 +1817,13 @@ summary {
   text-align: left;
   text-shadow: 2px 2px 1px #000000;
 }
-
+.wrap_addthis_follow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: 37px;
+  margin-right: 37px;
+}
 .wrap_inner_app_container {
   position: absolute;
   top: 50%;
