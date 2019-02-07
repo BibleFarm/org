@@ -921,41 +921,19 @@ $(document).ready(function() {
 ////////////////////////////////////////////////////
 
 $(document).ready(function() {
-  var waitFor_addThis_to_load = setInterval(function() {
-    if ($("#at-svg-messenger-8").length > 0) {
-      console.log("///////////////// addThis is loaded and ready to hack");
-      clearInterval(waitFor_addThis_to_load);
-
-      setTimeout(function() {
-        $(".addthis_inline_follow_toolbox")
-          .find(".addthis_toolbox a.at300b, .addthis_toolbox a.at300m")
-          .css("width", "50px")
-          .css("height", "50px")
-          .css("margin", "11px")
-          .css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))")
-          .css("filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))");
-        $(".addthis_inline_follow_toolbox")
-          .find(".at-icon-wrapper")
-          .css("width", "50px")
-          .css("height", "50px")
-          .css("line-height", "50px")
-          .css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))")
-          .css("filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))");
-        $(".addthis_inline_follow_toolbox")
-          .find("svg.at-icon")
-          .css("width", "50px")
-          .css("height", "50px")
-          .css("line-height", "50px")
-          .css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))")
-          .css("filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))");
-        $(".addthis_inline_follow_toolbox")
-          .find(".addthis_toolbox")
-          .css("margin-top", "-18px");
-      }, 1000);
-    }
-  }, 1000);
+  var stopWhenCompleted = setInterval(function() {
+  if ($(".facebook_patience").find('.at-icon-messenger title:contains("Messenger")').length > 0) {
+console.log("addthis is loaded. Let's hack");
+// adthis shadow hack to SHARING AND FLLOW
+      $(".wrap_sharing_panel").find("svg.at-icon").css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))");
+console.log("/////// applied addthis shadow SHARING hack");
+// adthis FOLLOW size hack
+      $(".facebook_patience").find(".at-icon-wrapper, svg.at-icon").css("width", "68px").css("height", "68px").css("line-height", "68px").css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))");
+console.log("/////// applied addthis shadow FOLLOW hack");
+      clearInterval(stopWhenCompleted);
+  }
+  }, 100);
 });
-
 ////////////////////////////////////////////////////
 // END addthis
 ////////////////////////////////////////////////////
@@ -964,28 +942,124 @@ $(document).ready(function() {
 ////////////////////////////////////////////////////
 // BEGIN request access to app & share before you go
 ////////////////////////////////////////////////////
-
-$(".wrap_sharing_modal_for_requested_access").hide("slow");
-
+// modal loads hidden
+$(".wrap_sharing_modal_for_requested_access, .wrap_sharing_panel, .modal_multi_item_share_bf_yes_or_no, .modal_multi_item_share_bf_again_or_done, .maybe_next_time_redirect, .that_was_awesome_redirect, .show_appreciation_for_sharing_again").hide("slow");
+// show the modal
 $(".requeest_bf_app_access").on("click", function() {
+$(".wrap_sharing_modal_for_requested_access, .wrap_sharing_panel, .nope_im_not_sharing").show("slow");
+$(".wrap_inner_app_container").hide("slow");
+  });
+// offer to share again
+  $(".addthis_inline_share_toolbox_ascx").on("click", function() {
+    $(".modal_multi_item_share_bf_yes_or_no, .nope_im_not_sharing").hide("slow");
+    $(".show_appreciation_for_sharing_again").hide("slow");
+    $(".modal_multi_item_share_bf_again_or_done").show("slow");
+    });
 
-$(".wrap_sharing_modal_for_requested_access").show("slow");
+    // if they're sharing on another platform
+    $(".share_on_another_platform").on("click", function() {
+      $(".modal_multi_item_share_bf_again_or_done").hide("slow");
+      $(".show_appreciation_for_sharing_again").show("slow");
+      });
 
-$(".addthis_inline_share_toolbox_ascx").on("click", function() {
 
-$("a.load_bf_app").show("slow");
 
+// if they don't wanna share
+$(".nope_im_not_sharing").on("click", function() {
+$(".wrap_sharing_modal_for_requested_access, .wrap_sharing_panel, .modal_multi_item_share_bf_yes_or_no, .modal_multi_item_share_bf_again_or_done, .requeest_bf_app_access").hide("slow");
+$(".wrap_inner_app_container").show("slow");
+$(".maybe_next_time_redirect").show("slow");
   });
 
+// if they're done sharing
+$(".done_sharing_for_now").on("click", function() {
+$(".wrap_sharing_modal_for_requested_access, .wrap_sharing_panel, .modal_multi_item_share_bf_yes_or_no, .modal_multi_item_share_bf_again_or_done, .requeest_bf_app_access").hide("slow");
+$(".wrap_inner_app_container").show("slow");
+$(".show_appreciation_for_sharing_again").hide("slow");
+$(".that_was_awesome_redirect").show("slow");
   });
 
-$("#sharing_modal_yes_share_bf_yes_or_no").on("click", function() {
-console.log("Thank you! We pray that our Father in heaven will bless you and keep you.");
-  });
-$("#sharing_modal_no_share_bf_yes_or_no").on("click", function() {
-console.log("Don't worry. We pray that Jesus will show you how much you can help by sharing.");
+// back to requesting access & redirect to app on another tab
+$(".maybe_next_time_redirect, .that_was_awesome_redirect").on("click", function() {
+$(".maybe_next_time_redirect, .that_was_awesome_redirect").hide("slow");
+$(".requeest_bf_app_access").show("slow");
   });
 
   ////////////////////////////////////////////////////
   // END request access to app & share before you go
   ////////////////////////////////////////////////////
+
+  ////////////////////////////////////////////////////
+  // BEGIN addthis hack
+  ////////////////////////////////////////////////////
+$(document).ready(function() {
+  var stopWhenCompleted = setInterval(function() {
+  if ($(".facebook_patience").find('.at-icon-messenger title:contains("Messenger")').length > 0) {
+console.log("addthis is loaded. Let's hack");
+// adthis shadow hack to SHARING AND FLLOW
+      $(".wrap_sharing_panel").find("svg.at-icon").css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))");
+console.log("/////// applied addthis shadow SHARING hack");
+// adthis FOLLOW size hack
+      $(".facebook_patience").find(".at-icon-wrapper, svg.at-icon").css("width", "68px").css("height", "68px").css("line-height", "68px").css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))");
+console.log("/////// applied addthis shadow FOLLOW hack");
+      clearInterval(stopWhenCompleted);
+  }
+  }, 100);
+});
+////////////////////////////////////////////////////
+// END addthis hack
+////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////
+// BEGIN PureChat hack
+////////////////////////////////////////////////////
+
+$(document).ready(function() {
+// initial hide
+var stopWaitingForPurechat = setInterval(function() {
+if ($("body").find('.purechat-widget-title-link:contains("Contact us")').length > 0) {
+  console.log("found PureChat");
+// hide it
+$("#PureChatWidget").attr("style", "z-index: -1 !important");
+clearInterval(stopWaitingForPurechat);
+}
+}, 1000);
+////////////////////
+// show when needed
+$("#show_pure_chat").on("click", function() {
+  // show it
+  $("#PureChatWidget").attr("style", "z-index: 2147483646 !important");
+// hack colors
+// header
+$("#PureChatWidget").find('.purechat-widget-header').attr("style", "background-color: #0c1400 !important");
+// content-wrapper
+$("#PureChatWidget").find('.purechat-content-wrapper').attr("style", "background-color: #172800 !important");
+// purechat-card
+$("#PureChatWidget").find('.purechat-card').attr("style", "background-color: #203700 !important");
+// purechat-btn
+$("#PureChatWidget").find('.purechat-btn').attr("style", "color: #d5ad6d !important");
+// purechat-widget-title-link
+$("#PureChatWidget").find('.purechat-widget-title-link').attr("style", "font-size: 20px !important;padding-left: 8px !important;font-family: PT_Sans-Narrow-Web-Regular !important;color: #d5ad6d !important;text-shadow: 2px 2px 1px black !important");
+// keep widget expanded
+$("#PureChatWidget").removeClass("purechat-widget-super-collapsed");
+$("#PureChatWidget").addClass("purechat-widget-collapsed");
+console.log("PureChat will keep widget expanded");
+});
+
+// hide when click outside
+$(window).click(function() {
+  // hide it
+  $("#PureChatWidget").attr("style", "z-index: -1 !important");
+});
+// stopPropagation when clicking to show the widget and inside the widget itself
+$('#show_pure_chat, #PureChatWidget').click(function(event){
+    event.stopPropagation();
+console.log("PureChat hide when click outside event.stopPropagation");
+});
+
+
+});
+
+////////////////////////////////////////////////////
+// END PureChat hack
+////////////////////////////////////////////////////

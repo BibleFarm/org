@@ -658,7 +658,7 @@ body {
   position: relative;
   height: 100%;
   font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
-  font-size: calc(16px + (32 - 16) * ( (100vw - 320px) / (4096 - 320)));
+  font-size: calc(20px + (40 - 20) * ( (100vw - 320px) / (4096 - 320)));
   color: #ae9c80;
   margin: 0 auto;
   background: black;
@@ -2012,6 +2012,7 @@ background: black;
   border: 10px solid black;
 border-radius: 10px;
 }
+/* yes or no */
 .modal_multi_item_share_bf_yes_or_no {
   height: 50px;
   text-align: justify;
@@ -2021,7 +2022,7 @@ border-radius: 10px;
 }
 .modal_multi_item_share_bf_yes_or_no > .modal_multi_item_left_share_bf_yes_or_no {
   height: 50px;
-  width: 150px;
+  width: 152px;
   display: inline-block;
   font-size: 20px;
   text-align: center;
@@ -2032,16 +2033,52 @@ border-radius: 10px;
 }
 .modal_multi_item_share_bf_yes_or_no > .modal_multi_item_right_share_bf_yes_or_no {
   height: 50px;
-  width: 150px;
+  width: 152px;
   display: inline-block;
   font-size: 20px;
   text-align: center;
   line-height: 50px;
   cursor: pointer;
   background: #2e0000;
-  margin-left: 6px;
+  margin-left: 2px;
 }
 .modal_multi_item_left_share_bf_yes_or_no:after, .modal_multi_item_right_share_bf_yes_or_no:after {
+  content: "";
+  width: 100%;
+  /* Ensures there are at least 2 lines of text, so justification works */
+  display: inline-block;
+}
+/* again or done */
+.modal_multi_item_share_bf_again_or_done {
+  height: 50px;
+  text-align: justify;
+  border: 0px solid black;
+  font-size: 0.1px;
+  width: 100%;
+}
+.modal_multi_item_share_bf_again_or_done > .modal_multi_item_left_share_bf_again_or_done {
+  height: 50px;
+  width: 198px;
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  background: #1d0043;
+  margin-left: 3px;
+}
+.modal_multi_item_share_bf_again_or_done > .modal_multi_item_right_share_bf_again_or_done {
+  height: 50px;
+  width: 106px;
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  background: #09002f;
+  margin-left: 2px;
+}
+.modal_multi_item_left_share_bf_again_or_done:after, .modal_multi_item_right_share_bf_again_or_done:after {
   content: "";
   width: 100%;
   /* Ensures there are at least 2 lines of text, so justification works */
@@ -2074,6 +2111,10 @@ border-radius: 10px;
     width: 100vw;
     max-width: 312px;
     text-align: center;
+  }
+
+  .requeest_bf_app_access_bg, .maybe_next_time_redirect, .that_was_awesome_redirect {
+    background: black;
   }
   /* /////////////////////////// */
   /* END share this page first */
