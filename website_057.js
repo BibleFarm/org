@@ -1071,3 +1071,62 @@ console.log("PureChat hide when click outside event.stopPropagation");
 ////////////////////////////////////////////////////
 // END PureChat hack
 ////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////
+// BEGIN gofundme modal show hide
+////////////////////////////////////////////////////
+$(document).ready(function() {
+$(".wrap_visit_GoFundMe_campaigns").on("click", function() {
+  $(".wrap_gofundme_modal_bar").show("slow");
+  $(".wrap_gofundme_modal_body").show("slow");
+$(".bf_wrap").hide();
+///////////////////////////////////////////////
+// BEGIN  gofundme scrollTo centering when viewport is too small
+///////////////////////////////////////////////
+jQuery(window).on('resize',function()
+   {
+         var viewportWidth = jQuery(window).width();
+
+         if (viewportWidth < 350)
+         {
+  setTimeout(function() {
+      $("body").scrollTo({ top:0, left:60}, 800);
+              }, 2000);
+         }
+         else
+         {
+$(".gofundme_adjust_30px_small_phones").removeClass("gofundme_adjust_30px_small_phones");
+         }
+   });
+
+         var viewportWidth = jQuery(window).width();
+
+         if (viewportWidth < 350)
+         {
+setTimeout(function() {
+      $("body").scrollTo({ top:0, left:60}, 800);
+}, 2000);
+         }
+         else
+         {
+setTimeout(function() {
+$(".gofundme_adjust_30px_small_phones").removeClass("gofundme_adjust_30px_small_phones");
+}, 2000);
+
+         }
+///////////////////////////////////////////////
+// END  gofundme scrollTo centering when viewport is too small
+///////////////////////////////////////////////
+
+});
+$(".close_gofundme_modal").on("click", function() {
+  $(".wrap_gofundme_modal_bar").hide();
+  $(".wrap_gofundme_modal_body").hide();
+$(".bf_wrap").show("slow");
+});
+
+});
+////////////////////////////////////////////////////
+// END gofundme modal show hide
+////////////////////////////////////////////////////

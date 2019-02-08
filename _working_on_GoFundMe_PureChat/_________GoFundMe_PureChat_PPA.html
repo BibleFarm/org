@@ -289,9 +289,8 @@ min-height: 280px;
   max-width: 100%;
   max-height: calc(100vh - 380px);
 }
-.adjust_30px_small_phones {
+.gofundme_adjust_30px_small_phones {
     padding-left: 30px;
-
 }
 /* gofundme widget container */
 .youtube_video {
@@ -313,13 +312,13 @@ position: fixed;
           cursor: pointer;
       }
 
-.flex-container {
+.gofundme_flex-container {
   display: flex;
   justify-content: center;
   align-items: center;
 flex-flow: row wrap;
 }
-.flex-container > div {
+.gofundme_flex-container > div {
   background-color: #111111;
   text-align: center;
   margin-left: 10px;
@@ -372,12 +371,12 @@ min-width: 350px;
 
 
 
-<div class="adjust_30px_small_phones">
+<div class="gofundme_adjust_30px_small_phones">
 
 
   <div class="centered">
 
-  <div class="flex-container">
+  <div class="gofundme_flex-container">
 
 
 <!--
@@ -533,7 +532,7 @@ jQuery(window).on('resize',function()
          }
          else
          {
-$(".adjust_30px_small_phones").removeClass("adjust_30px_small_phones");
+$(".gofundme_adjust_30px_small_phones").removeClass("gofundme_adjust_30px_small_phones");
          }
    });
 
@@ -548,7 +547,7 @@ setTimeout(function() {
          else
          {
 setTimeout(function() {
-$(".adjust_30px_small_phones").removeClass("adjust_30px_small_phones");
+$(".gofundme_adjust_30px_small_phones").removeClass("gofundme_adjust_30px_small_phones");
 }, 20000);
 
          }

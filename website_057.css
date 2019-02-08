@@ -2148,3 +2148,74 @@ img.visit_GoFundMe_campaigns_image {
   /* /////////////////////////// */
   /* END visit gofundme  */
   /* /////////////////////////// */
+
+
+  /* /////////////////////////// */
+  /* BEGIN gofundme modal  */
+  /* /////////////////////////// */
+/* titlebar */
+.wrap_gofundme_modal_bar {
+  position: fixed;
+  display: none;
+  height: 50px;
+  text-align: justify;
+  border: 0px solid black;
+  font-size: 0.1px;
+  width: 100%;
+}
+.wrap_gofundme_modal_bar > .title_gofundme_modal {
+  height: 50px;
+  width: calc(100% - 50px);
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  background: black;
+}
+.wrap_gofundme_modal_bar > .close_gofundme_modal {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  background: black;
+  font-weight: bold;
+}
+.title_gofundme_modal:after, .close_gofundme_modal:after {
+  content: "";
+  width: 100%;
+  /* Ensures there are at least 2 lines of text, so justification works */
+  display: inline-block;
+}
+
+
+.wrap_gofundme_modal_body {
+display: none;
+}
+  .gofundme_adjust_30px_small_phones {
+      padding-left: 30px;
+  }
+  .gofundme_flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  flex-flow: row wrap;
+  padding-top: 50px;
+  }
+  .gofundme_flex-container > div {
+    background-color: #111111;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .gofundme_widget {
+  min-width: 350px;
+      max-width: 350px !important;
+      width: 350px;
+  }
+
+  /* /////////////////////////// */
+  /* END gofundme modal  */
+  /* /////////////////////////// */
