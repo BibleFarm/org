@@ -2126,3 +2126,25 @@ border-radius: 10px;
   /* /////////////////////////// */
   /* END share this page first */
   /* /////////////////////////// */
+
+  /* /////////////////////////// */
+  /* BEGIN visit gofundme  */
+  /* /////////////////////////// */
+.wrap_visit_GoFundMe_campaigns {
+  width: 100%;
+  margin-top: 11px;
+}
+.visit_GoFundMe_campaigns_text {
+    width: 100%;
+    margin-top: 7px;
+    position: absolute;
+    text-align: left;
+    margin-left: 25px;
+}
+img.visit_GoFundMe_campaigns_image {
+    width: 100%;
+    margin-right: 0px;
+}
+  /* /////////////////////////// */
+  /* END visit gofundme  */
+  /* /////////////////////////// */
