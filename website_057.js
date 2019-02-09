@@ -381,6 +381,14 @@ $(document).ready(function() {
   setTimeout(function() {
     swiper_jovi.slideTo(5);
   }, 400);
+  setTimeout(function() {
+    $(".lazy_responsive").slick("reinit");
+    console.log("///////// waited 500 millisecs to slick reinit lazy_responsive");
+  }, 500);
+  setTimeout(function() {
+    $(".lazy_farm").slick("reinit");
+    console.log("///////// waited 600 millisecs to slick reinit lazy_farm");
+  }, 600);
 
   });
   ////////////////////////////////////////////////////
