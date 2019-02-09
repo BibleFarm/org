@@ -1091,7 +1091,7 @@ jQuery(window).on('resize',function()
          if (viewportWidth < 350)
          {
   setTimeout(function() {
-      $("body").scrollTo({left:60}, 800);
+      $(".gofundme_adjust_30px_small_phones").scrollTo({left:60}, 800);
               }, 2000);
          }
          else
@@ -1105,7 +1105,7 @@ $(".gofundme_adjust_30px_small_phones").removeClass("gofundme_adjust_30px_small_
          if (viewportWidth < 350)
          {
 setTimeout(function() {
-      $("body").scrollTo({left:60}, 800);
+      $(".gofundme_adjust_30px_small_phones").scrollTo({left:60}, 800);
 }, 2000);
          }
          else
