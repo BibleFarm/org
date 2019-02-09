@@ -907,7 +907,7 @@ $(document).ready(function() {
 ////////////////////////////////////////////////////
 $(document).ready(function() {
   $(".area_veggies_fruits").on("click", function() {
-    $(".redirect_to_paypal_decide").hide("slow");
+    $(".redirect_to_paypal_decide").hide();
     $(".redirect_to_paypal_confirm").show("slow");
     $(".decided_task")
       .append()
@@ -921,7 +921,7 @@ $(document).ready(function() {
     $(".box_back, #paypal_redirect_veggies_and_fruits").show("slow");
   });
   $(".area_fish").on("click", function() {
-    $(".redirect_to_paypal_decide").hide("slow");
+    $(".redirect_to_paypal_decide").hide();
     $(".redirect_to_paypal_confirm").show("slow");
     $(".decided_task")
       .append()
@@ -937,7 +937,7 @@ $(document).ready(function() {
     $(".box_back, #paypal_redirect_fish").show("slow");
   });
   $(".area_protein_brownies").on("click", function() {
-    $(".redirect_to_paypal_decide").hide("slow");
+    $(".redirect_to_paypal_decide").hide();
     $(".redirect_to_paypal_confirm").show("slow");
     $(".decided_task")
       .append()
@@ -953,7 +953,7 @@ $(document).ready(function() {
     $(".box_back, #paypal_redirect_protein_brownies").show("slow");
   });
   $(".area_eggs").on("click", function() {
-    $(".redirect_to_paypal_decide").hide("slow");
+    $(".redirect_to_paypal_decide").hide();
     $(".redirect_to_paypal_confirm").show("slow");
     $(".decided_task")
       .append()
@@ -967,7 +967,7 @@ $(document).ready(function() {
     $(".box_back, #paypal_redirect_eggs").show("slow");
   });
   $(".redirect_to_paypal_decision_back").on("click", function() {
-    $(".redirect_to_paypal_confirm").hide("slow");
+    $(".redirect_to_paypal_confirm").hide();
     $(".area_veggies_fruits").removeClass("decided_veggies_fruits");
     $(".area_fish").removeClass("decided_fish");
     $(".area_protein_brownies").removeClass("decided_protein_brownies");
@@ -975,7 +975,7 @@ $(document).ready(function() {
     $(".redirect_to_paypal_decide").show("slow");
     $(
       ".box_back, #paypal_redirect_veggies_and_fruits, #paypal_redirect_fish, #paypal_redirect_protein_brownies, #paypal_redirect_eggs"
-    ).hide("slow");
+    ).hide();
   });
 });
 ////////////////////////////////////////////////////
@@ -1017,22 +1017,22 @@ console.log("/////// applied addthis shadow FOLLOW hack");
 // BEGIN request access to app & share before you go
 ////////////////////////////////////////////////////
 // modal loads hidden
-$(".wrap_sharing_modal_for_requested_access, .wrap_sharing_panel, .modal_multi_item_share_bf_yes_or_no, .modal_multi_item_share_bf_again_or_done, .maybe_next_time_redirect, .that_was_awesome_redirect, .show_appreciation_for_sharing_again").hide("slow");
+$(".wrap_sharing_modal_for_requested_access, .wrap_sharing_panel, .modal_multi_item_share_bf_yes_or_no, .modal_multi_item_share_bf_again_or_done, .maybe_next_time_redirect, .reqesting_app_shared_no, .that_was_awesome_redirect, .reqesting_app_shared_yes, .show_appreciation_for_sharing_again").hide();
 // show the modal
 $(".requeest_bf_app_access").on("click", function() {
 $(".wrap_sharing_modal_for_requested_access, .wrap_sharing_panel, .nope_im_not_sharing").show("slow");
-$(".wrap_inner_app_container").hide("slow");
+$(".wrap_inner_app_container").hide();
   });
 // offer to share again
   $(".addthis_inline_share_toolbox_ascx").on("click", function() {
-    $(".modal_multi_item_share_bf_yes_or_no, .nope_im_not_sharing").hide("slow");
-    $(".show_appreciation_for_sharing_again").hide("slow");
+    $(".modal_multi_item_share_bf_yes_or_no, .nope_im_not_sharing").hide();
+    $(".show_appreciation_for_sharing_again").hide();
     $(".modal_multi_item_share_bf_again_or_done").show("slow");
     });
 
     // if they're sharing on another platform
     $(".share_on_another_platform").on("click", function() {
-      $(".modal_multi_item_share_bf_again_or_done").hide("slow");
+      $(".modal_multi_item_share_bf_again_or_done").hide();
       $(".show_appreciation_for_sharing_again").show("slow");
       });
 
@@ -1040,22 +1040,22 @@ $(".wrap_inner_app_container").hide("slow");
 
 // if they don't wanna share
 $(".nope_im_not_sharing").on("click", function() {
-$(".wrap_sharing_modal_for_requested_access, .wrap_sharing_panel, .modal_multi_item_share_bf_yes_or_no, .modal_multi_item_share_bf_again_or_done, .requeest_bf_app_access").hide("slow");
+$(".wrap_sharing_modal_for_requested_access, .wrap_sharing_panel, .modal_multi_item_share_bf_yes_or_no, .modal_multi_item_share_bf_again_or_done, .requeest_bf_app_access").hide();
 $(".wrap_inner_app_container").show("slow");
-$(".maybe_next_time_redirect").show("slow");
+$(".maybe_next_time_redirect, .reqesting_app_shared_no").show("slow");
   });
 
 // if they're done sharing
 $(".done_sharing_for_now").on("click", function() {
-$(".wrap_sharing_modal_for_requested_access, .wrap_sharing_panel, .modal_multi_item_share_bf_yes_or_no, .modal_multi_item_share_bf_again_or_done, .requeest_bf_app_access").hide("slow");
+$(".wrap_sharing_modal_for_requested_access, .wrap_sharing_panel, .modal_multi_item_share_bf_yes_or_no, .modal_multi_item_share_bf_again_or_done, .requeest_bf_app_access").hide();
 $(".wrap_inner_app_container").show("slow");
-$(".show_appreciation_for_sharing_again").hide("slow");
-$(".that_was_awesome_redirect").show("slow");
+$(".show_appreciation_for_sharing_again").hide();
+$(".that_was_awesome_redirect, .reqesting_app_shared_yes").show("slow");
   });
 
 // back to requesting access & redirect to app on another tab
 $(".maybe_next_time_redirect, .that_was_awesome_redirect").on("click", function() {
-$(".maybe_next_time_redirect, .that_was_awesome_redirect").hide("slow");
+$(".maybe_next_time_redirect, .reqesting_app_shared_no, .that_was_awesome_redirect, .reqesting_app_shared_yes").hide();
 $(".requeest_bf_app_access").show("slow");
   });
 
