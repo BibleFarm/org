@@ -2216,3 +2216,7 @@ img.visit_GoFundMe_campaigns_image {
 /* /////////////////////////// */
 /* END gofundme modal  */
 /* /////////////////////////// */
+
+.pinterest_pin_this_image {
+  display: none;
+}
