@@ -46,10 +46,10 @@ $(document).ready(function() {
   setTimeout(function() {
     $(".bf_lock_n_load_wrap").css("display", "none");
     $(".bf_lock_n_load").css("display", "none");
-  }, 1000);
+  }, 500);
   setTimeout(function() {
     $(".bf_intro_splash_bg, .bf_intro_splash_text").hide("slow");
-  }, 15000);
+  }, 12000);
   // automatically move to forced desired page
   //       setTimeout(function() {
   // $('.move_to_bf_farm').trigger('click', function() {
@@ -983,33 +983,37 @@ $(document).ready(function() {
 ////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////
-// BEGIN addthis
+// BEGIN addthis hack follow area
 ////////////////////////////////////////////////////
 
 $(document).ready(function() {
-  var stopWhenCompleted = setInterval(function() {
+  var stopWhenCompleted_addthis_is_loaded = setInterval(function() {
   if ($(".facebook_patience").find('.at-icon-messenger title:contains("Messenger")').length > 0) {
-console.log("addthis is loaded. Let's hack");
+console.log("stopWhenCompleted_addthis_is_loaded Let's hack @ 1000");
 // addthis shadow hack to SHARING AND FOLLOW
+setTimeout(function() {
       $(".wrap_sharing_panel").find("svg.at-icon").css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))");
-console.log("/////// applied addthis shadow SHARING hack");
+console.log("/////// applied addthis shadow SHARING hack @ + 1000");
+}, 1000);
 // addthis FOLLOW margin hack
+setTimeout(function() {
 $(".facebook_patience").find(".addthis_toolbox a").css("margin-left", "5px").css("margin-right", "5px");
-console.log("/////// applied addthis margin FOLLOW hack");
+console.log("/////// applied addthis margin FOLLOW hack @ + 2000");
+}, 2000);
 // addthis FOLLOW size hack
 setTimeout(function() {
   $(".facebook_patience").find(".at-icon-wrapper, svg.at-icon").css("width", "49px").css("height", "49px").css("line-height", "49px").css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))");
-console.log("/////// applied addthis shadow FOLLOW hack");
-}, 1500);
+console.log("/////// applied addthis shadow FOLLOW hack @ + 3000");
+}, 3000);
 
 
 
-      clearInterval(stopWhenCompleted);
+      clearInterval(stopWhenCompleted_addthis_is_loaded);
   }
-}, 500);
+}, 13000);
 });
 ////////////////////////////////////////////////////
-// END addthis
+// END addthis hack follow area
 ////////////////////////////////////////////////////
 
 
@@ -1062,27 +1066,6 @@ $(".requeest_bf_app_access").show("slow");
   ////////////////////////////////////////////////////
   // END request access to app & share before you go
   ////////////////////////////////////////////////////
-
-  ////////////////////////////////////////////////////
-  // BEGIN addthis hack
-  ////////////////////////////////////////////////////
-$(document).ready(function() {
-  var stopWhenCompleted = setInterval(function() {
-  if ($(".facebook_patience").find('.at-icon-messenger title:contains("Messenger")').length > 0) {
-console.log("addthis is loaded. Let's hack");
-// adthis shadow hack to SHARING AND FLLOW
-      $(".wrap_sharing_panel").find("svg.at-icon").css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))");
-console.log("/////// applied addthis shadow SHARING hack");
-// adthis FOLLOW size hack
-      $(".facebook_patience").find(".at-icon-wrapper, svg.at-icon").css("width", "68px").css("height", "68px").css("line-height", "68px").css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))");
-console.log("/////// applied addthis shadow FOLLOW hack");
-      clearInterval(stopWhenCompleted);
-  }
-  }, 100);
-});
-////////////////////////////////////////////////////
-// END addthis hack
-////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////
 // BEGIN PureChat hack
