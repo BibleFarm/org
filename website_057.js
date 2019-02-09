@@ -225,7 +225,7 @@ $(document).ready(function() {
       });
       setTimeout(function() {
         $(".lazy_farm").slick("slickGoTo", 2);
-      }, 10);
+      }, 100);
         setTimeout(function() {
         $(".lazy_farm").slick("slickGoTo", 1);
       }, 200);
@@ -383,10 +383,30 @@ $(document).ready(function() {
   }, 400);
   setTimeout(function() {
     $(".lazy_responsive").slick("reinit");
+    setTimeout(function() {
+      $(".lazy_farm").slick("slickGoTo", 2);
+    }, 100);
+      setTimeout(function() {
+      $(".lazy_farm").slick("slickGoTo", 1);
+    }, 200);
+      setTimeout(function() {
+      $(".lazy_farm").slick("slickGoTo", 0);
+    }, 300);
+
     console.log("///////// waited 500 millisecs to slick reinit lazy_responsive");
   }, 500);
   setTimeout(function() {
     $(".lazy_farm").slick("reinit");
+    setTimeout(function() {
+      $(".lazy_farm").slick("slickGoTo", 2);
+    }, 100);
+      setTimeout(function() {
+      $(".lazy_farm").slick("slickGoTo", 1);
+    }, 200);
+      setTimeout(function() {
+      $(".lazy_farm").slick("slickGoTo", 0);
+    }, 300);
+
     console.log("///////// waited 600 millisecs to slick reinit lazy_farm");
   }, 600);
 
