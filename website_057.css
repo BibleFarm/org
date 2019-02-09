@@ -2153,6 +2153,8 @@ img.visit_GoFundMe_campaigns_image {
   /* /////////////////////////// */
   /* BEGIN gofundme modal  */
   /* /////////////////////////// */
+.wrap_gofundme_modal {
+}
 /* titlebar */
 .wrap_gofundme_modal_bar {
   position: fixed;
