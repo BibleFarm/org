@@ -285,8 +285,8 @@ $(document).ready(function() {
   // when landing in portrait, user rotates, tell them to go back to portrait
   $(window).on("resize", function(e) {
     if ($(window).height() < 480 && $(window).height() < $(window).width()) {
-      $(".bf_please_rotate_your_phone_vertically_wrap").show();
-      $(".bf_please_rotate_your_phone_vertically").show();
+//      $(".bf_please_rotate_your_phone_vertically_wrap").show();
+//      $(".bf_please_rotate_your_phone_vertically").show();
     } else if ($(window).height() > $(window).width()) {
       $(".bf_please_rotate_your_phone_vertically_wrap").hide();
       $(".bf_please_rotate_your_phone_vertically").hide();
@@ -350,6 +350,44 @@ $(document).ready(function() {
       swiper_jovi.slideTo(5);
     }, 400);
   });
+
+  ////////////////////////////////////////////////////
+  // BEGIN gofundme modal show hide
+  ////////////////////////////////////////////////////
+  $("body").find(".wrap_visit_GoFundMe_campaigns").on("click", function() {
+    $(".wrap_gofundme_modal_bar").show("slow");
+    $(".wrap_gofundme_modal_body").show("slow");
+    setTimeout(function() {
+      $( "body" ).scrollLeft( 60 );
+    }, 1500);
+  $(".bf_wrap").hide();
+  });
+  $("body").find(".close_gofundme_modal").on("click", function() {
+    setTimeout(function() {
+      $( "body" ).scrollLeft( 0 );
+    }, 1500);
+    $(".wrap_gofundme_modal_bar").hide();
+    $(".wrap_gofundme_modal_body").hide();
+  $(".bf_wrap").show("slow");
+  setTimeout(function() {
+    swiper_jovi.prependSlide(
+      '<div class="swiper-slide">prepended slide"</div>'
+    );
+  }, 200);
+  setTimeout(function() {
+    swiper_jovi.removeSlide(0);
+  }, 300);
+  // move to #donate
+  setTimeout(function() {
+    swiper_jovi.slideTo(5);
+  }, 400);
+
+  });
+  ////////////////////////////////////////////////////
+  // END gofundme modal show hide
+  ////////////////////////////////////////////////////
+
+
 });
 //////////////////////////////////////////////////////////////////////////
 /////////////////////////
@@ -1070,32 +1108,4 @@ console.log("PureChat hide when click outside event.stopPropagation");
 
 ////////////////////////////////////////////////////
 // END PureChat hack
-////////////////////////////////////////////////////
-
-
-////////////////////////////////////////////////////
-// BEGIN gofundme modal show hide
-////////////////////////////////////////////////////
-$(document).ready(function() {
-$(".wrap_visit_GoFundMe_campaigns").on("click", function() {
-  $(".wrap_gofundme_modal_bar").show("slow");
-  $(".wrap_gofundme_modal_body").show("slow");
-  setTimeout(function() {
-    $( "body" ).scrollLeft( 60 );
-  }, 1500);
-$(".bf_wrap").hide();
-
-});
-$(".close_gofundme_modal").on("click", function() {
-  setTimeout(function() {
-    $( "body" ).scrollLeft( 0 );
-  }, 1500);
-  $(".wrap_gofundme_modal_bar").hide();
-  $(".wrap_gofundme_modal_body").hide();
-$(".bf_wrap").show("slow");
-});
-
-});
-////////////////////////////////////////////////////
-// END gofundme modal show hide
 ////////////////////////////////////////////////////
