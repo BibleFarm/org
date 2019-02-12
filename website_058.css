@@ -2222,3 +2222,9 @@ img.visit_GoFundMe_campaigns_image {
 .mix_add_this_image {
   display: none;
 }
+.loading_pictures_from_last_10_visits {
+position: absolute;
+top: 100px;
+left: 0;
+right: 0;
+}
