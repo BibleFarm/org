@@ -1885,7 +1885,7 @@ summary {
 }
 
 .box_shadow {
-  box-shadow: 0px 0px 10px #b3ff00;
+  box-shadow: 0px 0px 60px #b3ff00;
 }
 
 .bf_lock_n_load_wrap {
@@ -2116,7 +2116,6 @@ img.app_shared_verse_example {
 }
 
 .requeest_bf_app_access_bg,
-.maybe_next_time_redirect,
 .that_was_awesome_redirect {
   background: black;
 }
