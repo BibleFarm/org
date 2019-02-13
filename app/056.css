@@ -1679,7 +1679,7 @@ text-shadow: 2px 2px 1px #000000;
          text-align: center !important;
          display: inline-block;
          height: 44px;
-         background: rgba(1,1,1,0.5);
+         background: red;
          font-size: 18px;
          color: #8b7c66 !important;
          margin: 0 !important;
