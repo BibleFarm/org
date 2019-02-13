@@ -121,6 +121,7 @@ $(document).ready(function() {
   ////////////////////////////////////////////////
   //////////// BEGIN fbFetch Facebook first image of each post
   ////////////////////////////////////////////////
+console.log("///////////////////// began fbFetch function");
 
   function fbFetch() {
     var access_token = "1336118583068310|JdlPe-nIXwAS4QrP1ZAP-HPgMrQ";
@@ -154,7 +155,7 @@ $(document).ready(function() {
             //          "</br>" +
             //          fb.permalink_url +
             //          "</br>" +
-            '<div><img data-lazy="' + fb.full_picture + '"></div>';
+            '<div><img class="fb_Fetched_image" data-lazy="' + fb.full_picture + '"></div>';
           //          +
           //          "</br>" +
           //          fb.message +
@@ -179,20 +180,28 @@ $(document).ready(function() {
       //    });
       //    $(".lazy_farm").animate({ opacity: 1 }, 500);
 
-      $(".bf_farm_container").html(html);
+      $(".wrap_lazy_farm").html(html);
+
+      console.log('///////////////////// created $(".wrap_lazy_farm").html(html);');
+
+
     });
   }
 
   fbFetch();
+
+  console.log('///////////////////// ran fbFetch();');
+
+
   ////////////////////////////////////////////////
   //////////// END fbFetch Facebook first image of each post
   ////////////////////////////////////////////////
   var waitFor_fbFetch_completed = setInterval(function() {
     if ($(".lazy_farm").children().length > 3) {
-      console.log(
-        "///////////////// fbFetch is completed // now executing slick"
-      );
+      console.log('///////////////////// if ($(".lazy_farm").children().length > 3)');
       clearInterval(waitFor_fbFetch_completed);
+      console.log('///////////////////// clearInterval(waitFor_fbFetch_completed);');
+
       ////////////////////////////////////////////////
       //////////// BEGIN slick.js lazy_farm
       ////////////////////////////////////////////////
@@ -214,6 +223,9 @@ $(document).ready(function() {
         //  respondTo: 'window'
       });
 
+      console.log('///////////////////// ran var slick_slider_lazy_farm = $(".lazy_farm").slick({');
+
+
       slick_slider_lazy_farm.on("wheel", function(e) {
         e.preventDefault();
 
@@ -225,15 +237,21 @@ $(document).ready(function() {
       });
       setTimeout(function() {
         $(".lazy_farm").slick("slickGoTo", 2);
+        console.log('///////////////////// slickGoTo", 2');
       }, 100);
       setTimeout(function() {
         $(".lazy_farm").slick("slickGoTo", 1);
+        console.log('///////////////////// slickGoTo", 1');
       }, 200);
       setTimeout(function() {
         $(".lazy_farm").slick("slickGoTo", 0);
+        console.log('///////////////////// slickGoTo", 0');
       }, 300);
     }
   }, 1000);
+
+  console.log('///////////////////// finished fbFetch & the slick');
+
 
   ////////////////////////////////////////////////
   //////////// END slick.js lazy_farm

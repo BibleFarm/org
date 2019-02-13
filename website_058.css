@@ -1462,6 +1462,7 @@ summary {
   background: #111111 url("../images/home/ajax-loader.gif") no-repeat center;
   width: auto;
   height: 350px;
+  min-height: 240px;
 }
 
 .bf_please_rotate_your_phone_vertically_wrap {
@@ -2222,10 +2223,9 @@ img.visit_GoFundMe_campaigns_image {
 .mix_add_this_image {
   display: none;
 }
-.loading_pictures_from_last_10_visits {
-position: absolute;
-top: 100px;
-left: 0;
-right: 0;
-}
 /**/
+.fb_Fetched_image {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+}
