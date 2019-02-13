@@ -376,7 +376,7 @@ $(document).ready(function() {
     "ajax": "../search/data_filter_KJV_full.txt",
     "autoWidth": false,
     "scrollX": false,
-    "scrollY": "calc(100vh - 197px)",
+    "scrollY": "calc(100vh - 262px)",
     "fnInitComplete": function() {
       $('.dataTables_scrollBody').perfectScrollbar({
         wheelPropagation: true,
