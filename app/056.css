@@ -1657,12 +1657,12 @@ text-shadow: 2px 2px 1px #000000;
     }
      a#example-main_previous.paginate_button.previous {
          position: absolute;
-         bottom: -49px;
+         top: 4px;
          left: 4px;
          font-size: 18px;
          color: #ae9c80 !important;
          height: 44px;
-         background: rgba(1,1,1,0.5);
+         background: black;
          line-height: 44px;
          margin: 0 !important;
          padding: 0 !important;
@@ -1673,13 +1673,13 @@ text-shadow: 2px 2px 1px #000000;
     }
      #example-main_info.dataTables_info {
          position: absolute;
-         bottom: -49px;
+         top: 4px;
          left: calc(4px + 35px);
          right: calc(4px + 35px);
          text-align: center !important;
          display: inline-block;
          height: 44px;
-         background: red;
+         background: black;
          font-size: 18px;
          color: #8b7c66 !important;
          margin: 0 !important;
@@ -1688,12 +1688,12 @@ text-shadow: 2px 2px 1px #000000;
     }
      a#example-main_next.paginate_button.next {
          position: absolute;
-         bottom: -49px;
+         top: 4px;
          right: 4px;
          font-size: 18px;
          color: #ae9c80 !important;
          height: 44px;
-         background: rgba(1,1,1,0.5);
+         background: black;
          line-height: 44px;
          margin: 0 !important;
          padding: 0 !important;
@@ -1720,6 +1720,23 @@ text-shadow: 2px 2px 1px #000000;
      .example_browsing_mode_nav_left_Verses_status.all_tables.dataTable.no-footer {
         border-bottom: 0px !important;
     }
+
+/* BEGIN fix search results */
+.dataTables_wrapper .dataTables_scroll {
+    height: 100% !important;
+    overflow: hidden !important;
+    background: black !important;
+}
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+    border-bottom: 0px solid red !important;
+    margin-top: calc(4px + 44px + 4px) !important;
+    margin-bottom: calc(4px + 44px + 4px) !important;
+    height: calc(100% - 200px) !important;
+}
+/* BEGIN fix search results */
+
+
+
     /* END datatables specific fixes & hacks */
     /* ******************************* */
     /* ******************************* */

@@ -238,7 +238,7 @@ $(document).ready(function() {
     "ajax": "../search/data_filter_KJV_full.txt",
     "autoWidth": false,
     "scrollX": false,
-    "scrollY": "calc(100vh - 262px)",
+    "scrollY": true,
     "fnInitComplete": function() {
       $('.dataTables_scrollBody').perfectScrollbar({
         wheelPropagation: true,
@@ -376,7 +376,7 @@ $(document).ready(function() {
     "ajax": "../search/data_filter_KJV_full.txt",
     "autoWidth": false,
     "scrollX": false,
-    "scrollY": "calc(100vh - 262px)",
+    "scrollY": true,
     "fnInitComplete": function() {
       $('.dataTables_scrollBody').perfectScrollbar({
         wheelPropagation: true,
@@ -2459,7 +2459,7 @@ $(document).ready(function() {
     "pageLength": 10,
     "ordering": false,
     "scrollX": false,
-    "scrollY": "calc(100vh - 195px)",
+    "scrollY": true,
     // when initialization is completed then apply scroll plugin
     "fnInitComplete": function() {
       $('.dataTables_scrollBody').perfectScrollbar();
