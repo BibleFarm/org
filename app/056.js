@@ -1,5 +1,38 @@
 // 056.js //
+$(document).ready(function() {
 
+  setTimeout(function() {
+    console.log("*********************** 1 ");
+  }, 1000);
+  setTimeout(function() {
+    console.log("*********************** 2 ");
+  }, 2000);
+  setTimeout(function() {
+    console.log("*********************** 3 ");
+  }, 3000);
+  setTimeout(function() {
+    console.log("*********************** 4 ");
+  }, 4000);
+  setTimeout(function() {
+    console.log("*********************** 5 ");
+  }, 5000);
+  setTimeout(function() {
+    console.log("*********************** 6 ");
+  }, 6000);
+  setTimeout(function() {
+    console.log("*********************** 7 ");
+  }, 7000);
+  setTimeout(function() {
+    console.log("*********************** 8 ");
+  }, 8000);
+  setTimeout(function() {
+    console.log("*********************** 9 ");
+  }, 9000);
+  setTimeout(function() {
+    console.log("*********************** 10 ");
+  }, 10000);
+
+});
 
 ///////////////////////////////////////////////
 ///// BEGIN app intro ////////////////////////
@@ -23,10 +56,12 @@ $(document).ready(function() {
 setTimeout(function() {
 $(".app_lock_n_load_wrap").css("display", "none");
 $(".app_lock_n_load").css("display", "none");
-}, 1000);
+console.log("10 second to hide lock n load");
+}, 2000);
 setTimeout(function() {
 $(".app_intro_splash_bg, .app_intro_splash_text").hide("slow");
-}, 15000);
+console.log("20 seconds to hide intro");
+}, 20000);
 // automatically move to forced desired page
 //       setTimeout(function() {
 // $('.move_to_bf_farm').trigger('click', function() {
@@ -40,6 +75,7 @@ $(".app_intro_splash_bg, .app_intro_splash_text").hide("slow");
 ///// BEGIN  app textillate
 /////////////////////////
 $(document).ready(function() {
+  setTimeout(function() {
 
 
     $('.app_intro_splash_text h1')
@@ -59,6 +95,7 @@ setTimeout(function() {
       .fitText(3.0, { minFontSize: 25, maxFontSize: 48 })
       .textillate({ initialDelay: 4900, in: { delay: 8, shuffle: true } });
 
+    }, 4000);
   });
 /////////////////////////
 ///// END  app textillate
@@ -8732,11 +8769,12 @@ $(document).ready(function() {
 
 if($('#admin').css('display') !== 'none')
 {
+  var welcome_user_with_name = $("body").find("#name").text();
   $("#logged_in_user_is_a_part").text("I'm part of biblefarm.org");
-  $(".app_wrap").find("p.msg1").text("Welcome back, Alex");
+  $(".app_wrap").find("p.msg1").text(welcome_user_with_name).show("slow", "linear");
 } else {
   $("#logged_in_user_is_a_part").text("be a part of biblefarm.org");
-  $(".app_wrap").find("p.msg1").text("Welcome");
+  $(".app_wrap").find("p.msg1").text("Thanks for visiting").show("slow", "linear");
 }
 
   }; // end mutation observer
