@@ -7755,6 +7755,8 @@ $(document).ready(function() {
     $("#to_search_grk,#to_search_grk_tra,#to_search_reg_esp,#to_search_reg_eng,#to_search_heb_tra,#to_search_heb").hide("slow");
     $("#searching_reg_eng").css("display", "block").css("line-height", "45px").css("width", "100%").css("height", "45px");
     $("#filter_reg_eng").show("slow").css("display", "block").focus();
+    ////// NN to add this to other languages as the production makes them available
+    $(".search_results_are_empty_so_search_or_browse").show("slow");
   });
   $("#filter_reg_eng").focusout(function() {
     $("#filter_reg_eng").hide("slow");
@@ -8730,9 +8732,11 @@ $(document).ready(function() {
 
 if($('#admin').css('display') !== 'none')
 {
-$("#logged_in_user_is_a_part").text("I'm part of biblefarm.org");
+  $("#logged_in_user_is_a_part").text("I'm part of biblefarm.org");
+  $(".app_wrap").find("p.msg1").text("Welcome back, Alex");
 } else {
-$("#logged_in_user_is_a_part").text("be a part of biblefarm.org");
+  $("#logged_in_user_is_a_part").text("be a part of biblefarm.org");
+  $(".app_wrap").find("p.msg1").text("Welcome");
 }
 
   }; // end mutation observer
@@ -8983,6 +8987,7 @@ $(".wrap_modal_still_working_on_this").hide();
       $(".wrap_nav_mode_browse").show("slow", "linear");
       $(".wrap_nav_mode_filter").hide("slow", "linear");
       $(".mode_browse").show("slow", "linear");
+      $(".search_results_are_empty_so_search_or_browse").hide("slow", "linear");
   });
   //////////////////////////////////////////////////
   ////// END if we wanna go back to browsing mode // #return_to_browsing_mode ////
