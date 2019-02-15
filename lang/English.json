@@ -9,7 +9,7 @@
     "sInfoFiltered":   "filtered",
     "sProcessing":     "Processing...",
     "sSearch":         "Search:",
-    "sZeroRecords":    "<i>Nope, there is nothing like that in the Bible!<br>Please check your spelling.</i>",
+    "sZeroRecords":    "<i>Nope. There is nothing like that in the Bible!<br>Check your spelling or make sure you're searching<br>in the desired book or chapter.<br>For example: If you're searching for Moses in Genesis,<br>you'll get this message because the name ''Moses'<br> does not appear in Genesis.<br>On your left nav, at the top, you can reset all to search<br>the whole Bible, or just books, or just chapters<br></i><div class=''><span>If you need help, feel free to ask the team at: </span><span><a href='https://www.biblefarm.org' target='_blank' class='bf_links'>www.BibleFarm.org</a></span></div>",
     "oPaginate": {
         "sFirst":    "First",
         "sLast":     "Last",
@@ -21,4 +21,3 @@
         "sSortDescending": ": activate to sort column descending"
     }
 }
-
