@@ -288,7 +288,7 @@ a:focus {
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: calc(202px + 44px + 8px);
+    top: calc(192px + 44px + 8px);
     text-align: center;
     z-index: -1;
 }
@@ -384,37 +384,32 @@ a.bf_links:focus {
 
 /* BEGIN edit background color picker */
 .wrap_edit_background_chooser {
-    position: absolute;
+  position: absolute;
     top: calc(44px + 4px);
     width: 100%;
+    height: 196px;
     max-width: 600px;
-    height: 202px;
-    background: #231c11;
+    background: #241e00;
+    margin: 0 auto;
     left: 0;
     right: 0;
-    margin: 0 auto;
-    box-sizing: border-box;
 }
 .edit_background_chooser {
-    position: absolute;
-    display: block;
-    top: 4px;
-    left: 4px;
-    width: calc(100% - 8px);
-    height: 194px;
-    background: #231c11;
-    max-width: 600px;
-    box-sizing: border-box;
+    display: flex;
+    font-size: 0;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 2px;
 }
 .color_picker_item {
-    display: inline-block;
-    width: calc(25% - 3px);
-    height: 44px;
-    margin: 0;
-    padding: 0;
     cursor: pointer;
-    line-height: 44px;
     box-sizing: border-box;
+    display: inline-block;
+    margin: 2px;
+    flex-grow: 1;
+    height: 44px;
+    width: calc(100% * (1/4) - 4px);
+    line-height: 44px;
 }
 /* BEGIN edit background color picker */
 
