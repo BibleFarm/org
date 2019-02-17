@@ -728,6 +728,14 @@ function countdown() {
 
 });
 
+setTimeout(function() {
+  $("body").find(".option_share").trigger({
+    type: 'click',
+    which: 1
+  });
+}, 12000);
+
+
 </script>
 
 
