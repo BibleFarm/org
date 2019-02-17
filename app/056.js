@@ -8942,22 +8942,24 @@ var lastAudio = $("#u_last_audio").text();
   /////////////////////////////////////////
 */
   // from browsing mode // This grabs the verse to share, creates the URL & puts it in #from_browsing_mode_url_we_are_going_to
-$("#example-browsing_mode_nav_left_Verses tbody tr td div").on("click", function(e) {
+$("body").on("click", "#tE_ajax_chapters tbody tr td span", function(e) {
 
-var book_to_share = $(".wrap").find(".book_is_selected").find(".menu_book_reg").text();
+var book_to_share = $(".wrap").find(".book_is_selected").find(".menu_book_reg").text().replace(" ","-");
 console.log("book_to_share " + book_to_share);
 
 var chapter_to_share = $(".wrap").find(".chapter_is_selected").text();
 console.log("chapter_to_share " + chapter_to_share);
 
-var verse_to_share = $(this).text();
+var verse_to_share = $(this).parent().siblings().eq( 0 )
+    .clone()    //clone the element
+    .children() //select all the children
+    .remove()   //remove all the children
+    .end()  //again go back to selected element
+.text();
 console.log("verse_to_share " + verse_to_share);
 
 var complete_url_to_share_from_browsing_mode = "https://www.BibleFarm.org/" + book_to_share + "-" + chapter_to_share + "-" + verse_to_share + ".html";
 console.log("complete_url_to_share_from_browsing_mode " + complete_url_to_share_from_browsing_mode);
-
-$(".wrap_nav_body").find( ".book_is_selected" ).removeClass("book_is_selected");
-$(".wrap_nav_body").find( ".chapter_is_selected" ).removeClass("chapter_is_selected");
 
 $("#from_filter_mode_url_we_are_going_to").text("");
 $("#from_browsing_mode_url_we_are_going_to").text("");
