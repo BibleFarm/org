@@ -130,7 +130,7 @@
 
 
 
-  <title>Deuteronomy 6:4 - BibleFarm.org</title>
+  <title>edit - Deuteronomy 6:4 - BibleFarm.org</title>
 
 
 
@@ -232,7 +232,7 @@ width: calc(100vw - 8px);
     margin: 0 auto;
     text-align: center;
 }
-.countdown_loading_addthis_options {
+.countdown_while_showing_sponsors {
   line-height: 44px;
 }
 #btn_countdown_start {
@@ -609,6 +609,79 @@ a.bf_links:focus {
 }
 
 
+/* BEGIN sponsors show time*/
+.wrap_sponsors_show_time {
+    position: absolute;
+    top: calc(44px + 4px);
+    width: calc(100% - 4px);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 44px;
+    z-index: 10;
+}
+.sponsors_show_time {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 0.1px;
+    /* IE 9 & 10 don't like font-size: 0;
+     */
+}
+.sponsors_show_time > .sponsors_show_time_item_left {
+  height: 44px;
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 44px;
+  width: calc(50% - 16px);
+}
+.sponsors_show_time > .sponsors_show_time_item_center {
+  height: 44px;
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 44px;
+  width: 30px;
+}
+.sponsors_show_time > .sponsors_show_time_item_right {
+  height: 44px;
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 44px;
+  width: calc(50% - 16px);
+}
+.sponsors_show_time:after {
+    content: '';
+    width: 100%;
+   /* Ensures there are at least 2 lines of text, so justification works */
+    display: inline-block;
+}
+/* END sponsors show time*/
+
+
+.wrap_sponsors {
+    position: absolute;
+    top: calc(44px + 4px + 44px + 4px);
+    width: 100%;
+    height: calc(100% - 44px - 4px - 44px - 44px - 4px);
+    margin: 0 auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+    background: purple;
+    z-index: 10;
+}
+.wrap_sponsors > img {
+  width: calc(100vw - 8px);
+  min-width: 312px;
+  max-width: 600px;
+}
+
+
 /* END css for edit page */
 </style>
 
@@ -713,6 +786,57 @@ a.bf_links:focus {
   </div>
   <!-- END wrap_ctr -->
 
+
+
+
+
+
+
+  <!-- BEGIN sponsors_show_time -->
+<div class="wrap_sponsors_show_time bgc-0002">
+
+<div class="sponsors_show_time">
+
+  <div class="sponsors_show_time_item_left">visit our sponsors</div>
+
+<div class="sponsors_show_time_item_center">
+  <span class="countdown_while_showing_sponsors">10</span>
+  <span id="btn_countdown_start"> Start countdown </span>
+</div>
+
+  <div class="sponsors_show_time_item_right">become a sponsor</div>
+
+</div>
+
+</div>
+<!-- END sponsors_show_time -->
+
+
+
+
+<!-- BEGIN wrap_sponsors -->
+<div class="wrap_sponsors">
+  <img src="../../sponsor_images/apple_a_day_coop.png">
+  <img src="../../sponsor_images/apple_a_day_coop.png">
+  <img src="../../sponsor_images/apple_a_day_coop.png">
+  <img src="../../sponsor_images/apple_a_day_coop.png">
+  <img src="../../sponsor_images/apple_a_day_coop.png">
+  <img src="../../sponsor_images/apple_a_day_coop.png">
+  <img src="../../sponsor_images/apple_a_day_coop.png">
+  <img src="../../sponsor_images/apple_a_day_coop.png">
+  <img src="../../sponsor_images/apple_a_day_coop.png">
+  <img src="../../sponsor_images/apple_a_day_coop.png">
+</div>
+<!-- END wrap_sponsors -->
+
+
+
+
+
+
+
+
+
 <!-- BEGIN wrap_bot -->
 <div class="wrap_bot bgc-0002">
   <!-- BEGIN made_with_love -->
@@ -739,15 +863,12 @@ a.bf_links:focus {
 
 <script>
 ///////////////////////////////////////////////////
-/// BEGIN JS for posting pages  ///////
+/// BEGIN JS for edit page  ///////
 ///////////////////////////////////////////////////
-
-// fade in the body
 $(document).ready(function() {
   ///////////////////////////////////////////////////
-  /// BEGIN countdown_loading_addthis_options ///////
+  /// BEGIN countdown_while_showing_sponsors ///////
   ///////////////////////////////////////////////////
-
 var timer1,
   clock = 10;
 $(startup);
@@ -756,13 +877,13 @@ function startup() {
 }
 function start() {
   clock = 10;
-  $(".countdown_loading_addthis_options").html("" + clock + "");
+  $(".countdown_while_showing_sponsors").html("" + clock + "");
   timer1 = setInterval(countdown, 1000);
   $("#btnstart").prop("disabled", true);
 }
 function countdown() {
   clock -= 1;
-  $(".countdown_loading_addthis_options").html("" + clock + "");
+  $(".countdown_while_showing_sponsors").html("" + clock + "");
 
   if (clock == 0) {
     clearInterval(timer1);
@@ -770,162 +891,17 @@ function countdown() {
   }
 }
 
+ // setTimeout(function() {
+ //   $(".wrap_sponsors_show_time").hide("slow");
+ //   $(".wrap_sponsors").hide("slow");
+ // }, 11000);
   ///////////////////////////////////////////////////
-  /// BEGIN countdown_loading_addthis_options ///////
+  /// END countdown_while_showing_sponsors ///////
   ///////////////////////////////////////////////////
-
-  // BEGIN options toggle
-  $(".options_bar").on("click", ".option_menu", function(e) {
-    $(
-      ".show_sharing_options, .show_sending_options, .show_saving_options"
-    ).hide("slow");
-    $(".show_menu_options").slideToggle("slow");
-  });
-
-  $(".options_bar").on("click", ".option_share", function(e) {
-    $(
-      ".show_menu_options, .show_sending_options, .show_saving_options"
-    ).hide("slow");
-    $(".show_sharing_options").slideToggle("slow");
-  });
-
-  $(".options_bar").on("click", ".option_send", function(e) {
-    $(
-      ".show_menu_options, .show_sharing_options, .show_saving_options"
-    ).hide("slow");
-    $(".show_sending_options").slideToggle("slow");
-  });
-
-  $(".options_bar").on("click", ".option_save", function(e) {
-    $(
-      ".show_menu_options, .show_sharing_options, .show_sending_options"
-    ).hide("slow");
-    $(".show_saving_options").slideToggle("slow");
-  });
-
-  $(".options_bar").on("click", ".option_link", function(e) {
-    $(
-      ".show_menu_options, .show_sharing_options, .show_sending_options, .show_saving_options"
-    ).hide("slow");
-  });
-
-  $(".options_bar").on("click", ".option_print", function(e) {
-    $(
-      ".show_menu_options, .show_sharing_options, .show_sending_options, .show_saving_options"
-    ).hide("slow");
-  });
-
-  // click anywhere else to exit any options
-  $(".wrap").on("click", ".wrap_top, .wrap_bot, .wrap_image_sharing, .wrap_ctr", function(e) {
-    $(
-      ".show_menu_options, .show_sharing_options, .show_sending_options, .show_saving_options"
-    ).hide("slow");
-  });
-
-  // END options toggle
-
-  // BEGIN hack addthis link and print
-  function myFunction() {
-    $(".addthis_inline_share_toolbox_izpd")
-      .find("a.at-icon-wrapper.at-share-btn.at-svc-link")
-      .css("margin", "0");
-    $(".addthis_inline_share_toolbox_izpd")
-      .find("a.at-icon-wrapper.at-share-btn.at-svc-link")
-      .css("background", "none");
-    $(".addthis_inline_share_toolbox_izpd")
-      .find(".at-label")
-      .css("height", "44px");
-    $(".addthis_inline_share_toolbox_izpd")
-      .find(".at-label")
-      .css("line-height", "44px");
-    $(".addthis_inline_share_toolbox_izpd")
-      .find(".at-label")
-      .css("font-size", "20px");
-    $(".addthis_inline_share_toolbox_izpd")
-      .find(".at-label")
-      .css("color", "#D5AD6D").css("font-family", "'PT_Sans-Narrow-Web-Regular', sans-serif");
-    $(".addthis_inline_share_toolbox_izpd")
-      .find(".at-label")
-      .css("margin", "0");
-    $(".addthis_inline_share_toolbox_izpd")
-      .find(".at-label")
-      .css("font-family", "PT_Sans-Narrow-Web-Regular");
-    $(".addthis_inline_share_toolbox_izpd")
-      .find(".at-label")
-      .css("background", "none");
-    $(".addthis_inline_share_toolbox_izpd")
-      .find("span.at-icon-wrapper")
-      .remove();
-    $(".addthis_inline_share_toolbox_izpd")
-      .find(".at-label")
-      .text("copy");
-
-    $(".addthis_inline_share_toolbox_wnl0")
-      .find("a.at-icon-wrapper.at-share-btn.at-svc-printfriendly")
-      .css("margin", "0");
-    $(".addthis_inline_share_toolbox_wnl0")
-      .find("a.at-icon-wrapper.at-share-btn.at-svc-printfriendly")
-      .css("background", "none");
-    $(".addthis_inline_share_toolbox_wnl0")
-      .find(".at-label")
-      .css("height", "44px");
-    $(".addthis_inline_share_toolbox_wnl0")
-      .find(".at-label")
-      .css("line-height", "44px");
-    $(".addthis_inline_share_toolbox_wnl0")
-      .find(".at-label")
-      .css("font-size", "20px");
-    $(".addthis_inline_share_toolbox_wnl0")
-      .find(".at-label")
-      .css("color", "#D5AD6D").css("font-family", "'PT Sans Narrow', sans-serif");
-    $(".addthis_inline_share_toolbox_wnl0")
-      .find(".at-label")
-      .css("margin", "0");
-    $(".addthis_inline_share_toolbox_wnl0")
-      .find(".at-label")
-      .css("font-family", "PT_Sans-Narrow-Web-Regular");
-    $(".addthis_inline_share_toolbox_wnl0")
-      .find(".at-label")
-      .css("background", "none");
-    $(".addthis_inline_share_toolbox_wnl0")
-      .find("span.at-icon-wrapper")
-      .remove();
-    $(".addthis_inline_share_toolbox_wnl0")
-      .find(".at-label")
-      .text("print");
-
-    var divs = $("div");
-    $(".addthis_inline_share_toolbox_izpd")
-      .find(divs)
-      .removeClass("at-share-tbx-element");
-    $(".addthis_inline_share_toolbox_wnl0")
-      .find(divs)
-      .removeClass("at-share-tbx-element");
-
-      $("svg.at-icon").css("width", "50px").css("height", "50px").css("line-height", "50px").css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))").css("filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))");
-
-
-
-
-  }
-
-  var stopWhenCompleted = setInterval(function() {
-    myFunction();
-  }, 100);
-
-  function give_it_time_do_it() {
-    if ($('.at-label:contains("print")').length > 0) {
-      clearInterval(stopWhenCompleted);
-      $(".wait_to_load_options").hide("slow");
-    }
-  }
-  setTimeout(give_it_time_do_it, 10000);
-  // END hack addthis link and print
-
 });
-
-
-
+///////////////////////////////////////////////////
+/// END JS for edit page  ///////
+///////////////////////////////////////////////////
 </script>
 
 
