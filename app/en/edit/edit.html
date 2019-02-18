@@ -146,11 +146,11 @@
 /* BEGIN css for edit */
 @font-face {
   font-family: "PT_Sans-Narrow-Web-Regular";
-  src: url(../fonts/PT_Sans-Narrow-Web-Regular.ttf) format("truetype");
+  src: url(../../../fonts/PT_Sans-Narrow-Web-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Jura-Regular";
-  src: url(../fonts/Jura-Regular.ttf) format("truetype");
+  src: url(../../../fonts/Jura-Regular.ttf) format("truetype");
 }
 html,
 body {
@@ -662,24 +662,67 @@ a.bf_links:focus {
 }
 /* END sponsors show time*/
 
-
-.wrap_sponsors {
+/* BEGIN wrap sponsors */
+.wrap_sponsor_ads {
     position: absolute;
-    top: calc(44px + 4px + 44px + 4px);
-    width: 100%;
-    height: calc(100% - 44px - 4px - 44px - 44px - 4px);
-    margin: 0 auto;
-    text-align: center;
+    display: block;
+    top: calc(4px + 44px + 44px);
     left: 0;
     right: 0;
-    background: purple;
-    z-index: 10;
+    margin: 0 auto;
+    text-align: center;
+    width: calc(100% - 8px);
+    height: calc(100% - 4px - 44px - 44px - 44px - 4px);
+    background: black;
+    overflow: auto;
 }
-.wrap_sponsors > img {
-  width: calc(100vw - 8px);
-  min-width: 312px;
-  max-width: 600px;
+.sponsor_ads {
+display: inline-block;
+         text-align: center;
+         font-size: 0.1px;
+    background: black;
 }
+.sponsor_ads > .sponsor_item {
+  display: inline-block;
+	margin: 2px;
+  text-align: center;
+	width: calc(312px - 4px);
+	background-color: #111111;
+}
+.sponsor_ads:after {
+         content: '';
+         width: 100%;
+        /* Ensures there are at least 2 lines of text, so justification works */
+         display: inline-block;
+}
+.sponsor_item_image {
+  display: table-cell;
+  vertical-align: middle;
+	float: left;
+	height: 88px;
+	width: 88px;
+	text-align: center;
+  background: black;
+}
+.sponsor_item_image img {
+  display: table-cell;
+  vertical-align: middle;
+  width: 88px;
+  height: 88px;
+  min-width: 88px;
+max-width: 88px;
+}
+.sponsor_item_desc {
+    font-size: 18px;
+    color: orange;
+    text-align: left;
+    padding-left: 10px;
+    height: 88px;
+    line-height: 19px;
+    display: table-cell;
+    vertical-align: middle;
+}
+/* END wrap sponsors */
 
 
 /* END css for edit page */
@@ -764,7 +807,7 @@ a.bf_links:focus {
     <!-- BEGIN wrap_image_sharing -->
     <div class="wrap_image_sharing">
     <div>
-      <img src="../posts/Deuteronomy-6-4.png">
+      <img src="../posts/jasper/Deuteronomy-6-4.png">
     </div>
     </div>
     <!-- END wrap_image_sharing -->
@@ -797,7 +840,7 @@ a.bf_links:focus {
 
 <div class="sponsors_show_time">
 
-  <div class="sponsors_show_time_item_left">visit our sponsors</div>
+  <div class="sponsors_show_time_item_left">browse sponsors</div>
 
 <div class="sponsors_show_time_item_center">
   <span class="countdown_while_showing_sponsors">10</span>
@@ -815,17 +858,36 @@ a.bf_links:focus {
 
 
 <!-- BEGIN wrap_sponsors -->
-<div class="wrap_sponsors">
-  <img src="../../sponsor_images/apple_a_day_coop.png">
-  <img src="../../sponsor_images/apple_a_day_coop.png">
-  <img src="../../sponsor_images/apple_a_day_coop.png">
-  <img src="../../sponsor_images/apple_a_day_coop.png">
-  <img src="../../sponsor_images/apple_a_day_coop.png">
-  <img src="../../sponsor_images/apple_a_day_coop.png">
-  <img src="../../sponsor_images/apple_a_day_coop.png">
-  <img src="../../sponsor_images/apple_a_day_coop.png">
-  <img src="../../sponsor_images/apple_a_day_coop.png">
-  <img src="../../sponsor_images/apple_a_day_coop.png">
+<div class="wrap_sponsor_ads">
+  <div class="sponsor_ads">
+
+    <div class="sponsor_item">
+      <div class="sponsor_item_image"><img src="../../../sponsor_images/apple_a_day_coop.png"></div>
+      <div class="sponsor_item_desc">
+        Apple A Day Co-Op
+        <br>
+        www.appleadayco-op.com
+        <br>
+        318-464-2796
+        <br>
+        appleadaycoop@gmail.com
+      </div>
+    </div>
+
+    <div class="sponsor_item">
+      <div class="sponsor_item_image"><img src="../../../sponsor_images/Jan.jpg"></div>
+      <div class="sponsor_item_desc">
+        Jan Deborah Imperato Realtor
+        <br>
+        www.PalmBeachVillas.net
+        <br>
+        561-289-8634
+        <br>
+        PalmBeachLV@gmail.com
+      </div>
+    </div>
+
+  </div>
 </div>
 <!-- END wrap_sponsors -->
 
@@ -891,13 +953,28 @@ function countdown() {
   }
 }
 
- // setTimeout(function() {
- //   $(".wrap_sponsors_show_time").hide("slow");
- //   $(".wrap_sponsors").hide("slow");
- // }, 11000);
+  setTimeout(function() {
+    $(".wrap_sponsors_show_time").hide("slow");
+    $(".wrap_sponsor_ads").hide("slow");
+  }, 11000);
   ///////////////////////////////////////////////////
   /// END countdown_while_showing_sponsors ///////
   ///////////////////////////////////////////////////
+
+  ///////////////////////////////////////////////////
+  /// BEGIN random order for sponsors ///////
+  ///////////////////////////////////////////////////
+  var random_sponsor_order = $(".sponsor_item");
+  for(var i = 0; i < random_sponsor_order.length; i++){
+      var target = Math.floor(Math.random() * random_sponsor_order.length -1) + 1;
+      var target2 = Math.floor(Math.random() * random_sponsor_order.length -1) +1;
+      random_sponsor_order.eq(target).before(random_sponsor_order.eq(target2));
+  }
+  ///////////////////////////////////////////////////
+  /// END random order for sponsors ///////
+  ///////////////////////////////////////////////////
+
+
 });
 ///////////////////////////////////////////////////
 /// END JS for edit page  ///////
