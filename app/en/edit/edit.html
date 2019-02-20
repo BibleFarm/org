@@ -120,6 +120,8 @@
 
 
 
+  <!-- perfect scrollbar -->
+  <link href="../../../dependencies/_o_v_0_6_14_perfect-scrollbar.min.css" rel="stylesheet" type="text/css">
 
 
 
@@ -285,6 +287,7 @@ a:focus {
 }
 .wrap_image_sharing {
     position: absolute;
+    display: none;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -381,10 +384,19 @@ a.bf_links:focus {
   color: #dac4a2;
   text-decoration: none;
 }
+.link_hover_styling {
+    color: #ae9c80;
+    cursor: pointer;
+    text-shadow: 2px 2px 1px #000000;
+}
+.link_hover_styling:hover {
+    color: #DAC4A2;
+}
 
 /* BEGIN edit background color picker */
 .wrap_edit_background_chooser {
   position: absolute;
+  display: none;
     top: calc(44px + 0px);
     width: 100%;
     height: 186px;
@@ -410,6 +422,13 @@ a.bf_links:focus {
     height: 44px;
     width: calc(100% * (1/4) - 2px);
     line-height: 44px;
+    font-size: 16px;
+    color: #d5ad6d;
+text-align: center;
+}
+.color_picker_item:hover {
+  color: #dac4a2;
+  text-decoration: none;
 }
 /* BEGIN edit background color picker */
 
@@ -602,6 +621,7 @@ a.bf_links:focus {
 }
 .app_bg_color_picker_go_bottom {
   position: absolute;
+  display: none;
   width: 100%;
   margin: 0 auto;
   bottom: calc(44px + 0px);
@@ -612,6 +632,7 @@ a.bf_links:focus {
 /* BEGIN sponsors show time*/
 .wrap_sponsors_show_time {
     position: absolute;
+    display: none;
     top: calc(44px + 4px);
     width: calc(100% - 4px);
     left: 0;
@@ -619,6 +640,7 @@ a.bf_links:focus {
     margin: 0 auto;
     height: 44px;
     z-index: 10;
+    max-width: 312px;
 }
 .sponsors_show_time {
     width: 100%;
@@ -662,16 +684,73 @@ a.bf_links:focus {
 }
 /* END sponsors show time*/
 
+/* BEGIN sponsors meet_the_team*/
+.wrap_sponsors_meet_the_team {
+    position: absolute;
+    display: none;
+    top: calc(44px + 4px);
+    width: calc(100% - 4px);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 44px;
+    z-index: 10;
+    max-width: 312px;
+}
+.sponsors_meet_the_team {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 0.1px;
+    /* IE 9 & 10 don't like font-size: 0;
+     */
+}
+.sponsors_meet_the_team > .sponsors_meet_the_team_item_left {
+  height: 44px;
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 44px;
+  width: calc(50% - 16px);
+}
+.sponsors_meet_the_team > .sponsors_meet_the_team_item_center {
+  height: 44px;
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 44px;
+  width: 30px;
+}
+.sponsors_meet_the_team > .sponsors_meet_the_team_item_right {
+  height: 44px;
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 44px;
+  width: calc(50% - 16px);
+}
+.sponsors_meet_the_team:after {
+    content: '';
+    width: 100%;
+   /* Ensures there are at least 2 lines of text, so justification works */
+    display: inline-block;
+}
+/* END sponsors meet_the_team*/
+
+
 /* BEGIN wrap sponsors */
 .wrap_sponsor_ads {
     position: absolute;
-    display: block;
+    display: none;
     top: calc(4px + 44px + 44px);
     left: 0;
     right: 0;
     margin: 0 auto;
     text-align: center;
     width: calc(100% - 8px);
+    max-width: 312px;
     height: calc(100% - 4px - 44px - 44px - 44px - 4px);
     background: black;
     overflow: auto;
@@ -715,7 +794,8 @@ max-width: 88px;
 .sponsor_item_desc {
     font-size: 18px;
     text-align: left;
-    padding-left: 10px;
+    padding-left: 16px;
+    width: calc(308px - 88px - 1px);
     height: 88px;
     line-height: 19px;
     display: table-cell;
@@ -762,38 +842,22 @@ max-width: 88px;
   <div class="wrap_edit_background_chooser">
     <div class="edit_background_chooser">
 
-        <div id="" class="color_picker_item bgc-0001">
-        </div>
-        <div id="" class="color_picker_item bgc-0002">
-        </div>
-        <div id="" class="color_picker_item bgc-0003">
-        </div>
-        <div id="" class="color_picker_item bgc-0004">
-        </div>
-        <div id="" class="color_picker_item bgc-0005">
-        </div>
-        <div id="" class="color_picker_item bgc-0006">
-        </div>
-        <div id="" class="color_picker_item bgc-0007">
-        </div>
-        <div id="" class="color_picker_item bgc-0008">
-        </div>
-        <div id="" class="color_picker_item bgc-0009">
-        </div>
-        <div id="" class="color_picker_item bgc-0010">
-        </div>
-        <div id="" class="color_picker_item bgc-0011">
-        </div>
-        <div id="" class="color_picker_item bgc-0012">
-        </div>
-        <div id="" class="color_picker_item bgc-0013">
-        </div>
-        <div id="" class="color_picker_item bgc-0014">
-        </div>
-        <div id="" class="color_picker_item bgc-0015">
-        </div>
-        <div id="" class="color_picker_item bgc-0016">
-        </div>
+        <div id="" class="color_picker_item bgc-0001">blackstone</div>
+        <div id="" class="color_picker_item bgc-0002">graystone</div>
+        <div id="" class="color_picker_item bgc-0003">jasper</div>
+        <div id="" class="color_picker_item bgc-0004">sardonyx</div>
+        <div id="" class="color_picker_item bgc-0005">jacinth</div>
+        <div id="" class="color_picker_item bgc-0006">sardius</div>
+        <div id="" class="color_picker_item bgc-0007">topaz</div>
+        <div id="" class="color_picker_item bgc-0008">emerald</div>
+        <div id="" class="color_picker_item bgc-0009">chrysolite</div>
+        <div id="" class="color_picker_item bgc-0010">beryl</div>
+        <div id="" class="color_picker_item bgc-0011">chrysoprasus</div>
+        <div id="" class="color_picker_item bgc-0012">sapphire</div>
+        <div id="" class="color_picker_item bgc-0013">purple</div>
+        <div id="" class="color_picker_item bgc-0014">chalcedony</div>
+        <div id="" class="color_picker_item bgc-0015">amethyst</div>
+        <div id="" class="color_picker_item bgc-0016">wine</div>
       </div>
       <!-- END edit_background_chooser -->
     </div>
@@ -822,6 +886,11 @@ max-width: 88px;
 
 
 
+
+
+
+
+
     <!-- BEGIN wrap_ctr -->
     <div class="wrap_ctr bgc-0002">
 
@@ -839,19 +908,37 @@ max-width: 88px;
 
 <div class="sponsors_show_time">
 
-  <div class="sponsors_show_time_item_left">meet the team</div>
+  <div id="meet_the_team" class="sponsors_show_time_item_left link_hover_styling">meet the team</div>
 
 <div class="sponsors_show_time_item_center">
   <span class="countdown_while_showing_sponsors">10</span>
   <span id="btn_countdown_start"> Start countdown </span>
 </div>
 
-<div class="sponsors_show_time_item_right">be a part now</div>
+<div id="be_a_part_now" class="sponsors_show_time_item_right link_hover_styling">be a part today</div>
 
 </div>
 
 </div>
 <!-- END sponsors_show_time -->
+
+
+
+<!-- BEGIN sponsors_meet_the_team -->
+<div class="wrap_sponsors_meet_the_team bgc-0002">
+
+<div class="sponsors_meet_the_team">
+
+<div id="meet_the_team" class="sponsors_meet_the_team_item_left">the team</div>
+
+<div id="meet_the_team_close" class="sponsors_meet_the_team_item_center link_hover_styling">X</div>
+
+<div id="be_a_part_now" class="sponsors_meet_the_team_item_right bf_links">be a part</div>
+
+</div>
+
+</div>
+<!-- END sponsors_meet_the_team -->
 
 
 
@@ -864,7 +951,7 @@ max-width: 88px;
       <div class="sponsor_item_image">
         <img src="../../../sponsor_images/Davis_Knight.png">
       </div>
-      <div class="sponsor_item_desc">
+      <div class="sponsor_item_desc bgc-0002">
         Davis Knight
         <br>
         Healthy Products Specialist
@@ -881,7 +968,7 @@ max-width: 88px;
       <div class="sponsor_item_image">
         <img src="../../../sponsor_images/Jan_Deborah_Imperato.png">
       </div>
-      <div class="sponsor_item_desc">
+      <div class="sponsor_item_desc bgc-0002">
         Jan Deborah Imperato
         <br>
         Luxury & Waterfront Realtor
@@ -896,7 +983,7 @@ max-width: 88px;
 
     <div class="sponsor_item">
       <div class="sponsor_item_image"><img src="../../../sponsor_images/Lorenzo_Fragala.png"></div>
-      <div class="sponsor_item_desc">
+      <div class="sponsor_item_desc bgc-0002">
         Lorenzo Fragalá
         <br>
         Real Estate Developer
@@ -911,7 +998,7 @@ max-width: 88px;
 
     <div class="sponsor_item">
       <div class="sponsor_item_image"><img src="../../../sponsor_images/Mindy_Goldstein.png"></div>
-      <div class="sponsor_item_desc">
+      <div class="sponsor_item_desc bgc-0002">
         Mindy Goldstein
         <br>
         Registered Nurse
@@ -928,10 +1015,10 @@ max-width: 88px;
       <div class="sponsor_item_image">
         <img src="../../../sponsor_images/Mike_Newhook.png">
       </div>
-      <div class="sponsor_item_desc">
+      <div class="sponsor_item_desc bgc-0002">
         Mike Newhook
         <br>
-        Aquaponic Technology Developer
+        Organic Aquaponic Developer
         <br>
         Highland Aquaponics
         <br>
@@ -945,7 +1032,7 @@ max-width: 88px;
       <div class="sponsor_item_image">
         <img src="../../../sponsor_images/Angela_Lucambio.png">
       </div>
-      <div class="sponsor_item_desc">
+      <div class="sponsor_item_desc bgc-0002">
         Angela Lucambio
         <br>
         Registered Nurse
@@ -962,7 +1049,7 @@ max-width: 88px;
       <div class="sponsor_item_image">
         <img src="../../../sponsor_images/Ignacio_Di_Paola.png">
       </div>
-      <div class="sponsor_item_desc">
+      <div class="sponsor_item_desc bgc-0002">
         Ignacio Di Paola
         <br>
         Marketing Professional
@@ -971,6 +1058,57 @@ max-width: 88px;
         <br>
         <a href="http://nolines.com.ar/" target="_blank" class="bf_links">
         nolines.com.ar
+      </a>
+      </div>
+    </div>
+
+    <div class="sponsor_item">
+      <div class="sponsor_item_image">
+        <img src="../../../sponsor_images/Dennis_Hamilton.png">
+      </div>
+      <div class="sponsor_item_desc bgc-0002">
+        Dennis Hamilton
+        <br>
+        Organic Hydroponics Developer
+        <br>
+        Greenfund, LLC
+        <br>
+        <a href="https://greenfundsolutions.com/" target="_blank" class="bf_links">
+        greenfundsolutions.com
+      </a>
+      </div>
+    </div>
+
+    <div class="sponsor_item">
+      <div class="sponsor_item_image">
+        <img src="../../../sponsor_images/Alex_Smuglovsky.png">
+      </div>
+      <div class="sponsor_item_desc bgc-0002">
+        Alex Smuglovsky
+        <br>
+        Field Visitations Volunteer
+        <br>
+        BibleFarm.org
+        <br>
+        <a href="https://biblefarm.org/" target="_blank" class="bf_links">
+        biblefarm.org
+      </a>
+      </div>
+    </div>
+
+    <div class="sponsor_item">
+      <div class="sponsor_item_image">
+        <img src="../../../sponsor_images/Jose_Eugenio_Martinez.png">
+      </div>
+      <div class="sponsor_item_desc bgc-0002">
+        José Eugenio Martínez
+        <br>
+        Field Visitations Volunteer
+        <br>
+        BibleFarm.org
+        <br>
+        <a href="https://biblefarm.org/" target="_blank" class="bf_links">
+        biblefarm.org
       </a>
       </div>
     </div>
@@ -1010,12 +1148,21 @@ max-width: 88px;
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <!-- END post_creation javascript dependencies -->
 
+<!-- perfect scrollbar js -->
+<script type="text/javascript" src="../../../dependencies/_o_v_0_6_14_perfect-scrollbar.jquery.min.js"></script>
+
 
 <script>
 ///////////////////////////////////////////////////
 /// BEGIN JS for edit page  ///////
 ///////////////////////////////////////////////////
 $(document).ready(function() {
+
+// init show slow
+$(".wrap_sponsors_show_time").show("slow");
+$(".wrap_sponsor_ads").show("slow");
+
+
   ///////////////////////////////////////////////////
   /// BEGIN countdown_while_showing_sponsors ///////
   ///////////////////////////////////////////////////
@@ -1044,6 +1191,9 @@ function countdown() {
   setTimeout(function() {
     $(".wrap_sponsors_show_time").hide("slow");
     $(".wrap_sponsor_ads").hide("slow");
+    $(".wrap_edit_background_chooser").show("slow");
+    $(".wrap_image_sharing").show("slow");
+    $(".app_bg_color_picker_go_bottom").show("slow");
   }, 11000);
   ///////////////////////////////////////////////////
   /// END countdown_while_showing_sponsors ///////
@@ -1061,6 +1211,76 @@ function countdown() {
   ///////////////////////////////////////////////////
   /// END random order for sponsors ///////
   ///////////////////////////////////////////////////
+
+  ///////////////////////////////////////////////////
+  /// BEGIN meet the team ///////
+  ///////////////////////////////////////////////////
+  $("#meet_the_team").on('click', function(e) {
+    $(".wrap_edit_background_chooser").hide("slow");
+    $(".wrap_image_sharing").hide("slow");
+    $(".wrap_sponsors_meet_the_team").show("slow");
+    $(".wrap_sponsor_ads").show("slow");
+  });
+
+  $("#meet_the_team_close").on('click', function(e) {
+    $(".wrap_sponsors_meet_the_team").hide("slow");
+    $(".wrap_sponsor_ads").hide("slow");
+    $(".wrap_edit_background_chooser").show("slow");
+    $(".wrap_image_sharing").show("slow");
+  });
+  ///////////////////////////////////////////////////
+  /// END meet the team ///////
+  ///////////////////////////////////////////////////
+
+  ///////////////////////////////////////////////////
+  /// BEGIN ve a part now ///////
+  ///////////////////////////////////////////////////
+  $("#be_a_part_now").on('click', function(e) {
+  $("").show("slow");
+  });
+
+  $("#be_a_part_now_close").on('click', function(e) {
+  $("").hide("slow");
+  });
+  ///////////////////////////////////////////////////
+  /// END ve a part now ///////
+  ///////////////////////////////////////////////////
+
+  ///////////////////////////////////////////////////
+  /// BEGIN wrap_sponsor_ads perfectScrollbar ///////
+  ///////////////////////////////////////////////////
+  $('.wrap_sponsor_ads').perfectScrollbar({
+    wheelPropagation: true,
+    scrollXMarginOffset: 2
+  });
+  ///////////////////////////////////////////////////
+  /// END wrap_sponsor_ads perfectScrollbar ///////
+  ///////////////////////////////////////////////////
+
+  ///////////////////////////////////////////////////
+  /// BEGIN edit colorpicker change image url ///////
+  ///////////////////////////////////////////////////
+  $(".edit_background_chooser > .color_picker_item").on('click', function(e) {
+var bg_chosen_to_share = $(this).text();
+  console.log("picked: " + bg_chosen_to_share);
+$(".wrap_image_sharing div img").attr("src", "../posts/" + bg_chosen_to_share + "/Deuteronomy-6-4.png");
+$("#edited_now_redirect_to_sharing_page").attr("href", "../posts/" + bg_chosen_to_share + "/Deuteronomy-6-4.html");
+  });
+  ///////////////////////////////////////////////////
+  /// END edit colorpicker change image url ///////
+  ///////////////////////////////////////////////////
+
+  ///////////////////////////////////////////////////
+  /// BEGIN redirect to sharing page ///////
+  ///////////////////////////////////////////////////
+
+  ///////////////////////////////////////////////////
+  /// END redirect to sharing page ///////
+  ///////////////////////////////////////////////////
+
+
+
+
 
 
 });
