@@ -192,15 +192,22 @@ text-shadow: 2px 2px 1px #000000;
         z-index: -2;
         position: absolute;
         }
-  .title_verse_sharing, .made_with_love {
-  font-family: "Jura-Regular", sans-serif;
-  color: #d5ad6d;
-  text-shadow: 2px 2px 1px #000000;
-  text-align: center;
-  line-height: 44px;
-  cursor: pointer;
-  }
-  .title_verse_sharing:hover, .made_with_love:hover {
+        .title_verse_sharing {
+        font-family: "Jura-Regular", sans-serif;
+        color: #ae9c80;
+        text-shadow: 2px 2px 1px #000000;
+        text-align: center;
+        line-height: 44px;
+        }
+        .made_with_love {
+        font-family: "Jura-Regular", sans-serif;
+        color: #d5ad6d;
+        text-shadow: 2px 2px 1px #000000;
+        text-align: center;
+        line-height: 44px;
+        cursor: pointer;
+        }
+  .made_with_love:hover {
   color: #dac4a2;
   text-decoration: none;
 }
@@ -894,7 +901,7 @@ max-width: 88px;
 
   <div id="" class="done_editing_redirect_to_next_item_center">
     <a id="be_a_part_now" href="https://www.biblefarm.org#donate" class="bf_links">
-      be a pert now
+      be a part now
     </a>
 </div>
 
@@ -953,7 +960,7 @@ max-width: 88px;
 
 <div id="" class="sponsors_show_time_item_right">
   <a id="be_a_part_now" href="https://www.biblefarm.org#donate" class="bf_links">
-    be a pert now
+    be a part now
   </a>
 </div>
 
@@ -1213,14 +1220,14 @@ function countdown() {
   }
 }
 
-//  setTimeout(function() {
-//    $(".wrap_sponsors_show_time").hide("slow");
-//    $(".wrap_sponsor_ads").hide("slow");
-//    $(".wrap_edit_background_chooser").show("slow");
-//    $(".wrap_image_sharing").show("slow");
-//    $(".wrap_done_editing_redirect_to_next").show("slow");
-//    $(".app_bg_color_picker_go_bottom").show("slow");
-//  }, 11000);
+  setTimeout(function() {
+    $(".wrap_sponsors_show_time").hide("slow");
+    $(".wrap_sponsor_ads").hide("slow");
+    $(".wrap_edit_background_chooser").show("slow");
+    $(".wrap_image_sharing").show("slow");
+    $(".wrap_done_editing_redirect_to_next").show("slow");
+    $(".app_bg_color_picker_go_bottom").show("slow");
+  }, 11000);
   ///////////////////////////////////////////////////
   /// END countdown_while_showing_sponsors ///////
   ///////////////////////////////////////////////////
