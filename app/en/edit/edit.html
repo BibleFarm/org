@@ -885,11 +885,20 @@ max-width: 88px;
 
   <div class="done_editing_redirect_to_next">
 
-  <div id="meet_the_team" class="done_editing_redirect_to_next_item_left">meet the team</div>
+  <div id="" class="done_editing_redirect_to_next_item_left">
+    <a id="meet_the_team" href="https://www.biblefarm.org" class="bf_links">
+      meet the team
+    </a>
 
-  <div id="meet_the_team_close" class="done_editing_redirect_to_next_item_center">be a part now</div>
+  </div>
 
-  <div id="be_a_part_now" class="done_editing_redirect_to_next_item_right">
+  <div id="" class="done_editing_redirect_to_next_item_center">
+    <a id="be_a_part_now" href="https://www.biblefarm.org#donate" class="bf_links">
+      be a pert now
+    </a>
+</div>
+
+  <div id="" class="done_editing_redirect_to_next_item_right">
     <a id="edited_now_redirect_to_sharing_page" href="https://www.biblefarm.org/app/en/posts/jasper/Deuteronomy-6-4.html" target="_blank" class="bf_links">
       next
     </a>
@@ -931,14 +940,22 @@ max-width: 88px;
 
 <div class="sponsors_show_time">
 
-  <div id="meet_the_team" class="sponsors_show_time_item_left">meet the team</div>
+  <div id="" class="sponsors_show_time_item_left">
+    <a id="meet_the_team" href="https://www.biblefarm.org" class="bf_links">
+      meet the team
+    </a>
+</div>
 
 <div class="sponsors_show_time_item_center">
   <span class="countdown_while_showing_sponsors">10</span>
   <span id="btn_countdown_start"> Start countdown </span>
 </div>
 
-<div id="be_a_part_now" class="sponsors_show_time_item_right">be a part now</div>
+<div id="" class="sponsors_show_time_item_right">
+  <a id="be_a_part_now" href="https://www.biblefarm.org#donate" class="bf_links">
+    be a pert now
+  </a>
+</div>
 
 </div>
 
@@ -1260,7 +1277,8 @@ function countdown() {
   ///////////////////////////////////////////////////
   $('.wrap_sponsor_ads').perfectScrollbar({
     wheelPropagation: true,
-    scrollXMarginOffset: 2
+    scrollXMarginOffset: 2,
+    suppressScrollX: true
   });
   ///////////////////////////////////////////////////
   /// END wrap_sponsor_ads perfectScrollbar ///////
