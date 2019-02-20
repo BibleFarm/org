@@ -287,18 +287,19 @@ a:focus {
 }
 .wrap_image_sharing {
     position: absolute;
+    max-width: 312px;
     display: none;
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: calc(186px + 44px + 0px);
+    top: calc(212px);
     text-align: center;
     z-index: -1;
 }
 img {
   width: calc(100vw - 8px);
   min-width: 312px;
-  max-width: 600px;
+  max-width: 312px;
 }
 .wrap_behind_image_space {
   position: absolute;
@@ -399,8 +400,8 @@ a.bf_links:focus {
   display: none;
     top: calc(44px + 0px);
     width: 100%;
+    max-width: 312px;
     height: 186px;
-    max-width: 600px;
     background: #241e00;
     margin: 0 auto;
     left: 0;
@@ -688,7 +689,7 @@ text-align: center;
 .wrap_sponsors_meet_the_team {
     position: absolute;
     display: none;
-    top: calc(44px + 4px);
+    top: calc(186px + 171px);
     width: calc(100% - 4px);
     left: 0;
     right: 0;
@@ -713,7 +714,7 @@ text-align: center;
   font-size: 20px;
   text-align: center;
   line-height: 44px;
-  width: calc(50% - 16px);
+  width: calc(40%);
 }
 .sponsors_meet_the_team > .sponsors_meet_the_team_item_center {
   height: 44px;
@@ -721,7 +722,7 @@ text-align: center;
   font-size: 20px;
   text-align: center;
   line-height: 44px;
-  width: 30px;
+  width: calc(42%);
 }
 .sponsors_meet_the_team > .sponsors_meet_the_team_item_right {
   height: 44px;
@@ -729,7 +730,7 @@ text-align: center;
   font-size: 20px;
   text-align: center;
   line-height: 44px;
-  width: calc(50% - 16px);
+  width: calc(18%);
 }
 .sponsors_meet_the_team:after {
     content: '';
@@ -885,6 +886,30 @@ max-width: 88px;
 
 
 
+  <!-- BEGIN sponsors_meet_the_team -->
+  <div class="wrap_sponsors_meet_the_team bgc-0002">
+
+  <div class="sponsors_meet_the_team">
+
+  <div id="meet_the_team" class="sponsors_meet_the_team_item_left">meet the team</div>
+
+  <div id="meet_the_team_close" class="sponsors_meet_the_team_item_center link_hover_styling">be a part</div>
+
+  <div id="be_a_part_now" class="sponsors_meet_the_team_item_right bf_links">next</div>
+
+  </div>
+
+  </div>
+  <!-- END sponsors_meet_the_team -->
+
+
+
+
+
+
+
+
+
 
 
 
@@ -924,21 +949,6 @@ max-width: 88px;
 
 
 
-<!-- BEGIN sponsors_meet_the_team -->
-<div class="wrap_sponsors_meet_the_team bgc-0002">
-
-<div class="sponsors_meet_the_team">
-
-<div id="meet_the_team" class="sponsors_meet_the_team_item_left">the team</div>
-
-<div id="meet_the_team_close" class="sponsors_meet_the_team_item_center link_hover_styling">X</div>
-
-<div id="be_a_part_now" class="sponsors_meet_the_team_item_right bf_links">be a part</div>
-
-</div>
-
-</div>
-<!-- END sponsors_meet_the_team -->
 
 
 
@@ -1193,6 +1203,7 @@ function countdown() {
     $(".wrap_sponsor_ads").hide("slow");
     $(".wrap_edit_background_chooser").show("slow");
     $(".wrap_image_sharing").show("slow");
+    $(".wrap_sponsors_meet_the_team").show("slow");
     $(".app_bg_color_picker_go_bottom").show("slow");
   }, 11000);
   ///////////////////////////////////////////////////
