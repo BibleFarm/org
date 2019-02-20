@@ -686,7 +686,7 @@ text-align: center;
 /* END sponsors show time*/
 
 /* BEGIN sponsors meet_the_team*/
-.wrap_sponsors_meet_the_team {
+.wrap_done_editing_redirect_to_next {
     position: absolute;
     display: none;
     top: calc(186px + 171px);
@@ -698,7 +698,7 @@ text-align: center;
     z-index: 10;
     max-width: 312px;
 }
-.sponsors_meet_the_team {
+.done_editing_redirect_to_next {
     width: 100%;
     height: 44px;
     line-height: 44px;
@@ -708,7 +708,7 @@ text-align: center;
     /* IE 9 & 10 don't like font-size: 0;
      */
 }
-.sponsors_meet_the_team > .sponsors_meet_the_team_item_left {
+.done_editing_redirect_to_next > .done_editing_redirect_to_next_item_left {
   height: 44px;
   display: inline-block;
   font-size: 20px;
@@ -716,7 +716,7 @@ text-align: center;
   line-height: 44px;
   width: calc(40%);
 }
-.sponsors_meet_the_team > .sponsors_meet_the_team_item_center {
+.done_editing_redirect_to_next > .done_editing_redirect_to_next_item_center {
   height: 44px;
   display: inline-block;
   font-size: 20px;
@@ -724,7 +724,7 @@ text-align: center;
   line-height: 44px;
   width: calc(42% - 1px);
 }
-.sponsors_meet_the_team > .sponsors_meet_the_team_item_right {
+.done_editing_redirect_to_next > .done_editing_redirect_to_next_item_right {
   height: 44px;
   display: inline-block;
   font-size: 20px;
@@ -732,7 +732,7 @@ text-align: center;
   line-height: 44px;
   width: calc(18%);
 }
-.sponsors_meet_the_team:after {
+.done_editing_redirect_to_next:after {
     content: '';
     width: 100%;
    /* Ensures there are at least 2 lines of text, so justification works */
@@ -766,7 +766,7 @@ display: inline-block;
   display: inline-block;
 	margin: 2px;
   text-align: center;
-	width: calc(312px - 4px);
+	width: 304px;
 	background-color: #111111;
 }
 .sponsor_ads:after {
@@ -831,7 +831,7 @@ max-width: 88px;
   <div class="wrap_top bgc-0002">
     <!-- BEGIN title_verse_sharing -->
     <span class="title_verse_sharing">
-      Edit Background Colour
+      edit background colour
     </span>
     <!-- END title_verse_sharing -->
   </div>
@@ -878,29 +878,27 @@ max-width: 88px;
 
 
 
-    <div class="std_item_sgl_44_center link_hover_styling app_bg_color_picker_go_bottom">
-      <a id="edited_now_redirect_to_sharing_page" href="https://www.biblefarm.org" target="_blank" class="bf_links">
-        let's share it now
-      </a>
+
+
+  <!-- BEGIN done_editing_redirect_to_next -->
+  <div class="wrap_done_editing_redirect_to_next bgc-0002">
+
+  <div class="done_editing_redirect_to_next">
+
+  <div id="meet_the_team" class="done_editing_redirect_to_next_item_left">meet the team</div>
+
+  <div id="meet_the_team_close" class="done_editing_redirect_to_next_item_center">be a part now</div>
+
+  <div id="be_a_part_now" class="done_editing_redirect_to_next_item_right">
+    <a id="edited_now_redirect_to_sharing_page" href="https://www.biblefarm.org/app/en/posts/jasper/Deuteronomy-6-4.html" target="_blank" class="bf_links">
+      next
+    </a>
   </div>
-
-
-
-  <!-- BEGIN sponsors_meet_the_team -->
-  <div class="wrap_sponsors_meet_the_team bgc-0002">
-
-  <div class="sponsors_meet_the_team">
-
-  <div id="meet_the_team" class="sponsors_meet_the_team_item_left">meet the team</div>
-
-  <div id="meet_the_team_close" class="sponsors_meet_the_team_item_center">be a part today</div>
-
-  <div id="be_a_part_now" class="sponsors_meet_the_team_item_right">next</div>
 
   </div>
 
   </div>
-  <!-- END sponsors_meet_the_team -->
+  <!-- END done_editing_redirect_to_next -->
 
 
 
@@ -933,14 +931,14 @@ max-width: 88px;
 
 <div class="sponsors_show_time">
 
-  <div id="meet_the_team" class="sponsors_show_time_item_left link_hover_styling">meet the team</div>
+  <div id="meet_the_team" class="sponsors_show_time_item_left">meet the team</div>
 
 <div class="sponsors_show_time_item_center">
   <span class="countdown_while_showing_sponsors">10</span>
   <span id="btn_countdown_start"> Start countdown </span>
 </div>
 
-<div id="be_a_part_now" class="sponsors_show_time_item_right link_hover_styling">be a part today</div>
+<div id="be_a_part_now" class="sponsors_show_time_item_right">be a part now</div>
 
 </div>
 
@@ -1198,14 +1196,14 @@ function countdown() {
   }
 }
 
-  setTimeout(function() {
-    $(".wrap_sponsors_show_time").hide("slow");
-    $(".wrap_sponsor_ads").hide("slow");
-    $(".wrap_edit_background_chooser").show("slow");
-    $(".wrap_image_sharing").show("slow");
-    $(".wrap_sponsors_meet_the_team").show("slow");
-    $(".app_bg_color_picker_go_bottom").show("slow");
-  }, 11000);
+//  setTimeout(function() {
+//    $(".wrap_sponsors_show_time").hide("slow");
+//    $(".wrap_sponsor_ads").hide("slow");
+//    $(".wrap_edit_background_chooser").show("slow");
+//    $(".wrap_image_sharing").show("slow");
+//    $(".wrap_done_editing_redirect_to_next").show("slow");
+//    $(".app_bg_color_picker_go_bottom").show("slow");
+//  }, 11000);
   ///////////////////////////////////////////////////
   /// END countdown_while_showing_sponsors ///////
   ///////////////////////////////////////////////////
@@ -1229,12 +1227,12 @@ function countdown() {
   $("#meet_the_team").on('click', function(e) {
     $(".wrap_edit_background_chooser").hide("slow");
     $(".wrap_image_sharing").hide("slow");
-    $(".wrap_sponsors_meet_the_team").show("slow");
+    $(".wrap_done_editing_redirect_to_next").show("slow");
     $(".wrap_sponsor_ads").show("slow");
   });
 
   $("#meet_the_team_close").on('click', function(e) {
-    $(".wrap_sponsors_meet_the_team").hide("slow");
+    $(".wrap_done_editing_redirect_to_next").hide("slow");
     $(".wrap_sponsor_ads").hide("slow");
     $(".wrap_edit_background_chooser").show("slow");
     $(".wrap_image_sharing").show("slow");
