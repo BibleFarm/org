@@ -8771,6 +8771,7 @@ if($('#admin').css('display') !== 'none')
 {
   var welcome_user_with_name = $("body").find("#name").text();
   $("#logged_in_user_is_a_part").text("I'm part of biblefarm.org");
+  $("#edited_app_name").text(welcome_user_with_name);
   $(".app_wrap").find("p.msg1").text(welcome_user_with_name).show("slow", "linear");
 } else {
   $("#logged_in_user_is_a_part").text("be a part of biblefarm.org");
