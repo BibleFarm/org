@@ -748,18 +748,16 @@ text-align: center;
 /* END sponsors meet_the_team*/
 
 
-/* BEGIN wrap sponsors */
+/* BEGIN wrap_sponsor_ads */
 .wrap_sponsor_ads {
     position: absolute;
-    display: none;
-    top: calc(4px + 44px + 44px);
+    top: calc(44px + 44px + 4px);
     left: 0;
     right: 0;
     margin: 0 auto;
     text-align: center;
-    width: calc(100% - 8px);
-    max-width: 312px;
-    height: calc(100% - 4px - 44px - 44px - 44px - 4px);
+    max-width: 310px;
+    height: calc(100% - 44px - 44px - 4px - 44px);
     background: black;
     overflow: auto;
 }
@@ -770,11 +768,12 @@ display: inline-block;
     background: black;
 }
 .sponsor_ads > .sponsor_item {
-  display: inline-block;
-	margin: 2px;
-  text-align: center;
-	width: 304px;
-	background-color: #111111;
+    display: inline-block;
+    margin: 2px;
+    text-align: center;
+    width: 100%;
+    background-color: #111111;
+    max-width: calc(310px - 22px);
 }
 .sponsor_ads:after {
          content: '';
@@ -802,14 +801,13 @@ max-width: 88px;
 .sponsor_item_desc {
     font-size: 18px;
     text-align: left;
-    padding-left: 16px;
-    width: calc(308px - 88px - 1px);
+    padding-left: 12px;
     height: 88px;
     line-height: 19px;
     display: table-cell;
     vertical-align: middle;
 }
-/* END wrap sponsors */
+/* END wrap_sponsor_ads */
 
 
 /* END css for edit page */
@@ -893,7 +891,7 @@ max-width: 88px;
   <div class="done_editing_redirect_to_next">
 
   <div id="" class="done_editing_redirect_to_next_item_left">
-    <a id="meet_the_team" href="https://www.biblefarm.org" class="bf_links">
+    <a id="meet_the_team" href="https://www.biblefarm.org#intro" class="bf_links">
       meet the team
     </a>
 
@@ -942,13 +940,13 @@ max-width: 88px;
 
 
 
-  <!-- BEGIN sponsors_show_time -->
+  <!-- BEGIN wrap_sponsors_show_time -->
 <div class="wrap_sponsors_show_time bgc-0002">
 
 <div class="sponsors_show_time">
 
   <div id="" class="sponsors_show_time_item_left">
-    <a id="meet_the_team" href="https://www.biblefarm.org" class="bf_links">
+    <a id="meet_the_team" href="https://www.biblefarm.org#intro" class="bf_links">
       meet the team
     </a>
 </div>
@@ -967,7 +965,7 @@ max-width: 88px;
 </div>
 
 </div>
-<!-- END sponsors_show_time -->
+<!-- END wrap_sponsors_show_time -->
 
 
 
@@ -975,179 +973,179 @@ max-width: 88px;
 
 
 
-<!-- BEGIN wrap_sponsors -->
-<div class="wrap_sponsor_ads">
-  <div class="sponsor_ads">
+              <!-- BEGIN wrap_sponsor_ads -->
+              <div class="wrap_sponsor_ads">
+                <div class="sponsor_ads">
+                  <div class="sponsor_item">
+                    <div class="sponsor_item_image"><img src="../../../sponsor_images/Lorenzo_Fragala.png"></div>
+                    <div class="sponsor_item_desc">
+                      Lorenzo Fragalá
+                      <br>
+                      Real Estate Developer
+                      <br>
+                      Azzurra Development Corp
+                      <br>
+                      <a href="http://azzurracorp.com/" target="_blank" class="bf_links">
+                      azzurracorp.com
+                    </a>
+                    </div>
+                  </div>
 
-    <div class="sponsor_item">
-      <div class="sponsor_item_image">
-        <img src="../../../sponsor_images/Davis_Knight.png">
-      </div>
-      <div class="sponsor_item_desc bgc-0002">
-        Davis Knight
-        <br>
-        Healthy Products Specialist
-        <br>
-        Apple A Day Co-Op
-        <br>
-        <a href="https://appleadayco-op.com/" target="_blank" class="bf_links">
-        appleadayco-op.com
-      </a>
-      </div>
-    </div>
+                  <div class="sponsor_item">
+                    <div class="sponsor_item_image"><img src="../../../sponsor_images/Mindy_Goldstein.png"></div>
+                    <div class="sponsor_item_desc">
+                      Mindy Goldstein
+                      <br>
+                      Registered Nurse
+                      <br>
+                      Lee County Sheriff's Office
+                      <br>
+                      <a href="http://www.sheriffleefl.org/" target="_blank" class="bf_links">
+                      sheriffleefl.org
+                    </a>
+                    </div>
+                  </div>
 
-    <div class="sponsor_item">
-      <div class="sponsor_item_image">
-        <img src="../../../sponsor_images/Jan_Deborah_Imperato.png">
-      </div>
-      <div class="sponsor_item_desc bgc-0002">
-        Jan Deborah Imperato
-        <br>
-        Luxury & Waterfront Realtor
-        <br>
-        Palm Beach Villas Real Estate
-        <br>
-        <a href="https://www.palmbeachvillas.net/" target="_blank" class="bf_links">
-        palmbeachvillas.net
-      </a>
-      </div>
-    </div>
+                                    <div class="sponsor_item">
+                                      <div class="sponsor_item_image">
+                                        <img src="../../../sponsor_images/Davis_Knight.png">
+                                      </div>
+                                      <div class="sponsor_item_desc">
+                                        Davis Knight
+                                        <br>
+                                        Healthy Products Specialist
+                                        <br>
+                                        Apple A Day Co-Op
+                                        <br>
+                                        <a href="https://appleadayco-op.com/" target="_blank" class="bf_links">
+                                        appleadayco-op.com
+                                      </a>
+                                      </div>
+                                    </div>
 
-    <div class="sponsor_item">
-      <div class="sponsor_item_image"><img src="../../../sponsor_images/Lorenzo_Fragala.png"></div>
-      <div class="sponsor_item_desc bgc-0002">
-        Lorenzo Fragalá
-        <br>
-        Real Estate Developer
-        <br>
-        Azzurra Development Corp
-        <br>
-        <a href="http://azzurracorp.com/" target="_blank" class="bf_links">
-        azzurracorp.com
-      </a>
-      </div>
-    </div>
+                  <div class="sponsor_item">
+                    <div class="sponsor_item_image">
+                      <img src="../../../sponsor_images/Mike_Newhook.png">
+                    </div>
+                    <div class="sponsor_item_desc">
+                      Mike Newhook
+                      <br>
+                      Organic Aquaponic Developer
+                      <br>
+                      Highland Aquaponics
+                      <br>
+                      <a href="http://highlandaquaponics.com/" target="_blank" class="bf_links">
+                      highlandaquaponics.com
+                    </a>
+                    </div>
+                  </div>
 
-    <div class="sponsor_item">
-      <div class="sponsor_item_image"><img src="../../../sponsor_images/Mindy_Goldstein.png"></div>
-      <div class="sponsor_item_desc bgc-0002">
-        Mindy Goldstein
-        <br>
-        Registered Nurse
-        <br>
-        Lee County Sheriff's Office
-        <br>
-        <a href="http://www.sheriffleefl.org/" target="_blank" class="bf_links">
-        sheriffleefl.org
-      </a>
-      </div>
-    </div>
 
-    <div class="sponsor_item">
-      <div class="sponsor_item_image">
-        <img src="../../../sponsor_images/Mike_Newhook.png">
-      </div>
-      <div class="sponsor_item_desc bgc-0002">
-        Mike Newhook
-        <br>
-        Organic Aquaponic Developer
-        <br>
-        Highland Aquaponics
-        <br>
-        <a href="http://highlandaquaponics.com/" target="_blank" class="bf_links">
-        highlandaquaponics.com
-      </a>
-      </div>
-    </div>
+                  <div class="sponsor_item">
+                    <div class="sponsor_item_image">
+                      <img src="../../../sponsor_images/Jan_Deborah_Imperato.png">
+                    </div>
+                    <div class="sponsor_item_desc">
+                      Jan Deborah Imperato
+                      <br>
+                      Luxury & Waterfront Realtor
+                      <br>
+                      Palm Beach Villas Real Estate
+                      <br>
+                      <a href="https://www.palmbeachvillas.net/" target="_blank" class="bf_links">
+                      palmbeachvillas.net
+                    </a>
+                    </div>
+                  </div>
 
-    <div class="sponsor_item">
-      <div class="sponsor_item_image">
-        <img src="../../../sponsor_images/Angela_Lucambio.png">
-      </div>
-      <div class="sponsor_item_desc bgc-0002">
-        Angela Lucambio
-        <br>
-        Registered Nurse
-        <br>
-        Volunteer & Caretaker
-        <br>
-        <a href="https://www.facebook.com/angela.lucambio" target="_blank" class="bf_links">
-        facebook.com/angela.lucambio
-      </a>
-      </div>
-    </div>
+                  <div class="sponsor_item">
+                    <div class="sponsor_item_image">
+                      <img src="../../../sponsor_images/Angela_Lucambio.png">
+                    </div>
+                    <div class="sponsor_item_desc">
+                      Angela Lucambio
+                      <br>
+                      Registered Nurse
+                      <br>
+                      Volunteer & Caretaker
+                      <br>
+                      <a href="https://www.facebook.com/angela.lucambio" target="_blank" class="bf_links">
+                      facebook.com/angela.lucambio
+                    </a>
+                    </div>
+                  </div>
 
-    <div class="sponsor_item">
-      <div class="sponsor_item_image">
-        <img src="../../../sponsor_images/Ignacio_Di_Paola.png">
-      </div>
-      <div class="sponsor_item_desc bgc-0002">
-        Ignacio Di Paola
-        <br>
-        Marketing Professional
-        <br>
-        NoLines Advertising Agency
-        <br>
-        <a href="http://nolines.com.ar/" target="_blank" class="bf_links">
-        nolines.com.ar
-      </a>
-      </div>
-    </div>
+                  <div class="sponsor_item">
+                    <div class="sponsor_item_image">
+                      <img src="../../../sponsor_images/Ignacio_Di_Paola.png">
+                    </div>
+                    <div class="sponsor_item_desc">
+                      Ignacio Di Paola
+                      <br>
+                      Marketing Professional
+                      <br>
+                      NoLines Advertising Agency
+                      <br>
+                      <a href="http://nolines.com.ar/" target="_blank" class="bf_links">
+                      nolines.com.ar
+                    </a>
+                    </div>
+                  </div>
 
-    <div class="sponsor_item">
-      <div class="sponsor_item_image">
-        <img src="../../../sponsor_images/Dennis_Hamilton.png">
-      </div>
-      <div class="sponsor_item_desc bgc-0002">
-        Dennis Hamilton
-        <br>
-        Organic Hydroponics Developer
-        <br>
-        Greenfund, LLC
-        <br>
-        <a href="https://greenfundsolutions.com/" target="_blank" class="bf_links">
-        greenfundsolutions.com
-      </a>
-      </div>
-    </div>
+                  <div class="sponsor_item">
+                    <div class="sponsor_item_image">
+                      <img src="../../../sponsor_images/Dennis_Hamilton.png">
+                    </div>
+                    <div class="sponsor_item_desc">
+                      Dennis Hamilton
+                      <br>
+                      Organic Hydroponic Developer
+                      <br>
+                      Greenfund, LLC
+                      <br>
+                      <a href="https://greenfundsolutions.com/" target="_blank" class="bf_links">
+                      greenfundsolutions.com
+                    </a>
+                    </div>
+                  </div>
 
-    <div class="sponsor_item">
-      <div class="sponsor_item_image">
-        <img src="../../../sponsor_images/Alex_Smuglovsky.png">
-      </div>
-      <div class="sponsor_item_desc bgc-0002">
-        Alex Smuglovsky
-        <br>
-        Field Visitations Volunteer
-        <br>
-        BibleFarm.org
-        <br>
-        <a href="https://biblefarm.org/" target="_blank" class="bf_links">
-        biblefarm.org
-      </a>
-      </div>
-    </div>
+                  <div class="sponsor_item">
+                    <div class="sponsor_item_image">
+                      <img src="../../../sponsor_images/Alex_Smuglovsky.png">
+                    </div>
+                    <div class="sponsor_item_desc">
+                      Alex Smuglovsky
+                      <br>
+                      Field Visitations Volunteer
+                      <br>
+                      BibleFarm.org
+                      <br>
+                      <a href="https://biblefarm.org/" target="_blank" class="bf_links">
+                      biblefarm.org
+                    </a>
+                    </div>
+                  </div>
 
-    <div class="sponsor_item">
-      <div class="sponsor_item_image">
-        <img src="../../../sponsor_images/Jose_Eugenio_Martinez.png">
-      </div>
-      <div class="sponsor_item_desc bgc-0002">
-        José Eugenio Martínez
-        <br>
-        Field Visitations Volunteer
-        <br>
-        BibleFarm.org
-        <br>
-        <a href="https://biblefarm.org/" target="_blank" class="bf_links">
-        biblefarm.org
-      </a>
-      </div>
-    </div>
+                  <div class="sponsor_item">
+                    <div class="sponsor_item_image">
+                      <img src="../../../sponsor_images/Jose_Eugenio_Martinez.png">
+                    </div>
+                    <div class="sponsor_item_desc">
+                      José Eugenio Martínez
+                      <br>
+                      Field Visitations Volunteer
+                      <br>
+                      BibleFarm.org
+                      <br>
+                      <a href="https://biblefarm.org/" target="_blank" class="bf_links">
+                      biblefarm.org
+                    </a>
+                    </div>
+                  </div>
 
-  </div>
-</div>
-<!-- END wrap_sponsors -->
+                </div>
+              </div>
+              <!-- END wrap_sponsor_ads -->
 
 
 
@@ -1235,12 +1233,12 @@ function countdown() {
   ///////////////////////////////////////////////////
   /// BEGIN random order for sponsors ///////
   ///////////////////////////////////////////////////
-  var random_sponsor_order = $(".sponsor_item");
-  for(var i = 0; i < random_sponsor_order.length; i++){
-      var target = Math.floor(Math.random() * random_sponsor_order.length -1) + 1;
-      var target2 = Math.floor(Math.random() * random_sponsor_order.length -1) +1;
-      random_sponsor_order.eq(target).before(random_sponsor_order.eq(target2));
-  }
+//  var random_sponsor_order = $(".sponsor_item");
+//  for(var i = 0; i < random_sponsor_order.length; i++){
+//      var target = Math.floor(Math.random() * random_sponsor_order.length -1) + 1;
+//      var target2 = Math.floor(Math.random() * random_sponsor_order.length -1) +1;
+//      random_sponsor_order.eq(target).before(random_sponsor_order.eq(target2));
+//  }
   ///////////////////////////////////////////////////
   /// END random order for sponsors ///////
   ///////////////////////////////////////////////////

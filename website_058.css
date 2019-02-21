@@ -2229,3 +2229,65 @@ img.visit_GoFundMe_campaigns_image {
   max-width: 100%;
   min-height: 100%;
 }
+
+
+/* BEGIN wrap_sponsor_ads */
+.wrap_sponsor_ads {
+    position: absolute;
+    top: calc(44px);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 310px;
+    height: calc(100% - 44px);
+    background: black;
+    overflow: auto;
+}
+.sponsor_ads {
+display: inline-block;
+         text-align: center;
+         font-size: 0.1px;
+    background: black;
+}
+.sponsor_ads > .sponsor_item {
+    display: inline-block;
+    margin: 2px;
+    text-align: center;
+    width: 100%;
+    background-color: #111111;
+    max-width: calc(310px - 22px);
+}
+.sponsor_ads:after {
+         content: '';
+         width: 100%;
+        /* Ensures there are at least 2 lines of text, so justification works */
+         display: inline-block;
+}
+.sponsor_item_image {
+  display: table-cell;
+  vertical-align: middle;
+	float: left;
+	height: 88px;
+	width: 88px;
+	text-align: center;
+  background: black;
+}
+.sponsor_item_image img {
+  display: table-cell;
+  vertical-align: middle;
+  width: 88px;
+  height: 88px;
+  min-width: 88px;
+max-width: 88px;
+}
+.sponsor_item_desc {
+    font-size: 18px;
+    text-align: left;
+    padding-left: 12px;
+    height: 88px;
+    line-height: 19px;
+    display: table-cell;
+    vertical-align: middle;
+}
+/* END wrap_sponsor_ads */
