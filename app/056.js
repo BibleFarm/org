@@ -235,7 +235,12 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-
+////////////////////////////////////////////
+// BEGIN loads only if user wants to search
+////////////////////////////////////////////
+  $("#to_search_reg_eng").one('click', function(e) {
+    // user want to search
+    console.log("searching feature is being requested");
 
 
 
@@ -1290,6 +1295,11 @@ setTimeout(function() {
 
 
 
+
+});
+////////////////////////////////////////////
+// BEGIN loads only if user wants to search
+////////////////////////////////////////////
 
 });
 
@@ -4689,11 +4699,6 @@ $(document).ready(function() {
     suppressScrollX: true
   });
 $('.sm2-playlist-wrapper ul').perfectScrollbar({scrollXMarginOffset: 12, suppressScrollX: true});
-
-  $('.test_youtube_sidebar').perfectScrollbar({
-    scrollXMarginOffset: 0,
-    suppressScrollX: true
-  });
 
 
 
@@ -9032,4 +9037,21 @@ $(".wrap_modal_still_working_on_this").hide();
   });
   //////////////////////////////////////////////////
   ////// END if we wanna go back to browsing mode // #return_to_browsing_mode ////
+  //////////////////////////////////////////////////
+
+
+  //////////////////////////////////////////////////
+  ////// BEGIN youtube only if requested ////
+  //////////////////////////////////////////////////
+  $(".select_views").one('click', function(e) {
+    // inject youtube only when requested
+    console.log("youtube is being requested");
+    $(".wrap_ref_body_views").html('<div class="test_youtube_sidebar"><iframe width="100%" height="268" frameborder="0" allowfullscreen src="https://www.youtube.com/embed?listType=playlist&list=PLyXXMRxR3UTksuaybpbHKLoV6XtDcAvOw"></iframe></div>');
+  $('.test_youtube_sidebar').perfectScrollbar({
+    scrollXMarginOffset: 0,
+    suppressScrollX: true
+  });
+  });
+  //////////////////////////////////////////////////
+  ////// BEGIN youtube only if requested ////
   //////////////////////////////////////////////////
