@@ -5668,7 +5668,7 @@ z-index: 1000000;
 /*********** BEGIN wrap_ajaxed_and_search_results_are_both_empty *******************************/
 .search_results_are_empty_so_search_or_browse {
     position: absolute;
-    display: block;
+    display: none;
     top: 50px;
     margin: 0 auto;
     text-align: center;
