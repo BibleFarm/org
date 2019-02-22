@@ -77,7 +77,7 @@ console.log("20 seconds to hide intro");
 $(document).ready(function() {
   setTimeout(function() {
 
-    $(".app_intro_splash_text").show("slow");
+    $(".app_intro_splash_text_wrap").show("slow");
 
 
     $('.app_intro_splash_text h1')
