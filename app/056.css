@@ -5767,37 +5767,7 @@ border-radius: 10px;
 /*********** END container holding last url to share *********************************/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*********** BEGIN matrix loading entire Bible NN to change to hebrew *********************************/
 .wrap_hebrew_matrix {
   position: absolute;
   width: 100%;
@@ -6525,3 +6495,4 @@ div.code-container div#matrix-code p.code-99 {
             transform: translateY(100%);
   }
 }
+/*********** END matrix loading entire Bible NN to change to hebrew *********************************/
