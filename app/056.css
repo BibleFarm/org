@@ -5761,6 +5761,24 @@ border-radius: 10px;
   /* Ensures there are at least 2 lines of text, so justification works */
   display: inline-block;
 }
+button.sharing_modal_yes_browsing_mode, button.sharing_modal_no_browsing_mode {
+  background: none !important;
+  padding-left: 10px !important;
+padding-right: 10px !important;
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+color: #ae9c80 !important;
+text-shadow: 2px 2px 1px #000000 !important;
+}
+button.sharing_modal_yes_browsing_mode:hover, button.sharing_modal_no_browsing_mode:hover {
+  background: none !important;
+  padding-left: 10px !important;
+padding-right: 10px !important;
+padding-top: 0px !important;
+padding-bottom: 0px !important;
+color: #DAC4A2 !important;
+}
+
 /*********** END sharing modals for filter & browsing modes & still working on this *********/
 /*********** BEGIN container holding last url to share *********************************/
 #from_filter_mode_url_we_are_going_to, #from_browsing_mode_url_we_are_going_to {

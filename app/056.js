@@ -8549,21 +8549,25 @@ var verse_to_share = $(this).parent().siblings().eq( 0 )
 .text();
 console.log("verse_to_share " + verse_to_share);
 
-var complete_url_to_share_from_browsing_mode = "https://www.BibleFarm.org/" + book_to_share + "-" + chapter_to_share + "-" + verse_to_share + ".html";
+var complete_url_to_share_from_browsing_mode = "https://www.BibleFarm.org/app/en/edit/" + book_to_share + "-" + chapter_to_share + "-" + verse_to_share + ".html";
 console.log("complete_url_to_share_from_browsing_mode " + complete_url_to_share_from_browsing_mode);
 
 $("#from_filter_mode_url_we_are_going_to").text("");
 $("#from_browsing_mode_url_we_are_going_to").text("");
     $("#from_browsing_mode_url_we_are_going_to").text(complete_url_to_share_from_browsing_mode);
 
+    // show the modal
     $(".wrap_sharing_modal_browsing_mode").show("slow");
+    // focus to say yes
+    $("#sharing_modal_yes_browsing_mode").focus();
+
     $(".wrap_table").hide("slow");
 
 });
 /////////////////////////////////////////
 /// BEGIN popup a modal asking to share this verse from browsing mode //////////
 /////////////////////////////////////////
-// if no, hide the modal
+// if click no, hide the modal
 $("#sharing_modal_no_browsing_mode").on("click", function(e) {
 $(".wrap_sharing_modal_browsing_mode").hide("slow");
   $(".wrap_table").show("slow");
@@ -8571,7 +8575,7 @@ $(".wrap_sharing_modal_browsing_mode").hide("slow");
   $("#from_browsing_mode_url_we_are_going_to").text("");
 });
 
-// if yes, hide the modal
+// if click yes, hide the modal
 $("#sharing_modal_yes_browsing_mode").on("click", function(e) {
 var link_to_current_verse_to_share = $("#from_browsing_mode_url_we_are_going_to").text();
 window.open(link_to_current_verse_to_share, "_blank");
