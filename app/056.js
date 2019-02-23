@@ -8360,12 +8360,12 @@ if($('#admin').css('display') !== 'none')
   $("#edited_app_name").text(welcome_user_with_name);
   setTimeout(function() {
   $(".app_wrap").find("p.msg1").text(welcome_user_with_name).fadeOut("5000").fadeIn("7000");
-}, 7000);
+}, 8000);
 } else {
   $("#logged_in_user_is_a_part").text("be a part of biblefarm.org");
   setTimeout(function() {
   $(".app_wrap").find("p.msg1").text("thanks for visiting").fadeOut("5000").fadeIn("7000");
-}, 7000);
+}, 8000);
 }
 
   }; // end mutation observer
