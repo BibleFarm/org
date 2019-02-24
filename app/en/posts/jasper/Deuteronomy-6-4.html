@@ -269,8 +269,6 @@ text-shadow: 2px 2px 1px #000000;
     min-width: 312px;
     max-width: 312px;
     margin: 0 auto;
-        margin-top: 0px;
-    margin-top: 4px;
     position: absolute;
     top: calc(88px + 4px);
     left: 0;
@@ -286,7 +284,7 @@ display: none;
     right: 4px;
     z-index: 2;
     background-color: black;
-    height: 140px;
+    height: 130px;
 }
 .at-resp-share-element.at-mobile .at-share-btn {
     margin-right: 2px !important;
@@ -299,7 +297,7 @@ a:focus {
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: calc(88px + 8px);
+    top: calc(88px + 116px);
     text-align: center;
     z-index: -1;
 }
@@ -334,7 +332,7 @@ text-align: center;
 }
 .addthis_align {
   display: block;
-  padding-top: 10px;
+  padding-top: 4px;
   width: 100vw;
   max-width: 312px;
   text-align: center;
@@ -507,7 +505,7 @@ a.bf_links:focus {
 .wrap_done_with_ready_post_next {
     position: absolute;
     display: block;
-    top: calc(186px + 74px);
+    top: calc(186px + 162px);
     width: calc(100% - 4px);
     left: 0;
     right: 0;
@@ -1093,48 +1091,54 @@ function countdown() {
 }
 
   ///////////////////////////////////////////////////
-  /// BEGIN countdown_loading_addthis_options ///////
+  /// END countdown_loading_addthis_options ///////
   ///////////////////////////////////////////////////
 
   // BEGIN options toggle
+
+  // lands with show_sharing_options displayed
+ $(".show_sharing_options").show();
+
   $(".options_bar").on("click", ".option_menu", function(e) {
     $(
       ".show_sharing_options, .show_sending_options, .show_saving_options"
     ).hide("slow");
-    $(".show_menu_options").slideToggle("slow");
+    $(".show_menu_options").show("slow");
   });
 
   $(".options_bar").on("click", ".option_share", function(e) {
     $(
       ".show_menu_options, .show_sending_options, .show_saving_options"
     ).hide("slow");
-    $(".show_sharing_options").slideToggle("slow");
+    $(".show_sharing_options").show("slow");
   });
 
   $(".options_bar").on("click", ".option_send", function(e) {
     $(
       ".show_menu_options, .show_sharing_options, .show_saving_options"
     ).hide("slow");
-    $(".show_sending_options").slideToggle("slow");
+    $(".show_sending_options").show("slow");
   });
 
   $(".options_bar").on("click", ".option_save", function(e) {
     $(
       ".show_menu_options, .show_sharing_options, .show_sending_options"
     ).hide("slow");
-    $(".show_saving_options").slideToggle("slow");
+    $(".show_saving_options").show("slow");
   });
 
   $(".options_bar").on("click", ".option_link", function(e) {
     $(
-      ".show_menu_options, .show_sharing_options, .show_sending_options, .show_saving_options"
+      ".show_menu_options, .show_sending_options, .show_saving_options"
     ).hide("slow");
+    $(".show_sharing_options").show("slow");
   });
 
   $(".options_bar").on("click", ".option_print", function(e) {
     $(
-      ".show_menu_options, .show_sharing_options, .show_sending_options, .show_saving_options"
+      ".show_menu_options, .show_sending_options, .show_saving_options"
     ).hide("slow");
+    $(".show_sharing_options").show("slow");
   });
 
   // click anywhere else to exit any options
@@ -1257,16 +1261,9 @@ setTimeout(function(){
 }, 1000);
 });
 
-  // BEGIN done_close_tab
+  // END done_close_tab
 
 });
-
- // setTimeout(function() {
- //   $("body").find(".option_share").trigger({
- //     type: 'click',
- //     which: 1
- //   });
- // }, 12000);
 
 
 </script>
