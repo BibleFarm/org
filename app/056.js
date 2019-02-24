@@ -8622,12 +8622,21 @@ $(".wrap_modal_still_working_on_this").hide();
       $(".wrap_nav_mode_browse").show("slow", "linear");
       $(".wrap_nav_mode_filter").hide("slow", "linear");
       $(".mode_browse").show("slow", "linear");
-      $(".search_results_are_empty_so_search_or_browse").hide("slow", "linear");
+      $(".search_results_are_empty_so_search_or_browse").hide();
   });
   //////////////////////////////////////////////////
   ////// END if we wanna go back to browsing mode // #return_to_browsing_mode ////
   //////////////////////////////////////////////////
 
+  //////////////////////////////////////////////////
+  ////// BEGIN hide also if the click on a search result so it doesn't stay back there behind wrap_ajaxed  ////
+  //////////////////////////////////////////////////
+  $(".search_results").on('click', function(e) {
+      $(".search_results_are_empty_so_search_or_browse").hide();
+  });
+  //////////////////////////////////////////////////
+  ////// END hide also if the click on a search result so it doesn't stay back there behind wrap_ajaxed ////
+  //////////////////////////////////////////////////
 
   //////////////////////////////////////////////////
   ////// BEGIN youtube only if requested ////
