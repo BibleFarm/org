@@ -8558,7 +8558,7 @@ $("#from_browsing_mode_url_we_are_going_to").text("");
 
     // show the modal
     $(".wrap_sharing_modal_browsing_mode").show("slow");
-    // focus to say yes
+    // focus to say yes, so we can press enter on keyboard
     $("#sharing_modal_yes_browsing_mode").focus();
 
     $(".wrap_table").hide("slow");

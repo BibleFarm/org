@@ -692,7 +692,7 @@ text-align: center;
 }
 /* END sponsors show time*/
 
-/* BEGIN sponsors meet_the_team*/
+/* BEGIN wrap_done_editing_redirect_to_next */
 .wrap_done_editing_redirect_to_next {
     position: absolute;
     display: none;
@@ -745,7 +745,7 @@ text-align: center;
    /* Ensures there are at least 2 lines of text, so justification works */
     display: inline-block;
 }
-/* END sponsors meet_the_team*/
+/* END wrap_done_editing_redirect_to_next */
 
 
 /* BEGIN wrap_sponsor_ads */
@@ -836,7 +836,7 @@ max-width: 88px;
   <div class="wrap_top bgc-0002">
     <!-- BEGIN title_verse_sharing -->
     <span class="title_verse_sharing">
-      edit background colour
+      choose a background colour
     </span>
     <!-- END title_verse_sharing -->
   </div>
@@ -1171,9 +1171,6 @@ max-width: 88px;
 <!-- END wrap -->
 
 
-<!-- addthis for newly created page in firebase-->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53f4628f4f316c50"></script>
-
 <!-- BEGIN post_creation JS  dependencies -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <!-- END post_creation javascript dependencies -->
@@ -1196,24 +1193,24 @@ $(".wrap_sponsor_ads").show("slow");
   ///////////////////////////////////////////////////
   /// BEGIN countdown_while_showing_sponsors ///////
   ///////////////////////////////////////////////////
-var timer1,
-  clock = 10;
+var timer_meet_the_team_edit,
+  clock_meet_the_team_edit = 10;
 $(startup);
 function startup() {
   $(start).trigger({ type: "click", which: 1 });
 }
 function start() {
-  clock = 10;
-  $(".countdown_while_showing_sponsors").html("" + clock + "");
-  timer1 = setInterval(countdown, 1000);
+  clock_meet_the_team_edit = 10;
+  $(".countdown_while_showing_sponsors").html("" + clock_meet_the_team_edit + "");
+  timer_meet_the_team_edit = setInterval(countdown_meet_the_team_edit, 1000);
   $("#btnstart").prop("disabled", true);
 }
-function countdown() {
-  clock -= 1;
-  $(".countdown_while_showing_sponsors").html("" + clock + "");
+function countdown_meet_the_team_edit() {
+  clock_meet_the_team_edit -= 1;
+  $(".countdown_while_showing_sponsors").html("" + clock_meet_the_team_edit + "");
 
-  if (clock == 0) {
-    clearInterval(timer1);
+  if (clock_meet_the_team_edit == 0) {
+    clearInterval(timer_meet_the_team_edit);
     $("#btn_countdown_start").prop("disabled", false);
   }
 }
