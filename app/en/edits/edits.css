@@ -1,0 +1,666 @@
+/* BEGIN css for edit */
+@font-face {
+font-family: "PT_Sans-Narrow-Web-Regular";
+src: url(../../../fonts/PT_Sans-Narrow-Web-Regular.ttf) format("truetype");
+}
+@font-face {
+font-family: "Jura-Regular";
+src: url(../../../fonts/Jura-Regular.ttf) format("truetype");
+}
+html,
+body {
+margin: 0 auto;
+font-family: 'PT_Sans-Narrow-Web-Regular', sans-serif;
+font-size: 20px;
+color: #ae9c80;
+background: black;
+text-shadow: 2px 2px 1px #000000;
+}
+.wrap {
+position: fixed;
+width: calc(100% - 8px);
+height: calc(100% - 8px);
+top: 4px;
+bottom: 4px;
+left: 4px;
+right: 4px;
+z-index: 2;
+}
+.wrap_top, .wrap_bot {
+    position: fixed;
+  display: block;
+  width: calc(100% - 8px);
+  height: 44px;
+  text-align: center;
+}
+.wrap_top {
+  top: 4px;
+}
+.wrap_bot {
+  bottom: 4px;
+}
+.wrap_ctr {
+        width: 100%;
+    height: 100%;
+    z-index: -2;
+    position: absolute;
+    }
+    .title_verse_sharing {
+    font-family: "Jura-Regular", sans-serif;
+    color: #ae9c80;
+    text-shadow: 2px 2px 1px #000000;
+    text-align: center;
+    line-height: 44px;
+    }
+    .made_with_love {
+    font-family: "Jura-Regular", sans-serif;
+    color: #d5ad6d;
+    text-shadow: 2px 2px 1px #000000;
+    text-align: center;
+    line-height: 44px;
+    cursor: pointer;
+    }
+.made_with_love:hover {
+color: #dac4a2;
+text-decoration: none;
+}
+.title_verse_sharing {
+font-size: 21px;
+}
+.made_with_love {
+font-size: 19px;
+}
+.wrap_options_bar {
+  left: 0;
+  right: 0;
+  max-height: 44px;
+  top: calc(44px + 4px);
+  position: absolute;
+}
+.options_bar {
+display: flex;
+min-width: 312px;
+max-width: 600px;
+margin: 0 auto;
+}
+.wait_to_load_options {
+width: calc(100vw - 8px);
+position: absolute;
+left: 0;
+right: 0;
+min-width: 312px;
+max-width: 600px;
+height: 44px;
+margin: 0 auto;
+text-align: center;
+}
+.countdown_while_showing_sponsors {
+line-height: 44px;
+}
+#btn_countdown_start {
+display: none;
+}
+.option_menu, .option_share, .option_send, .option_save, .option_link, .option_print {flex-grow: 1;
+flex-shrink: 1;
+text-align: center;
+font-family: 'PT_Sans-Narrow-Web-Regular', sans-serif;
+line-height: 44px;
+cursor: pointer;
+}
+.option_menu, .option_share, .option_send, .option_save, .option_link, .option_print {
+color: #D5AD6D;
+text-shadow: 2px 2px 1px #000000;
+}
+.option_menu:hover, .option_share:hover, .option_send:hover, .option_save:hover, .option_link:hover, .option_print:hover {
+color: #dac4a2;
+text-decoration: none;
+}
+.wrap_show_options {
+width: 100vw;
+min-width: 312px;
+max-width: 312px;
+margin: 0 auto;
+    margin-top: 0px;
+margin-top: 4px;
+position: absolute;
+top: calc(88px + 4px);
+left: 0;
+right: 0;
+}
+.show_menu_options, .show_sharing_options, .show_sending_options, .show_saving_options {
+display: none;
+width: 100vw;
+margin: 0 auto;
+text-align: center;
+max-width: 312px;
+left: 4px;
+right: 4px;
+z-index: 2;
+background-color: black;
+height: 140px;
+}
+.at-resp-share-element.at-mobile .at-share-btn {
+margin-right: 2px !important;
+}
+a:focus {
+outline:0;
+}
+.wrap_image_sharing {
+position: absolute;
+max-width: 312px;
+display: none;
+left: 0;
+right: 0;
+margin: 0 auto;
+top: calc(212px);
+text-align: center;
+z-index: -1;
+}
+img {
+width: calc(100vw - 8px);
+min-width: 312px;
+max-width: 312px;
+}
+.wrap_behind_image_space {
+position: absolute;
+left: 0;
+right: 0;
+margin: 0 auto;
+top: calc(44px + 4px);
+text-align: center;
+z-index: -1;
+}
+.wrap_underneath_image_space {
+position: absolute;
+left: 0;
+right: 0;
+margin: 0 auto;
+top: calc(44px + 4px);
+text-align: center;
+z-index: -1;
+}
+
+.show_sharing_options_align_center {
+width: 100vw;
+margin: 0 auto;
+text-align: center;
+}
+.addthis_align {
+display: block;
+padding-top: 10px;
+width: 100vw;
+max-width: 312px;
+text-align: center;
+}
+.bgc-0002{
+background: hsl(0,0%,15%) !important;
+background: -moz-radial-gradient(center, ellipse cover, hsl(0,0%,15%)0%, hsl(0,0%,15%)100%) !important;
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(0,0%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -o-radial-gradient(center, ellipse cover, hsl(0,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -ms-radial-gradient(center, ellipse cover, hsl(0,0%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+background: radial-gradient(ellipse at center, hsl(0,0%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(0,0%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+
+.std_title_44_center {
+color: #ae9c80;
+text-shadow: 2px 2px 1px #000000;
+font-size: 20px;
+line-height: 44px;
+text-align: center;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+/* links */
+a:link {
+ text-decoration: none;
+ color: #D5AD6D;
+ text-shadow: 2px 2px 1px #000000;
+}
+a:visited {
+ text-decoration: none;
+ color: #D5AD6D;
+ text-shadow: 2px 2px 1px #000000;
+}
+a:hover {
+ text-decoration: underline;
+ color: #D5AD6D;
+ text-shadow: 2px 2px 1px #000000;
+}
+a:active {
+ text-decoration: underline;
+ color: #D5AD6D;
+ text-shadow: 2px 2px 1px #000000;
+}
+a:focus {
+outline:0;
+}
+a.bf_links {
+color: #d5ad6d;
+}
+a.bf_links:hover,
+a.bf_links:focus {
+color: #dac4a2;
+text-decoration: none;
+}
+.link_hover_styling {
+color: #ae9c80;
+cursor: pointer;
+text-shadow: 2px 2px 1px #000000;
+}
+.link_hover_styling:hover {
+color: #DAC4A2;
+}
+
+/* BEGIN edit background color picker */
+.wrap_edit_background_chooser {
+position: absolute;
+display: none;
+top: calc(44px + 0px);
+width: 100%;
+max-width: 312px;
+height: 186px;
+background: #241e00;
+margin: 0 auto;
+left: 0;
+right: 0;
+}
+.edit_background_chooser {
+display: flex;
+font-size: 0;
+flex-wrap: wrap;
+margin: 0 auto;
+padding: 1px;
+}
+.color_picker_item {
+cursor: pointer;
+box-sizing: border-box;
+display: inline-block;
+margin: 1px;
+flex-grow: 1;
+height: 44px;
+width: calc(100% * (1/4) - 2px);
+line-height: 44px;
+font-size: 16px;
+color: #d5ad6d;
+text-align: center;
+}
+.color_picker_item:hover {
+color: #dac4a2;
+text-decoration: none;
+}
+/* BEGIN edit background color picker */
+
+/* background images */
+.bg-00001 {
+background-image: url("http://www.solidarityfarm.org/images/bg_th/00001.jpg");
+background-repeat:no-repeat;
+}
+.bg-00002 {
+background-image: url("http://www.solidarityfarm.org/images/bg_th/00002.jpg");
+background-repeat:no-repeat;
+}
+.bg-00003 {
+background-image: url("http://www.solidarityfarm.org/images/bg_th/00003.jpg");
+background-repeat:no-repeat;
+}
+/* background colors */
+.bgc-0000 {
+background: white !important;
+}
+.bgc-0001{
+background: hsl(0,0%,8%) !important;
+background: -moz-radial-gradient(center, ellipse cover, hsl(0,0%,8%)0%, hsl(0,0%,8%)100%) !important;
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(0,0%,8%)), color-stop(100%,hsl(0,0%,0%))) !important;
+background: -webkit-radial-gradient(center, ellipse cover, hsl(100,0%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -o-radial-gradient(center, ellipse cover, hsl(0,0%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -ms-radial-gradient(center, ellipse cover, hsl(0,0%,8%) 0%,hsl(0,0%,0%) 100%) !important;
+background: radial-gradient(ellipse at center, hsl(0,0%,8%) 0%,hsl(0,0%,0%) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(0,0%,8%)', endColorstr='#0',GradientType=1 ) !important;
+}
+.bgc-0002{
+background: hsl(0,0%,15%) !important;
+background: -moz-radial-gradient(center, ellipse cover, hsl(0,0%,15%)0%, hsl(0,0%,15%)100%) !important;
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(0,0%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -o-radial-gradient(center, ellipse cover, hsl(0,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -ms-radial-gradient(center, ellipse cover, hsl(0,0%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+background: radial-gradient(ellipse at center, hsl(0,0%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(0,0%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+.bgc-0003{
+background: hsl(0,100%,15%) !important;
+background: -moz-radial-gradient(center, ellipse cover, hsl(0,100%,15%)0%, hsl(0,100%,15%)100%) !important;
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(0,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -o-radial-gradient(center, ellipse cover, hsl(10,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -ms-radial-gradient(center, ellipse cover, hsl(0,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+background: radial-gradient(ellipse at center, hsl(0,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(0,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+.bgc-0004{
+background: hsl(20,100%,15%) !important;
+background: -moz-radial-gradient(center, ellipse cover, hsl(20,100%,15%)0%, hsl(20,100%,15%)100%) !important;
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(20,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -o-radial-gradient(center, ellipse cover, hsl(20,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -ms-radial-gradient(center, ellipse cover, hsl(20,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+background: radial-gradient(ellipse at center, hsl(20,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(20,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+.bgc-0005{
+background: hsl(40,100%,15%) !important;
+background: -moz-radial-gradient(center, ellipse cover, hsl(40,100%,15%)0%, hsl(40,100%,15%)100%) !important;
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(40,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -o-radial-gradient(center, ellipse cover, hsl(30,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -ms-radial-gradient(center, ellipse cover, hsl(40,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+background: radial-gradient(ellipse at center, hsl(40,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(40,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+.bgc-0006{
+background: hsl(60,100%,15%) !important;
+background: -moz-radial-gradient(center, ellipse cover, hsl(60,100%,15%)0%, hsl(60,100%,15%)100%) !important;
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(60,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -o-radial-gradient(center, ellipse cover, hsl(40,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -ms-radial-gradient(center, ellipse cover, hsl(60,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+background: radial-gradient(ellipse at center, hsl(60,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(60,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+.bgc-0007{
+background: hsl(80,100%,15%) !important;
+background: -moz-radial-gradient(center, ellipse cover, hsl(80,100%,15%)0%, hsl(80,100%,15%)100%) !important;
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(80,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -o-radial-gradient(center, ellipse cover, hsl(50,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -ms-radial-gradient(center, ellipse cover, hsl(80,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+background: radial-gradient(ellipse at center, hsl(80,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(80,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+.bgc-0008{
+background: hsl(120,100%,15%) !important;
+background: -moz-radial-gradient(center, ellipse cover, hsl(120,100%,15%)0%, hsl(120,100%,15%)100%) !important;
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(120,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -o-radial-gradient(center, ellipse cover, hsl(70,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -ms-radial-gradient(center, ellipse cover, hsl(120,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+background: radial-gradient(ellipse at center, hsl(120,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(120,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+.bgc-0009{
+background: hsl(160,100%,15%) !important;
+background: -moz-radial-gradient(center, ellipse cover, hsl(160,100%,15%)0%, hsl(160,100%,15%)100%) !important;
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(160,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -o-radial-gradient(center, ellipse cover, hsl(90,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -ms-radial-gradient(center, ellipse cover, hsl(160,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+background: radial-gradient(ellipse at center, hsl(160,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(160,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+.bgc-0010{
+background: hsl(180,100%,15%) !important;
+background: -moz-radial-gradient(center, ellipse cover, hsl(180,100%,15%)0%, hsl(180,100%,15%)100%) !important;
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(180,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -o-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -ms-radial-gradient(center, ellipse cover, hsl(180,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+background: radial-gradient(ellipse at center, hsl(180,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(180,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+.bgc-0011{
+background: hsl(200,100%,15%) !important;
+background: -moz-radial-gradient(center, ellipse cover, hsl(200,100%,15%)0%, hsl(200,100%,15%)100%) !important;
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(200,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -o-radial-gradient(center, ellipse cover, hsl(110,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -ms-radial-gradient(center, ellipse cover, hsl(200,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+background: radial-gradient(ellipse at center, hsl(200,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(200,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+.bgc-0012{
+background: hsl(240,100%,15%) !important;
+background: -moz-radial-gradient(center, ellipse cover, hsl(240,100%,15%)0%, hsl(240,100%,15%)100%) !important;
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(240,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -o-radial-gradient(center, ellipse cover, hsl(130,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -ms-radial-gradient(center, ellipse cover, hsl(240,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+background: radial-gradient(ellipse at center, hsl(240,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(240,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+.bgc-0013{
+background: hsl(260,100%,15%) !important;
+background: -moz-radial-gradient(center, ellipse cover, hsl(260,100%,15%)0%, hsl(260,100%,15%)100%) !important;
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(260,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -o-radial-gradient(center, ellipse cover, hsl(140,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -ms-radial-gradient(center, ellipse cover, hsl(260,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+background: radial-gradient(ellipse at center, hsl(260,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(260,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+.bgc-0014{
+background: hsl(280,100%,15%) !important;
+background: -moz-radial-gradient(center, ellipse cover, hsl(280,100%,15%)0%, hsl(280,100%,15%)100%) !important;
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(280,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -o-radial-gradient(center, ellipse cover, hsl(150,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -ms-radial-gradient(center, ellipse cover, hsl(280,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+background: radial-gradient(ellipse at center, hsl(280,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(280,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+.bgc-0015{
+background: hsl(300,100%,15%) !important;
+background: -moz-radial-gradient(center, ellipse cover, hsl(300,100%,15%)0%, hsl(300,100%,15%)100%) !important;
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(300,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -o-radial-gradient(center, ellipse cover, hsl(160,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -ms-radial-gradient(center, ellipse cover, hsl(300,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+background: radial-gradient(ellipse at center, hsl(300,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(300,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+.bgc-0016{
+background: hsl(320,100%,15%) !important;
+background: -moz-radial-gradient(center, ellipse cover, hsl(320,100%,15%)0%, hsl(320,100%,15%)100%) !important;
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(320,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -o-radial-gradient(center, ellipse cover, hsl(170,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+background: -ms-radial-gradient(center, ellipse cover, hsl(320,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+background: radial-gradient(ellipse at center, hsl(320,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(320,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+
+.std_item_sgl_44_center {
+color: #bebebe;
+text-shadow: 2px 2px 1px #000000;
+font-size: 20px;
+line-height: 44px;
+text-align: center;
+margin-left: 0px;
+margin-right: 0px;
+}
+.app_bg_color_picker_go_bottom {
+position: absolute;
+display: none;
+width: 100%;
+margin: 0 auto;
+bottom: calc(44px + 0px);
+background: rgba(1, 1, 1, 0.8) !important;
+}
+
+
+/* BEGIN sponsors show time*/
+.wrap_sponsors_show_time {
+position: absolute;
+display: none;
+top: calc(44px + 4px);
+width: calc(100% - 4px);
+left: 0;
+right: 0;
+margin: 0 auto;
+height: 44px;
+z-index: 10;
+max-width: 312px;
+}
+.sponsors_show_time {
+width: 100%;
+height: 44px;
+line-height: 44px;
+margin: 0 auto;
+text-align: justify;
+font-size: 0.1px;
+/* IE 9 & 10 don't like font-size: 0;
+ */
+}
+.sponsors_show_time > .sponsors_show_time_item_left {
+height: 44px;
+display: inline-block;
+font-size: 20px;
+text-align: center;
+line-height: 44px;
+width: calc(50% - 16px);
+}
+.sponsors_show_time > .sponsors_show_time_item_center {
+height: 44px;
+display: inline-block;
+font-size: 20px;
+text-align: center;
+line-height: 44px;
+width: 30px;
+}
+.sponsors_show_time > .sponsors_show_time_item_right {
+height: 44px;
+display: inline-block;
+font-size: 20px;
+text-align: center;
+line-height: 44px;
+width: calc(50% - 16px);
+}
+.sponsors_show_time:after {
+content: '';
+width: 100%;
+/* Ensures there are at least 2 lines of text, so justification works */
+display: inline-block;
+}
+/* END sponsors show time*/
+
+/* BEGIN wrap_done_editing_redirect_to_next */
+.wrap_done_editing_redirect_to_next {
+position: absolute;
+display: none;
+top: calc(186px + 171px);
+width: calc(100% - 4px);
+left: 0;
+right: 0;
+margin: 0 auto;
+height: 44px;
+z-index: 10;
+max-width: 312px;
+}
+.done_editing_redirect_to_next {
+width: 100%;
+height: 44px;
+line-height: 44px;
+margin: 0 auto;
+text-align: justify;
+font-size: 0.1px;
+/* IE 9 & 10 don't like font-size: 0;
+ */
+}
+.done_editing_redirect_to_next > .done_editing_redirect_to_next_item_left {
+height: 44px;
+display: inline-block;
+font-size: 20px;
+text-align: center;
+line-height: 44px;
+width: calc(40%);
+}
+.done_editing_redirect_to_next > .done_editing_redirect_to_next_item_center {
+height: 44px;
+display: inline-block;
+font-size: 20px;
+text-align: center;
+line-height: 44px;
+width: calc(42% - 1px);
+}
+.done_editing_redirect_to_next > .done_editing_redirect_to_next_item_right {
+height: 44px;
+display: inline-block;
+font-size: 20px;
+text-align: center;
+line-height: 44px;
+width: calc(18%);
+}
+.done_editing_redirect_to_next:after {
+content: '';
+width: 100%;
+/* Ensures there are at least 2 lines of text, so justification works */
+display: inline-block;
+}
+/* END wrap_done_editing_redirect_to_next */
+
+
+/* BEGIN wrap_sponsor_ads */
+.wrap_sponsor_ads {
+position: absolute;
+top: calc(44px + 44px + 4px);
+left: 0;
+right: 0;
+margin: 0 auto;
+text-align: center;
+max-width: 310px;
+height: calc(100% - 44px - 44px - 4px - 44px);
+background: black;
+overflow: auto;
+}
+.sponsor_ads {
+display: inline-block;
+     text-align: center;
+     font-size: 0.1px;
+background: black;
+}
+.sponsor_ads > .sponsor_item {
+display: inline-block;
+margin: 2px;
+text-align: center;
+width: 100%;
+background-color: #111111;
+max-width: calc(310px - 22px);
+}
+.sponsor_ads:after {
+     content: '';
+     width: 100%;
+    /* Ensures there are at least 2 lines of text, so justification works */
+     display: inline-block;
+}
+.sponsor_item_image {
+display: table-cell;
+vertical-align: middle;
+float: left;
+height: 88px;
+width: 88px;
+text-align: center;
+background: black;
+}
+.sponsor_item_image img {
+display: table-cell;
+vertical-align: middle;
+width: 88px;
+height: 88px;
+min-width: 88px;
+max-width: 88px;
+}
+.sponsor_item_desc {
+font-size: 17px;
+text-align: left;
+padding-left: 12px;
+height: 88px;
+line-height: 19px;
+display: table-cell;
+vertical-align: middle;
+}
+/* END wrap_sponsor_ads */
+
+
+/* END css for edit page */
