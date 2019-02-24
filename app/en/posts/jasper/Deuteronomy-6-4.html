@@ -772,7 +772,7 @@ max-width: 88px;
       </a>
   </div>
 
-    <div id="done_close_tab" class="done_with_ready_post_next_item_right link_hover_styling">
+    <div id="done_with_ready_post_close_tab" class="done_with_ready_post_next_item_right link_hover_styling">
         done
       </a>
     </div>
@@ -1251,17 +1251,16 @@ function countdown() {
 
 
 
-  // BEGIN done_close_tab
-  $("#done_close_tab").on("click", function(e) {
-  function doneCloseTab() {
+  // BEGIN done_with_ready_post_close_tab
+  $("#done_with_ready_post_close_tab").on("click", function(e) {
+  function donePostingCloseTab() {
     window.top.close();
 }
 setTimeout(function(){
-    doneCloseTab()
+    donePostingCloseTab()
 }, 1000);
 });
-
-  // END done_close_tab
+  // END done_with_ready_post_close_tab
 
 });
 

@@ -903,7 +903,7 @@ max-width: 88px;
     </a>
 </div>
 
-  <div id="" class="done_editing_redirect_to_next_item_right">
+  <div id="done_with_edit_post_close_tab" class="done_editing_redirect_to_next_item_right">
     <a id="edited_now_redirect_to_sharing_page" href="https://www.biblefarm.org/app/en/posts/jasper/Deuteronomy-6-4.html" target="_blank" class="bf_links">
       next
     </a>
@@ -1308,6 +1308,16 @@ $("#edited_now_redirect_to_sharing_page").attr("href", "../posts/" + bg_chosen_t
   ///////////////////////////////////////////////////
 
 
+  // BEGIN done_with_edit_post_close_tab
+  $("#done_with_edit_post_close_tab").on("click", function(e) {
+  function doneEditingCloseTab() {
+    window.top.close();
+}
+setTimeout(function(){
+    doneEditingCloseTab()
+}, 1000);
+});
+  // END done_with_edit_post_close_tab
 
 
 
