@@ -406,17 +406,11 @@ console.log("///////////////////// began fbFetch function");
     .on("click", function() {
       $(".wrap_gofundme_modal_bar").show("slow");
       $(".wrap_gofundme_modal_body").show("slow");
-      setTimeout(function() {
-        $("body").scrollLeft(60);
-      }, 1500);
       $(".bf_wrap").hide();
     });
   $("body")
     .find(".close_gofundme_modal")
     .on("click", function() {
-      setTimeout(function() {
-        $("body").scrollLeft(0);
-      }, 1500);
       $(".wrap_gofundme_modal_bar").hide();
       $(".wrap_gofundme_modal_body").hide();
       $(".bf_wrap").show("slow");

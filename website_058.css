@@ -2200,17 +2200,21 @@ img.visit_GoFundMe_campaigns_image {
   align-items: center;
   flex-flow: row wrap;
   padding-top: 50px;
+  background: black;
 }
 .gofundme_flex-container > div {
-  background-color: #111111;
+  background-color: black;
   text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 10px;
 }
-.gofundme_widget {
-  min-width: 350px;
-  max-width: 350px !important;
-  width: 350px;
+.gofundme_image_container {
+  width: 100%;
+  height: auto;
+}
+img.gofundme_image_this_campaign {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
 }
 
 /* /////////////////////////// */
@@ -2291,3 +2295,57 @@ max-width: 88px;
     vertical-align: middle;
 }
 /* END wrap_sponsor_ads */
+
+
+
+
+
+
+
+
+/* BEGIN gofundme_multi_item_share_or_donate */
+.wrap_gofundme_multi_item_share_or_donate {
+  display: inline-block;
+  height: 50px;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+.gofundme_multi_item_share_or_donate {
+  height: 50px;
+  text-align: justify;
+  border: 0px solid black;
+  font-size: 0.1px;
+  width: 100%;
+}
+.gofundme_multi_item_share_or_donate
+  > .gofundme_multi_item_share_or_donate_left {
+  height: 50px;
+  width: calc(60% - 2px);
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  background: #222222;
+}
+.gofundme_multi_item_share_or_donate
+  > .gofundme_multi_item_share_or_donate_right {
+  height: 50px;
+  width: calc(40% - 2px);
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  background: #222222;
+  margin-left: 2px;
+}
+.gofundme_multi_item_share_or_donate_left:after,
+.gofundme_multi_item_share_or_donate_right:after {
+  content: "";
+  width: 100%;
+  /* Ensures there are at least 2 lines of text, so justification works */
+  display: inline-block;
+}
+/* END gofundme_multi_item_share_or_donate */
