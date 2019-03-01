@@ -150,14 +150,14 @@ a:focus {
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: calc(88px + 82px);
+    top: calc(88px + 84px);
     text-align: center;
     z-index: -1;
 }
 .wrap_image_sharing > div > img {
   width: calc(100vw - 8px);
-  min-width: 312px;
-  max-width: 312px;
+  min-width: 308px;
+  max-width: 308px;
 }
 .wrap_behind_image_space {
   position: absolute;
