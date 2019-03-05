@@ -60,6 +60,35 @@ function countdown() {
   /// END countdown_loading_addthis_options ///////
   ///////////////////////////////////////////////////
 
+
+  ////////////////////////////////////////////////////
+  // BEGIN addthis hack follow area
+  ////////////////////////////////////////////////////
+  $(document).ready(function() {
+    var stopWhenCompleted_addthis_is_loaded = setInterval(function() {
+      if (
+        $(".wrap").find(
+          '.at-icon-messenger title:contains("Messenger")'
+        ).length > 0
+      ) {
+        console.log("stopWhenCompleted_addthis_is_loaded Let's hack @ 1000");
+        // addthis shadow hack to SHARING AND FOLLOW
+        setTimeout(function() {
+          $(".wrap")
+            .find("svg.at-icon")
+            .css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))");
+          console.log("/////// applied addthis shadow SHARING hack @ + 1000");
+        }, 1000);
+        clearInterval(stopWhenCompleted_addthis_is_loaded);
+      }
+    }, 1000);
+  });
+  ////////////////////////////////////////////////////
+  // END addthis hack follow area
+  ////////////////////////////////////////////////////
+
+
+
   // BEGIN options toggle
 
   // lands with show_sharing_options displayed
