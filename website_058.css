@@ -2160,12 +2160,12 @@ img.visit_GoFundMe_campaigns_image {
   text-align: justify;
   border: 0px solid black;
   font-size: 0.1px;
-  width: 100%;
+  width: calc(100% - 1px);
   background: black;
 }
 .wrap_gofundme_modal_bar > .title_gofundme_modal {
   height: 50px;
-  width: calc(100% - 50px);
+  width: calc(100% - 51px);
   display: inline-block;
   font-size: 20px;
   text-align: center;
@@ -2174,7 +2174,7 @@ img.visit_GoFundMe_campaigns_image {
 }
 .wrap_gofundme_modal_bar > .close_gofundme_modal {
   height: 50px;
-  width: 49px;
+  width: 48px;
   display: inline-block;
   font-size: 20px;
   text-align: center;
