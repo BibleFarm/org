@@ -218,10 +218,10 @@ $(this).find("td:nth-last-child(1)").hide();
 '<td class="column_3_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_3_case_1_a + '</div></td>' +
 '<td class="column_4_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_4_case_1_a + '</div></td>' +
 '<td class="column_5_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_5_case_1_a + '</div></td>' +
-'<td class="column_edit">' + 
+'<td class="column_edit">' +
 '<span class="edit" data-item="' + key + '">' +'<div class="background_test"><span class="wrap_svg"><i data-fa-symbol="edit_pencil" class="fas fa-pencil-alt fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#edit_pencil"></use></svg></span></div></span>' +
 '</td>' +
-'<td class="column_delete">' + 
+'<td class="column_delete">' +
 '<span class="delete" data-item="' + key + '">' +'<div class="background_test"><span class="wrap_svg"><i data-fa-symbol="trash_can" class="fas fa-trash-alt fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#trash_can"></use></svg></span></div></span>' +
 '</td>' +
 '</tr>';
@@ -284,18 +284,18 @@ function delete_case_1_a(){
 	var firebase_key_to_delete_case_1_a = this.getAttribute("data-item");
 	var refDelete_case_1_a = ref_case_1_a.child(firebase_key_to_delete_case_1_a);
 	refDelete_case_1_a.remove();
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
 // datatable clear
 table_case_1_a.clear();
 console.log("table_case_1_a.clear");
@@ -314,10 +314,10 @@ console.log("table_case_1_a.destroy was done");
 '<td class="column_3_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_3_case_1_a + '</div></td>' +
 '<td class="column_4_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_4_case_1_a + '</div></td>' +
 '<td class="column_5_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_5_case_1_a + '</div></td>' +
-'<td class="column_edit">' + 
+'<td class="column_edit">' +
 '<span class="edit" data-item="' + key + '">' +'<div class="background_test"><span class="wrap_svg"><i data-fa-symbol="edit_pencil" class="fas fa-pencil-alt fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#edit_pencil"></use></svg></span></div></span>' +
 '</td>' +
-'<td class="column_delete">' + 
+'<td class="column_delete">' +
 '<span class="delete" data-item="' + key + '">' +'<div class="background_test"><span class="wrap_svg"><i data-fa-symbol="trash_can" class="fas fa-trash-alt fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#trash_can"></use></svg></span></div></span>' +
 '</td>' +
 '</tr>';
@@ -370,7 +370,7 @@ console.log("/////////////////////////////// ADMIN allowed to fully CRUD");
 // BEGIN DataTable table_case_1_a //////////////////////
 ////////////////////////////////////////////////////////
 table_case_1_a = $("#table_case_1_a").DataTable({
-	
+
     "dom": '<"toolbar_case_1_a">frtip',
     "scrollCollapse": true,
     "paging":         false,
@@ -381,7 +381,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
     "scrollX": false,
     "scrollY": "calc(100vh - 262px)",
     language: {
-      url: 'lang/English.json'
+      url: '../lang/English.json'
     },
         responsive: {
             details: {
@@ -396,7 +396,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
                             '</tr></table>' :
                             '';
                     } ).join('');
- 
+
                     return data ?
                         $('<div/>').append( data ) :
                         false;
@@ -818,23 +818,23 @@ clearInterval(checkIf_all_records_deleted_during_session_we_have_an_empty_table)
 // all done
 console.log("// waitFor_table_to_be_repopulated_after_delete // we're all done!");
 }, 100);
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   console.log("/////////////////////////////////////////////////////////////////////////////////////////////////////////////// just ran function delete_case_1_a()");
 
 }
@@ -864,10 +864,10 @@ document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
 	break;
 	}
 	form_case_1_a.reset();
-	
+
   console.log("/////////////////////////////////////////////////////////////////////////////////////////////////////////////// just ran function submitToFirebase_case_1_a(event)");
 
-	
+
   }
 
 //////////////////////////////////////////
@@ -919,7 +919,7 @@ console.log("/////////////////////////////// ADMIN allowed to fully CRUD");
 // BEGIN DataTable table_case_1_a //////////////////////
 ////////////////////////////////////////////////////////
 table_case_1_a = $("#table_case_1_a").DataTable({
-	
+
     "dom": '<"toolbar_case_1_a">frtip',
     "scrollCollapse": true,
     "paging":         false,
@@ -945,7 +945,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
                             '</tr></table>' :
                             '';
                     } ).join('');
- 
+
                     return data ?
                         $('<div/>').append( data ) :
                         false;
@@ -1346,9 +1346,9 @@ $(this).find("td:eq(6), td:eq(7)").css("display", "none");
 // END DataTable table_case_1_a ////////////////////////
 ////////////////////////////////////////////////////////
 
-  
-  
-  
+
+
+
 $("#table_case_1_a tbody tr td").css("color", "red");
 $(".table_empty").hide();
 
@@ -1371,7 +1371,7 @@ if ($('#table_case_1_a tbody tr td').length > 0) {
       console.log("// waitFor_table_to_be_populated_after_create_or_edit_from_firebase // create or update has happened // table has stuff in the td's // now executing datatables");
 clearInterval(waitFor_table_to_be_populated_after_create_or_edit_from_firebase);
 
-	  
+
 
 ////////////////////////////////////////////////////////
 
@@ -1399,7 +1399,7 @@ console.log("/////////////////////////////// ADMIN allowed to fully CRUD");
 
 ////////////////////////////////////////////////////////
 
-	  
+
 if ( ! $.fn.DataTable.isDataTable( '#table_case_1_a' ) ) {
 
 
@@ -1408,7 +1408,7 @@ if ( ! $.fn.DataTable.isDataTable( '#table_case_1_a' ) ) {
 // BEGIN DataTable table_case_1_a //////////////////////
 ////////////////////////////////////////////////////////
 table_case_1_a = $("#table_case_1_a").DataTable({
-	
+
     "dom": '<"toolbar_case_1_a">frtip',
     "scrollCollapse": true,
     "paging":         false,
@@ -1434,7 +1434,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
                             '</tr></table>' :
                             '';
                     } ).join('');
- 
+
                     return data ?
                         $('<div/>').append( data ) :
                         false;
@@ -1835,8 +1835,8 @@ $(this).find("td:eq(6), td:eq(7)").css("display", "none");
 // END DataTable table_case_1_a ////////////////////////
 ////////////////////////////////////////////////////////
 
-  
-  
+
+
 }
 $("#table_case_1_a tbody tr td").css("color", "green");
 
@@ -1871,10 +1871,10 @@ console.log("table_case_1_a.destroy was done");
 '<td class="column_3_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_3_case_1_a + '</div></td>' +
 '<td class="column_4_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_4_case_1_a + '</div></td>' +
 '<td class="column_5_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_5_case_1_a + '</div></td>' +
-'<td class="column_edit">' + 
+'<td class="column_edit">' +
 '<span class="edit" data-item="' + key + '">' +'<div class="background_test"><span class="wrap_svg"><i data-fa-symbol="edit_pencil" class="fas fa-pencil-alt fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#edit_pencil"></use></svg></span></div></span>' +
 '</td>' +
-'<td class="column_delete">' + 
+'<td class="column_delete">' +
 '<span class="delete" data-item="' + key + '">' +'<div class="background_test"><span class="wrap_svg"><i data-fa-symbol="trash_can" class="fas fa-trash-alt fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#trash_can"></use></svg></span></div></span>' +
 '</td>' +
 '</tr>';
@@ -1933,7 +1933,7 @@ console.log("/////////////////////////////// ADMIN allowed to fully CRUD");
 // BEGIN DataTable table_case_1_a //////////////////////
 ////////////////////////////////////////////////////////
 table_case_1_a = $("#table_case_1_a").DataTable({
-	
+
     "dom": '<"toolbar_case_1_a">frtip',
     "scrollCollapse": true,
     "paging":         false,
@@ -1959,7 +1959,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
                             '</tr></table>' :
                             '';
                     } ).join('');
- 
+
                     return data ?
                         $('<div/>').append( data ) :
                         false;
@@ -2360,9 +2360,9 @@ $(this).find("td:eq(6), td:eq(7)").css("display", "none");
 // END DataTable table_case_1_a ////////////////////////
 ////////////////////////////////////////////////////////
 
-  
-  
-  
+
+
+
 console.log("// waitFor_table_to_be_repopulated_after_signout_or_delete_account // table_case_1_a is recreated");
 // delete these colors onceI know it all works fine
 $("#table_case_1_a tbody tr td").css("color", "orange");
@@ -2880,18 +2880,18 @@ $("#column_1_case_1_a").focus().select();
 // END bump up to moment right now
 //////////////////////////////////
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
 
 ///////////////////////////////////////////////////////////////////////
 // BEGIN when changes are made in another device ////////////////////////////
@@ -2926,19 +2926,19 @@ function mutate(mutations) {
 // END when changes are made in another device ////////////////////////////
 ///////////////////////////////////////////////////////////////////////
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2983,8 +2983,8 @@ table.clear();
 ///////////////////////////////////////////////////////////////////////
 
 
-  
-  
+
+
 $(document).ready(function() {
 
 $( "#create_or_update_case_1, .delete" ).on( "click", function() {
@@ -3068,7 +3068,7 @@ $(document).ready(function() {
     };
   // Then actually do some observing
   observer.observe(elTarget, objConfig);
-  // Finally react when needed 
+  // Finally react when needed
   function MutationObservingUserEmail() {
 
 if(!$('#email').text().match('smuglovsky@gmail.com')) {
@@ -3114,5 +3114,3 @@ console.log("/////////////////////////////// ADMIN allowed to fully CRUD");
 
 
 }); // end of the top document ready
-
-

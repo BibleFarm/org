@@ -648,11 +648,11 @@ table {
 /* ****************************************************************** */
 @font-face {
   font-family: "PT_Sans-Narrow-Web-Regular";
-  src: url(fonts/PT_Sans-Narrow-Web-Regular.ttf) format("truetype");
+  src: url(../fonts/PT_Sans-Narrow-Web-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Jura-Regular";
-  src: url(fonts/Jura-Regular.ttf) format("truetype");
+  src: url(../fonts/Jura-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "DavidLibre-Regular";
@@ -690,15 +690,15 @@ table {
   body {
     margin: 0;
     padding: 0;
-	
-	
-	
-	
+
+
+
+
 
 	background: hsl(0,0%,8%) !important;background: -moz-radial-gradient(center, ellipse cover,  hsl(0,0%,8%)0%, hsl(0,0%,8%)100%) !important;background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(0,0%,8%)), color-stop(100%,hsl(0,0%,0%))) !important;background: -webkit-radial-gradient(center, ellipse cover,  hsl(100,0%,20%) 0%,hsl(0,0%,0%) 100%) !important;background: -o-radial-gradient(center, ellipse cover,  hsl(0,0%,20%) 0%,hsl(0,0%,0%) 100%) !important;background: -ms-radial-gradient(center, ellipse cover,  hsl(0,0%,8%) 0%,hsl(0,0%,0%) 100%) !important;background: radial-gradient(ellipse at center,  hsl(0,0%,8%) 0%,hsl(0,0%,0%) 100%) !important;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(0,0%,8%)', endColorstr='#0',GradientType=1 ) !important;
 
-	
-	
+
+
   }
 
     /* BEGIN page wrappers */
@@ -727,8 +727,8 @@ z-index: 2;
          bottom: 4px;
     }
     /* END page wrappers */
-  
-  
+
+
 
     /* multi items */
      .wrap_standard_multi_item {
@@ -807,8 +807,8 @@ z-index: 2;
      .link_hover_styling:hover {
          color: #DAC4A2;
     }
-  
-  
+
+
 /* BEGIN questions_answers */
 .wrap_questions_answers {
 display: none;
