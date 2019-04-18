@@ -931,6 +931,9 @@ display: none;
 
 /** BEGIN login ***********************************************************/
 #authentication {
+  display: none;
+}
+#lock_and_unlock {
   position: absolute;
   display: block;
   width: 44px;
@@ -939,11 +942,10 @@ cursor: pointer;
 color: red;
 font-size: 20px;
 font-weight: bold;
-text-align: right;
+text-align: center;
 line-height: 44px;
 top: 0;
-left: 0;
-
+right: 0;
 }
 /** BEGIN login ***********************************************************/
 
