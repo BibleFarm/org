@@ -725,6 +725,7 @@ z-index: 2;
     }
      .wrap_bot {
          bottom: 4px;
+         display: none;
     }
     /* END page wrappers */
 
@@ -1053,7 +1054,12 @@ background: #1B021B;
 z-index: 11;
 }
 .title_case_1_a {
+  width: 100%;
+  text-align: center;
+  line-height: 44px;
+  color: gold;
 background: purple;
+
 }
 .create_case_1_a, .create_case_2, .create_case_3, .create_case_4, .create_case_5, .editar, .borrar, .cancel_new_or_edit_case_1_a {
 background: brown;
@@ -1313,8 +1319,26 @@ min-width: 50%;
 }
 
 #last_change {
+  display: none;
 color: yellow;
 }
+
+.dataTables_info {
+    position: absolute;
+    top: 4px;
+    left: calc(4px + 35px);
+    right: calc(4px + 35px);
+    text-align: center !important;
+    display: inline-block;
+    height: 44px;
+    background: black;
+    font-size: 18px;
+    color: #8b7c66 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 44px;
+}
+
 
 /** END case_1_a ********************************************************/
 
