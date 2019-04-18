@@ -931,10 +931,17 @@ display: none;
 
 /** BEGIN login ***********************************************************/
 #authentication {
+  position: absolute;
+  display: block;
+  width: 44px;
+  height: 44px;
 cursor: pointer;
 color: red;
 font-size: 20px;
 font-weight: bold;
+text-align: right;
+line-height: 44px;
+
 }
 /** BEGIN login ***********************************************************/
 
