@@ -941,6 +941,8 @@ font-size: 20px;
 font-weight: bold;
 text-align: right;
 line-height: 44px;
+top: 0;
+left: 0;
 
 }
 /** BEGIN login ***********************************************************/
