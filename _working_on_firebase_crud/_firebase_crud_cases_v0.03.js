@@ -3105,6 +3105,18 @@ console.log("/////////////////////////////// ADMIN allowed to fully CRUD");
 
 
 /////////////////////////////////////////////////////////////////////////
+///// BEGIN trigger click on the fontawesome lock /////////
+/////////////////////////////////////////////////////////////////////////
+$("#lock_and_unlock").on("click",function(e){
+$("#authentication").trigger({ type: "click", which: 1 });
+});
+
+/////////////////////////////////////////////////////////////////////////
+///// END trigger click on the fontawesome lock /////////
+/////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////
 ///// BEGIN an admin must be logged in for cells to be editable /////////
 /////////////////////////////////////////////////////////////////////////
 // check if an admin is logged in
@@ -3115,10 +3127,15 @@ console.log("/////////////////////////////// ADMIN allowed to fully CRUD");
 // editing won't work, so we change text color for public user & change cursor & hide form
 $("#table_case_1_a_wrapper").find(".dt_inner_cell").css("color", "white").css("cursor", "default");
 $("#wrap_form_case_1_a").css("visibility", "hidden");
+$("#lock_is_closed").show();
+$("#lock_is_open").hide();
+
 } else {
 // editing will work, so we change text color for public user & change cursor & show form
 $("#table_case_1_a_wrapper").find(".dt_inner_cell").css("color", "yellow").css("cursor", "pointer");
 $("#wrap_form_case_1_a").css("visibility", "visible");
+$("#lock_is_closed").hide();
+$("#lock_is_open").show();
 
 }
 
