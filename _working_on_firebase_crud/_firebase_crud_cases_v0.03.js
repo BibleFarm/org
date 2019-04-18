@@ -3122,7 +3122,7 @@ $("#authentication").trigger({ type: "click", which: 1 });
 // check if an admin is logged in
   var check_if_an_admin_is_logged_in = setInterval(function() {
 
-    if ($("#authentication").text() == 'login') {
+    if ($("#email").text() == 'smuglovsky@gmail.com') {
 
 // editing won't work, so we change text color for public user & change cursor & hide form
 $("#table_case_1_a_wrapper").find(".dt_inner_cell").css("color", "white").css("cursor", "default");
