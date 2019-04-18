@@ -83,8 +83,10 @@
 
 
       <div id="authentication" class="background_test">
-        <span class="wrap_svg"><i data-fa-symbol="lock_closed" class="fas fa-lock"></i><svg class="icon pa2 br2 pointer bg-gray"><use xlink:href="#lock_closed"></use></svg></span>
-        <span class="wrap_svg"><i data-fa-symbol="lock_open" class="fas fa-lock-open"></i><svg class="icon pa2 br2 pointer bg-gray"><use xlink:href="#lock_open"></use></svg></span>
+
+        <span id="lock_is_closed"><span class="wrap_svg"><i data-fa-symbol="lock_closed" class="fas fa-lock"></i><svg class="icon pa2 br2 pointer bg-gray"><use xlink:href="#lock_closed"></use></svg></span></span>
+        <span id="lock_is_open"><span class="wrap_svg"><i data-fa-symbol="lock_open" class="fas fa-lock-open"></i><svg class="icon pa2 br2 pointer bg-gray"><use xlink:href="#lock_open"></use></svg></span></span>
+
       </div>
 
 
@@ -140,13 +142,24 @@
           </div>
         </div><!-- END firebase login/out interface -->
         <!-- BEGIN wrap_standard_single_item_align_center -->
+
+<!--
         <div class="wrap_standard_single_item_align_center">
           logged in users can read only. The same as public.
-        </div><!-- END wrap_standard_single_item_align_center -->
+        </div>
+-->
+
+        <!-- END wrap_standard_single_item_align_center -->
         <!-- BEGIN wrap_standard_single_item_align_center -->
+
+        <!--
+
         <div class="wrap_standard_single_item_align_center">
           You're logged in as an admin. You can perform full CRUD operations.
-        </div><!-- END wrap_standard_single_item_align_center -->
+        </div>
+-->
+
+        <!-- END wrap_standard_single_item_align_center -->
         <!-- BEGIN wrap_standard_single_item_align_center -->
         <div class="wrap_standard_single_item_align_center link_hover_styling" id="continue_as_a_visitor_or_ok">
           continue as a visitor
