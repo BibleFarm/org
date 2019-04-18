@@ -3117,7 +3117,7 @@ $("#table_case_1_a_wrapper").find(".dt_inner_cell").css("color", "white").css("c
 $("#wrap_form_case_1_a").css("visibility", "hidden");
 } else {
 // editing will work, so we change text color for public user & change cursor & show form
-$("#table_case_1_a_wrapper").find(".dt_inner_cell").css("color", "purple").css("cursor", "pointer");
+$("#table_case_1_a_wrapper").find(".dt_inner_cell").css("color", "yellow").css("cursor", "pointer");
 $("#wrap_form_case_1_a").css("visibility", "visible");
 
 }
