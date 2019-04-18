@@ -1384,7 +1384,7 @@ $('#table_case_1_a tr').each(function() {
 $(this).find("td:nth-last-child(2)").hide();
 $(this).find("td:nth-last-child(1)").hide();
 });
-console.log("/////////////////////////////// there will be no CREAT UPDATE DELETE");
+console.log("/////////////////////////////// there will be no CREATE UPDATE DELETE");
 } else {
 // show create new record // and edit & delete columns
 $("#table_case_1_a_wrapper").find(".create_case_1_a").show();
@@ -1912,7 +1912,7 @@ $('#table_case_1_a tr').each(function() {
 $(this).find("td:nth-last-child(2)").hide();
 $(this).find("td:nth-last-child(1)").hide();
 });
-console.log("/////////////////////////////// there will be no CREAT UPDATE DELETE");
+console.log("/////////////////////////////// there will be no CREATE UPDATE DELETE");
 } else {
 // show create new record // and edit & delete columns
 $("#table_case_1_a_wrapper").find(".create_case_1_a").show();
@@ -3080,7 +3080,7 @@ $('#convalidaciones tr').each(function() {
 $(this).find("td").eq(4).find(".edit").hide();
 $(this).find("td").eq(5).find(".delete").hide();
 });
-console.log("/////////////////////////////// there will be no CREAT UPDATE DELETE");
+console.log("/////////////////////////////// there will be no CREATE UPDATE DELETE");
 } else {
 // show create new record // and edit & delete columns
 $(".create_case_1").show();
@@ -3104,6 +3104,28 @@ console.log("/////////////////////////////// ADMIN allowed to fully CRUD");
 
 
 
+/////////////////////////////////////////////////////////////////////////
+///// BEGIN an admin must be logged in for cells to be editable /////////
+/////////////////////////////////////////////////////////////////////////
+// check if an admin is logged in
+  var check_if_an_admin_is_logged_in = setInterval(function() {
+
+    if ($("#authentication").text() == 'login') {
+
+// editing won't work, so we change text color for public user & change cursor & hide form
+$("#table_case_1_a_wrapper").find(".dt_inner_cell").css("color", "white").css("cursor", "default");
+$("#wrap_form_case_1_a").css("visibility", "hidden");
+} else {
+// editing will work, so we change text color for public user & change cursor & show form
+$("#table_case_1_a_wrapper").find(".dt_inner_cell").css("color", "purple").css("cursor", "pointer");
+$("#wrap_form_case_1_a").css("visibility", "visible");
+
+}
+
+}, 1000);
+/////////////////////////////////////////////////////////////////////////
+///// END an admin must be logged in for cells to be editable /////////
+/////////////////////////////////////////////////////////////////////////
 
 
 
