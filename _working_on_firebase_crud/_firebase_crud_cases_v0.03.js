@@ -3123,19 +3123,18 @@ $("#authentication").trigger({ type: "click", which: 1 });
   var check_if_an_admin_is_logged_in = setInterval(function() {
 
     if ($("#email").text() == 'smuglovsky@gmail.com') {
-
-// editing won't work, so we change text color for public user & change cursor & hide form
-$("#table_case_1_a_wrapper").find(".dt_inner_cell").css("color", "white").css("cursor", "default");
-$("#wrap_form_case_1_a").css("visibility", "hidden");
-$("#lock_is_closed").show();
-$("#lock_is_open").hide();
+      // editing will work, so we change text color for public user & change cursor & show form
+      $("#table_case_1_a_wrapper").find(".dt_inner_cell").css("color", "yellow").css("cursor", "pointer");
+      $("#wrap_form_case_1_a").css("visibility", "visible");
+      $("#lock_is_closed").hide();
+      $("#lock_is_open").show();
 
 } else {
-// editing will work, so we change text color for public user & change cursor & show form
-$("#table_case_1_a_wrapper").find(".dt_inner_cell").css("color", "yellow").css("cursor", "pointer");
-$("#wrap_form_case_1_a").css("visibility", "visible");
-$("#lock_is_closed").hide();
-$("#lock_is_open").show();
+  // editing won't work, so we change text color for public user & change cursor & hide form
+  $("#table_case_1_a_wrapper").find(".dt_inner_cell").css("color", "white").css("cursor", "default");
+  $("#wrap_form_case_1_a").css("visibility", "hidden");
+  $("#lock_is_closed").show();
+  $("#lock_is_open").hide();
 
 }
 

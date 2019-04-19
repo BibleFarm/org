@@ -1107,6 +1107,10 @@ table.table_case_1_a thead {
 background: #222222;
 }
 
+table.table_case_1_a thead tr th {
+  color: #D5AD6D !important;
+      text-shadow: 2px 2px 1px #000000;
+}
 
 table.dataTable thead th, table.dataTable thead td {
     padding: 0;
