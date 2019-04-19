@@ -1118,6 +1118,7 @@ table.dataTable thead th, table.dataTable thead td {
   color: #D5AD6D !important;
       background: #222222;
       text-shadow: 2px 2px 1px #000000;
+      width: 108px;
 }
 
 .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody {
