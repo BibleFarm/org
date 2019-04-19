@@ -419,7 +419,10 @@ sub {
   vertical-align: sub;
 }
 mark {
-  background: #ffeb3b;
+  background: #111111;
+  color: orange;
+  text-shadow: 2px 2px 1px #000000;
+
 }
 input[type="email"],
 input[type="month"],
@@ -683,8 +686,10 @@ table {
     position: relative;
     height: 100%;
     font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
-    font-size: 18px;;
-    color: #ae9c80;
+    font-size: 20px;;
+    color: #bebebe;
+    text-shadow: 2px 2px 1px #000000;
+
     margin: 0 auto;
   }
   body {
@@ -1088,7 +1093,6 @@ right: 0;
 width: calc(100% - 8px); /* this changes temp while I work */
 height: calc(100% - 104px);
 top: 52px;
-background: #1B021B;
 z-index: 11;
 }
 .title_case_1_a {
@@ -1339,13 +1343,12 @@ height: 44px;
 line-height: 44px;
 }
 .responsive_editing {
-  color: #D5AD6D;
+  color: #bebebe;
   white-space: normal !important;
   padding-left: 4px !important;
 width: 100%;
 }
 table.dataTable tbody tr {
-color: #222222 !important;
 }
 table.dataTable tbody tr.child {
 color: #fff0;
@@ -1409,6 +1412,7 @@ color: yellow;
 table.dataTable {
   border-collapse: collapse !important;
 }
+
 
 /** END case_1_a ********************************************************/
 
