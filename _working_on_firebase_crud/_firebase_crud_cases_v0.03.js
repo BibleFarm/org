@@ -379,7 +379,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
     "pagingType": "simple",
      //"autoWidth": false,
     "scrollX": false,
-    "scrollY": "calc(100vh - 262px)",
+    "scrollY": "calc(100vh - 88px - 60px)",
     language: {
       url: '../lang/Escuela_Jose.json'
     },
@@ -928,7 +928,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
     "pagingType": "simple",
      //"autoWidth": false,
     "scrollX": false,
-    "scrollY": "calc(100vh - 262px)",
+    "scrollY": "calc(100vh - 88px - 60px)",
     language: {
       url: '../lang/Escuela_Jose.json'
     },
@@ -1417,7 +1417,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
     "pagingType": "simple",
      //"autoWidth": false,
     "scrollX": false,
-    "scrollY": "calc(100vh - 262px)",
+    "scrollY": "calc(100vh - 88px - 60px)",
     language: {
       url: '../lang/Escuela_Jose.json'
     },
@@ -1942,7 +1942,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
     "pagingType": "simple",
      //"autoWidth": false,
     "scrollX": false,
-    "scrollY": "calc(100vh - 262px)",
+    "scrollY": "calc(100vh - 88px - 60px)",
     language: {
       url: '../lang/Escuela_Jose.json'
     },
