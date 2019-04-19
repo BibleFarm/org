@@ -780,6 +780,19 @@ $(this).find("td:eq(6), td:eq(7)").css("display", "none");
 });
 //// END hide edit & delete columns
 //////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+///// BEGIN toggle opened and closed folder icons in responsive /////////
+/////////////////////////////////////////////////////////////////////////
+$("table.table_case_1_a tbody tr td.control").on("click",function(e){
+if ($(this).parent().hasClass('parent')) {
+$(this).find("i").removeClass("fa-folder-open").addClass("fa-folder");
+} else {
+$(this).find("i").removeClass("fa-folder").addClass("fa-folder-open");
+}
+});
+/////////////////////////////////////////////////////////////////////////
+///// END toggle opened and closed folder icons in responsive /////////
+/////////////////////////////////////////////////////////////////////////
          },
     mark: {
       "filter": [".mark_ignore"],
@@ -1326,6 +1339,19 @@ $(this).find("td:eq(6), td:eq(7)").css("display", "none");
 });
 //// END hide edit & delete columns
 //////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+///// BEGIN toggle opened and closed folder icons in responsive /////////
+/////////////////////////////////////////////////////////////////////////
+$("table.table_case_1_a tbody tr td.control").on("click",function(e){
+if ($(this).parent().hasClass('parent')) {
+$(this).find("i").removeClass("fa-folder-open").addClass("fa-folder");
+} else {
+$(this).find("i").removeClass("fa-folder").addClass("fa-folder-open");
+}
+});
+/////////////////////////////////////////////////////////////////////////
+///// END toggle opened and closed folder icons in responsive /////////
+/////////////////////////////////////////////////////////////////////////
          },
     mark: {
       "filter": [".mark_ignore"],
@@ -1812,6 +1838,19 @@ $(this).find("td:eq(6), td:eq(7)").css("display", "none");
 });
 //// END hide edit & delete columns
 //////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+///// BEGIN toggle opened and closed folder icons in responsive /////////
+/////////////////////////////////////////////////////////////////////////
+$("table.table_case_1_a tbody tr td.control").on("click",function(e){
+if ($(this).parent().hasClass('parent')) {
+$(this).find("i").removeClass("fa-folder-open").addClass("fa-folder");
+} else {
+$(this).find("i").removeClass("fa-folder").addClass("fa-folder-open");
+}
+});
+/////////////////////////////////////////////////////////////////////////
+///// END toggle opened and closed folder icons in responsive /////////
+/////////////////////////////////////////////////////////////////////////
          },
     mark: {
       "filter": [".mark_ignore"],
@@ -2334,6 +2373,19 @@ $(this).find("td:eq(6), td:eq(7)").css("display", "none");
 });
 //// END hide edit & delete columns
 //////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+///// BEGIN toggle opened and closed folder icons in responsive /////////
+/////////////////////////////////////////////////////////////////////////
+$("table.table_case_1_a tbody tr td.control").on("click",function(e){
+if ($(this).parent().hasClass('parent')) {
+$(this).find("i").removeClass("fa-folder-open").addClass("fa-folder");
+} else {
+$(this).find("i").removeClass("fa-folder").addClass("fa-folder-open");
+}
+});
+/////////////////////////////////////////////////////////////////////////
+///// END toggle opened and closed folder icons in responsive /////////
+/////////////////////////////////////////////////////////////////////////
          },
     mark: {
       "filter": [".mark_ignore"],
