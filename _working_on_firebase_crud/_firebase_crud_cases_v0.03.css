@@ -648,15 +648,15 @@ table {
 /* ****************************************************************** */
 @font-face {
   font-family: "PT_Sans-Narrow-Web-Regular";
-  src: url(https://biblefarm.org/fonts/PT_Sans-Narrow-Web-Regular.ttf) format("truetype");
+  src: url(https://www.biblefarm.org/fonts/PT_Sans-Narrow-Web-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Jura-Regular";
-  src: url(https://biblefarm.org/fonts/Jura-Regular.ttf) format("truetype");
+  src: url(https://www.biblefarm.org/fonts/Jura-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "DavidLibre-Regular";
-  src: url(https://biblefarm.org/fonts/DavidLibre-Regular.ttf) format("truetype");
+  src: url(https://www.biblefarm.org/fonts/DavidLibre-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "test_m-webfont";
