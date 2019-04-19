@@ -947,7 +947,25 @@ line-height: 44px;
 top: 0;
 right: 0;
 }
-/** BEGIN login ***********************************************************/
+/** END login ***********************************************************/
+
+/** BEGIN add new record ***********************************************************/
+#add_new_record {
+    position: absolute;
+    display: block;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    color: #D5AD6D;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 44px;
+    top: 0;
+    left: 0;
+}
+/** END add new record ***********************************************************/
+
 
 /** BEGIN login_or_not ****************************************************/
 .wrap_login_or_not {
