@@ -141,7 +141,7 @@ if (user) {
   $("#continue_as_a_visitor_or_ok").text("continue as a visitor");
   console.log("//////////////////////////////// #continue_as_a_visitor_or_ok // changed continue as a visitor");
   $("#authentication").text("login");
-$("#table_case_1_a_wrapper").find(".create_case_1_a").hide();
+$("body").find(".create_case_1_a").hide();
 $("#table_case_1_a thead th:nth-last-child(2)").hide();
 $("#table_case_1_a thead th:nth-last-child(1)").hide();
 $('#table_case_1_a tr').each(function() {
@@ -162,7 +162,7 @@ if(!$('#email').text().match('smuglovsky@gmail.com')) {
   $(".logged_in_message_users_case_1_a").show("slow");
   $(".logged_in_message_admin_case_1_a").hide();
 // hide create new record // and edit & delete columns
-$("#table_case_1_a_wrapper").find(".create_case_1_a").hide();
+$("body").find(".create_case_1_a").hide();
 $("#table_case_1_a thead th:nth-last-child(2)").hide();
 $("#table_case_1_a thead th:nth-last-child(1)").hide();
 $('#table_case_1_a tr').each(function() {
@@ -174,7 +174,7 @@ console.log("/////////////////////////////// there will be no CREATE UPDATE DELE
   $(".logged_in_message_users_case_1_a").hide();
   $(".logged_in_message_admin_case_1_a").show("slow");
 // show create new record // and edit & delete columns
-$("#table_case_1_a_wrapper").find(".create_case_1_a").show();
+$("body").find(".create_case_1_a").show();
 $("#table_case_1_a thead th:nth-last-child(2)").show();
 $("#table_case_1_a thead th:nth-last-child(1)").show();
 $('#table_case_1_a tr').each(function() {
@@ -194,7 +194,7 @@ console.log("/////////////////////////////// ADMIN allowed to fully CRUD");
   $("#continue_as_a_visitor_or_ok").text("continue as a visitor");
   console.log("//////////////////////////////// #continue_as_a_visitor_or_ok // changed continue as a visitor");
   $("#authentication").text("login");
-$("#table_case_1_a_wrapper").find(".create_case_1_a").hide();
+$("body").find(".create_case_1_a").hide();
 $("#table_case_1_a thead th:nth-last-child(2)").hide();
 $("#table_case_1_a thead th:nth-last-child(1)").hide();
 $('#table_case_1_a tr').each(function() {
@@ -346,7 +346,7 @@ console.log("// waitFor_table_to_be_repopulated_after_delete // table has stuff 
 
 if(!$('#email').text().match('smuglovsky@gmail.com')) {
 // hide create new record // and edit & delete columns
-$("#table_case_1_a_wrapper").find(".create_case_1_a").hide();
+$("body").find(".create_case_1_a").hide();
 $("#table_case_1_a thead th:nth-last-child(2)").hide();
 $("#table_case_1_a thead th:nth-last-child(1)").hide();
 $('#table_case_1_a tr').each(function() {
@@ -356,7 +356,7 @@ $(this).find("td:nth-last-child(1)").hide();
 console.log("/////////////////////////////// there will be no CREATE UPDATE DELETE");
 } else {
 // show create new record // and edit & delete columns
-$("#table_case_1_a_wrapper").find(".create_case_1_a").show();
+$("body").find(".create_case_1_a").show();
 $("#table_case_1_a thead th:nth-last-child(2)").show();
 $("#table_case_1_a thead th:nth-last-child(1)").show();
 $('#table_case_1_a tr').each(function() {
@@ -413,12 +413,9 @@ table_case_1_a = $("#table_case_1_a").DataTable({
         order: [ 1, 'desc' ],
         fnInitComplete: function(){
 //////////////////////////////////////////
-// BEGIN put the create icon inside the table toolbar
-$("div.toolbar_case_1_a").html('<div class="create_case_1_a" style=""><div class="background_test"><span class="wrap_svg"><i data-fa-symbol="file_open" class="fas fa-file fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#file_open"></use></svg></span></div></div>');
-// END put the create icon inside the table toolbar
 //////////////////////////////////////////
 // BEGIN user interface to create or edit
-$("#table_case_1_a_wrapper").find(".create_case_1_a").on("click",function(e){
+$("body").find(".create_case_1_a").on("click",function(e){
 $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
 $("#column_1_case_1_a").css("background", "yellow").val(((moment().format('YYYY/MM/DD hh:mm', {trim: false}))));
 $("#column_2_case_1_a").focus().select();
@@ -891,7 +888,7 @@ clearInterval(waitFor_table_to_be_populated_on_page_load_from_firebase);
 
 if(!$('#email').text().match('smuglovsky@gmail.com')) {
 // hide create new record // and edit & delete columns
-$("#table_case_1_a_wrapper").find(".create_case_1_a").hide();
+$("body").find(".create_case_1_a").hide();
 $("#table_case_1_a thead th:nth-last-child(2)").hide();
 $("#table_case_1_a thead th:nth-last-child(1)").hide();
 $('#table_case_1_a tr').each(function() {
@@ -901,7 +898,7 @@ $(this).find("td:nth-last-child(1)").hide();
 console.log("/////////////////////////////// there will be no CREATE UPDATE DELETE");
 } else {
 // show create new record // and edit & delete columns
-$("#table_case_1_a_wrapper").find(".create_case_1_a").show();
+$("body").find(".create_case_1_a").show();
 $("#table_case_1_a thead th:nth-last-child(2)").show();
 $("#table_case_1_a thead th:nth-last-child(1)").show();
 $('#table_case_1_a tr').each(function() {
@@ -962,12 +959,9 @@ table_case_1_a = $("#table_case_1_a").DataTable({
         order: [ 1, 'desc' ],
         fnInitComplete: function(){
 //////////////////////////////////////////
-// BEGIN put the create icon inside the table toolbar
-$("div.toolbar_case_1_a").html('<div class="create_case_1_a" style=""><div class="background_test"><span class="wrap_svg"><i data-fa-symbol="file_open" class="fas fa-file fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#file_open"></use></svg></span></div></div>');
-// END put the create icon inside the table toolbar
 //////////////////////////////////////////
 // BEGIN user interface to create or edit
-$("#table_case_1_a_wrapper").find(".create_case_1_a").on("click",function(e){
+$("body").find(".create_case_1_a").on("click",function(e){
 $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
 $("#column_1_case_1_a").css("background", "yellow").val(((moment().format('YYYY/MM/DD hh:mm', {trim: false}))));
 $("#column_2_case_1_a").focus().select();
@@ -1377,7 +1371,7 @@ clearInterval(waitFor_table_to_be_populated_after_create_or_edit_from_firebase);
 
 if(!$('#email').text().match('smuglovsky@gmail.com')) {
 // hide create new record // and edit & delete columns
-$("#table_case_1_a_wrapper").find(".create_case_1_a").hide();
+$("body").find(".create_case_1_a").hide();
 $("#table_case_1_a thead th:nth-last-child(2)").hide();
 $("#table_case_1_a thead th:nth-last-child(1)").hide();
 $('#table_case_1_a tr').each(function() {
@@ -1387,7 +1381,7 @@ $(this).find("td:nth-last-child(1)").hide();
 console.log("/////////////////////////////// there will be no CREATE UPDATE DELETE");
 } else {
 // show create new record // and edit & delete columns
-$("#table_case_1_a_wrapper").find(".create_case_1_a").show();
+$("body").find(".create_case_1_a").show();
 $("#table_case_1_a thead th:nth-last-child(2)").show();
 $("#table_case_1_a thead th:nth-last-child(1)").show();
 $('#table_case_1_a tr').each(function() {
@@ -1451,12 +1445,9 @@ table_case_1_a = $("#table_case_1_a").DataTable({
         order: [ 1, 'desc' ],
         fnInitComplete: function(){
 //////////////////////////////////////////
-// BEGIN put the create icon inside the table toolbar
-$("div.toolbar_case_1_a").html('<div class="create_case_1_a" style=""><div class="background_test"><span class="wrap_svg"><i data-fa-symbol="file_open" class="fas fa-file fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#file_open"></use></svg></span></div></div>');
-// END put the create icon inside the table toolbar
 //////////////////////////////////////////
 // BEGIN user interface to create or edit
-$("#table_case_1_a_wrapper").find(".create_case_1_a").on("click",function(e){
+$("body").find(".create_case_1_a").on("click",function(e){
 $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
 $("#column_1_case_1_a").css("background", "yellow").val(((moment().format('YYYY/MM/DD hh:mm', {trim: false}))));
 $("#column_2_case_1_a").focus().select();
@@ -1905,7 +1896,7 @@ console.log("// waitFor_table_to_be_repopulated_after_signout_or_delete_account 
 
 if(!$('#email').text().match('smuglovsky@gmail.com')) {
 // hide create new record // and edit & delete columns
-$("#table_case_1_a_wrapper").find(".create_case_1_a").hide();
+$("body").find(".create_case_1_a").hide();
 $("#table_case_1_a thead th:nth-last-child(2)").hide();
 $("#table_case_1_a thead th:nth-last-child(1)").hide();
 $('#table_case_1_a tr').each(function() {
@@ -1915,7 +1906,7 @@ $(this).find("td:nth-last-child(1)").hide();
 console.log("/////////////////////////////// there will be no CREATE UPDATE DELETE");
 } else {
 // show create new record // and edit & delete columns
-$("#table_case_1_a_wrapper").find(".create_case_1_a").show();
+$("body").find(".create_case_1_a").show();
 $("#table_case_1_a thead th:nth-last-child(2)").show();
 $("#table_case_1_a thead th:nth-last-child(1)").show();
 $('#table_case_1_a tr').each(function() {
@@ -1976,12 +1967,9 @@ table_case_1_a = $("#table_case_1_a").DataTable({
         order: [ 1, 'desc' ],
         fnInitComplete: function(){
 //////////////////////////////////////////
-// BEGIN put the create icon inside the table toolbar
-$("div.toolbar_case_1_a").html('<div class="create_case_1_a" style=""><div class="background_test"><span class="wrap_svg"><i data-fa-symbol="file_open" class="fas fa-file fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#file_open"></use></svg></span></div></div>');
-// END put the create icon inside the table toolbar
 //////////////////////////////////////////
 // BEGIN user interface to create or edit
-$("#table_case_1_a_wrapper").find(".create_case_1_a").on("click",function(e){
+$("body").find(".create_case_1_a").on("click",function(e){
 $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
 $("#column_1_case_1_a").css("background", "yellow").val(((moment().format('YYYY/MM/DD hh:mm', {trim: false}))));
 $("#column_2_case_1_a").focus().select();
@@ -2410,7 +2398,7 @@ clearInterval(checkIf_we_have_an_empty_table);
 ////////////////////////////////////////////////////////
 if(!$('#email').text().match('smuglovsky@gmail.com')) {
 // hide create new record // and edit & delete columns
-$("#table_case_1_a_wrapper").find(".create_case_1_a").hide();
+$("body").find(".create_case_1_a").hide();
 $("#table_case_1_a thead th:nth-last-child(2)").hide();
 $("#table_case_1_a thead th:nth-last-child(1)").hide();
 $('#table_case_1_a tr').each(function() {
@@ -2420,7 +2408,7 @@ $(this).find("td:nth-last-child(1)").hide();
 console.log("/////////////////////////////// there will be no CREATE UPDATE DELETE");
 } else {
 // show create new record // and edit & delete columns
-$("#table_case_1_a_wrapper").find(".create_case_1_a").show();
+$("body").find(".create_case_1_a").show();
 $("#table_case_1_a thead th:nth-last-child(2)").show();
 $("#table_case_1_a thead th:nth-last-child(1)").show();
 $('#table_case_1_a tr').each(function() {
@@ -2436,7 +2424,7 @@ console.log("/////////////////////////////// ADMIN allowed to fully CRUD");
 /////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////
 // BEGIN user interface to create or edit
-$("#table_case_1_a_wrapper").find(".create_case_1_a").on("click",function(e){
+$("body").find(".create_case_1_a").on("click",function(e){
 $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
 $("#column_1_case_1_a").css("background", "yellow").val(((moment().format('YYYY/MM/DD hh:mm', {trim: false}))));
 $("#column_2_case_1_a").focus().select();

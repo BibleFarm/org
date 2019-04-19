@@ -966,11 +966,13 @@ right: 0;
 }
 
 .fas {
-
   color: red;
   font-size: 28px;
-
+  color: #D5AD6D;
+  text-shadow: 2px 2px 1px #000000;
+  cursor: pointer;
 }
+
 /** END add new record ***********************************************************/
 
 
@@ -1147,7 +1149,7 @@ table.dataTable thead th, table.dataTable thead td {
   color: #D5AD6D !important;
       background: #222222;
       text-shadow: 2px 2px 1px #000000;
-      width: 108px;
+      width: calc(50% - 2px) !important;
 }
 
 .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody {
@@ -1181,17 +1183,21 @@ line-height: 44px;
 background: blue;
 }
 #table_case_1_a_filter {
-margin-top: 0px !important;
-float: right !important;
-background: #222222;
+  margin-top: 0px !important;
+      float: right !important;
+      background: #222222;
+      width: calc(50% - 2px) !important;
 }
 #table_case_1_a_filter > label > input {
-height: 44px !important;
-background: #222222;
-color: #D5AD6D;
-    text-shadow: 2px 2px 1px #000000;
-    padding-left: 8px;
-line-height: 44px;
+  height: 44px !important;
+      background: #222222;
+      color: #D5AD6D;
+      text-shadow: 2px 2px 1px #000000;
+      padding-left: 8px;
+      line-height: 44px;
+      width: calc(100% - 10px);
+      float: left;
+      text-align: center;
 }
 
 
@@ -1381,8 +1387,6 @@ color: yellow;
 .dataTables_info {
     position: absolute;
     top: 0px;
-    left: calc(4px + 35px);
-    right: calc(4px + 35px);
     text-align: center !important;
     display: inline-block;
     height: 44px;
@@ -1392,6 +1396,7 @@ color: yellow;
     margin: 0 !important;
     padding: 0 !important;
     line-height: 44px;
+    width: 50% !important;
 }
 
 
