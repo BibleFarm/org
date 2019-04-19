@@ -391,7 +391,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
                     var data = $.map( columns, function ( col, i ) {
                         return col.hidden ?
                             '<table class="resp_ch_row_table"><tr class="resp_ch_row_tr" data-dt-row="'+col.rowIndex+'" data-dt-column="'+col.columnIndex+'">'+
-                                '<td><div class="responsive_col_title">'+col.title+' > '+'</div></td> '+
+                                '<td><div class="responsive_col_title">'+col.title+'</div></td> '+
                                 '<td><div class="responsive_editing">'+col.data+'</div></td>'+
                             '</tr></table>' :
                             '';
@@ -950,7 +950,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
                     var data = $.map( columns, function ( col, i ) {
                         return col.hidden ?
                             '<table class="resp_ch_row_table"><tr class="resp_ch_row_tr" data-dt-row="'+col.rowIndex+'" data-dt-column="'+col.columnIndex+'">'+
-                                '<td><div class="responsive_col_title">'+col.title+' > '+'</div></td> '+
+                                '<td><div class="responsive_col_title">'+col.title+'</div></td> '+
                                 '<td><div class="responsive_editing">'+col.data+'</div></td>'+
                             '</tr></table>' :
                             '';
@@ -1449,7 +1449,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
                     var data = $.map( columns, function ( col, i ) {
                         return col.hidden ?
                             '<table class="resp_ch_row_table"><tr class="resp_ch_row_tr" data-dt-row="'+col.rowIndex+'" data-dt-column="'+col.columnIndex+'">'+
-                                '<td><div class="responsive_col_title">'+col.title+' > '+'</div></td> '+
+                                '<td><div class="responsive_col_title">'+col.title+'</div></td> '+
                                 '<td><div class="responsive_editing">'+col.data+'</div></td>'+
                             '</tr></table>' :
                             '';
@@ -1984,7 +1984,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
                     var data = $.map( columns, function ( col, i ) {
                         return col.hidden ?
                             '<table class="resp_ch_row_table"><tr class="resp_ch_row_tr" data-dt-row="'+col.rowIndex+'" data-dt-column="'+col.columnIndex+'">'+
-                                '<td><div class="responsive_col_title">'+col.title+' > '+'</div></td> '+
+                                '<td><div class="responsive_col_title">'+col.title+'</div></td> '+
                                 '<td><div class="responsive_editing">'+col.data+'</div></td>'+
                             '</tr></table>' :
                             '';

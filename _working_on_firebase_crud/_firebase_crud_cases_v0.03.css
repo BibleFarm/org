@@ -1163,10 +1163,12 @@ table.table_case_1_a tbody {
 background: #222222;
 }
 table.table_case_1_a tbody tr.odd {
-background-color: #222222;
+background-color: #111111;
+border-bottom: 1px solid #222222;
 }
 table.table_case_1_a tbody tr.even {
 background-color: #111111;
+border-bottom: 1px solid #222222;
 }
 #tbody_case_1_a tr.odd td {
 padding: 0px !important;
@@ -1326,12 +1328,13 @@ svg {display: none !important;}
 /* END fontawesome svg icons */
 /* BEGIN datatable responsive */
 .responsive_col_title {
-color: hotpink;
-background: black;
-padding-left: 4px !important;
-padding-right: 18px !important;
+  font-size: 20px;
+  color: #D5AD6D;
+  text-shadow: 2px 2px 1px #000000;
+
+padding-left: 8px !important;
 white-space: nowrap;
-width: 100%;
+width: 100px;
 height: 44px;
 line-height: 44px;
 }
@@ -1354,7 +1357,8 @@ tbody#tbody_case_1_a tr.even tr.child {
 background-color: #222222;
 }
 table.dataTable tbody tr.resp_ch_row_tr {
-background-color: hotpink !important;
+background-color: #222222 !important;
+ border-bottom: 1px solid #111111;
 }
 
 /* END datatable responsive */
@@ -1365,7 +1369,6 @@ padding-left: 4px;
 padding-right: 18px;
 padding-top: 4px;
 padding-bottom: 4px;
-background: blue;
 cursor: pointer;
 }
 .table_case_1_a_th {
@@ -1403,6 +1406,9 @@ color: yellow;
     width: 50% !important;
 }
 
+table.dataTable {
+  border-collapse: collapse !important;
+}
 
 /** END case_1_a ********************************************************/
 
