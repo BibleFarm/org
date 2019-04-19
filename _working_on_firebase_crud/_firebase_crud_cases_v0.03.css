@@ -939,7 +939,7 @@ display: none;
   width: 44px;
   height: 44px;
 cursor: pointer;
-color: red;
+color: #D5AD6D;
 font-size: 20px;
 font-weight: bold;
 text-align: center;
@@ -1068,9 +1068,9 @@ z-index: 11;
   width: 100%;
   text-align: center;
   line-height: 44px;
-  color: gold;
-background: purple;
-
+  color: #D5AD6D;
+      background: #222222;
+      text-shadow: 2px 2px 1px #000000;
 }
 .create_case_1_a, .create_case_2, .create_case_3, .create_case_4, .create_case_5, .editar, .borrar, .cancel_new_or_edit_case_1_a {
 background: brown;
@@ -1100,6 +1100,7 @@ display: block;
 table.table_case_1_a {
 background: #111111;
 width: 100%;
+margin-top: 4px !important;
 }
 table.table_case_1_a thead {
 /*height: 44px;*/
@@ -1113,8 +1114,15 @@ table.dataTable thead th, table.dataTable thead td {
 	height: 44px;
 }
 
+.dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_paginate {
+  color: #D5AD6D !important;
+      background: #222222;
+      text-shadow: 2px 2px 1px #000000;
+}
 
-
+.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody {
+      margin-top: 4px;
+}
 
 table.table_case_1_a tbody {
 background: #222222;
@@ -1146,11 +1154,13 @@ background: blue;
 #table_case_1_a_filter {
 margin-top: 0px !important;
 float: right !important;
-background: blue;
+background: #222222;
 }
 #table_case_1_a_filter > label > input {
 height: 44px !important;
-background: pink;
+background: #222222;
+color: #D5AD6D;
+    text-shadow: 2px 2px 1px #000000;
 }
 
 
@@ -1213,7 +1223,7 @@ cursor: pointer;
   height: 44px;
 line-height: 44px;
 text-align: center;
-background: purple;
+background: #222222;
 }
 .fa_svg_new_record {
 display: inline-block;
@@ -1267,6 +1277,9 @@ color: gold;
   width: 44px;
   height: 44px;
   line-height: 44px;
+  color: #D5AD6D;
+  text-shadow: 2px 2px 1px #000000;
+
 }
 svg {display: none !important;}
 /* END fontawesome svg icons */
