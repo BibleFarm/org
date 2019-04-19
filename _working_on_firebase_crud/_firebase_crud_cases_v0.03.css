@@ -1162,6 +1162,8 @@ height: 44px !important;
 background: #222222;
 color: #D5AD6D;
     text-shadow: 2px 2px 1px #000000;
+    padding-left: 10px;
+line-height: 44px;
 }
 
 
@@ -1350,7 +1352,7 @@ color: yellow;
 
 .dataTables_info {
     position: absolute;
-    top: 4px;
+    top: 0px;
     left: calc(4px + 35px);
     right: calc(4px + 35px);
     text-align: center !important;

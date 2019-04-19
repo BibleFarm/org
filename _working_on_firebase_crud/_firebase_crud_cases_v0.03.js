@@ -440,7 +440,7 @@ $('#table_case_1_a_filter label').contents().filter(function() {
 // END remove "Search:" in label
 //////////////////////////////////
 // BEGIN add text inside the placeholder
-$("#table_case_1_a_filter label input").attr("placeholder", "search");
+$("#table_case_1_a_filter label input").attr("placeholder", "filtrar");
 // END add text inside the placeholder
 //////////////////////////////////
 // BEGIN resize columns according to what fits or not
@@ -661,7 +661,7 @@ table_case_1_a.draw();
 // BEGIN when seaching, on keyup, resize columns according to what fits or not
 //////////////////////////////////
 $("#table_case_1_a_filter label input").on("keyup",function(e){
-$("#table_case_1_a_filter label input").css("background", "yellow");
+$("#table_case_1_a_filter label input").css("background", "#333333");
 //////////////////////////////////
 // BEGIN resize columns according to what fits or not
 ////////////////////////////////////////
@@ -989,7 +989,7 @@ $('#table_case_1_a_filter label').contents().filter(function() {
 // END remove "Search:" in label
 //////////////////////////////////
 // BEGIN add text inside the placeholder
-$("#table_case_1_a_filter label input").attr("placeholder", "search");
+$("#table_case_1_a_filter label input").attr("placeholder", "filtrar");
 // END add text inside the placeholder
 //////////////////////////////////
 // BEGIN resize columns according to what fits or not
@@ -1210,7 +1210,7 @@ table_case_1_a.draw();
 // BEGIN when seaching, on keyup, resize columns according to what fits or not
 //////////////////////////////////
 $("#table_case_1_a_filter label input").on("keyup",function(e){
-$("#table_case_1_a_filter label input").css("background", "yellow");
+$("#table_case_1_a_filter label input").css("background", "#333333");
 //////////////////////////////////
 // BEGIN resize columns according to what fits or not
 ////////////////////////////////////////
@@ -1478,7 +1478,7 @@ $('#table_case_1_a_filter label').contents().filter(function() {
 // END remove "Search:" in label
 //////////////////////////////////
 // BEGIN add text inside the placeholder
-$("#table_case_1_a_filter label input").attr("placeholder", "search");
+$("#table_case_1_a_filter label input").attr("placeholder", "filtrar");
 // END add text inside the placeholder
 //////////////////////////////////
 // BEGIN resize columns according to what fits or not
@@ -1699,7 +1699,7 @@ table_case_1_a.draw();
 // BEGIN when seaching, on keyup, resize columns according to what fits or not
 //////////////////////////////////
 $("#table_case_1_a_filter label input").on("keyup",function(e){
-$("#table_case_1_a_filter label input").css("background", "yellow");
+$("#table_case_1_a_filter label input").css("background", "#333333");
 //////////////////////////////////
 // BEGIN resize columns according to what fits or not
 ////////////////////////////////////////
@@ -2003,7 +2003,7 @@ $('#table_case_1_a_filter label').contents().filter(function() {
 // END remove "Search:" in label
 //////////////////////////////////
 // BEGIN add text inside the placeholder
-$("#table_case_1_a_filter label input").attr("placeholder", "search");
+$("#table_case_1_a_filter label input").attr("placeholder", "filtrar");
 // END add text inside the placeholder
 //////////////////////////////////
 // BEGIN resize columns according to what fits or not
@@ -2224,7 +2224,7 @@ table_case_1_a.draw();
 // BEGIN when seaching, on keyup, resize columns according to what fits or not
 //////////////////////////////////
 $("#table_case_1_a_filter label input").on("keyup",function(e){
-$("#table_case_1_a_filter label input").css("background", "yellow");
+$("#table_case_1_a_filter label input").css("background", "#333333");
 //////////////////////////////////
 // BEGIN resize columns according to what fits or not
 ////////////////////////////////////////
