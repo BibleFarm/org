@@ -5710,6 +5710,7 @@ z-index: 1000000;
   justify-content: center;
   align-items: center;
   z-index: 111;
+  background: rgba(0, 0, 0, 0.7);
 }
 .sharing_modal_filter_mode, .sharing_modal_browsing_mode, .modal_outer_still_working_on_this {
   padding: 20px;
@@ -6683,7 +6684,7 @@ display: inline-block;
 font-size: 20px;
 text-align: center;
 line-height: 44px;
-width: calc(40%);
+width: calc(44%);
 }
 .done_editing_redirect_to_next > .done_editing_redirect_to_next_item_center {
 height: 44px;
@@ -6691,7 +6692,7 @@ display: inline-block;
 font-size: 20px;
 text-align: center;
 line-height: 44px;
-width: calc(42% - 1px);
+width: calc(28% - 1px);
 }
 .done_editing_redirect_to_next > .done_editing_redirect_to_next_item_right {
 height: 44px;
@@ -6699,7 +6700,7 @@ display: inline-block;
 font-size: 20px;
 text-align: center;
 line-height: 44px;
-width: calc(18%);
+width: calc(28%);
 }
 .done_editing_redirect_to_next:after {
 content: '';
@@ -6710,3 +6711,11 @@ display: inline-block;
 /* END wrap_done_editing_redirect_to_next */
 
 /* END brought in from the old edits.html standalone page for post edit background color picker */
+
+
+
+
+
+#done_editing_redirect_to_next_team, #done_editing_redirect_to_next_guest {
+  display: none;
+}

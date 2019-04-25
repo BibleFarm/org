@@ -8363,6 +8363,8 @@ if($('#admin').css('display') !== 'none')
 }, 8000);
 } else {
   $("#logged_in_user_is_a_part").text("be a part of biblefarm.org");
+  $("#edited_app_name").text("Your Name Goes Here");
+
   setTimeout(function() {
   $(".app_wrap").find("p.msg1").text("thanks for visiting").fadeOut("5000").fadeIn("7000");
 }, 8000);
@@ -8747,13 +8749,77 @@ $(".wrap_sponsor_ads_app_only").html("<div class='sponsor_ads'><div class='spons
   ///////////////////////////////////////////////////
   $(document).ready(function() {
 
-    $(".wrap_edit_background_chooser").show("slow");
-    $(".wrap_image_sharing").show("slow");
-    $(".wrap_done_editing_redirect_to_next").show("slow");
-    $(".app_bg_color_picker_go_bottom").show("slow");
+$("body").on("click", "#tE_ajax_chapters tbody tr td span", function(e) {
+
+    $(".wrap_edit_background_chooser").show();
+    $(".wrap_image_sharing").show();
+    $(".wrap_done_editing_redirect_to_next").show();
+    $(".app_bg_color_picker_go_bottom").show();
+// close modal on cancel
+    $(".cancel_post_sharing_close_modal").on('click', function(e) {
+        $(".wrap_sharing_modal_browsing_mode").hide();
+    });
+// BEGIN if user not logged in
+if ($.trim($("#edited_app_name").text()) == "Your Name Goes Here") {
+
+$("#done_editing_redirect_to_next_guest").show();
+$("#done_editing_redirect_to_next_team").hide();
+
+$("#please_login").on('click', function(e) {
+$(".wrap_sharing_modal_browsing_mode").hide();
+// check if we need to open the menu
+if (!$('.wrap_top_menu').hasClass('wrap_top_menu_active')){
+setTimeout(function() {
+$('.top_menu').trigger({type: 'click', which: 1});
+$('.wrap_top_menu').addClass('wrap_top_menu_active').show();
+}, 500);
+}
+// check if we need to open admin
+if (( !$("#scrollTo_top_menu_items_admin_trigger_close").css('display') != 'none' )) {
+setTimeout(function() {
+  if (!$("#scrollTo_top_menu_items_admin_landing").hasClass("active")) {
+  $(".wrap_top_menu").find("#scrollTo_top_menu_items_admin_landing").trigger({
+        type: 'click',
+        which: 1
+      });
+  $(".wrap_top_menu").find("#scrollTo_top_menu_items_admin_trigger_open").trigger({
+        type: 'click',
+        which: 1
+      });
+  } else {
+  $("#scrollTo_div_for_top_menu_items").scrollTo("#scrollTo_top_menu_items_admin_landing", 1000);
+  }
+}, 1000);
+} else {
+  setTimeout(function() {
+$("#scrollTo_div_for_top_menu_items").scrollTo("#scrollTo_top_menu_items_admin_landing", 1000);
+}, 1000);
+}
+});
+
+}
+// END if user not logged in
+else {
+  $("#done_editing_redirect_to_next_guest").hide();
+  $("#done_editing_redirect_to_next_team").show();
+}
+
+
+    });
+
+
+
+
+
+
+
+
+
+
+
 
 
 });
   ///////////////////////////////////////////////////
-  /// BEGIN JS for edit post  ///////
+  /// END JS for edit post  ///////
   ///////////////////////////////////////////////////
