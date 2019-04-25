@@ -6579,3 +6579,134 @@ display: table-cell;
 vertical-align: middle;
 }
 /* END wrap_sponsor_ads */
+
+
+/* BEGIN brought in from the old edits.html standalone page for post edit background color picker */
+.wrap_edit_background_chooser {
+position: absolute;
+display: none;
+top: calc(44px + 0px);
+width: 100%;
+max-width: 312px;
+height: 186px;
+background: #241e00;
+margin: 0 auto;
+left: 0;
+right: 0;
+}
+.edit_background_chooser {
+display: flex;
+font-size: 0;
+flex-wrap: wrap;
+margin: 0 auto;
+padding: 1px;
+}
+.color_picker_item {
+cursor: pointer;
+box-sizing: border-box;
+display: inline-block;
+margin: 1px;
+flex-grow: 1;
+height: 44px;
+width: calc(100% * (1/4) - 2px);
+line-height: 44px;
+font-size: 16px;
+color: #d5ad6d;
+text-align: center;
+}
+.color_picker_item:hover {
+color: #dac4a2;
+text-decoration: none;
+}
+
+.wrap_image_sharing {
+position: absolute;
+max-width: 312px;
+display: none;
+left: 0;
+right: 0;
+margin: 0 auto;
+top: calc(212px);
+text-align: center;
+z-index: -1;
+}
+img#post_color_change_by_user {
+width: calc(100vw - 8px);
+min-width: 312px;
+max-width: 312px;
+}
+.wrap_behind_image_space {
+position: absolute;
+left: 0;
+right: 0;
+margin: 0 auto;
+top: calc(44px + 4px);
+text-align: center;
+z-index: -1;
+}
+.wrap_underneath_image_space {
+position: absolute;
+left: 0;
+right: 0;
+margin: 0 auto;
+top: calc(44px + 4px);
+text-align: center;
+z-index: -1;
+}
+
+/* BEGIN wrap_done_editing_redirect_to_next */
+.wrap_done_editing_redirect_to_next {
+position: absolute;
+display: none;
+top: calc(186px + 171px);
+width: calc(100% - 4px);
+left: 0;
+right: 0;
+margin: 0 auto;
+height: 44px;
+z-index: 10;
+max-width: 312px;
+}
+.done_editing_redirect_to_next {
+width: 100%;
+height: 44px;
+line-height: 44px;
+margin: 0 auto;
+text-align: justify;
+font-size: 0.1px;
+/* IE 9 & 10 don't like font-size: 0;
+ */
+}
+.done_editing_redirect_to_next > .done_editing_redirect_to_next_item_left {
+height: 44px;
+display: inline-block;
+font-size: 20px;
+text-align: center;
+line-height: 44px;
+width: calc(40%);
+}
+.done_editing_redirect_to_next > .done_editing_redirect_to_next_item_center {
+height: 44px;
+display: inline-block;
+font-size: 20px;
+text-align: center;
+line-height: 44px;
+width: calc(42% - 1px);
+}
+.done_editing_redirect_to_next > .done_editing_redirect_to_next_item_right {
+height: 44px;
+display: inline-block;
+font-size: 20px;
+text-align: center;
+line-height: 44px;
+width: calc(18%);
+}
+.done_editing_redirect_to_next:after {
+content: '';
+width: 100%;
+/* Ensures there are at least 2 lines of text, so justification works */
+display: inline-block;
+}
+/* END wrap_done_editing_redirect_to_next */
+
+/* END brought in from the old edits.html standalone page for post edit background color picker */

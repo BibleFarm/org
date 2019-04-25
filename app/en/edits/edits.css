@@ -156,7 +156,7 @@ top: calc(212px);
 text-align: center;
 z-index: -1;
 }
-img {
+img#post_color_change_by_user {
 width: calc(100vw - 8px);
 min-width: 312px;
 max-width: 312px;
