@@ -8733,3 +8733,27 @@ $(".wrap_sponsor_ads_app_only").html("<div class='sponsor_ads'><div class='spons
   ///////////////////////////////////////////////////
   /// BEGIN inject team members ///////
   ///////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+  ///////////////////////////////////////////////////
+  /// BEGIN JS for edit post  ///////
+  ///////////////////////////////////////////////////
+  $(document).ready(function() {
+
+    $(".wrap_edit_background_chooser").show("slow");
+    $(".wrap_image_sharing").show("slow");
+    $(".wrap_done_editing_redirect_to_next").show("slow");
+    $(".app_bg_color_picker_go_bottom").show("slow");
+
+
+});
+  ///////////////////////////////////////////////////
+  /// BEGIN JS for edit post  ///////
+  ///////////////////////////////////////////////////
