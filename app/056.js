@@ -8772,7 +8772,6 @@ $(".sharing_modal_container_browsing_mode").click(function(e){
       });
 });
 
-
 // BEGIN if user not logged in
 if ($.trim($("#edited_app_name").text()) == "Your Name Goes Here") {
 
