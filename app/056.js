@@ -8759,6 +8759,20 @@ $("body").on("click", "#tE_ajax_chapters tbody tr td span", function(e) {
     $(".cancel_post_sharing_close_modal").on('click', function(e) {
         $(".wrap_sharing_modal_browsing_mode").hide();
     });
+// close modal on click anywhere outside
+$(".sharing_modal_container_browsing_mode").click(function(e){
+    // Check if click was triggered on or within #menu_content
+    if( $(e.target).closest(".edit_background_chooser, .post_color_change_by_user, .done_editing_redirect_to_next").length > 0 ) {
+        return false;
+    }
+    // Otherwise trigger your click function
+  $(".cancel_post_sharing_close_modal").trigger({
+        type: 'click',
+        which: 1
+      });
+});
+
+
 // BEGIN if user not logged in
 if ($.trim($("#edited_app_name").text()) == "Your Name Goes Here") {
 

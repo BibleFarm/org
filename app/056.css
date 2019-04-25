@@ -5710,7 +5710,7 @@ z-index: 1000000;
   justify-content: center;
   align-items: center;
   z-index: 111;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.9);
 }
 .sharing_modal_filter_mode, .sharing_modal_browsing_mode, .modal_outer_still_working_on_this {
   padding: 20px;
