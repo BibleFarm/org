@@ -8836,3 +8836,51 @@ else {
   ///////////////////////////////////////////////////
   /// END JS for edit post  ///////
   ///////////////////////////////////////////////////
+
+///////////////////////////////////////////////////
+/// BEGIN handle click on Your Name Goes Here or logged in user  ///////
+///////////////////////////////////////////////////
+  $("#edited_app_name").on('click', function(e) {
+// BEGIN handle the toggle to login
+    // check if we need to open the menu
+    if (!$('.wrap_top_menu').hasClass('wrap_top_menu_active')){
+    setTimeout(function() {
+    $('.top_menu').trigger({type: 'click', which: 1});
+    $('.wrap_top_menu').addClass('wrap_top_menu_active').show();
+    }, 500);
+    }
+    // check if we need to open admin
+    if (( !$("#scrollTo_top_menu_items_admin_trigger_close").css('display') != 'none' )) {
+    setTimeout(function() {
+      if (!$("#scrollTo_top_menu_items_admin_landing").hasClass("active")) {
+      $(".wrap_top_menu").find("#scrollTo_top_menu_items_admin_landing").trigger({
+            type: 'click',
+            which: 1
+          });
+      $(".wrap_top_menu").find("#scrollTo_top_menu_items_admin_trigger_open").trigger({
+            type: 'click',
+            which: 1
+          });
+      } else {
+      $("#scrollTo_div_for_top_menu_items").scrollTo("#scrollTo_top_menu_items_admin_landing", 1000);
+      }
+    }, 1000);
+    } else {
+      setTimeout(function() {
+    $("#scrollTo_div_for_top_menu_items").scrollTo("#scrollTo_top_menu_items_admin_landing", 1000);
+    }, 1000);
+    }
+  // END handle the toggle to login
+  // BEGIN handle the toggle to be able to click again and close after login
+    if ( ($('.wrap_top_menu').hasClass('wrap_top_menu_active')) && ($("#scrollTo_top_menu_items_admin_landing").hasClass("active")) ) {
+      setTimeout(function() {
+      $('.top_menu').trigger({type: 'click', which: 1});
+      $('.wrap_top_menu').removeClass('wrap_top_menu_active').hide();
+      }, 500);
+    }
+  // END handle the toggle to be able to click again and close after login 
+});
+
+///////////////////////////////////////////////////
+/// END handle click on Your Name Goes Here or logged in user  ///////
+///////////////////////////////////////////////////
