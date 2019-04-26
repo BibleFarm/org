@@ -190,15 +190,15 @@ text-align: center;
   max-width: 312px;
   text-align: center;
 }
-.bgc-0002{
-   background: hsl(0,0%,15%) !important;
-   background: -moz-radial-gradient(center, ellipse cover, hsl(0,0%,15%)0%, hsl(0,0%,15%)100%) !important;
-   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(0,0%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
-   background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
-   background: -o-radial-gradient(center, ellipse cover, hsl(0,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
-   background: -ms-radial-gradient(center, ellipse cover, hsl(0,0%,15%) 0%,hsl(0,0%,0%) 100%) !important;
-   background: radial-gradient(ellipse at center, hsl(0,0%,15%) 0%,hsl(0,0%,0%) 100%) !important;
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(0,0%,15%)', endColorstr='#0',GradientType=1 ) !important;
+.bgc-0001{
+   background: hsl(0,0%,8%) !important;
+   background: -moz-radial-gradient(center, ellipse cover, hsl(0,0%,8%)0%, hsl(0,0%,8%)100%) !important;
+   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(0,0%,8%)), color-stop(100%,hsl(0,0%,0%))) !important;
+   background: -webkit-radial-gradient(center, ellipse cover, hsl(100,0%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+   background: -o-radial-gradient(center, ellipse cover, hsl(0,0%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+   background: -ms-radial-gradient(center, ellipse cover, hsl(0,0%,8%) 0%,hsl(0,0%,0%) 100%) !important;
+   background: radial-gradient(ellipse at center, hsl(0,0%,8%) 0%,hsl(0,0%,0%) 100%) !important;
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(0,0%,8%)', endColorstr='#0',GradientType=1 ) !important;
 }
 
 .std_title_44_center {
@@ -240,6 +240,15 @@ a.bf_links {
 }
 a.bf_links:hover,
 a.bf_links:focus {
+  color: #dac4a2;
+  text-decoration: none;
+}
+.bf_links {
+  color: #d5ad6d;
+  cursor: pointer;
+}
+.bf_links:hover,
+.bf_links:focus {
   color: #dac4a2;
   text-decoration: none;
 }
