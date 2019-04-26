@@ -417,7 +417,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
 // BEGIN user interface to create or edit
 $("body").find(".create_case_1_a").on("click",function(e){
 $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
-$("#column_1_case_1_a").css("background", "yellow").val(((moment().format('YYYY/MM/DD hh:mm', {trim: false}))));
+$("#column_1_case_1_a").css("background", "yellow").val(((moment().format('YYYY/MM/DD HH:mm', {trim: false}))));
 $("#column_2_case_1_a").focus().select();
 });
 $("#create_or_update_case_1_a").on("click",function(e){
@@ -976,7 +976,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
 // BEGIN user interface to create or edit
 $("body").find(".create_case_1_a").on("click",function(e){
 $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
-$("#column_1_case_1_a").css("background", "yellow").val(((moment().format('YYYY/MM/DD hh:mm', {trim: false}))));
+$("#column_1_case_1_a").css("background", "yellow").val(((moment().format('YYYY/MM/DD HH:mm', {trim: false}))));
 $("#column_2_case_1_a").focus().select();
 });
 $("#create_or_update_case_1_a").on("click",function(e){
@@ -1474,7 +1474,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
 // BEGIN user interface to create or edit
 $("body").find(".create_case_1_a").on("click",function(e){
 $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
-$("#column_1_case_1_a").css("background", "yellow").val(((moment().format('YYYY/MM/DD hh:mm', {trim: false}))));
+$("#column_1_case_1_a").css("background", "yellow").val(((moment().format('YYYY/MM/DD HH:mm', {trim: false}))));
 $("#column_2_case_1_a").focus().select();
 });
 $("#create_or_update_case_1_a").on("click",function(e){
@@ -2008,7 +2008,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
 // BEGIN user interface to create or edit
 $("body").find(".create_case_1_a").on("click",function(e){
 $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
-$("#column_1_case_1_a").css("background", "yellow").val(((moment().format('YYYY/MM/DD hh:mm', {trim: false}))));
+$("#column_1_case_1_a").css("background", "yellow").val(((moment().format('YYYY/MM/DD HH:mm', {trim: false}))));
 $("#column_2_case_1_a").focus().select();
 });
 $("#create_or_update_case_1_a").on("click",function(e){
@@ -2476,7 +2476,7 @@ console.log("/////////////////////////////// ADMIN allowed to fully CRUD");
 // BEGIN user interface to create or edit
 $("body").find(".create_case_1_a").on("click",function(e){
 $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
-$("#column_1_case_1_a").css("background", "yellow").val(((moment().format('YYYY/MM/DD hh:mm', {trim: false}))));
+$("#column_1_case_1_a").css("background", "yellow").val(((moment().format('YYYY/MM/DD HH:mm', {trim: false}))));
 $("#column_2_case_1_a").focus().select();
 });
 $("#create_or_update_case_1_a").on("click",function(e){
@@ -2911,7 +2911,7 @@ table_case_1_a.rows(':not(.parent)').nodes().to$().find('td:first-child').trigge
 //////////////////////////////////
 $( "#bump_it" ).on( "click", function() {
 $( "#form_case_1_a" ).find("#column_1_case_1_a").val("");
-$( "#form_case_1_a" ).find("#column_1_case_1_a").val(((moment().format('YYYY/MM/DD hh:mm', {trim: false}))));
+$( "#form_case_1_a" ).find("#column_1_case_1_a").val(((moment().format('YYYY/MM/DD HH:mm', {trim: false}))));
 $("#column_1_case_1_a").focus().select();
 });
 //////////////////////////////////
