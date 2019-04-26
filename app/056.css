@@ -1158,6 +1158,15 @@ position: fixed;
       color: #dac4a2;
       text-decoration: none;
     }
+    .bf_links {
+      color: #d5ad6d;
+      cursor: pointer;
+    }
+    .bf_links:hover,
+    .bf_links:focus {
+      color: #dac4a2;
+      text-decoration: none;
+    }
 
     /* BEGIN standard 44px multipurpose left or centered or right*/
     /* single items */
@@ -5704,6 +5713,7 @@ z-index: 1000000;
 }
 .sharing_modal_container_filter_mode, .sharing_modal_container_browsing_mode, .container_modal_still_working_on_this {
   position: fixed;
+  top: 0;
   width:100%;
   height:100%;
   display: flex;
@@ -6717,5 +6727,9 @@ display: inline-block;
 
 
 #done_editing_redirect_to_next_team, #done_editing_redirect_to_next_guest {
+  display: none;
+}
+
+#book_chapter_verse_we_want_to_share {
   display: none;
 }

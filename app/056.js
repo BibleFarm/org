@@ -8551,12 +8551,32 @@ var verse_to_share = $(this).parent().siblings().eq( 0 )
 .text();
 console.log("verse_to_share " + verse_to_share);
 
-var complete_url_to_share_from_browsing_mode = "https://www.BibleFarm.org/app/en/edits/" + book_to_share + "-" + chapter_to_share + "-" + verse_to_share + ".html";
-console.log("complete_url_to_share_from_browsing_mode " + complete_url_to_share_from_browsing_mode);
+// var complete_url_to_share_from_browsing_mode = "https://www.BibleFarm.org/app/en/edits/" + // book_to_share + "-" + chapter_to_share + "-" + verse_to_share + ".html";
+// console.log("complete_url_to_share_from_browsing_mode " + // complete_url_to_share_from_browsing_mode);
 
-$("#from_filter_mode_url_we_are_going_to").text("");
-$("#from_browsing_mode_url_we_are_going_to").text("");
-    $("#from_browsing_mode_url_we_are_going_to").text(complete_url_to_share_from_browsing_mode);
+// $("#from_filter_mode_url_we_are_going_to").text("");
+// $("#from_browsing_mode_url_we_are_going_to").text("");
+//     $("#from_browsing_mode_url_we_are_going_to").text(complete_url_to_share_from_browsing_mode);
+
+// store the book-chapter-verse we're wanting to share
+$("#book_chapter_verse_we_want_to_share").text(book_to_share + "-" + chapter_to_share + "-" + verse_to_share);
+
+    ///////////////////////////////////////////////////
+    /// BEGIN on click a verse, grab image to share and replace img tag src  ///////
+    ///////////////////////////////////////////////////
+    var complete_url_of_default_image_to_share = "https://biblefarm.github.io/posts-en-jasper/images/" + book_to_share + "-" + chapter_to_share + "-" + verse_to_share + ".png";
+   console.log("complete_url_of_default_image_to_share " + complete_url_of_default_image_to_share);
+
+   var complete_url_of_default_link_to_redirect = "https://www.biblefarm.org/app/en/posts/jasper/" + book_to_share + "-" + chapter_to_share + "-" + verse_to_share + ".html";
+  console.log("complete_url_of_default_link_to_redirect: " + complete_url_of_default_link_to_redirect);
+
+// load the image
+   $("img#post_color_change_by_user").attr("src", complete_url_of_default_image_to_share);
+   ///////////////////////////////////////////////////
+   /// END on click a verse, grab image to share and replace img tag src  ///////
+   ///////////////////////////////////////////////////
+// set the default to url to jasper in case no color change is done
+$("#link_that_actually_redirects").attr("href", complete_url_of_default_link_to_redirect);
 
     // show the modal
     $(".wrap_sharing_modal_browsing_mode").show("slow");
@@ -8566,6 +8586,72 @@ $("#from_browsing_mode_url_we_are_going_to").text("");
     $(".wrap_table").hide("slow");
 
 });
+
+
+
+/////////////////////////////////////////
+/// BEGIN background color choosing get decided here //////////
+/////////////////////////////////////////
+$(".color_picker_item").on('click', function(e) {
+var  bg_color_chosen = $(this).text();
+console.log(bg_color_chosen);
+$("#color_to_share").text(bg_color_chosen);
+// grab the stored verse ref
+var stored_verse_ref = $("#book_chapter_verse_we_want_to_share").text();
+// build the url
+var built_url_with_bg_and_ref = "https://www.biblefarm.org/app/en/posts/" + bg_color_chosen + "/" + stored_verse_ref + ".html";
+// change the url
+$("#link_that_actually_redirects").attr("href", built_url_with_bg_and_ref);
+console.log("Changed href to: " + built_url_with_bg_and_ref);
+});
+
+/////////////////////////////////////////
+/// END background color choosing get decided here //////////
+/////////////////////////////////////////
+
+
+
+
+
+/////////////////////////////////////////
+/// BEGIN on click let's go, redirect to sharing page //////////
+/////////////////////////////////////////
+$("#edited_now_redirect_to_sharing_page").on('click', function(e) {
+
+  console.log("clicked on let's go");
+// create the variables
+var color_to_share = $("#color_to_share").text();
+var book_chapter_verse_we_want_to_share =  $("#book_chapter_verse_we_want_to_share").text();
+// test it
+console.log("We're wanting to share: " + book_chapter_verse_we_want_to_share);
+
+
+var complete_url_to_share_with_bg_chosen = "https://www.biblefarm.org/app/en/posts/" + color_to_share + "/" + book_chapter_verse_we_want_to_share + ".html";
+console.log("Redirecting to: " + complete_url_to_share_with_bg_chosen);
+
+
+});
+
+// this is needed in order to make the link work inside the div
+$('#link_that_actually_redirects').click(function(event){
+    event.stopImmediatePropagation();
+
+    setTimeout(function() {
+      // close the editing modal
+      $(".wrap_sharing_modal_browsing_mode").hide("slow");
+    }, 1000);
+
+
+});
+
+
+
+
+
+
+
+
+
 /////////////////////////////////////////
 /// BEGIN popup a modal asking to share this verse from browsing mode //////////
 /////////////////////////////////////////
@@ -8878,7 +8964,7 @@ else {
       $('.wrap_top_menu').removeClass('wrap_top_menu_active').hide();
       }, 500);
     }
-  // END handle the toggle to be able to click again and close after login 
+  // END handle the toggle to be able to click again and close after login
 });
 
 ///////////////////////////////////////////////////
