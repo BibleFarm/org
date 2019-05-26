@@ -246,8 +246,8 @@ console.log("///////////////////// began fbFetch function");
         speed: 1000,
         touchThreshold: 30,
         waitForAnimate: false,
-        autoplay: false,
-        autoplaySpeed: 4000
+        autoplay: true,
+        autoplaySpeed: 2000
         //  mobileFirst: true,
         //  respondTo: 'window'
       });

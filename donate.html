@@ -117,6 +117,13 @@
   <meta itemprop="image" content="https://www.biblefarm.org/_BibleFarm_og_image_1200x630.png">
 
   <title>BibleFarm.org/donate</title>
+
+  <!-- ////////////////////////// -->
+  <link rel="stylesheet" type="text/css" href="dependencies\offline_dependency_2018-06-25_slick.css-1.9.min.css">
+  <link rel="stylesheet" type="text/css" href="dependencies\offline_dependency_2018-06-25_slick.theme.css-1.9.min.css">
+  <!-- ////////////////////////// -->
+
+
   <!-- ////////////////////////// -->
   <!-- ////////////////////////// -->
   <!-- website/donate CSS ///// -->
@@ -124,7 +131,7 @@
   <!-- ////////////////////////// -->
   <!-- ////////////////////////// -->
 
-  <!-- BEGIN AdSense -->
+  <!-- BEGIN AdSense
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <script>
     (adsbygoogle = window.adsbygoogle || []).push({
@@ -132,10 +139,50 @@
       enable_page_level_ads: true
     });
   </script>
-  <!-- END AdSense -->
+  END AdSense -->
 
 <style>
   .special_margin_top {margin-top: 48px;}
+
+.output_max_width {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.paypal_button_donate_now {
+  position: fixed;
+      display: block;
+      bottom: 46;
+      left: 4;
+      right: 0;
+      height: 100px;
+      width: calc(100% - 8px);
+      background: black;
+      z-index: 11;
+}
+.wrap_the_button {
+  position: fixed;
+      display: inline-block;
+      text-align: center;
+      bottom: 45px;
+      left: 0;
+      right: 0;
+      height: 100px;
+      width: 100%;
+      padding-top: 25px;
+}
+
+.fixed_line_bottom {
+  position: fixed;
+  display: block;
+  bottom: 0;
+  left: 4px;
+  height: 4px;
+  width: calc(100% - 8px);
+  background: black;
+  z-index: 10;
+}
+
 </style>
 
 </head>
@@ -194,7 +241,7 @@ app
             <!-- BEGIN standard_multi_item_right -->
             <div class="standard_multi_item_right">
               <span id="" class="bf_top_menu bf_donate">
-<a href="#" id="" class="move_to_bf_donate">
+<a href="https://www.paypal.com/donate/?token=CDlDP3ZnusXRBYDkuuLVGhHyTgDiPKRK7QsWuro-ZSsSQMtRUyCEOxwLNT2rVRJMv4uBim&country.x=US&locale.x=US" id="" class="move_to_bf_donate">
 donate
 </a>
                         </span>
@@ -227,20 +274,16 @@ donate
 
     <div class="">
 
-      <!-- BEGIN wrap_inner_biblefarm_fund_the_farm -->
+      <!-- BEGIN wrap_inner_biblefarm_fund_the_farm
       <div class="wrap_inner_biblefarm_fund_the_farm">
+
+
+
         <div class="redirect_to_paypal_decide" style="">
 
           <div class="std_line_11_center invisible_div">.</div>
 
-          <!-- disabled temporarily
-          <div class="std_title_44_center adjust_font_20 area_protein_brownies">
-            <span class="color_protein_brownies">protein brownies
-                    </span> -
-            <span class="task_protein_brownies">let's bake &amp; deliver
-                    </span>
-          </div>
-  -->
+
           <div class="std_title_44_center adjust_font_20 area_fish">
             <span class="color_fish">fish
                     </span> -
@@ -300,17 +343,12 @@ donate
           <div class="invisible_div std_line_11_center">.
           </div>
 
-          <!-- BEGIN wrap_paypal_multi_item -->
           <div class="wrap_paypal_multi_item">
-            <!-- BEGIN paypal_multi_item -->
             <div class="paypal_multi_item">
-              <!-- BEGIN paypal_multi_item_left -->
               <div class="paypal_multi_item_left">
                 <span class="redirect_to_paypal_decision_back box_back">back
     </span>
               </div>
-              <!-- END paypal_multi_item_left -->
-              <!-- BEGIN paypal_multi_item_right -->
               <div class="paypal_multi_item_right">
 
                 <span class="redirect_to_paypal_decision_go box_paypal adjust_box_paypal">
@@ -352,15 +390,23 @@ donate
                 </span>
 
               </div>
-              <!-- END paypal_multi_item_right -->
             </div>
-            <!-- END paypal_multi_item -->
           </div>
-          <!-- END wrap_paypal_multi_item -->
 
         </div>
       </div>
-      <!-- END wrap_inner_biblefarm_fund_the_farm -->
+
+       END wrap_inner_biblefarm_fund_the_farm -->
+
+
+       <div class="wrap_lazy_farm output_max_width">
+       <div class="lazy_farm"></div>
+       </div>
+
+
+
+
+
 
     </div>
     <!-- END go_bottom -->
@@ -603,8 +649,18 @@ x
   </div>
 </div>
 
+<div class="paypal_button_donate_now">
+  <div class="wrap_the_button">
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+  <input type="hidden" name="cmd" value="_s-xclick" />
+  <input type="hidden" name="hosted_button_id" value="YCUGUZHYX5Y2Q" />
+  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+  <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</div>
+  </form>
+</div>
 
-
+<div class="fixed_line_bottom"></div>
 
 
 
@@ -614,8 +670,13 @@ x
   <!-- jQuery -->
   <script src="dependencies/offline_dependency_2017-11-16_jquery-3.2.1.min.js" type="text/javascript"></script>
 
-  <!-- scrollTo js -->
+  <!-- scrollTo js
   <script type="text/javascript" src="dependencies/jquery.scrollTo-min.js"></script>
+-->
+<!-- slick -->
+
+<script src="dependencies\offline_dependency_2018-06-25_slick.js-1.9.min.js" type="text/javascript"></script>
+
 
   <!-- ////////////////////////// -->
   <!-- END JS website/donate dependencies -->
@@ -729,6 +790,165 @@ x
   ////////////////////////////////////////////////////
   // END gofundme modal show hide
   ////////////////////////////////////////////////////
+
+
+  ////////////////////////////////////////////////////
+  // BEGIN slick landing carrousel for donate page
+  ////////////////////////////////////////////////////
+  window.onload=function(){
+
+    ////////////////////////////////////////////////////////
+    //////////// BEGIN populating facebook feed with slick /
+    ////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////
+    //////////// BEGIN fbFetch Facebook first image of each post
+    ////////////////////////////////////////////////
+  console.log("///////////////////// began fbFetch function");
+
+    function fbFetch() {
+      var access_token = "1336118583068310|JdlPe-nIXwAS4QrP1ZAP-HPgMrQ";
+      var url =
+        "https://graph.facebook.com/?ids=granjasolidaria&fields=posts.limit(10){message,created_time,permalink_url,full_picture}&access_token=" +
+        access_token;
+
+      $.getJSON(url, function(response) {
+        var messages = [];
+
+        Object.getOwnPropertyNames(response).forEach(function(page, idx, array) {
+          response[page].posts.data.forEach(function(post, idx, array) {
+            messages.push(post);
+          });
+        });
+
+        function compare(a, b) {
+          if (a.created_time < b.created_time) return 1;
+          if (a.created_time > b.created_time) return -1;
+          return 0;
+        }
+
+        //Use jQuery getJSON method to fetch the data from the url and then create our unordered list with the relevant data.
+        var html = '<div class="lazy_farm">';
+        //loop through and within data array's retrieve the message variable.
+        $.each(messages.sort(compare), function(i, fb) {
+          if (typeof fb.full_picture != "undefined") {
+            html +=
+              //          "<li>" +
+              //          fb.created_time +
+              //          "</br>" +
+              //          fb.permalink_url +
+              //          "</br>" +
+              '<div><img class="fb_Fetched_image" data-lazy="' + fb.full_picture + '"></div>';
+            //          +
+            //          "</br>" +
+            //          fb.message +
+            //          "</li></br>"
+          } else {
+            //        html +=
+            //          "<li>" +
+            //          fb.created_time +
+            //          "</br>" +
+            //          fb.permalink_url +
+            //          "</br>" +
+            //          fb.message +
+            //          "</li></br>";
+          }
+        });
+
+        html += "</div>";
+
+        //A little animation once fetched
+        //    $(".lazy_farm").animate({ opacity: 0 }, 500, function() {
+        //      $(".lazy_farm").slick('slickAdd', html);
+        //    });
+        //    $(".lazy_farm").animate({ opacity: 1 }, 500);
+
+        $(".wrap_lazy_farm").html(html);
+
+        console.log('///////////////////// created $(".wrap_lazy_farm").html(html);');
+
+
+      });
+    }
+
+    fbFetch();
+
+    console.log('///////////////////// ran fbFetch();');
+
+
+    ////////////////////////////////////////////////
+    //////////// END fbFetch Facebook first image of each post
+    ////////////////////////////////////////////////
+    var waitFor_fbFetch_completed = setInterval(function() {
+      if ($(".lazy_farm").children().length > 3) {
+        console.log('///////////////////// if ($(".lazy_farm").children().length > 3)');
+        clearInterval(waitFor_fbFetch_completed);
+        console.log('///////////////////// clearInterval(waitFor_fbFetch_completed);');
+
+        ////////////////////////////////////////////////
+        //////////// BEGIN slick.js lazy_farm
+        ////////////////////////////////////////////////
+        var slick_slider_lazy_farm = $(".lazy_farm").slick({
+          lazyLoad: "progressive",
+          dots: false,
+          vertical: true,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          verticalSwiping: true,
+          adaptiveHeight: false,
+          //  arrows: true,
+          speed: 1000,
+          touchThreshold: 30,
+          waitForAnimate: false,
+          autoplay: true,
+          autoplaySpeed: 2000
+          //  mobileFirst: true,
+          //  respondTo: 'window'
+        });
+
+        console.log('///////////////////// ran var slick_slider_lazy_farm = $(".lazy_farm").slick({');
+
+
+        slick_slider_lazy_farm.on("wheel", function(e) {
+          e.preventDefault();
+
+          if (e.originalEvent.deltaY < 0) {
+            $(this).slick("slickPrev");
+          } else {
+            $(this).slick("slickNext");
+          }
+        });
+        setTimeout(function() {
+          $(".lazy_farm").slick("slickGoTo", 2);
+          console.log('///////////////////// slickGoTo", 2');
+        }, 100);
+        setTimeout(function() {
+          $(".lazy_farm").slick("slickGoTo", 1);
+          console.log('///////////////////// slickGoTo", 1');
+        }, 200);
+        setTimeout(function() {
+          $(".lazy_farm").slick("slickGoTo", 0);
+          console.log('///////////////////// slickGoTo", 0');
+        }, 300);
+      }
+    }, 1000);
+
+    console.log('///////////////////// finished fbFetch & the slick');
+
+
+    ////////////////////////////////////////////////
+    //////////// END slick.js lazy_farm
+    ////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////
+    //////////// END populating facebook feed with slick /
+    ////////////////////////////////////////////////////////
+
+  };
+  ////////////////////////////////////////////////////
+  // END slick landing carousel for donate page
+  ////////////////////////////////////////////////////
+
+
+
 });
 
 </script>
