@@ -430,6 +430,7 @@ a.bf_links:focus {
     height: calc(100% - 44px - 44px - 4px - 44px);
     background: black;
     overflow: auto;
+    z-index: 11111111;
 }
 .sponsor_ads {
 display: inline-block;
@@ -488,5 +489,23 @@ max-width: 88px;
     color: #DAC4A2;
 }
 
+.paypal_button_donate_now {
+  position: absolute;
+      display: block;
+      top: calc(186px + 206px);
+      width: calc(100% - 4px);
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      max-width: 312px;
+      z-index: 2;
+}
+.wrap_the_button {
+  display: inline-block;
+      text-align: center;
+      left: 0;
+      right: 0;
+      width: 100%;
+}
 
 /* END css for posting pages */
