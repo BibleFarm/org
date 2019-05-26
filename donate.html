@@ -149,27 +149,43 @@
   margin: 0 auto;
 }
 
-.paypal_button_donate_now {
+.paypal_button_donate_now_top {
   position: fixed;
-      display: block;
-      bottom: 46;
-      left: 4;
-      right: 0;
-      height: 100px;
-      width: calc(100% - 8px);
-      background: black;
-      z-index: 11;
+  display: block;
+  top: 96px;
+  left: 4;
+  right: 0;
+  height: 60px;
+  width: calc(100% - 8px);
+  background: black;
+  z-index: 11;
 }
-.wrap_the_button {
+.wrap_the_button_top {
+  position: fixed;
+  display: inline-block;
+  text-align: center;
+  top: 103px;
+  left: 4;
+  width: calc(100% - 8px);
+}
+.paypal_button_donate_now_bottom {
+  position: fixed;
+  display: block;
+  bottom: 48px;
+  left: 4;
+  right: 0;
+  height: 60px;
+  width: calc(100% - 8px);
+  background: black;
+  z-index: 11;
+}
+.wrap_the_button_bottom {
   position: fixed;
       display: inline-block;
       text-align: center;
-      bottom: 45px;
-      left: 0;
-      right: 0;
-      height: 100px;
-      width: 100%;
-      padding-top: 25px;
+      bottom: 48px;
+      left: 4;
+      width: calc(100% - 8px);
 }
 
 .fixed_line_bottom {
@@ -270,7 +286,7 @@ donate
 
   <div class="box_shadow bgc-0007" data-hash="donate" style="">
 
-    <div class="between_arrows std_line_44px_left jacob_font_size_text bgc-0007 special_margin_top">here's how you can be a part</div>
+    <div class="between_arrows std_line_44px_left jacob_font_size_text bgc-0007 special_margin_top">be a part of every visit</div>
 
     <div class="">
 
@@ -649,8 +665,18 @@ x
   </div>
 </div>
 
-<div class="paypal_button_donate_now">
-  <div class="wrap_the_button">
+<div class="paypal_button_donate_now_top">
+  <div class="wrap_the_button_top">
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+  <input type="hidden" name="cmd" value="_s-xclick" />
+  <input type="hidden" name="hosted_button_id" value="YCUGUZHYX5Y2Q" />
+  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+  <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</div>
+  </form>
+</div>
+<div class="paypal_button_donate_now_bottom">
+  <div class="wrap_the_button_bottom">
   <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
   <input type="hidden" name="cmd" value="_s-xclick" />
   <input type="hidden" name="hosted_button_id" value="YCUGUZHYX5Y2Q" />
