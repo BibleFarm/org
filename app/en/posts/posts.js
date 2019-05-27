@@ -85,7 +85,7 @@ $(document).ready(function() {
 	// BEGIN done_with_ready_post_close_tab
 	$("#done_with_ready_post_close_tab").on("click", function(e) {
 		function donePostingCloseTab() {
-			window.top.close();
+			window.close();
 		}
 		setTimeout(function() {
 			donePostingCloseTab()
