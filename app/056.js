@@ -8577,6 +8577,8 @@ $("#book_chapter_verse_we_want_to_share").text(book_to_share + "-" + chapter_to_
    ///////////////////////////////////////////////////
 // set the default to url to jasper in case no color change is done
 $("#link_that_actually_redirects").attr("href", complete_url_of_default_link_to_redirect);
+$("#link_that_actually_redirects").attr("onclick", "window.open(\' " + complete_url_of_default_link_to_redirect + "\');return false");
+
 
     // show the modal
     $(".wrap_sharing_modal_browsing_mode").show("slow");
@@ -8602,6 +8604,8 @@ var stored_verse_ref = $("#book_chapter_verse_we_want_to_share").text();
 var built_url_with_bg_and_ref = "https://www.biblefarm.org/app/en/posts/" + bg_color_chosen + "/" + stored_verse_ref + ".html";
 // change the url
 $("#link_that_actually_redirects").attr("href", built_url_with_bg_and_ref);
+$("#link_that_actually_redirects").attr("onclick", "window.open(\' " + built_url_with_bg_and_ref + "\');return false");
+
 console.log("Changed href to: " + built_url_with_bg_and_ref);
 });
 
