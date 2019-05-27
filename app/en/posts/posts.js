@@ -84,12 +84,7 @@ $(document).ready(function() {
 	// END options toggle
 	// BEGIN done_with_ready_post_close_tab
 	$("#done_with_ready_post_close_tab").on("click", function(e) {
-		function donePostingCloseTab() {
-			window.close();
-		}
-		setTimeout(function() {
-			donePostingCloseTab()
-		}, 1000);
+			window.history.back();
 	});
 	// END done_with_ready_post_close_tab
 	////////////////////////////////////////////////////
