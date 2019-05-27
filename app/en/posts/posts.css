@@ -477,7 +477,7 @@ a.bf_links:focus {
 	font-size: 20px;
 	text-align: center;
 	line-height: 44px;
-	width: calc(42% - 1px);
+	width: calc(36% - 1px);
 }
 
 .done_with_ready_post_next>.done_with_ready_post_next_item_right {
@@ -486,7 +486,7 @@ a.bf_links:focus {
 	font-size: 20px;
 	text-align: center;
 	line-height: 44px;
-	width: calc(18%);
+	width: calc(24%);
 }
 
 .done_with_ready_post_next:after {
@@ -596,7 +596,7 @@ a.bf_links:focus {
 	left: 0;
 	right: 0;
 	width: 100%;
-	padding-top: 4px;
+	padding-top: 6px;
 }
 
 /* END css for posting pages */
