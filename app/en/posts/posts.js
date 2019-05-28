@@ -156,4 +156,41 @@ $(document).ready(function() {
 	////////////////////////////////////////////////////
 	// END PureChat hack
 	////////////////////////////////////////////////////
+
+
+
+	////////////////////////////////////////////////////
+	// BEGIN PureChat load
+	////////////////////////////////////////////////////
+	window.purechatApi = {
+		l: [],
+		t: [],
+		on: function() {
+			this.l.push(arguments);
+		}
+	};
+	(function() {
+		var done = false;
+		var script = document.createElement('script');
+		script.async = true;
+		script.type = 'text/javascript';
+		script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript';
+		document.getElementsByTagName('HEAD').item(0).appendChild(script);
+		script.onreadystatechange = script.onload = function(e) {
+			if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {
+				var w = new PCWidget({
+					c: '7f1570e3-a978-430a-82a3-fccff55a8707',
+					f: true
+				});
+				done = true;
+			}
+		};
+	})();
+	////////////////////////////////////////////////////
+	// END PureChat load
+	////////////////////////////////////////////////////
+
+
+
+
 });
