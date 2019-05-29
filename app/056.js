@@ -8635,8 +8635,6 @@ console.log("Redirecting to: " + complete_url_to_share_with_bg_chosen);
 
 // close the editing modal
 $(".wrap_sharing_modal_browsing_mode").hide("slow");
-///// new system does not redirect to another page
-$(".wrap_post_sharing_modal").show();
 
 
 });
@@ -9008,6 +9006,8 @@ $(document).ready(function() {
 	///////////////////////////////////////////////////
 	/// BEGIN countdown_loading_addthis_options ///////
 	///////////////////////////////////////////////////
+$("#edited_now_redirect_to_sharing_page").on('click', function(e) {
+
 	var timer1,
 		clock = 3;
 	$(startup);
@@ -9036,6 +9036,8 @@ $(document).ready(function() {
 			$(".wrap_sponsor_ads").hide("slow");
 		}
 	}
+
+});
 	///////////////////////////////////////////////////
 	/// END countdown_loading_addthis_options ///////
 	///////////////////////////////////////////////////
