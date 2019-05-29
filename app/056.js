@@ -8636,7 +8636,7 @@ console.log("Redirecting to: " + complete_url_to_share_with_bg_chosen);
 // close the editing modal
 $(".wrap_sharing_modal_browsing_mode").hide("slow");
 ///// new system does not redirect to another page
-$(".wrap_post_sharing_modal").show("slow");
+$(".wrap_post_sharing_modal").show();
 
 
 });
@@ -9174,6 +9174,26 @@ $(document).ready(function() {
 	////////////////////////////////////////////////////
 	// END PureChat load
 	////////////////////////////////////////////////////
+
+
+  ////////////////////////////////////////////////////
+	// BEGIN close sharing modal on click anywhere
+	////////////////////////////////////////////////////
+  // close modal on click anywhere outside
+  $(".wrap_post_sharing_modal").click(function(e){
+      // Check if click was triggered on or within #menu_content
+      if( $(e.target).closest(".options_bar, .show_sharing_options, .wrap_image_sharing_ready_to_share div img").length > 0 ) {
+          return false;
+      }
+      // Otherwise trigger your click function
+$(".wrap_post_sharing_modal").hide();
+  });
+  ////////////////////////////////////////////////////
+	// END close sharing modal on click anywhere
+	////////////////////////////////////////////////////
+
+
+
 
 });
 ///////////////////////////////////////////////////
