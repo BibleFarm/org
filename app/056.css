@@ -6942,7 +6942,7 @@ display: inline-block;
 .wrap_sponsors_show_time {
 	position: absolute;
 	display: none;
-	top: calc(44px + 4px);
+	top: calc(4px);
 	width: calc(100% - 4px);
 	left: 0;
 	right: 0;
@@ -6993,17 +6993,17 @@ display: inline-block;
 }
 /* END sponsors show time*/
 .wrap_sponsor_ads {
-	position: absolute;
-	top: calc(44px + 44px + 4px);
-	left: 0;
-	right: 0;
-	margin: 0 auto;
-	text-align: center;
-	max-width: 310px;
-	height: calc(100% - 44px - 44px - 4px - 44px);
-	background: black;
-	overflow: auto;
-	z-index: 11111111;
+  position: absolute;
+      top: calc(44px + 4px);
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      text-align: center;
+      max-width: 310px;
+      height: calc(100% - 44px - 4px - 44px);
+      background: black;
+      overflow: auto;
+      z-index: 11111111;
 }
 .paypal_button_donate_now {
 	position: absolute;

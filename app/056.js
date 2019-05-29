@@ -9043,27 +9043,33 @@ $(document).ready(function() {
 	// lands with show_sharing_options displayed
 	$(".show_sharing_options").show();
 	$(".options_bar").on("click", ".option_menu", function(e) {
-		$(".show_sharing_options, .show_sending_options, .show_saving_options").hide("slow");
-		$(".show_menu_options").show("slow");
+		// $(".show_sharing_options, .show_sending_options, .show_saving_options").hide("slow");
+    // $(".show_menu_options").show("slow");
+    $(".wrap_sponsor_ads").show("slow");
 	});
 	$(".options_bar").on("click", ".option_share", function(e) {
 		$(".show_menu_options, .show_sending_options, .show_saving_options").hide("slow");
+    $(".wrap_sponsor_ads").hide("slow");
 		$(".show_sharing_options").show("slow");
 	});
 	$(".options_bar").on("click", ".option_send", function(e) {
 		$(".show_menu_options, .show_sharing_options, .show_saving_options").hide("slow");
+        $(".wrap_sponsor_ads").hide("slow");
 		$(".show_sending_options").show("slow");
 	});
 	$(".options_bar").on("click", ".option_save", function(e) {
 		$(".show_menu_options, .show_sharing_options, .show_sending_options").hide("slow");
+        $(".wrap_sponsor_ads").hide("slow");
 		$(".show_saving_options").show("slow");
 	});
 	$(".options_bar").on("click", ".option_link", function(e) {
 		$(".show_menu_options, .show_sending_options, .show_saving_options").hide("slow");
+        $(".wrap_sponsor_ads").hide("slow");
 		$(".show_sharing_options").show("slow");
 	});
 	$(".options_bar").on("click", ".option_print", function(e) {
 		$(".show_menu_options, .show_sending_options, .show_saving_options").hide("slow");
+        $(".wrap_sponsor_ads").hide("slow");
 		$(".show_sharing_options").show("slow");
 	});
 	// END options toggle
@@ -9191,6 +9197,19 @@ $(".wrap_post_sharing_modal").hide();
   ////////////////////////////////////////////////////
 	// END close sharing modal on click anywhere
 	////////////////////////////////////////////////////
+
+
+
+  $("#go_back_to_change_bg").on('click', function(e) {
+  $(".wrap_post_sharing_modal").hide();
+  $(".wrap_sharing_modal_browsing_mode").show("slow");
+  });
+
+  $("#all_done_sharing_post").on('click', function(e) {
+  $(".wrap_post_sharing_modal").hide();
+  });
+
+
 
 
 
