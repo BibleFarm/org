@@ -7000,7 +7000,7 @@ display: inline-block;
       margin: 0 auto;
       text-align: center;
       max-width: 310px;
-      height: calc(100% - 44px - 4px - 44px);
+          height: calc(100% - 44px - 4px);
       background: black;
       overflow: auto;
       z-index: 11111111;
