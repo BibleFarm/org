@@ -6768,7 +6768,7 @@ display: inline-block;
   left: 0;
       right: 0;
       max-height: 44px;
-      top: calc(44px + 4px);
+      top: calc(0px + 4px);
       position: absolute;
       max-width: 312px;
       margin: 0 auto;
@@ -6834,7 +6834,7 @@ display: inline-block;
       max-width: 312px;
       margin: 0 auto;
       position: absolute;
-      top: calc(88px + 4px);
+      top: calc(44px + 4px);
       left: 0;
       right: 0;
       z-index: 111;
@@ -6868,7 +6868,7 @@ display: inline-block;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-	top: calc(88px + 134px);
+	top: calc(44px + 134px);
 	text-align: center;
 	z-index: -1;
 }
@@ -6881,7 +6881,7 @@ display: inline-block;
 /* BEGIN wrap_done_with_ready_post_next */
 .wrap_done_with_ready_post_next {
 	position: absolute;
-	display: block;
+	display: none;
 	top: calc(186px + 206px);
 	width: calc(100% - 4px);
 	left: 0;
@@ -7008,7 +7008,7 @@ display: inline-block;
 .paypal_button_donate_now {
 	position: absolute;
 	display: block;
-	top: calc(186px + 200px);
+	top: calc(4px + 44px + 296px);
 	width: calc(100% - 4px);
 	left: 0;
 	right: 0;
