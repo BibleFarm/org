@@ -4036,10 +4036,6 @@ text-shadow: 2px 2px 1px #000000;
          font-size: 20px;
          line-height: 44px;
     }
-     .wrap_options_bar {
-         left: 0;
-         right: 0;
-    }
      .options_bar_square {
          width: 100vw;
          display: flex;
@@ -6589,7 +6585,7 @@ line-height: 19px;
 display: table-cell;
 vertical-align: middle;
 }
-/* END wrap_sponsor_ads */
+/* END wrap_sponsor_ads_app_only */
 
 
 /* BEGIN brought in from the old edits.html standalone page for post edit background color picker */
@@ -6733,3 +6729,305 @@ display: inline-block;
 #book_chapter_verse_we_want_to_share {
   display: none;
 }
+
+
+
+/* ************************ */
+/* BEGIN post sharing modal */
+/* ************************ */
+
+.wrap_post_sharing_modal {
+  display: none;
+      position: fixed;
+      z-index: 11;
+      left: 0;
+      right: 0;
+      display: block;
+      margin: 0 auto;
+      top: 0;
+      width: 100%;
+      height: 100%;
+}
+.wrap_top_post_sharing_modal {
+  position: fixed;
+      display: block;
+      width: calc(100% - 8px);
+      height: 44px;
+      text-align: center;
+      left: 4px;
+      z-index: 111;
+}
+.title_verse_sharing {
+	font-family: "Jura-Regular", sans-serif;
+	color: #ae9c80;
+	text-shadow: 2px 2px 1px #000000;
+	text-align: center;
+	line-height: 44px;
+}
+.wrap_options_bar {
+  left: 0;
+      right: 0;
+      max-height: 44px;
+      top: calc(44px + 4px);
+      position: absolute;
+      max-width: 312px;
+      margin: 0 auto;
+}
+.wait_to_load_options {
+	width: calc(100vw - 8px);
+	position: absolute;
+	left: 0;
+	right: 0;
+	min-width: 312px;
+	max-width: 312px;
+	height: 44px;
+	margin: 0 auto;
+	text-align: center;
+}
+.countdown_loading_addthis_options {
+	line-height: 44px;
+}
+#btn_countdown_start {
+	display: none;
+}
+.options_bar {
+	display: flex;
+	min-width: 312px;
+	max-width: 600px;
+	margin: 0 auto;
+}
+.option_menu,
+.option_share,
+.option_send,
+.option_save,
+.option_link,
+.option_print {
+	flex-grow: 1;
+	flex-shrink: 1;
+	text-align: center;
+	font-family: 'PT_Sans-Narrow-Web-Regular', sans-serif;
+  font-size: 20px;
+	line-height: 44px;
+	cursor: pointer;
+}
+.option_menu,
+.option_share,
+.option_send,
+.option_save,
+.option_link,
+.option_print {
+	color: #D5AD6D;
+	text-shadow: 2px 2px 1px #000000;
+}
+.option_menu:hover,
+.option_share:hover,
+.option_send:hover,
+.option_save:hover,
+.option_link:hover,
+.option_print:hover {
+	color: #dac4a2;
+	text-decoration: none;
+}
+.wrap_show_options {
+  width: 100vw;
+      min-width: 312px;
+      max-width: 312px;
+      margin: 0 auto;
+      position: absolute;
+      top: calc(88px + 4px);
+      left: 0;
+      right: 0;
+      z-index: 111;
+}
+.show_menu_options,
+.show_sharing_options,
+.show_sending_options,
+.show_saving_options {
+	display: none;
+	width: 100vw;
+	margin: 0 auto;
+	text-align: center;
+	max-width: 312px;
+	z-index: 2;
+	background-color: black;
+	height: 130px;
+  top: 0;
+}
+.at-resp-share-element.at-mobile .at-share-btn {
+	margin-right: 2px !important;
+}
+.addthis_align {
+	display: block;
+	padding-top: 4px;
+	width: 100vw;
+	max-width: 312px;
+	text-align: center;
+}
+.wrap_image_sharing_ready_to_share {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: calc(88px + 134px);
+	text-align: center;
+	z-index: -1;
+}
+.wrap_image_sharing_ready_to_share>div>img {
+	width: calc(100vw - 8px);
+	min-width: 312px;
+	max-width: 312px;
+  margin: 0;
+}
+/* BEGIN wrap_done_with_ready_post_next */
+.wrap_done_with_ready_post_next {
+	position: absolute;
+	display: block;
+	top: calc(186px + 206px);
+	width: calc(100% - 4px);
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	height: 44px;
+	max-width: 312px;
+}
+.done_with_ready_post_next {
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	margin: 0 auto;
+	text-align: justify;
+	font-size: 0.1px;
+	/* IE 9 & 10 don't like font-size: 0; */
+}
+.done_with_ready_post_next>.done_with_ready_post_next_item_left {
+	height: 44px;
+	display: inline-block;
+	font-size: 20px;
+	text-align: center;
+	line-height: 44px;
+	width: calc(40%);
+}
+.done_with_ready_post_next>.done_with_ready_post_next_item_center {
+	height: 44px;
+	display: inline-block;
+	font-size: 20px;
+	text-align: center;
+	line-height: 44px;
+	width: calc(36% - 1px);
+}
+.done_with_ready_post_next>.done_with_ready_post_next_item_right {
+	height: 44px;
+	display: inline-block;
+	font-size: 20px;
+	text-align: center;
+	line-height: 44px;
+	width: calc(24%);
+}
+.done_with_ready_post_next:after {
+	content: '';
+	width: 100%;
+	/* Ensures there are at least 2 lines of text, so justification works */
+	display: inline-block;
+}
+/* END wrap_done_with_ready_post_next */
+.wrap_ctr_post_sharing_modal {
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	position: absolute;
+  background: rgba(0, 0, 0, 0.9);
+
+}
+/* BEGIN sponsors show time*/
+.wrap_sponsors_show_time {
+	position: absolute;
+	display: none;
+	top: calc(44px + 4px);
+	width: calc(100% - 4px);
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	height: 44px;
+	z-index: 10;
+	max-width: 312px;
+}
+.sponsors_show_time {
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	margin: 0 auto;
+	text-align: justify;
+	font-size: 0.1px;
+	/* IE 9 & 10 don't like font-size: 0;
+     */
+}
+.sponsors_show_time>.sponsors_show_time_item_left {
+	height: 44px;
+	display: inline-block;
+	font-size: 20px;
+	text-align: center;
+	line-height: 44px;
+	width: calc(50% - 16px);
+}
+.sponsors_show_time>.sponsors_show_time_item_center {
+	height: 44px;
+	display: inline-block;
+	font-size: 20px;
+	text-align: center;
+	line-height: 44px;
+	width: 30px;
+}
+.sponsors_show_time>.sponsors_show_time_item_right {
+	height: 44px;
+	display: inline-block;
+	font-size: 20px;
+	text-align: center;
+	line-height: 44px;
+	width: calc(50% - 16px);
+}
+.sponsors_show_time:after {
+	content: '';
+	width: 100%;
+	/* Ensures there are at least 2 lines of text, so justification works */
+	display: inline-block;
+}
+/* END sponsors show time*/
+.wrap_sponsor_ads {
+	position: absolute;
+	top: calc(44px + 44px + 4px);
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	text-align: center;
+	max-width: 310px;
+	height: calc(100% - 44px - 44px - 4px - 44px);
+	background: black;
+	overflow: auto;
+	z-index: 11111111;
+}
+.paypal_button_donate_now {
+	position: absolute;
+	display: block;
+	top: calc(186px + 200px);
+	width: calc(100% - 4px);
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	max-width: 312px;
+	z-index: 2;
+}
+.wrap_the_paypal_button {
+	display: inline-block;
+	text-align: center;
+	left: 0;
+	right: 0;
+	width: 100%;
+	padding-top: 5px;
+}
+
+
+
+
+/* ************************ */
+/* END post sharing modal */
+/* ************************ */
