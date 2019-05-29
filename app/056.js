@@ -8635,6 +8635,8 @@ console.log("Redirecting to: " + complete_url_to_share_with_bg_chosen);
 
 // close the editing modal
 $(".wrap_sharing_modal_browsing_mode").hide("slow");
+///// new system does not redirect to another page
+$(".wrap_post_sharing_modal").show();
 
 
 });
