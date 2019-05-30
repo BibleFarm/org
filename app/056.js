@@ -8601,12 +8601,17 @@ $("#color_to_share").text(bg_color_chosen);
 // grab the stored verse ref
 var stored_verse_ref = $("#book_chapter_verse_we_want_to_share").text();
 // build the url
-var built_url_with_bg_and_ref = "https://www.biblefarm.org/app/en/posts/" + bg_color_chosen + "/" + stored_verse_ref + ".html";
+var built_page_url_with_bg_and_ref = "https://www.biblefarm.org/app/en/posts/" + bg_color_chosen + "/" + stored_verse_ref + ".html";
+// build the url
+var built_image_url_with_bg_and_ref = "https://biblefarm.github.io/posts-en-" + bg_color_chosen + "/images/" + stored_verse_ref + ".png";
 // change the url
-$("#link_that_actually_redirects").attr("href", built_url_with_bg_and_ref);
-$("#link_that_actually_redirects").attr("onclick", "window.open(\' " + built_url_with_bg_and_ref + "\');return false");
+$("#link_that_actually_redirects").attr("href", built_page_url_with_bg_and_ref);
+$("#link_that_actually_redirects").attr("onclick", "window.open(\' " + built_page_url_with_bg_and_ref + "\');return false");
+console.log("Changed page href to: " + built_page_url_with_bg_and_ref);
 
-console.log("Changed href to: " + built_url_with_bg_and_ref);
+// load the image according to color we pick
+   $("img#post_color_change_by_user").attr("src", built_image_url_with_bg_and_ref);
+   console.log("Changed image src to: " + built_image_url_with_bg_and_ref);
 });
 
 /////////////////////////////////////////
