@@ -421,4 +421,7 @@ cursor: pointer;
 font-size: 19px;
 }
 
+/* div id's with bg in pages hidden*/
+#jasper {display:none}
+
 /* END css for posting pages */
