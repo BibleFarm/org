@@ -8537,7 +8537,7 @@ var lastAudio = $("#u_last_audio").text();
   // from browsing mode // This grabs the verse to share, creates the URL & puts it in #from_browsing_mode_url_we_are_going_to
 $("body").on("click", "#tE_ajax_chapters tbody tr td span", function(e) {
 
-var book_to_share = $(".wrap").find(".book_is_selected").find(".menu_book_reg").text().replace(" ","-");
+var book_to_share = $(".wrap").find(".book_is_selected").find(".menu_book_reg").text().replace(/\ /g,"-");
 console.log("book_to_share " + book_to_share);
 
 var chapter_to_share = $(".wrap").find(".chapter_is_selected").text();
