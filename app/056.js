@@ -8633,11 +8633,6 @@ console.log("We're wanting to share: " + book_chapter_verse_we_want_to_share);
 var complete_url_to_share_with_bg_chosen = "https://www.biblefarm.org/app/en/posts/" + color_to_share + "/" + book_chapter_verse_we_want_to_share + ".html";
 console.log("Redirecting to: " + complete_url_to_share_with_bg_chosen);
 
-// close the editing modal
-$(".wrap_sharing_modal_browsing_mode").hide("slow");
-///// new system does not redirect to another page
-$(".wrap_post_sharing_modal").show();
-
 
 });
 
@@ -8648,7 +8643,6 @@ $('#link_that_actually_redirects').click(function(event){
     setTimeout(function() {
       // close the editing modal
       $(".wrap_sharing_modal_browsing_mode").hide("slow");
-
     }, 1000);
 
 
