@@ -6620,6 +6620,7 @@ line-height: 44px;
 font-size: 16px;
 color: #d5ad6d;
 text-align: center;
+text-shadow: 2px 2px 1px #000000;
 }
 .color_picker_item:hover {
 color: #dac4a2;
