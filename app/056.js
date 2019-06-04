@@ -8567,7 +8567,7 @@ $("#book_chapter_verse_we_want_to_share").text(book_to_share + "-" + chapter_to_
     var complete_url_of_default_image_to_share = "https://biblefarm.github.io/posts-en-jasper/images/" + book_to_share + "-" + chapter_to_share + "-" + verse_to_share + ".png";
    console.log("complete_url_of_default_image_to_share " + complete_url_of_default_image_to_share);
 
-   var complete_url_of_default_link_to_redirect = "https://biblefarm.github.io/posts-en-jasper/pages/" + book_to_share + "-" + chapter_to_share + "-" + verse_to_share + ".html";
+   var complete_url_of_default_link_to_redirect = "https://www.biblefarm.org/app/en/posts/jasper/" + book_to_share + "-" + chapter_to_share + "-" + verse_to_share + ".html";
   console.log("complete_url_of_default_link_to_redirect: " + complete_url_of_default_link_to_redirect);
 
 // load the image
@@ -8601,7 +8601,7 @@ $("#color_to_share").text(bg_color_chosen);
 // grab the stored verse ref
 var stored_verse_ref = $("#book_chapter_verse_we_want_to_share").text();
 // build the url
-var built_page_url_with_bg_and_ref = "https://biblefarm.github.io/posts-en-" + bg_color_chosen + "/pages/" + stored_verse_ref + ".html";
+var built_page_url_with_bg_and_ref = "https://www.biblefarm.org/app/en/posts/" + bg_color_chosen + "/" + stored_verse_ref + ".html";
 // build the url
 var built_image_url_with_bg_and_ref = "https://biblefarm.github.io/posts-en-" + bg_color_chosen + "/images/" + stored_verse_ref + ".png";
 // change the url
@@ -8635,7 +8635,7 @@ var book_chapter_verse_we_want_to_share =  $("#book_chapter_verse_we_want_to_sha
 console.log("We're wanting to share: " + book_chapter_verse_we_want_to_share);
 
 
-var complete_url_to_share_with_bg_chosen = "https://biblefarm.github.io/posts-en-" + color_to_share + "/pages/" + book_chapter_verse_we_want_to_share + ".html";
+var complete_url_to_share_with_bg_chosen = "https://www.biblefarm.org/app/en/posts/" + color_to_share + "/" + book_chapter_verse_we_want_to_share + ".html";
 console.log("Redirecting to: " + complete_url_to_share_with_bg_chosen);
 
 
