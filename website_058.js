@@ -1042,7 +1042,7 @@ $(document).ready(function() {
       setTimeout(function() {
         $(".wrap_sharing_panel")
           .find("svg.at-icon")
-          .css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))");
+          .css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, 3.7))");
         console.log("/////// applied addthis shadow SHARING hack @ + 1000");
       }, 1000);
       // addthis FOLLOW margin hack
@@ -1060,7 +1060,7 @@ $(document).ready(function() {
           .css("width", "49px")
           .css("height", "49px")
           .css("line-height", "49px")
-          .css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7))");
+          .css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, 3.7))");
         console.log("/////// applied addthis shadow FOLLOW hack @ + 3000");
       }, 3000);
 
