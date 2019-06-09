@@ -6726,8 +6726,12 @@ display: inline-block;
 #done_editing_redirect_to_next_team, #done_editing_redirect_to_next_guest {
   display: none;
 }
-
 #book_chapter_verse_we_want_to_share {
   display: none;
 }
-/**/
+#color_to_share {
+  display: none;
+}
+.temp_container_delete_when_help_is_established {
+  padding: 10px;
+}
