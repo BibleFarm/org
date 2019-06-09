@@ -8697,7 +8697,7 @@ console.log(" // - redirected to " + link_to_current_verse_to_share);
   ////// BEGIN still working on this feature ////
   //////////////////////////////////////////////////
 // open the modal
-$("#app_terminal_orig_on, #app_terminal_tran_on, #app_lang_de_main, #app_lang_fr_main, #app_lang_pt_main, #app_lang_it_main, #app_lang_de_para, #app_lang_fr_para, #app_lang_pt_para, #app_lang_it_para, #to_search_grk, #to_search_grk_tra, #to_search_reg_esp, #to_search_heb_tra, #to_search_heb, .top_help").one('click', function(event) {
+$("#app_terminal_orig_on, #app_terminal_tran_on, #app_lang_de_main, #app_lang_fr_main, #app_lang_pt_main, #app_lang_it_main, #app_lang_de_para, #app_lang_fr_para, #app_lang_pt_para, #app_lang_it_para, #to_search_grk, #to_search_grk_tra, #to_search_reg_esp, #to_search_heb_tra, #to_search_heb").one('click', function(event) {
   event.preventDefault();
 $(".wrap_modal_still_working_on_this").show("slow");
 });
@@ -8992,6 +8992,8 @@ $('.show_pure_chat').on('click', function(e) {
 var stopWaitingForPurechat = setInterval(function() {
   if ($("body").find('.purechat-widget-title-link:contains("Contact us")').length > 0) {
     console.log("found PureChat");
+    // clear the setInterval
+    clearInterval(stopWaitingForPurechat);
     // show it
     $("#PureChatWidget").attr("style", "z-index: 2147483646 !important");
     // hack colors
