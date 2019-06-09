@@ -8984,10 +8984,12 @@ else {
 ////////////////////////////////////////////////////
 // BEGIN PureChat on demand
 ////////////////////////////////////////////////////
-$('.show_pure_chat').on('click', function(e) {
 // BEGIN PureChat append it to the head
+$('.show_pure_chat').one('click', function(e) {
   $('<script>window.purechatApi={l:[],t:[],on:function(){this.l.push(arguments)}},function(){var e=!1,t=document.createElement("script");t.async=!0,t.type="text/javascript",t.src="https://app.purechat.com/VisitorWidget/WidgetScript",document.getElementsByTagName("HEAD").item(0).appendChild(t),t.onreadystatechange=t.onload=function(t){if(!(e||this.readyState&&"loaded"!=this.readyState&&"complete"!=this.readyState)){new PCWidget({c:"7f1570e3-a978-430a-82a3-fccff55a8707",f:!0});e=!0}}}();</script>').appendTo("head");
+});
 // END PureChat append it to the head
+$('.show_pure_chat').on('click', function(e) {
 // wait for it to load
 var stopWaitingForPurechat = setInterval(function() {
   if ($("body").find('.purechat-widget-title-link:contains("Contact us")').length > 0) {
