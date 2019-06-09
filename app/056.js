@@ -8356,7 +8356,7 @@ $(document).ready(function() {
 if($('#admin').css('display') !== 'none')
 {
   var welcome_user_with_name = $("body").find("#name").text();
-  var first_name = $(welcome_user_with_name).replace(/ .*/,'');
+  var first_name = $("body").find("#name").text().replace(/ .*/,'');
   $("#logged_in_user_is_a_part").text("I'm part of biblefarm.org");
   $("#edited_app_name").text(welcome_user_with_name);
   //greet Welcome with first_name
