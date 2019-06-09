@@ -8873,7 +8873,7 @@ if ($.trim($("#edited_app_name").text()) == "Your Name Goes Here") {
 $("#done_editing_redirect_to_next_guest").show();
 $("#done_editing_redirect_to_next_team").hide();
 
-$("#please_login").on('click', function(e) {
+$("#please_login, .please_login").on('click', function(e) {
 $(".wrap_sharing_modal_browsing_mode").hide();
 // check if we need to open the menu
 if (!$('.wrap_top_menu').hasClass('wrap_top_menu_active')){

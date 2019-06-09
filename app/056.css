@@ -930,6 +930,7 @@ position: fixed;
          font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
          font-size: calc(16px + (32 - 16) * ( (100vw - 320px) / (4096 - 320)));
          color: #ae9c80;
+         text-shadow: 2px 2px 1px #000;
          margin: 0 auto;
          background: black;
     }
@@ -6587,7 +6588,23 @@ vertical-align: middle;
 }
 /* END wrap_sponsor_ads_app_only */
 
-
+.wrap_title_background_chooser {
+  position: absolute;
+  display: ;
+  top: calc(4px + 0px);
+  width: 100%;
+  max-width: 312px;
+  height: 44px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+.title_background_chooser {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  line-height: 44px;
+}
 /* BEGIN brought in from the old edits.html standalone page for post edit background color picker */
 .wrap_edit_background_chooser {
 position: absolute;
