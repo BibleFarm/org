@@ -8356,12 +8356,12 @@ $(document).ready(function() {
 if($('#admin').css('display') !== 'none')
 {
   var welcome_user_with_name = $("body").find("#name").text();
+  var first_name = $(welcome_user_with_name).replace(/ .*/,'');
   $("#logged_in_user_is_a_part").text("I'm part of biblefarm.org");
   $("#edited_app_name").text(welcome_user_with_name);
   //greet Welcome with first_name
-  var first_name = $("#name").html().replace(/ .*/,'');
   console.log(first_name);
-  $("#first_name").html(" " + first_name);
+  $("#first_name").text(" " + first_name);
   setTimeout(function() {
   $(".app_wrap").find("p.msg1").text(welcome_user_with_name).fadeOut("5000").fadeIn("7000");
 }, 8000);
