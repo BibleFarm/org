@@ -33,7 +33,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 
 <!-- Include Firebase -->
-<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase.js"></script>
 
 <!-- Initialise Firebase -->
 <script>
@@ -53,7 +53,7 @@ function canvasScreenshotToFirebase() { // I'm calling it "thumbnail" in Firebas
         onrendered: function(canvas) {
             var screenshot = canvas.toDataURL(); // Convert to base64
          //   document.body.appendChild(canvas); // Renders the screenshot at the bottom of the screen (optional)
-firebase.storage().ref('/images/').child('file_name').putString(screenshot, 'base64url', {contentType:'image/png'});
+firebase.storage().ref('/images/').child('file_name').putString(screenshot, 'base64', {contentType:'image/png'});
         },
         allowTaint: true, // Try this if you're running into image problems
         logging: true // Shows most errors in the console, remove in production
