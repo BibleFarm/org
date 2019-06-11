@@ -1,13 +1,13 @@
 <html>
 <head>
+  <style>
 .screenshot-container {
   font-size:40px;
   color: red;
 }
+</style>
 </head>
 <body>
-
-
 <!-- Creates a screenshot of a specific div via html2canvas and sends it to Firebase 3.0 Realtime Database  -->
 <!-- Try and make sure your images come from the same domain, ideally the same folder or they might taint the canvas -->
 <!-- If you get tainted canvas warnings, try from a domain that allows cross-origin images (e.g. dropbox public folder or localhost server-->
@@ -45,8 +45,6 @@ var config = {
 };
 firebase.initializeApp(config);
 </script>
-
-
 <script>
 // Create and send the screenshot to Firebase //
 function canvasScreenshotToFirebase() { // I'm calling it "thumbnail" in Firebase
@@ -62,10 +60,5 @@ firebase.storage().ref('/images/').child('file_name').putString(screenshot, 'bas
     });
 }
 </script>
-
-
-
-
-
 </body>
 </html>
