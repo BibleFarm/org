@@ -1,0 +1,71 @@
+<html>
+<head>
+.screenshot-container {
+  font-size:40px;
+  color: red;
+}
+</head>
+<body>
+
+
+<!-- Creates a screenshot of a specific div via html2canvas and sends it to Firebase 3.0 Realtime Database  -->
+<!-- Try and make sure your images come from the same domain, ideally the same folder or they might taint the canvas -->
+<!-- If you get tainted canvas warnings, try from a domain that allows cross-origin images (e.g. dropbox public folder or localhost server-->
+<!-- html2canvas gives the best results with old-school CSS layouts and background images  -->
+<!-- It doesn't like flexbox or CSS 3 properties very much  -->
+<!-- Problems with images not rendering? Check out the FAQs: http://html2canvas.hertzen.com/faq.html  -->
+
+<!-- This is the div you want to screenshot -->
+<div class="screenshot-container">
+    <!-- Here's a div with background image (they work better I'm afraid) -->
+    <!-- Try and make sure images come from the same domain, ideally the same folder -->
+    <div id="canvas" class="background-image" style="background-image: url(path-to-my-image.png); background-repeat: no-repeat; height: 250px;">some text here to see how it all gets saved</div>
+</div>
+
+<!-- Button to generate the screenshot  -->
+<button type="button" onclick="canvasScreenshotToFirebase()">Screenshot and Firebase</button>
+<br>
+<br>
+<br>
+<div id="save">save</div>
+<!-- Include html2canvas -->
+<!-- Get the latest html2canvas from https://github.com/niklasvh/html2canvas/releases - this used v0.5 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+<!-- Include Firebase -->
+<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
+<!-- Initialise Firebase -->
+<script>
+var config = {
+  apiKey: "AIzaSyCLVyj7ZZKfcbMLmpcDT0Zws_07yPVJWRU",
+  authDomain: "main-b6d09.firebaseapp.com",
+  databaseURL: "https://main-b6d09.firebaseio.com",
+  storageBucket: "main-b6d09.appspot.com",
+};
+firebase.initializeApp(config);
+</script>
+
+
+<script>
+// Create and send the screenshot to Firebase //
+function canvasScreenshotToFirebase() { // I'm calling it "thumbnail" in Firebase
+    var divToScreenshot = document.querySelector('.screenshot-container'); // Pick your div to screenshot
+    html2canvas(divToScreenshot, {
+        onrendered: function(canvas) {
+            var screenshot = canvas.toDataURL(); // Convert to base64
+         //   document.body.appendChild(canvas); // Renders the screenshot at the bottom of the screen (optional)
+firebase.storage().ref('/images/').child('file_name').putString(screenshot, 'base64url', {contentType:'image/png'});
+        },
+        allowTaint: true, // Try this if you're running into image problems
+        logging: true // Shows most errors in the console, remove in production
+    });
+}
+</script>
+
+
+
+
+
+</body>
+</html>
