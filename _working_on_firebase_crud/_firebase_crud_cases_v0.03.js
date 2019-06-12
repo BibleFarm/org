@@ -455,7 +455,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -473,7 +473,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -493,7 +493,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -515,7 +515,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -539,10 +539,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 110);
+    }, 5100);
 }
 table_case_1_a.draw();
-    }, 110);
+    }, 5100);
 ////////////////////////////////////////
 // END resize columns according to what fits or not
 //////////////////////////////////
@@ -562,7 +562,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -580,7 +580,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -600,7 +600,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -622,7 +622,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -646,10 +646,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 110);
+    }, 5100);
 }
 table_case_1_a.draw();
-    }, 110);
+    }, 5100);
 ////////////////////////////////////////
 });
 //// END again adjust columns on resize
@@ -675,7 +675,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -693,7 +693,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -713,7 +713,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -735,7 +735,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -759,10 +759,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 110);
+    }, 5100);
 }
 table_case_1_a.draw();
-    }, 110);
+    }, 5100);
 ////////////////////////////////////////
 // END resize columns according to what fits or not
 //////////////////////////////////
@@ -1014,7 +1014,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1032,7 +1032,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1052,7 +1052,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1074,7 +1074,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1098,10 +1098,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 110);
+    }, 5100);
 }
 table_case_1_a.draw();
-    }, 110);
+    }, 5100);
 ////////////////////////////////////////
 // END resize columns according to what fits or not
 //////////////////////////////////
@@ -1121,7 +1121,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1139,7 +1139,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1159,7 +1159,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1181,7 +1181,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1205,10 +1205,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 110);
+    }, 5100);
 }
 table_case_1_a.draw();
-    }, 110);
+    }, 5100);
 ////////////////////////////////////////
 });
 //// END again adjust columns on resize
@@ -1234,7 +1234,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1252,7 +1252,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1272,7 +1272,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1294,7 +1294,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1318,10 +1318,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 110);
+    }, 5100);
 }
 table_case_1_a.draw();
-    }, 110);
+    }, 5100);
 ////////////////////////////////////////
 // END resize columns according to what fits or not
 //////////////////////////////////
@@ -1512,7 +1512,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1530,7 +1530,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1550,7 +1550,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1572,7 +1572,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1596,10 +1596,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 110);
+    }, 5100);
 }
 table_case_1_a.draw();
-    }, 110);
+    }, 5100);
 ////////////////////////////////////////
 // END resize columns according to what fits or not
 //////////////////////////////////
@@ -1619,7 +1619,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1637,7 +1637,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1657,7 +1657,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1679,7 +1679,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1703,10 +1703,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 110);
+    }, 5100);
 }
 table_case_1_a.draw();
-    }, 110);
+    }, 5100);
 ////////////////////////////////////////
 });
 //// END again adjust columns on resize
@@ -1732,7 +1732,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1750,7 +1750,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1770,7 +1770,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1792,7 +1792,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1816,10 +1816,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 110);
+    }, 5100);
 }
 table_case_1_a.draw();
-    }, 110);
+    }, 5100);
 ////////////////////////////////////////
 // END resize columns according to what fits or not
 //////////////////////////////////
@@ -2046,7 +2046,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2064,7 +2064,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2084,7 +2084,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2106,7 +2106,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2130,10 +2130,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 110);
+    }, 5100);
 }
 table_case_1_a.draw();
-    }, 110);
+    }, 5100);
 ////////////////////////////////////////
 // END resize columns according to what fits or not
 //////////////////////////////////
@@ -2153,7 +2153,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2171,7 +2171,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2191,7 +2191,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2213,7 +2213,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2237,10 +2237,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 110);
+    }, 5100);
 }
 table_case_1_a.draw();
-    }, 110);
+    }, 5100);
 ////////////////////////////////////////
 });
 //// END again adjust columns on resize
@@ -2266,7 +2266,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2284,7 +2284,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2304,7 +2304,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2326,7 +2326,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 110);
+    }, 5100);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2350,10 +2350,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 110);
+    }, 5100);
 }
 table_case_1_a.draw();
-    }, 110);
+    }, 5100);
 ////////////////////////////////////////
 // END resize columns according to what fits or not
 //////////////////////////////////
@@ -2883,7 +2883,7 @@ $("#column_5_case_1_a").focus().select();
   $('#table_case_1_a').on('page.dt', function() {
     $('.dataTables_scrollBody').animate({
       scrollTop: 0
-    }, 110);
+    }, 5100);
   });
 //////////////////////////////////
 
