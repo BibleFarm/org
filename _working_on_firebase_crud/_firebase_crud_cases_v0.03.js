@@ -270,7 +270,7 @@ console.log("cancel_editing was clicked");
 document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
 mode_case_1_a = CREATE_case_1_a;
 $(".cancel_editing").hide();
-    }, 100);
+    }, 5000);
 });
 ///////////////////////////////////////////////////////
   console.log("/////////////////////////////////////////////////////////////////////////////////////////////////////////////// just ran function edit_case_1_a()");
@@ -823,11 +823,11 @@ console.log("// table is empty // suggest creating a new record");
 // clear the setInterval
 clearInterval(checkIf_all_records_deleted_during_session_we_have_an_empty_table);
 }
-}, 100);
+}, 5000);
 
 // all done
 console.log("// waitFor_table_to_be_repopulated_after_delete // we're all done!");
-}, 100);
+}, 5000);
 
 
 
@@ -1375,7 +1375,7 @@ $(".table_empty").hide();
 
 
 
-}, 100);
+}, 5000);
 // END wait for firebase to populate the td's and convert to datatables
 //// END when page is loaded
 //// BEGIN when creating or editing a record
@@ -1873,7 +1873,7 @@ $(this).find("i").removeClass("fa-folder").addClass("fa-folder-open");
 
 $(".table_empty").hide();
 }
-}, 100);
+}, 5000);
 });
 //// END when creating or editing a record
 //// BEGIN when during the session, user #sign-out or #delete-account
@@ -2412,7 +2412,7 @@ clearInterval(waitFor_table_to_be_repopulated_after_signout_or_delete_account);
 console.log("// waitFor_table_to_be_repopulated_after_signout_or_delete_account // setInterval is cleared");
 // all done
 console.log("// waitFor_table_to_be_repopulated_after_signout_or_delete_account // we're all done!");
-}, 100);
+}, 5000);
 
 
 
@@ -2468,7 +2468,7 @@ $(this).find("td:nth-last-child(1)").show();
 console.log("/////////////////////////////// ADMIN allowed to fully CRUD");
 }
 }
-}, 100);
+}, 5000);
 /////////////////////////////////////////////////////////////////////////////////////
 // END first time admin/user, or all records were deleted // table is empty ///////
 /////////////////////////////////////////////////////////////////////////////////////
@@ -2526,7 +2526,7 @@ function edit_case_1_a() {
       document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
       mode_case_1_a = CREATE_case_1_a;
       $(".cancel_editing").hide();
-    }, 100);
+    }, 5000);
   });
   ///////////////////////////////////////////////////////
 }
@@ -2563,7 +2563,7 @@ function edit_case_1_a() {
       document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
       mode_case_1_a = CREATE_case_1_a;
       $(".cancel_editing").hide();
-    }, 100);
+    }, 5000);
   });
   ///////////////////////////////////////////////////////
 }
@@ -2600,7 +2600,7 @@ function edit_case_1_a() {
       document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
       mode_case_1_a = CREATE_case_1_a;
       $(".cancel_editing").hide();
-    }, 100);
+    }, 5000);
   });
   ///////////////////////////////////////////////////////
 }
@@ -2637,7 +2637,7 @@ function edit_case_1_a() {
       document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
       mode_case_1_a = CREATE_case_1_a;
       $(".cancel_editing").hide();
-    }, 100);
+    }, 5000);
   });
   ///////////////////////////////////////////////////////
 }
@@ -2674,7 +2674,7 @@ function edit_case_1_a() {
       document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
       mode_case_1_a = CREATE_case_1_a;
       $(".cancel_editing").hide();
-    }, 100);
+    }, 5000);
   });
   ///////////////////////////////////////////////////////
 }
@@ -2718,7 +2718,7 @@ function edit_case_1_a() {
       document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
       mode_case_1_a = CREATE_case_1_a;
       $(".cancel_editing").hide();
-    }, 100);
+    }, 5000);
   });
   ///////////////////////////////////////////////////////
 }
@@ -2755,7 +2755,7 @@ function edit_case_1_a() {
       document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
       mode_case_1_a = CREATE_case_1_a;
       $(".cancel_editing").hide();
-    }, 100);
+    }, 5000);
   });
   ///////////////////////////////////////////////////////
 }
@@ -2792,7 +2792,7 @@ function edit_case_1_a() {
       document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
       mode_case_1_a = CREATE_case_1_a;
       $(".cancel_editing").hide();
-    }, 100);
+    }, 5000);
   });
   ///////////////////////////////////////////////////////
 }
@@ -2829,7 +2829,7 @@ function edit_case_1_a() {
       document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
       mode_case_1_a = CREATE_case_1_a;
       $(".cancel_editing").hide();
-    }, 100);
+    }, 5000);
   });
   ///////////////////////////////////////////////////////
 }
@@ -2866,7 +2866,7 @@ function edit_case_1_a() {
       document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
       mode_case_1_a = CREATE_case_1_a;
       $(".cancel_editing").hide();
-    }, 100);
+    }, 5000);
   });
   ///////////////////////////////////////////////////////
 }
