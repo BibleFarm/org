@@ -827,6 +827,7 @@ clearInterval(checkIf_all_records_deleted_during_session_we_have_an_empty_table)
 
 // all done
 console.log("// waitFor_table_to_be_repopulated_after_delete // we're all done!");
+$(".cover_while_dt_firebase_is_working").hide("slow");
 }, 100);
 
 
@@ -1374,6 +1375,7 @@ $(".table_empty").hide();
 }
 
 
+$(".cover_while_dt_firebase_is_working").hide("slow");
 
 }, 100);
 // END wait for firebase to populate the td's and convert to datatables
@@ -1873,6 +1875,8 @@ $(this).find("i").removeClass("fa-folder").addClass("fa-folder-open");
 
 $(".table_empty").hide();
 }
+$(".cover_while_dt_firebase_is_working").hide("slow");
+
 }, 100);
 });
 //// END when creating or editing a record
@@ -2412,6 +2416,8 @@ clearInterval(waitFor_table_to_be_repopulated_after_signout_or_delete_account);
 console.log("// waitFor_table_to_be_repopulated_after_signout_or_delete_account // setInterval is cleared");
 // all done
 console.log("// waitFor_table_to_be_repopulated_after_signout_or_delete_account // we're all done!");
+$(".cover_while_dt_firebase_is_working").hide("slow");
+
 }, 100);
 
 
@@ -2468,6 +2474,8 @@ $(this).find("td:nth-last-child(1)").show();
 console.log("/////////////////////////////// ADMIN allowed to fully CRUD");
 }
 }
+$(".cover_while_dt_firebase_is_working").hide("slow");
+
 }, 100);
 /////////////////////////////////////////////////////////////////////////////////////
 // END first time admin/user, or all records were deleted // table is empty ///////
@@ -3175,6 +3183,7 @@ $("#authentication").trigger({ type: "click", which: 1 });
   $("#lock_is_open").hide();
 
 }
+$(".cover_while_dt_firebase_is_working").hide("slow");
 
 }, 1000);
 /////////////////////////////////////////////////////////////////////////

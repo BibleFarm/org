@@ -1421,7 +1421,14 @@ table.dataTable {
 /* END firebase login and condition based display of data  */
 /*************************************************************/
 
-
+.cover_while_dt_firebase_is_working {
+  position: fixed;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  z-index: 11;
+  background: red;
+}
 
 /* END SPECIFIC jovi website */
 
