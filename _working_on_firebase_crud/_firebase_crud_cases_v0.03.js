@@ -10,8 +10,9 @@
 // _firebase_crud_cases_v0.02.js
 $(document).ready(function() {
 
-  $(".cover_while_dt_firebase_is_working_welcome").hide();
-
+// on load we welcome visitor
+  $(".cover_while_dt_firebase_is_working_welcome").show();
+  $(".cover_while_dt_firebase_is_working_updating").hide();
 
   $("#create_or_update_case_1_a").on("click",function(e){
 $(".cover_while_dt_firebase_is_working_updating").show();
@@ -1369,8 +1370,8 @@ $('.dataTables_scrollBody').perfectScrollbar({
   wheelPropagation: true,
   scrollXMarginOffset: 2
 });
-$(".cover_while_dt_firebase_is_working_updating").hide();
-console.log("that's 4");
+$(".cover_while_dt_firebase_is_working_welcome").hide();
+console.log("Initial welcome hide");
          },
     mark: {
       "filter": [".mark_ignore"],
@@ -1874,7 +1875,7 @@ $('.dataTables_scrollBody').perfectScrollbar({
   scrollXMarginOffset: 2
 });
 $(".cover_while_dt_firebase_is_working_updating").hide();
-console.log("that's 5");
+console.log("it was hide while creating or editing");
          },
     mark: {
       "filter": [".mark_ignore"],
@@ -2414,7 +2415,7 @@ $('.dataTables_scrollBody').perfectScrollbar({
   scrollXMarginOffset: 2
 });
 $(".cover_while_dt_firebase_is_working_updating").hide();
-console.log("that's 6");
+console.log("this one is for after we've logged out");
          },
     mark: {
       "filter": [".mark_ignore"],
@@ -3178,6 +3179,9 @@ console.log("/////////////////////////////// ADMIN allowed to fully CRUD");
 /////////////////////////////////////////////////////////////////////////
 $("#lock_and_unlock").on("click",function(e){
 $("#authentication").trigger({ type: "click", which: 1 });
+// someone clicked #lock_and_unlock
+$(".cover_while_dt_firebase_is_working_welcome").show();
+
 });
 
 /////////////////////////////////////////////////////////////////////////
