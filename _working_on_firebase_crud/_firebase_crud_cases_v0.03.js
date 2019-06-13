@@ -225,6 +225,7 @@ $(this).find("td:nth-last-child(1)").hide();
    for(var key in data_case_1_a){
   tr_case_1_a += '<tr>' +
 '<td><div class="background_test"><span class="wrap_svg"><i data-fa-symbol="folder_opened" class="fas fa-folder-open fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#folder_opened"></use></svg></span></div></td>' +
+'<td class="column_0_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_0_case_1_a + '</div></td>' +
 '<td class="column_1_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_1_case_1_a + '</div></td>' +
 '<td class="column_2_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_2_case_1_a + '</div></td>' +
 '<td class="column_3_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_3_case_1_a + '</div></td>' +
@@ -261,7 +262,8 @@ function edit_case_1_a(){
 refEdit_case_1_a = ref_case_1_a.child(firebase_key_to_edit_case_1_a);
   refEdit_case_1_a.once("value", function(snap){
 		var data_case_1_a = snap.val();
-	document.getElementById("column_1_case_1_a").value = data_case_1_a.column_1_case_1_a;
+	document.getElementById("column_0_case_1_a").value = data_case_1_a.column_0_case_1_a;
+  document.getElementById("column_1_case_1_a").value = data_case_1_a.column_1_case_1_a;
 	document.getElementById("column_2_case_1_a").value = data_case_1_a.column_2_case_1_a;
 	document.getElementById("column_3_case_1_a").value = data_case_1_a.column_3_case_1_a;
 	document.getElementById("column_4_case_1_a").value = data_case_1_a.column_4_case_1_a;
@@ -321,6 +323,7 @@ console.log("table_case_1_a.destroy was done");
    for(var key in data_case_1_a){
   tr_case_1_a += '<tr>' +
 '<td><div class="background_test"><span class="wrap_svg"><i data-fa-symbol="folder_opened" class="fas fa-folder-open fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#folder_opened"></use></svg></span></div></td>' +
+'<td class="column_0_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_0_case_1_a + '</div></td>' +
 '<td class="column_1_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_1_case_1_a + '</div></td>' +
 '<td class="column_2_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_2_case_1_a + '</div></td>' +
 '<td class="column_3_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_3_case_1_a + '</div></td>' +
@@ -1926,6 +1929,7 @@ console.log("table_case_1_a.destroy was done");
    for(var key in data_case_1_a){
   tr_case_1_a += '<tr>' +
 '<td><div class="background_test"><span class="wrap_svg"><i data-fa-symbol="folder_opened" class="fas fa-folder-open fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#folder_opened"></use></svg></span></div></td>' +
+'<td class="column_0_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_0_case_1_a + '</div></td>' +
 '<td class="column_1_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_1_case_1_a + '</div></td>' +
 '<td class="column_2_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_2_case_1_a + '</div></td>' +
 '<td class="column_3_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_3_case_1_a + '</div></td>' +
@@ -2543,6 +2547,7 @@ function edit_case_1_a() {
   refEdit_case_1_a = ref_case_1_a.child(firebase_key_to_edit_case_1_a);
   refEdit_case_1_a.once("value", function(snap) {
     var data_case_1_a = snap.val();
+    document.getElementById("column_0_case_1_a").value = data_case_1_a.column_0_case_1_a;
     document.getElementById("column_1_case_1_a").value = data_case_1_a.column_1_case_1_a;
     document.getElementById("column_2_case_1_a").value = data_case_1_a.column_2_case_1_a;
     document.getElementById("column_3_case_1_a").value = data_case_1_a.column_3_case_1_a;
@@ -2580,6 +2585,7 @@ function edit_case_1_a() {
   refEdit_case_1_a = ref_case_1_a.child(firebase_key_to_edit_case_1_a);
   refEdit_case_1_a.once("value", function(snap) {
     var data_case_1_a = snap.val();
+    document.getElementById("column_0_case_1_a").value = data_case_1_a.column_0_case_1_a;
     document.getElementById("column_1_case_1_a").value = data_case_1_a.column_1_case_1_a;
     document.getElementById("column_2_case_1_a").value = data_case_1_a.column_2_case_1_a;
     document.getElementById("column_3_case_1_a").value = data_case_1_a.column_3_case_1_a;
@@ -2617,6 +2623,7 @@ function edit_case_1_a() {
   refEdit_case_1_a = ref_case_1_a.child(firebase_key_to_edit_case_1_a);
   refEdit_case_1_a.once("value", function(snap) {
     var data_case_1_a = snap.val();
+    document.getElementById("column_0_case_1_a").value = data_case_1_a.column_0_case_1_a;
     document.getElementById("column_1_case_1_a").value = data_case_1_a.column_1_case_1_a;
     document.getElementById("column_2_case_1_a").value = data_case_1_a.column_2_case_1_a;
     document.getElementById("column_3_case_1_a").value = data_case_1_a.column_3_case_1_a;
@@ -2654,6 +2661,7 @@ function edit_case_1_a() {
   refEdit_case_1_a = ref_case_1_a.child(firebase_key_to_edit_case_1_a);
   refEdit_case_1_a.once("value", function(snap) {
     var data_case_1_a = snap.val();
+    document.getElementById("column_0_case_1_a").value = data_case_1_a.column_0_case_1_a;
     document.getElementById("column_1_case_1_a").value = data_case_1_a.column_1_case_1_a;
     document.getElementById("column_2_case_1_a").value = data_case_1_a.column_2_case_1_a;
     document.getElementById("column_3_case_1_a").value = data_case_1_a.column_3_case_1_a;
@@ -2691,6 +2699,7 @@ function edit_case_1_a() {
   refEdit_case_1_a = ref_case_1_a.child(firebase_key_to_edit_case_1_a);
   refEdit_case_1_a.once("value", function(snap) {
     var data_case_1_a = snap.val();
+    document.getElementById("column_0_case_1_a").value = data_case_1_a.column_0_case_1_a;
     document.getElementById("column_1_case_1_a").value = data_case_1_a.column_1_case_1_a;
     document.getElementById("column_2_case_1_a").value = data_case_1_a.column_2_case_1_a;
     document.getElementById("column_3_case_1_a").value = data_case_1_a.column_3_case_1_a;
@@ -2735,6 +2744,7 @@ function edit_case_1_a() {
   refEdit_case_1_a = ref_case_1_a.child(firebase_key_to_edit_case_1_a);
   refEdit_case_1_a.once("value", function(snap) {
     var data_case_1_a = snap.val();
+    document.getElementById("column_0_case_1_a").value = data_case_1_a.column_0_case_1_a;
     document.getElementById("column_1_case_1_a").value = data_case_1_a.column_1_case_1_a;
     document.getElementById("column_2_case_1_a").value = data_case_1_a.column_2_case_1_a;
     document.getElementById("column_3_case_1_a").value = data_case_1_a.column_3_case_1_a;
@@ -2772,6 +2782,7 @@ function edit_case_1_a() {
   refEdit_case_1_a = ref_case_1_a.child(firebase_key_to_edit_case_1_a);
   refEdit_case_1_a.once("value", function(snap) {
     var data_case_1_a = snap.val();
+    document.getElementById("column_0_case_1_a").value = data_case_1_a.column_0_case_1_a;
     document.getElementById("column_1_case_1_a").value = data_case_1_a.column_1_case_1_a;
     document.getElementById("column_2_case_1_a").value = data_case_1_a.column_2_case_1_a;
     document.getElementById("column_3_case_1_a").value = data_case_1_a.column_3_case_1_a;
@@ -2809,6 +2820,7 @@ function edit_case_1_a() {
   refEdit_case_1_a = ref_case_1_a.child(firebase_key_to_edit_case_1_a);
   refEdit_case_1_a.once("value", function(snap) {
     var data_case_1_a = snap.val();
+    document.getElementById("column_0_case_1_a").value = data_case_1_a.column_0_case_1_a;
     document.getElementById("column_1_case_1_a").value = data_case_1_a.column_1_case_1_a;
     document.getElementById("column_2_case_1_a").value = data_case_1_a.column_2_case_1_a;
     document.getElementById("column_3_case_1_a").value = data_case_1_a.column_3_case_1_a;
@@ -2846,6 +2858,7 @@ function edit_case_1_a() {
   refEdit_case_1_a = ref_case_1_a.child(firebase_key_to_edit_case_1_a);
   refEdit_case_1_a.once("value", function(snap) {
     var data_case_1_a = snap.val();
+    document.getElementById("column_0_case_1_a").value = data_case_1_a.column_0_case_1_a;
     document.getElementById("column_1_case_1_a").value = data_case_1_a.column_1_case_1_a;
     document.getElementById("column_2_case_1_a").value = data_case_1_a.column_2_case_1_a;
     document.getElementById("column_3_case_1_a").value = data_case_1_a.column_3_case_1_a;
@@ -2883,6 +2896,7 @@ function edit_case_1_a() {
   refEdit_case_1_a = ref_case_1_a.child(firebase_key_to_edit_case_1_a);
   refEdit_case_1_a.once("value", function(snap) {
     var data_case_1_a = snap.val();
+    document.getElementById("column_0_case_1_a").value = data_case_1_a.column_0_case_1_a;
     document.getElementById("column_1_case_1_a").value = data_case_1_a.column_1_case_1_a;
     document.getElementById("column_2_case_1_a").value = data_case_1_a.column_2_case_1_a;
     document.getElementById("column_3_case_1_a").value = data_case_1_a.column_3_case_1_a;

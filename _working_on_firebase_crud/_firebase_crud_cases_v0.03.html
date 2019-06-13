@@ -235,6 +235,7 @@
 
 			</div>
     </th>
+            <th class="table_case_1_a_th">Photo</th>
             <th class="table_case_1_a_th">Fecha de Ingreso</th>
             <th class="table_case_1_a_th">Apellido</th>
             <th class="table_case_1_a_th">Nombre</th>
@@ -252,8 +253,8 @@
         <form id="form_case_1_a" name="form_case_1_a">
           <div class="form-group">
             <div class="">
-              <label for="column_1_case_1_a">Column 1</label>
-			  <span id="bump_it">Establecer Fecha y Hora Actual</span>
+              <label for="column_1_case_1_a">Fecha de Ingreso</label>
+			  <span id="bump_it">[ ahora ]</span>
             </div>
             <div class="">
               <input class="form-control" id="column_1_case_1_a" name="column_1_case_1_a" type="text" value="">
@@ -289,6 +290,14 @@
             </div>
             <div class="">
               <input class="form-control" id="column_5_case_1_a" name="column_5_case_1_a" type="text" value="">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="">
+              <label for="column_0_case_1_a">Photo</label>
+            </div>
+            <div class="">
+              <input type="file" onchange="previewFile()" id="column_0_case_1_a" name="column_0_case_1_a[]" multiple />
             </div>
           </div>
           <div class="">
