@@ -10,6 +10,10 @@
 // _firebase_crud_cases_v0.02.js
 $(document).ready(function() {
 
+  $("#create_or_update_case_1_a").on("click",function(e){
+$(".cover_while_dt_firebase_is_working").show();
+});
+
 //*************************************************************/
 //* BEGIN firebase login and condition based display of data  */
 //*************************************************************/
@@ -797,6 +801,7 @@ $('.dataTables_scrollBody').perfectScrollbar({
   wheelPropagation: true,
   scrollXMarginOffset: 2
 });
+$(".cover_while_dt_firebase_is_working").hide();
          },
     mark: {
       "filter": [".mark_ignore"],
@@ -1360,6 +1365,7 @@ $('.dataTables_scrollBody').perfectScrollbar({
   wheelPropagation: true,
   scrollXMarginOffset: 2
 });
+$(".cover_while_dt_firebase_is_working").hide();
          },
     mark: {
       "filter": [".mark_ignore"],
@@ -1862,6 +1868,7 @@ $('.dataTables_scrollBody').perfectScrollbar({
   wheelPropagation: true,
   scrollXMarginOffset: 2
 });
+$(".cover_while_dt_firebase_is_working").hide();
          },
     mark: {
       "filter": [".mark_ignore"],
@@ -2400,6 +2407,7 @@ $('.dataTables_scrollBody').perfectScrollbar({
   wheelPropagation: true,
   scrollXMarginOffset: 2
 });
+$(".cover_while_dt_firebase_is_working").hide();
          },
     mark: {
       "filter": [".mark_ignore"],
