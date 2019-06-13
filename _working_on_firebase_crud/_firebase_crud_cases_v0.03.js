@@ -425,7 +425,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
             targets:   [0]
             }
             ],
-        order: [ 1, 'desc' ],
+        order: [ 2, 'desc' ],
         fnInitComplete: function(){
 //////////////////////////////////////////
 //////////////////////////////////////////
@@ -539,20 +539,22 @@ $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%")
 if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
+$("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
 $("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("width", "44px");
 });
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
-$(this).find("td.column_1_case_1_a").css("width", "20%");
-$(this).find("td.column_2_case_1_a").css("width", "20%");
-$(this).find("td.column_3_case_1_a").css("width", "20%");
-$(this).find("td.column_4_case_1_a").css("width", "20%");
-$(this).find("td.column_5_case_1_a").css("width", "20%");
+$(this).find("td.column_0_case_1_a").css("width", "16.66%");
+$(this).find("td.column_1_case_1_a").css("width", "16.66%");
+$(this).find("td.column_2_case_1_a").css("width", "16.66%");
+$(this).find("td.column_3_case_1_a").css("width", "16.66%");
+$(this).find("td.column_4_case_1_a").css("width", "16.66%");
+$(this).find("td.column_5_case_1_a").css("width", "16.66%");
 });
     }, 110);
 }
@@ -646,20 +648,22 @@ $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%")
 if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
+$("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
 $("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("width", "44px");
 });
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
-$(this).find("td.column_1_case_1_a").css("width", "20%");
-$(this).find("td.column_2_case_1_a").css("width", "20%");
-$(this).find("td.column_3_case_1_a").css("width", "20%");
-$(this).find("td.column_4_case_1_a").css("width", "20%");
-$(this).find("td.column_5_case_1_a").css("width", "20%");
+  $(this).find("td.column_0_case_1_a").css("width", "16.66%");
+  $(this).find("td.column_1_case_1_a").css("width", "16.66%");
+$(this).find("td.column_2_case_1_a").css("width", "16.66%");
+$(this).find("td.column_3_case_1_a").css("width", "16.66%");
+$(this).find("td.column_4_case_1_a").css("width", "16.66%");
+$(this).find("td.column_5_case_1_a").css("width", "16.66%");
 });
     }, 110);
 }
@@ -759,20 +763,22 @@ $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%")
 if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
+$("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
 $("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("width", "44px");
 });
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
-$(this).find("td.column_1_case_1_a").css("width", "20%");
-$(this).find("td.column_2_case_1_a").css("width", "20%");
-$(this).find("td.column_3_case_1_a").css("width", "20%");
-$(this).find("td.column_4_case_1_a").css("width", "20%");
-$(this).find("td.column_5_case_1_a").css("width", "20%");
+  $(this).find("td.column_0_case_1_a").css("width", "16.66%");
+  $(this).find("td.column_1_case_1_a").css("width", "16.66%");
+$(this).find("td.column_2_case_1_a").css("width", "16.66%");
+$(this).find("td.column_3_case_1_a").css("width", "16.66%");
+$(this).find("td.column_4_case_1_a").css("width", "16.66%");
+$(this).find("td.column_5_case_1_a").css("width", "16.66%");
 });
     }, 110);
 }
@@ -990,7 +996,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
             targets:   [0]
             }
             ],
-        order: [ 1, 'desc' ],
+        order: [ 2, 'desc' ],
         fnInitComplete: function(){
 //////////////////////////////////////////
 //////////////////////////////////////////
@@ -1104,20 +1110,22 @@ $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%")
 if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
+$("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
 $("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("width", "44px");
 });
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
-$(this).find("td.column_1_case_1_a").css("width", "20%");
-$(this).find("td.column_2_case_1_a").css("width", "20%");
-$(this).find("td.column_3_case_1_a").css("width", "20%");
-$(this).find("td.column_4_case_1_a").css("width", "20%");
-$(this).find("td.column_5_case_1_a").css("width", "20%");
+  $(this).find("td.column_0_case_1_a").css("width", "16.66%");
+  $(this).find("td.column_1_case_1_a").css("width", "16.66%");
+$(this).find("td.column_2_case_1_a").css("width", "16.66%");
+$(this).find("td.column_3_case_1_a").css("width", "16.66%");
+$(this).find("td.column_4_case_1_a").css("width", "16.66%");
+$(this).find("td.column_5_case_1_a").css("width", "16.66%");
 });
     }, 110);
 }
@@ -1211,20 +1219,22 @@ $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%")
 if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
+$("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
 $("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("width", "44px");
 });
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
-$(this).find("td.column_1_case_1_a").css("width", "20%");
-$(this).find("td.column_2_case_1_a").css("width", "20%");
-$(this).find("td.column_3_case_1_a").css("width", "20%");
-$(this).find("td.column_4_case_1_a").css("width", "20%");
-$(this).find("td.column_5_case_1_a").css("width", "20%");
+  $(this).find("td.column_0_case_1_a").css("width", "16.66%");
+  $(this).find("td.column_1_case_1_a").css("width", "16.66%");
+$(this).find("td.column_2_case_1_a").css("width", "16.66%");
+$(this).find("td.column_3_case_1_a").css("width", "16.66%");
+$(this).find("td.column_4_case_1_a").css("width", "16.66%");
+$(this).find("td.column_5_case_1_a").css("width", "16.66%");
 });
     }, 110);
 }
@@ -1324,20 +1334,22 @@ $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%")
 if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
+$("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
 $("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("width", "44px");
 });
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
-$(this).find("td.column_1_case_1_a").css("width", "20%");
-$(this).find("td.column_2_case_1_a").css("width", "20%");
-$(this).find("td.column_3_case_1_a").css("width", "20%");
-$(this).find("td.column_4_case_1_a").css("width", "20%");
-$(this).find("td.column_5_case_1_a").css("width", "20%");
+  $(this).find("td.column_0_case_1_a").css("width", "16.66%");
+  $(this).find("td.column_1_case_1_a").css("width", "16.66%");
+$(this).find("td.column_2_case_1_a").css("width", "16.66%");
+$(this).find("td.column_3_case_1_a").css("width", "16.66%");
+$(this).find("td.column_4_case_1_a").css("width", "16.66%");
+$(this).find("td.column_5_case_1_a").css("width", "16.66%");
 });
     }, 110);
 }
@@ -1494,7 +1506,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
             targets:   [0]
             }
             ],
-        order: [ 1, 'desc' ],
+        order: [ 2, 'desc' ],
         fnInitComplete: function(){
 //////////////////////////////////////////
 //////////////////////////////////////////
@@ -1608,20 +1620,22 @@ $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%")
 if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
+$("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
 $("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("width", "44px");
 });
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
-$(this).find("td.column_1_case_1_a").css("width", "20%");
-$(this).find("td.column_2_case_1_a").css("width", "20%");
-$(this).find("td.column_3_case_1_a").css("width", "20%");
-$(this).find("td.column_4_case_1_a").css("width", "20%");
-$(this).find("td.column_5_case_1_a").css("width", "20%");
+  $(this).find("td.column_0_case_1_a").css("width", "16.66%");
+  $(this).find("td.column_1_case_1_a").css("width", "16.66%");
+$(this).find("td.column_2_case_1_a").css("width", "16.66%");
+$(this).find("td.column_3_case_1_a").css("width", "16.66%");
+$(this).find("td.column_4_case_1_a").css("width", "16.66%");
+$(this).find("td.column_5_case_1_a").css("width", "16.66%");
 });
     }, 110);
 }
@@ -1715,20 +1729,22 @@ $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%")
 if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
+$("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
 $("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("width", "44px");
 });
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
-$(this).find("td.column_1_case_1_a").css("width", "20%");
-$(this).find("td.column_2_case_1_a").css("width", "20%");
-$(this).find("td.column_3_case_1_a").css("width", "20%");
-$(this).find("td.column_4_case_1_a").css("width", "20%");
-$(this).find("td.column_5_case_1_a").css("width", "20%");
+  $(this).find("td.column_0_case_1_a").css("width", "16.66%");
+  $(this).find("td.column_1_case_1_a").css("width", "16.66%");
+$(this).find("td.column_2_case_1_a").css("width", "16.66%");
+$(this).find("td.column_3_case_1_a").css("width", "16.66%");
+$(this).find("td.column_4_case_1_a").css("width", "16.66%");
+$(this).find("td.column_5_case_1_a").css("width", "16.66%");
 });
     }, 110);
 }
@@ -1828,20 +1844,22 @@ $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%")
 if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
+$("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
 $("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("width", "44px");
 });
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
-$(this).find("td.column_1_case_1_a").css("width", "20%");
-$(this).find("td.column_2_case_1_a").css("width", "20%");
-$(this).find("td.column_3_case_1_a").css("width", "20%");
-$(this).find("td.column_4_case_1_a").css("width", "20%");
-$(this).find("td.column_5_case_1_a").css("width", "20%");
+  $(this).find("td.column_0_case_1_a").css("width", "16.66%");
+  $(this).find("td.column_1_case_1_a").css("width", "16.66%");
+$(this).find("td.column_2_case_1_a").css("width", "16.66%");
+$(this).find("td.column_3_case_1_a").css("width", "16.66%");
+$(this).find("td.column_4_case_1_a").css("width", "16.66%");
+$(this).find("td.column_5_case_1_a").css("width", "16.66%");
 });
     }, 110);
 }
@@ -2037,7 +2055,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
             targets:   [0]
             }
             ],
-        order: [ 1, 'desc' ],
+        order: [ 2, 'desc' ],
         fnInitComplete: function(){
 //////////////////////////////////////////
 //////////////////////////////////////////
@@ -2151,20 +2169,22 @@ $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%")
 if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
+$("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
 $("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("width", "44px");
 });
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
-$(this).find("td.column_1_case_1_a").css("width", "20%");
-$(this).find("td.column_2_case_1_a").css("width", "20%");
-$(this).find("td.column_3_case_1_a").css("width", "20%");
-$(this).find("td.column_4_case_1_a").css("width", "20%");
-$(this).find("td.column_5_case_1_a").css("width", "20%");
+  $(this).find("td.column_0_case_1_a").css("width", "16.66%");
+  $(this).find("td.column_1_case_1_a").css("width", "16.66%");
+$(this).find("td.column_2_case_1_a").css("width", "16.66%");
+$(this).find("td.column_3_case_1_a").css("width", "16.66%");
+$(this).find("td.column_4_case_1_a").css("width", "16.66%");
+$(this).find("td.column_5_case_1_a").css("width", "16.66%");
 });
     }, 110);
 }
@@ -2258,20 +2278,22 @@ $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%")
 if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
+$("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
 $("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("width", "44px");
 });
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
-$(this).find("td.column_1_case_1_a").css("width", "20%");
-$(this).find("td.column_2_case_1_a").css("width", "20%");
-$(this).find("td.column_3_case_1_a").css("width", "20%");
-$(this).find("td.column_4_case_1_a").css("width", "20%");
-$(this).find("td.column_5_case_1_a").css("width", "20%");
+  $(this).find("td.column_0_case_1_a").css("width", "16.66%");
+  $(this).find("td.column_1_case_1_a").css("width", "16.66%");
+$(this).find("td.column_2_case_1_a").css("width", "16.66%");
+$(this).find("td.column_3_case_1_a").css("width", "16.66%");
+$(this).find("td.column_4_case_1_a").css("width", "16.66%");
+$(this).find("td.column_5_case_1_a").css("width", "16.66%");
 });
     }, 110);
 }
@@ -2371,20 +2393,22 @@ $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%")
 if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
+$("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
 $("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("width", "44px");
 });
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
-$(this).find("td.column_1_case_1_a").css("width", "20%");
-$(this).find("td.column_2_case_1_a").css("width", "20%");
-$(this).find("td.column_3_case_1_a").css("width", "20%");
-$(this).find("td.column_4_case_1_a").css("width", "20%");
-$(this).find("td.column_5_case_1_a").css("width", "20%");
+  $(this).find("td.column_0_case_1_a").css("width", "16.66%");
+  $(this).find("td.column_1_case_1_a").css("width", "16.66%");
+$(this).find("td.column_2_case_1_a").css("width", "16.66%");
+$(this).find("td.column_3_case_1_a").css("width", "16.66%");
+$(this).find("td.column_4_case_1_a").css("width", "16.66%");
+$(this).find("td.column_5_case_1_a").css("width", "16.66%");
 });
     }, 110);
 }
