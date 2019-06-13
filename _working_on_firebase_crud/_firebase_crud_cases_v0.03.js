@@ -10,8 +10,11 @@
 // _firebase_crud_cases_v0.02.js
 $(document).ready(function() {
 
+  $(".cover_while_dt_firebase_is_working_welcome").hide();
+
+
   $("#create_or_update_case_1_a").on("click",function(e){
-$(".cover_while_dt_firebase_is_working").show();
+$(".cover_while_dt_firebase_is_working_updating").show();
 });
 
 //*************************************************************/
@@ -801,7 +804,8 @@ $('.dataTables_scrollBody').perfectScrollbar({
   wheelPropagation: true,
   scrollXMarginOffset: 2
 });
-$(".cover_while_dt_firebase_is_working").hide();
+$(".cover_while_dt_firebase_is_working_updating").hide();
+console.log("that's 3");
          },
     mark: {
       "filter": [".mark_ignore"],
@@ -1365,7 +1369,8 @@ $('.dataTables_scrollBody').perfectScrollbar({
   wheelPropagation: true,
   scrollXMarginOffset: 2
 });
-$(".cover_while_dt_firebase_is_working").hide();
+$(".cover_while_dt_firebase_is_working_updating").hide();
+console.log("that's 4");
          },
     mark: {
       "filter": [".mark_ignore"],
@@ -1868,7 +1873,8 @@ $('.dataTables_scrollBody').perfectScrollbar({
   wheelPropagation: true,
   scrollXMarginOffset: 2
 });
-$(".cover_while_dt_firebase_is_working").hide();
+$(".cover_while_dt_firebase_is_working_updating").hide();
+console.log("that's 5");
          },
     mark: {
       "filter": [".mark_ignore"],
@@ -2407,7 +2413,8 @@ $('.dataTables_scrollBody').perfectScrollbar({
   wheelPropagation: true,
   scrollXMarginOffset: 2
 });
-$(".cover_while_dt_firebase_is_working").hide();
+$(".cover_while_dt_firebase_is_working_updating").hide();
+console.log("that's 6");
          },
     mark: {
       "filter": [".mark_ignore"],

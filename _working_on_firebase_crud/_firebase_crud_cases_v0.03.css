@@ -1422,7 +1422,7 @@ table.dataTable {
 /*************************************************************/
 
 
-.cover_while_dt_firebase_is_working {
+.cover_while_dt_firebase_is_working_welcome, .cover_while_dt_firebase_is_working_updating {
   position: fixed;
   display: block;
   width: 100vw;
