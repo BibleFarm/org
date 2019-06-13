@@ -1428,7 +1428,48 @@ table.dataTable {
   width: 100vw;
   height: 100vh;
   z-index: 11;
-  background: red;
+  background: black;
+  top: 50px;
+}
+/* BEGIN app intro */
+.app_lock_n_load_wrap {
+display: block;
+position: absolute;
+height: 100%;
+width: 100%;
+z-index: 10;
+background: black;
+}
+.app_lock_n_load {
+display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+	font-size: 30px;
+	color: #D5AD6D;
+	text-align: center;
+	text-shadow: 2px 2px 1px #000000;
+z-index: 7;
+background: none;
+}
+.app_loadersmall {
+	display: inline-block;
+	text-align: center;
+	margin: 10px auto;
+  border: 5px solid none;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  border-top: 5px solid #d5ad6d;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
 }
 
 
