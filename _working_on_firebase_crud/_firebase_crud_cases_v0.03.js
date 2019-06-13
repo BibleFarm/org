@@ -3251,7 +3251,7 @@ var metadata = {
   contentType: 'image/jpeg'
 };
 // Upload file and metadata to the object 'images/mountains.jpg'
-var uploadTask = storageRef.child('images/' + Date.now() + file.name + '.png').put(file, metadata);
+var uploadTask = storageRef.child('crud_images/' + Date.now() + file.name + '.png').put(file, metadata);
 uploadTask.then(function(snapshot) {
   console.log('Uploaded a base64 string!');
 });
