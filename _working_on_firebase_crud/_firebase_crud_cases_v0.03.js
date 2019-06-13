@@ -192,6 +192,10 @@ $(this).find("td:nth-last-child(1)").show();
 console.log("/////////////////////////////// ADMIN allowed to fully CRUD");
 }
 ////////////////////////////////////////////////////////
+// someone clicked #lock_and_unlock
+$(".cover_while_dt_firebase_is_working_welcome").hide();
+console.log("we're hiding welcone because a user just came in");
+
 } else {
   // No user is signed in.
   console.log("/////////////////////////////// UPON ARRIVAL // NOBODY signed in");

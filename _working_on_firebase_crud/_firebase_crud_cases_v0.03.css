@@ -1427,7 +1427,7 @@ table.dataTable {
   display: block;
   width: 100vw;
   height: 100vh;
-  z-index: 11;
+  z-index: 12;
   background: black;
   top: 50px;
 }
