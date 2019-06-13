@@ -1472,7 +1472,8 @@ background: none;
   height: 50px;
 }
 
-
+/* hide the input that we populate in order to submit image and upload to firebase */
+#column_0_case_1_a {display: none}
 /* END SPECIFIC jovi website */
 
 /* this is the end of the @media for the whole site */

@@ -3244,7 +3244,7 @@ function previewFile(){
 // Create a root reference
 var storageRef = firebase.storage().ref();
 // File or Blob named mountains.jpg
-var file = document.getElementById("column_0_case_1_a").files[0];
+var file = document.getElementById("files").files[0];
     console.log(file);
 // Create the file metadata
 var metadata = {
@@ -3289,7 +3289,8 @@ uploadTask.on(firebase.storage.TaskEvent.STATE_CHANGED, // or 'state_changed'
   // Upload completed successfully, now we can get the download URL
   uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
     console.log('File available at', downloadURL);
-  //  $("#image_just_uploaded").attr("src", downloadURL);
+    // put it in the input
+    $("#column_0_case_1_a").val(downloadURL);
   });
 });
 /////////////////////////////////////////////////////////////////////////////
