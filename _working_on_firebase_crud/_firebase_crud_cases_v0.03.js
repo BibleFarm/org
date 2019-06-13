@@ -2541,7 +2541,7 @@ console.log("//////////////////////////////// focusing as we edit");
 // BEGIN column_1_case_1_a
 $("#table_case_1_a").on('click', 'tbody tr td.column_1_case_1_a', function(e){
 $(this).css("color", "orange");
-$(this).siblings().eq(5).find(".edit").trigger({ type: "click", which: 1 });
+$(this).siblings().eq(6).find(".edit").trigger({ type: "click", which: 1 });
 function edit_case_1_a() {
   var firebase_key_to_edit_case_1_a = this.getAttribute("data-item");
   refEdit_case_1_a = ref_case_1_a.child(firebase_key_to_edit_case_1_a);
@@ -2579,7 +2579,7 @@ $("#column_1_case_1_a").focus().select();
 // BEGIN column_2_case_1_a
 $("#table_case_1_a").on('click', 'tbody tr td.column_2_case_1_a', function(e){
 $(this).css("color", "orange");
-$(this).siblings().eq(5).find(".edit").trigger({ type: "click", which: 1 });
+$(this).siblings().eq(6).find(".edit").trigger({ type: "click", which: 1 });
 function edit_case_1_a() {
   var firebase_key_to_edit_case_1_a = this.getAttribute("data-item");
   refEdit_case_1_a = ref_case_1_a.child(firebase_key_to_edit_case_1_a);
@@ -2617,7 +2617,7 @@ $("#column_2_case_1_a").focus().select();
 // BEGIN column_3_case_1_a
 $("#table_case_1_a").on('click', 'tbody tr td.column_3_case_1_a', function(e){
 $(this).css("color", "orange");
-$(this).siblings().eq(5).find(".edit").trigger({ type: "click", which: 1 });
+$(this).siblings().eq(6).find(".edit").trigger({ type: "click", which: 1 });
 function edit_case_1_a() {
   var firebase_key_to_edit_case_1_a = this.getAttribute("data-item");
   refEdit_case_1_a = ref_case_1_a.child(firebase_key_to_edit_case_1_a);
@@ -2655,7 +2655,7 @@ $("#column_3_case_1_a").focus().select();
 // BEGIN column_4_case_1_a
 $("#table_case_1_a").on('click', 'tbody tr td.column_4_case_1_a', function(e){
 $(this).css("color", "orange");
-$(this).siblings().eq(5).find(".edit").trigger({ type: "click", which: 1 });
+$(this).siblings().eq(6).find(".edit").trigger({ type: "click", which: 1 });
 function edit_case_1_a() {
   var firebase_key_to_edit_case_1_a = this.getAttribute("data-item");
   refEdit_case_1_a = ref_case_1_a.child(firebase_key_to_edit_case_1_a);
@@ -2693,7 +2693,7 @@ $("#column_4_case_1_a").focus().select();
 // BEGIN column_5_case_1_a
 $("#table_case_1_a").on('click', 'tbody tr td.column_5_case_1_a', function(e){
 $(this).css("color", "orange");
-$(this).siblings().eq(5).find(".edit").trigger({ type: "click", which: 1 });
+$(this).siblings().eq(6).find(".edit").trigger({ type: "click", which: 1 });
 function edit_case_1_a() {
   var firebase_key_to_edit_case_1_a = this.getAttribute("data-item");
   refEdit_case_1_a = ref_case_1_a.child(firebase_key_to_edit_case_1_a);
@@ -2738,7 +2738,7 @@ $("#column_5_case_1_a").focus().select();
 // BEGIN column_1_case_1_a
 $("#table_case_1_a").on('click', 'tbody tr.child td.child div table tbody tr[data-dt-column="1"] td div.responsive_editing', function(e){
 $(this).css("color", "black");
-$(this).parents().eq(6).prev().find("td.column_edit span.edit").trigger({ type: "click", which: 1 });
+$(this).parents().eq(7).prev().find("td.column_edit span.edit").trigger({ type: "click", which: 1 });
 function edit_case_1_a() {
   var firebase_key_to_edit_case_1_a = this.getAttribute("data-item");
   refEdit_case_1_a = ref_case_1_a.child(firebase_key_to_edit_case_1_a);
@@ -2776,7 +2776,7 @@ $("#column_1_case_1_a").focus().select();
 // BEGIN column_2_case_1_a
 $("#table_case_1_a").on('click', 'tbody tr.child td.child div table tbody tr[data-dt-column="2"] td div.responsive_editing', function(e){
 $(this).css("color", "black");
-$(this).parents().eq(6).prev().find("td.column_edit span.edit").trigger({ type: "click", which: 1 });
+$(this).parents().eq(7).prev().find("td.column_edit span.edit").trigger({ type: "click", which: 1 });
 function edit_case_1_a() {
   var firebase_key_to_edit_case_1_a = this.getAttribute("data-item");
   refEdit_case_1_a = ref_case_1_a.child(firebase_key_to_edit_case_1_a);
@@ -2814,7 +2814,7 @@ $("#column_2_case_1_a").focus().select();
 // BEGIN column_3_case_1_a
 $("#table_case_1_a").on('click', 'tbody tr.child td.child div table tbody tr[data-dt-column="3"] td div.responsive_editing', function(e){
 $(this).css("color", "black");
-$(this).parents().eq(6).prev().find("td.column_edit span.edit").trigger({ type: "click", which: 1 });
+$(this).parents().eq(7).prev().find("td.column_edit span.edit").trigger({ type: "click", which: 1 });
 function edit_case_1_a() {
   var firebase_key_to_edit_case_1_a = this.getAttribute("data-item");
   refEdit_case_1_a = ref_case_1_a.child(firebase_key_to_edit_case_1_a);
@@ -2852,7 +2852,7 @@ $("#column_3_case_1_a").focus().select();
 // BEGIN column_4_case_1_a
 $("#table_case_1_a").on('click', 'tbody tr.child td.child div table tbody tr[data-dt-column="4"] td div.responsive_editing', function(e){
 $(this).css("color", "black");
-$(this).parents().eq(6).prev().find("td.column_edit span.edit").trigger({ type: "click", which: 1 });
+$(this).parents().eq(7).prev().find("td.column_edit span.edit").trigger({ type: "click", which: 1 });
 function edit_case_1_a() {
   var firebase_key_to_edit_case_1_a = this.getAttribute("data-item");
   refEdit_case_1_a = ref_case_1_a.child(firebase_key_to_edit_case_1_a);
@@ -2890,7 +2890,7 @@ $("#column_4_case_1_a").focus().select();
 // BEGIN column_5_case_1_a
 $("#table_case_1_a").on('click', 'tbody tr.child td.child div table tbody tr[data-dt-column="5"] td div.responsive_editing', function(e){
 $(this).css("color", "black");
-$(this).parents().eq(6).prev().find("td.column_edit span.edit").trigger({ type: "click", which: 1 });
+$(this).parents().eq(7).prev().find("td.column_edit span.edit").trigger({ type: "click", which: 1 });
 function edit_case_1_a() {
   var firebase_key_to_edit_case_1_a = this.getAttribute("data-item");
   refEdit_case_1_a = ref_case_1_a.child(firebase_key_to_edit_case_1_a);
