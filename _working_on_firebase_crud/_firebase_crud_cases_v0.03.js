@@ -1904,6 +1904,8 @@ $(".table_empty").hide();
 //// END when creating or editing a record
 //// BEGIN when during the session, user #sign-out or #delete-account
 $("#sign-out, #delete-account").click(function(){
+  // someone clicked #lock_and_unlock
+  $(".cover_while_dt_firebase_is_working_welcome").show();
 
 // datatable clear
 if ( $.fn.DataTable.isDataTable( '#table_case_1_a' ) ) {
@@ -3179,9 +3181,6 @@ console.log("/////////////////////////////// ADMIN allowed to fully CRUD");
 /////////////////////////////////////////////////////////////////////////
 $("#lock_and_unlock").on("click",function(e){
 $("#authentication").trigger({ type: "click", which: 1 });
-// someone clicked #lock_and_unlock
-$(".cover_while_dt_firebase_is_working_welcome").show();
-
 });
 
 /////////////////////////////////////////////////////////////////////////
