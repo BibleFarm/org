@@ -270,7 +270,7 @@ console.log("cancel_editing was clicked");
 document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
 mode_case_1_a = CREATE_case_1_a;
 $(".cancel_editing").hide();
-    }, 5000);
+    }, 100);
 });
 ///////////////////////////////////////////////////////
   console.log("/////////////////////////////////////////////////////////////////////////////////////////////////////////////// just ran function edit_case_1_a()");
@@ -455,7 +455,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -473,7 +473,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -493,7 +493,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -515,7 +515,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -539,10 +539,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 5100);
+    }, 110);
 }
 table_case_1_a.draw();
-    }, 5100);
+    }, 110);
 ////////////////////////////////////////
 // END resize columns according to what fits or not
 //////////////////////////////////
@@ -562,7 +562,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -580,7 +580,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -600,7 +600,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -622,7 +622,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -646,10 +646,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 5100);
+    }, 110);
 }
 table_case_1_a.draw();
-    }, 5100);
+    }, 110);
 ////////////////////////////////////////
 });
 //// END again adjust columns on resize
@@ -675,7 +675,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -693,7 +693,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -713,7 +713,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -735,7 +735,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -759,10 +759,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 5100);
+    }, 110);
 }
 table_case_1_a.draw();
-    }, 5100);
+    }, 110);
 ////////////////////////////////////////
 // END resize columns according to what fits or not
 //////////////////////////////////
@@ -793,6 +793,10 @@ $(this).find("i").removeClass("fa-folder").addClass("fa-folder-open");
 /////////////////////////////////////////////////////////////////////////
 ///// END toggle opened and closed folder icons in responsive /////////
 /////////////////////////////////////////////////////////////////////////
+$('.dataTables_scrollBody').perfectScrollbar({
+  wheelPropagation: true,
+  scrollXMarginOffset: 2
+});
          },
     mark: {
       "filter": [".mark_ignore"],
@@ -823,11 +827,11 @@ console.log("// table is empty // suggest creating a new record");
 // clear the setInterval
 clearInterval(checkIf_all_records_deleted_during_session_we_have_an_empty_table);
 }
-}, 5000);
+}, 100);
 
 // all done
 console.log("// waitFor_table_to_be_repopulated_after_delete // we're all done!");
-}, 5000);
+}, 100);
 
 
 
@@ -1014,7 +1018,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1032,7 +1036,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1052,7 +1056,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1074,7 +1078,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1098,10 +1102,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 5100);
+    }, 110);
 }
 table_case_1_a.draw();
-    }, 5100);
+    }, 110);
 ////////////////////////////////////////
 // END resize columns according to what fits or not
 //////////////////////////////////
@@ -1121,7 +1125,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1139,7 +1143,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1159,7 +1163,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1181,7 +1185,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1205,10 +1209,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 5100);
+    }, 110);
 }
 table_case_1_a.draw();
-    }, 5100);
+    }, 110);
 ////////////////////////////////////////
 });
 //// END again adjust columns on resize
@@ -1234,7 +1238,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1252,7 +1256,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1272,7 +1276,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1294,7 +1298,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1318,10 +1322,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 5100);
+    }, 110);
 }
 table_case_1_a.draw();
-    }, 5100);
+    }, 110);
 ////////////////////////////////////////
 // END resize columns according to what fits or not
 //////////////////////////////////
@@ -1352,6 +1356,10 @@ $(this).find("i").removeClass("fa-folder").addClass("fa-folder-open");
 /////////////////////////////////////////////////////////////////////////
 ///// END toggle opened and closed folder icons in responsive /////////
 /////////////////////////////////////////////////////////////////////////
+$('.dataTables_scrollBody').perfectScrollbar({
+  wheelPropagation: true,
+  scrollXMarginOffset: 2
+});
          },
     mark: {
       "filter": [".mark_ignore"],
@@ -1375,7 +1383,7 @@ $(".table_empty").hide();
 
 
 
-}, 5000);
+}, 100);
 // END wait for firebase to populate the td's and convert to datatables
 //// END when page is loaded
 //// BEGIN when creating or editing a record
@@ -1512,7 +1520,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1530,7 +1538,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1550,7 +1558,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1572,7 +1580,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1596,10 +1604,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 5100);
+    }, 110);
 }
 table_case_1_a.draw();
-    }, 5100);
+    }, 110);
 ////////////////////////////////////////
 // END resize columns according to what fits or not
 //////////////////////////////////
@@ -1619,7 +1627,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1637,7 +1645,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1657,7 +1665,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1679,7 +1687,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1703,10 +1711,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 5100);
+    }, 110);
 }
 table_case_1_a.draw();
-    }, 5100);
+    }, 110);
 ////////////////////////////////////////
 });
 //// END again adjust columns on resize
@@ -1732,7 +1740,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1750,7 +1758,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1770,7 +1778,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1792,7 +1800,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -1816,10 +1824,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 5100);
+    }, 110);
 }
 table_case_1_a.draw();
-    }, 5100);
+    }, 110);
 ////////////////////////////////////////
 // END resize columns according to what fits or not
 //////////////////////////////////
@@ -1850,6 +1858,10 @@ $(this).find("i").removeClass("fa-folder").addClass("fa-folder-open");
 /////////////////////////////////////////////////////////////////////////
 ///// END toggle opened and closed folder icons in responsive /////////
 /////////////////////////////////////////////////////////////////////////
+$('.dataTables_scrollBody').perfectScrollbar({
+  wheelPropagation: true,
+  scrollXMarginOffset: 2
+});
          },
     mark: {
       "filter": [".mark_ignore"],
@@ -1873,7 +1885,7 @@ $(this).find("i").removeClass("fa-folder").addClass("fa-folder-open");
 
 $(".table_empty").hide();
 }
-}, 5000);
+}, 100);
 });
 //// END when creating or editing a record
 //// BEGIN when during the session, user #sign-out or #delete-account
@@ -2046,7 +2058,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2064,7 +2076,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2084,7 +2096,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2106,7 +2118,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2130,10 +2142,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 5100);
+    }, 110);
 }
 table_case_1_a.draw();
-    }, 5100);
+    }, 110);
 ////////////////////////////////////////
 // END resize columns according to what fits or not
 //////////////////////////////////
@@ -2153,7 +2165,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2171,7 +2183,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2191,7 +2203,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2213,7 +2225,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2237,10 +2249,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 5100);
+    }, 110);
 }
 table_case_1_a.draw();
-    }, 5100);
+    }, 110);
 ////////////////////////////////////////
 });
 //// END again adjust columns on resize
@@ -2266,7 +2278,7 @@ $(this).find("td.control").css("color", "yellow").css("width", "44px");
 $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2284,7 +2296,7 @@ $("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2304,7 +2316,7 @@ $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2326,7 +2338,7 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%")
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
-    }, 5100);
+    }, 110);
 } else
 ////////////////////////////////////////
 ////////////////////////////////////////
@@ -2350,10 +2362,10 @@ $(this).find("td.column_3_case_1_a").css("width", "20%");
 $(this).find("td.column_4_case_1_a").css("width", "20%");
 $(this).find("td.column_5_case_1_a").css("width", "20%");
 });
-    }, 5100);
+    }, 110);
 }
 table_case_1_a.draw();
-    }, 5100);
+    }, 110);
 ////////////////////////////////////////
 // END resize columns according to what fits or not
 //////////////////////////////////
@@ -2384,6 +2396,10 @@ $(this).find("i").removeClass("fa-folder").addClass("fa-folder-open");
 /////////////////////////////////////////////////////////////////////////
 ///// END toggle opened and closed folder icons in responsive /////////
 /////////////////////////////////////////////////////////////////////////
+$('.dataTables_scrollBody').perfectScrollbar({
+  wheelPropagation: true,
+  scrollXMarginOffset: 2
+});
          },
     mark: {
       "filter": [".mark_ignore"],
@@ -2412,7 +2428,7 @@ clearInterval(waitFor_table_to_be_repopulated_after_signout_or_delete_account);
 console.log("// waitFor_table_to_be_repopulated_after_signout_or_delete_account // setInterval is cleared");
 // all done
 console.log("// waitFor_table_to_be_repopulated_after_signout_or_delete_account // we're all done!");
-}, 5000);
+}, 100);
 
 
 
@@ -2468,7 +2484,7 @@ $(this).find("td:nth-last-child(1)").show();
 console.log("/////////////////////////////// ADMIN allowed to fully CRUD");
 }
 }
-}, 5000);
+}, 100);
 /////////////////////////////////////////////////////////////////////////////////////
 // END first time admin/user, or all records were deleted // table is empty ///////
 /////////////////////////////////////////////////////////////////////////////////////
@@ -2526,7 +2542,7 @@ function edit_case_1_a() {
       document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
       mode_case_1_a = CREATE_case_1_a;
       $(".cancel_editing").hide();
-    }, 5000);
+    }, 100);
   });
   ///////////////////////////////////////////////////////
 }
@@ -2563,7 +2579,7 @@ function edit_case_1_a() {
       document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
       mode_case_1_a = CREATE_case_1_a;
       $(".cancel_editing").hide();
-    }, 5000);
+    }, 100);
   });
   ///////////////////////////////////////////////////////
 }
@@ -2600,7 +2616,7 @@ function edit_case_1_a() {
       document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
       mode_case_1_a = CREATE_case_1_a;
       $(".cancel_editing").hide();
-    }, 5000);
+    }, 100);
   });
   ///////////////////////////////////////////////////////
 }
@@ -2637,7 +2653,7 @@ function edit_case_1_a() {
       document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
       mode_case_1_a = CREATE_case_1_a;
       $(".cancel_editing").hide();
-    }, 5000);
+    }, 100);
   });
   ///////////////////////////////////////////////////////
 }
@@ -2674,7 +2690,7 @@ function edit_case_1_a() {
       document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
       mode_case_1_a = CREATE_case_1_a;
       $(".cancel_editing").hide();
-    }, 5000);
+    }, 100);
   });
   ///////////////////////////////////////////////////////
 }
@@ -2718,7 +2734,7 @@ function edit_case_1_a() {
       document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
       mode_case_1_a = CREATE_case_1_a;
       $(".cancel_editing").hide();
-    }, 5000);
+    }, 100);
   });
   ///////////////////////////////////////////////////////
 }
@@ -2755,7 +2771,7 @@ function edit_case_1_a() {
       document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
       mode_case_1_a = CREATE_case_1_a;
       $(".cancel_editing").hide();
-    }, 5000);
+    }, 100);
   });
   ///////////////////////////////////////////////////////
 }
@@ -2792,7 +2808,7 @@ function edit_case_1_a() {
       document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
       mode_case_1_a = CREATE_case_1_a;
       $(".cancel_editing").hide();
-    }, 5000);
+    }, 100);
   });
   ///////////////////////////////////////////////////////
 }
@@ -2829,7 +2845,7 @@ function edit_case_1_a() {
       document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
       mode_case_1_a = CREATE_case_1_a;
       $(".cancel_editing").hide();
-    }, 5000);
+    }, 100);
   });
   ///////////////////////////////////////////////////////
 }
@@ -2866,7 +2882,7 @@ function edit_case_1_a() {
       document.getElementById("create_or_update_case_1_a").value = CREATE_case_1_a;
       mode_case_1_a = CREATE_case_1_a;
       $(".cancel_editing").hide();
-    }, 5000);
+    }, 100);
   });
   ///////////////////////////////////////////////////////
 }
@@ -2883,7 +2899,7 @@ $("#column_5_case_1_a").focus().select();
   $('#table_case_1_a').on('page.dt', function() {
     $('.dataTables_scrollBody').animate({
       scrollTop: 0
-    }, 5100);
+    }, 110);
   });
 //////////////////////////////////
 
@@ -3051,7 +3067,7 @@ table.clear();
   });
   // END example datatable non-editable is working fine //
 ///////////////////////////////////////////////////////////////////////
-    }, 5000);
+    }, 100);
 
 
 
@@ -3132,7 +3148,7 @@ console.log("/////////////////////////////// ADMIN allowed to fully CRUD");
 }
 
   }
-//     }, 5000);
+//     }, 100);
 });
   //////////////////////////////////////////////////
   ////// END MutationObserver MutationObservingUserEmail ////
