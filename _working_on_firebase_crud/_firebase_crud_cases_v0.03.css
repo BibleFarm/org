@@ -1424,7 +1424,7 @@ table.dataTable {
 
 .cover_while_dt_firebase_is_working {
   position: fixed;
-  display: none;
+  display: block;
   width: 100vw;
   height: 100vh;
   z-index: 11;
