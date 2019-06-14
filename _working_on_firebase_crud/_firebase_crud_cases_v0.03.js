@@ -150,9 +150,9 @@ if (user) {
   console.log("//////////////////////////////// #continue_as_a_visitor_or_ok // changed continue as a visitor");
   $("#authentication").text("login");
 $("body").find(".create_case_1_a").hide();
-$("#table_case_1_a thead th:nth-last-child(2)").hide();
-$("#table_case_1_a thead th:nth-last-child(1)").hide();
-$('#table_case_1_a tr').each(function() {
+$("body").find(".table_case_1_a thead th:nth-last-child(2)").hide();
+$("body").find(".table_case_1_a thead th:nth-last-child(1)").hide();
+$("body").find('.table_case_1_a tr').each(function() {
 $(this).find("td:nth-last-child(2)").hide();
 $(this).find("td:nth-last-child(1)").hide();
 });
@@ -171,9 +171,9 @@ if(!$('#email').text().match('smuglovsky@gmail.com')) {
   $(".logged_in_message_admin_case_1_a").hide();
 // hide create new record // and edit & delete columns
 $("body").find(".create_case_1_a").hide();
-$("#table_case_1_a thead th:nth-last-child(2)").hide();
-$("#table_case_1_a thead th:nth-last-child(1)").hide();
-$('#table_case_1_a tr').each(function() {
+$("body").find(".table_case_1_a thead th:nth-last-child(2)").hide();
+$("body").find(".table_case_1_a thead th:nth-last-child(1)").hide();
+$("body").find('.table_case_1_a tr').each(function() {
 $(this).find("td:nth-last-child(2)").hide();
 $(this).find("td:nth-last-child(1)").hide();
 });
@@ -183,9 +183,9 @@ console.log("/////////////////////////////// there will be no CREATE UPDATE DELE
   $(".logged_in_message_admin_case_1_a").show("slow");
 // show create new record // and edit & delete columns
 $("body").find(".create_case_1_a").show();
-$("#table_case_1_a thead th:nth-last-child(2)").show();
-$("#table_case_1_a thead th:nth-last-child(1)").show();
-$('#table_case_1_a tr').each(function() {
+$("body").find(".table_case_1_a thead th:nth-last-child(2)").show();
+$("body").find(".table_case_1_a thead th:nth-last-child(1)").show();
+$("body").find('.table_case_1_a tr').each(function() {
 $(this).find("td:nth-last-child(2)").show();
 $(this).find("td:nth-last-child(1)").show();
 });
@@ -207,9 +207,9 @@ console.log("we're hiding welcone because a user just came in");
   console.log("//////////////////////////////// #continue_as_a_visitor_or_ok // changed continue as a visitor");
   $("#authentication").text("login");
 $("body").find(".create_case_1_a").hide();
-$("#table_case_1_a thead th:nth-last-child(2)").hide();
-$("#table_case_1_a thead th:nth-last-child(1)").hide();
-$('#table_case_1_a tr').each(function() {
+$("body").find(".table_case_1_a thead th:nth-last-child(2)").hide();
+$("body").find(".table_case_1_a thead th:nth-last-child(1)").hide();
+$("body").find('.table_case_1_a tr').each(function() {
 $(this).find("td:nth-last-child(2)").hide();
 $(this).find("td:nth-last-child(1)").hide();
 });
@@ -362,9 +362,9 @@ console.log("// waitFor_table_to_be_repopulated_after_delete // table has stuff 
 if(!$('#email').text().match('smuglovsky@gmail.com')) {
 // hide create new record // and edit & delete columns
 $("body").find(".create_case_1_a").hide();
-$("#table_case_1_a thead th:nth-last-child(2)").hide();
-$("#table_case_1_a thead th:nth-last-child(1)").hide();
-$('#table_case_1_a tr').each(function() {
+$("body").find(".table_case_1_a thead th:nth-last-child(2)").hide();
+$("body").find(".table_case_1_a thead th:nth-last-child(1)").hide();
+$("body").find('.table_case_1_a tr').each(function() {
 $(this).find("td:nth-last-child(2)").hide();
 $(this).find("td:nth-last-child(1)").hide();
 });
@@ -372,9 +372,9 @@ console.log("/////////////////////////////// there will be no CREATE UPDATE DELE
 } else {
 // show create new record // and edit & delete columns
 $("body").find(".create_case_1_a").show();
-$("#table_case_1_a thead th:nth-last-child(2)").show();
-$("#table_case_1_a thead th:nth-last-child(1)").show();
-$('#table_case_1_a tr').each(function() {
+$("body").find(".table_case_1_a thead th:nth-last-child(2)").show();
+$("body").find(".table_case_1_a thead th:nth-last-child(1)").show();
+$("body").find('.table_case_1_a tr').each(function() {
 $(this).find("td:nth-last-child(2)").show();
 $(this).find("td:nth-last-child(1)").show();
 });
@@ -931,9 +931,9 @@ clearInterval(waitFor_table_to_be_populated_on_page_load_from_firebase);
 if(!$('#email').text().match('smuglovsky@gmail.com')) {
 // hide create new record // and edit & delete columns
 $("body").find(".create_case_1_a").hide();
-$("#table_case_1_a thead th:nth-last-child(2)").hide();
-$("#table_case_1_a thead th:nth-last-child(1)").hide();
-$('#table_case_1_a tr').each(function() {
+$("body").find(".table_case_1_a thead th:nth-last-child(2)").hide();
+$("body").find(".table_case_1_a thead th:nth-last-child(1)").hide();
+$("body").find('.table_case_1_a tr').each(function() {
 $(this).find("td:nth-last-child(2)").hide();
 $(this).find("td:nth-last-child(1)").hide();
 });
@@ -941,9 +941,9 @@ console.log("/////////////////////////////// there will be no CREATE UPDATE DELE
 } else {
 // show create new record // and edit & delete columns
 $("body").find(".create_case_1_a").show();
-$("#table_case_1_a thead th:nth-last-child(2)").show();
-$("#table_case_1_a thead th:nth-last-child(1)").show();
-$('#table_case_1_a tr').each(function() {
+$("body").find(".table_case_1_a thead th:nth-last-child(2)").show();
+$("body").find(".table_case_1_a thead th:nth-last-child(1)").show();
+$("body").find('.table_case_1_a tr').each(function() {
 $(this).find("td:nth-last-child(2)").show();
 $(this).find("td:nth-last-child(1)").show();
 });
@@ -1438,9 +1438,9 @@ clearInterval(waitFor_table_to_be_populated_after_create_or_edit_from_firebase);
 if(!$('#email').text().match('smuglovsky@gmail.com')) {
 // hide create new record // and edit & delete columns
 $("body").find(".create_case_1_a").hide();
-$("#table_case_1_a thead th:nth-last-child(2)").hide();
-$("#table_case_1_a thead th:nth-last-child(1)").hide();
-$('#table_case_1_a tr').each(function() {
+$("body").find(".table_case_1_a thead th:nth-last-child(2)").hide();
+$("body").find(".table_case_1_a thead th:nth-last-child(1)").hide();
+$("body").find('.table_case_1_a tr').each(function() {
 $(this).find("td:nth-last-child(2)").hide();
 $(this).find("td:nth-last-child(1)").hide();
 });
@@ -1448,9 +1448,9 @@ console.log("/////////////////////////////// there will be no CREATE UPDATE DELE
 } else {
 // show create new record // and edit & delete columns
 $("body").find(".create_case_1_a").show();
-$("#table_case_1_a thead th:nth-last-child(2)").show();
-$("#table_case_1_a thead th:nth-last-child(1)").show();
-$('#table_case_1_a tr').each(function() {
+$("body").find(".table_case_1_a thead th:nth-last-child(2)").show();
+$("body").find(".table_case_1_a thead th:nth-last-child(1)").show();
+$("body").find('.table_case_1_a tr').each(function() {
 $(this).find("td:nth-last-child(2)").show();
 $(this).find("td:nth-last-child(1)").show();
 });
@@ -1990,9 +1990,9 @@ console.log("// waitFor_table_to_be_repopulated_after_signout_or_delete_account 
 if(!$('#email').text().match('smuglovsky@gmail.com')) {
 // hide create new record // and edit & delete columns
 $("body").find(".create_case_1_a").hide();
-$("#table_case_1_a thead th:nth-last-child(2)").hide();
-$("#table_case_1_a thead th:nth-last-child(1)").hide();
-$('#table_case_1_a tr').each(function() {
+$("body").find(".table_case_1_a thead th:nth-last-child(2)").hide();
+$("body").find(".table_case_1_a thead th:nth-last-child(1)").hide();
+$("body").find('.table_case_1_a tr').each(function() {
 $(this).find("td:nth-last-child(2)").hide();
 $(this).find("td:nth-last-child(1)").hide();
 });
@@ -2000,9 +2000,9 @@ console.log("/////////////////////////////// there will be no CREATE UPDATE DELE
 } else {
 // show create new record // and edit & delete columns
 $("body").find(".create_case_1_a").show();
-$("#table_case_1_a thead th:nth-last-child(2)").show();
-$("#table_case_1_a thead th:nth-last-child(1)").show();
-$('#table_case_1_a tr').each(function() {
+$("body").find(".table_case_1_a thead th:nth-last-child(2)").show();
+$("body").find(".table_case_1_a thead th:nth-last-child(1)").show();
+$("body").find('.table_case_1_a tr').each(function() {
 $(this).find("td:nth-last-child(2)").show();
 $(this).find("td:nth-last-child(1)").show();
 });
@@ -2517,9 +2517,9 @@ clearInterval(checkIf_we_have_an_empty_table);
 if(!$('#email').text().match('smuglovsky@gmail.com')) {
 // hide create new record // and edit & delete columns
 $("body").find(".create_case_1_a").hide();
-$("#table_case_1_a thead th:nth-last-child(2)").hide();
-$("#table_case_1_a thead th:nth-last-child(1)").hide();
-$('#table_case_1_a tr').each(function() {
+$("body").find(".table_case_1_a thead th:nth-last-child(2)").hide();
+$("body").find(".table_case_1_a thead th:nth-last-child(1)").hide();
+$("body").find('.table_case_1_a tr').each(function() {
 $(this).find("td:nth-last-child(2)").hide();
 $(this).find("td:nth-last-child(1)").hide();
 });
@@ -2527,9 +2527,9 @@ console.log("/////////////////////////////// there will be no CREATE UPDATE DELE
 } else {
 // show create new record // and edit & delete columns
 $("body").find(".create_case_1_a").show();
-$("#table_case_1_a thead th:nth-last-child(2)").show();
-$("#table_case_1_a thead th:nth-last-child(1)").show();
-$('#table_case_1_a tr').each(function() {
+$("body").find(".table_case_1_a thead th:nth-last-child(2)").show();
+$("body").find(".table_case_1_a thead th:nth-last-child(1)").show();
+$("body").find('.table_case_1_a tr').each(function() {
 $(this).find("td:nth-last-child(2)").show();
 $(this).find("td:nth-last-child(1)").show();
 });
