@@ -427,7 +427,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
             ],
         order: [ 2, 'desc' ],
         columnDefs: [ {
-           targets: [8], /* column index */
+           targets: [1,8], /* column index */
            orderable: false, /* true or false */
         }],
         fnInitComplete: function(){
@@ -1412,7 +1412,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
             ],
             order: [ 2, 'desc' ],
             columnDefs: [ {
-               targets: [8], /* column index */
+               targets: [1,8], /* column index */
                orderable: false, /* true or false */
             }],
         fnInitComplete: function(){
@@ -2334,7 +2334,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
             ],
             order: [ 2, 'desc' ],
             columnDefs: [ {
-               targets: [8], /* column index */
+               targets: [1,8], /* column index */
                orderable: false, /* true or false */
             }],
         fnInitComplete: function(){
@@ -3295,7 +3295,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
             ],
             order: [ 2, 'desc' ],
             columnDefs: [ {
-               targets: [8], /* column index */
+               targets: [1,8], /* column index */
                orderable: false, /* true or false */
             }],
         fnInitComplete: function(){
