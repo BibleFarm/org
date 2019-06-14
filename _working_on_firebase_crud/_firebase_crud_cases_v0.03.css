@@ -1103,10 +1103,12 @@ z-index: 11;
       background: #222222;
       text-shadow: 2px 2px 1px #000000;
 }
-.create_case_1_a, .create_case_2, .create_case_3, .create_case_4, .create_case_5, .editar, .borrar, .cancel_new_or_edit_case_1_a {
-background: brown;
-cursor: pointer;
-text-align: center;
+.create_case_1_a, .create_case_2, .create_case_3, .create_case_4, .create_case_5, .editar, .borrar, .cancel_new_or_edit_case_1_a, #create_or_update_case_1_a {
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px;
+  padding: 6px;
+  background: #222222;
 }
 .table_empty {
 display: block;
@@ -1235,7 +1237,7 @@ display: none;
     color: #d5ad6d;
     text-align: center;
     text-shadow: 2px 2px 1px #000000;
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(0, 0, 0, 0.9);
     z-index: 1;
 }
 .wrap_dialog_confirm_delete {
@@ -1482,6 +1484,17 @@ background: none;
   padding-left: 50px;
   width: 280px;
 }
+
+.bf_links {
+  color: #d5ad6d;
+  cursor: pointer;
+}
+.bf_links:hover,
+.bf_links:focus {
+  color: #dac4a2;
+  text-decoration: none;
+}
+
 
 /* END SPECIFIC jovi website */
 
