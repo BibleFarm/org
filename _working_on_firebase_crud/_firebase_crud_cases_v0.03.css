@@ -993,7 +993,7 @@ padding-right: 8px;
 width: 312px;
 height: 312px;
 bottom: 50px;
-background: purple;
+background: rgba(0, 0, 0, 0.9);
 z-index: 12;
 }
 .login_or_not {
