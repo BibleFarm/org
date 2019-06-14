@@ -881,6 +881,7 @@ console.log("// waitFor_table_to_be_repopulated_after_delete // we're all done!"
 switch(mode_case_1_a){
 case CREATE_case_1_a:
     ref_case_1_a.push({
+      column_0_case_1_a: event.target.column_0_case_1_a.value,
       column_1_case_1_a: event.target.column_1_case_1_a.value,
       column_2_case_1_a: event.target.column_2_case_1_a.value,
       column_3_case_1_a: event.target.column_3_case_1_a.value,
@@ -890,6 +891,7 @@ case CREATE_case_1_a:
 	break;
 case UPDATE_case_1_a:
     refEdit_case_1_a.update({
+      column_0_case_1_a: event.target.column_0_case_1_a.value,
       column_1_case_1_a: event.target.column_1_case_1_a.value,
       column_2_case_1_a: event.target.column_2_case_1_a.value,
       column_3_case_1_a: event.target.column_3_case_1_a.value,
