@@ -1476,6 +1476,13 @@ background: none;
 #column_0_case_1_a {display: none}
 
 #bump_it {cursor: pointer}
+
+#files {
+  text-align: left;
+  padding-left: 50px;
+  width: 280px;
+}
+
 /* END SPECIFIC jovi website */
 
 /* this is the end of the @media for the whole site */
