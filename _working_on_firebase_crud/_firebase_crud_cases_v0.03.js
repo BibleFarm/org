@@ -225,7 +225,7 @@ $(this).find("td:nth-last-child(1)").hide();
    for(var key in data_case_1_a){
   tr_case_1_a += '<tr>' +
 '<td><div class="background_test"><span class="wrap_svg"><i data-fa-symbol="folder_opened" class="fas fa-folder-open fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#folder_opened"></use></svg></span></div></td>' +
-'<td class="column_0_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_0_case_1_a + '</div></td>' +
+'<td class="column_0_case_1_a"><div class="dt_inner_cell"><img id="retrieved_image" src="' + data_case_1_a[key].column_0_case_1_a + '" alt=""></div></td>' +
 '<td class="column_1_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_1_case_1_a + '</div></td>' +
 '<td class="column_2_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_2_case_1_a + '</div></td>' +
 '<td class="column_3_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_3_case_1_a + '</div></td>' +
@@ -323,7 +323,7 @@ console.log("table_case_1_a.destroy was done");
    for(var key in data_case_1_a){
   tr_case_1_a += '<tr>' +
 '<td><div class="background_test"><span class="wrap_svg"><i data-fa-symbol="folder_opened" class="fas fa-folder-open fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#folder_opened"></use></svg></span></div></td>' +
-'<td class="column_0_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_0_case_1_a + '</div></td>' +
+'<td class="column_0_case_1_a"><div class="dt_inner_cell"><img id="retrieved_image" src="' + data_case_1_a[key].column_0_case_1_a + '" alt=""></div></td>' +
 '<td class="column_1_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_1_case_1_a + '</div></td>' +
 '<td class="column_2_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_2_case_1_a + '</div></td>' +
 '<td class="column_3_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_3_case_1_a + '</div></td>' +
@@ -1949,7 +1949,7 @@ console.log("table_case_1_a.destroy was done");
    for(var key in data_case_1_a){
   tr_case_1_a += '<tr>' +
 '<td><div class="background_test"><span class="wrap_svg"><i data-fa-symbol="folder_opened" class="fas fa-folder-open fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#folder_opened"></use></svg></span></div></td>' +
-'<td class="column_0_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_0_case_1_a + '</div></td>' +
+'<td class="column_0_case_1_a"><div class="dt_inner_cell"><img id="retrieved_image" src="' + data_case_1_a[key].column_0_case_1_a + '" alt=""></div></td>' +
 '<td class="column_1_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_1_case_1_a + '</div></td>' +
 '<td class="column_2_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_2_case_1_a + '</div></td>' +
 '<td class="column_3_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_3_case_1_a + '</div></td>' +
