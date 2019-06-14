@@ -467,9 +467,6 @@ $("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", 
 $("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "yellow").css("width", "44px");
 });
-$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "100%");
-});
     }, 110);
 } else
 ////////////////////////////////////////
@@ -713,9 +710,6 @@ $("table.table_case_1_a thead tr th.control").css("color", "yellow").css("width"
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", "100%");
 $("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "yellow").css("width", "44px");
-});
-$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "100%");
 });
     }, 110);
 } else
@@ -1087,9 +1081,6 @@ $("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", 
 $("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "yellow").css("width", "44px");
 });
-$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "100%");
-});
     }, 110);
 } else
 ////////////////////////////////////////
@@ -1333,9 +1324,6 @@ $("table.table_case_1_a thead tr th.control").css("color", "yellow").css("width"
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", "100%");
 $("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "yellow").css("width", "44px");
-});
-$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "100%");
 });
     }, 110);
 } else
@@ -1644,9 +1632,6 @@ $("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", 
 $("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "yellow").css("width", "44px");
 });
-$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "100%");
-});
     }, 110);
 } else
 ////////////////////////////////////////
@@ -1890,9 +1875,6 @@ $("table.table_case_1_a thead tr th.control").css("color", "yellow").css("width"
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", "100%");
 $("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "yellow").css("width", "44px");
-});
-$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "100%");
 });
     }, 110);
 } else
@@ -2240,9 +2222,6 @@ $("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", 
 $("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "yellow").css("width", "44px");
 });
-$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "100%");
-});
     }, 110);
 } else
 ////////////////////////////////////////
@@ -2486,9 +2465,6 @@ $("table.table_case_1_a thead tr th.control").css("color", "yellow").css("width"
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", "100%");
 $("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "yellow").css("width", "44px");
-});
-$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "100%");
 });
     }, 110);
 } else
