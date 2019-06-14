@@ -1204,14 +1204,14 @@ setTimeout(function() {
 // END when seaching, on keyup, resize columns according to what fits or not
 //////////////////////////////////
 
-//// BEGIN hide edit & delete columns
+//// BEGIN hide edit column
 // the thead th's
-$("body").find("table.table_case_1_a thead tr th:eq(6), table.table_case_1_a thead tr th:eq(7)").css("display", "none");
+$("body").find("table.table_case_1_a thead tr th:eq(7)").css("display", "none");
 // and the tbody td's
 $("body").find("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td:eq(6), td:eq(7)").css("display", "none");
+$(this).find("td:eq(7)").css("display", "none");
 });
-//// END hide edit & delete columns
+//// END hide edit column
 //////////////////////////////////
 /////////////////////////////////////////////////////////////////////////
 ///// BEGIN toggle opened and closed folder icons in responsive /////////
@@ -2189,14 +2189,14 @@ setTimeout(function() {
 // END when seaching, on keyup, resize columns according to what fits or not
 //////////////////////////////////
 
-//// BEGIN hide edit & delete columns
+//// BEGIN hide edit column
 // the thead th's
-$("body").find("table.table_case_1_a thead tr th:eq(6), table.table_case_1_a thead tr th:eq(7)").css("display", "none");
+$("body").find("table.table_case_1_a thead tr th:eq(7)").css("display", "none");
 // and the tbody td's
 $("body").find("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td:eq(6), td:eq(7)").css("display", "none");
+$(this).find("td:eq(7)").css("display", "none");
 });
-//// END hide edit & delete columns
+//// END hide edit column
 //////////////////////////////////
 /////////////////////////////////////////////////////////////////////////
 ///// BEGIN toggle opened and closed folder icons in responsive /////////
@@ -3111,14 +3111,14 @@ setTimeout(function() {
 // END when seaching, on keyup, resize columns according to what fits or not
 //////////////////////////////////
 
-//// BEGIN hide edit & delete columns
+//// BEGIN hide edit column
 // the thead th's
-$("body").find("table.table_case_1_a thead tr th:eq(6), table.table_case_1_a thead tr th:eq(7)").css("display", "none");
+$("body").find("table.table_case_1_a thead tr th:eq(7)").css("display", "none");
 // and the tbody td's
 $("body").find("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td:eq(6), td:eq(7)").css("display", "none");
+$(this).find("td:eq(7)").css("display", "none");
 });
-//// END hide edit & delete columns
+//// END hide edit column
 //////////////////////////////////
 /////////////////////////////////////////////////////////////////////////
 ///// BEGIN toggle opened and closed folder icons in responsive /////////
@@ -4072,14 +4072,14 @@ setTimeout(function() {
 // END when seaching, on keyup, resize columns according to what fits or not
 //////////////////////////////////
 
-//// BEGIN hide edit & delete columns
+//// BEGIN hide edit column
 // the thead th's
-$("body").find("table.table_case_1_a thead tr th:eq(6), table.table_case_1_a thead tr th:eq(7)").css("display", "none");
+$("body").find("table.table_case_1_a thead tr th:eq(7)").css("display", "none");
 // and the tbody td's
 $("body").find("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td:eq(6), td:eq(7)").css("display", "none");
+$(this).find("td:eq(7)").css("display", "none");
 });
-//// END hide edit & delete columns
+//// END hide edit column
 //////////////////////////////////
 /////////////////////////////////////////////////////////////////////////
 ///// BEGIN toggle opened and closed folder icons in responsive /////////
