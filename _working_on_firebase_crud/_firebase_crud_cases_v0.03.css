@@ -1376,6 +1376,15 @@ padding-top: 4px;
 padding-bottom: 4px;
 cursor: pointer;
 }
+.column_0_case_1_a > .dt_inner_cell {
+display: block;
+padding-left: 2px;
+padding-right: 2px;
+padding-top: 2px;
+padding-bottom: 2px;
+cursor: pointer;
+}
+
 .table_case_1_a_th {
 padding-left: 4px !important;
 padding-right: 18px !important;
