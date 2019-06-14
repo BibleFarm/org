@@ -727,7 +727,7 @@ $(window).on("resize", function(e) {
         });
         $("table.table_case_1_a tbody tr").each(function() {
           $(this)
-            .find("td.column_1_case_1_a")
+            .find("td.column_0_case_1_a")
             .css("width", "100%");
         });
       }, 110);
@@ -759,11 +759,11 @@ $(window).on("resize", function(e) {
         });
         $("table.table_case_1_a tbody tr").each(function() {
           $(this)
-            .find("td.column_1_case_1_a")
+            .find("td.column_0_case_1_a")
             .css("color", "orange")
             .css("width", "50%");
           $(this)
-            .find("td.column_2_case_1_a")
+            .find("td.column_1_case_1_a")
             .css("color", "orange")
             .css("width", "50%");
         });
@@ -798,15 +798,15 @@ $(window).on("resize", function(e) {
         });
         $("table.table_case_1_a tbody tr").each(function() {
           $(this)
+            .find("td.column_0_case_1_a")
+            .css("color", "hotpink")
+            .css("width", "33.33%");
+          $(this)
             .find("td.column_1_case_1_a")
             .css("color", "hotpink")
             .css("width", "33.33%");
           $(this)
             .find("td.column_2_case_1_a")
-            .css("color", "hotpink")
-            .css("width", "33.33%");
-          $(this)
-            .find("td.column_3_case_1_a")
             .css("color", "hotpink")
             .css("width", "33.33%");
         });
@@ -843,6 +843,10 @@ $(window).on("resize", function(e) {
         });
         $("table.table_case_1_a tbody tr").each(function() {
           $(this)
+            .find("td.column_0_case_1_a")
+            .css("color", "hotpink")
+            .css("width", "25%");
+          $(this)
             .find("td.column_1_case_1_a")
             .css("color", "hotpink")
             .css("width", "25%");
@@ -852,10 +856,6 @@ $(window).on("resize", function(e) {
             .css("width", "25%");
           $(this)
             .find("td.column_3_case_1_a")
-            .css("color", "hotpink")
-            .css("width", "25%");
-          $(this)
-            .find("td.column_4_case_1_a")
             .css("color", "hotpink")
             .css("width", "25%");
         });
@@ -869,11 +869,49 @@ $(window).on("resize", function(e) {
       ////////////////////////////////////////
       setTimeout(function() {
         $("table.table_case_1_a thead tr th.control").css("width", "44px");
+        $("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
+        $("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
+        $("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
+        $("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
+        $("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
+        $("table.table_case_1_a tbody tr").each(function() {
+          $(this)
+            .find("td.control")
+            .css("width", "44px");
+        });
+        $("table.table_case_1_a tbody tr").each(function() {
+          $(this)
+            .find("td.column_0_case_1_a")
+            .css("width", "20%");
+          $(this)
+            .find("td.column_1_case_1_a")
+            .css("width", "20%");
+          $(this)
+            .find("td.column_2_case_1_a")
+            .css("width", "20%");
+          $(this)
+            .find("td.column_3_case_1_a")
+            .css("width", "20%");
+          $(this)
+            .find("td.column_4_case_1_a")
+            .css("width", "20%");
+        });
+      }, 110);
+    } else if (
+      $("table.table_case_1_a thead tr th:eq(6)").css("display") !== "none"
+    ) {
+      ////////////////////////////////////////
+      ////////////////////////////////////////
+      // this works for responsive col 1 & 2 & 3 & 4 & 5 & 6 only
+      ////////////////////////////////////////
+      setTimeout(function() {
+        $("table.table_case_1_a thead tr th.control").css("width", "44px");
         $("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
         $("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
         $("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
         $("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
         $("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+        $("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
         $("table.table_case_1_a tbody tr").each(function() {
           $(this)
             .find("td.control")
@@ -1670,7 +1708,7 @@ $(window).on("resize", function(e) {
         });
         $("table.table_case_1_a tbody tr").each(function() {
           $(this)
-            .find("td.column_1_case_1_a")
+            .find("td.column_0_case_1_a")
             .css("width", "100%");
         });
       }, 110);
@@ -1702,11 +1740,11 @@ $(window).on("resize", function(e) {
         });
         $("table.table_case_1_a tbody tr").each(function() {
           $(this)
-            .find("td.column_1_case_1_a")
+            .find("td.column_0_case_1_a")
             .css("color", "orange")
             .css("width", "50%");
           $(this)
-            .find("td.column_2_case_1_a")
+            .find("td.column_1_case_1_a")
             .css("color", "orange")
             .css("width", "50%");
         });
@@ -1741,15 +1779,15 @@ $(window).on("resize", function(e) {
         });
         $("table.table_case_1_a tbody tr").each(function() {
           $(this)
+            .find("td.column_0_case_1_a")
+            .css("color", "hotpink")
+            .css("width", "33.33%");
+          $(this)
             .find("td.column_1_case_1_a")
             .css("color", "hotpink")
             .css("width", "33.33%");
           $(this)
             .find("td.column_2_case_1_a")
-            .css("color", "hotpink")
-            .css("width", "33.33%");
-          $(this)
-            .find("td.column_3_case_1_a")
             .css("color", "hotpink")
             .css("width", "33.33%");
         });
@@ -1786,6 +1824,10 @@ $(window).on("resize", function(e) {
         });
         $("table.table_case_1_a tbody tr").each(function() {
           $(this)
+            .find("td.column_0_case_1_a")
+            .css("color", "hotpink")
+            .css("width", "25%");
+          $(this)
             .find("td.column_1_case_1_a")
             .css("color", "hotpink")
             .css("width", "25%");
@@ -1795,10 +1837,6 @@ $(window).on("resize", function(e) {
             .css("width", "25%");
           $(this)
             .find("td.column_3_case_1_a")
-            .css("color", "hotpink")
-            .css("width", "25%");
-          $(this)
-            .find("td.column_4_case_1_a")
             .css("color", "hotpink")
             .css("width", "25%");
         });
@@ -1812,11 +1850,49 @@ $(window).on("resize", function(e) {
       ////////////////////////////////////////
       setTimeout(function() {
         $("table.table_case_1_a thead tr th.control").css("width", "44px");
+        $("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
+        $("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
+        $("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
+        $("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
+        $("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
+        $("table.table_case_1_a tbody tr").each(function() {
+          $(this)
+            .find("td.control")
+            .css("width", "44px");
+        });
+        $("table.table_case_1_a tbody tr").each(function() {
+          $(this)
+            .find("td.column_0_case_1_a")
+            .css("width", "20%");
+          $(this)
+            .find("td.column_1_case_1_a")
+            .css("width", "20%");
+          $(this)
+            .find("td.column_2_case_1_a")
+            .css("width", "20%");
+          $(this)
+            .find("td.column_3_case_1_a")
+            .css("width", "20%");
+          $(this)
+            .find("td.column_4_case_1_a")
+            .css("width", "20%");
+        });
+      }, 110);
+    } else if (
+      $("table.table_case_1_a thead tr th:eq(6)").css("display") !== "none"
+    ) {
+      ////////////////////////////////////////
+      ////////////////////////////////////////
+      // this works for responsive col 1 & 2 & 3 & 4 & 5 & 6 only
+      ////////////////////////////////////////
+      setTimeout(function() {
+        $("table.table_case_1_a thead tr th.control").css("width", "44px");
         $("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
         $("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
         $("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
         $("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
         $("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+        $("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
         $("table.table_case_1_a tbody tr").each(function() {
           $(this)
             .find("td.control")
@@ -2550,7 +2626,7 @@ $(window).on("resize", function(e) {
         });
         $("table.table_case_1_a tbody tr").each(function() {
           $(this)
-            .find("td.column_1_case_1_a")
+            .find("td.column_0_case_1_a")
             .css("width", "100%");
         });
       }, 110);
@@ -2582,11 +2658,11 @@ $(window).on("resize", function(e) {
         });
         $("table.table_case_1_a tbody tr").each(function() {
           $(this)
-            .find("td.column_1_case_1_a")
+            .find("td.column_0_case_1_a")
             .css("color", "orange")
             .css("width", "50%");
           $(this)
-            .find("td.column_2_case_1_a")
+            .find("td.column_1_case_1_a")
             .css("color", "orange")
             .css("width", "50%");
         });
@@ -2621,15 +2697,15 @@ $(window).on("resize", function(e) {
         });
         $("table.table_case_1_a tbody tr").each(function() {
           $(this)
+            .find("td.column_0_case_1_a")
+            .css("color", "hotpink")
+            .css("width", "33.33%");
+          $(this)
             .find("td.column_1_case_1_a")
             .css("color", "hotpink")
             .css("width", "33.33%");
           $(this)
             .find("td.column_2_case_1_a")
-            .css("color", "hotpink")
-            .css("width", "33.33%");
-          $(this)
-            .find("td.column_3_case_1_a")
             .css("color", "hotpink")
             .css("width", "33.33%");
         });
@@ -2666,6 +2742,10 @@ $(window).on("resize", function(e) {
         });
         $("table.table_case_1_a tbody tr").each(function() {
           $(this)
+            .find("td.column_0_case_1_a")
+            .css("color", "hotpink")
+            .css("width", "25%");
+          $(this)
             .find("td.column_1_case_1_a")
             .css("color", "hotpink")
             .css("width", "25%");
@@ -2675,10 +2755,6 @@ $(window).on("resize", function(e) {
             .css("width", "25%");
           $(this)
             .find("td.column_3_case_1_a")
-            .css("color", "hotpink")
-            .css("width", "25%");
-          $(this)
-            .find("td.column_4_case_1_a")
             .css("color", "hotpink")
             .css("width", "25%");
         });
@@ -2692,11 +2768,49 @@ $(window).on("resize", function(e) {
       ////////////////////////////////////////
       setTimeout(function() {
         $("table.table_case_1_a thead tr th.control").css("width", "44px");
+        $("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
+        $("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
+        $("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
+        $("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
+        $("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
+        $("table.table_case_1_a tbody tr").each(function() {
+          $(this)
+            .find("td.control")
+            .css("width", "44px");
+        });
+        $("table.table_case_1_a tbody tr").each(function() {
+          $(this)
+            .find("td.column_0_case_1_a")
+            .css("width", "20%");
+          $(this)
+            .find("td.column_1_case_1_a")
+            .css("width", "20%");
+          $(this)
+            .find("td.column_2_case_1_a")
+            .css("width", "20%");
+          $(this)
+            .find("td.column_3_case_1_a")
+            .css("width", "20%");
+          $(this)
+            .find("td.column_4_case_1_a")
+            .css("width", "20%");
+        });
+      }, 110);
+    } else if (
+      $("table.table_case_1_a thead tr th:eq(6)").css("display") !== "none"
+    ) {
+      ////////////////////////////////////////
+      ////////////////////////////////////////
+      // this works for responsive col 1 & 2 & 3 & 4 & 5 & 6 only
+      ////////////////////////////////////////
+      setTimeout(function() {
+        $("table.table_case_1_a thead tr th.control").css("width", "44px");
         $("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
         $("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
         $("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
         $("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
         $("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+        $("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
         $("table.table_case_1_a tbody tr").each(function() {
           $(this)
             .find("td.control")
@@ -3469,7 +3583,7 @@ $(window).on("resize", function(e) {
         });
         $("table.table_case_1_a tbody tr").each(function() {
           $(this)
-            .find("td.column_1_case_1_a")
+            .find("td.column_0_case_1_a")
             .css("width", "100%");
         });
       }, 110);
@@ -3501,11 +3615,11 @@ $(window).on("resize", function(e) {
         });
         $("table.table_case_1_a tbody tr").each(function() {
           $(this)
-            .find("td.column_1_case_1_a")
+            .find("td.column_0_case_1_a")
             .css("color", "orange")
             .css("width", "50%");
           $(this)
-            .find("td.column_2_case_1_a")
+            .find("td.column_1_case_1_a")
             .css("color", "orange")
             .css("width", "50%");
         });
@@ -3540,15 +3654,15 @@ $(window).on("resize", function(e) {
         });
         $("table.table_case_1_a tbody tr").each(function() {
           $(this)
+            .find("td.column_0_case_1_a")
+            .css("color", "hotpink")
+            .css("width", "33.33%");
+          $(this)
             .find("td.column_1_case_1_a")
             .css("color", "hotpink")
             .css("width", "33.33%");
           $(this)
             .find("td.column_2_case_1_a")
-            .css("color", "hotpink")
-            .css("width", "33.33%");
-          $(this)
-            .find("td.column_3_case_1_a")
             .css("color", "hotpink")
             .css("width", "33.33%");
         });
@@ -3585,6 +3699,10 @@ $(window).on("resize", function(e) {
         });
         $("table.table_case_1_a tbody tr").each(function() {
           $(this)
+            .find("td.column_0_case_1_a")
+            .css("color", "hotpink")
+            .css("width", "25%");
+          $(this)
             .find("td.column_1_case_1_a")
             .css("color", "hotpink")
             .css("width", "25%");
@@ -3594,10 +3712,6 @@ $(window).on("resize", function(e) {
             .css("width", "25%");
           $(this)
             .find("td.column_3_case_1_a")
-            .css("color", "hotpink")
-            .css("width", "25%");
-          $(this)
-            .find("td.column_4_case_1_a")
             .css("color", "hotpink")
             .css("width", "25%");
         });
@@ -3611,11 +3725,49 @@ $(window).on("resize", function(e) {
       ////////////////////////////////////////
       setTimeout(function() {
         $("table.table_case_1_a thead tr th.control").css("width", "44px");
+        $("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
+        $("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
+        $("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
+        $("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
+        $("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
+        $("table.table_case_1_a tbody tr").each(function() {
+          $(this)
+            .find("td.control")
+            .css("width", "44px");
+        });
+        $("table.table_case_1_a tbody tr").each(function() {
+          $(this)
+            .find("td.column_0_case_1_a")
+            .css("width", "20%");
+          $(this)
+            .find("td.column_1_case_1_a")
+            .css("width", "20%");
+          $(this)
+            .find("td.column_2_case_1_a")
+            .css("width", "20%");
+          $(this)
+            .find("td.column_3_case_1_a")
+            .css("width", "20%");
+          $(this)
+            .find("td.column_4_case_1_a")
+            .css("width", "20%");
+        });
+      }, 110);
+    } else if (
+      $("table.table_case_1_a thead tr th:eq(6)").css("display") !== "none"
+    ) {
+      ////////////////////////////////////////
+      ////////////////////////////////////////
+      // this works for responsive col 1 & 2 & 3 & 4 & 5 & 6 only
+      ////////////////////////////////////////
+      setTimeout(function() {
+        $("table.table_case_1_a thead tr th.control").css("width", "44px");
         $("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
         $("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
         $("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
         $("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
         $("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+        $("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
         $("table.table_case_1_a tbody tr").each(function() {
           $(this)
             .find("td.control")
