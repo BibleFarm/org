@@ -460,147 +460,14 @@ $("#table_case_1_a_filter label input").attr("placeholder", "filtrar");
     setTimeout(function(){
 // this works for responsive col 1 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "yellow").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", "100%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "yellow").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "100%");
-});
-    }, 110);
-} else
-////////////////////////////////////////
-////////////////////////////////////////
-// this works for responsive col 1 & 2 only
-////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
-    setTimeout(function(){
-$("table.table_case_1_a thead tr th.control").css("color", "orange").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("color", "orange").css("width", "50%");
-$("table.table_case_1_a thead tr th:eq(2)").css("color", "orange").css("width", "50%");
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.control").css("color", "orange").css("width", "44px");
-});
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "orange").css("width", "50%");
-$(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
-});
-    }, 110);
-} else
-////////////////////////////////////////
-////////////////////////////////////////
-// this works for responsive col 1 & 2 & 3 only
-////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
-    setTimeout(function(){
-$("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "33.33%");
-$("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "33.33%");
-$("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "33.33%");
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.control").css("color", "hotpink").css("width", "44px");
-});
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "hotpink").css("width", "33.33%");
-$(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33%");
-$(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
-});
-    }, 110);
-} else
-////////////////////////////////////////
-////////////////////////////////////////
-// this works for responsive col 1 & 2 & 3 & 4 only
-////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
-    setTimeout(function(){
-$("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a thead tr th:eq(4)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.control").css("color", "hotpink").css("width", "44px");
-});
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "hotpink").css("width", "25%");
-$(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "25%");
-$(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%");
-$(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
-});
-    }, 110);
-} else
-////////////////////////////////////////
-////////////////////////////////////////
-// this works for responsive col 1 & 2 & 3 & 4 & 5 only
-////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
-    setTimeout(function(){
-$("table.table_case_1_a thead tr th.control").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.control").css("width", "44px");
-});
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "20%");
-$(this).find("td.column_1_case_1_a").css("width", "20%");
-$(this).find("td.column_2_case_1_a").css("width", "20%");
-$(this).find("td.column_3_case_1_a").css("width", "20%");
-$(this).find("td.column_4_case_1_a").css("width", "20%");
-});
-    }, 110);
-  } else
-  ////////////////////////////////////////
-  ////////////////////////////////////////
-  // this works for responsive col 1 & 2 & 3 & 4 & 5 & 6 only
-  ////////////////////////////////////////
-  if(($('table.table_case_1_a thead tr th:eq(6)').css('display') !== 'none')) {
-      setTimeout(function(){
-  $("table.table_case_1_a thead tr th.control").css("width", "44px");
-  $("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
-  $("table.table_case_1_a tbody tr").each(function() {
-  $(this).find("td.control").css("width", "44px");
-  });
-  $("table.table_case_1_a tbody tr").each(function() {
-  $(this).find("td.column_0_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_1_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_2_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_3_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_4_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_5_case_1_a").css("width", "16.66%");
-  });
-      }, 110);
-  }
-table_case_1_a.draw();
-    }, 110);
-////////////////////////////////////////
-// END resize columns according to what fits or not
-//////////////////////////////////
-//// BEGIN again adjust columns on resize
-$(window).on("resize",function(e){
-////////////////////////////////////////
-    setTimeout(function(){
-// this works for responsive col 1 only
-////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none' && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
-    setTimeout(function(){
-$("table.table_case_1_a thead tr th.control").css("color", "yellow").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", "100%");
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.control").css("color", "yellow").css("width", "44px");
-});
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
     }, 110);
@@ -609,15 +476,15 @@ $(this).find("td.column_1_case_1_a").css("width", "100%");
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none' && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "orange").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "orange").css("width", "50%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "orange").css("width", "50%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "orange").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
@@ -627,16 +494,16 @@ $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none' && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "33.33%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "33.33%");
 $("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "33.33%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "hotpink").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
@@ -647,17 +514,17 @@ $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 & 4 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none' && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(4)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "hotpink").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
@@ -669,7 +536,7 @@ $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%")
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 & 4 & 5 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(6)').css('display') !== 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
@@ -677,10 +544,120 @@ $("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
 $("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
 $("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
 $("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+$(this).find("td.column_0_case_1_a").css("width", "16.66%");
+$(this).find("td.column_1_case_1_a").css("width", "16.66%");
+$(this).find("td.column_2_case_1_a").css("width", "16.66%");
+$(this).find("td.column_3_case_1_a").css("width", "16.66%");
+$(this).find("td.column_4_case_1_a").css("width", "16.66%");
+$(this).find("td.column_5_case_1_a").css("width", "16.66%");
+});
+    }, 110);
+}
+table_case_1_a.draw();
+    }, 110);
+////////////////////////////////////////
+// END resize columns according to what fits or not
+//////////////////////////////////
+//// BEGIN again adjust columns on resize
+$(window).on("resize",function(e){
+////////////////////////////////////////
+    setTimeout(function(){
+// this works for responsive col 1 only
+////////////////////////////////////////
+if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
+    setTimeout(function(){
+$("table.table_case_1_a thead tr th.control").css("color", "yellow").css("width", "44px");
+$("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", "100%");
+$("#table_case_1_a tbody tr").each(function() {
+$(this).find("td.control").css("color", "yellow").css("width", "44px");
+});
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+$(this).find("td.column_1_case_1_a").css("width", "100%");
+});
+    }, 110);
+} else
+////////////////////////////////////////
+////////////////////////////////////////
+// this works for responsive col 1 & 2 only
+////////////////////////////////////////
+if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
+    setTimeout(function(){
+$("table.table_case_1_a thead tr th.control").css("color", "orange").css("width", "44px");
+$("table.table_case_1_a thead tr th:eq(1)").css("color", "orange").css("width", "50%");
+$("table.table_case_1_a thead tr th:eq(2)").css("color", "orange").css("width", "50%");
+$("#table_case_1_a tbody tr").each(function() {
+$(this).find("td.control").css("color", "orange").css("width", "44px");
+});
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+$(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
+$(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
+});
+    }, 110);
+} else
+////////////////////////////////////////
+////////////////////////////////////////
+// this works for responsive col 1 & 2 & 3 only
+////////////////////////////////////////
+if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
+    setTimeout(function(){
+$("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
+$("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "33.33%");
+$("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "33.33%");
+$("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "33.33%");
+$("#table_case_1_a tbody tr").each(function() {
+$(this).find("td.control").css("color", "hotpink").css("width", "44px");
+});
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+$(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33%");
+$(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
+$(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
+});
+    }, 110);
+} else
+////////////////////////////////////////
+////////////////////////////////////////
+// this works for responsive col 1 & 2 & 3 & 4 only
+////////////////////////////////////////
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
+    setTimeout(function(){
+$("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
+$("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "25%");
+$("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "25%");
+$("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "25%");
+$("table.table_case_1_a thead tr th:eq(4)").css("color", "hotpink").css("width", "25%");
+$("#table_case_1_a tbody tr").each(function() {
+$(this).find("td.control").css("color", "hotpink").css("width", "44px");
+});
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+$(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "25%");
+$(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%");
+$(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
+$(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
+});
+    }, 110);
+} else
+////////////////////////////////////////
+////////////////////////////////////////
+// this works for responsive col 1 & 2 & 3 & 4 & 5 only
+////////////////////////////////////////
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
+    setTimeout(function(){
+$("table.table_case_1_a thead tr th.control").css("width", "44px");
+$("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
+$("#table_case_1_a tbody tr").each(function() {
+$(this).find("td.control").css("width", "44px");
+});
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
   $(this).find("td.column_0_case_1_a").css("width", "16.66%");
   $(this).find("td.column_1_case_1_a").css("width", "16.66%");
 $(this).find("td.column_2_case_1_a").css("width", "16.66%");
@@ -707,15 +684,15 @@ $("#table_case_1_a_filter label input").css("background", "#333333");
     setTimeout(function(){
 // this works for responsive col 1 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "yellow").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", "100%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "yellow").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "100%");
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+$(this).find("td.column_1_case_1_a").css("width", "100%");
 });
     }, 110);
 } else
@@ -723,17 +700,17 @@ $(this).find("td.column_0_case_1_a").css("width", "100%");
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "orange").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "orange").css("width", "50%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "orange").css("width", "50%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "orange").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "orange").css("width", "50%");
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
+$(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
     }, 110);
 } else
@@ -741,19 +718,19 @@ $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "33.33%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "33.33%");
 $("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "33.33%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "hotpink").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "hotpink").css("width", "33.33%");
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
+$(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
     }, 110);
 } else
@@ -761,21 +738,21 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 & 4 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(4)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "hotpink").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "hotpink").css("width", "25%");
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
+$(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
     }, 110);
 } else
@@ -783,52 +760,28 @@ $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%")
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 & 4 & 5 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "20%");
-$(this).find("td.column_1_case_1_a").css("width", "20%");
-$(this).find("td.column_2_case_1_a").css("width", "20%");
-$(this).find("td.column_3_case_1_a").css("width", "20%");
-$(this).find("td.column_4_case_1_a").css("width", "20%");
-});
-    }, 110);
-  } else
-  ////////////////////////////////////////
-  ////////////////////////////////////////
-  // this works for responsive col 1 & 2 & 3 & 4 & 5 & 6 only
-  ////////////////////////////////////////
-  if(($('table.table_case_1_a thead tr th:eq(6)').css('display') !== 'none')) {
-      setTimeout(function(){
-  $("table.table_case_1_a thead tr th.control").css("width", "44px");
-  $("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
-  $("table.table_case_1_a tbody tr").each(function() {
-  $(this).find("td.control").css("width", "44px");
-  });
-  $("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
   $(this).find("td.column_0_case_1_a").css("width", "16.66%");
   $(this).find("td.column_1_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_2_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_3_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_4_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_5_case_1_a").css("width", "16.66%");
-  });
-      }, 110);
-  }
+$(this).find("td.column_2_case_1_a").css("width", "16.66%");
+$(this).find("td.column_3_case_1_a").css("width", "16.66%");
+$(this).find("td.column_4_case_1_a").css("width", "16.66%");
+$(this).find("td.column_5_case_1_a").css("width", "16.66%");
+});
+    }, 110);
+}
 table_case_1_a.draw();
     }, 110);
 ////////////////////////////////////////
@@ -1080,147 +1033,14 @@ $("#table_case_1_a_filter label input").attr("placeholder", "filtrar");
     setTimeout(function(){
 // this works for responsive col 1 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "yellow").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", "100%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "yellow").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "100%");
-});
-    }, 110);
-} else
-////////////////////////////////////////
-////////////////////////////////////////
-// this works for responsive col 1 & 2 only
-////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
-    setTimeout(function(){
-$("table.table_case_1_a thead tr th.control").css("color", "orange").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("color", "orange").css("width", "50%");
-$("table.table_case_1_a thead tr th:eq(2)").css("color", "orange").css("width", "50%");
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.control").css("color", "orange").css("width", "44px");
-});
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "orange").css("width", "50%");
-$(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
-});
-    }, 110);
-} else
-////////////////////////////////////////
-////////////////////////////////////////
-// this works for responsive col 1 & 2 & 3 only
-////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
-    setTimeout(function(){
-$("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "33.33%");
-$("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "33.33%");
-$("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "33.33%");
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.control").css("color", "hotpink").css("width", "44px");
-});
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "hotpink").css("width", "33.33%");
-$(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33%");
-$(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
-});
-    }, 110);
-} else
-////////////////////////////////////////
-////////////////////////////////////////
-// this works for responsive col 1 & 2 & 3 & 4 only
-////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
-    setTimeout(function(){
-$("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a thead tr th:eq(4)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.control").css("color", "hotpink").css("width", "44px");
-});
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "hotpink").css("width", "25%");
-$(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "25%");
-$(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%");
-$(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
-});
-    }, 110);
-} else
-////////////////////////////////////////
-////////////////////////////////////////
-// this works for responsive col 1 & 2 & 3 & 4 & 5 only
-////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
-    setTimeout(function(){
-$("table.table_case_1_a thead tr th.control").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.control").css("width", "44px");
-});
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "20%");
-$(this).find("td.column_1_case_1_a").css("width", "20%");
-$(this).find("td.column_2_case_1_a").css("width", "20%");
-$(this).find("td.column_3_case_1_a").css("width", "20%");
-$(this).find("td.column_4_case_1_a").css("width", "20%");
-});
-    }, 110);
-  } else
-  ////////////////////////////////////////
-  ////////////////////////////////////////
-  // this works for responsive col 1 & 2 & 3 & 4 & 5 & 6 only
-  ////////////////////////////////////////
-  if(($('table.table_case_1_a thead tr th:eq(6)').css('display') !== 'none')) {
-      setTimeout(function(){
-  $("table.table_case_1_a thead tr th.control").css("width", "44px");
-  $("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
-  $("table.table_case_1_a tbody tr").each(function() {
-  $(this).find("td.control").css("width", "44px");
-  });
-  $("table.table_case_1_a tbody tr").each(function() {
-  $(this).find("td.column_0_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_1_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_2_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_3_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_4_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_5_case_1_a").css("width", "16.66%");
-  });
-      }, 110);
-  }
-table_case_1_a.draw();
-    }, 110);
-////////////////////////////////////////
-// END resize columns according to what fits or not
-//////////////////////////////////
-//// BEGIN again adjust columns on resize
-$(window).on("resize",function(e){
-////////////////////////////////////////
-    setTimeout(function(){
-// this works for responsive col 1 only
-////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none' && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
-    setTimeout(function(){
-$("table.table_case_1_a thead tr th.control").css("color", "yellow").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", "100%");
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.control").css("color", "yellow").css("width", "44px");
-});
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
     }, 110);
@@ -1229,15 +1049,15 @@ $(this).find("td.column_1_case_1_a").css("width", "100%");
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none' && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "orange").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "orange").css("width", "50%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "orange").css("width", "50%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "orange").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
@@ -1247,16 +1067,16 @@ $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none' && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "33.33%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "33.33%");
 $("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "33.33%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "hotpink").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
@@ -1267,17 +1087,17 @@ $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 & 4 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none' && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(4)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "hotpink").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
@@ -1289,7 +1109,7 @@ $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%")
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 & 4 & 5 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(6)').css('display') !== 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
@@ -1297,10 +1117,120 @@ $("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
 $("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
 $("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
 $("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+  $(this).find("td.column_0_case_1_a").css("width", "16.66%");
+  $(this).find("td.column_1_case_1_a").css("width", "16.66%");
+$(this).find("td.column_2_case_1_a").css("width", "16.66%");
+$(this).find("td.column_3_case_1_a").css("width", "16.66%");
+$(this).find("td.column_4_case_1_a").css("width", "16.66%");
+$(this).find("td.column_5_case_1_a").css("width", "16.66%");
+});
+    }, 110);
+}
+table_case_1_a.draw();
+    }, 110);
+////////////////////////////////////////
+// END resize columns according to what fits or not
+//////////////////////////////////
+//// BEGIN again adjust columns on resize
+$(window).on("resize",function(e){
+////////////////////////////////////////
+    setTimeout(function(){
+// this works for responsive col 1 only
+////////////////////////////////////////
+if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
+    setTimeout(function(){
+$("table.table_case_1_a thead tr th.control").css("color", "yellow").css("width", "44px");
+$("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", "100%");
+$("#table_case_1_a tbody tr").each(function() {
+$(this).find("td.control").css("color", "yellow").css("width", "44px");
+});
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+$(this).find("td.column_1_case_1_a").css("width", "100%");
+});
+    }, 110);
+} else
+////////////////////////////////////////
+////////////////////////////////////////
+// this works for responsive col 1 & 2 only
+////////////////////////////////////////
+if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
+    setTimeout(function(){
+$("table.table_case_1_a thead tr th.control").css("color", "orange").css("width", "44px");
+$("table.table_case_1_a thead tr th:eq(1)").css("color", "orange").css("width", "50%");
+$("table.table_case_1_a thead tr th:eq(2)").css("color", "orange").css("width", "50%");
+$("#table_case_1_a tbody tr").each(function() {
+$(this).find("td.control").css("color", "orange").css("width", "44px");
+});
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+$(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
+$(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
+});
+    }, 110);
+} else
+////////////////////////////////////////
+////////////////////////////////////////
+// this works for responsive col 1 & 2 & 3 only
+////////////////////////////////////////
+if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
+    setTimeout(function(){
+$("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
+$("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "33.33%");
+$("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "33.33%");
+$("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "33.33%");
+$("#table_case_1_a tbody tr").each(function() {
+$(this).find("td.control").css("color", "hotpink").css("width", "44px");
+});
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+$(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33%");
+$(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
+$(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
+});
+    }, 110);
+} else
+////////////////////////////////////////
+////////////////////////////////////////
+// this works for responsive col 1 & 2 & 3 & 4 only
+////////////////////////////////////////
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
+    setTimeout(function(){
+$("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
+$("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "25%");
+$("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "25%");
+$("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "25%");
+$("table.table_case_1_a thead tr th:eq(4)").css("color", "hotpink").css("width", "25%");
+$("#table_case_1_a tbody tr").each(function() {
+$(this).find("td.control").css("color", "hotpink").css("width", "44px");
+});
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+$(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "25%");
+$(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%");
+$(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
+$(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
+});
+    }, 110);
+} else
+////////////////////////////////////////
+////////////////////////////////////////
+// this works for responsive col 1 & 2 & 3 & 4 & 5 only
+////////////////////////////////////////
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
+    setTimeout(function(){
+$("table.table_case_1_a thead tr th.control").css("width", "44px");
+$("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
+$("#table_case_1_a tbody tr").each(function() {
+$(this).find("td.control").css("width", "44px");
+});
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
   $(this).find("td.column_0_case_1_a").css("width", "16.66%");
   $(this).find("td.column_1_case_1_a").css("width", "16.66%");
 $(this).find("td.column_2_case_1_a").css("width", "16.66%");
@@ -1327,15 +1257,15 @@ $("#table_case_1_a_filter label input").css("background", "#333333");
     setTimeout(function(){
 // this works for responsive col 1 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "yellow").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", "100%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "yellow").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "100%");
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+$(this).find("td.column_1_case_1_a").css("width", "100%");
 });
     }, 110);
 } else
@@ -1343,17 +1273,17 @@ $(this).find("td.column_0_case_1_a").css("width", "100%");
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "orange").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "orange").css("width", "50%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "orange").css("width", "50%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "orange").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "orange").css("width", "50%");
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
+$(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
     }, 110);
 } else
@@ -1361,19 +1291,19 @@ $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "33.33%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "33.33%");
 $("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "33.33%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "hotpink").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "hotpink").css("width", "33.33%");
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
+$(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
     }, 110);
 } else
@@ -1381,21 +1311,21 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 & 4 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(4)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "hotpink").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "hotpink").css("width", "25%");
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
+$(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
     }, 110);
 } else
@@ -1403,52 +1333,28 @@ $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%")
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 & 4 & 5 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "20%");
-$(this).find("td.column_1_case_1_a").css("width", "20%");
-$(this).find("td.column_2_case_1_a").css("width", "20%");
-$(this).find("td.column_3_case_1_a").css("width", "20%");
-$(this).find("td.column_4_case_1_a").css("width", "20%");
-});
-    }, 110);
-  } else
-  ////////////////////////////////////////
-  ////////////////////////////////////////
-  // this works for responsive col 1 & 2 & 3 & 4 & 5 & 6 only
-  ////////////////////////////////////////
-  if(($('table.table_case_1_a thead tr th:eq(6)').css('display') !== 'none')) {
-      setTimeout(function(){
-  $("table.table_case_1_a thead tr th.control").css("width", "44px");
-  $("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
-  $("table.table_case_1_a tbody tr").each(function() {
-  $(this).find("td.control").css("width", "44px");
-  });
-  $("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
   $(this).find("td.column_0_case_1_a").css("width", "16.66%");
   $(this).find("td.column_1_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_2_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_3_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_4_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_5_case_1_a").css("width", "16.66%");
-  });
-      }, 110);
-  }
+$(this).find("td.column_2_case_1_a").css("width", "16.66%");
+$(this).find("td.column_3_case_1_a").css("width", "16.66%");
+$(this).find("td.column_4_case_1_a").css("width", "16.66%");
+$(this).find("td.column_5_case_1_a").css("width", "16.66%");
+});
+    }, 110);
+}
 table_case_1_a.draw();
     }, 110);
 ////////////////////////////////////////
@@ -1637,147 +1543,14 @@ $("#table_case_1_a_filter label input").attr("placeholder", "filtrar");
     setTimeout(function(){
 // this works for responsive col 1 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "yellow").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", "100%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "yellow").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "100%");
-});
-    }, 110);
-} else
-////////////////////////////////////////
-////////////////////////////////////////
-// this works for responsive col 1 & 2 only
-////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
-    setTimeout(function(){
-$("table.table_case_1_a thead tr th.control").css("color", "orange").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("color", "orange").css("width", "50%");
-$("table.table_case_1_a thead tr th:eq(2)").css("color", "orange").css("width", "50%");
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.control").css("color", "orange").css("width", "44px");
-});
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "orange").css("width", "50%");
-$(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
-});
-    }, 110);
-} else
-////////////////////////////////////////
-////////////////////////////////////////
-// this works for responsive col 1 & 2 & 3 only
-////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
-    setTimeout(function(){
-$("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "33.33%");
-$("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "33.33%");
-$("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "33.33%");
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.control").css("color", "hotpink").css("width", "44px");
-});
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "hotpink").css("width", "33.33%");
-$(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33%");
-$(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
-});
-    }, 110);
-} else
-////////////////////////////////////////
-////////////////////////////////////////
-// this works for responsive col 1 & 2 & 3 & 4 only
-////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
-    setTimeout(function(){
-$("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a thead tr th:eq(4)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.control").css("color", "hotpink").css("width", "44px");
-});
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "hotpink").css("width", "25%");
-$(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "25%");
-$(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%");
-$(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
-});
-    }, 110);
-} else
-////////////////////////////////////////
-////////////////////////////////////////
-// this works for responsive col 1 & 2 & 3 & 4 & 5 only
-////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
-    setTimeout(function(){
-$("table.table_case_1_a thead tr th.control").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.control").css("width", "44px");
-});
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "20%");
-$(this).find("td.column_1_case_1_a").css("width", "20%");
-$(this).find("td.column_2_case_1_a").css("width", "20%");
-$(this).find("td.column_3_case_1_a").css("width", "20%");
-$(this).find("td.column_4_case_1_a").css("width", "20%");
-});
-    }, 110);
-  } else
-  ////////////////////////////////////////
-  ////////////////////////////////////////
-  // this works for responsive col 1 & 2 & 3 & 4 & 5 & 6 only
-  ////////////////////////////////////////
-  if(($('table.table_case_1_a thead tr th:eq(6)').css('display') !== 'none')) {
-      setTimeout(function(){
-  $("table.table_case_1_a thead tr th.control").css("width", "44px");
-  $("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
-  $("table.table_case_1_a tbody tr").each(function() {
-  $(this).find("td.control").css("width", "44px");
-  });
-  $("table.table_case_1_a tbody tr").each(function() {
-  $(this).find("td.column_0_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_1_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_2_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_3_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_4_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_5_case_1_a").css("width", "16.66%");
-  });
-      }, 110);
-  }
-table_case_1_a.draw();
-    }, 110);
-////////////////////////////////////////
-// END resize columns according to what fits or not
-//////////////////////////////////
-//// BEGIN again adjust columns on resize
-$(window).on("resize",function(e){
-////////////////////////////////////////
-    setTimeout(function(){
-// this works for responsive col 1 only
-////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none' && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
-    setTimeout(function(){
-$("table.table_case_1_a thead tr th.control").css("color", "yellow").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", "100%");
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.control").css("color", "yellow").css("width", "44px");
-});
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
     }, 110);
@@ -1786,15 +1559,15 @@ $(this).find("td.column_1_case_1_a").css("width", "100%");
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none' && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "orange").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "orange").css("width", "50%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "orange").css("width", "50%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "orange").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
@@ -1804,16 +1577,16 @@ $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none' && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "33.33%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "33.33%");
 $("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "33.33%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "hotpink").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
@@ -1824,17 +1597,17 @@ $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 & 4 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none' && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(4)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "hotpink").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
@@ -1846,7 +1619,7 @@ $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%")
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 & 4 & 5 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(6)').css('display') !== 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
@@ -1854,10 +1627,120 @@ $("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
 $("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
 $("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
 $("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+  $(this).find("td.column_0_case_1_a").css("width", "16.66%");
+  $(this).find("td.column_1_case_1_a").css("width", "16.66%");
+$(this).find("td.column_2_case_1_a").css("width", "16.66%");
+$(this).find("td.column_3_case_1_a").css("width", "16.66%");
+$(this).find("td.column_4_case_1_a").css("width", "16.66%");
+$(this).find("td.column_5_case_1_a").css("width", "16.66%");
+});
+    }, 110);
+}
+table_case_1_a.draw();
+    }, 110);
+////////////////////////////////////////
+// END resize columns according to what fits or not
+//////////////////////////////////
+//// BEGIN again adjust columns on resize
+$(window).on("resize",function(e){
+////////////////////////////////////////
+    setTimeout(function(){
+// this works for responsive col 1 only
+////////////////////////////////////////
+if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
+    setTimeout(function(){
+$("table.table_case_1_a thead tr th.control").css("color", "yellow").css("width", "44px");
+$("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", "100%");
+$("#table_case_1_a tbody tr").each(function() {
+$(this).find("td.control").css("color", "yellow").css("width", "44px");
+});
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+$(this).find("td.column_1_case_1_a").css("width", "100%");
+});
+    }, 110);
+} else
+////////////////////////////////////////
+////////////////////////////////////////
+// this works for responsive col 1 & 2 only
+////////////////////////////////////////
+if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
+    setTimeout(function(){
+$("table.table_case_1_a thead tr th.control").css("color", "orange").css("width", "44px");
+$("table.table_case_1_a thead tr th:eq(1)").css("color", "orange").css("width", "50%");
+$("table.table_case_1_a thead tr th:eq(2)").css("color", "orange").css("width", "50%");
+$("#table_case_1_a tbody tr").each(function() {
+$(this).find("td.control").css("color", "orange").css("width", "44px");
+});
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+$(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
+$(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
+});
+    }, 110);
+} else
+////////////////////////////////////////
+////////////////////////////////////////
+// this works for responsive col 1 & 2 & 3 only
+////////////////////////////////////////
+if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
+    setTimeout(function(){
+$("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
+$("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "33.33%");
+$("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "33.33%");
+$("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "33.33%");
+$("#table_case_1_a tbody tr").each(function() {
+$(this).find("td.control").css("color", "hotpink").css("width", "44px");
+});
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+$(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33%");
+$(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
+$(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
+});
+    }, 110);
+} else
+////////////////////////////////////////
+////////////////////////////////////////
+// this works for responsive col 1 & 2 & 3 & 4 only
+////////////////////////////////////////
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
+    setTimeout(function(){
+$("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
+$("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "25%");
+$("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "25%");
+$("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "25%");
+$("table.table_case_1_a thead tr th:eq(4)").css("color", "hotpink").css("width", "25%");
+$("#table_case_1_a tbody tr").each(function() {
+$(this).find("td.control").css("color", "hotpink").css("width", "44px");
+});
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+$(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "25%");
+$(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%");
+$(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
+$(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
+});
+    }, 110);
+} else
+////////////////////////////////////////
+////////////////////////////////////////
+// this works for responsive col 1 & 2 & 3 & 4 & 5 only
+////////////////////////////////////////
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
+    setTimeout(function(){
+$("table.table_case_1_a thead tr th.control").css("width", "44px");
+$("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
+$("#table_case_1_a tbody tr").each(function() {
+$(this).find("td.control").css("width", "44px");
+});
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
   $(this).find("td.column_0_case_1_a").css("width", "16.66%");
   $(this).find("td.column_1_case_1_a").css("width", "16.66%");
 $(this).find("td.column_2_case_1_a").css("width", "16.66%");
@@ -1884,15 +1767,15 @@ $("#table_case_1_a_filter label input").css("background", "#333333");
     setTimeout(function(){
 // this works for responsive col 1 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "yellow").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", "100%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "yellow").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "100%");
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+$(this).find("td.column_1_case_1_a").css("width", "100%");
 });
     }, 110);
 } else
@@ -1900,17 +1783,17 @@ $(this).find("td.column_0_case_1_a").css("width", "100%");
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "orange").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "orange").css("width", "50%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "orange").css("width", "50%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "orange").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "orange").css("width", "50%");
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
+$(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
     }, 110);
 } else
@@ -1918,19 +1801,19 @@ $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "33.33%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "33.33%");
 $("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "33.33%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "hotpink").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "hotpink").css("width", "33.33%");
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
+$(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
     }, 110);
 } else
@@ -1938,21 +1821,21 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 & 4 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(4)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "hotpink").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "hotpink").css("width", "25%");
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
+$(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
     }, 110);
 } else
@@ -1960,52 +1843,28 @@ $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%")
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 & 4 & 5 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "20%");
-$(this).find("td.column_1_case_1_a").css("width", "20%");
-$(this).find("td.column_2_case_1_a").css("width", "20%");
-$(this).find("td.column_3_case_1_a").css("width", "20%");
-$(this).find("td.column_4_case_1_a").css("width", "20%");
-});
-    }, 110);
-  } else
-  ////////////////////////////////////////
-  ////////////////////////////////////////
-  // this works for responsive col 1 & 2 & 3 & 4 & 5 & 6 only
-  ////////////////////////////////////////
-  if(($('table.table_case_1_a thead tr th:eq(6)').css('display') !== 'none')) {
-      setTimeout(function(){
-  $("table.table_case_1_a thead tr th.control").css("width", "44px");
-  $("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
-  $("table.table_case_1_a tbody tr").each(function() {
-  $(this).find("td.control").css("width", "44px");
-  });
-  $("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
   $(this).find("td.column_0_case_1_a").css("width", "16.66%");
   $(this).find("td.column_1_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_2_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_3_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_4_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_5_case_1_a").css("width", "16.66%");
-  });
-      }, 110);
-  }
+$(this).find("td.column_2_case_1_a").css("width", "16.66%");
+$(this).find("td.column_3_case_1_a").css("width", "16.66%");
+$(this).find("td.column_4_case_1_a").css("width", "16.66%");
+$(this).find("td.column_5_case_1_a").css("width", "16.66%");
+});
+    }, 110);
+}
 table_case_1_a.draw();
     }, 110);
 ////////////////////////////////////////
@@ -2233,147 +2092,14 @@ $("#table_case_1_a_filter label input").attr("placeholder", "filtrar");
     setTimeout(function(){
 // this works for responsive col 1 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "yellow").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", "100%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "yellow").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "100%");
-});
-    }, 110);
-} else
-////////////////////////////////////////
-////////////////////////////////////////
-// this works for responsive col 1 & 2 only
-////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
-    setTimeout(function(){
-$("table.table_case_1_a thead tr th.control").css("color", "orange").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("color", "orange").css("width", "50%");
-$("table.table_case_1_a thead tr th:eq(2)").css("color", "orange").css("width", "50%");
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.control").css("color", "orange").css("width", "44px");
-});
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "orange").css("width", "50%");
-$(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
-});
-    }, 110);
-} else
-////////////////////////////////////////
-////////////////////////////////////////
-// this works for responsive col 1 & 2 & 3 only
-////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
-    setTimeout(function(){
-$("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "33.33%");
-$("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "33.33%");
-$("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "33.33%");
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.control").css("color", "hotpink").css("width", "44px");
-});
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "hotpink").css("width", "33.33%");
-$(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33%");
-$(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
-});
-    }, 110);
-} else
-////////////////////////////////////////
-////////////////////////////////////////
-// this works for responsive col 1 & 2 & 3 & 4 only
-////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
-    setTimeout(function(){
-$("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a thead tr th:eq(4)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.control").css("color", "hotpink").css("width", "44px");
-});
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "hotpink").css("width", "25%");
-$(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "25%");
-$(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%");
-$(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
-});
-    }, 110);
-} else
-////////////////////////////////////////
-////////////////////////////////////////
-// this works for responsive col 1 & 2 & 3 & 4 & 5 only
-////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
-    setTimeout(function(){
-$("table.table_case_1_a thead tr th.control").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.control").css("width", "44px");
-});
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "20%");
-$(this).find("td.column_1_case_1_a").css("width", "20%");
-$(this).find("td.column_2_case_1_a").css("width", "20%");
-$(this).find("td.column_3_case_1_a").css("width", "20%");
-$(this).find("td.column_4_case_1_a").css("width", "20%");
-});
-    }, 110);
-  } else
-  ////////////////////////////////////////
-  ////////////////////////////////////////
-  // this works for responsive col 1 & 2 & 3 & 4 & 5 & 6 only
-  ////////////////////////////////////////
-  if(($('table.table_case_1_a thead tr th:eq(6)').css('display') !== 'none')) {
-      setTimeout(function(){
-  $("table.table_case_1_a thead tr th.control").css("width", "44px");
-  $("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
-  $("table.table_case_1_a tbody tr").each(function() {
-  $(this).find("td.control").css("width", "44px");
-  });
-  $("table.table_case_1_a tbody tr").each(function() {
-  $(this).find("td.column_0_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_1_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_2_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_3_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_4_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_5_case_1_a").css("width", "16.66%");
-  });
-      }, 110);
-  }
-table_case_1_a.draw();
-    }, 110);
-////////////////////////////////////////
-// END resize columns according to what fits or not
-//////////////////////////////////
-//// BEGIN again adjust columns on resize
-$(window).on("resize",function(e){
-////////////////////////////////////////
-    setTimeout(function(){
-// this works for responsive col 1 only
-////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none' && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
-    setTimeout(function(){
-$("table.table_case_1_a thead tr th.control").css("color", "yellow").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", "100%");
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.control").css("color", "yellow").css("width", "44px");
-});
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("width", "100%");
 });
     }, 110);
@@ -2382,15 +2108,15 @@ $(this).find("td.column_1_case_1_a").css("width", "100%");
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none' && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "orange").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "orange").css("width", "50%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "orange").css("width", "50%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "orange").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
@@ -2400,16 +2126,16 @@ $(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none' && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "33.33%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "33.33%");
 $("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "33.33%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "hotpink").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
@@ -2420,17 +2146,17 @@ $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 & 4 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none' && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(4)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "hotpink").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
@@ -2442,7 +2168,7 @@ $(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%")
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 & 4 & 5 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(6)').css('display') !== 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
@@ -2450,10 +2176,120 @@ $("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
 $("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
 $("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
 $("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+  $(this).find("td.column_0_case_1_a").css("width", "16.66%");
+  $(this).find("td.column_1_case_1_a").css("width", "16.66%");
+$(this).find("td.column_2_case_1_a").css("width", "16.66%");
+$(this).find("td.column_3_case_1_a").css("width", "16.66%");
+$(this).find("td.column_4_case_1_a").css("width", "16.66%");
+$(this).find("td.column_5_case_1_a").css("width", "16.66%");
+});
+    }, 110);
+}
+table_case_1_a.draw();
+    }, 110);
+////////////////////////////////////////
+// END resize columns according to what fits or not
+//////////////////////////////////
+//// BEGIN again adjust columns on resize
+$(window).on("resize",function(e){
+////////////////////////////////////////
+    setTimeout(function(){
+// this works for responsive col 1 only
+////////////////////////////////////////
+if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
+    setTimeout(function(){
+$("table.table_case_1_a thead tr th.control").css("color", "yellow").css("width", "44px");
+$("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", "100%");
+$("#table_case_1_a tbody tr").each(function() {
+$(this).find("td.control").css("color", "yellow").css("width", "44px");
+});
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+$(this).find("td.column_1_case_1_a").css("width", "100%");
+});
+    }, 110);
+} else
+////////////////////////////////////////
+////////////////////////////////////////
+// this works for responsive col 1 & 2 only
+////////////////////////////////////////
+if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
+    setTimeout(function(){
+$("table.table_case_1_a thead tr th.control").css("color", "orange").css("width", "44px");
+$("table.table_case_1_a thead tr th:eq(1)").css("color", "orange").css("width", "50%");
+$("table.table_case_1_a thead tr th:eq(2)").css("color", "orange").css("width", "50%");
+$("#table_case_1_a tbody tr").each(function() {
+$(this).find("td.control").css("color", "orange").css("width", "44px");
+});
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+$(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
+$(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
+});
+    }, 110);
+} else
+////////////////////////////////////////
+////////////////////////////////////////
+// this works for responsive col 1 & 2 & 3 only
+////////////////////////////////////////
+if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
+    setTimeout(function(){
+$("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
+$("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "33.33%");
+$("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "33.33%");
+$("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "33.33%");
+$("#table_case_1_a tbody tr").each(function() {
+$(this).find("td.control").css("color", "hotpink").css("width", "44px");
+});
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+$(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33%");
+$(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
+$(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
+});
+    }, 110);
+} else
+////////////////////////////////////////
+////////////////////////////////////////
+// this works for responsive col 1 & 2 & 3 & 4 only
+////////////////////////////////////////
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
+    setTimeout(function(){
+$("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
+$("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "25%");
+$("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "25%");
+$("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "25%");
+$("table.table_case_1_a thead tr th:eq(4)").css("color", "hotpink").css("width", "25%");
+$("#table_case_1_a tbody tr").each(function() {
+$(this).find("td.control").css("color", "hotpink").css("width", "44px");
+});
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+$(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "25%");
+$(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%");
+$(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
+$(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
+});
+    }, 110);
+} else
+////////////////////////////////////////
+////////////////////////////////////////
+// this works for responsive col 1 & 2 & 3 & 4 & 5 only
+////////////////////////////////////////
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
+    setTimeout(function(){
+$("table.table_case_1_a thead tr th.control").css("width", "44px");
+$("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
+$("#table_case_1_a tbody tr").each(function() {
+$(this).find("td.control").css("width", "44px");
+});
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
   $(this).find("td.column_0_case_1_a").css("width", "16.66%");
   $(this).find("td.column_1_case_1_a").css("width", "16.66%");
 $(this).find("td.column_2_case_1_a").css("width", "16.66%");
@@ -2480,15 +2316,15 @@ $("#table_case_1_a_filter label input").css("background", "#333333");
     setTimeout(function(){
 // this works for responsive col 1 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(2)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "yellow").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "yellow").css("width", "100%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "yellow").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "100%");
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
+$(this).find("td.column_1_case_1_a").css("width", "100%");
 });
     }, 110);
 } else
@@ -2496,17 +2332,17 @@ $(this).find("td.column_0_case_1_a").css("width", "100%");
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(3)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "orange").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "orange").css("width", "50%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "orange").css("width", "50%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "orange").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "orange").css("width", "50%");
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
+$(this).find("td.column_2_case_1_a").css("color", "orange").css("width", "50%");
 });
     }, 110);
 } else
@@ -2514,19 +2350,19 @@ $(this).find("td.column_1_case_1_a").css("color", "orange").css("width", "50%");
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(4)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "33.33%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "33.33%");
 $("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "33.33%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "hotpink").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "hotpink").css("width", "33.33%");
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "33.33%");
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33%");
+$(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "33.33%");
 });
     }, 110);
 } else
@@ -2534,21 +2370,21 @@ $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "33.33
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 & 4 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none') && ($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') == 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("color", "hotpink").css("width", "44px");
 $("table.table_case_1_a thead tr th:eq(1)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(2)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(3)").css("color", "hotpink").css("width", "25%");
 $("table.table_case_1_a thead tr th:eq(4)").css("color", "hotpink").css("width", "25%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("color", "hotpink").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("color", "hotpink").css("width", "25%");
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
 $(this).find("td.column_1_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_2_case_1_a").css("color", "hotpink").css("width", "25%");
 $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%");
+$(this).find("td.column_4_case_1_a").css("color", "hotpink").css("width", "25%");
 });
     }, 110);
 } else
@@ -2556,52 +2392,28 @@ $(this).find("td.column_3_case_1_a").css("color", "hotpink").css("width", "25%")
 ////////////////////////////////////////
 // this works for responsive col 1 & 2 & 3 & 4 & 5 only
 ////////////////////////////////////////
-if(($('table.table_case_1_a thead tr th:eq(6)').css('display') == 'none')) {
+if(($('table.table_case_1_a thead tr th:eq(5)').css('display') !== 'none')) {
     setTimeout(function(){
 $("table.table_case_1_a thead tr th.control").css("width", "44px");
-$("table.table_case_1_a thead tr th:eq(1)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(2)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(3)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(4)").css("width", "20%");
-$("table.table_case_1_a thead tr th:eq(5)").css("width", "20%");
-$("table.table_case_1_a tbody tr").each(function() {
+$("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
+$("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
+$("#table_case_1_a tbody tr").each(function() {
 $(this).find("td.control").css("width", "44px");
 });
-$("table.table_case_1_a tbody tr").each(function() {
-$(this).find("td.column_0_case_1_a").css("width", "20%");
-$(this).find("td.column_1_case_1_a").css("width", "20%");
-$(this).find("td.column_2_case_1_a").css("width", "20%");
-$(this).find("td.column_3_case_1_a").css("width", "20%");
-$(this).find("td.column_4_case_1_a").css("width", "20%");
-});
-    }, 110);
-  } else
-  ////////////////////////////////////////
-  ////////////////////////////////////////
-  // this works for responsive col 1 & 2 & 3 & 4 & 5 & 6 only
-  ////////////////////////////////////////
-  if(($('table.table_case_1_a thead tr th:eq(6)').css('display') !== 'none')) {
-      setTimeout(function(){
-  $("table.table_case_1_a thead tr th.control").css("width", "44px");
-  $("table.table_case_1_a thead tr th:eq(1)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(2)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(3)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(4)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(5)").css("width", "16.66%");
-  $("table.table_case_1_a thead tr th:eq(6)").css("width", "16.66%");
-  $("table.table_case_1_a tbody tr").each(function() {
-  $(this).find("td.control").css("width", "44px");
-  });
-  $("table.table_case_1_a tbody tr").each(function() {
+$("#table_case_1_a tbody#tbody_case_1_a tr").each(function() {
   $(this).find("td.column_0_case_1_a").css("width", "16.66%");
   $(this).find("td.column_1_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_2_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_3_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_4_case_1_a").css("width", "16.66%");
-  $(this).find("td.column_5_case_1_a").css("width", "16.66%");
-  });
-      }, 110);
-  }
+$(this).find("td.column_2_case_1_a").css("width", "16.66%");
+$(this).find("td.column_3_case_1_a").css("width", "16.66%");
+$(this).find("td.column_4_case_1_a").css("width", "16.66%");
+$(this).find("td.column_5_case_1_a").css("width", "16.66%");
+});
+    }, 110);
+}
 table_case_1_a.draw();
     }, 110);
 ////////////////////////////////////////
