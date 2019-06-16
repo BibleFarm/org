@@ -4,4 +4,4 @@
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     Referrer-Policy = "no-referrer"
-Access-Control-Allow-Origin = "null"
+Access-Control-Allow-Origin = *
