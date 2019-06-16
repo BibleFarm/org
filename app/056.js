@@ -8314,7 +8314,7 @@ $("#guided_tour_after_name_change").on("click", function(e) {
 });
 // handle I_dont_have_a_sharing_code
 $("#I_dont_have_a_sharing_code").on("click", function(e) {
-&(".show_pure_chat").trigger("click");
+$(".show_pure_chat").trigger("click");
 });
 
 // activate_sharing_code
