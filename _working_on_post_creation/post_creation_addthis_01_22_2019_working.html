@@ -517,13 +517,13 @@ $(document).ready(function() {
   ///////////////////////////////////////////////////
 
 var timer1,
-  clock = 10;
+  clock = 1;
 $(startup);
 function startup() {
   $(start).trigger({ type: "click", which: 1 });
 }
 function start() {
-  clock = 10;
+  clock = 1;
   $(".countdown_loading_addthis_options").html("" + clock + "");
   timer1 = setInterval(countdown, 1000);
   $("#btnstart").prop("disabled", true);
