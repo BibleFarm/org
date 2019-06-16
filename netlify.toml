@@ -1,4 +1,8 @@
 [[headers]]
   for = "/*"
   [headers.values]
-Access-Control-Allow-Origin = "https://test.biblefarm.org"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "no-referrer"
+    X-Content-Type-Options = "nosniff"
+Access-Control-Allow-Origin = "https://www.biblefarm.org"
