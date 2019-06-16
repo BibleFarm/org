@@ -8291,6 +8291,8 @@ $("#app_edit_mode_off").trigger("click");
       $("#admin").hide("slow", "linear");
       $("#continue_as_a_visitor_admin").show("slow", "linear");
 });
+/////////////////////////////////////////////////////////////////
+/* BEGIN no more need for app edit mode
 // handle app_edit_mode on
 $("#app_edit_mode_on").on("click", function(e) {
       $("#config_cloning_instructions_wrapper").hide("slow", "linear");
@@ -8301,14 +8303,22 @@ $("#app_edit_mode_off").on("click", function(e) {
       $("#config_name_change_wrapper").hide("slow", "linear");
       $("#config_cloning_instructions_wrapper").show("slow", "linear");
 });
+ END no more need for app edit mode */
+ /////////////////////////////////////////////////////////////////
+
 // handle guided_tour_after_name_change
 $("#guided_tour_after_name_change").on("click", function(e) {
 // open help
 // open guided tour
 // start guided tour
 });
-// exit_menu_after_name_change
-$("#exit_menu_after_name_change").on("click", function(e) {
+// handle I_dont_have_a_sharing_code
+$("#I_dont_have_a_sharing_code").on("click", function(e) {
+&(".show_pure_chat").trigger("click");
+});
+
+// activate_sharing_code
+$("#activate_sharing_code").on("click", function(e) {
 $("#nav_top").find(".top_menu").trigger("click");
 });
 
