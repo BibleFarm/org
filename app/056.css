@@ -6759,7 +6759,7 @@ display: inline-block;
   z-index: 101;
   position: absolute;
   display: none;
-  width: 100%;
+  width: 320px;
   background: black;
 }
 .iframed_sharing_page {
@@ -6769,7 +6769,7 @@ display: inline-block;
 .below_iframe_to_exit {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 320px;
   height: 52px;
   line-height: 52px;
   text-align: center;
@@ -6777,5 +6777,4 @@ display: inline-block;
   font-size: 20px;
   z-index: 101;
   display: none;
-
 }

@@ -8856,27 +8856,6 @@ $(".wrap_sponsor_ads_app_only").html("<div class='sponsor_ads'><div class='spons
 
 $("body").on("click", "#tE_ajax_chapters tbody tr td span", function(e) {
 
-    $(".wrap_edit_background_chooser").show();
-    $(".wrap_image_sharing").show();
-    $(".wrap_done_editing_redirect_to_next").show();
-    $(".app_bg_color_picker_go_bottom").show();
-// close modal on cancel
-    $(".cancel_post_sharing_close_modal").on('click', function(e) {
-        $(".wrap_sharing_modal_browsing_mode").hide();
-    });
-// close modal on click anywhere outside
-$(".sharing_modal_container_browsing_mode").click(function(e){
-    // Check if click was triggered on or within #menu_content
-    if( $(e.target).closest(".edit_background_chooser, .post_color_change_by_user, .done_editing_redirect_to_next").length > 0 ) {
-        return false;
-    }
-    // Otherwise trigger your click function
-  $(".cancel_post_sharing_close_modal").trigger({
-        type: 'click',
-        which: 1
-      });
-});
-
 // BEGIN if user not logged in
 if ($.trim($("#edited_app_name").text()) == "Your Name Goes Here") {
 
@@ -8918,8 +8897,35 @@ $("#scrollTo_div_for_top_menu_items").scrollTo("#scrollTo_top_menu_items_admin_l
 }
 // END if user not logged in
 else {
-  $("#done_editing_redirect_to_next_guest").hide();
-  $("#done_editing_redirect_to_next_team").show();
+  $(".wrap_sharing_modal_browsing_mode").show();
+  $(".sharing_modal_container_browsing_mode").empty();
+  $(".sharing_modal_container_browsing_mode").append('<div class="wrap_ajaxed_sharing_page"</div><div class="below_iframe_to_exit bf_links">done sharing</div>');
+  $(".wrap_ajaxed_sharing_page").empty();
+  $(".wrap_ajaxed_sharing_page").append('<iframe class="iframed_sharing_page" src="https://test.biblefarm.org/posts/esther-8-7"></iframe>');
+  $(".wrap_ajaxed_sharing_page").show();
+  $("body").append('<div class="below_iframe_to_exit bf_links">done sharing</div>');
+  $(".below_iframe_to_exit").show();
+  // close modal on cancel
+  $('.below_iframe_to_exit').on('click', function(e) {
+  $(".wrap_sharing_modal_browsing_mode").hide();
+  $(".below_iframe_to_exit").hide();
+  $(".wrap_ajaxed_sharing_page").empty();
+  });
+  // close modal on click anywhere outside
+  $(".sharing_modal_container_browsing_mode").click(function(e){
+      // Check if click was triggered on or within #menu_content
+      if( $(e.target).closest(".wrap_ajaxed_sharing_page").length > 0 ) {
+          return false;
+      }
+      // Otherwise trigger your click function
+    $(".below_iframe_to_exit").trigger({
+          type: 'click',
+          which: 1
+        });
+  });
+
+
+
 }
 
 
