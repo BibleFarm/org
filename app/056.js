@@ -8918,7 +8918,8 @@ console.log("complete_url_to_share_from_browsing_mode: " + complete_url_to_share
 
 // store the book-chapter-verse we're wanting to share
 // $("#book_chapter_verse_we_want_to_share").text(book_to_share + "-" + chapter_to_share + "-" + verse_to_share);
-
+// disabled the iframe because pinterest won't work
+/*
   $(".wrap_sharing_modal_browsing_mode").show();
   $(".sharing_modal_container_browsing_mode").empty();
   $(".sharing_modal_container_browsing_mode").append('<div class="wrap_ajaxed_sharing_page"</div><div class="below_iframe_to_exit bf_links">done sharing</div>');
@@ -8945,6 +8946,9 @@ console.log("complete_url_to_share_from_browsing_mode: " + complete_url_to_share
           which: 1
         });
   });
+*/
+// so we're opening a new tab like this
+  window.open(complete_url_to_share_from_browsing_mode, "_blank");
 }
 
 
