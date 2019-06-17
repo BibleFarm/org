@@ -8318,10 +8318,10 @@ $(".show_pure_chat").trigger("click");
 });
 
 // activate_sharing_code
-$("#activate_sharing_code").on("click", function(e) {
-$("#nav_top").find(".top_menu").trigger("click");
+$("#activate_sharing_code").on('click', function() {
+sharing_code = $("#config_name_change").val();
+console.log(sharing_code);
 });
-
 
 
 
@@ -8892,11 +8892,38 @@ $("#scrollTo_div_for_top_menu_items").scrollTo("#scrollTo_top_menu_items_admin_l
 }
 // END if user not logged in
 else {
+// BEGIN if user is logged in
+var sharing_code = $("#config_name_change").val();
+console.log("sharing_code " + sharing_code);
+var book_to_share = $(".wrap").find(".book_is_selected").find(".menu_book_reg").text().replace(/\ /g,"-");
+console.log("book_to_share " + book_to_share);
+
+var chapter_to_share = $(".wrap").find(".chapter_is_selected").text();
+console.log("chapter_to_share " + chapter_to_share);
+
+var verse_to_share = $(this).parent().siblings().eq( 0 )
+    .clone()    //clone the element
+    .children() //select all the children
+    .remove()   //remove all the children
+    .end()  //again go back to selected element
+.text();
+console.log("verse_to_share " + verse_to_share);
+
+var complete_url_to_share_from_browsing_mode = "https://test.biblefarm.org/posts/" + book_to_share + "-" + chapter_to_share + "-" + verse_to_share + ".html";
+console.log("complete_url_to_share_from_browsing_mode: " + complete_url_to_share_from_browsing_mode);
+
+// $("#from_filter_mode_url_we_are_going_to").text("");
+// $("#from_browsing_mode_url_we_are_going_to").text("");
+//     $("#from_browsing_mode_url_we_are_going_to").text(complete_url_to_share_from_browsing_mode);
+
+// store the book-chapter-verse we're wanting to share
+// $("#book_chapter_verse_we_want_to_share").text(book_to_share + "-" + chapter_to_share + "-" + verse_to_share);
+
   $(".wrap_sharing_modal_browsing_mode").show();
   $(".sharing_modal_container_browsing_mode").empty();
   $(".sharing_modal_container_browsing_mode").append('<div class="wrap_ajaxed_sharing_page"</div><div class="below_iframe_to_exit bf_links">done sharing</div>');
   $(".wrap_ajaxed_sharing_page").empty();
-  $(".wrap_ajaxed_sharing_page").append('<iframe class="iframed_sharing_page" src="https://test.biblefarm.org/posts/esther-8-7"></iframe>');
+  $(".wrap_ajaxed_sharing_page").append('<iframe class="iframed_sharing_page" src="' + complete_url_to_share_from_browsing_mode'"></iframe>');
   $(".wrap_ajaxed_sharing_page").show();
   $("body").append('<div class="below_iframe_to_exit bf_links">done sharing</div>');
   $(".below_iframe_to_exit").show();
