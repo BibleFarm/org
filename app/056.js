@@ -8485,6 +8485,7 @@ var lastAudio = $("#u_last_audio").text();
   //////////////////////////////////////////////////
   ////// BEGIN sharing verses from filter mode & browsing mode ////
   //////////////////////////////////////////////////
+  /*
   $(document).ready(function() {
 
 
@@ -8543,8 +8544,9 @@ var lastAudio = $("#u_last_audio").text();
   /////////////////////////////////////////
   /// END popup a modal asking to share this verse from filter mode //////////
   /////////////////////////////////////////
-*/
+
   // from browsing mode // This grabs the verse to share, creates the URL & puts it in #from_browsing_mode_url_we_are_going_to
+
 $("body").on("click", "#tE_ajax_chapters tbody tr td span", function(e) {
 
 var book_to_share = $(".wrap").find(".book_is_selected").find(".menu_book_reg").text().replace(/\ /g,"-");
@@ -8698,7 +8700,7 @@ console.log(" // - redirected to " + link_to_current_verse_to_share);
 /////////////////////////////////////////
 
   });
-
+*/
   //////////////////////////////////////////////////
   ////// END sharing verses from filter mode & browsing mode ////
   //////////////////////////////////////////////////
@@ -8858,12 +8860,6 @@ $("body").on("click", "#tE_ajax_chapters tbody tr td span", function(e) {
 
 // BEGIN if user not logged in
 if ($.trim($("#edited_app_name").text()) == "Your Name Goes Here") {
-
-$("#done_editing_redirect_to_next_guest").show();
-$("#done_editing_redirect_to_next_team").hide();
-
-$("#please_login, .please_login").on('click', function(e) {
-$(".wrap_sharing_modal_browsing_mode").hide();
 // check if we need to open the menu
 if (!$('.wrap_top_menu').hasClass('wrap_top_menu_active')){
 setTimeout(function() {
@@ -8892,7 +8888,6 @@ setTimeout(function() {
 $("#scrollTo_div_for_top_menu_items").scrollTo("#scrollTo_top_menu_items_admin_landing", 1000);
 }, 1000);
 }
-});
 
 }
 // END if user not logged in
@@ -8923,9 +8918,6 @@ else {
           which: 1
         });
   });
-
-
-
 }
 
 
