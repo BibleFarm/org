@@ -8923,7 +8923,7 @@ console.log("complete_url_to_share_from_browsing_mode: " + complete_url_to_share
   $(".sharing_modal_container_browsing_mode").empty();
   $(".sharing_modal_container_browsing_mode").append('<div class="wrap_ajaxed_sharing_page"</div><div class="below_iframe_to_exit bf_links">done sharing</div>');
   $(".wrap_ajaxed_sharing_page").empty();
-  $(".wrap_ajaxed_sharing_page").append('<iframe class="iframed_sharing_page" src="' + complete_url_to_share_from_browsing_mode'"></iframe>');
+  $(".wrap_ajaxed_sharing_page").append('<iframe class="iframed_sharing_page" src="' + complete_url_to_share_from_browsing_mode + '"></iframe>');
   $(".wrap_ajaxed_sharing_page").show();
   $("body").append('<div class="below_iframe_to_exit bf_links">done sharing</div>');
   $(".below_iframe_to_exit").show();
