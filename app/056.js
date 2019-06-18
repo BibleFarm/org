@@ -7192,12 +7192,12 @@ $(".wrap").find(".wrap_top_menu").hide().removeClass("wrap_top_menu_active");
   // BEGIN editing app name
   ////////////////////////////////////////////////////
   // name change on the top
-  var inputBox_config_name_change = document.getElementById('config_name_change');
-  inputBox_config_name_change.onkeyup = function() {
-      document.getElementById('edited_app_name').innerHTML = inputBox_config_name_change.value;
+//  var inputBox_config_name_change = document.getElementById('config_name_change');
+//  inputBox_config_name_change.onkeyup = function() {
+//      document.getElementById('edited_app_name').innerHTML = inputBox_config_name_change.value;
   // now update u_admin_name
-      document.getElementById('u_admin_name').innerHTML = inputBox_config_name_change.value;
-    }
+//      document.getElementById('u_admin_name').innerHTML = inputBox_config_name_change.value;
+//    }
 
 
   ////////////////////////////////////////////////////
@@ -8321,6 +8321,8 @@ $(".show_pure_chat").trigger("click");
 $("#activate_sharing_code").on('click', function() {
 sharing_code = $("#config_name_change").val();
 console.log(sharing_code);
+$("#u_last_sharing_code").text(sharing_code);
+console.log("u_last_sharing_code is now: " + sharing_code);
 });
 
 
@@ -9088,4 +9090,24 @@ $("#show_pure_chat, #PureChatWidget").click(function(event) {
 });
 ////////////////////////////////////////////////////
 // END PureChat on demand
+////////////////////////////////////////////////////
+
+
+
+
+
+
+////////////////////////////////////////////////////
+// BEGIN firebase store user's preferences
+////////////////////////////////////////////////////
+this.auth = firebase.auth();
+var ref_a_user_private = firebase.database().ref().child("a_user_private");
+var user = firebase.auth().currentUser;
+
+
+
+
+
+////////////////////////////////////////////////////
+// END firebase store user's preferences
 ////////////////////////////////////////////////////

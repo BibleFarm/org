@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <title>crud.html</title><!-- jquery -->
+
+  <script src="https://www.biblefarm.org/dependencies/offline_dependency_2017-11-16_jquery-3.2.1.min.js" type="text/javascript">
+  </script>
+
+  <!-- BEGIN firebase auth app -->
+
+  <script src="https://www.biblefarm.org/dependencies/offline_dependency_2017-11-16_firebase-4.6.2.js" type="text/javascript">
+  </script>
+
+  <script src="https://www.biblefarm.org/dependencies/sample-config.js">
+  </script>
+
+  <script src="https://www.biblefarm.org/dependencies/common.js">
+  </script>
+
+  <link href="https://www.biblefarm.org/dependencies/firebase_app_style.css" media="screen" rel="stylesheet" type="text/css">
+
+  <script src="https://www.biblefarm.org/dependencies/offline_dependency_2017-11-16_firebaseui-2.4.1.js">
+  </script>
+
+  <link href="https://www.biblefarm.org/dependencies/offline_dependency_2017-11-16_firebaseui-2.4.1.css" rel="stylesheet" type="text/css">
+  <!-- END firebase auth app -->
+
+
+<style>
+  body, h1, h2 {
+   margin:0;
+   padding:0;
+  }
+  body {
+   background:#039be5;
+   font-family: Arial, sans-serif;
+  }
+  h1 {
+   padding:10px;
+   background:#ffcc00;
+  }
+
+  /*---------------------------*/
+  /* Read Users */
+  /*---------------------------*/
+  #user-list {
+   margin:0;
+   padding:0;
+   width:180px;
+   float:left;
+   margin:10px;
+   border:1px solid #4fc3fc;
+  }
+
+  #user-list h2 {
+   padding:10px;
+   margin:0;
+   color:white;
+  }
+
+  #user-list li {
+   padding:5px 10px;
+   border-top:1px solid #4fc3fc;
+   cursor: pointer;
+   color:white;
+   font-style: italic;
+   list-style: none
+  }
+
+  #user-list li:hover {
+   background: #4fc3fc;
+  }
+
+  #user-detail {
+   float:left;
+   width:200px;
+   margin:10px;
+   margin-left:0;
+   padding:10px;
+   border:1px solid #4fc3fc;
+   color:white;
+  }
+
+
+
+  /* Add User Module */
+  #add-user-module {
+      width:30px;
+      margin-bottom: 1px;
+      margin-left: 10px;
+      margin-top:10px;
+  }
+
+  #add-user-module #open-add-user-form-btn {
+      background: #54bb7d;
+      font-size: 1.5em;
+      color: white;
+      padding-bottom: 5px;
+  }
+
+  #add-user-module form {
+      position: absolute;
+      padding: 10px;
+      width: 150px;
+      background-color: #e1e1e1;
+      border: 1px solid #999;
+      display: none;
+  }
+
+  #add-user-module form input {
+      width: 97%;
+      margin: 2px 0;
+  }
+
+  #add-user-module form button {
+      background: #54bb7d;
+      font-size: 1em;
+      padding: 0px 10px;
+      color: white;
+      margin-top: 10px;
+  }
+
+
+  #add-user-module:hover form {
+      display: block;
+  }
+
+
+  /*Edit*/
+  #edit-user-module {
+      display: none;
+      position: absolute;
+      background-color: #e1e1e1;
+      border: 1px solid #999;
+      top:149px;
+      left: 160px;
+      padding: 10px;
+      width: 150px;
+  }
+
+  #user-list li:hover~#edit-user-module {
+      display: none;
+  }
+
+
+  #edit-user-module form button {
+      background: #54bb7d;
+      font-size: 1em;
+      padding: 0px 10px;
+      color: white;
+      margin-top: 10px;
+  }
+
+</style>
+
+</head>
+<body>
+
+
+
+
+
+  <h1>Firebase CRUD with Javascript
+      <br/><small><em>User App</em></small>
+  </h1>
+
+
+  <!-- add user module -->
+  <section id="add-user-module" >
+      <button id="open-add-user-form-btn">+</button>
+      <form>
+          <h2>Add User</h2>
+          name:<br>
+          <input type='text' data-key='name' class='user-input'><br>
+          age:<br>
+          <input type='text' data-key='age' class='user-input'><br>
+          email:<br>
+          <input type='text' data-key='email' class='user-input'><br>
+          <button type='button' id="add-user-btn">add user</button>
+      </form>
+  </section>
+
+  <!-- edit user module -->
+  <section id="edit-user-module">
+      <form>
+          <h2>Edit user</h2>
+          <input type="hidden" class="edit-userid">
+          name:<br>
+          <input type='text' data-key='name' class='edit-user-input'><br>
+          age:<br>
+          <input type='text' data-key='age' class='edit-user-input'><br>
+          email:<br>
+          <input type='text' data-key='email' class='edit-user-input'><br>
+          <button type='button' id="edit-user-btn">save</button>
+      </form>
+  </section>
+
+
+  <!-- show user module -->
+  <ul id="user-list"></ul>
+  <div id="user-detail"></div>
+
+
+
+
+
+
+
+
+
+
+        <!-- BEGIN firebase login/out interface -->
+        <div id="container">
+          <h3>FirebaseUI Demo</h3>
+          <div id="loading">
+            Loading...
+          </div>
+          <div class="hidden" id="loaded">
+            <div id="main">
+              <div class="hidden" id="user-signed-in">
+                <div id="user-info">
+                  <div id="photo-container"><img id="photo"></div>
+                  <div id="name"></div>
+                  <div id="email"></div>
+                  <div id="phone"></div>
+                  <div class="clearfix"></div>
+                </div><!-- BEGIN wrap_standard_multi_item -->
+                <div class="wrap_standard_multi_item">
+                  <!-- BEGIN standard_multi_item -->
+                  <div class="standard_multi_item">
+                    <!-- BEGIN standard_multi_item_left -->
+                    <div class="standard_multi_item_left link_hover_styling" id="sign-out">
+                      sign out
+                    </div><!-- END standard_multi_item_left -->
+                    <!-- BEGIN standard_multi_item_right -->
+                    <div class="standard_multi_item_right link_hover_styling" id="delete-account">
+                      delete account
+                    </div><!-- END standard_multi_item_right -->
+                  </div><!-- END standard_multi_item -->
+                </div><!-- END wrap_standard_multi_item -->
+              </div>
+              <div class="hidden" id="user-signed-out">
+                <h4>You are signed out.</h4>
+                <fieldset>
+                  <legend>Configuration</legend> reCAPTCHA mode for Phone Auth: <label for="recaptcha-normal"><input id="recaptcha-normal" name="recaptcha" type="radio" value="normal"> Normal</label> <label for="recaptcha-invisible"><input id="recaptcha-invisible" name="recaptcha" type="radio" value="invisible"> Invisible</label>
+                </fieldset>
+                <p><button id="sign-in-with-redirect">Sign In with Redirect</button> <button id="sign-in-with-popup">Sign In with Popup</button></p>
+                <div id="firebaseui-spa">
+                  <h5>Single Page Application mode:</h5>
+                  <div id="firebaseui-container"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- END firebase login/out interface -->
+  <script src="https://www.biblefarm.org/app/app.js">
+  </script>
+
+
+
+
+<script>
+  // !IMPORTANT: REPLACE WITH YOUR OWN CONFIG OBJECT BELOW
+
+
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyCLVyj7ZZKfcbMLmpcDT0Zws_07yPVJWRU",
+  authDomain: "main-b6d09.firebaseapp.com",
+  databaseURL: "https://main-b6d09.firebaseio.com",
+  storageBucket: "main-b6d09.appspot.com",
+};
+
+
+
+firebase.initializeApp(config);
+
+// Firebase Database Reference and the child
+const dbRef = firebase.database().ref();
+const usersRef = dbRef.child('users');
+
+
+	readUserData();
+
+
+// --------------------------
+// READ
+// --------------------------
+function readUserData() {
+
+	const userListUI = document.getElementById("user-list");
+
+	usersRef.on("value", snap => {
+
+		userListUI.innerHTML = ""
+
+		snap.forEach(childSnap => {
+
+			let key = childSnap.key,
+				value = childSnap.val()
+
+			let $li = document.createElement("li");
+
+			// edit icon
+			let editIconUI = document.createElement("span");
+			editIconUI.class = "edit-user";
+			editIconUI.innerHTML = " ✎";
+			editIconUI.setAttribute("userid", key);
+			editIconUI.addEventListener("click", editButtonClicked)
+
+			// delete icon
+			let deleteIconUI = document.createElement("span");
+			deleteIconUI.class = "delete-user";
+			deleteIconUI.innerHTML = " ☓";
+			deleteIconUI.setAttribute("userid", key);
+			deleteIconUI.addEventListener("click", deleteButtonClicked)
+
+			$li.innerHTML = value.name;
+			$li.append(editIconUI);
+			$li.append(deleteIconUI);
+
+			$li.setAttribute("user-key", key);
+			$li.addEventListener("click", userClicked)
+			userListUI.append($li);
+
+ 		});
+
+
+	})
+
+}
+
+
+
+function userClicked(e) {
+
+
+		var userID = e.target.getAttribute("user-key");
+
+		const userRef = dbRef.child('users/' + userID);
+		const userDetailUI = document.getElementById("user-detail");
+
+		userRef.on("value", snap => {
+
+			userDetailUI.innerHTML = ""
+
+			snap.forEach(childSnap => {
+				var $p = document.createElement("p");
+				$p.innerHTML = childSnap.key  + " - " +  childSnap.val();
+				userDetailUI.append($p);
+			})
+
+		});
+
+
+}
+
+
+
+
+
+// --------------------------
+// ADD
+// --------------------------
+
+const addUserBtnUI = document.getElementById("add-user-btn");
+addUserBtnUI.addEventListener("click", addUserBtnClicked)
+
+
+
+function addUserBtnClicked() {
+
+	const usersRef = dbRef.child('users');
+
+	const addUserInputsUI = document.getElementsByClassName("user-input");
+
+ 	// this object will hold the new user information
+    let newUser = {};
+
+    // loop through View to get the data for the model
+    for (let i = 0, len = addUserInputsUI.length; i < len; i++) {
+
+        let key = addUserInputsUI[i].getAttribute('data-key');
+        let value = addUserInputsUI[i].value;
+        newUser[key] = value;
+    }
+
+	usersRef.push(newUser)
+
+
+   console.log(myPro)
+
+
+
+}
+
+
+// --------------------------
+// DELETE
+// --------------------------
+function deleteButtonClicked(e) {
+
+		e.stopPropagation();
+
+		var userID = e.target.getAttribute("userid");
+
+		const userRef = dbRef.child('users/' + userID);
+
+		userRef.remove();
+
+}
+
+
+// --------------------------
+// EDIT
+// --------------------------
+function editButtonClicked(e) {
+
+	document.getElementById('edit-user-module').style.display = "block";
+
+	//set user id to the hidden input field
+	document.querySelector(".edit-userid").value = e.target.getAttribute("userid");
+
+	const userRef = dbRef.child('users/' + e.target.getAttribute("userid"));
+
+	// set data to the user field
+	const editUserInputsUI = document.querySelectorAll(".edit-user-input");
+
+
+	userRef.on("value", snap => {
+
+		for(var i = 0, len = editUserInputsUI.length; i < len; i++) {
+
+			var key = editUserInputsUI[i].getAttribute("data-key");
+					editUserInputsUI[i].value = snap.val()[key];
+		}
+
+	});
+
+
+
+
+	const saveBtn = document.querySelector("#edit-user-btn");
+	saveBtn.addEventListener("click", saveUserBtnClicked)
+}
+
+
+function saveUserBtnClicked(e) {
+
+	const userID = document.querySelector(".edit-userid").value;
+	const userRef = dbRef.child('users/' + userID);
+
+	var editedUserObject = {}
+
+	const editUserInputsUI = document.querySelectorAll(".edit-user-input");
+
+	editUserInputsUI.forEach(function(textField) {
+		let key = textField.getAttribute("data-key");
+		let value = textField.value;
+  		editedUserObject[textField.getAttribute("data-key")] = textField.value
+	});
+
+
+
+	userRef.update(editedUserObject);
+
+	document.getElementById('edit-user-module').style.display = "none";
+
+
+}
+
+
+  </script>
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+<!--
+
+
+STILL NN
+
+
+
+
+
+
+
+
+
+
+
+
+-->
