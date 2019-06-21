@@ -8755,7 +8755,7 @@ $(".wrap_modal_still_working_on_this").hide();
   $(".select_views").one('click', function(e) {
     // inject youtube only when requested
     console.log("youtube is being requested");
-    $(".wrap_ref_body_views").html('<div class="test_youtube_sidebar"><iframe width="100%" height="268" frameborder="0" allowfullscreen src="https://www.youtube.com/embed?listType=playlist&list=PLyXXMRxR3UTksuaybpbHKLoV6XtDcAvOw"></iframe></div>');
+    $(".wrap_ref_body_views").html('<div class="test_youtube_sidebar"><iframe width="100%" height="268" frameborder="0" allowfullscreen src="https://www.youtube.com/embed?listType=playlist&list=PL-SXzhnj1OgLUY7MqL-RW1FrJSXTpXltA"></iframe></div>');
   $('.test_youtube_sidebar').perfectScrollbar({
     scrollXMarginOffset: 0,
     suppressScrollX: true
@@ -9101,46 +9101,22 @@ $("#show_pure_chat, #PureChatWidget").click(function(event) {
 // BEGIN firebase store user's preferences
 ////////////////////////////////////////////////////
 $(document).ready(function() {
-  // cleanup prior user's stuff
+// cleanup prior user's stuff
   $("#u_last_sharing_code").val("").attr("value", "");
   $("#s_last_sharing_code").val("").attr("value", "");
+// cleanup prior user's stuff after logut
 $("#sign-out").on("click", function(e) {
     $("#u_last_sharing_code").val("").attr("value", "");
     $("#s_last_sharing_code").val("").attr("value", "");
 });
-  // observe
+// observe
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-      // User is signed in.
-      // console.log(user.uid);
+// User is signed in.
+// console.log(user.uid);
       var thisUser = user.uid;
       var db = firebase.database().ref("bf_app_users");
-
-      // user makes a change
-      $("#browser_BackgroundColor").on("change", function(e) {
-        console.log($("#browser_BackgroundColor").val());
-        var browser_BackgroundColor = $("#browser_BackgroundColor").val();
-        db.child(thisUser).update({
-          browser_BackgroundColor: browser_BackgroundColor
-        });
-      });
-      // user makes a change
-      $("#browser_FontColor").on("change", function(e) {
-        console.log($("#browser_FontColor").val());
-        var browser_FontColor = $("#browser_FontColor").val();
-        db.child(thisUser).update({
-          browser_FontColor: browser_FontColor
-        });
-      });
-      // user makes a change
-      $("#browser_BoldorItalic").on("change", function(e) {
-        console.log($("#browser_BoldorItalic").val());
-        var browser_BoldorItalic = $("#browser_BoldorItalic").val();
-        db.child(thisUser).update({
-          browser_BoldorItalic: browser_BoldorItalic
-        });
-      });
-      // user makes a change
+// user makes a change
       $("#u_last_sharing_code").on("change", function(e) {
         console.log($("#u_last_sharing_code").val());
         var u_last_sharing_code = $("#u_last_sharing_code").val();
@@ -9148,26 +9124,7 @@ $("#sign-out").on("click", function(e) {
           u_last_sharing_code: u_last_sharing_code
         });
       });
-
-      // retrieve what's in the server
-      db
-        .child(thisUser)
-        .child("browser_BackgroundColor")
-        .on("value", function(snapshot) {
-          $("#server_BackgroundColor").val(snapshot.val());
-        });
-      db
-        .child(thisUser)
-        .child("browser_FontColor")
-        .on("value", function(snapshot) {
-          $("#server_FontColor").val(snapshot.val());
-        });
-        db
-          .child(thisUser)
-          .child("browser_BoldorItalic")
-          .on("value", function(snapshot) {
-            $("#server_BoldorItalic").val(snapshot.val());
-          });
+// retrieve what's in the server
           db
             .child(thisUser)
             .child("u_last_sharing_code")
@@ -9175,12 +9132,11 @@ $("#sign-out").on("click", function(e) {
               $("#s_last_sharing_code").val(snapshot.val());
               console.log("bringing in u_last_sharing_code");
             });
-            // apply user preferences stored in the server
-      // apply user preferences stored in the server
+// apply user preferences stored in the server
       var waitFor_s_last_sharing_code = setInterval(function() {
         if ($("#s_last_sharing_code").val().length > 0) {
           console.log("s_last_sharing_code is loaded in the input");
-          // clear the setInterval
+// clear the setInterval
           clearInterval(waitFor_s_last_sharing_code);
           var s_last_sharing_code = $(
             "#s_last_sharing_code"
@@ -9189,12 +9145,9 @@ $("#sign-out").on("click", function(e) {
         }
       }, 1000);
     } else {
-      // No user is signed in.
+// No user is signed in.
       $("#config_name_change").attr("value", "").val("").trigger("change");
       $("#s_last_sharing_code").attr("value", "").val("").trigger("change");
-      // clear the last guy
-      $("#z_u_last_pref_just_to_say_done_loading").attr("value", "").val("").trigger("change");
-      $("#z_s_last_pref_just_to_say_done_loading").attr("value", "").val("").trigger("change");
     }
   });
   ///////////////////////////////////////
@@ -9296,7 +9249,7 @@ $("#sign-out").on("click", function(e) {
   ///// END triggers to make changes /////////////////
   ///////////////////////////////////////
 
-  // end document ready
+// end document ready
 });
 // end document ready
 ////////////////////////////////////////////////////
