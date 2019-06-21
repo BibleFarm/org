@@ -5660,16 +5660,21 @@ background: black;
     }
 
 #user_saved_data {
-position: fixed;
-          display: none;
-top: 80px;
-left: 360px;
-color: yellow;
-background: black;
-font-size: 16px;
-z-index: 1000000;
+  position: absolute;
+  display: block;
+  top: 100px;
+  left: 0px;
+  color: yellow;
+  background: black;
+  font-size: 16px;
+  z-index: 3;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 320px;
 }
 .hotpink {color: hotpink;}
+#user_saved_data input {width:70px;}
 /********* END for testing purposes **********************/
 
 /*********** BEGIN we_are_loading_the_entire_bible *******************************/

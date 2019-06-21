@@ -8321,7 +8321,7 @@ $(".show_pure_chat").trigger("click");
 $("#activate_sharing_code").on('click', function() {
 sharing_code = $("#config_name_change").val();
 console.log(sharing_code);
-$("#u_last_sharing_code").text(sharing_code);
+$("#u_last_sharing_code").val(sharing_code).trigger("change");
 console.log("u_last_sharing_code is now: " + sharing_code);
 });
 
@@ -9100,14 +9100,205 @@ $("#show_pure_chat, #PureChatWidget").click(function(event) {
 ////////////////////////////////////////////////////
 // BEGIN firebase store user's preferences
 ////////////////////////////////////////////////////
-this.auth = firebase.auth();
-var ref_a_user_private = firebase.database().ref().child("a_user_private");
-var user = firebase.auth().currentUser;
+$(document).ready(function() {
+  // cleanup prior user's stuff
+  $("#u_last_sharing_code").val("").attr("value", "");
+  $("#s_last_sharing_code").val("").attr("value", "");
+$("#sign-out").on("click", function(e) {
+    $("#u_last_sharing_code").val("").attr("value", "");
+    $("#s_last_sharing_code").val("").attr("value", "");
+});
+  // observe
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      // User is signed in.
+      // console.log(user.uid);
+      var thisUser = user.uid;
+      var db = firebase.database().ref("bf_app_users");
 
+      // user makes a change
+      $("#browser_BackgroundColor").on("change", function(e) {
+        console.log($("#browser_BackgroundColor").val());
+        var browser_BackgroundColor = $("#browser_BackgroundColor").val();
+        db.child(thisUser).update({
+          browser_BackgroundColor: browser_BackgroundColor
+        });
+      });
+      // user makes a change
+      $("#browser_FontColor").on("change", function(e) {
+        console.log($("#browser_FontColor").val());
+        var browser_FontColor = $("#browser_FontColor").val();
+        db.child(thisUser).update({
+          browser_FontColor: browser_FontColor
+        });
+      });
+      // user makes a change
+      $("#browser_BoldorItalic").on("change", function(e) {
+        console.log($("#browser_BoldorItalic").val());
+        var browser_BoldorItalic = $("#browser_BoldorItalic").val();
+        db.child(thisUser).update({
+          browser_BoldorItalic: browser_BoldorItalic
+        });
+      });
+      // user makes a change
+      $("#u_last_sharing_code").on("change", function(e) {
+        console.log($("#u_last_sharing_code").val());
+        var u_last_sharing_code = $("#u_last_sharing_code").val();
+        db.child(thisUser).update({
+          u_last_sharing_code: u_last_sharing_code
+        });
+      });
 
+      // retrieve what's in the server
+      db
+        .child(thisUser)
+        .child("browser_BackgroundColor")
+        .on("value", function(snapshot) {
+          $("#server_BackgroundColor").val(snapshot.val());
+        });
+      db
+        .child(thisUser)
+        .child("browser_FontColor")
+        .on("value", function(snapshot) {
+          $("#server_FontColor").val(snapshot.val());
+        });
+        db
+          .child(thisUser)
+          .child("browser_BoldorItalic")
+          .on("value", function(snapshot) {
+            $("#server_BoldorItalic").val(snapshot.val());
+          });
+          db
+            .child(thisUser)
+            .child("u_last_sharing_code")
+            .on("value", function(snapshot) {
+              $("#s_last_sharing_code").val(snapshot.val());
+              console.log("bringing in u_last_sharing_code");
+            });
+            // apply user preferences stored in the server
+      // apply user preferences stored in the server
+      var waitFor_s_last_sharing_code = setInterval(function() {
+        if ($("#s_last_sharing_code").val().length > 0) {
+          console.log("s_last_sharing_code is loaded in the input");
+          // clear the setInterval
+          clearInterval(waitFor_s_last_sharing_code);
+          var s_last_sharing_code = $(
+            "#s_last_sharing_code"
+          ).val();
+          $("#config_name_change").val(s_last_sharing_code);
+        }
+      }, 1000);
+    } else {
+      // No user is signed in.
+      $("#config_name_change").attr("value", "").val("").trigger("change");
+      $("#s_last_sharing_code").attr("value", "").val("").trigger("change");
+      // clear the last guy
+      $("#z_u_last_pref_just_to_say_done_loading").attr("value", "").val("").trigger("change");
+      $("#z_s_last_pref_just_to_say_done_loading").attr("value", "").val("").trigger("change");
+    }
+  });
+  ///////////////////////////////////////
+  ///// BEGIN triggers to make changes /////////////////
+  ///////////////////////////////////////
+  $(".pink").on("click", function(e) {
+    $("body")
+      .removeClass("pink")
+      .removeClass("lightblue")
+      .removeClass("lightgreen");
+    $("body").addClass("pink");
+    $("#browser_BackgroundColor")
+      .attr("value", "pink")
+      .trigger("change");
+  });
+  $(".lightblue").on("click", function(e) {
+    $("body")
+      .removeClass("pink")
+      .removeClass("lightblue")
+      .removeClass("lightgreen");
+    $("body").addClass("lightblue");
+    $("#browser_BackgroundColor")
+      .attr("value", "lightblue")
+      .trigger("change");
+  });
+  $(".lightgreen").on("click", function(e) {
+    $("body")
+      .removeClass("pink")
+      .removeClass("lightblue")
+      .removeClass("lightgreen");
+    $("body").addClass("lightgreen");
+    $("#browser_BackgroundColor")
+      .attr("value", "lightgreen")
+      .trigger("change");
+  });
+  // Color
+  $(".red").on("click", function(e) {
+    $("body")
+      .removeClass("red")
+      .removeClass("blue")
+      .removeClass("green");
+    $("body").addClass("red");
+    $("#browser_FontColor")
+      .attr("value", "red")
+      .trigger("change");
+  });
+  $(".blue").on("click", function(e) {
+    $("body")
+      .removeClass("red")
+      .removeClass("blue")
+      .removeClass("green");
+    $("body").addClass("blue");
+    $("#browser_FontColor")
+      .attr("value", "blue")
+      .trigger("change");
+  });
+  $(".green").on("click", function(e) {
+    $("body")
+      .removeClass("red")
+      .removeClass("blue")
+      .removeClass("green");
+    $("body").addClass("green");
+    $("#browser_FontColor")
+      .attr("value", "green")
+      .trigger("change");
+  });
+  // Font
+  $(".normal").on("click", function(e) {
+    $("body")
+      .removeClass("normal")
+      .removeClass("italic")
+      .removeClass("bold");
+    $("body").addClass("normal");
+    $("#browser_BoldorItalic")
+      .attr("value", "normal")
+      .trigger("change");
+  });
+  $(".italic").on("click", function(e) {
+    $("body")
+      .removeClass("normal")
+      .removeClass("italic")
+      .removeClass("bold");
+    $("body").addClass("italic");
+    $("#browser_BoldorItalic")
+      .attr("value", "italic")
+      .trigger("change");
+  });
+  $(".bold").on("click", function(e) {
+    $("body")
+      .removeClass("normal")
+      .removeClass("italic")
+      .removeClass("bold");
+    $("body").addClass("bold");
+    $("#browser_BoldorItalic")
+      .attr("value", "bold")
+      .trigger("change");
+  });
+  ///////////////////////////////////////
+  ///// END triggers to make changes /////////////////
+  ///////////////////////////////////////
 
-
-
+  // end document ready
+});
+// end document ready
 ////////////////////////////////////////////////////
 // END firebase store user's preferences
 ////////////////////////////////////////////////////
