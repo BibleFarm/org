@@ -8313,6 +8313,19 @@ $("#guided_tour_after_name_change").on("click", function(e) {
 // open guided tour
 // start guided tour
 });
+// handle things when page loads (observer will take care of it if user doesn't have a sharing code in input)
+$("#setup_verse_sharing_all_set").show("slow");
+$("#setup_verse_sharing_welcome").hide();
+$("#I_dont_have_a_sharing_code").hide();
+$("#activate_sharing_code").hide();
+
+// handle keyup to update DOM, whether sharing code is already there or input is empty
+$("#config_name_change").on("keyup", function(e) {
+var config_name_change_has_keyedup = $(this).val();
+console.log(config_name_change_has_keyedup);
+$(this).attr("value", config_name_change_has_keyedup);
+console.log("config_name_change attr value is updated in DOM");
+});
 // handle I_dont_have_a_sharing_code
 $("#I_dont_have_a_sharing_code").on("click", function(e) {
 $(".show_pure_chat").trigger("click");
@@ -8321,6 +8334,11 @@ $(".show_pure_chat").trigger("click");
 // BEGIN activate_sharing_code
 $("#activate_sharing_code").on('click', function() {
   if ($("input#config_name_change").val() == '') {
+    console.log("sharing code is empty");
+    $("#setup_verse_sharing_welcome").show("slow");
+    $("#I_dont_have_a_sharing_code").show("slow");
+    $("#activate_sharing_code").show("slow");
+    $("#setup_verse_sharing_all_set").hide();
   console.log("blinking input");
     setTimeout(function() {
       $("#config_name_change").attr("style", "box-shadow: 0px 0px 10px red !important");
@@ -8348,6 +8366,11 @@ sharing_code = $("#config_name_change").val();
 console.log(sharing_code);
 $("#u_last_sharing_code").val(sharing_code).trigger("change");
 console.log("u_last_sharing_code is now: " + sharing_code);
+console.log("sharing code is filled");
+$("#setup_verse_sharing_all_set").show("slow");
+$("#setup_verse_sharing_welcome").hide();
+$("#I_dont_have_a_sharing_code").hide();
+$("#activate_sharing_code").hide();
 }
 });
 // END activate_sharing_code
