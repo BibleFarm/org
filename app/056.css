@@ -5495,6 +5495,7 @@ background: none !important;
     font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
 font-size: 20px;
 }
+#delete-account {display: none}
 /* END fix firebase login */
 /* BEGIN questions_answers */
 .wrap_questions_answers {
@@ -5661,7 +5662,7 @@ background: black;
 
 #user_saved_data {
   position: absolute;
-  display: block;
+  display: none;
   top: 100px;
   left: 0px;
   color: yellow;

@@ -5506,6 +5506,7 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       }
       */
       // bring in spanish text
+/*
       var data_spanish = "";
       $.ajax({
         ///////////////////////////////// change this for each page
@@ -5531,7 +5532,7 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
 
         }
       });
-
+*/
       // bring in english text
       var postData = "";
       $.ajax({
@@ -8317,13 +8318,39 @@ $("#I_dont_have_a_sharing_code").on("click", function(e) {
 $(".show_pure_chat").trigger("click");
 });
 
-// activate_sharing_code
+// BEGIN activate_sharing_code
 $("#activate_sharing_code").on('click', function() {
+  if ($("input#config_name_change").val() == '') {
+  console.log("blinking input");
+    setTimeout(function() {
+      $("#config_name_change").attr("style", "box-shadow: 0px 0px 10px red !important");
+    }, 500);
+    setTimeout(function() {
+      $("#config_name_change").attr("style", "box-shadow: 0px 0px 20px red !important");
+    }, 1000);
+    setTimeout(function() {
+      $("#config_name_change").attr("style", "box-shadow: 0px 0px 10px red !important");
+    }, 1500);
+    setTimeout(function() {
+      $("#config_name_change").attr("style", "box-shadow: 0px 0px 20px red !important");
+    }, 2000);
+    setTimeout(function() {
+      $("#config_name_change").attr("style", "box-shadow: 0px 0px 10px red !important");
+    }, 2500);
+    setTimeout(function() {
+      $("#config_name_change").attr("style", "box-shadow: 0px 0px 20px red !important");
+    }, 3000);
+    setTimeout(function() {
+      $("#config_name_change").attr("style", "box-shadow: 0px 0px 0px red !important");
+    }, 3500);
+} else {
 sharing_code = $("#config_name_change").val();
 console.log(sharing_code);
 $("#u_last_sharing_code").val(sharing_code).trigger("change");
 console.log("u_last_sharing_code is now: " + sharing_code);
+}
 });
+// END activate_sharing_code
 
 
 
@@ -8385,6 +8412,36 @@ if($('#admin').css('display') !== 'none')
   }; // end mutation observer
   //////////////////////////////////////////////////
   ////// END MutationObserver MutationObserverUserLoggedInOrNot ////
+  //////////////////////////////////////////////////
+  //////////////////////////////////////////////////
+  ////// BEGIN MutationObserver MutationObserverHasSharingCodeOrNot ////
+  //////////////////////////////////////////////////
+  // First create our observer and get our target element
+  var observer = new MutationObserver(MutationObserverHasSharingCodeOrNot),
+    elTarget = document.querySelector("input#config_name_change"),
+    objConfig = {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      characterData: true
+    };
+  // Then actually do some observing
+  observer.observe(elTarget, objConfig);
+  // Finally react when needed
+  function MutationObserverHasSharingCodeOrNot() {
+    console.log("TRIGGERED Mutation Observer MutationObserverHasSharingCodeOrNot");
+
+    if ($("input#config_name_change").val() == '') {
+    console.log("sharing code is empty");
+    $("#setup_verse_sharing_welcome").show("slow");
+    $("#I_dont_have_a_sharing_code").show("slow");
+    $("#activate_sharing_code").show("slow");
+    $("#setup_verse_sharing_all_set").hide();
+  }
+
+  }; // end mutation observer
+  //////////////////////////////////////////////////
+  ////// END MutationObserver MutationObserverHasSharingCodeOrNot ////
   //////////////////////////////////////////////////
 }); // end document ready
 
@@ -9028,6 +9085,15 @@ console.log("complete_url_to_share_from_browsing_mode: " + complete_url_to_share
 // BEGIN PureChat append it to the head
 $('.show_pure_chat').one('click', function(e) {
   $('<script>window.purechatApi={l:[],t:[],on:function(){this.l.push(arguments)}},function(){var e=!1,t=document.createElement("script");t.async=!0,t.type="text/javascript",t.src="https://app.purechat.com/VisitorWidget/WidgetScript",document.getElementsByTagName("HEAD").item(0).appendChild(t),t.onreadystatechange=t.onload=function(t){if(!(e||this.readyState&&"loaded"!=this.readyState&&"complete"!=this.readyState)){new PCWidget({c:"7f1570e3-a978-430a-82a3-fccff55a8707",f:!0});e=!0}}}();</script>').appendTo("head");
+  $(".app_lock_n_load_wrap, .app_lock_n_load").show();
+  var waitForPureChatScriptThenHideLockNLoad = setInterval(function() {
+    if ($("body").find('.purechat-widget-title-link:contains("Contact us")').length > 0) {
+      console.log("PureChat script is loaded");
+      // clear the setInterval
+      clearInterval(waitForPureChatScriptThenHideLockNLoad);
+  $(".app_lock_n_load_wrap, .app_lock_n_load").hide();
+    }
+  }, 1000);
 });
 // END PureChat append it to the head
 $('.show_pure_chat').on('click', function(e) {
