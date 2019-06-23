@@ -5662,7 +5662,7 @@ background: black;
 
 #user_saved_data {
   position: absolute;
-  display: none;
+  display: ;
   top: 100px;
   left: 0px;
   color: yellow;

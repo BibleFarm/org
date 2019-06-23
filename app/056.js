@@ -5506,7 +5506,7 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       }
       */
       // bring in spanish text
-/*
+
       var data_spanish = "";
       $.ajax({
         ///////////////////////////////// change this for each page
@@ -5532,7 +5532,7 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
 
         }
       });
-*/
+
       // bring in english text
       var postData = "";
       $.ajax({
@@ -7216,112 +7216,112 @@ $(".wrap").find(".wrap_top_menu").hide().removeClass("wrap_top_menu_active");
 // handle changes
   $(".wrap_top_menu").find(".bgc-0001").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0001");
-	$("#u_background_class").text("bgc-0001");
+	$("#u_background_class").attr("value", "bgc-0001").val("bgc-0001").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").text();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0002").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0002");
-	$("#u_background_class").text("bgc-0002");
+    $("#u_background_class").attr("value", "bgc-0002").val("bgc-0002").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").text();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0003").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0003");
-	$("#u_background_class").text("bgc-0003");
+    $("#u_background_class").attr("value", "bgc-0003").val("bgc-0003").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").text();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0004").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0004");
-	$("#u_background_class").text("bgc-0004");
+    $("#u_background_class").attr("value", "bgc-0004").val("bgc-0004").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").text();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0005").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0005");
-	$("#u_background_class").text("bgc-0005");
+    $("#u_background_class").attr("value", "bgc-0005").val("bgc-0005").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").text();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0006").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0006");
-	$("#u_background_class").text("bgc-0006");
+    $("#u_background_class").attr("value", "bgc-0006").val("bgc-0006").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").text();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0007").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0007");
-	$("#u_background_class").text("bgc-0007");
+    $("#u_background_class").attr("value", "bgc-0007").val("bgc-0007").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").text();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0008").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0008");
-	$("#u_background_class").text("bgc-0008");
+    $("#u_background_class").attr("value", "bgc-0008").val("bgc-0008").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").text();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0009").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0009");
-	$("#u_background_class").text("bgc-0009");
+    $("#u_background_class").attr("value", "bgc-0009").val("bgc-0009").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").text();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0010").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0010");
-	$("#u_background_class").text("bgc-0010");
+    $("#u_background_class").attr("value", "bgc-0010").val("bgc-0010").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").text();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0011").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0011");
-	$("#u_background_class").text("bgc-0011");
+    $("#u_background_class").attr("value", "bgc-0011").val("bgc-0011").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").text();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0012").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0012");
-	$("#u_background_class").text("bgc-0012");
+    $("#u_background_class").attr("value", "bgc-0012").val("bgc-0012").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").text();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0013").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0013");
-	$("#u_background_class").text("bgc-0013");
+    $("#u_background_class").attr("value", "bgc-0013").val("bgc-0013").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").text();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0014").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0014");
-	$("#u_background_class").text("bgc-0014");
+    $("#u_background_class").attr("value", "bgc-0014").val("bgc-0014").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").text();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0015").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0015");
-	$("#u_background_class").text("bgc-0015");
+    $("#u_background_class").attr("value", "bgc-0015").val("bgc-0015").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").text();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0016").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0016");
-	$("#u_background_class").text("bgc-0016");
+    $("#u_background_class").attr("value", "bgc-0016").val("bgc-0016").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").text();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
@@ -8505,12 +8505,6 @@ $(".panel_colour_preferences").find("#" + colorDefaultId).trigger({
       which: 1
     });
 
-// trigger click on background
-var backgroundDefaultClass = $("#u_background_class").text();
-$(".panel_colour_preferences").find("." + backgroundDefaultClass).trigger({
-      type: 'click',
-      which: 1
-    });
 
 // get the app's name
 var appNameDefault = $("#u_admin_name").text();
@@ -9191,12 +9185,20 @@ $("#show_pure_chat, #PureChatWidget").click(function(event) {
 ////////////////////////////////////////////////////
 $(document).ready(function() {
 // cleanup prior user's stuff
-  $("#u_last_sharing_code").val("").attr("value", "");
-  $("#s_last_sharing_code").val("").attr("value", "");
+// sharing code
+$("#u_last_sharing_code").val("").attr("value", "");
+$("#s_last_sharing_code").val("").attr("value", "");
+// background class
+$("#u_background_class").val("").attr("value", "");
+$("#s_background_class").val("").attr("value", "");
 // cleanup prior user's stuff after logut
 $("#sign-out").on("click", function(e) {
-    $("#u_last_sharing_code").val("").attr("value", "");
-    $("#s_last_sharing_code").val("").attr("value", "");
+// sharing code
+$("#u_last_sharing_code").val("").attr("value", "");
+$("#s_last_sharing_code").val("").attr("value", "");
+// background class
+$("#u_background_class").val("").attr("value", "");
+$("#s_background_class").val("").attr("value", "");
 });
 // observe
   firebase.auth().onAuthStateChanged(function(user) {
@@ -9205,22 +9207,38 @@ $("#sign-out").on("click", function(e) {
 // console.log(user.uid);
       var thisUser = user.uid;
       var db = firebase.database().ref("bf_app_users");
-// user makes a change
-      $("#u_last_sharing_code").on("change", function(e) {
-        console.log($("#u_last_sharing_code").val());
-        var u_last_sharing_code = $("#u_last_sharing_code").val();
-        db.child(thisUser).update({
-          u_last_sharing_code: u_last_sharing_code
-        });
-      });
-// retrieve what's in the server
-          db
-            .child(thisUser)
-            .child("u_last_sharing_code")
-            .on("value", function(snapshot) {
-              $("#s_last_sharing_code").val(snapshot.val());
-              console.log("bringing in u_last_sharing_code");
+      // user makes a change
+            $("#u_last_sharing_code").on("change", function(e) {
+              console.log($("#u_last_sharing_code").val());
+              var u_last_sharing_code = $("#u_last_sharing_code").val();
+              db.child(thisUser).update({
+                u_last_sharing_code: u_last_sharing_code
+              });
             });
+            // user makes a change
+                  $("#u_background_class").on("change", function(e) {
+                    console.log($("#u_background_class").val());
+                    var u_background_class = $("#u_background_class").val();
+                    db.child(thisUser).update({
+                      u_background_class: u_background_class
+                    });
+                  });
+                  // retrieve what's in the server
+                            db
+                              .child(thisUser)
+                              .child("u_last_sharing_code")
+                              .on("value", function(snapshot) {
+                                $("#s_last_sharing_code").val(snapshot.val());
+                                console.log("bringing in u_last_sharing_code");
+                              });
+                              // retrieve what's in the server
+                                        db
+                                          .child(thisUser)
+                                          .child("u_background_class")
+                                          .on("value", function(snapshot) {
+                                            $("#s_background_class").val(snapshot.val());
+                                            console.log("bringing in u_background_class");
+                                          });
 // apply user preferences stored in the server
       var waitFor_s_last_sharing_code = setInterval(function() {
         if ($("#s_last_sharing_code").val().length > 0) {
@@ -9233,10 +9251,38 @@ $("#sign-out").on("click", function(e) {
           $("#config_name_change").val(s_last_sharing_code);
         }
       }, 1000);
+      // apply user preferences stored in the server
+            var waitFor_s_background_class = setInterval(function() {
+              if ($("#s_background_class").val().length > 0) {
+                console.log("s_background_class is loaded in the input");
+      // clear the setInterval
+                clearInterval(waitFor_s_background_class);
+                var s_background_class = $(
+                  "#s_background_class"
+                ).val();
+                // trigger click on background
+                $("body").find(".panel_colour_preferences").find("." + s_background_class).trigger({
+                      type: 'click',
+                      which: 1
+                    });
+              }
+            }, 1000);
+      // handle things when user logs in (observer will take care of it if user doesn't have a sharing code in input)
+      $("#setup_verse_sharing_all_set").show("slow");
+      $("#setup_verse_sharing_welcome").hide();
+      $("#I_dont_have_a_sharing_code").hide();
+      $("#activate_sharing_code").hide();
     } else {
-// No user is signed in.
-      $("#config_name_change").attr("value", "").val("").trigger("change");
-      $("#s_last_sharing_code").attr("value", "").val("").trigger("change");
+      // No user is signed in.
+            $("#config_name_change").attr("value", "").val("").trigger("change");
+            $("#s_last_sharing_code").attr("value", "").val("").trigger("change");
+            // No user is signed in.
+            // trigger click on background
+            var backgroundDefaultClass = $("#d_background_class").text();
+            $("body").find(".panel_colour_preferences").find("." + backgroundDefaultClass).trigger({
+                  type: 'click',
+                  which: 1
+                });
     }
   });
   ///////////////////////////////////////
@@ -9344,3 +9390,83 @@ $("#sign-out").on("click", function(e) {
 ////////////////////////////////////////////////////
 // END firebase store user's preferences
 ////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////
+////BEGIN Temporary switch English and Spanish
+///////////////////////////////////////////////
+$(document).ready(function() {
+// app_lang_en_main // terminal main = on
+$('#app_terminal_main_on').on('click', function() {
+  // tran = off / orig = off
+if (
+($("#app_lang_en_main").hasClass("active_switch")) &&
+($("#app_terminal_orig_off").hasClass("active_switch")) &&
+($("#app_terminal_tran_off").hasClass("active_switch"))
+) {
+$("#tE_ajax_chapters tr").each(function() {
+		var tr = $(this);
+		var en = tr.find('td.en_txt');
+		var column = tr.find('td:eq(0)');
+en.insertAfter(column).show();
+});
+}
+});
+// app_lang_en_main // terminal main = off
+$('#app_terminal_main_off').on('click', function() {
+  // tran = off / orig = off
+if (
+($("#app_lang_en_main").hasClass("active_switch")) &&
+($("#app_terminal_orig_off").hasClass("active_switch")) &&
+($("#app_terminal_tran_off").hasClass("active_switch"))
+) {
+$("#tE_ajax_chapters tr").each(function() {
+		var tr = $(this);
+		var en = tr.find('td.en_txt');
+		var column = tr.find('td:eq(0)');
+en.insertAfter(column).hide();
+});
+}
+});
+// app_lang_es_para // terminal para = on
+$('#app_terminal_para_on').on('click', function() {
+  // tran = off / orig = off
+if (
+($("#app_lang_es_para").hasClass("active_switch")) &&
+($("#app_terminal_orig_off").hasClass("active_switch")) &&
+($("#app_terminal_tran_off").hasClass("active_switch"))
+) {
+$("#tE_ajax_chapters tr").each(function() {
+		var tr = $(this);
+		var es = tr.find('td.es_txt');
+		var column = tr.find('td:eq(0)');
+es.insertAfter(column).show();
+});
+}
+});
+// app_lang_es_para // terminal para = off
+$('#app_terminal_para_off').on('click', function() {
+  // tran = off / orig = off
+if (
+($("#app_lang_es_para").hasClass("active_switch")) &&
+($("#app_terminal_orig_off").hasClass("active_switch")) &&
+($("#app_terminal_tran_off").hasClass("active_switch"))
+) {
+$("#tE_ajax_chapters tr").each(function() {
+		var tr = $(this);
+		var es = tr.find('td.es_txt');
+		var column = tr.find('td:eq(0)');
+es.insertAfter(column).hide();
+});
+}
+});
+// temporary trigger these so it load with English only
+$('#app_terminal_main_on').trigger('click');
+$('#app_terminal_para_on').trigger('click');
+
+// end document ready
+});
+// end document ready
+///////////////////////////////////////////////
+////END Temporary switch English and Spanish
+///////////////////////////////////////////////
