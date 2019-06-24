@@ -5182,14 +5182,18 @@ margin: 0 auto !important;
 #name {
 font-size: 18px !important;
 padding-left: 8px !important;
-         color: #ae9c80;
-         text-shadow: 2px 2px 1px #000000;
+color: #ae9c80;
+text-shadow: 2px 2px 1px #000000;
 }
 #email {
 font-size: 18px !important;
 padding-left: 8px !important;
-         color: #ae9c80;
-         text-shadow: 2px 2px 1px #000000;
+color: #ae9c80;
+text-shadow: 2px 2px 1px #000000;
+display: none;
+}
+#phone {
+display: none;
 }
 #config_name_change_wrapper {
 /*display: none;*/
@@ -5495,6 +5499,7 @@ background: none !important;
     font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
 font-size: 20px;
 }
+#sign-out {float: right;}
 #delete-account {display: none}
 /* END fix firebase login */
 /* BEGIN questions_answers */
@@ -5662,7 +5667,7 @@ background: black;
 
 #user_saved_data {
   position: absolute;
-  display: ;
+  display: none;
   top: 100px;
   left: 0px;
   color: yellow;

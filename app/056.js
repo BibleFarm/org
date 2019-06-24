@@ -9210,6 +9210,35 @@ $("#s_color_filter_switches_id").val("").attr("value", "");
       var thisUser = user.uid;
       var db = firebase.database().ref("bf_app_users");
 /////////////////////////////////////////
+var user_ProviderData = firebase.auth().currentUser;
+  user_ProviderData.providerData.forEach(function (profile) {
+    console.log("_1_Sign-in provider: " + profile.providerId);
+    db.child(thisUser).update({
+    _1_Sign_in_provider: profile.providerId
+    });
+    console.log("  _2_Provider-specific UID: " + profile.uid);
+    db.child(thisUser).update({
+    _2_Provider_specific_UID: profile.uid
+    });
+    console.log("  _3_Display Name: " + profile.displayName);
+    db.child(thisUser).update({
+    _3_Display_Name: profile.displayName
+    });
+    console.log("  _4_Email: " + profile.email);
+    db.child(thisUser).update({
+    _4_Email: profile.email
+    });
+    console.log("  _5_Photo URL: " + profile.photoURL);
+    db.child(thisUser).update({
+    _5_Photo_URL: profile.photoURL
+    });
+    // show latest displayName
+    $("#name").text(profile.displayName);
+    // show latest photoURL
+    $("#photo").attr("src", profile.photoURL);
+  });
+/////////////////////////////////////////
+
 // user makes a change
 $("#u_last_sharing_code").on("change", function(e) {
 console.log($("#u_last_sharing_code").val());
@@ -9364,104 +9393,6 @@ $(".panel_colour_preferences").find("#" + colorUserPrefId).trigger({
 
     }
   });
-  ///////////////////////////////////////
-  ///// BEGIN triggers to make changes /////////////////
-  ///////////////////////////////////////
-  $(".pink").on("click", function(e) {
-    $("body")
-      .removeClass("pink")
-      .removeClass("lightblue")
-      .removeClass("lightgreen");
-    $("body").addClass("pink");
-    $("#browser_BackgroundColor")
-      .attr("value", "pink")
-      .trigger("change");
-  });
-  $(".lightblue").on("click", function(e) {
-    $("body")
-      .removeClass("pink")
-      .removeClass("lightblue")
-      .removeClass("lightgreen");
-    $("body").addClass("lightblue");
-    $("#browser_BackgroundColor")
-      .attr("value", "lightblue")
-      .trigger("change");
-  });
-  $(".lightgreen").on("click", function(e) {
-    $("body")
-      .removeClass("pink")
-      .removeClass("lightblue")
-      .removeClass("lightgreen");
-    $("body").addClass("lightgreen");
-    $("#browser_BackgroundColor")
-      .attr("value", "lightgreen")
-      .trigger("change");
-  });
-  // Color
-  $(".red").on("click", function(e) {
-    $("body")
-      .removeClass("red")
-      .removeClass("blue")
-      .removeClass("green");
-    $("body").addClass("red");
-    $("#browser_FontColor")
-      .attr("value", "red")
-      .trigger("change");
-  });
-  $(".blue").on("click", function(e) {
-    $("body")
-      .removeClass("red")
-      .removeClass("blue")
-      .removeClass("green");
-    $("body").addClass("blue");
-    $("#browser_FontColor")
-      .attr("value", "blue")
-      .trigger("change");
-  });
-  $(".green").on("click", function(e) {
-    $("body")
-      .removeClass("red")
-      .removeClass("blue")
-      .removeClass("green");
-    $("body").addClass("green");
-    $("#browser_FontColor")
-      .attr("value", "green")
-      .trigger("change");
-  });
-  // Font
-  $(".normal").on("click", function(e) {
-    $("body")
-      .removeClass("normal")
-      .removeClass("italic")
-      .removeClass("bold");
-    $("body").addClass("normal");
-    $("#browser_BoldorItalic")
-      .attr("value", "normal")
-      .trigger("change");
-  });
-  $(".italic").on("click", function(e) {
-    $("body")
-      .removeClass("normal")
-      .removeClass("italic")
-      .removeClass("bold");
-    $("body").addClass("italic");
-    $("#browser_BoldorItalic")
-      .attr("value", "italic")
-      .trigger("change");
-  });
-  $(".bold").on("click", function(e) {
-    $("body")
-      .removeClass("normal")
-      .removeClass("italic")
-      .removeClass("bold");
-    $("body").addClass("bold");
-    $("#browser_BoldorItalic")
-      .attr("value", "bold")
-      .trigger("change");
-  });
-  ///////////////////////////////////////
-  ///// END triggers to make changes /////////////////
-  ///////////////////////////////////////
 
 // end document ready
 });
