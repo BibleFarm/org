@@ -7217,112 +7217,112 @@ $(".wrap").find(".wrap_top_menu").hide().removeClass("wrap_top_menu_active");
   $(".wrap_top_menu").find(".bgc-0001").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0001");
 	$("#u_background_class").attr("value", "bgc-0001").val("bgc-0001").trigger("change");
-	var colorSelected = $("#u_color_filter_switches_rgb").text();
+	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0002").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0002");
     $("#u_background_class").attr("value", "bgc-0002").val("bgc-0002").trigger("change");
-	var colorSelected = $("#u_color_filter_switches_rgb").text();
+	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0003").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0003");
     $("#u_background_class").attr("value", "bgc-0003").val("bgc-0003").trigger("change");
-	var colorSelected = $("#u_color_filter_switches_rgb").text();
+	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0004").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0004");
     $("#u_background_class").attr("value", "bgc-0004").val("bgc-0004").trigger("change");
-	var colorSelected = $("#u_color_filter_switches_rgb").text();
+	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0005").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0005");
     $("#u_background_class").attr("value", "bgc-0005").val("bgc-0005").trigger("change");
-	var colorSelected = $("#u_color_filter_switches_rgb").text();
+	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0006").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0006");
     $("#u_background_class").attr("value", "bgc-0006").val("bgc-0006").trigger("change");
-	var colorSelected = $("#u_color_filter_switches_rgb").text();
+	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0007").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0007");
     $("#u_background_class").attr("value", "bgc-0007").val("bgc-0007").trigger("change");
-	var colorSelected = $("#u_color_filter_switches_rgb").text();
+	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0008").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0008");
     $("#u_background_class").attr("value", "bgc-0008").val("bgc-0008").trigger("change");
-	var colorSelected = $("#u_color_filter_switches_rgb").text();
+	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0009").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0009");
     $("#u_background_class").attr("value", "bgc-0009").val("bgc-0009").trigger("change");
-	var colorSelected = $("#u_color_filter_switches_rgb").text();
+	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0010").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0010");
     $("#u_background_class").attr("value", "bgc-0010").val("bgc-0010").trigger("change");
-	var colorSelected = $("#u_color_filter_switches_rgb").text();
+	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0011").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0011");
     $("#u_background_class").attr("value", "bgc-0011").val("bgc-0011").trigger("change");
-	var colorSelected = $("#u_color_filter_switches_rgb").text();
+	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0012").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0012");
     $("#u_background_class").attr("value", "bgc-0012").val("bgc-0012").trigger("change");
-	var colorSelected = $("#u_color_filter_switches_rgb").text();
+	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0013").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0013");
     $("#u_background_class").attr("value", "bgc-0013").val("bgc-0013").trigger("change");
-	var colorSelected = $("#u_color_filter_switches_rgb").text();
+	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0014").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0014");
     $("#u_background_class").attr("value", "bgc-0014").val("bgc-0014").trigger("change");
-	var colorSelected = $("#u_color_filter_switches_rgb").text();
+	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0015").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0015");
     $("#u_background_class").attr("value", "bgc-0015").val("bgc-0015").trigger("change");
-	var colorSelected = $("#u_color_filter_switches_rgb").text();
+	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0016").on('click', function() {
     $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0016");
     $("#u_background_class").attr("value", "bgc-0016").val("bgc-0016").trigger("change");
-	var colorSelected = $("#u_color_filter_switches_rgb").text();
+	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
@@ -7533,7 +7533,7 @@ $('.screenfull_message_add_to_homescreen').show();
 });
 // handle the on switch
 $('#config_full_screen_on').on('click', function(e) {
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 if ($(this).hasClass("active_switch")) {
 $(this).css("color", colorSelected );
 $("#config_full_screen_off").removeClass("active_switch").removeAttr("style");
@@ -7546,7 +7546,7 @@ $("#config_full_screen_off").removeClass("active_switch").removeAttr("style");
 // handle the off switch
 $('#config_full_screen_off').on('click', function(e) {
 screenfull.exit();
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 if ($(this).hasClass("active_switch")) {
 $(this).css("color", colorSelected );
 $("#config_full_screen_on").removeClass("active_switch").removeAttr("style");
@@ -7696,9 +7696,9 @@ $(".the_12_colors").css("border-bottom", "none");
 $(this).css("border-bottom", "2px solid");
 var colorNeeded = $(this).css("color");
 var colorId = $(this).attr("id");
-$("#u_color_filter_switches_rgb").text(colorNeeded);
-$("#u_color_filter_switches_id").text(colorId);
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+$("#u_color_filter_switches_rgb").attr("value", colorNeeded).val(colorNeeded).trigger("change");
+$("#u_color_filter_switches_id").attr("value", colorId).val(colorId).trigger("change");
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 $( "<style>mark, .active_switch, #name, #email {color : " + colorSelected + " !important;}</style>" ).appendTo( "head" );
 $(".swiper-slide.active-bg").css("border", "1px solid " + colorSelected);
 });
@@ -7707,9 +7707,9 @@ $(".the_12_colors").css("border-bottom", "none");
 $(this).css("border-bottom", "2px solid");
 var colorNeeded = $(this).css("color");
 var colorId = $(this).attr("id");
-$("#u_color_filter_switches_rgb").text(colorNeeded);
-$("#u_color_filter_switches_id").text(colorId);
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+$("#u_color_filter_switches_rgb").attr("value", colorNeeded).val(colorNeeded).trigger("change");
+$("#u_color_filter_switches_id").attr("value", colorId).val(colorId).trigger("change");
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 $( "<style>mark, .active_switch, #name, #email {color : " + colorSelected + " !important;}</style>" ).appendTo( "head" );
 $(".swiper-slide.active-bg").css("border", "1px solid " + colorSelected);
 });
@@ -7718,9 +7718,9 @@ $(".the_12_colors").css("border-bottom", "none");
 $(this).css("border-bottom", "2px solid");
 var colorNeeded = $(this).css("color");
 var colorId = $(this).attr("id");
-$("#u_color_filter_switches_rgb").text(colorNeeded);
-$("#u_color_filter_switches_id").text(colorId);
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+$("#u_color_filter_switches_rgb").attr("value", colorNeeded).val(colorNeeded).trigger("change");
+$("#u_color_filter_switches_id").attr("value", colorId).val(colorId).trigger("change");
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 $( "<style>mark, .active_switch, #name, #email {color : " + colorSelected + " !important;}</style>" ).appendTo( "head" );
 $(".swiper-slide.active-bg").css("border", "1px solid " + colorSelected);
 });
@@ -7729,9 +7729,9 @@ $(".the_12_colors").css("border-bottom", "none");
 $(this).css("border-bottom", "2px solid");
 var colorNeeded = $(this).css("color");
 var colorId = $(this).attr("id");
-$("#u_color_filter_switches_rgb").text(colorNeeded);
-$("#u_color_filter_switches_id").text(colorId);
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+$("#u_color_filter_switches_rgb").attr("value", colorNeeded).val(colorNeeded).trigger("change");
+$("#u_color_filter_switches_id").attr("value", colorId).val(colorId).trigger("change");
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 $( "<style>mark, .active_switch, #name, #email {color : " + colorSelected + " !important;}</style>" ).appendTo( "head" );
 $(".swiper-slide.active-bg").css("border", "1px solid " + colorSelected);
 });
@@ -7740,9 +7740,9 @@ $(".the_12_colors").css("border-bottom", "none");
 $(this).css("border-bottom", "2px solid");
 var colorNeeded = $(this).css("color");
 var colorId = $(this).attr("id");
-$("#u_color_filter_switches_rgb").text(colorNeeded);
-$("#u_color_filter_switches_id").text(colorId);
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+$("#u_color_filter_switches_rgb").attr("value", colorNeeded).val(colorNeeded).trigger("change");
+$("#u_color_filter_switches_id").attr("value", colorId).val(colorId).trigger("change");
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 $( "<style>mark, .active_switch, #name, #email {color : " + colorSelected + " !important;}</style>" ).appendTo( "head" );
 $(".swiper-slide.active-bg").css("border", "1px solid " + colorSelected);
 });
@@ -7751,9 +7751,9 @@ $(".the_12_colors").css("border-bottom", "none");
 $(this).css("border-bottom", "2px solid");
 var colorNeeded = $(this).css("color");
 var colorId = $(this).attr("id");
-$("#u_color_filter_switches_rgb").text(colorNeeded);
-$("#u_color_filter_switches_id").text(colorId);
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+$("#u_color_filter_switches_rgb").attr("value", colorNeeded).val(colorNeeded).trigger("change");
+$("#u_color_filter_switches_id").attr("value", colorId).val(colorId).trigger("change");
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 $( "<style>mark, .active_switch, #name, #email {color : " + colorSelected + " !important;}</style>" ).appendTo( "head" );
 $(".swiper-slide.active-bg").css("border", "1px solid " + colorSelected);
 });
@@ -7762,9 +7762,9 @@ $(".the_12_colors").css("border-bottom", "none");
 $(this).css("border-bottom", "2px solid");
 var colorNeeded = $(this).css("color");
 var colorId = $(this).attr("id");
-$("#u_color_filter_switches_rgb").text(colorNeeded);
-$("#u_color_filter_switches_id").text(colorId);
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+$("#u_color_filter_switches_rgb").attr("value", colorNeeded).val(colorNeeded).trigger("change");
+$("#u_color_filter_switches_id").attr("value", colorId).val(colorId).trigger("change");
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 $( "<style>mark, .active_switch, #name, #email {color : " + colorSelected + " !important;}</style>" ).appendTo( "head" );
 $(".swiper-slide.active-bg").css("border", "1px solid " + colorSelected);
 });
@@ -7773,9 +7773,9 @@ $(".the_12_colors").css("border-bottom", "none");
 $(this).css("border-bottom", "2px solid");
 var colorNeeded = $(this).css("color");
 var colorId = $(this).attr("id");
-$("#u_color_filter_switches_rgb").text(colorNeeded);
-$("#u_color_filter_switches_id").text(colorId);
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+$("#u_color_filter_switches_rgb").attr("value", colorNeeded).val(colorNeeded).trigger("change");
+$("#u_color_filter_switches_id").attr("value", colorId).val(colorId).trigger("change");
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 $( "<style>mark, .active_switch, #name, #email {color : " + colorSelected + " !important;}</style>" ).appendTo( "head" );
 $(".swiper-slide.active-bg").css("border", "1px solid " + colorSelected);
 });
@@ -7784,9 +7784,9 @@ $(".the_12_colors").css("border-bottom", "none");
 $(this).css("border-bottom", "2px solid");
 var colorNeeded = $(this).css("color");
 var colorId = $(this).attr("id");
-$("#u_color_filter_switches_rgb").text(colorNeeded);
-$("#u_color_filter_switches_id").text(colorId);
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+$("#u_color_filter_switches_rgb").attr("value", colorNeeded).val(colorNeeded).trigger("change");
+$("#u_color_filter_switches_id").attr("value", colorId).val(colorId).trigger("change");
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 $( "<style>mark, .active_switch, #name, #email {color : " + colorSelected + " !important;}</style>" ).appendTo( "head" );
 $(".swiper-slide.active-bg").css("border", "1px solid " + colorSelected);
 });
@@ -7795,9 +7795,9 @@ $(".the_12_colors").css("border-bottom", "none");
 $(this).css("border-bottom", "2px solid");
 var colorNeeded = $(this).css("color");
 var colorId = $(this).attr("id");
-$("#u_color_filter_switches_rgb").text(colorNeeded);
-$("#u_color_filter_switches_id").text(colorId);
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+$("#u_color_filter_switches_rgb").attr("value", colorNeeded).val(colorNeeded).trigger("change");
+$("#u_color_filter_switches_id").attr("value", colorId).val(colorId).trigger("change");
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 $( "<style>mark, .active_switch, #name, #email {color : " + colorSelected + " !important;}</style>" ).appendTo( "head" );
 $(".swiper-slide.active-bg").css("border", "1px solid " + colorSelected);
 });
@@ -7806,9 +7806,9 @@ $(".the_12_colors").css("border-bottom", "none");
 $(this).css("border-bottom", "2px solid");
 var colorNeeded = $(this).css("color");
 var colorId = $(this).attr("id");
-$("#u_color_filter_switches_rgb").text(colorNeeded);
-$("#u_color_filter_switches_id").text(colorId);
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+$("#u_color_filter_switches_rgb").attr("value", colorNeeded).val(colorNeeded).trigger("change");
+$("#u_color_filter_switches_id").attr("value", colorId).val(colorId).trigger("change");
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 $( "<style>mark, .active_switch, #name, #email {color : " + colorSelected + " !important;}</style>" ).appendTo( "head" );
 $(".swiper-slide.active-bg").css("border", "1px solid " + colorSelected);
 });
@@ -7817,9 +7817,9 @@ $(".the_12_colors").css("border-bottom", "none");
 $(this).css("border-bottom", "2px solid");
 var colorNeeded = $(this).css("color");
 var colorId = $(this).attr("id");
-$("#u_color_filter_switches_rgb").text(colorNeeded);
-$("#u_color_filter_switches_id").text(colorId);
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+$("#u_color_filter_switches_rgb").attr("value", colorNeeded).val(colorNeeded).trigger("change");
+$("#u_color_filter_switches_id").attr("value", colorId).val(colorId).trigger("change");
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 $( "<style>mark, .active_switch, #name, #email {color : " + colorSelected + " !important;}</style>" ).appendTo( "head" );
 $(".swiper-slide.active-bg").css("border", "1px solid " + colorSelected);
 });
@@ -7833,7 +7833,7 @@ $(".swiper-slide.active-bg").css("border", "1px solid " + colorSelected);
 ///////// app_edit_mode
 // handle click on app_edit_mode_on
 $("#app_edit_mode_on").on("click", function(e) {
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 
 if ($(this).hasClass("active_switch")) {
 $(this).css("color", colorSelected );
@@ -7846,7 +7846,7 @@ $("#app_edit_mode_off").removeClass("active_switch").removeAttr("style");
 });
 // handle click on app_edit_mode_off
 $("#app_edit_mode_off").on("click", function(e) {
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 
 if ($(this).hasClass("active_switch")) {
 $(this).css("color", colorSelected );
@@ -7865,7 +7865,7 @@ var clickedStatusOn = $(this).text();
 $("#u_terminal_main_status").text("");
 $("#u_terminal_main_status").append(clickedStatusOn);
 
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 
 if ($(this).hasClass("active_switch")) {
 $(this).css("color", colorSelected );
@@ -7883,7 +7883,7 @@ var clickedStatusOff = $(this).text();
 $("#u_terminal_main_status").text("");
 $("#u_terminal_main_status").append(clickedStatusOff);
 
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 
 if ($(this).hasClass("active_switch")) {
 $(this).css("color", colorSelected );
@@ -7902,7 +7902,7 @@ var clickedStatusOn = $(this).text();
 $("#u_terminal_para_status").text("");
 $("#u_terminal_para_status").append(clickedStatusOn);
 
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 $(this).addClass("active_switch").css("color", colorSelected );
 $("#app_terminal_para_off").removeClass("active_switch").removeAttr("style");
 });
@@ -7913,7 +7913,7 @@ var clickedStatusOff = $(this).text();
 $("#u_terminal_para_status").text("");
 $("#u_terminal_para_status").append(clickedStatusOff);
 
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 
 $(this).addClass("active_switch").css("color", colorSelected );
 $("#app_terminal_para_on").removeClass("active_switch").removeAttr("style");
@@ -7926,7 +7926,7 @@ var clickedStatusOn = $(this).text();
 $("#u_terminal_orig_status").text("");
 $("#u_terminal_orig_status").append(clickedStatusOn);
 
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 
 $(this).addClass("active_switch").css("color", colorSelected );
 $("#app_terminal_orig_off").removeClass("active_switch").removeAttr("style");
@@ -7938,7 +7938,7 @@ var clickedStatusOff = $(this).text();
 $("#u_terminal_orig_status").text("");
 $("#u_terminal_orig_status").append(clickedStatusOff);
 
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 
 $(this).addClass("active_switch").css("color", colorSelected );
 $("#app_terminal_orig_on").removeClass("active_switch").removeAttr("style");
@@ -7951,7 +7951,7 @@ var clickedStatusOn = $(this).text();
 $("#u_terminal_tran_status").text("");
 $("#u_terminal_tran_status").append(clickedStatusOn);
 
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 
 $(this).addClass("active_switch").css("color", colorSelected );
 $("#app_terminal_tran_off").removeClass("active_switch").removeAttr("style");
@@ -7963,7 +7963,7 @@ var clickedStatusOff = $(this).text();
 $("#u_terminal_tran_status").text("");
 $("#u_terminal_tran_status").append(clickedStatusOff);
 
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 
 $(this).addClass("active_switch").css("color", colorSelected );
 $("#app_terminal_tran_on").removeClass("active_switch").removeAttr("style");
@@ -7983,7 +7983,7 @@ $("#selected_lang_orig").text("hebrew & greek original");
 $("#selected_lang_tran").text("hebrew & greek transliteration");
 
 
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 
 $(this).addClass("active_switch").css("color", colorSelected );
 $("#app_lang_en_para").removeClass("active_switch").removeAttr("style");
@@ -8001,7 +8001,7 @@ $("#u_lang_en_main").text("");
 $("#u_lang_en_main").text(clickedStatusOff);
 $("#selected_lang_para").text("parallel column in english");
 
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 
 $(this).addClass("active_switch").css("color", colorSelected );
 $("#app_lang_en_main").removeClass("active_switch").removeAttr("style");
@@ -8024,7 +8024,7 @@ $("#selected_lang_orig").text("hebräisch & griechisch original");
 $("#selected_lang_tran").text("hebräisch & griechisch transliter");
 
 
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 
 $(this).addClass("active_switch").css("color", colorSelected );
 $("#app_lang_en_main").removeClass("active_switch").removeAttr("style");
@@ -8042,7 +8042,7 @@ $("#u_lang_de_main").text("");
 $("#u_lang_de_main").text(clickedStatusOff);
 $("#selected_lang_para").text("parallele spalte in deutsch");
 
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 
 $(this).addClass("active_switch").css("color", colorSelected );
 $("#app_lang_en_para").removeClass("active_switch").removeAttr("style");
@@ -8065,7 +8065,7 @@ $("#selected_lang_orig").text("hébreu et grec original");
 $("#selected_lang_tran").text("translittération hébreu et grec");
 
 
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 
 $(this).addClass("active_switch").css("color", colorSelected );
 $("#app_lang_en_main").removeClass("active_switch").removeAttr("style");
@@ -8083,7 +8083,7 @@ $("#u_lang_fr_main").text("");
 $("#u_lang_fr_main").text(clickedStatusOff);
 $("#selected_lang_para").text("colonne parallèle en français");
 
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 
 $(this).addClass("active_switch").css("color", colorSelected );
 $("#app_lang_en_para").removeClass("active_switch").removeAttr("style");
@@ -8106,7 +8106,7 @@ $("#selected_lang_orig").text("hebreo y griego original");
 $("#selected_lang_tran").text("transliteración hebrea y griega");
 
 
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 
 $(this).addClass("active_switch").css("color", colorSelected );
 $("#app_lang_en_main").removeClass("active_switch").removeAttr("style");
@@ -8124,7 +8124,7 @@ $("#u_lang_es_main").text("");
 $("#u_lang_es_main").text(clickedStatusOff);
 $("#selected_lang_para").text("columna paralela en español");
 
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 
 $(this).addClass("active_switch").css("color", colorSelected );
 $("#app_lang_en_para").removeClass("active_switch").removeAttr("style");
@@ -8147,7 +8147,7 @@ $("#selected_lang_orig").text("original hebraico e grego");
 $("#selected_lang_tran").text("transliteração hebraica e grega");
 
 
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 
 $(this).addClass("active_switch").css("color", colorSelected );
 $("#app_lang_en_main").removeClass("active_switch").removeAttr("style");
@@ -8165,7 +8165,7 @@ $("#u_lang_pt_main").text("");
 $("#u_lang_pt_main").text(clickedStatusOff);
 $("#selected_lang_para").text("coluna paralela em português");
 
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 
 $(this).addClass("active_switch").css("color", colorSelected );
 $("#app_lang_en_para").removeClass("active_switch").removeAttr("style");
@@ -8188,7 +8188,7 @@ $("#selected_lang_orig").text("originale ebraico e greco");
 $("#selected_lang_tran").text("traslitterazione ebraica e greca");
 
 
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 
 $(this).addClass("active_switch").css("color", colorSelected );
 $("#app_lang_en_main").removeClass("active_switch").removeAttr("style");
@@ -8206,7 +8206,7 @@ $("#u_lang_it_main").text("");
 $("#u_lang_it_main").text(clickedStatusOff);
 $("#selected_lang_para").text("colonna parallela in italiano");
 
-var colorSelected = $("#u_color_filter_switches_rgb").text();
+var colorSelected = $("#u_color_filter_switches_rgb").val();
 
 $(this).addClass("active_switch").css("color", colorSelected );
 $("#app_lang_en_para").removeClass("active_switch").removeAttr("style");
@@ -8494,16 +8494,6 @@ $("#nav_top").find(".top_menu").trigger({
       which: 1
     });
 ////////////////////////////////////////////////////////////////
-// add the style tag // not necessary?
-var colorDefault = $("#u_color_filter_switches_rgb").text();
-$( "<style>mark, .active_switch, #name, #email {color : " + colorDefault + " !important;}</style>" ).appendTo( "head" );
-
-// trigger click on color
-var colorDefaultId = $("#u_color_filter_switches_id").text();
-$(".panel_colour_preferences").find("#" + colorDefaultId).trigger({
-      type: 'click',
-      which: 1
-    });
 
 
 // get the app's name
@@ -9184,14 +9174,20 @@ $("#show_pure_chat, #PureChatWidget").click(function(event) {
 // BEGIN firebase store user's preferences
 ////////////////////////////////////////////////////
 $(document).ready(function() {
-// cleanup prior user's stuff
+///////////////////////////////////////// cleanup prior user's stuff
 // sharing code
 $("#u_last_sharing_code").val("").attr("value", "");
 $("#s_last_sharing_code").val("").attr("value", "");
 // background class
 $("#u_background_class").val("").attr("value", "");
 $("#s_background_class").val("").attr("value", "");
-// cleanup prior user's stuff after logut
+// color filter switches rgb
+$("#u_color_filter_switches_rgb").val("").attr("value", "");
+$("#s_color_filter_switches_rgb").val("").attr("value", "");
+// color filter switches id
+$("#u_color_filter_switches_id").val("").attr("value", "");
+$("#s_color_filter_switches_id").val("").attr("value", "");
+///////////////////////////////////////// cleanup prior user's stuff after logut
 $("#sign-out").on("click", function(e) {
 // sharing code
 $("#u_last_sharing_code").val("").attr("value", "");
@@ -9199,74 +9195,147 @@ $("#s_last_sharing_code").val("").attr("value", "");
 // background class
 $("#u_background_class").val("").attr("value", "");
 $("#s_background_class").val("").attr("value", "");
+// color filter switches rgb
+$("#u_color_filter_switches_rgb").val("").attr("value", "");
+$("#s_color_filter_switches_rgb").val("").attr("value", "");
+// color filter switches id
+$("#u_color_filter_switches_id").val("").attr("value", "");
+$("#s_color_filter_switches_id").val("").attr("value", "");
 });
-// observe
+///////////////////////////////////////// observe
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
 // User is signed in.
 // console.log(user.uid);
       var thisUser = user.uid;
       var db = firebase.database().ref("bf_app_users");
-      // user makes a change
-            $("#u_last_sharing_code").on("change", function(e) {
-              console.log($("#u_last_sharing_code").val());
-              var u_last_sharing_code = $("#u_last_sharing_code").val();
-              db.child(thisUser).update({
-                u_last_sharing_code: u_last_sharing_code
-              });
-            });
-            // user makes a change
-                  $("#u_background_class").on("change", function(e) {
-                    console.log($("#u_background_class").val());
-                    var u_background_class = $("#u_background_class").val();
-                    db.child(thisUser).update({
-                      u_background_class: u_background_class
-                    });
-                  });
-                  // retrieve what's in the server
-                            db
-                              .child(thisUser)
-                              .child("u_last_sharing_code")
-                              .on("value", function(snapshot) {
-                                $("#s_last_sharing_code").val(snapshot.val());
-                                console.log("bringing in u_last_sharing_code");
-                              });
-                              // retrieve what's in the server
-                                        db
-                                          .child(thisUser)
-                                          .child("u_background_class")
-                                          .on("value", function(snapshot) {
-                                            $("#s_background_class").val(snapshot.val());
-                                            console.log("bringing in u_background_class");
-                                          });
+/////////////////////////////////////////
+// user makes a change
+$("#u_last_sharing_code").on("change", function(e) {
+console.log($("#u_last_sharing_code").val());
+var u_last_sharing_code = $("#u_last_sharing_code").val();
+db.child(thisUser).update({
+u_last_sharing_code: u_last_sharing_code
+});
+});
+// user makes a change
+$("#u_background_class").on("change", function(e) {
+console.log($("#u_background_class").val());
+var u_background_class = $("#u_background_class").val();
+db.child(thisUser).update({
+u_background_class: u_background_class
+});
+});
+// user makes a change
+$("#u_color_filter_switches_rgb").on("change", function(e) {
+console.log($("#u_color_filter_switches_rgb").val());
+var u_color_filter_switches_rgb = $("#u_color_filter_switches_rgb").val();
+db.child(thisUser).update({
+u_color_filter_switches_rgb: u_color_filter_switches_rgb
+});
+});
+// user makes a change
+$("#u_color_filter_switches_id").on("change", function(e) {
+console.log($("#u_color_filter_switches_id").val());
+var u_color_filter_switches_id = $("#u_color_filter_switches_id").val();
+db.child(thisUser).update({
+u_color_filter_switches_id: u_color_filter_switches_id
+});
+});
+/////////////////////////////////////////
+// retrieve what's in the server
+db
+.child(thisUser)
+.child("u_last_sharing_code")
+.on("value", function(snapshot) {
+$("#s_last_sharing_code").val(snapshot.val());
+console.log("bringing in u_last_sharing_code");
+});
+// retrieve what's in the server
+db
+.child(thisUser)
+.child("u_background_class")
+.on("value", function(snapshot) {
+$("#s_background_class").val(snapshot.val());
+console.log("bringing in u_background_class");
+});
+// retrieve what's in the server
+db
+.child(thisUser)
+.child("u_color_filter_switches_rgb")
+.on("value", function(snapshot) {
+$("#s_color_filter_switches_rgb").val(snapshot.val());
+console.log("bringing in u_color_filter_switches_rgb");
+});
+// retrieve what's in the server
+db
+.child(thisUser)
+.child("u_color_filter_switches_id")
+.on("value", function(snapshot) {
+$("#s_color_filter_switches_id").val(snapshot.val());
+console.log("bringing in u_color_filter_switches_id");
+});
+/////////////////////////////////////////
 // apply user preferences stored in the server
-      var waitFor_s_last_sharing_code = setInterval(function() {
-        if ($("#s_last_sharing_code").val().length > 0) {
-          console.log("s_last_sharing_code is loaded in the input");
+var waitFor_s_last_sharing_code = setInterval(function() {
+if ($("#s_last_sharing_code").val().length > 0) {
+console.log("s_last_sharing_code is loaded in the input");
 // clear the setInterval
-          clearInterval(waitFor_s_last_sharing_code);
-          var s_last_sharing_code = $(
-            "#s_last_sharing_code"
-          ).val();
-          $("#config_name_change").val(s_last_sharing_code);
-        }
-      }, 1000);
-      // apply user preferences stored in the server
-            var waitFor_s_background_class = setInterval(function() {
-              if ($("#s_background_class").val().length > 0) {
-                console.log("s_background_class is loaded in the input");
-      // clear the setInterval
-                clearInterval(waitFor_s_background_class);
-                var s_background_class = $(
-                  "#s_background_class"
-                ).val();
-                // trigger click on background
-                $("body").find(".panel_colour_preferences").find("." + s_background_class).trigger({
-                      type: 'click',
-                      which: 1
-                    });
-              }
-            }, 1000);
+clearInterval(waitFor_s_last_sharing_code);
+var s_last_sharing_code = $(
+"#s_last_sharing_code"
+).val();
+$("#config_name_change").val(s_last_sharing_code);
+}
+}, 1000);
+// apply user preferences stored in the server
+var waitFor_s_background_class = setInterval(function() {
+if ($("#s_background_class").val().length > 0) {
+console.log("s_background_class is loaded in the input");
+// clear the setInterval
+clearInterval(waitFor_s_background_class);
+var s_background_class = $(
+"#s_background_class"
+).val();
+// trigger click on background
+$("body").find(".panel_colour_preferences").find("." + s_background_class).trigger({
+type: 'click',
+which: 1
+});
+}
+}, 1000);
+// apply user preferences stored in the server
+var waitFor_s_color_filter_switches_rgb = setInterval(function() {
+if ($("#s_color_filter_switches_rgb").val().length > 0) {
+console.log("s_color_filter_switches_rgb is loaded in the input");
+// clear the setInterval
+clearInterval(waitFor_s_color_filter_switches_rgb);
+var s_color_filter_switches_rgb = $(
+"#s_color_filter_switches_rgb"
+).val();
+// add the style tag // not necessary?
+var colorUserPref = $("#s_color_filter_switches_rgb").val();
+$( "<style>mark, .active_switch, #name, #email {color : " + colorUserPref + " !important;}</style>" ).appendTo( "head" );
+}
+}, 1000);
+// apply user preferences stored in the server
+var waitFor_s_color_filter_switches_id = setInterval(function() {
+if ($("#s_color_filter_switches_id").val().length > 0) {
+console.log("s_color_filter_switches_id is loaded in the input");
+// clear the setInterval
+clearInterval(waitFor_s_color_filter_switches_id);
+var s_color_filter_switches_id = $(
+"#s_color_filter_switches_id"
+).val();
+// trigger click on color
+var colorUserPrefId = $("#s_color_filter_switches_id").val();
+$(".panel_colour_preferences").find("#" + colorUserPrefId).trigger({
+      type: 'click',
+      which: 1
+    });
+}
+}, 1000);
+/////////////////////////////////////////
       // handle things when user logs in (observer will take care of it if user doesn't have a sharing code in input)
       $("#setup_verse_sharing_all_set").show("slow");
       $("#setup_verse_sharing_welcome").hide();
@@ -9283,6 +9352,16 @@ $("#s_background_class").val("").attr("value", "");
                   type: 'click',
                   which: 1
                 });
+                // add the style tag // not necessary?
+                var colorDefault = $("#d_color_filter_switches_rgb").text();
+                $( "<style>mark, .active_switch, #name, #email {color : " + colorDefault + " !important;}</style>" ).appendTo( "head" );
+                // trigger click on color
+                var colorDefaultId = $("#d_color_filter_switches_id").text();
+                $(".panel_colour_preferences").find("#" + colorDefaultId).trigger({
+                      type: 'click',
+                      which: 1
+                    });
+
     }
   });
   ///////////////////////////////////////
