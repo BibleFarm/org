@@ -5419,6 +5419,280 @@ display: none;
   height: 100%;
 }
     /* END youtube embed for right ref video tab */
+    /***************************************************/
+    /*******BEGIN bf youtube style ********************************************/
+    /***************************************************/
+    .bf_youtube_container {
+      position: absolute;
+      width: 100%;
+      height: calc(100% - 96px);
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+    .RYPP {
+      /* Youtube Player With Playlist */
+      width: 100%;
+      position: relative;
+      padding-right: 250px;
+      background: black;
+      overflow: hidden;
+      font-family: ;
+      font-size: calc(16px + (32 - 16) * ( (100vw - 320px) / (4096 - 320)));
+      color: #999;
+    }
+    .RYPP .RYPP-video {
+      width: 100%;
+      padding-top: 56.25%;
+      float: left;
+      position: relative;
+    }
+    .RYPP .RYPP-video > iframe {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+    .RYPP.r16-9 .RYPP-video {
+      padding-top: 56.25%;
+    }
+    .RYPP.r4-3 .RYPP-video {
+      padding-top: 75%;
+    }
+    .RYPP.r2-1 .RYPP-video {
+      padding-top: 50%;
+    }
+    .RYPP .RYPP-items {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 64px;
+      right: 0;
+      bottom: 0;
+      overflow-y: hidden;
+    }
+    .RYPP .RYPP-playlist {
+      width: 250px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: #222;
+    }
+    .RYPP .RYPP-playlist a {
+      color: #999;
+    }
+    .RYPP .RYPP-playlist a:hover {
+      color: #fff;
+    }
+    .RYPP .RYPP-playlist > header {
+      width: 100%;
+      height: 64px;
+      padding: 16px 0 0 8px;
+      background: #222;
+      border-left: 8px solid #222;
+      border-right: 8px solid #222;
+      border-bottom: 1px solid #3a3a3a;
+      z-index: 2;
+    }
+    .RYPP .RYPP-playlist > header ._h1 {
+      margin: 0 0 4px 0;
+      padding: 0;
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+    }
+    .RYPP .RYPP-playlist > header p {
+      margin: 0;
+      padding: 0;
+    }
+    .RYPP .RYPP-playlist ol {
+      padding: 0 0 16px 0;
+      margin: 0;
+      list-style: none;
+      counter-reset: item;
+    }
+    .RYPP .RYPP-playlist ol li {
+      position: relative;
+      vertical-align: middle;
+      overflow: hidden;
+      padding: 12px 0 12px 12px;
+    }
+    .RYPP .RYPP-playlist ol li > img {
+      width: 18%;
+      display: inline-block;
+      vertical-align: middle;
+      border: 2px solid transparent;
+    }
+    .RYPP .RYPP-playlist ol li > p {
+      width: 76%;
+      margin: 0;
+      padding: 0 16px 0 0;
+      float: right;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: left;
+      color: #cacaca;
+    }
+    .RYPP .RYPP-playlist ol li > p > small {
+      margin: 0;
+      padding: 0;
+      font-size: 80%;
+    }
+    .RYPP .RYPP-playlist ol li:hover {
+      background-color: rgba(0, 0, 0, 0.3) !important;
+      cursor: pointer;
+    }
+    .RYPP .RYPP-playlist ol li.selected {
+      background-color: rgba(0, 0, 0, 0.3) !important;
+      border: 1px solid #d5ad6d;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .RYPP .RYPP-playlist ol li.selected > p {
+      color: #fff;
+    }
+    .RYPP .RYPP-playlist ol li.selected > img {
+      border: 2px solid #c03636;
+    }
+    .RYPP .RYPP-playlist ol li.selected:before {
+      /*content: '▶';*/
+      font-size: 16px;
+      color: #c03636;
+    }
+    .RYPP .RYPP-playlist ol li:before {
+      counter-increment: item;
+      content: counter(item);
+      font-size: 16px;
+      padding-right: 10px;
+    }
+
+    .RYPP-items::-webkit-scrollbar {
+      width: 6px;
+      background: #3a3a3a;
+    }
+
+    .RYPP-items::-webkit-scrollbar-thumb {
+      background: #999;
+    }
+
+    /* @media only screen and (max-width: 639px) { */
+    .RYPP {
+      padding-right: 0;
+    }
+    .RYPP .RYPP-playlist {
+      width: 100%;
+      position: static;
+      float: left;
+    }
+    .RYPP .RYPP-playlist .RYPP-items {
+      position: static;
+      max-height: 350px;
+      overflow: hidden;
+    } /*}*/
+    /************ rypp fixes ****************/
+    * {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      /* background-repeat:no-repeat; */
+    }
+
+    .RYPP-playlist > header,
+    .RYPP-title,
+    .RYPP-desc {
+      display: none;
+    }
+    .RYPP .RYPP-playlist ol li > img {
+      width: 25% !important;
+      height: auto !important;
+    }
+    .RYPP {
+      height: 100% !important;
+    }
+    .RYPP.r16-9 .RYPP-video {
+      height: 50% !important;
+    }
+    .RYPP .RYPP-playlist {
+      height: 50% !important;
+    }
+    .RYPP .RYPP-playlist .RYPP-items {
+      max-height: 100% !important;
+      height: 100% !important;
+    }
+    .RYPP .RYPP-playlist ol li:hover {
+      background: #0006 !important;
+    }
+    .RYPP .RYPP-playlist ol li.selected {
+      background: #0009 !important;
+    }
+    .RYPP .RYPP-playlist ol li {
+      padding: 4px !important;
+      margin-top: 10px !important;
+      margin-right: 15px !important;
+      margin-bottom: 10px !important;
+      margin-left: 10px !important;
+    }
+    .RYPP .RYPP-playlist ol li.selected > img {
+      border: none !important;
+    }
+    .RYPP .RYPP-playlist ol li:before {
+      color: #ae9c80 !important;
+      text-shadow: 2px 2px 1px black;
+    }
+    .RYPP .RYPP-playlist ol li.selected:before {
+      color: #d5ad6d !important;
+      text-shadow: 2px 2px 1px black;
+      padding-right: 10px;
+    }
+    .RYPP .RYPP-playlist ol li > p {
+      width: 62%;
+      padding: 0;
+    }
+    .RYPP .RYPP-playlist ol li > p {
+      font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
+      font-size: 14px;
+      color: #ae9c80;
+      text-shadow: 2px 2px 1px black;
+    }
+    .RYPP .RYPP-playlist ol li.selected > p {
+      font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
+      font-size: 14px;
+      color: #d5ad6d;
+      text-shadow: 2px 2px 1px black;
+    }
+    .RYPP .RYPP-playlist ol li > p > small {
+      font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
+      font-size: 12px;
+      color: #ae9c80;
+      text-shadow: 2px 2px 1px black;
+    }
+    .RYPP .RYPP-playlist ol {
+      overflow-y: auto;
+      height: 100%;
+    }
+    /* youtube playlist perfect scrollbar */
+    div.RYPP-items > ol.ps-container > .ps-scrollbar-y-rail {
+      top: 50% !important;
+      width: 10px !important;
+      right: 0px !important;
+      background-color: rgba(213, 173, 109, 0.1) !important;
+      opacity: 1 !important;
+    }
+    div.RYPP-items > ol.ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y {
+      width: 10px !important;
+      height: 50px !important;
+      right: 1px !important;
+      background-color: rgba(213, 173, 109, 0.5) !important;
+      opacity: 1 !important;
+    }
+
+    /***************************************************/
+    /*******END bf youtube style ********************************************/
+    /***************************************************/
 
 
 
