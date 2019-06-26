@@ -1041,8 +1041,9 @@ $(document).ready(function() {
       // addthis shadow hack to SHARING AND FOLLOW
       setTimeout(function() {
         $(".wrap_sharing_panel")
-          .find("svg.at-icon")
-          .css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, 3.7))");
+        .find(".at-icon-wrapper")
+          .css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, 3.8))")
+          .css("filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, 3.8))");
         console.log("/////// applied addthis shadow SHARING hack @ + 1000");
       }, 1000);
       // addthis FOLLOW margin hack
@@ -1056,11 +1057,12 @@ $(document).ready(function() {
       // addthis FOLLOW size hack
       setTimeout(function() {
         $(".facebook_patience")
-          .find(".at-icon-wrapper, svg.at-icon")
+        .find(".at-icon-wrapper")
           .css("width", "49px")
           .css("height", "49px")
           .css("line-height", "49px")
-          .css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, 3.7))");
+          .css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, 3.8))")
+          .css("filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, 3.8))");
         console.log("/////// applied addthis shadow FOLLOW hack @ + 3000");
       }, 3000);
 
