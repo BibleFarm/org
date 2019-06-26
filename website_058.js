@@ -1041,7 +1041,7 @@ $(document).ready(function() {
       // addthis shadow hack to SHARING AND FOLLOW
       setTimeout(function() {
         $(".wrap_sharing_panel")
-          .find("svg.at-icon")
+          .find(".at-icon-wrapper")
           .css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, 3.8))")
           .css("filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, 3.8))");
         console.log("/////// applied addthis shadow SHARING hack @ + 1000");
