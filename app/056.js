@@ -9495,3 +9495,28 @@ $('#app_terminal_para_on').trigger('click');
 ///////////////////////////////////////////////
 ////END Temporary switch English and Spanish
 ///////////////////////////////////////////////
+
+
+///////////////////////////////////////////////
+////BEGIN check if landing from mindy
+///////////////////////////////////////////////
+$(document).ready(function() {
+  var pathname = window.location.pathname; // Returns path only (/path/example.html)
+  var url      = window.location.href;     // Returns full URL (https://example.com/path/example.html)
+  var origin   = window.location.origin;   // Returns base URL (https://example.com)
+
+  console.log(pathname);
+  console.log(url);
+  console.log(origin);
+
+    if( (url == "https://www.biblefarm.org/app/#login" ) && ($("#edited_app_name").text() == "Your Name Goes Here") ) {
+
+  $("#edited_app_name").trigger("click");
+
+    }
+// end document ready
+});
+// end document ready
+///////////////////////////////////////////////
+////END check if landing from mindy
+///////////////////////////////////////////////
