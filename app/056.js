@@ -9501,6 +9501,8 @@ $('#app_terminal_para_on').trigger('click');
 ////BEGIN check if landing from mindy
 ///////////////////////////////////////////////
 $(document).ready(function() {
+  setTimeout(function() {
+
   var pathname = window.location.pathname; // Returns path only (/path/example.html)
   var url      = window.location.href;     // Returns full URL (https://example.com/path/example.html)
   var origin   = window.location.origin;   // Returns base URL (https://example.com)
@@ -9514,6 +9516,8 @@ $(document).ready(function() {
   $("#edited_app_name").trigger("click");
 
     }
+  }, 21000);
+
 // end document ready
 });
 // end document ready
