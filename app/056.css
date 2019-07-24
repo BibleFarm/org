@@ -7034,7 +7034,7 @@ display: inline-block;
 #color_to_share {
   display: none;
 }
-.temp_container_delete_when_feature_is_established {
+.help_body_temp, .console_body_temp {
   padding: 44px;
 }
 /* wrap ajaxed sharing page */

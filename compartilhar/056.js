@@ -8401,7 +8401,7 @@ $(document).ready(function() {
   //////////////////////////////////////////////////
   // First create our observer and get our target element
   var observer = new MutationObserver(MutationObserverUserLoggedInOrNot),
-    elTarget = document.querySelector("body #admin"),
+    elTarget = document.querySelector("body #continue_as_a_visitor_admin"),
     objConfig = {
       childList: true,
       subtree: true,
@@ -8415,20 +8415,30 @@ $(document).ready(function() {
     console.log("TRIGGERED Mutation Observer MutationObserverUserLoggedInOrNot");
 
 
-if($('#admin').css('display') !== 'none')
+if($('#continue_as_a_visitor_admin').css('display') == 'none')
 {
   var welcome_user_with_name = $("body").find("#name").text();
   $("#logged_in_user_is_a_part").text("I'm part of biblefarm.org");
+  console.log("-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/ changed bottom to I'm part of biblefarm.org");
+
+// give it time upon arrival
+  setTimeout(function() {
   $("#edited_app_name").text(welcome_user_with_name);
+  console.log("-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/ changed bottom to current user's name");
+}, 8000);
+// do it immediately also for a page that's already loaded
+$("#edited_app_name").text(welcome_user_with_name);
+console.log("-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/ changed bottom to current user's name");
+
   setTimeout(function() {
   $(".app_wrap").find("p.msg1").text(welcome_user_with_name).fadeOut("5000").fadeIn("7000");
 }, 8000);
 } else {
   $("#logged_in_user_is_a_part").text("be a part of biblefarm.org");
-  $("#edited_app_name").text("Your Name Goes Here");
+  $("#edited_app_name").text("Seu Nome Vai Aqui");
 
   setTimeout(function() {
-  $(".app_wrap").find("p.msg1").text("thanks for visiting").fadeOut("5000").fadeIn("7000");
+  $(".app_wrap").find("p.msg1").text("obrigado pela visita").fadeOut("5000").fadeIn("7000");
 }, 8000);
 }
 
@@ -8940,7 +8950,7 @@ $(".wrap_sponsor_ads_app_only").html("<div class='sponsor_ads'><div class='spons
 $("body").on("click", "#tE_ajax_chapters tbody tr td span", function(e) {
 
 // BEGIN if user not logged in
-if ($.trim($("#edited_app_name").text()) == "Your Name Goes Here") {
+if ($.trim($("#edited_app_name").text()) == "Seu Nome Vai Aqui") {
 // check if we need to open the menu
 if (!$('.wrap_top_menu').hasClass('wrap_top_menu_active')){
 setTimeout(function() {
@@ -9053,7 +9063,7 @@ console.log("complete_url_to_share_from_browsing_mode: " + complete_url_to_share
   ///////////////////////////////////////////////////
 
 ///////////////////////////////////////////////////
-/// BEGIN handle click on Your Name Goes Here or logged in user  ///////
+/// BEGIN handle click on Seu Nome Vai Aqui or logged in user  ///////
 ///////////////////////////////////////////////////
   $("#edited_app_name").on('click', function(e) {
 // BEGIN handle the toggle to login
@@ -9097,7 +9107,7 @@ console.log("complete_url_to_share_from_browsing_mode: " + complete_url_to_share
 });
 
 ///////////////////////////////////////////////////
-/// END handle click on Your Name Goes Here or logged in user  ///////
+/// END handle click on Seu Nome Vai Aqui or logged in user  ///////
 ///////////////////////////////////////////////////
 
 
@@ -9511,7 +9521,7 @@ $(document).ready(function() {
   console.log(url);
   console.log(origin);
 
-    if( (url == "https://www.biblefarm.org/app/#login" ) && ($("#edited_app_name").text() == "Your Name Goes Here") ) {
+    if( (url == "https://www.biblefarm.org/app/#login" ) && ($("#edited_app_name").text() == "Seu Nome Vai Aqui") ) {
 
   $("#edited_app_name").trigger("click");
 
@@ -9534,4 +9544,47 @@ $('.select_audio').trigger('click');
 });
 ///////////////////////////////////////////////
 ////END clicking on bottom right ref selects audio
+///////////////////////////////////////////////
+
+///////////////////////////////////////////////
+////BEGIN olgin hack to Spanish wording
+///////////////////////////////////////////////
+$(document).ready(function() {
+// wait for it to be in DOM
+  var waitForFirebaseUIUponArrival = setInterval(function() {
+    if ($("body").find('.firebaseui-idp-text').length > 0) {
+      console.log("FirebaseUI ready in DOM upon arrival");
+      // clear the setInterval
+      clearInterval(waitForFirebaseUIUponArrival);
+// upon arrival
+$("body").find(".firebaseui-card-content").css("padding", "0 10px");
+$("body").find("button.firebaseui-idp-button").css("max-width", "312px");
+$("body").find(".firebaseui-idp-icon").css("height", "22px").css("width", "22px");
+$("body").find("button[data-provider-id='google.com']").find(".firebaseui-idp-text-long").text("Faça o login via Google").css("text-shadow", "0px 0px 1px #000").css("font-family", "PT_Sans-Narrow-Web-Regular").css("font-size", "20px");
+$("body").find("button[data-provider-id='facebook.com']").find(".firebaseui-idp-text-long").text("Faça o login via Facebook").css("text-shadow", "1px 1px 1px #000").css("font-family", "PT_Sans-Narrow-Web-Regular").css("font-size", "20px");
+$("body").find("button[data-provider-id='twitter.com']").find(".firebaseui-idp-text-long").text("Faça o login via Twitter").css("text-shadow", "1px 1px 1px #000").css("font-family", "PT_Sans-Narrow-Web-Regular").css("font-size", "20px");
+$("body").find("button[data-provider-id='password']").find(".firebaseui-idp-text-long").text("Faça o login via Email").css("text-shadow", "1px 1px 1px #000").css("font-family", "PT_Sans-Narrow-Web-Regular").css("font-size", "20px");
+}
+}, 1000);
+// after we signed out
+$("#sign-out").on('click', function() {
+  // wait for it to be in DOM
+    var waitForFirebaseUIAfterSignOut = setInterval(function() {
+      if ($("body").find('.firebaseui-idp-text').length > 0) {
+        console.log("FirebaseUI ready in DOM after SignOut");
+        // clear the setInterval
+        clearInterval(waitForFirebaseUIAfterSignOut);
+        $("body").find(".firebaseui-card-content").css("padding", "0 10px");
+        $("body").find("button.firebaseui-idp-button").css("max-width", "312px");
+        $("body").find(".firebaseui-idp-icon").css("height", "22px").css("width", "22px");
+$("body").find("button[data-provider-id='google.com']").find(".firebaseui-idp-text-long").text("Faça o login via Google").css("text-shadow", "0px 0px 1px #000").css("font-family", "PT_Sans-Narrow-Web-Regular").css("font-size", "20px");
+$("body").find("button[data-provider-id='facebook.com']").find(".firebaseui-idp-text-long").text("Faça o login via Facebook").css("text-shadow", "1px 1px 1px #000").css("font-family", "PT_Sans-Narrow-Web-Regular").css("font-size", "20px");
+$("body").find("button[data-provider-id='twitter.com']").find(".firebaseui-idp-text-long").text("Faça o login via Twitter").css("text-shadow", "1px 1px 1px #000").css("font-family", "PT_Sans-Narrow-Web-Regular").css("font-size", "20px");
+$("body").find("button[data-provider-id='password']").find(".firebaseui-idp-text-long").text("Faça o login via Email").css("text-shadow", "1px 1px 1px #000").css("font-family", "PT_Sans-Narrow-Web-Regular").css("font-size", "20px");
+}
+}, 1000);
+});
+});
+///////////////////////////////////////////////
+////END olgin hack to Spanish wording
 ///////////////////////////////////////////////

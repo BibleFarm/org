@@ -8401,7 +8401,7 @@ $(document).ready(function() {
   //////////////////////////////////////////////////
   // First create our observer and get our target element
   var observer = new MutationObserver(MutationObserverUserLoggedInOrNot),
-    elTarget = document.querySelector("body #admin"),
+    elTarget = document.querySelector("body #continue_as_a_visitor_admin"),
     objConfig = {
       childList: true,
       subtree: true,
@@ -8415,16 +8415,26 @@ $(document).ready(function() {
     console.log("TRIGGERED Mutation Observer MutationObserverUserLoggedInOrNot");
 
 
-if($('#admin').css('display') !== 'none')
+if($('#continue_as_a_visitor_admin').css('display') == 'none')
 {
   var welcome_user_with_name = $("body").find("#name").text();
-  $("#logged_in_user_is_a_part").text("I'm part of biblefarm.org");
+  $("#logged_in_user_is_a_part").text("I'm part of BibleFarm.org");
+  console.log("-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/ changed bottom to I'm part of BibleFarm.org");
+
+// give it time upon arrival
+  setTimeout(function() {
   $("#edited_app_name").text(welcome_user_with_name);
+  console.log("-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/ changed bottom to current user's name");
+}, 8000);
+// do it immediately also for a page that's already loaded
+$("#edited_app_name").text(welcome_user_with_name);
+console.log("-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/-*/ changed bottom to current user's name");
+
   setTimeout(function() {
   $(".app_wrap").find("p.msg1").text(welcome_user_with_name).fadeOut("5000").fadeIn("7000");
 }, 8000);
 } else {
-  $("#logged_in_user_is_a_part").text("be a part of biblefarm.org");
+  $("#logged_in_user_is_a_part").text("be a part of BibleFarm.org");
   $("#edited_app_name").text("Your Name Goes Here");
 
   setTimeout(function() {
@@ -9523,4 +9533,47 @@ $(document).ready(function() {
 // end document ready
 ///////////////////////////////////////////////
 ////END check if landing from mindy
+///////////////////////////////////////////////
+
+///////////////////////////////////////////////
+////BEGIN login services hack
+///////////////////////////////////////////////
+$(document).ready(function() {
+// wait for it to be in DOM
+  var waitForFirebaseUIUponArrival = setInterval(function() {
+    if ($("body").find('.firebaseui-idp-text').length > 0) {
+      console.log("FirebaseUI ready in DOM upon arrival");
+      // clear the setInterval
+      clearInterval(waitForFirebaseUIUponArrival);
+// upon arrival
+$("body").find(".firebaseui-card-content").css("padding", "0 10px");
+$("body").find("button.firebaseui-idp-button").css("max-width", "312px");
+$("body").find(".firebaseui-idp-icon").css("height", "22px").css("width", "22px");
+$("body").find("button[data-provider-id='google.com']").find(".firebaseui-idp-text-long").css("text-shadow", "0px 0px 1px #000").css("font-family", "PT_Sans-Narrow-Web-Regular").css("font-size", "20px");
+$("body").find("button[data-provider-id='facebook.com']").find(".firebaseui-idp-text-long").css("text-shadow", "1px 1px 1px #000").css("font-family", "PT_Sans-Narrow-Web-Regular").css("font-size", "20px");
+$("body").find("button[data-provider-id='twitter.com']").find(".firebaseui-idp-text-long").css("text-shadow", "1px 1px 1px #000").css("font-family", "PT_Sans-Narrow-Web-Regular").css("font-size", "20px");
+$("body").find("button[data-provider-id='password']").find(".firebaseui-idp-text-long").css("text-shadow", "1px 1px 1px #000").css("font-family", "PT_Sans-Narrow-Web-Regular").css("font-size", "20px");
+}
+}, 1000);
+// after we signed out
+$("#sign-out").on('click', function() {
+  // wait for it to be in DOM
+    var waitForFirebaseUIAfterSignOut = setInterval(function() {
+      if ($("body").find('.firebaseui-idp-text').length > 0) {
+        console.log("FirebaseUI ready in DOM after SignOut");
+        // clear the setInterval
+        clearInterval(waitForFirebaseUIAfterSignOut);
+        $("body").find(".firebaseui-card-content").css("padding", "0 10px");
+        $("body").find("button.firebaseui-idp-button").css("max-width", "312px");
+        $("body").find(".firebaseui-idp-icon").css("height", "22px").css("width", "22px");
+$("body").find("button[data-provider-id='google.com']").find(".firebaseui-idp-text-long").css("text-shadow", "0px 0px 1px #000").css("font-family", "PT_Sans-Narrow-Web-Regular").css("font-size", "20px");
+$("body").find("button[data-provider-id='facebook.com']").find(".firebaseui-idp-text-long").css("text-shadow", "1px 1px 1px #000").css("font-family", "PT_Sans-Narrow-Web-Regular").css("font-size", "20px");
+$("body").find("button[data-provider-id='twitter.com']").find(".firebaseui-idp-text-long").css("text-shadow", "1px 1px 1px #000").css("font-family", "PT_Sans-Narrow-Web-Regular").css("font-size", "20px");
+$("body").find("button[data-provider-id='password']").find(".firebaseui-idp-text-long").css("text-shadow", "1px 1px 1px #000").css("font-family", "PT_Sans-Narrow-Web-Regular").css("font-size", "20px");
+}
+}, 1000);
+});
+});
+///////////////////////////////////////////////
+////END login services hack
 ///////////////////////////////////////////////
