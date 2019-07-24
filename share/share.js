@@ -1,23 +1,4 @@
 $(document).ready(function() {
-
-//////////////////////////////////////////////////
-////////////////// English Changes ///////////////
-//////////////////////////////////////////////////
-
-// inject
-$.ajax({
-    url:'https://www.biblefarm.org/app',
-        type:'GET',
-        success: function(data){
-           $('head').html($(data).find('.injectable').html());
-        }
-});
-
-// ref header
-$(".ref_header").html("<div class='temp_header_title_for_audio'>select a chapter to listen to The Word</div>");
-// ref footer
-$(".ref_footer").html('<div class="temp_footer_title_for_audio"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YCUGUZHYX5Y2Q&source=url" target="_blank" class="bf_links"><span id="" class="">give a love offering</span></a></div>');
-
 //////////////////////////////////////////////////
 ////////////////// Generic Changes ///////////////
 //////////////////////////////////////////////////
@@ -40,6 +21,13 @@ $(".select_audio, .select_views, .select_notes, .select_highlights, .select_book
 $(".temp_footer_title_for_audio").css("display", "block").css("width", "100%").css("height", "44px").css("line-height", "44px").css("font-size", "20px").css("text-align", "center").css("text-shadow", "2px 2px 1px #000000");
 // hide audio preferences
 $(".audio_preferences_wrapper").css("visibility","hidden");
+//////////////////////////////////////////////////
+////////////////// English Changes ///////////////
+//////////////////////////////////////////////////
+// ref header
+$(".ref_header").html("<div class='temp_header_title_for_audio'>select a chapter to listen to The Word</div>");
+// ref footer
+$(".ref_footer").html('<div class="temp_footer_title_for_audio"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YCUGUZHYX5Y2Q&source=url" target="_blank" class="bf_links"><span id="" class="">give a love offering</span></a></div>');
 
 
-});
+}); // END document ready

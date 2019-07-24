@@ -1,8 +1,33 @@
 $(document).ready(function() {
-
+//////////////////////////////////////////////////
+////////////////// Generic Changes ///////////////
+//////////////////////////////////////////////////
+// clicking on bottom right ref shows audio
+$(".item_right").on('click', function() {
+$('.wrap_ref_body_audio').show();
+});
+// empty menu items: // console // terminal // languages // fullscreen
+$("div.accordion_console, div.panel_console, div.accordion_terminal, div.panel_terminal, div.accordion_language_preferences, div.panel_language_preferences, div.accordion_fullscreen_preferences, div.panel_fullscreen_preferences, .splash_console, .splash_terminal, .splash_language_preferences, .splash_fullscreen_preferences").empty();
+// hide unnecessary search buttons
+$(".filter_grk, .filter_grk_tra, .filter_reg_esp, .filter_heb_tra, .filter_heb").css("visibility","hidden");
+$(".searching_filters").find(".wrap_standard_multi_item").find(".standard_multi_item").find("div").eq(0,1,2,4,5).empty().hide();
+// hide ref header tabs
+$(".select_analysis, .select_lexicons, .select_dictionaries, .select_encyclopedias, .select_topics").css("display","none");
+// add temp header
+$(".temp_header_title_for_audio").css("display", "block").css("width", "100%").css("height", "44px").css("line-height", "44px").css("font-size", "18px").css("text-align", "center").css("text-shadow", "2px 2px 1px #000000");
+// hide ref footer tabs
+$(".select_audio, .select_views, .select_notes, .select_highlights, .select_bookmarks, .select_post").css("display","none");
+// add temp footer
+$(".temp_footer_title_for_audio").css("display", "block").css("width", "100%").css("height", "44px").css("line-height", "44px").css("font-size", "20px").css("text-align", "center").css("text-shadow", "2px 2px 1px #000000");
+// hide audio preferences
+$(".audio_preferences_wrapper").css("visibility","hidden");
 //////////////////////////////////////////////////
 ////////////////// Polish Changes ///////////////
 //////////////////////////////////////////////////
+// ref header
+$(".ref_header").html("<div class='temp_header_title_for_audio'>wybierz rozdział, aby posłuchać Słowa</div>");
+// ref footer
+$(".ref_footer").html('<div class="temp_footer_title_for_audio"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YCUGUZHYX5Y2Q&source=url" target="_blank" class="bf_links"><span id="" class="">daj darowiznę miłości</span></a></div>');
 
 setTimeout(function() {
 $("#edited_app_name").text("Twoje Imię Idzie Tutaj");
@@ -72,7 +97,7 @@ $("#login_now").text("Zaloguj Się");
 
 $(".menu_title_first_time_users").text("jestem tu nowy");
 $(".menu_title_who_else_is_part").text("poznaj drużynę");
-$(".menu_title_admin").text("zarządzaj moim kontem");
+$(".menu_title_admin").text("moim kontem");
 $(".menu_title_console").text("konsola");
 $(".menu_title_terminal").text("terminal");
 $(".menu_title_language_preferences").text("języki");
@@ -99,33 +124,41 @@ $('input#config_name_change').attr("placeholder", "wpisz swój kod tutaj");
 $("#I_dont_have_a_sharing_code").text("nie mam kodu");
 $("#activate_sharing_code").text("aktywuj");
 
-// ref header
-$(".ref_header").html("<div class='temp_header_title_for_audio'>wybierz rozdział, aby posłuchać Słowa</div>");
-// ref footer
-$(".ref_footer").html('<div class="temp_footer_title_for_audio"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YCUGUZHYX5Y2Q&source=url" target="_blank" class="bf_links"><span id="" class="">daj darowiznę miłości</span></a></div>');
-
-//////////////////////////////////////////////////
-////////////////// Generic Changes ///////////////
-//////////////////////////////////////////////////
-// clicking on bottom right ref shows audio
-$(".item_right").on('click', function() {
-$('.wrap_ref_body_audio').show();
+///////////////////////////////////////////////
+////BEGIN login hack to Polish wording
+///////////////////////////////////////////////
+$(document).ready(function() {
+// wait for it to be in DOM
+  var waitForFirebaseUIUponArrival = setInterval(function() {
+    if ($("body").find('.firebaseui-idp-text').length > 0) {
+      console.log("FirebaseUI ready in DOM upon arrival");
+      // clear the setInterval
+      clearInterval(waitForFirebaseUIUponArrival);
+// upon arrival
+$("body").find("button[data-provider-id='google.com']").find(".firebaseui-idp-text-long").text("Zaloguj się przez Google");
+$("body").find("button[data-provider-id='facebook.com']").find(".firebaseui-idp-text-long").text("Zaloguj się przez Facebook");
+$("body").find("button[data-provider-id='twitter.com']").find(".firebaseui-idp-text-long").text("Zaloguj się przez Twitter");
+$("body").find("button[data-provider-id='password']").find(".firebaseui-idp-text-long").text("Zaloguj się przez Email");
+}
+}, 1100);
+// after we signed out
+$("#sign-out").on('click', function() {
+  // wait for it to be in DOM
+    var waitForFirebaseUIAfterSignOut = setInterval(function() {
+      if ($("body").find('.firebaseui-idp-text').length > 0) {
+        console.log("FirebaseUI ready in DOM after SignOut");
+        // clear the setInterval
+        clearInterval(waitForFirebaseUIAfterSignOut);
+$("body").find("button[data-provider-id='google.com']").find(".firebaseui-idp-text-long").text("Zaloguj się przez Google");
+$("body").find("button[data-provider-id='facebook.com']").find(".firebaseui-idp-text-long").text("Zaloguj się przez Facebook");
+$("body").find("button[data-provider-id='twitter.com']").find(".firebaseui-idp-text-long").text("Zaloguj się przez Twitter");
+$("body").find("button[data-provider-id='password']").find(".firebaseui-idp-text-long").text("Zaloguj się przez Email");
+}
+}, 1100);
 });
-// empty menu items: // console // terminal // languages // fullscreen
-$("div.accordion_console, div.panel_console, div.accordion_terminal, div.panel_terminal, div.accordion_language_preferences, div.panel_language_preferences, div.accordion_fullscreen_preferences, div.panel_fullscreen_preferences, .splash_console, .splash_terminal, .splash_language_preferences, .splash_fullscreen_preferences").empty();
-// hide unnecessary search buttons
-$(".filter_grk, .filter_grk_tra, .filter_reg_esp, .filter_heb_tra, .filter_heb").css("visibility","hidden");
-$(".searching_filters").find(".wrap_standard_multi_item").find(".standard_multi_item").find("div").eq(0,1,2,4,5).empty().hide();
-// hide ref header tabs
-$(".select_analysis, .select_lexicons, .select_dictionaries, .select_encyclopedias, .select_topics").css("display","none");
-// add temp header
-$(".temp_header_title_for_audio").css("display", "block").css("width", "100%").css("height", "44px").css("line-height", "44px").css("font-size", "18px").css("text-align", "center").css("text-shadow", "2px 2px 1px #000000");
-// hide ref footer tabs
-$(".select_audio, .select_views, .select_notes, .select_highlights, .select_bookmarks, .select_post").css("display","none");
-// add temp footer
-$(".temp_footer_title_for_audio").css("display", "block").css("width", "100%").css("height", "44px").css("line-height", "44px").css("font-size", "20px").css("text-align", "center").css("text-shadow", "2px 2px 1px #000000");
-// hide audio preferences
-$(".audio_preferences_wrapper").css("visibility","hidden");
-
-
 });
+///////////////////////////////////////////////
+////END login hack to Polish wording
+///////////////////////////////////////////////
+
+}); // END document ready
