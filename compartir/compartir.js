@@ -159,5 +159,171 @@ $("body").find("button[data-provider-id='password']").find(".firebaseui-idp-text
 ///////////////////////////////////////////////
 ////END login hack to Spanish wording
 ///////////////////////////////////////////////
+// rename audio files and playlist
+$("body").find(".sm2-playlist-bd li a").each(function(){
+// directory language code
+this.href = this.href.replace('audio-en', 'audio-es');
+// file language code
+this.href = this.href.replace('KJV', 'RV9');
+// file name prefix
+this.href = this.href.replace('KJV_', 'RV9_');
+// text in the playlist
+this.text = this.text.replace('Genesis', 'Génesis');
+this.text = this.text.replace('Exodus', 'Éxodo');
+this.text = this.text.replace('Leviticus', 'Levítico');
+this.text = this.text.replace('Numbers', 'Números');
+this.text = this.text.replace('Deuteronomy', 'Deuteronomio');
+this.text = this.text.replace('Joshua', 'Josué');
+this.text = this.text.replace('Judges', 'Jueces');
+this.text = this.text.replace('1 Samuel', '1 Samuel');
+this.text = this.text.replace('2 Samuel', '2 Samuel');
+this.text = this.text.replace('1 Kings', '1 Reyes');
+this.text = this.text.replace('2 Kings', '2 Reyes');
+this.text = this.text.replace('Isaiah', 'Isaías');
+this.text = this.text.replace('Jeremiah', 'Jeremías');
+this.text = this.text.replace('Ezekiel', 'Ezequiel');
+this.text = this.text.replace('Daniel', 'Daniel');
+this.text = this.text.replace('Hosea', 'Oseas');
+this.text = this.text.replace('Joel', 'Joel');
+this.text = this.text.replace('Amos', 'Amós');
+this.text = this.text.replace('Obadiah', 'Abdías');
+this.text = this.text.replace('Jonah', 'Jonás');
+this.text = this.text.replace('Micah', 'Miqueas');
+this.text = this.text.replace('Nahum', 'Nahum');
+this.text = this.text.replace('Habakkuk', 'Habacuc');
+this.text = this.text.replace('Zephaniah', 'Sofonías');
+this.text = this.text.replace('Haggai', 'Haggeo');
+this.text = this.text.replace('Zechariah', 'Zacarías');
+this.text = this.text.replace('Malachi', 'Malaquías');
+this.text = this.text.replace('Psalms', 'Salmos');
+this.text = this.text.replace('Proverbs', 'Proverbios');
+this.text = this.text.replace('Job', 'Job');
+this.text = this.text.replace('Song of Songs', 'Canción de Canciones');
+this.text = this.text.replace('Ruth', 'Ruth');
+this.text = this.text.replace('Lamentations', 'Lamentaciones');
+this.text = this.text.replace('Ecclesiastes', 'Ecclesiastés');
+this.text = this.text.replace('Esther', 'Esther');
+this.text = this.text.replace('Ezra', 'Esdras');
+this.text = this.text.replace('Nehemiah', 'Nehemías');
+this.text = this.text.replace('1 Chronicles', '1 Crónicas');
+this.text = this.text.replace('2 Chronicles', '2 Crónicas');
+this.text = this.text.replace('John', 'Juan');
+this.text = this.text.replace('Matthew', 'Mateo');
+this.text = this.text.replace('Mark', 'Marcos');
+this.text = this.text.replace('Luke', 'Lucas');
+this.text = this.text.replace('Acts', 'Hechos');
+this.text = this.text.replace('Romans', 'Romanos');
+this.text = this.text.replace('1 Corinthians', '1 Corintios');
+this.text = this.text.replace('2 Corinthians', '2 Corintios');
+this.text = this.text.replace('Galatians', 'Gálatas');
+this.text = this.text.replace('Ephesians', 'Efesios');
+this.text = this.text.replace('Philippians', 'Filipenses');
+this.text = this.text.replace('Colossians', 'Colosenses');
+this.text = this.text.replace('1 Thessalonians', '1 Tesalonicenses');
+this.text = this.text.replace('2 Thessalonians', '2 Tesalonicenses');
+this.text = this.text.replace('1 Timothy', '1 Timoteo');
+this.text = this.text.replace('2 Timothy', '2 Timoteo');
+this.text = this.text.replace('Titus', 'Tito');
+this.text = this.text.replace('Philemon', 'Filemón');
+this.text = this.text.replace('Hebrews', 'Hebreos');
+this.text = this.text.replace('James', 'Jacobo');
+this.text = this.text.replace('1 Peter', '1 Pedro');
+this.text = this.text.replace('2 Peter', '2 Pedro');
+this.text = this.text.replace('1 John', '1 Juan');
+this.text = this.text.replace('2 John', '2 Juan');
+this.text = this.text.replace('3 John', '3 Juan');
+this.text = this.text.replace('Jude', 'Judas');
+this.text = this.text.replace('Revelation', 'Apocalipsis');
+});
+
+// rename menu sections
+$("body").find(".menu_sec_reg:contains('Teaching')").html("Enseñanza");
+$("body").find(".menu_sec_reg:contains('Former Prophets')").html("Profetas Anteriores");
+$("body").find(".menu_sec_reg:contains('Latter Prophets')").html("Profetas Posteriores");
+$("body").find(".menu_sec_reg:contains('The Twelve')").html("Los Doce");
+$("body").find(".menu_sec_reg:contains('Scrolls of Truth')").html("Escrituras de Verdad");
+$("body").find(".menu_sec_reg:contains('Five Scrolls')").html("Los Cinco Rollos");
+$("body").find(".menu_sec_reg:contains('Other Scrolls')").html("Otros Rollos");
+$("body").find(".menu_sec_reg:contains('Messiah')").html("Mesías");
+$("body").find(".menu_sec_reg:contains('Emissaries')").html("Emisarios");
+$("body").find(".menu_sec_reg:contains('Assemblies')").html("Asambleas");
+$("body").find(".menu_sec_reg:contains('Disciples')").html("Discípulos");
+$("body").find(".menu_sec_reg:contains('Vision')").html("Visión");
+
+// wait for it to be in DOM
+  var waitForBookNamesInDOM = setInterval(function() {
+    if ($("body").find('.menu_book_reg').length > 0) {
+      console.log("book names are in DOM");
+      // clear the setInterval
+      clearInterval(waitForBookNamesInDOM);
+// rename menu books
+$("body").find(".menu_book_reg:contains('1 John')").html("1 Juan");
+$("body").find(".menu_book_reg:contains('2 John')").html("2 Juan");
+$("body").find(".menu_book_reg:contains('3 John')").html("3 Juan");
+$("body").find(".menu_book_reg:contains('Genesis')").html("Génesis");
+$("body").find(".menu_book_reg:contains('Exodus')").html("Éxodo");
+$("body").find(".menu_book_reg:contains('Leviticus')").html("Levítico");
+$("body").find(".menu_book_reg:contains('Numbers')").html("Números");
+$("body").find(".menu_book_reg:contains('Deuteronomy')").html("Deuteronomio");
+$("body").find(".menu_book_reg:contains('Joshua')").html("Josué");
+$("body").find(".menu_book_reg:contains('Judges')").html("Jueces");
+$("body").find(".menu_book_reg:contains('1 Samuel')").html("1 Samuel");
+$("body").find(".menu_book_reg:contains('2 Samuel')").html("2 Samuel");
+$("body").find(".menu_book_reg:contains('1 Kings')").html("1 Reyes");
+$("body").find(".menu_book_reg:contains('2 Kings')").html("2 Reyes");
+$("body").find(".menu_book_reg:contains('Isaiah')").html("Isaías");
+$("body").find(".menu_book_reg:contains('Jeremiah')").html("Jeremías");
+$("body").find(".menu_book_reg:contains('Ezekiel')").html("Ezequiel");
+$("body").find(".menu_book_reg:contains('Daniel')").html("Daniel");
+$("body").find(".menu_book_reg:contains('Hosea')").html("Oseas");
+$("body").find(".menu_book_reg:contains('Joel')").html("Joel");
+$("body").find(".menu_book_reg:contains('Amos')").html("Amós");
+$("body").find(".menu_book_reg:contains('Obadiah')").html("Abdías");
+$("body").find(".menu_book_reg:contains('Jonah')").html("Jonás");
+$("body").find(".menu_book_reg:contains('Micah')").html("Miqueas");
+$("body").find(".menu_book_reg:contains('Nahum')").html("Nahum");
+$("body").find(".menu_book_reg:contains('Habakkuk')").html("Habacuc");
+$("body").find(".menu_book_reg:contains('Zephaniah')").html("Sofonías");
+$("body").find(".menu_book_reg:contains('Haggai')").html("Haggeo");
+$("body").find(".menu_book_reg:contains('Zechariah')").html("Zacarías");
+$("body").find(".menu_book_reg:contains('Malachi')").html("Malaquías");
+$("body").find(".menu_book_reg:contains('Psalms')").html("Salmos");
+$("body").find(".menu_book_reg:contains('Proverbs')").html("Proverbios");
+$("body").find(".menu_book_reg:contains('Job')").html("Job");
+$("body").find(".menu_book_reg:contains('Song of Songs')").html("Canción de Canciones");
+$("body").find(".menu_book_reg:contains('Ruth')").html("Ruth");
+$("body").find(".menu_book_reg:contains('Lamentations')").html("Lamentaciones");
+$("body").find(".menu_book_reg:contains('Ecclesiastes')").html("Ecclesiastés");
+$("body").find(".menu_book_reg:contains('Esther')").html("Esther");
+$("body").find(".menu_book_reg:contains('Ezra')").html("Esdras");
+$("body").find(".menu_book_reg:contains('Nehemiah')").html("Nehemías");
+$("body").find(".menu_book_reg:contains('1 Chronicles')").html("1 Crónicas");
+$("body").find(".menu_book_reg:contains('2 Chronicles')").html("2 Crónicas");
+$("body").find(".menu_book_reg:contains('John')").html("Juan");
+$("body").find(".menu_book_reg:contains('Matthew')").html("Mateo");
+$("body").find(".menu_book_reg:contains('Mark')").html("Marcos");
+$("body").find(".menu_book_reg:contains('Luke')").html("Lucas");
+$("body").find(".menu_book_reg:contains('Acts')").html("Hechos");
+$("body").find(".menu_book_reg:contains('Romans')").html("Romanos");
+$("body").find(".menu_book_reg:contains('1 Corinthians')").html("1 Corintios");
+$("body").find(".menu_book_reg:contains('2 Corinthians')").html("2 Corintios");
+$("body").find(".menu_book_reg:contains('Galatians')").html("Gálatas");
+$("body").find(".menu_book_reg:contains('Ephesians')").html("Efesios");
+$("body").find(".menu_book_reg:contains('Philippians')").html("Filipenses");
+$("body").find(".menu_book_reg:contains('Colossians')").html("Colosenses");
+$("body").find(".menu_book_reg:contains('1 Thessalonians')").html("1 Tesalonicenses");
+$("body").find(".menu_book_reg:contains('2 Thessalonians')").html("2 Tesalonicenses");
+$("body").find(".menu_book_reg:contains('1 Timothy')").html("1 Timoteo");
+$("body").find(".menu_book_reg:contains('2 Timothy')").html("2 Timoteo");
+$("body").find(".menu_book_reg:contains('Titus')").html("Tito");
+$("body").find(".menu_book_reg:contains('Philemon')").html("Filemón");
+$("body").find(".menu_book_reg:contains('Hebrews')").html("Hebreos");
+$("body").find(".menu_book_reg:contains('James')").html("Jacobo");
+$("body").find(".menu_book_reg:contains('1 Peter')").html("1 Pedro");
+$("body").find(".menu_book_reg:contains('2 Peter')").html("2 Pedro");
+$("body").find(".menu_book_reg:contains('Jude')").html("Judas");
+$("body").find(".menu_book_reg:contains('Revelation')").html("Apocalipsis");
+}
+}, 1100);
 
 }); // END document ready
