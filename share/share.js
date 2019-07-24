@@ -6,6 +6,10 @@ $(document).ready(function() {
 $(".item_right").on('click', function() {
 $('.wrap_ref_body_audio').show();
 });
+// ref header
+$(".ref_header").html("<div class='temp_header_title_for_audio'>select a chapter to listen to The Word</div>");
+// ref footer
+$(".ref_footer").html('<div class="temp_footer_title_for_audio"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YCUGUZHYX5Y2Q&source=url" target="_blank" class="bf_links"><span id="" class="">give a love offering</span></a></div>');
 // empty menu items: // console // terminal // languages // fullscreen
 $("div.accordion_console, div.panel_console, div.accordion_terminal, div.panel_terminal, div.accordion_language_preferences, div.panel_language_preferences, div.accordion_fullscreen_preferences, div.panel_fullscreen_preferences, .splash_console, .splash_terminal, .splash_language_preferences, .splash_fullscreen_preferences").empty();
 // hide unnecessary search buttons
@@ -24,10 +28,6 @@ $(".audio_preferences_wrapper").css("visibility","hidden");
 //////////////////////////////////////////////////
 ////////////////// English Changes ///////////////
 //////////////////////////////////////////////////
-// ref header
-$(".ref_header").html("<div class='temp_header_title_for_audio'>select a chapter to listen to The Word</div>");
-// ref footer
-$(".ref_footer").html('<div class="temp_footer_title_for_audio"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YCUGUZHYX5Y2Q&source=url" target="_blank" class="bf_links"><span id="" class="">give a love offering</span></a></div>');
 
 
 }); // END document ready

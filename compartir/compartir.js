@@ -6,6 +6,10 @@ $(document).ready(function() {
 $(".item_right").on('click', function() {
 $('.wrap_ref_body_audio').show();
 });
+// ref header
+$(".ref_header").html("<div class='temp_header_title_for_audio'>seleccione un capitulo para escuchar la Palabra</div>");
+// ref footer
+$(".ref_footer").html('<div class="temp_footer_title_for_audio"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YCUGUZHYX5Y2Q&source=url" target="_blank" class="bf_links"><span id="" class="">dar una ofrenda de amor</span></a></div>');
 // empty menu items: // console // terminal // languages // fullscreen
 $("div.accordion_console, div.panel_console, div.accordion_terminal, div.panel_terminal, div.accordion_language_preferences, div.panel_language_preferences, div.accordion_fullscreen_preferences, div.panel_fullscreen_preferences, .splash_console, .splash_terminal, .splash_language_preferences, .splash_fullscreen_preferences").empty();
 // hide unnecessary search buttons
@@ -24,11 +28,6 @@ $(".audio_preferences_wrapper").css("visibility","hidden");
 //////////////////////////////////////////////////
 ////////////////// Spanish Changes ///////////////
 //////////////////////////////////////////////////
-// ref header
-$(".ref_header").html("<div class='temp_header_title_for_audio'>seleccione un capitulo para escuchar la Palabra</div>");
-// ref footer
-$(".ref_footer").html('<div class="temp_footer_title_for_audio"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YCUGUZHYX5Y2Q&source=url" target="_blank" class="bf_links"><span id="" class="">dar una ofrenda de amor</span></a></div>');
-
 setTimeout(function() {
 $("#edited_app_name").text("Su Nombre Va Aquí");
 }, 8100);
@@ -126,7 +125,6 @@ $("#activate_sharing_code").text("activar");
 ///////////////////////////////////////////////
 ////BEGIN login hack to Spanish wording
 ///////////////////////////////////////////////
-$(document).ready(function() {
 // wait for it to be in DOM
   var waitForFirebaseUIUponArrival = setInterval(function() {
     if ($("body").find('.firebaseui-idp-text').length > 0) {
@@ -155,18 +153,17 @@ $("body").find("button[data-provider-id='password']").find(".firebaseui-idp-text
 }
 }, 1100);
 });
-});
 ///////////////////////////////////////////////
 ////END login hack to Spanish wording
 ///////////////////////////////////////////////
 // rename audio files and playlist
 $("body").find(".sm2-playlist-bd li a").each(function(){
 // directory language code
-this.href = this.href.replace('audio-en', 'audio-es');
+this.href = this.href.replace('audio-en','audio-es');
 // file language code
-this.href = this.href.replace('KJV', 'RV9');
+this.href = this.href.replace('KJV','RV9');
 // file name prefix
-this.href = this.href.replace('KJV_', 'RV9_');
+this.href = this.href.replace('KJV_','RV9_');
 // text in the playlist
 this.text = this.text.replace('Genesis', 'Génesis');
 this.text = this.text.replace('Exodus', 'Éxodo');
