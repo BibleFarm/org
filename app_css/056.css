@@ -4826,7 +4826,7 @@ margin-top: 2px;
 /* ----------------------------------------------- */
 /* BEGIN override SoundManager2 for jovi website specifically
 /* ----------------------------------------------- */
-
+/*
 .wrap_ref_body_audio > .wrap_sm2_bar_ui > .sm2-bar-ui {
 position: absolute !important;
 height: calc(100% - 96px);
@@ -4834,9 +4834,7 @@ top: 48px !important;
 bottom: 46px !important;
  left: 0px;
  border-radius: 0px;
- /* so the absolutely-positioned playlist can show... */
  overflow: hidden;
- /* and this should probably have a high z-index. tweak as needed. */
 z-index: 0 !important;
 }
 .wrap_ref_body_audio > .wrap_sm2_bar_ui > .sm2-bar-ui .bd.sm2-playlist-drawer {
@@ -4884,7 +4882,6 @@ padding-right: 4px !important;
  background-color: #D5AD6D !important;
 }
 .wrap_ref_body_audio > .wrap_sm2_bar_ui > .sm2-bar-ui.playlist-open .bd.sm2-playlist-drawer {
-    /*height: calc(100vh - 75vw);*/
 height: 100% !important;
 -moz-box-sizing: border-box !important;
 box-sizing: border-box !important;
@@ -4932,7 +4929,7 @@ height: 22px !important;
 line-height: 22px !important;
 }
 
-
+*/
 
 /* ----------------------------------------------- */
 /* END override SoundManager2 for jovi website specifically
