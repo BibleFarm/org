@@ -4708,7 +4708,7 @@ $(document).ready(function() {
     scrollXMarginOffset: 12,
     suppressScrollX: true
   });
-$('.sm2-playlist-wrapper ul').perfectScrollbar({scrollXMarginOffset: 12, suppressScrollX: true});
+// $('.sm2-playlist-wrapper ul').perfectScrollbar({scrollXMarginOffset: 12, suppressScrollX: true});
 
 
 
@@ -6405,7 +6405,9 @@ $('#example-browsing_mode_nav_left_Chapters tbody tr td div').addClass("coming_f
       if ($("#config_audio_autoplay_off").hasClass("config_audio_autoplay_active")) {
         //alert(audioResultId);
         window.sm2BarPlayers[0].actions.play(audioResultId);
+        setTimeout(function() {
         window.sm2BarPlayers[0].actions.pause(audioResultId);
+      }, 1000);
       }
     }, 3000);
   });
@@ -6426,7 +6428,9 @@ $('#example-browsing_mode_nav_left_Chapters tbody tr td div').addClass("coming_f
       if ($("#config_audio_autoplay_off").hasClass("config_audio_autoplay_active")) {
         //alert(audioResultId);
         window.sm2BarPlayers[0].actions.play(audioResultId);
+        setTimeout(function() {
         window.sm2BarPlayers[0].actions.pause(audioResultId);
+      }, 1000);
       }
 
 
@@ -6438,7 +6442,9 @@ $('#example-browsing_mode_nav_left_Chapters tbody tr td div').addClass("coming_f
       if (($("#config_audio_autoplay_search_results_off").hasClass("config_audio_autoplay_search_results_active")) && ($("#example-browsing_mode_nav_left_Chapters tbody tr td div").hasClass("coming_from_a_search_result"))) {
         //alert(audioResultId);
         window.sm2BarPlayers[0].actions.play(audioResultId);
+        setTimeout(function() {
         window.sm2BarPlayers[0].actions.pause(audioResultId);
+      }, 1000);
         $("#example-browsing_mode_nav_left_Chapters tbody tr td div").removeClass("coming_from_a_search_result");
       }
 
@@ -8540,7 +8546,9 @@ var lastAudio = $("#u_last_audio").text();
       $("#browse_to_audio").append(lastAudio);
 
         window.sm2BarPlayers[0].actions.play(lastAudio);
+        setTimeout(function() {
         window.sm2BarPlayers[0].actions.pause(lastAudio);
+      }, 1000);
     }, 10000);
     setTimeout(function() {
       $("#example-browsing_mode_nav_left_Verses tbody tr td div#" + lastVerse).trigger({
