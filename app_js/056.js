@@ -5841,7 +5841,7 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       var this_he_tra = $( "table#tE_ajax_chapters tbody tr td.he_tra_txt verse" ).find('w[data-wstrong_h=' + this_wstrong_h + ']').css("background", "hotpink").html();
 
       // BEGIN populate analysis
-      $.get( 'ajax_analysis/' +this_wstrong_h+ '.php', function(data) {
+      $.get( '../ajax_analysis/' +this_wstrong_h+ '.php', function(data) {
       var this_ancient_heb = ($(data).find('.semitic_early_b').html());
       var this_lexical_entry = ($(data).find('.this_word_heb').html());
       var this_transliteration = ($(data).find('.this_word_tra').html());
@@ -5884,7 +5884,7 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
 
 
       // BEGIN populate lexicons // which is wrong because I need to strip these files and keep just the Ecode and rename the directory
-      $.get( 'ajax_Ecode/' +this_wstrong_h+ '.html', function(data) {
+      $.get( '../ajax_Ecode/' +this_wstrong_h+ '.html', function(data) {
       var bento_strongs = ($(data).find('#dic1').html());
       var bento_bdb = ($(data).find('#dic2').html());
       $(".wrap_ref_body_hidden_for_Ecode").html(
@@ -5897,7 +5897,7 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
 
       // BEGIN populate analysis ETCBC section
       $.ajaxSetup({ cache: false });
-      $.get( 'ajax_etcbc/' +this_Ecode+ '.html', function(data) {
+      $.get( '../ajax_etcbc/' +this_Ecode+ '.html', function(data) {
       var bento_etcbc = ($(data).find('.add_etcbc').html());
       $(".wrap_ref_body_analysis").append(bento_etcbc);
 
