@@ -4708,6 +4708,11 @@ $(document).ready(function() {
     scrollXMarginOffset: 12,
     suppressScrollX: true
   });
+  $('.wrap_ref_body_analysis, .wrap_ref_body_lexicons, .wrap_ref_body_dictionaries, .wrap_ref_body_encyclopedias, .wrap_ref_body_topics').perfectScrollbar({
+    scrollXMarginOffset: 12,
+    suppressScrollX: true
+  });
+
 $('.sm2-playlist-wrapper ul').perfectScrollbar({scrollXMarginOffset: 12, suppressScrollX: true});
 
 

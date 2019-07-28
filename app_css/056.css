@@ -1793,6 +1793,32 @@ text-shadow: 2px 2px 1px #000000;
          direction: rtl;
          margin-top: 0px;
     }
+    /* hide the audio referrals */
+    .audio_book_id {display: none;}
+    .audio_ch_id {display: none;}
+    #hidden_page_id {display: none;}
+    .he_tra_txt {
+      font-family: "DavidLibre-Regular", sans-serif;
+      font-size: calc( 21px + (44 - 21) * ( (100vw - 320px) / ( 4096 - 320)));
+      line-height: calc( 23px + (46 - 23) * ( (100vw - 320px) / ( 4096 - 320)));
+      direction: rtl;
+      margin-top: 0px;
+    }
+    .he_txt {
+      font-family: "DavidLibre-Regular", sans-serif;
+      font-size: calc( 21px + (44 - 21) * ( (100vw - 320px) / ( 4096 - 320)));
+      line-height: calc( 23px + (46 - 23) * ( (100vw - 320px) / ( 4096 - 320)));
+      direction: rtl;
+      margin-top: 0px;
+    }
+    note {display:none;}
+    .heb_verse_numbers {
+      font-family: "DavidLibre-Regular", sans-serif;
+      font-size: calc( 21px + (44 - 21) * ( (100vw - 320px) / ( 4096 - 320)));
+      line-height: calc( 23px + (46 - 23) * ( (100vw - 320px) / ( 4096 - 320)));
+      direction: rtl;
+      margin-top: 0px;
+    }
      i {
          color: #bebebe;
          text-shadow: 2px 2px 1px #000000;
@@ -2235,18 +2261,38 @@ text-shadow: 2px 2px 1px #000000;
     }
      .wrap_ref_body_analysis {
         display: none;
+        font-size: 18px;
+        overflow: auto;
+height: 100%;
+padding: 10px;
     }
      .wrap_ref_body_lexicons {
         display: none;
+        font-size: 18px;
+        overflow: auto;
+height: 100%;
+padding: 10px;
     }
      .wrap_ref_body_dictionaries {
         display: none;
+        font-size: 18px;
+        overflow: auto;
+height: 100%;
+padding: 10px;
     }
      .wrap_ref_body_encyclopedias {
         display: none;
+        font-size: 18px;
+        overflow: auto;
+height: 100%;
+padding: 10px;
     }
      .wrap_ref_body_topics {
         display: none;
+        font-size: 18px;
+        overflow: auto;
+height: 100%;
+padding: 10px;
     }
      .wrap_ref_body_audio {
         display: none;
@@ -3594,72 +3640,72 @@ text-shadow: 2px 2px 1px #000000;
     }
     /* ref_right item classes */
      .item_colon {
-         font-size: 16px;
+         font-size: 18px;
          color: #8b7c66;
     }
      .item_extra {
-         font-size: 16px;
+         font-size: 18px;
          color: rgb(235,213,213, 0.3);
     }
      .line_0_strong_num {
-         font-size: 16px;
+         font-size: 18px;
          color: rgb(213,224,235, 0.7);
     }
      .line_1_word_orig {
          font-family: "DavidLibre-Regular";
-         font-size: 18px;
+         font-size: 22px;
          color: #D5AD6D;
     }
      .line_2_word_trans {
-         font-size: 16px;
+         font-size: 18px;
          color: #938d6c;
     }
      .line_3_strong_def {
-         font-size: 16px;
+         font-size: 18px;
          color: rgb(213,220,235, 0.5);
     }
      .line_4_bdbtha_def {
-         font-size: 16px;
+         font-size: 18px;
          color: rgb(213,235,228, 0.5);
     }
      .line_5_part_of_speech {
-         font-size: 16px;
+         font-size: 18px;
          color: yellow;
     }
      .line_6_deriv_rel {
-         font-size: 16px;
+         font-size: 18px;
          color: orange;
     }
      .line_7_kjb_occ {
-         font-size: 16px;
+         font-size: 18px;
          color: lime;
     }
      .line_8_ahlblsj_num {
-         font-size: 16px;
+         font-size: 18px;
          color: rgb(231,235,213, 0.5);
     }
      .line_9_ahlblsj_def {
-         font-size: 16px;
+         font-size: 18px;
          color: rgb(235,213,220, 0.5);
     }
      .line_10_extra {
-         font-size: 16px;
+         font-size: 18px;
          color: purple;
     }
      .semitic_early_b {
          font-family: "test_a-webfont";
          color: #D5AD6D;
-         font-size: 18px;
+         font-size: 20px;
     }
      .semitic_early_r {
          font-family: "test_a-webfont";
          color: rgb(235,213,220, 0.5);
-         font-size: 18px;
+         font-size: 20px;
     }
      .modern_hebrew_r {
          color: #938d6c;
          font-family: "test_m-webfont";
-         font-size: 18px;
+         font-size: 20px;
     }
      .splash_first_time_users {
          position: relative;
@@ -4882,18 +4928,15 @@ line-height: 22px !important;
     /* BEGIN analysis titles for each item
     /* ----------------------------------------------- */
      .analysis_title_item {
-         font-size: calc( 14px + (28 - 14) * ( (100vw - 320px) / ( 4096 - 320)));
-         line-height: calc( 18px + (36 - 18) * ( (100vw - 320px) / ( 4096 - 320)));
+         font-size: 16px;
          color: #6f5f48;
     }
      .realised_lexeme_title {
-         font-size: calc( 14px + (28 - 14) * ( (100vw - 320px) / ( 4096 - 320)));
-         line-height: calc( 18px + (36 - 18) * ( (100vw - 320px) / ( 4096 - 320)));
+         font-size: 16px;
          color: #6f5f48;
     }
      .all_morph_forms_title {
-         font-size: calc( 14px + (28 - 14) * ( (100vw - 320px) / ( 4096 - 320)));
-         line-height: calc( 18px + (36 - 18) * ( (100vw - 320px) / ( 4096 - 320)));
+         font-size: 16px;
          color: #6f5f48;
     }
     /* ----------------------------------------------- */
@@ -6927,20 +6970,43 @@ display: inline-block;
 /* /////////////////////////////////// */
 /* bar visible */
 .wrap_ajaxed>.ps-scrollbar-y-rail>.ps-scrollbar-y,
-.window_body_top_menu_items>.ps-scrollbar-y-rail>.ps-scrollbar-y {
+.window_body_top_menu_items>.ps-scrollbar-y-rail>.ps-scrollbar-y,
+.wrap_ref_body_analysis>.ps-scrollbar-y-rail>.ps-scrollbar-y,
+.wrap_ref_body_lexicons>.ps-scrollbar-y-rail>.ps-scrollbar-y,
+.wrap_ref_body_dictionaries>.ps-scrollbar-y-rail>.ps-scrollbar-y,
+.wrap_ref_body_encyclopedias>.ps-scrollbar-y-rail>.ps-scrollbar-y,
+.wrap_ref_body_topics>.ps-scrollbar-y-rail>.ps-scrollbar-y
+ {
 width: 1px !important;
 right: 0px !important;
 }
 /* rail on hover */
 .wrap_ajaxed>.ps-scrollbar-y-rail,
-.window_body_top_menu_items>.ps-scrollbar-y-rail {
+.window_body_top_menu_items>.ps-scrollbar-y-rail,
+.wrap_ref_body_analysis>.ps-scrollbar-y-rail,
+.wrap_ref_body_lexicons>.ps-scrollbar-y-rail,
+.wrap_ref_body_dictionaries>.ps-scrollbar-y-rail,
+.wrap_ref_body_encyclopedias>.ps-scrollbar-y-rail,
+.wrap_ref_body_topics>.ps-scrollbar-y-rail
+ {
 width: 10px !important;
 }
 /* handle */
 .wrap_ajaxed>.ps-scrollbar-y-rail:hover>.ps-scrollbar-y,
 .wrap_ajaxed>.ps-scrollbar-y-rail:active>.ps-scrollbar-y,
 .window_body_top_menu_items>.ps-scrollbar-y-rail:hover>.ps-scrollbar-y,
-.window_body_top_menu_items>.ps-scrollbar-y-rail:active>.ps-scrollbar-y {
+.window_body_top_menu_items>.ps-scrollbar-y-rail:active>.ps-scrollbar-y,
+.wrap_ref_body_analysis>.ps-scrollbar-y-rail:hover>.ps-scrollbar-y,
+.wrap_ref_body_analysis>.ps-scrollbar-y-rail:active>.ps-scrollbar-y,
+.wrap_ref_body_lexicons>.ps-scrollbar-y-rail:hover>.ps-scrollbar-y,
+.wrap_ref_body_lexicons>.ps-scrollbar-y-rail:active>.ps-scrollbar-y,
+.wrap_ref_body_dictionaries>.ps-scrollbar-y-rail:hover>.ps-scrollbar-y,
+.wrap_ref_body_dictionaries>.ps-scrollbar-y-rail:active>.ps-scrollbar-y,
+.wrap_ref_body_encyclopedias>.ps-scrollbar-y-rail:hover>.ps-scrollbar-y,
+.wrap_ref_body_encyclopedias>.ps-scrollbar-y-rail:active>.ps-scrollbar-y,
+.wrap_ref_body_topics>.ps-scrollbar-y-rail:hover>.ps-scrollbar-y,
+.wrap_ref_body_topics>.ps-scrollbar-y-rail:active>.ps-scrollbar-y
+ {
 width: 10px !important;
 }
 /* hide them */
