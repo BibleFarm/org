@@ -12,9 +12,14 @@ $(".ref_header").html("<div class='temp_header_title_for_audio'>seleccione un ca
 $(".ref_footer").html('<div class="temp_footer_title_for_audio"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YCUGUZHYX5Y2Q&source=url" target="_blank" class="bf_links"><span id="" class="">dar una ofrenda de amor</span></a></div>');
 // empty menu items: // console // terminal // languages // fullscreen
 $("div.accordion_console, div.panel_console, div.accordion_terminal, div.panel_terminal, div.accordion_language_preferences, div.panel_language_preferences, div.accordion_fullscreen_preferences, div.panel_fullscreen_preferences, .splash_console, .splash_terminal, .splash_language_preferences, .splash_fullscreen_preferences").empty();
-// hide unnecessary search buttons
-$(".filter_grk, .filter_grk_tra, .filter_reg_esp, .filter_heb_tra, .filter_heb").css("visibility","hidden");
-$(".searching_filters").find(".wrap_standard_multi_item").find(".standard_multi_item").find("div").eq(0,1,2,4,5).empty().hide();
+// remove unecessary search buttons
+$("#to_search_grk").parent().remove();
+$("#to_search_grk_tra").parent().remove();
+$("#to_search_reg_eng").parent().remove();
+$("#to_search_heb_tra").parent().remove();
+$("#to_search_heb").parent().remove();
+// center the search button we need
+$("#to_search_reg_esp").parent().css("width", "100%");
 // hide ref header tabs
 $(".select_analysis, .select_lexicons, .select_dictionaries, .select_encyclopedias, .select_topics").css("display","none");
 // add temp header
@@ -322,5 +327,192 @@ $("body").find(".menu_book_reg:contains('Jude')").html("Judas");
 $("body").find(".menu_book_reg:contains('Revelation')").html("Apocalipsis");
 }
 }, 1100);
-
+///////////////////////
+// BEGIN static changes
+///////////////////////
+// above left nav - browsing mode
+$("body").find(".choose_a_book_and_then_select_text_align_left").text("elija sección y libro, y luego");
+$("body").find(".table_listed_chapters_col").text("capítulo");
+$("body").find(".table_listed_verses_col").text("verso");
+// above left nav - filtering mode
+$("body").find("#reset_all").text("reajustar todo");
+$("body").find("#reset_books").text("reajustar libros").css("padding-left", "6px");
+$("body").find("#reset_chapters").text("capítulos").css("padding-left", "8px").css("padding-right", "13px");
+$("body").find("#reset_verses").text("versos");
+///////////////////////
+// END static changes
+///////////////////////
+////////////////////////
+// BEGIN dynamic changes
+////////////////////////
+  //////////////////////////////////////////////////
+  //////BEGIN MutationObserver MutationObservingCurrentSection ////
+  //////////////////////////////////////////////////
+  // First create our observer and get our target element
+  var observer = new MutationObserver(MutationObservingCurrentSection),
+    elTarget = document.querySelector("body #current_section"),
+    objConfig = {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      characterData: true
+    };
+  // Then actually do some observing
+  observer.observe(elTarget, objConfig);
+  // Finally react when needed
+  function MutationObservingCurrentSection() {
+$("#current_section:contains('Assemblies')").html("la sección actual es Asambleas");
+$("#current_section:contains('Disciples')").html("la sección actual es Discípulos");
+$("#current_section:contains('Vision')").html("la sección actual es Visión");
+$("#current_section:contains('Torah')").html("la sección actual es Enseñanza");
+$("#current_section:contains('Former Prophets')").html("la sección actual es Profetas Anteriores");
+$("#current_section:contains('Former Prophets')").html("la sección actual es Profetas Posteriores");
+$("#current_section:contains('Twelve')").html("la sección actual es Los Doce");
+$("#current_section:contains('Scrolls of Truth')").html("la sección actual es Escrituras de Verdad");
+$("#current_section:contains('Five Scrolls')").html("la sección actual es Los Cinco Rollos");
+$("#current_section:contains('Other Scrolls')").html("la sección actual es Otros Rollos");
+$("#current_section:contains('Messiah')").html("la sección actual es Mesías");
+$("#current_section:contains('Emissaries')").html("la sección actual es Emisarios");
+  };
+  //////////////////////////////////////////////////
+  //////END MutationObserver MutationObservingCurrentSection ////
+  //////////////////////////////////////////////////
 }); // END document ready
+///////////////////////////////////////////////////////////////////////
+////// BEGIN MutationObserver MutationObservingBookFilteringStatus ////
+///////////////////////////////////////////////////////////////////////
+//////////// ATTENTION - THIS DOES NOT WORK INSIDE DOCUMENT READY//////
+///////////////////////////////////////////////////////////////////////
+(function(win) {
+  'use strict';
+
+  var listeners = [],
+  doc = win.document,
+  MutationObserver = win.MutationObserver || win.WebKitMutationObserver,
+  observer;
+
+  function ready(selector, fn) {
+      // Store the selector and callback to be monitored
+      listeners.push({
+          selector: selector,
+          fn: fn
+      });
+      if (!observer) {
+          // Watch for changes in the document
+          observer = new MutationObserver(check);
+          observer.observe(doc.documentElement, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    characterData: true
+          });
+      }
+      // Check if the element is currently in the DOM
+      check();
+  }
+
+  function check() {
+      // Check the DOM for elements matching a stored selector
+      for (var i = 0, len = listeners.length, listener, elements; i < len; i++) {
+          listener = listeners[i];
+          // Query for elements matching the specified selector
+          elements = doc.querySelectorAll(listener.selector);
+          for (var j = 0, jLen = elements.length, element; j < jLen; j++) {
+              element = elements[j];
+              // Make sure the callback isn't invoked with the
+              // same element more than once
+              if (!element.ready) {
+                  element.ready = true;
+                  // Invoke the callback with the element
+                  listener.fn.call(element, element);
+              }
+          }
+      }
+  }
+
+  // Expose `ready`
+  win.ready = ready;
+
+})(this);
+// now try it
+ready('#table_nav_left_Books_status_row_3, #table_nav_left_Chapters_status_row_2, #table_nav_left_Verses_status_row_3, #browsing_inside', function(element) {
+  // do something
+console.log("-*/-*/-*/ triggered");
+// filtering
+$("#table_nav_left_Books_status_row_3:contains('filtering all books')").html("filtrando todos los libros");
+$("#table_nav_left_Chapters_status_row_2:contains('chapters')").html("capítulos");
+$("#table_nav_left_Verses_status_row_3:contains('verses')").html("versos");
+$("#table_nav_left_Books_status_row_3:contains('filtering Genesis')").html("filtrando Génesis");
+$("#table_nav_left_Books_status_row_3:contains('filtering Exodus')").html("filtrando Éxodo");
+$("#table_nav_left_Books_status_row_3:contains('filtering Leviticus')").html("filtrando Levítico");
+$("#table_nav_left_Books_status_row_3:contains('filtering Numbers')").html("filtrando Números");
+$("#table_nav_left_Books_status_row_3:contains('filtering Deuteronomy')").html("filtrando Deuteronomio");
+$("#table_nav_left_Books_status_row_3:contains('filtering Joshua')").html("filtrando Josué");
+$("#table_nav_left_Books_status_row_3:contains('filtering Judges')").html("filtrando Jueces");
+$("#table_nav_left_Books_status_row_3:contains('filtering 1 Samuel')").html("filtrando 1 Samuel");
+$("#table_nav_left_Books_status_row_3:contains('filtering 2 Samuel')").html("filtrando 2 Samuel");
+$("#table_nav_left_Books_status_row_3:contains('filtering 1 Kings')").html("filtrando 1 Reyes");
+$("#table_nav_left_Books_status_row_3:contains('filtering 2 Kings')").html("filtrando 2 Reyes");
+$("#table_nav_left_Books_status_row_3:contains('filtering Isaiah')").html("filtrando Isaías");
+$("#table_nav_left_Books_status_row_3:contains('filtering Jeremiah')").html("filtrando Jeremías");
+$("#table_nav_left_Books_status_row_3:contains('filtering Ezekiel')").html("filtrando Ezequiel");
+$("#table_nav_left_Books_status_row_3:contains('filtering Daniel')").html("filtrando Daniel");
+$("#table_nav_left_Books_status_row_3:contains('filtering Hosea')").html("filtrando Oseas");
+$("#table_nav_left_Books_status_row_3:contains('filtering Joel')").html("filtrando Joel");
+$("#table_nav_left_Books_status_row_3:contains('filtering Amos')").html("filtrando Amós");
+$("#table_nav_left_Books_status_row_3:contains('filtering Obadiah')").html("filtrando Abdías");
+$("#table_nav_left_Books_status_row_3:contains('filtering Jonah')").html("filtrando Jonás");
+$("#table_nav_left_Books_status_row_3:contains('filtering Micah')").html("filtrando Miqueas");
+$("#table_nav_left_Books_status_row_3:contains('filtering Nahum')").html("filtrando Nahum");
+$("#table_nav_left_Books_status_row_3:contains('filtering Habakkuk')").html("filtrando Habacuc");
+$("#table_nav_left_Books_status_row_3:contains('filtering Zephaniah')").html("filtrando Sofonías");
+$("#table_nav_left_Books_status_row_3:contains('filtering Haggai')").html("filtrando Haggeo");
+$("#table_nav_left_Books_status_row_3:contains('filtering Zechariah')").html("filtrando Zacarías");
+$("#table_nav_left_Books_status_row_3:contains('filtering Malachi')").html("filtrando Malaquías");
+$("#table_nav_left_Books_status_row_3:contains('filtering Psalms')").html("filtrando Salmos");
+$("#table_nav_left_Books_status_row_3:contains('filtering Proverbs')").html("filtrando Proverbios");
+$("#table_nav_left_Books_status_row_3:contains('filtering Job')").html("filtrando Job");
+$("#table_nav_left_Books_status_row_3:contains('filtering Song of Songs')").html("filtrando Canción de Canciones");
+$("#table_nav_left_Books_status_row_3:contains('filtering Ruth')").html("filtrando Ruth");
+$("#table_nav_left_Books_status_row_3:contains('filtering Lamentations')").html("filtrando Lamentaciones");
+$("#table_nav_left_Books_status_row_3:contains('filtering Ecclesiastes')").html("filtrando Ecclesiastés");
+$("#table_nav_left_Books_status_row_3:contains('filtering Esther')").html("filtrando Esther");
+$("#table_nav_left_Books_status_row_3:contains('filtering Ezra')").html("filtrando Esdras");
+$("#table_nav_left_Books_status_row_3:contains('filtering Nehemiah')").html("filtrando Nehemías");
+$("#table_nav_left_Books_status_row_3:contains('filtering 1 Chronicles')").html("filtrando 1 Crónicas");
+$("#table_nav_left_Books_status_row_3:contains('filtering 2 Chronicles')").html("filtrando 2 Crónicas");
+$("#table_nav_left_Books_status_row_3:contains('filtering John')").html("filtrando Juan");
+$("#table_nav_left_Books_status_row_3:contains('filtering Matthew')").html("filtrando Mateo");
+$("#table_nav_left_Books_status_row_3:contains('filtering Mark')").html("filtrando Marcos");
+$("#table_nav_left_Books_status_row_3:contains('filtering Luke')").html("filtrando Lucas");
+$("#table_nav_left_Books_status_row_3:contains('filtering Acts')").html("filtrando Hechos");
+$("#table_nav_left_Books_status_row_3:contains('filtering Romans')").html("filtrando Romanos");
+$("#table_nav_left_Books_status_row_3:contains('filtering 1 Corinthians')").html("filtrando 1 Corintios");
+$("#table_nav_left_Books_status_row_3:contains('filtering 2 Corinthians')").html("filtrando 2 Corintios");
+$("#table_nav_left_Books_status_row_3:contains('filtering Galatians')").html("filtrando Gálatas");
+$("#table_nav_left_Books_status_row_3:contains('filtering Ephesians')").html("filtrando Efesios");
+$("#table_nav_left_Books_status_row_3:contains('filtering Philippians')").html("filtrando Filipenses");
+$("#table_nav_left_Books_status_row_3:contains('filtering Colossians')").html("filtrando Colosenses");
+$("#table_nav_left_Books_status_row_3:contains('filtering 1 Thessalonians')").html("filtrando 1 Tesalonicenses");
+$("#table_nav_left_Books_status_row_3:contains('filtering 2 Thessalonians')").html("filtrando 2 Tesalonicenses");
+$("#table_nav_left_Books_status_row_3:contains('filtering 1 Timothy')").html("filtrando 1 Timoteo");
+$("#table_nav_left_Books_status_row_3:contains('filtering 2 Timothy')").html("filtrando 2 Timoteo");
+$("#table_nav_left_Books_status_row_3:contains('filtering Titus')").html("filtrando Tito");
+$("#table_nav_left_Books_status_row_3:contains('filtering Philemon')").html("filtrando Filemón");
+$("#table_nav_left_Books_status_row_3:contains('filtering Hebrews')").html("filtrando Hebreos");
+$("#table_nav_left_Books_status_row_3:contains('filtering James')").html("filtrando Jacobo");
+$("#table_nav_left_Books_status_row_3:contains('filtering 1 Peter')").html("filtrando 1 Pedro");
+$("#table_nav_left_Books_status_row_3:contains('filtering 2 Peter')").html("filtrando 2 Pedro");
+$("#table_nav_left_Books_status_row_3:contains('filtering 1 John')").html("filtrando 1 Juan");
+$("#table_nav_left_Books_status_row_3:contains('filtering 2 John')").html("filtrando 2 Juan");
+$("#table_nav_left_Books_status_row_3:contains('filtering 3 John')").html("filtrando 3 Juan");
+$("#table_nav_left_Books_status_row_3:contains('filtering Jude')").html("filtrando Judas");
+$("#table_nav_left_Books_status_row_3:contains('filtering Revelation')").html("filtrando Apocalipsis");
+// browsing
+$("#browsing_inside:contains('browsing inside ')").html("navegando en ");
+});
+///////////////////////////////////////////////////////////////////////
+//////////// ATTENTION - THIS DOES NOT WORK INSIDE DOCUMENT READY//////
+///////////////////////////////////////////////////////////////////////
+////// END MutationObserver MutationObservingBookFilteringStatus ////
+///////////////////////////////////////////////////////////////////////

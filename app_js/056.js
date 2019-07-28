@@ -570,7 +570,7 @@ $(document).ready(function() {
   /////////////////////////////////////////////
   $('.filter_grk, .filter_grk_tra, .filter_reg_esp, .filter_reg_eng, .filter_heb_tra, .filter_heb').on('focus', function(e) {
     $(".wrap_ajaxed").hide("slow", "linear");
-    $(".wrap_ajaxed_cloned_status").hide("slow", "linear");
+    $("#wrap_ajaxed_cloned_status").hide("slow", "linear");
     $(".mode_filter").show("slow", "linear");
     $(".wrap_nav_mode_browse").hide("slow", "linear");
     $(".wrap_nav_mode_filter").show("slow", "linear");
@@ -616,7 +616,7 @@ $(document).ready(function() {
     if (this.value.length >= 3 || e.keyCode == 13) {
       table_main.columns(5).search(jQuery.fn.DataTable.ext.type.search.html(this.value)).draw();
       $(".wrap_ajaxed").hide("slow", "linear");
-    $(".wrap_ajaxed_cloned_status").hide("slow", "linear");
+    $("#wrap_ajaxed_cloned_status").hide("slow", "linear");
       $(".search_results").show("slow", "linear");
       $(".wrap_nav_mode_browse").hide("slow", "linear");
       $(".wrap_nav_mode_filter").show("slow", "linear");
@@ -637,7 +637,7 @@ $(document).ready(function() {
     if (this.value.length >= 3 || e.keyCode == 13) {
       table_main.columns(10).search(jQuery.fn.DataTable.ext.type.search.html(this.value)).draw();
       $(".wrap_ajaxed").hide("slow", "linear");
-    $(".wrap_ajaxed_cloned_status").hide("slow", "linear");
+    $("#wrap_ajaxed_cloned_status").hide("slow", "linear");
       $(".wrap_nav_mode_browse").hide("slow", "linear");
       $(".wrap_nav_mode_filter").show("slow", "linear");
 
@@ -1828,13 +1828,13 @@ $(document).ready(function() {
     "ordering": false,
     "columnDefs": [{
       "render": function(data, type, row, full, meta) {
-        return '<div class="status_styling">' + row[0] + '</div>';
+        return '<div id="table_nav_left_Books_status_row_0" class="status_styling">' + row[0] + '</div>';
       },
       "targets": 0,
       "visible": false
     }, {
       "render": function(data, type, row, full, meta) {
-        return '<div class="status_styling looking_inside_text_align_left">filtering ' + row[3] + '</div>';
+        return '<div id="table_nav_left_Books_status_row_3" class="status_styling looking_inside_text_align_left">filtering ' + row[3] + '</div>';
       },
       "targets": 1,
       "visible": true
@@ -1856,13 +1856,13 @@ $(document).ready(function() {
     "ordering": false,
     "columnDefs": [{
       "render": function(data, type, row, full, meta) {
-        return '<div class="status_styling">' + row[0] + '</div>';
+        return '<div id="table_nav_left_Chapters_status_row_0" class="status_styling">' + row[0] + '</div>';
       },
       "targets": 0,
       "visible": false
     }, {
       "render": function(data, type, row, full, meta) {
-        return '<div class="status_styling">' + row[2] + '</div>';
+        return '<div id="table_nav_left_Chapters_status_row_2" class="status_styling">' + row[2] + '</div>';
       },
       "targets": 1,
       "visible": true
@@ -1884,13 +1884,13 @@ $(document).ready(function() {
     "ordering": false,
     "columnDefs": [{
       "render": function(data, type, row, full, meta) {
-        return '<div class="status_styling">' + row[0] + '</div>';
+        return '<div id="table_nav_left_Verses_status_row_0" class="status_styling">' + row[0] + '</div>';
       },
       "targets": 0,
       "visible": false
     }, {
       "render": function(data, type, row, full, meta) {
-        return '<div class="status_styling">' + row[3] + '</div>';
+        return '<div id="table_nav_left_Verses_status_row_3" class="status_styling">' + row[3] + '</div>';
       },
       "targets": 1,
       "visible": true
@@ -2382,13 +2382,13 @@ $(document).ready(function() {
     "ordering": false,
     "columnDefs": [{
       "render": function(data, type, row, full, meta) {
-        return '<div class="status_styling">' + row[0] + '</div>';
+        return '<div id="table_browsing_mode_nav_left_Books_status_row_0" class="status_styling">' + row[0] + '</div>';
       },
       "targets": 0,
       "visible": false
     }, {
       "render": function(data, type, row, full, meta) {
-        return '<div class="status_styling looking_inside_text_align_left">' + row[3] + '</div>';
+        return '<div id="table_browsing_mode_nav_left_Books_status_row_3" class="status_styling looking_inside_text_align_left">' + row[3] + '</div>';
       },
       "targets": 1,
       "visible": true
@@ -2410,13 +2410,13 @@ $(document).ready(function() {
     "ordering": false,
     "columnDefs": [{
       "render": function(data, type, row, full, meta) {
-        return '<div class="status_styling">' + row[0] + '</div>';
+        return '<div id="table_browsing_mode_nav_left_Chapters_status_row_0" class="status_styling">' + row[0] + '</div>';
       },
       "targets": 0,
       "visible": false
     }, {
       "render": function(data, type, row, full, meta) {
-        return '<div class="status_styling">' + row[2] + '</div>';
+        return '<div id="table_browsing_mode_nav_left_Chapters_status_row_2" class="status_styling">' + row[2] + '</div>';
       },
       "targets": 1,
       "visible": true
@@ -2438,13 +2438,13 @@ $(document).ready(function() {
     "ordering": false,
     "columnDefs": [{
       "render": function(data, type, row, full, meta) {
-        return '<div class="status_styling">' + row[0] + '</div>';
+        return '<div id="table_browsing_mode_nav_left_Verses_status_row_0" class="status_styling">' + row[0] + '</div>';
       },
       "targets": 0,
       "visible": false
     }, {
       "render": function(data, type, row, full, meta) {
-        return '<div class="status_styling">' + row[3] + '</div>';
+        return '<div id="table_browsing_mode_nav_left_Verses_status_row_3" class="status_styling">' + row[3] + '</div>';
       },
       "targets": 1,
       "visible": true
@@ -4708,7 +4708,7 @@ $(document).ready(function() {
     scrollXMarginOffset: 12,
     suppressScrollX: true
   });
-// $('.sm2-playlist-wrapper ul').perfectScrollbar({scrollXMarginOffset: 12, suppressScrollX: true});
+$('.sm2-playlist-wrapper ul').perfectScrollbar({scrollXMarginOffset: 12, suppressScrollX: true});
 
 
 
@@ -5342,7 +5342,7 @@ $(document).ready(function() {
 	   $("ul").scrollTo(this, 0);
 
 var liSelectedChangeWrapAjaxedClonedStatus = $("li.selected a").text();
-$(".wrap_ajaxed_cloned_status").text("browsing inside " + liSelectedChangeWrapAjaxedClonedStatus);
+$("#wrap_ajaxed_cloned_status").text("browsing inside " + liSelectedChangeWrapAjaxedClonedStatus);
 
 
 var currentSectionCode = $("li.selected a").attr("data-section");
@@ -5458,7 +5458,7 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       // check if grk or heb is needed and act accordingly
       var is_grk_heb_needed = $(".wrap_ajaxed").find("#tE_ajax_chapters tr td span.audio_book_id").text();
       // console.log(is_grk_heb_needed);
-      /*
+
       // bring in greek text
       if (is_grk_heb_needed > 928) {
       var postData = "";
@@ -5466,7 +5466,7 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       ///////////////////////////////// change this for each page
       url: '../ajax_modules/TR_TheWord_2015-05-25/module_TR_TheWord_2015-05-25_' +ajax_book_chapter+ '.php',
       dataType: "html",
-      type: "post",
+      type: "get",
       data: postData,
       success: function(response) {
       $("#tE_ajax_chapters tr").each(function() {
@@ -5489,7 +5489,7 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       ///////////////////////////////// change this for each page
       url: '../ajax_modules/TR_TheWord_2015-05-25/module_TR_TheWord_2015-05-25_' +ajax_book_chapter+ '.php',
       dataType: "html",
-      type: "post",
+      type: "get",
       data: postData,
       success: function(response) {
       $("#tE_ajax_chapters tr").each(function() {
@@ -5504,7 +5504,7 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       }
       });
       }
-      */
+
       // bring in spanish text
 
       var data_spanish = "";
@@ -5579,7 +5579,7 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
           /////////////////////////////////////////////////
         }
       });
-      /*
+
       // bring in hebrew transliterated text
       if (is_grk_heb_needed < 929) {
       var postData = "";
@@ -5587,7 +5587,7 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       ///////////////////////////////// change this for each page
       url: "../ajax_modules/WLC_4_20/module_WLC_4_20_" +ajax_book_chapter+ ".php",
       dataType: "html",
-      type: "post",
+      type: "get",
       data: postData,
       success: function(response) {
       $("#tE_ajax_chapters tr").each(function() {
@@ -5611,7 +5611,7 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       ///////////////////////////////// change this for each page
       url: "../ajax_modules/WLC_4_20/module_WLC_4_20_" +ajax_book_chapter+ ".php",
       dataType: "html",
-      type: "post",
+      type: "get",
       data: postData,
       success: function(response) {
       $("#tE_ajax_chapters tr").each(function() {
@@ -5635,7 +5635,7 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       ///////////////////////////////// change this for each page
       url: '../ajax_modules/HEB_VERSE/module_heb_verse_numbers_' +ajax_book_chapter+ '.php',
       dataType: "html",
-      type: "post",
+      type: "get",
       data: postData,
       success: function(response) {
       $("#tE_ajax_chapters tr").each(function() {
@@ -5650,11 +5650,11 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       }
       });
       }
-      */
+
       /////////////////////////////////////////////////////
       // let it all load and then:
       /////////////////////////////////////////////////////
-      /*
+
           setTimeout(function(){
       //$( "table#tE_ajax_chapters tbody tr td.en_txt" ).css("color", "red");
       //$( "w[lemma*='b/']" ).css("color", "blue");
@@ -5989,12 +5989,12 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
 
       // END mouseovers and mouseouts
 
-          }, 100);
+    }, 5000);
 
       //return false; this probably needs to be here, but doesn't seem it's necessary
 
 
-      */
+
       //// END /////// brought in from the pages
 
 
@@ -6217,7 +6217,7 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
 
     $(".search_results").hide("slow", "linear");
     $(".wrap_ajaxed").show("slow", "linear");
-    $(".wrap_ajaxed_cloned_status").show("slow", "linear");
+    $("#wrap_ajaxed_cloned_status").show("slow", "linear");
 
 
 
@@ -6289,10 +6289,13 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       $("ul").scrollTo(scrollToLiSelected, 0);
 
 var liSelectedChangeWrapAjaxedClonedStatus = $("li.selected a").text();
-$(".wrap_ajaxed_cloned_status").text("browsing inside " + liSelectedChangeWrapAjaxedClonedStatus);
+$("#wrap_ajaxed_cloned_status").html("<span id='browsing_inside'>browsing inside </span>" + liSelectedChangeWrapAjaxedClonedStatus);
 
 var currentSectionCode = $("li.selected a").attr("data-section");
 $("#current_section").text(currentSectionCode);
+$("#current_section:contains('s10')").html("your current section is the Assemblies");
+$("#current_section:contains('s11')").html("your current section is the Disciples");
+$("#current_section:contains('s12')").html("your current section is the Vision");
 $("#current_section:contains('s1')").html("your current section is the Torah");
 $("#current_section:contains('s2')").html("your current section is the Former Prophets");
 $("#current_section:contains('s3')").html("your current section is the Later Prophets");
@@ -6302,9 +6305,6 @@ $("#current_section:contains('s6')").html("your current section is the Five Scro
 $("#current_section:contains('s7')").html("your current section is the Other Scrolls");
 $("#current_section:contains('s8')").html("your current section is the Messiah");
 $("#current_section:contains('s9')").html("your current section is the Emissaries");
-$("#current_section:contains('s10')").html("your current section is the Assemblies");
-$("#current_section:contains('s11')").html("your current section is the Disciples");
-$("#current_section:contains('s12')").html("your current section is the Vision");
 
     }, 5000);
 
@@ -6405,9 +6405,7 @@ $('#example-browsing_mode_nav_left_Chapters tbody tr td div').addClass("coming_f
       if ($("#config_audio_autoplay_off").hasClass("config_audio_autoplay_active")) {
         //alert(audioResultId);
         window.sm2BarPlayers[0].actions.play(audioResultId);
-        setTimeout(function() {
         window.sm2BarPlayers[0].actions.pause(audioResultId);
-      }, 1000);
       }
     }, 3000);
   });
@@ -6428,9 +6426,7 @@ $('#example-browsing_mode_nav_left_Chapters tbody tr td div').addClass("coming_f
       if ($("#config_audio_autoplay_off").hasClass("config_audio_autoplay_active")) {
         //alert(audioResultId);
         window.sm2BarPlayers[0].actions.play(audioResultId);
-        setTimeout(function() {
         window.sm2BarPlayers[0].actions.pause(audioResultId);
-      }, 1000);
       }
 
 
@@ -6442,9 +6438,7 @@ $('#example-browsing_mode_nav_left_Chapters tbody tr td div').addClass("coming_f
       if (($("#config_audio_autoplay_search_results_off").hasClass("config_audio_autoplay_search_results_active")) && ($("#example-browsing_mode_nav_left_Chapters tbody tr td div").hasClass("coming_from_a_search_result"))) {
         //alert(audioResultId);
         window.sm2BarPlayers[0].actions.play(audioResultId);
-        setTimeout(function() {
         window.sm2BarPlayers[0].actions.pause(audioResultId);
-      }, 1000);
         $("#example-browsing_mode_nav_left_Chapters tbody tr td div").removeClass("coming_from_a_search_result");
       }
 
@@ -7221,112 +7215,112 @@ $(".wrap").find(".wrap_top_menu").hide().removeClass("wrap_top_menu_active");
 
 // handle changes
   $(".wrap_top_menu").find(".bgc-0001").on('click', function() {
-    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0001");
+    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, #wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0001");
 	$("#u_background_class").attr("value", "bgc-0001").val("bgc-0001").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0002").on('click', function() {
-    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0002");
+    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, #wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0002");
     $("#u_background_class").attr("value", "bgc-0002").val("bgc-0002").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0003").on('click', function() {
-    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0003");
+    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, #wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0003");
     $("#u_background_class").attr("value", "bgc-0003").val("bgc-0003").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0004").on('click', function() {
-    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0004");
+    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, #wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0004");
     $("#u_background_class").attr("value", "bgc-0004").val("bgc-0004").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0005").on('click', function() {
-    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0005");
+    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, #wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0005");
     $("#u_background_class").attr("value", "bgc-0005").val("bgc-0005").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0006").on('click', function() {
-    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0006");
+    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, #wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0006");
     $("#u_background_class").attr("value", "bgc-0006").val("bgc-0006").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0007").on('click', function() {
-    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0007");
+    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, #wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0007");
     $("#u_background_class").attr("value", "bgc-0007").val("bgc-0007").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0008").on('click', function() {
-    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0008");
+    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, #wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0008");
     $("#u_background_class").attr("value", "bgc-0008").val("bgc-0008").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0009").on('click', function() {
-    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0009");
+    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, #wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0009");
     $("#u_background_class").attr("value", "bgc-0009").val("bgc-0009").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0010").on('click', function() {
-    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0010");
+    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, #wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0010");
     $("#u_background_class").attr("value", "bgc-0010").val("bgc-0010").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0011").on('click', function() {
-    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0011");
+    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, #wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0011");
     $("#u_background_class").attr("value", "bgc-0011").val("bgc-0011").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0012").on('click', function() {
-    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0012");
+    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, #wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0012");
     $("#u_background_class").attr("value", "bgc-0012").val("bgc-0012").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0013").on('click', function() {
-    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0013");
+    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, #wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0013");
     $("#u_background_class").attr("value", "bgc-0013").val("bgc-0013").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0014").on('click', function() {
-    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0014");
+    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, #wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0014");
     $("#u_background_class").attr("value", "bgc-0014").val("bgc-0014").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0015").on('click', function() {
-    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0015");
+    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, #wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0015");
     $("#u_background_class").attr("value", "bgc-0015").val("bgc-0015").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
 	$(this).css("border", "1px solid " + colorSelected).addClass("active-bg");
   });
   $(".wrap_top_menu").find(".bgc-0016").on('click', function() {
-    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, .wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0016");
+    $(".wrap_top, .wrap_bot, .accordion_inner_background, .wrap_ajaxed, #wrap_ajaxed_cloned_status, #current_section, .wrap_nav_header, .wrap_nav_footer, .wrap_ref_header, .wrap_ref_footer, #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td, input.standard_input_jura, input.standard_input_reg, #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td, #s1 tbody td, #s2 tbody td, #s3 tbody td, #s4 tbody td, #s5 tbody td, #s6 tbody td, #s7 tbody td, #s8 tbody td, #s9 tbody td, #s10 tbody td, #s11 tbody td, #s12 tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td, .swiper_main_pagination, .show_sharing_options, .show_sending_options, .show_saving_options, ul.sm2-playlist-bd, .bd, .sm2-extra-controls, .sm2-inline-status, .sharing_modal_filter_mode, .sharing_modal_browsing_mode").removeClass("bgc-0001 bgc-0002 bgc-0003 bgc-0004 bgc-0005 bgc-0006 bgc-0007 bgc-0008 bgc-0009 bgc-0010 bgc-0011 bgc-0012 bgc-0013 bgc-0014 bgc-0015 bgc-0016").addClass("bgc-0016");
     $("#u_background_class").attr("value", "bgc-0016").val("bgc-0016").trigger("change");
 	var colorSelected = $("#u_color_filter_switches_rgb").val();
 	$(".swiper-wrapper_app_bg_chooser").find(".swiper-slide").css("border", "none").removeClass("active-bg");
@@ -8546,9 +8540,7 @@ var lastAudio = $("#u_last_audio").text();
       $("#browse_to_audio").append(lastAudio);
 
         window.sm2BarPlayers[0].actions.play(lastAudio);
-        setTimeout(function() {
         window.sm2BarPlayers[0].actions.pause(lastAudio);
-      }, 1000);
     }, 10000);
     setTimeout(function() {
       $("#example-browsing_mode_nav_left_Verses tbody tr td div#" + lastVerse).trigger({
@@ -8793,7 +8785,7 @@ console.log(" // - redirected to " + link_to_current_verse_to_share);
   ////// BEGIN still working on this feature ////
   //////////////////////////////////////////////////
 // open the modal
-$("#app_terminal_orig_on, #app_terminal_tran_on, #app_lang_de_main, #app_lang_fr_main, #app_lang_pt_main, #app_lang_it_main, #app_lang_de_para, #app_lang_fr_para, #app_lang_pt_para, #app_lang_it_para, #to_search_grk, #to_search_grk_tra, #to_search_reg_esp, #to_search_heb_tra, #to_search_heb").one('click', function(event) {
+$("#app_terminal_orig_on, #app_terminal_tran_on, #app_lang_de_main, #app_lang_fr_main, #app_lang_pt_main, #app_lang_it_main, #app_lang_de_para, #app_lang_fr_para, #app_lang_pt_para, #app_lang_it_para").one('click', function(event) {
   event.preventDefault();
 $(".wrap_modal_still_working_on_this").show("slow");
 });
@@ -8810,7 +8802,7 @@ $(".wrap_modal_still_working_on_this").hide();
   //////////////////////////////////////////////////
   $("#return_to_browsing_mode").on('click', function(e) {
       $(".wrap_ajaxed").show("slow", "linear");
-      $(".wrap_ajaxed_cloned_status").show("slow", "linear");
+      $("#wrap_ajaxed_cloned_status").show("slow", "linear");
       $(".mode_filter").hide("slow", "linear");
       $(".wrap_nav_mode_browse").show("slow", "linear");
       $(".wrap_nav_mode_filter").hide("slow", "linear");
