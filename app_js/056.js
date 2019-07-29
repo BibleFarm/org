@@ -5659,8 +5659,61 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       /////////////////////////////////////////////////////
       // let it all load and then:
       /////////////////////////////////////////////////////
-
+// ATTENTION this seTimeout NN to be changed for a proper setInterval
           setTimeout(function(){
+
+
+            ////////////////////////////////////////
+            /* BEGIN reorder columns after ajax is loaded */
+            ////////////////////////////////////////
+            // pass 1
+            $("body").find("#tE_ajax_chapters tbody tr td").each(function() {
+            if ($(this).hasClass("he_txt")) {
+            $(this).css("color", "").insertBefore($(this).prevAll('.heb_verse_numbers'));
+            }
+            if ($(this).hasClass("he_tra_txt")) {
+            $(this).css("color", "").insertBefore($(this).prevAll('.he_txt'));
+            }
+            if ($(this).hasClass("en_txt")) {
+            $(this).css("color", "").insertBefore($(this).prevAll('.he_tra_txt'));
+            }
+            if ($(this).hasClass("es_txt")) {
+            $(this).css("color", "").insertBefore($(this).prevAll('.en_txt'));
+            }
+            if ($(this).hasClass("gr_tra_txt")) {
+            $(this).css("color", "").insertBefore($(this).prevAll('.es_txt'));
+            }
+            if ($(this).hasClass("gr_txt")) {
+            $(this).css("color", "").insertBefore($(this).prevAll('.gr_tra_txt'));
+            }
+            });
+            // pass 2
+            $("body").find("#tE_ajax_chapters tbody tr td").each(function() {
+            if ($(this).hasClass("he_txt")) {
+            $(this).css("color", "").insertBefore($(this).prevAll('.heb_verse_numbers'));
+            }
+            if ($(this).hasClass("he_tra_txt")) {
+            $(this).css("color", "").insertBefore($(this).prevAll('.he_txt'));
+            }
+            if ($(this).hasClass("en_txt")) {
+            $(this).css("color", "").insertBefore($(this).prevAll('.he_tra_txt'));
+            }
+            if ($(this).hasClass("es_txt")) {
+            $(this).css("color", "").insertBefore($(this).prevAll('.en_txt'));
+            }
+            if ($(this).hasClass("gr_tra_txt")) {
+            $(this).css("color", "").insertBefore($(this).prevAll('.es_txt'));
+            }
+            if ($(this).hasClass("gr_txt")) {
+            $(this).css("color", "").insertBefore($(this).prevAll('.gr_tra_txt'));
+            }
+            });
+            ////////////////////////////////////////
+            /* END reorder columns after ajax is loaded */
+            ////////////////////////////////////////
+
+
+
       //$( "table#tE_ajax_chapters tbody tr td.en_txt" ).css("color", "red");
       //$( "w[lemma*='b/']" ).css("color", "blue");
       //$( "w[lemma*='c/']" ).css("color", "green");
@@ -5734,12 +5787,12 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       $( "table#tE_ajax_chapters tbody tr td.gr_txt verse w" ).on('mouseover', function(e) {
       var this_wstrong_g = $(this).data("wstrong_g");
       // this word and same word en
-      $( "table#tE_ajax_chapters tbody tr td.en_txt" ).find('span[data-wstrong_g=' + this_wstrong_g + ']').css("background", "lightgreen");
+      $( "table#tE_ajax_chapters tbody tr td.en_txt" ).find('span[data-wstrong_g=' + this_wstrong_g + ']').css("background", "rgba(255, 179, 0, 0.14)");
       // this word and same word es
-      $( "table#tE_ajax_chapters tbody tr td.es_txt" ).find('span[data-wstrong_g=' + this_wstrong_g + ']').css("background", "green");
+      $( "table#tE_ajax_chapters tbody tr td.es_txt" ).find('span[data-wstrong_g=' + this_wstrong_g + ']').css("background", "rgba(255, 179, 0, 0.14)");
       // this word and same word he
-      $( "table#tE_ajax_chapters tbody tr td.gr_txt verse" ).find('w[data-wstrong_g=' + this_wstrong_g + ']').css("background", "red");
-      $( "table#tE_ajax_chapters tbody tr td.gr_tra_txt verse" ).find('w[data-wstrong_g=' + this_wstrong_g + ']').css("background", "hotpink");
+      $( "table#tE_ajax_chapters tbody tr td.gr_txt verse" ).find('w[data-wstrong_g=' + this_wstrong_g + ']').css("background", "rgba(255, 179, 0, 0.14)");
+      $( "table#tE_ajax_chapters tbody tr td.gr_tra_txt verse" ).find('w[data-wstrong_g=' + this_wstrong_g + ']').css("background", "rgba(255, 179, 0, 0.14)");
       $( ".click_on_word_to_load" ).show();
       });
       // mouseouts gr
@@ -5838,12 +5891,12 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       //k = כ = caf = as - like - according to
 
       // this word and same word en
-      var this_en = $( "table#tE_ajax_chapters tbody tr td.en_txt" ).find('span[data-wstrong_h=' + this_wstrong_h + ']').css("background", "lightgreen").html();
+      var this_en = $( "table#tE_ajax_chapters tbody tr td.en_txt" ).find('span[data-wstrong_h=' + this_wstrong_h + ']').css("background", "rgba(255, 179, 0, 0.14)").html();
       // this word and same word es
-      var this_es = $( "table#tE_ajax_chapters tbody tr td.es_txt" ).find('span[data-wstrong_h=' + this_wstrong_h + ']').css("background", "green").html();
+      var this_es = $( "table#tE_ajax_chapters tbody tr td.es_txt" ).find('span[data-wstrong_h=' + this_wstrong_h + ']').css("background", "rgba(255, 179, 0, 0.14)").html();
       // this word and same word he
-      var this_he = $( "table#tE_ajax_chapters tbody tr td.he_txt verse" ).find('w[data-wstrong_h=' + this_wstrong_h + ']').css("background", "red").html();
-      var this_he_tra = $( "table#tE_ajax_chapters tbody tr td.he_tra_txt verse" ).find('w[data-wstrong_h=' + this_wstrong_h + ']').css("background", "hotpink").html();
+      var this_he = $( "table#tE_ajax_chapters tbody tr td.he_txt verse" ).find('w[data-wstrong_h=' + this_wstrong_h + ']').css("background", "rgba(255, 179, 0, 0.14)").html();
+      var this_he_tra = $( "table#tE_ajax_chapters tbody tr td.he_tra_txt verse" ).find('w[data-wstrong_h=' + this_wstrong_h + ']').css("background", "rgba(255, 179, 0, 0.14)").html();
 
       // BEGIN populate analysis
       $.get( '../ajax_analysis/' +this_wstrong_h+ '.php', function(data) {

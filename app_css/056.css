@@ -6989,7 +6989,7 @@ right: 0px !important;
 .wrap_ref_body_encyclopedias>.ps-scrollbar-y-rail,
 .wrap_ref_body_topics>.ps-scrollbar-y-rail
  {
-width: 10px !important;
+width: 7px !important;
 }
 /* handle */
 .wrap_ajaxed>.ps-scrollbar-y-rail:hover>.ps-scrollbar-y,
@@ -7007,7 +7007,7 @@ width: 10px !important;
 .wrap_ref_body_topics>.ps-scrollbar-y-rail:hover>.ps-scrollbar-y,
 .wrap_ref_body_topics>.ps-scrollbar-y-rail:active>.ps-scrollbar-y
  {
-width: 10px !important;
+width: 7px !important;
 }
 /* hide them */
 .table_books_col>.ps-scrollbar-y-rail, .table_chapters_col>.ps-scrollbar-y-rail, .table_verses_col>.ps-scrollbar-y-rail, .sm2-playlist-bd>.ps-scrollbar-y-rail {display: none !important}
