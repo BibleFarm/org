@@ -73,9 +73,24 @@ setTimeout(function() {
     $(".app_intro_splash_text h1.1st_intro").hide("slow");
     $(".intro_select_language").show("slow");
     /* BEGIN choose languaege in app intro for new users */
+    // tex_he
+    $(".tex_he")
+      .show()
+      .fitText(3.0, { minFontSize: 50, maxFontSize: 98 })
+      .textillate({
+        initialDelay: 0,
+        in: { delay: 90, shuffle: true },
+        callback: function() {
+          setTimeout(function() {
+            $(".tex_he").textillate("out");
+          }, 3000);
+        }
+      });
+    console.log("2 secs // running tex_he");
+    // tex
     $(".tex")
       .fitText(3.0, { minFontSize: 25, maxFontSize: 48 })
-      .textillate({ initialDelay: 100, in: { delay: 8, shuffle: true } });
+      .textillate({ initialDelay: 3000, in: { delay: 120, type: 'char', sequence: true } });
     console.log("8 secs // running tex");
     /* END choose languaege in app intro for new users */
   }, 8000);
@@ -96,7 +111,7 @@ setTimeout(function() {
       .show()
       .fitText(3.0, { minFontSize: 25, maxFontSize: 48 })
       .textillate({
-        initialDelay: 2000,
+        initialDelay: 1000,
         in: { delay: 3, shuffle: true },
         callback: function() {
           setTimeout(function() {
@@ -110,15 +125,15 @@ setTimeout(function() {
       .show()
       .fitText(3.0, { minFontSize: 25, maxFontSize: 48 })
       .textillate({
-        initialDelay: 4900,
+        initialDelay: 3500,
         in: { delay: 8, shuffle: true }
       });
     console.log("running p.msg2");
     // finished intro // hide it and show app
     setTimeout(function() {
       $(".app_intro_splash_bg, .app_intro_splash_text").hide("slow");
-      console.log("20 secs // finished intro // hide it and show app");
-    }, 20000);
+      console.log("10 secs // finished intro // hide it and show app");
+    }, 10000);
   });
   // END handle choose language
   /////////////////////////////////////////////////

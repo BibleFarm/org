@@ -1125,9 +1125,32 @@ position: fixed;
       text-align: center;
     }
     .tex {
+      color: #d5ad6d;
+      text-align: center;
+      text-shadow: 2px 2px 1px #000000;
       cursor: pointer;
       z-index: 1000000000;
     }
+    .tex_he {
+      position: fixed;
+          display: table-cell;
+          width: 100%;
+          color: #d5ad6d;
+          text-align: center;
+          text-shadow: 2px 2px 1px #000000;
+          z-index: 1000000000;
+          font-family: "DavidLibre-Regular", sans-serif;
+          direction: rtl;
+          vertical-align: middle;
+          margin: 0 auto;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
     /* END choose languaege in app intro for new users */
     /* END app intro */
 
