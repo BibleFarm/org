@@ -204,28 +204,66 @@
 
 
 
-<!-- BEGIN app intro -->
-<div class="app_lock_n_load_wrap">
-<div class="app_lock_n_load">
-<div class="app_loadersmall"></div>
-</div>
-</div>
-
-
-<div class="app_intro_splash_bg bgc-0012"></div>
-<div class="app_intro_splash_text_wrap">
-<div class="app_intro_splash_text">
-  		  <p class="msg1" data-in-effect="rotateInDownRight" data-out-effect="hinge">
-  		  	Welcome
-  		  <h1>BibleFarm.org</h1>
-  		  <p class="msg2" data-in-effect="bounceInDown">
-  		  	let's get into The Word
-  		  </p>
-</div>
-</div>
-
-<!-- END app intro -->
-
+    <!-- BEGIN app intro -->
+    <div class="app_lock_n_load_wrap">
+      <div class="app_lock_n_load">
+        <div class="app_loadersmall"></div>
+      </div>
+    </div>
+    <div class="app_intro_splash_bg bgc-0012"></div>
+    <div class="app_intro_splash_text_wrap">
+      <div class="app_intro_splash_text">
+        <h1 class="1st_intro">BibleFarm.org</h1>
+        <p class="msg1" data-in-effect="rotateInDownRight" data-out-effect="hinge">
+          Welcome
+          <h1 class="2nd_intro">BibleFarm.org</h1>
+          <p class="msg2" data-in-effect="bounceInDown">
+            let's get into The Word
+          </p>
+      </div>
+    </div>
+    <!-- BEGIN choose languaege in app intro for new users-->
+    <div class="intro_select_language">
+      <table>
+        <tr>
+          <td class="tex" data-in-effect="fadeInLeftBig">
+            Deutsche
+          </td>
+        </tr>
+        <tr>
+          <td class="tex" data-in-effect="fadeInLeftBig">
+            English
+          </td>
+        </tr>
+        <tr>
+          <td class="tex" data-in-effect="fadeInLeftBig">
+            Español
+          </td>
+        </tr>
+        <tr>
+          <td class="tex" data-in-effect="fadeInLeftBig">
+            Français
+          </td>
+        </tr>
+        <tr>
+          <td class="tex" data-in-effect="fadeInLeftBig">
+            Italiano
+          </td>
+        </tr>
+        <tr>
+          <td class="tex" data-in-effect="fadeInLeftBig">
+            Polski
+          </td>
+        </tr>
+        <tr>
+          <td class="tex" data-in-effect="fadeInLeftBig">
+            Português
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- END choose languaege in app intro for new users-->
+    <!-- END app intro -->
 
 
 
@@ -294,7 +332,8 @@ color filter switches id:
 <div>u_terminal_para: <span class="hotpink" id="u_terminal_para">español</span></div>
 <div>u_terminal_para_status: <span class="hotpink" id="u_terminal_para_status">on</span></div>
 <div>u_terminal_orig_status: <span class="hotpink" id="u_terminal_orig_status">on</span></div>
-<div>u_terminal_orig_status: <span class="hotpink" id="u_terminal_tran_status">on</span></div>
+<div>u_terminal_tran_status: <span class="hotpink" id="u_terminal_tran_status">on</span></div>
+<div>u_terminal_lxxdel_status: <span class="hotpink" id="u_terminal_lxxdel_status">on</span></div>
 <div>.</div>
 <div>u_lang_en_main: <span class="hotpink" id="u_lang_en_main">on</span></div>
 <div>u_lang_en_para: <span class="hotpink" id="u_lang_en_para">off</span></div>
@@ -308,6 +347,8 @@ color filter switches id:
 <div>u_lang_pt_para: <span class="hotpink" id="u_lang_pt_para">off</span></div>
 <div>u_lang_it_main: <span class="hotpink" id="u_lang_it_main">on</span></div>
 <div>u_lang_it_para: <span class="hotpink" id="u_lang_it_para">off</span></div>
+<div>u_lang_pl_main: <span class="hotpink" id="u_lang_pl_main">on</span></div>
+<div>u_lang_pl_para: <span class="hotpink" id="u_lang_pl_para">off</span></div>
 <div>.</div>
 <!-- END old stuff  -->
 <div>.</div>
@@ -599,7 +640,7 @@ Very soon, any changes & preferences you make while signed in will be saved auto
                           <!-- END standard_multi_item_left -->
                           <!-- BEGIN standard_multi_item_right -->
                           <div id="activate_sharing_code" class="standard_multi_item_right link_hover_styling">
-                          activate!
+                          activate
                           </div>
                           <!-- END standard_multi_item_right -->
                         </div>
@@ -790,9 +831,9 @@ Very soon, any changes & preferences you make while signed in will be saved auto
                           <!-- END standard_multi_item_left -->
                           <!-- BEGIN standard_multi_item_right -->
                           <div class="standard_multi_item_right">
-                            <span id="app_terminal_orig_on" class="link_hover_styling">on
+                            <span id="app_terminal_orig_on" class="link_hover_styling active_switch">on
                             </span>
-                            <span id="app_terminal_orig_off" class="link_hover_styling active_switch">off
+                            <span id="app_terminal_orig_off" class="link_hover_styling">off
                             </span>
                           </div>
                           <!-- END standard_multi_item_right -->
@@ -811,9 +852,28 @@ Very soon, any changes & preferences you make while signed in will be saved auto
                           <!-- END standard_multi_item_left -->
                           <!-- BEGIN standard_multi_item_right -->
                           <div class="standard_multi_item_right">
-                            <span id="app_terminal_tran_on" class="link_hover_styling">on
+                            <span id="app_terminal_tran_on" class="link_hover_styling active_switch">on
                             </span>
-                            <span id="app_terminal_tran_off" class="link_hover_styling active_switch">off
+                            <span id="app_terminal_tran_off" class="link_hover_styling">off
+                            </span>
+                          </div>
+                          <!-- END standard_multi_item_right -->
+                        </div>
+                        <!-- END standard_multi_item -->
+                      </div>
+                      <div class="wrap_standard_multi_item">
+                        <!-- BEGIN standard_multi_item -->
+                        <div class="standard_multi_item">
+                          <!-- BEGIN standard_multi_item_left -->
+                          <div id="selected_lang_lxxdel" class="standard_multi_item_left standard_styling">
+                            Septuagint OT & Delitzsch NT
+                          </div>
+                          <!-- END standard_multi_item_left -->
+                          <!-- BEGIN standard_multi_item_right -->
+                          <div class="standard_multi_item_right">
+                            <span id="app_terminal_lxxdel_on" class="link_hover_styling active_switch">on
+                            </span>
+                            <span id="app_terminal_lxxdel_off" class="link_hover_styling">off
                             </span>
                           </div>
                           <!-- END standard_multi_item_right -->
@@ -853,6 +913,36 @@ Very soon, any changes & preferences you make while signed in will be saved auto
               <!-- panel -->
               <div class="panel_language_preferences accordion_inner_background">
                 <div class="accordion_inner_centered_block">
+                  <!-- BEGIN app_lang_de -->
+                  <div class="" id="">
+                    <!-- BEGIN wrap_standard_multi_item -->
+                    <div class="wrap_standard_multi_item">
+                      <!-- BEGIN standard_multi_item -->
+                      <div class="standard_multi_item">
+                        <!-- BEGIN standard_multi_item_left -->
+                        <div class="standard_multi_item_left standard_styling">
+                          <span id="app_lang_de" class="app_lang_lang">Deutsche
+                          </span>
+                        </div>
+                        <!-- END standard_multi_item_left -->
+                        <!-- BEGIN standard_multi_item_left -->
+                        <div class="standard_multi_item_left link_hover_styling">
+                          <span id="app_lang_de_main" class="app_lang_main">main
+                          </span>
+                        </div>
+                        <!-- END standard_multi_item_left -->
+                        <!-- BEGIN standard_multi_item_left -->
+                        <div class="standard_multi_item_left link_hover_styling">
+                          <span id="app_lang_de_para" class="app_lang_para">parallel
+                          </span>
+                        </div>
+                        <!-- END standard_multi_item_left -->
+                      </div>
+                      <!-- END standard_multi_item -->
+                    </div>
+                    <!-- END wrap_standard_multi_item -->
+                  </div>
+                  <!-- END app_lang_de -->
                     <!-- BEGIN app_lang_en -->
                     <div class="" id="">
                       <!-- BEGIN wrap_standard_multi_item -->
@@ -861,7 +951,7 @@ Very soon, any changes & preferences you make while signed in will be saved auto
                         <div class="standard_multi_item">
                           <!-- BEGIN standard_multi_item_left -->
                           <div class="standard_multi_item_left standard_styling">
-                            <span id="app_lang_en" class="app_lang_lang">english
+                            <span id="app_lang_en" class="app_lang_lang">English
                             </span>
                           </div>
                           <!-- END standard_multi_item_left -->
@@ -883,66 +973,6 @@ Very soon, any changes & preferences you make while signed in will be saved auto
                       <!-- END wrap_standard_multi_item -->
                     </div>
                     <!-- END app_lang_en -->
-                    <!-- BEGIN app_lang_de -->
-                    <div class="" id="">
-                      <!-- BEGIN wrap_standard_multi_item -->
-                      <div class="wrap_standard_multi_item">
-                        <!-- BEGIN standard_multi_item -->
-                        <div class="standard_multi_item">
-                          <!-- BEGIN standard_multi_item_left -->
-                          <div class="standard_multi_item_left standard_styling">
-                            <span id="app_lang_de" class="app_lang_lang">deutsche
-                            </span>
-                          </div>
-                          <!-- END standard_multi_item_left -->
-                          <!-- BEGIN standard_multi_item_left -->
-                          <div class="standard_multi_item_left link_hover_styling">
-                            <span id="app_lang_de_main" class="app_lang_main">main
-                            </span>
-                          </div>
-                          <!-- END standard_multi_item_left -->
-                          <!-- BEGIN standard_multi_item_left -->
-                          <div class="standard_multi_item_left link_hover_styling">
-                            <span id="app_lang_de_para" class="app_lang_para">parallel
-                            </span>
-                          </div>
-                          <!-- END standard_multi_item_left -->
-                        </div>
-                        <!-- END standard_multi_item -->
-                      </div>
-                      <!-- END wrap_standard_multi_item -->
-                    </div>
-                    <!-- END app_lang_de -->
-                    <!-- BEGIN app_lang_fr -->
-                    <div class="" id="">
-                      <!-- BEGIN wrap_standard_multi_item -->
-                      <div class="wrap_standard_multi_item">
-                        <!-- BEGIN standard_multi_item -->
-                        <div class="standard_multi_item">
-                          <!-- BEGIN standard_multi_item_left -->
-                          <div class="standard_multi_item_left standard_styling">
-                            <span id="app_lang_fr" class="app_lang_lang">français
-                            </span>
-                          </div>
-                          <!-- END standard_multi_item_left -->
-                          <!-- BEGIN standard_multi_item_left -->
-                          <div class="standard_multi_item_left link_hover_styling">
-                            <span id="app_lang_fr_main" class="app_lang_main">principale
-                            </span>
-                          </div>
-                          <!-- END standard_multi_item_left -->
-                          <!-- BEGIN standard_multi_item_left -->
-                          <div class="standard_multi_item_left link_hover_styling">
-                            <span id="app_lang_fr_para" class="app_lang_para">parallèle
-                            </span>
-                          </div>
-                          <!-- END standard_multi_item_left -->
-                        </div>
-                        <!-- END standard_multi_item -->
-                      </div>
-                      <!-- END wrap_standard_multi_item -->
-                    </div>
-                    <!-- END app_lang_fr -->
                     <!-- BEGIN app_lang_es -->
                     <div class="" id="">
                       <!-- BEGIN wrap_standard_multi_item -->
@@ -951,7 +981,7 @@ Very soon, any changes & preferences you make while signed in will be saved auto
                         <div class="standard_multi_item">
                           <!-- BEGIN standard_multi_item_left -->
                           <div class="standard_multi_item_left standard_styling">
-                            <span id="app_lang_es" class="app_lang_lang">español
+                            <span id="app_lang_es" class="app_lang_lang">Español
                             </span>
                           </div>
                           <!-- END standard_multi_item_left -->
@@ -973,7 +1003,7 @@ Very soon, any changes & preferences you make while signed in will be saved auto
                       <!-- END wrap_standard_multi_item -->
                     </div>
                     <!-- END app_lang_es -->
-                    <!-- BEGIN app_lang_pt -->
+                    <!-- BEGIN app_lang_fr -->
                     <div class="" id="">
                       <!-- BEGIN wrap_standard_multi_item -->
                       <div class="wrap_standard_multi_item">
@@ -981,19 +1011,19 @@ Very soon, any changes & preferences you make while signed in will be saved auto
                         <div class="standard_multi_item">
                           <!-- BEGIN standard_multi_item_left -->
                           <div class="standard_multi_item_left standard_styling">
-                            <span id="app_lang_pt" class="app_lang_lang">português
+                            <span id="app_lang_fr" class="app_lang_lang">Français
                             </span>
                           </div>
                           <!-- END standard_multi_item_left -->
                           <!-- BEGIN standard_multi_item_left -->
                           <div class="standard_multi_item_left link_hover_styling">
-                            <span id="app_lang_pt_main" class="app_lang_main">principal
+                            <span id="app_lang_fr_main" class="app_lang_main">principale
                             </span>
                           </div>
                           <!-- END standard_multi_item_left -->
                           <!-- BEGIN standard_multi_item_left -->
                           <div class="standard_multi_item_left link_hover_styling">
-                            <span id="app_lang_pt_para" class="app_lang_para">paralelo
+                            <span id="app_lang_fr_para" class="app_lang_para">parallèle
                             </span>
                           </div>
                           <!-- END standard_multi_item_left -->
@@ -1002,7 +1032,7 @@ Very soon, any changes & preferences you make while signed in will be saved auto
                       </div>
                       <!-- END wrap_standard_multi_item -->
                     </div>
-                    <!-- END app_lang_pt -->
+                    <!-- END app_lang_fr -->
                     <!-- BEGIN app_lang_it -->
                     <div class="" id="">
                       <!-- BEGIN wrap_standard_multi_item -->
@@ -1011,7 +1041,7 @@ Very soon, any changes & preferences you make while signed in will be saved auto
                         <div class="standard_multi_item">
                           <!-- BEGIN standard_multi_item_left -->
                           <div class="standard_multi_item_left standard_styling">
-                            <span id="app_lang_it" class="app_lang_lang">italiano
+                            <span id="app_lang_it" class="app_lang_lang">Italiano
                             </span>
                           </div>
                           <!-- END standard_multi_item_left -->
@@ -1033,6 +1063,66 @@ Very soon, any changes & preferences you make while signed in will be saved auto
                       <!-- END wrap_standard_multi_item -->
                     </div>
                     <!-- END app_lang_it -->
+                    <!-- BEGIN app_lang_pl -->
+                    <div class="" id="">
+                      <!-- BEGIN wrap_standard_multi_item -->
+                      <div class="wrap_standard_multi_item">
+                        <!-- BEGIN standard_multi_item -->
+                        <div class="standard_multi_item">
+                          <!-- BEGIN standard_multi_item_left -->
+                          <div class="standard_multi_item_left standard_styling">
+                            <span id="app_lang_pl" class="app_lang_lang">Polski
+                            </span>
+                          </div>
+                          <!-- END standard_multi_item_left -->
+                          <!-- BEGIN standard_multi_item_left -->
+                          <div class="standard_multi_item_left link_hover_styling">
+                            <span id="app_lang_pl_main" class="app_lang_main">główny
+                            </span>
+                          </div>
+                          <!-- END standard_multi_item_left -->
+                          <!-- BEGIN standard_multi_item_left -->
+                          <div class="standard_multi_item_left link_hover_styling">
+                            <span id="app_lang_pl_para" class="app_lang_para">równolegle
+                            </span>
+                          </div>
+                          <!-- END standard_multi_item_left -->
+                        </div>
+                        <!-- END standard_multi_item -->
+                      </div>
+                      <!-- END wrap_standard_multi_item -->
+                    </div>
+                    <!-- END app_lang_pl -->
+                    <!-- BEGIN app_lang_pt -->
+                    <div class="" id="">
+                      <!-- BEGIN wrap_standard_multi_item -->
+                      <div class="wrap_standard_multi_item">
+                        <!-- BEGIN standard_multi_item -->
+                        <div class="standard_multi_item">
+                          <!-- BEGIN standard_multi_item_left -->
+                          <div class="standard_multi_item_left standard_styling">
+                            <span id="app_lang_pt" class="app_lang_lang">Português
+                            </span>
+                          </div>
+                          <!-- END standard_multi_item_left -->
+                          <!-- BEGIN standard_multi_item_left -->
+                          <div class="standard_multi_item_left link_hover_styling">
+                            <span id="app_lang_pt_main" class="app_lang_main">principal
+                            </span>
+                          </div>
+                          <!-- END standard_multi_item_left -->
+                          <!-- BEGIN standard_multi_item_left -->
+                          <div class="standard_multi_item_left link_hover_styling">
+                            <span id="app_lang_pt_para" class="app_lang_para">paralelo
+                            </span>
+                          </div>
+                          <!-- END standard_multi_item_left -->
+                        </div>
+                        <!-- END standard_multi_item -->
+                      </div>
+                      <!-- END wrap_standard_multi_item -->
+                    </div>
+                    <!-- END app_lang_pt -->
                 </div>
               </div>
               <!-- END accordion_language_preferences -->

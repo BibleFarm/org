@@ -1,7 +1,12 @@
 // 056.js //
+///////////////////////////////////////////////
+///// BEGIN app intro ////////////////////////
+///////////////////////////////////////////////
+/////////////////////////////////////////////////
 $(document).ready(function() {
-
-  setTimeout(function() {
+/////////////////////////////////////////////////
+  /*
+setTimeout(function() {
     console.log("*********************** 1 ");
   }, 1000);
   setTimeout(function() {
@@ -31,82 +36,96 @@ $(document).ready(function() {
   setTimeout(function() {
     console.log("*********************** 10 ");
   }, 10000);
-
-});
-
-///////////////////////////////////////////////
-///// BEGIN app intro ////////////////////////
-///////////////////////////////////////////////
-
-// when landing in landscape, ask to rotate, let them know we're reloading, then reload automatically
-$(document).ready(function() {
-  if (($(window).height() < 640) && ($(window).height() < $(window).width())) {
-$(".app_please_rotate_your_phone_vertically").show();
-$(".app_please_rotate_your_phone_vertically_wrap").show();
-$(window).on('resize',function(){
-$(".app_hold_on_please_wrap").show();
-$(".app_hold_on_please").show();
-location.reload();
-});
-}
-});
-///////////////////////////////////////////////
-// remove splash after intro completed
-$(document).ready(function() {
-setTimeout(function() {
-$(".app_lock_n_load_wrap").css("display", "none");
-$(".app_lock_n_load").css("display", "none");
-console.log("10 second to hide lock n load");
-}, 2000);
-setTimeout(function() {
-$(".app_intro_splash_bg, .app_intro_splash_text").hide("slow");
-console.log("20 seconds to hide intro");
-}, 20000);
-// automatically move to forced desired page
-//       setTimeout(function() {
-// $('.move_to_bf_farm').trigger('click', function() {
-// });
-//       }, 16000);
-});
-//////////////////////////////////////////
-
-
-/////////////////////////
-///// BEGIN  app textillate
-/////////////////////////
-$(document).ready(function() {
+*/
+  // when landing in landscape, ask to rotate
+  // let them know we're reloading, then reload automatically
+  if ($(window).height() < 640 && $(window).height() < $(window).width()) {
+    $(".app_please_rotate_your_phone_vertically").show();
+    $(".app_please_rotate_your_phone_vertically_wrap").show();
+    $(window).on("resize", function() {
+      $(".app_hold_on_please_wrap").show();
+      $(".app_hold_on_please").show();
+      location.reload();
+    });
+  }
+  // remove loader after 2 secs
   setTimeout(function() {
-
+    $(".app_lock_n_load_wrap").css("display", "none");
+    $(".app_lock_n_load").css("display", "none");
+    console.log("2 secs // hide lock n load");
+  }, 2000);
+  // show & run first BibleFarm.org intro text
+  setTimeout(function() {
+    $(".app_intro_splash_text_wrap").show();
+    $(".app_intro_splash_text h1.2nd_intro").hide();
+    $(".app_intro_splash_text p.msg1").hide();
+    $(".app_intro_splash_text p.msg2").hide();
+    $(".app_intro_splash_text h1.1st_intro")
+      .show()
+      .fitText(3.0, { minFontSize: 50, maxFontSize: 100 })
+      .textillate({ in: { effect: "flipInY" } });
+    console.log("4 secs // run 1st_intro BibleFarm.org");
+  }, 4000);
+  // show intro select language
+  setTimeout(function() {
+    $(".app_intro_splash_text_wrap").hide("slow");
+    // hide 1st_intro
+    $(".app_intro_splash_text h1.1st_intro").hide("slow");
+    $(".intro_select_language").show("slow");
+    /* BEGIN choose languaege in app intro for new users */
+    $(".tex")
+      .fitText(3.0, { minFontSize: 25, maxFontSize: 48 })
+      .textillate({ initialDelay: 100, in: { delay: 8, shuffle: true } });
+    console.log("8 secs // running tex");
+    /* END choose languaege in app intro for new users */
+  }, 8000);
+  // BEGIN handle choose language
+  $(".tex").on("click", function(e) {
+    console.log("tex clicked");
+    // hide language selection
+    $(".intro_select_language").hide("slow");
+    // show intro splash & textillate
     $(".app_intro_splash_text_wrap").show("slow");
-
-
-    $('.app_intro_splash_text h1')
-      .fitText(0.7, { maxFontSize: 100 })
-      .textillate({ in: { effect: 'flipInY' }});
-
-    $('.app_intro_splash_text p.msg1')
+    // run h1.2nd_intro
+    $(".app_intro_splash_text h1.2nd_intro")
+      .show()
+      .fitText(3.0, { minFontSize: 50, maxFontSize: 100 })
+      .textillate({ in: { effect: "flipInY" } });
+    // run p.msg1
+    $(".app_intro_splash_text p.msg1")
+      .show()
       .fitText(3.0, { minFontSize: 25, maxFontSize: 48 })
-      .textillate({ initialDelay: 2000, in: { delay: 3, shuffle: true },         callback: function() {
-setTimeout(function() {
-            $('.app_intro_splash_text p.msg1').textillate('out');
-      }, 1500);
-
-        } });
-
-    $('.app_intro_splash_text p.msg2')
+      .textillate({
+        initialDelay: 2000,
+        in: { delay: 3, shuffle: true },
+        callback: function() {
+          setTimeout(function() {
+            $(".app_intro_splash_text p.msg1").textillate("out");
+          }, 1500);
+        }
+      });
+    console.log("2 secs // running p.msg1");
+    // run p.msg2
+    $(".app_intro_splash_text p.msg2")
+      .show()
       .fitText(3.0, { minFontSize: 25, maxFontSize: 48 })
-      .textillate({ initialDelay: 4900, in: { delay: 8, shuffle: true } });
-
-    }, 4000);
+      .textillate({
+        initialDelay: 4900,
+        in: { delay: 8, shuffle: true }
+      });
+    console.log("running p.msg2");
+    // finished intro // hide it and show app
+    setTimeout(function() {
+      $(".app_intro_splash_bg, .app_intro_splash_text").hide("slow");
+      console.log("20 secs // finished intro // hide it and show app");
+    }, 20000);
   });
-/////////////////////////
-///// END  app textillate
-/////////////////////////
-
+  // END handle choose language
+  /////////////////////////////////////////////////
+}); // end document ready
 /////////////////////////////////////////////////
 /// END app intro
 //////////////////////////////////////////////////
-
 
 
 
@@ -8026,6 +8045,31 @@ var colorSelected = $("#u_color_filter_switches_rgb").val();
 $(this).addClass("active_switch").css("color", colorSelected );
 $("#app_terminal_tran_on").removeClass("active_switch").removeAttr("style");
 });
+///////// app_terminal_lxxdel
+// handle click on app_terminal_lxxdel_on
+$("#app_terminal_lxxdel_on").on("click", function(e) {
+	// update user saved data
+var clickedStatusOn = $(this).text();
+$("#u_terminal_lxxdel_status").text("");
+$("#u_terminal_lxxdel_status").append(clickedStatusOn);
+
+var colorSelected = $("#u_color_filter_switches_rgb").val();
+
+$(this).addClass("active_switch").css("color", colorSelected );
+$("#app_terminal_lxxdel_off").removeClass("active_switch").removeAttr("style");
+});
+// handle click on app_terminal_lxxdel_off
+$("#app_terminal_lxxdel_off").on("click", function(e) {
+	// update user saved data
+var clickedStatusOff = $(this).text();
+$("#u_terminal_lxxdel_status").text("");
+$("#u_terminal_lxxdel_status").append(clickedStatusOff);
+
+var colorSelected = $("#u_color_filter_switches_rgb").val();
+
+$(this).addClass("active_switch").css("color", colorSelected );
+$("#app_terminal_lxxdel_on").removeClass("active_switch").removeAttr("style");
+});
 
 
 
@@ -8039,6 +8083,7 @@ $("#u_lang_en_main").text(clickedStatusOn);
 $("#selected_lang_main").text("main column in english");
 $("#selected_lang_orig").text("hebrew & greek original");
 $("#selected_lang_tran").text("hebrew & greek transliteration");
+$("#selected_lang_lxxdel").text("Septuāgintā OT & Delitzsch NT");
 
 
 var colorSelected = $("#u_color_filter_switches_rgb").val();
@@ -8050,6 +8095,7 @@ $("#app_lang_fr_main").removeClass("active_switch").removeAttr("style");
 $("#app_lang_es_main").removeClass("active_switch").removeAttr("style");
 $("#app_lang_pt_main").removeClass("active_switch").removeAttr("style");
 $("#app_lang_it_main").removeClass("active_switch").removeAttr("style");
+$("#app_lang_pl_main").removeClass("active_switch").removeAttr("style");
 });
 // handle click on app_lang_en_para
 $("#app_lang_en_para").on("click", function(e) {
@@ -8068,6 +8114,7 @@ $("#app_lang_fr_para").removeClass("active_switch").removeAttr("style");
 $("#app_lang_es_para").removeClass("active_switch").removeAttr("style");
 $("#app_lang_pt_para").removeClass("active_switch").removeAttr("style");
 $("#app_lang_it_para").removeClass("active_switch").removeAttr("style");
+$("#app_lang_pl_para").removeClass("active_switch").removeAttr("style");
 });
 /// END ////// app_lang_en
 /// BEGIN ////// app_lang_de
@@ -8080,6 +8127,7 @@ $("#u_lang_de_main").text(clickedStatusOn);
 $("#selected_lang_main").text("hauptspalte in deutsch");
 $("#selected_lang_orig").text("hebräisch & griechisch original");
 $("#selected_lang_tran").text("hebräisch & griechisch transliter");
+$("#selected_lang_lxxdel").text("Septuāgintā AT & Delitzsch NT");
 
 
 var colorSelected = $("#u_color_filter_switches_rgb").val();
@@ -8091,6 +8139,7 @@ $("#app_lang_fr_main").removeClass("active_switch").removeAttr("style");
 $("#app_lang_es_main").removeClass("active_switch").removeAttr("style");
 $("#app_lang_pt_main").removeClass("active_switch").removeAttr("style");
 $("#app_lang_it_main").removeClass("active_switch").removeAttr("style");
+$("#app_lang_pl_main").removeClass("active_switch").removeAttr("style");
 });
 // handle click on app_lang_de_para
 $("#app_lang_de_para").on("click", function(e) {
@@ -8109,6 +8158,7 @@ $("#app_lang_fr_para").removeClass("active_switch").removeAttr("style");
 $("#app_lang_es_para").removeClass("active_switch").removeAttr("style");
 $("#app_lang_pt_para").removeClass("active_switch").removeAttr("style");
 $("#app_lang_it_para").removeClass("active_switch").removeAttr("style");
+$("#app_lang_pl_para").removeClass("active_switch").removeAttr("style");
 });
 /// END ////// app_lang_de
 /// BEGIN ////// app_lang_fr
@@ -8121,6 +8171,7 @@ $("#u_lang_fr_main").text(clickedStatusOn);
 $("#selected_lang_main").text("colonne principale en français");
 $("#selected_lang_orig").text("hébreu et grec original");
 $("#selected_lang_tran").text("translittération hébreu et grec");
+$("#selected_lang_lxxdel").text("Septuāgintā AT & Delitzsch NT");
 
 
 var colorSelected = $("#u_color_filter_switches_rgb").val();
@@ -8132,6 +8183,7 @@ $("#app_lang_fr_para").removeClass("active_switch").removeAttr("style");
 $("#app_lang_es_main").removeClass("active_switch").removeAttr("style");
 $("#app_lang_pt_main").removeClass("active_switch").removeAttr("style");
 $("#app_lang_it_main").removeClass("active_switch").removeAttr("style");
+$("#app_lang_pl_main").removeClass("active_switch").removeAttr("style");
 });
 // handle click on app_lang_fr_para
 $("#app_lang_fr_para").on("click", function(e) {
@@ -8150,6 +8202,7 @@ $("#app_lang_fr_main").removeClass("active_switch").removeAttr("style");
 $("#app_lang_es_para").removeClass("active_switch").removeAttr("style");
 $("#app_lang_pt_para").removeClass("active_switch").removeAttr("style");
 $("#app_lang_it_para").removeClass("active_switch").removeAttr("style");
+$("#app_lang_pl_para").removeClass("active_switch").removeAttr("style");
 });
 /// END ////// app_lang_fr
 /// BEGIN ////// app_lang_es
@@ -8162,6 +8215,7 @@ $("#u_lang_es_main").text(clickedStatusOn);
 $("#selected_lang_main").text("columna principal en español");
 $("#selected_lang_orig").text("hebreo y griego original");
 $("#selected_lang_tran").text("transliteración hebrea y griega");
+$("#selected_lang_lxxdel").text("Septuāgintā AT & Delitzsch NT");
 
 
 var colorSelected = $("#u_color_filter_switches_rgb").val();
@@ -8173,6 +8227,7 @@ $("#app_lang_fr_main").removeClass("active_switch").removeAttr("style");
 $("#app_lang_es_para").removeClass("active_switch").removeAttr("style");
 $("#app_lang_pt_main").removeClass("active_switch").removeAttr("style");
 $("#app_lang_it_main").removeClass("active_switch").removeAttr("style");
+$("#app_lang_pl_main").removeClass("active_switch").removeAttr("style");
 });
 // handle click on app_lang_es_para
 $("#app_lang_es_para").on("click", function(e) {
@@ -8191,6 +8246,7 @@ $("#app_lang_fr_para").removeClass("active_switch").removeAttr("style");
 $("#app_lang_es_main").removeClass("active_switch").removeAttr("style");
 $("#app_lang_pt_para").removeClass("active_switch").removeAttr("style");
 $("#app_lang_it_para").removeClass("active_switch").removeAttr("style");
+$("#app_lang_pl_para").removeClass("active_switch").removeAttr("style");
 });
 /// END ////// app_lang_es
 /// BEGIN ////// app_lang_pt
@@ -8203,6 +8259,7 @@ $("#u_lang_pt_main").text(clickedStatusOn);
 $("#selected_lang_main").text("coluna principal em português");
 $("#selected_lang_orig").text("original hebraico e grego");
 $("#selected_lang_tran").text("transliteração hebraica e grega");
+$("#selected_lang_lxxdel").text("Septuāgintā AT & Delitzsch NT");
 
 
 var colorSelected = $("#u_color_filter_switches_rgb").val();
@@ -8214,6 +8271,7 @@ $("#app_lang_fr_main").removeClass("active_switch").removeAttr("style");
 $("#app_lang_es_main").removeClass("active_switch").removeAttr("style");
 $("#app_lang_pt_para").removeClass("active_switch").removeAttr("style");
 $("#app_lang_it_main").removeClass("active_switch").removeAttr("style");
+$("#app_lang_pl_main").removeClass("active_switch").removeAttr("style");
 });
 // handle click on app_lang_pt_para
 $("#app_lang_pt_para").on("click", function(e) {
@@ -8232,6 +8290,7 @@ $("#app_lang_fr_para").removeClass("active_switch").removeAttr("style");
 $("#app_lang_es_para").removeClass("active_switch").removeAttr("style");
 $("#app_lang_pt_main").removeClass("active_switch").removeAttr("style");
 $("#app_lang_it_para").removeClass("active_switch").removeAttr("style");
+$("#app_lang_pl_para").removeClass("active_switch").removeAttr("style");
 });
 /// END ////// app_lang_pt
 /// BEGIN ////// app_lang_it
@@ -8244,6 +8303,7 @@ $("#u_lang_it_main").text(clickedStatusOn);
 $("#selected_lang_main").text("colonna principale in italiano");
 $("#selected_lang_orig").text("originale ebraico e greco");
 $("#selected_lang_tran").text("traslitterazione ebraica e greca");
+$("#selected_lang_lxxdel").text("Septuāgintā AT & Delitzsch NT");
 
 
 var colorSelected = $("#u_color_filter_switches_rgb").val();
@@ -8255,6 +8315,7 @@ $("#app_lang_fr_main").removeClass("active_switch").removeAttr("style");
 $("#app_lang_es_main").removeClass("active_switch").removeAttr("style");
 $("#app_lang_pt_main").removeClass("active_switch").removeAttr("style");
 $("#app_lang_it_para").removeClass("active_switch").removeAttr("style");
+$("#app_lang_pl_main").removeClass("active_switch").removeAttr("style");
 });
 // handle click on app_lang_it_para
 $("#app_lang_it_para").on("click", function(e) {
@@ -8273,24 +8334,69 @@ $("#app_lang_fr_para").removeClass("active_switch").removeAttr("style");
 $("#app_lang_es_para").removeClass("active_switch").removeAttr("style");
 $("#app_lang_pt_para").removeClass("active_switch").removeAttr("style");
 $("#app_lang_it_main").removeClass("active_switch").removeAttr("style");
+$("#app_lang_pl_para").removeClass("active_switch").removeAttr("style");
 });
 /// END ////// app_lang_it
+/// BEGIN ////// app_lang_pl
+// handle click on app_lang_pl_main
+$("#app_lang_pl_main").on("click", function(e) {
+	// update user saved data
+var clickedStatusOn = $(this).text();
+$("#u_lang_pl_main").text("");
+$("#u_lang_pl_main").text(clickedStatusOn);
+$("#selected_lang_main").text("polska główna kolumna");
+$("#selected_lang_orig").text("oryginalny hebrajski i grecki");
+$("#selected_lang_tran").text("transliteracja hebrajski i grecki");
+$("#selected_lang_lxxdel").text("Septuāgintā ST & Delitzsch NT");
+
+
+var colorSelected = $("#u_color_filter_switches_rgb").val();
+
+$(this).addClass("active_switch").css("color", colorSelected );
+$("#app_lang_en_main").removeClass("active_switch").removeAttr("style");
+$("#app_lang_de_main").removeClass("active_switch").removeAttr("style");
+$("#app_lang_fr_main").removeClass("active_switch").removeAttr("style");
+$("#app_lang_es_main").removeClass("active_switch").removeAttr("style");
+$("#app_lang_pt_main").removeClass("active_switch").removeAttr("style");
+$("#app_lang_it_main").removeClass("active_switch").removeAttr("style");
+$("#app_lang_pl_para").removeClass("active_switch").removeAttr("style");
+});
+// handle click on app_lang_pl_para
+$("#app_lang_pl_para").on("click", function(e) {
+	// update user saved data
+var clickedStatusOff = $(this).text();
+$("#u_lang_pl_main").text("");
+$("#u_lang_pl_main").text(clickedStatusOff);
+$("#selected_lang_para").text("polska kolumna równoległa");
+
+var colorSelected = $("#u_color_filter_switches_rgb").val();
+
+$(this).addClass("active_switch").css("color", colorSelected );
+$("#app_lang_en_para").removeClass("active_switch").removeAttr("style");
+$("#app_lang_de_para").removeClass("active_switch").removeAttr("style");
+$("#app_lang_fr_para").removeClass("active_switch").removeAttr("style");
+$("#app_lang_es_para").removeClass("active_switch").removeAttr("style");
+$("#app_lang_pt_para").removeClass("active_switch").removeAttr("style");
+$("#app_lang_it_para").removeClass("active_switch").removeAttr("style");
+$("#app_lang_pl_main").removeClass("active_switch").removeAttr("style");
+});
+/// END ////// app_lang_pl
 /// BEGIN ////// app_lang defaults
 $(".panel_language_preferences").on("click", function(e) {
 /////// to english main
-if (!$("#app_lang_en_main, #app_lang_de_main, #app_lang_fr_main, #app_lang_es_main, #app_lang_pt_main, #app_lang_it_main, #app_lang_en_para").hasClass("active_switch")) {
+if (!$("#app_lang_en_main, #app_lang_de_main, #app_lang_fr_main, #app_lang_es_main, #app_lang_pt_main, #app_lang_it_main, #app_lang_pl_main, #app_lang_en_para").hasClass("active_switch")) {
 $("#app_lang_en_main").trigger("click");
 }
 /////// to english para
-if (!$("#app_lang_en_para, #app_lang_de_para, #app_lang_fr_para, #app_lang_es_para, #app_lang_pt_para, #app_lang_it_para, #app_lang_en_main").hasClass("active_switch")) {
+if (!$("#app_lang_en_para, #app_lang_de_para, #app_lang_fr_para, #app_lang_es_para, #app_lang_pt_para, #app_lang_it_para, #app_lang_pl_para, #app_lang_en_main").hasClass("active_switch")) {
 $("#app_lang_en_para").trigger("click");
 }
 /////// to spanish main
-if (!$("#app_lang_en_main, #app_lang_de_main, #app_lang_fr_main, #app_lang_es_main, #app_lang_pt_main, #app_lang_it_main, #app_lang_es_para").hasClass("active_switch")) {
+if (!$("#app_lang_en_main, #app_lang_de_main, #app_lang_fr_main, #app_lang_es_main, #app_lang_pt_main, #app_lang_it_main, #app_lang_pl_main, #app_lang_es_para").hasClass("active_switch")) {
 $("#app_lang_es_main").trigger("click");
 }
 /////// to spanish para
-if (!$("#app_lang_en_para, #app_lang_de_para, #app_lang_fr_para, #app_lang_es_para, #app_lang_pt_para, #app_lang_it_para, #app_lang_es_main").hasClass("active_switch")) {
+if (!$("#app_lang_en_para, #app_lang_de_para, #app_lang_fr_para, #app_lang_es_para, #app_lang_pt_para, #app_lang_it_para, #app_lang_pl_para, #app_lang_es_main").hasClass("active_switch")) {
 $("#app_lang_es_para").trigger("click");
 }
 });
@@ -8842,8 +8948,9 @@ console.log(" // - redirected to " + link_to_current_verse_to_share);
   //////////////////////////////////////////////////
   ////// BEGIN still working on this feature ////
   //////////////////////////////////////////////////
+/*
 // open the modal
-$("#app_terminal_orig_on, #app_terminal_tran_on, #app_lang_de_main, #app_lang_fr_main, #app_lang_pt_main, #app_lang_it_main, #app_lang_de_para, #app_lang_fr_para, #app_lang_pt_para, #app_lang_it_para").one('click', function(event) {
+$("#app_lang_de_main, #app_lang_fr_main, #app_lang_pt_main, #app_lang_it_main, #app_lang_pl_main, #app_lang_de_para, #app_lang_fr_para, #app_lang_pt_para, #app_lang_it_para, #app_lang_pl_para").one('click', function(event) {
   event.preventDefault();
 $(".wrap_modal_still_working_on_this").show("slow");
 });
@@ -8851,6 +8958,7 @@ $(".wrap_modal_still_working_on_this").show("slow");
 $("#still_working_on_this_ok").on('click', function(e) {
 $(".wrap_modal_still_working_on_this").hide();
 });
+*/
   //////////////////////////////////////////////////
   ////// END still working on this feature ////
   //////////////////////////////////////////////////

@@ -943,157 +943,192 @@ position: fixed;
 
 
     /* BEGIN app intro */
-.app_lock_n_load_wrap {
-display: block;
-position: absolute;
-height: 100%;
-width: 100%;
-z-index: 10;
-background: black;
-}
-.app_lock_n_load {
-display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: 0 auto;
-    width: 100%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-	font-size: 30px;
-	color: #D5AD6D;
-	text-align: center;
-	text-shadow: 2px 2px 1px #000000;
-z-index: 7;
-background: none;
-}
-.app_please_rotate_your_phone_vertically_wrap {
-display: none;
-position: absolute;
-height: 100%;
-width: 100%;
-z-index: 10;
-background: black;
-}
-.app_please_rotate_your_phone_vertically {
-display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: 0 auto;
-    width: 100%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-	font-size: 30px;
-	color: #D5AD6D;
-	text-align: center;
-	text-shadow: 2px 2px 1px #000000;
-z-index: 10;
-}
-.app_intro_logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-	font-size: 50px;
-	color: #D5AD6D;
-	text-align: center;
-	text-shadow: 2px 2px 1px #000000;
-  }
-.app_intro_splash_text_wrap {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    display: none;
-    margin: 0 auto;
-    width: 100%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    z-index: 6;
-
-}
-.app_intro_splash_text {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-	font-size: 50px;
-	color: #D5AD6D;
-	text-align: center;
-	text-shadow: 2px 2px 1px #000000;
-z-index: 6;
-}
-.app_intro_splash_text h1 {
-  border-bottom: 0px;
-}
-.app_intro_splash_bg {
-position: fixed;
-    display: block;
-    margin: 0 auto;
-    height: 100%;
-    width: 100%;
-    z-index: 5;
-}
-.app_loadersmall {
-	display: inline-block;
-	text-align: center;
-	margin: 10px auto;
-  border: 5px solid none;
-  -webkit-animation: spin 1s linear infinite;
-  animation: spin 1s linear infinite;
-  border-top: 5px solid #d5ad6d;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-}
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
+    .app_lock_n_load_wrap {
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: 10;
+      background: black;
+    }
+    .app_lock_n_load {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: 0 auto;
+      width: 100%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+      color: #d5ad6d;
+      text-align: center;
+      text-shadow: 2px 2px 1px #000000;
+      z-index: 7;
+      background: none;
+    }
+    .app_please_rotate_your_phone_vertically_wrap {
+      display: none;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: 10;
+      background: black;
+    }
+    .app_please_rotate_your_phone_vertically {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: 0 auto;
+      width: 100%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+      color: #d5ad6d;
+      text-align: center;
+      text-shadow: 2px 2px 1px #000000;
+      z-index: 10;
+    }
+    .app_intro_logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      font-size: 50px;
+      color: #d5ad6d;
+      text-align: center;
+      text-shadow: 2px 2px 1px #000000;
+    }
+    .app_intro_splash_text_wrap {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      display: none;
+      margin: 0 auto;
+      width: 100%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      z-index: 6;
+    }
+    .app_intro_splash_text {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      font-size: 50px;
+      color: #d5ad6d;
+      text-align: center;
+      text-shadow: 2px 2px 1px #000000;
+      z-index: 6;
+    }
+    .app_intro_splash_text h1.1st_intro {
+      display: none;
+      border-bottom: 0px;
+    }
+    .app_intro_splash_text h1.2nd_intro {
+      display: none;
+      border-bottom: 0px;
+    }
+    .app_intro_splash_text msg1,
+    .app_intro_splash_text msg1 {
+      display: none;
+    }
+    .app_intro_splash_bg {
+      position: fixed;
+      display: block;
+      margin: 0 auto;
+      height: 100%;
+      width: 100%;
+      z-index: 5;
+    }
+    .app_loadersmall {
+      display: inline-block;
+      text-align: center;
+      margin: 10px auto;
+      border: 5px solid none;
+      -webkit-animation: spin 1s linear infinite;
+      animation: spin 1s linear infinite;
+      border-top: 5px solid #d5ad6d;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+    }
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    /* BEGIN choose languaege in app intro for new users */
+    .intro_select_language {
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      font-size: 40px;
+      cursor: pointer;
+      z-index: 1000000000;
+    }
+    div.intro_select_language > table {
+      width: 100%;
+      height: 100%;
+    }
+    div.intro_select_language > table tr {
+      width: 100%;
+      height: 14%;
+    }
+    div.intro_select_language > table tr td {
+      width: 100%;
+      height: 14%;
+      text-align: center;
+    }
+    .tex {
+      cursor: pointer;
+      z-index: 1000000000;
+    }
+    /* END choose languaege in app intro for new users */
     /* END app intro */
 
 
@@ -5050,15 +5085,15 @@ border-bottom: 2px solid;
 
 
 /* on and off */
-#app_edit_mode_on, #app_terminal_main_on, #app_terminal_para_on, #app_terminal_orig_on, #app_terminal_tran_on {width: 42px; padding-right: 16px;}
-#app_edit_mode_off, #app_terminal_main_off, #app_terminal_para_off, #app_terminal_orig_off, #app_terminal_tran_off {width: 42px;}
+#app_edit_mode_on, #app_terminal_main_on, #app_terminal_para_on, #app_terminal_orig_on, #app_terminal_tran_on, #app_terminal_lxxdel_on {width: 42px; padding-right: 16px;}
+#app_edit_mode_off, #app_terminal_main_off, #app_terminal_para_off, #app_terminal_orig_off, #app_terminal_tran_off, #app_terminal_lxxdel_off {width: 42px;}
 
 
 
 /* language_preferences fix column widths */
-.app_lang_lang {display: block; width: 110px;}
-.app_lang_main {display: block; width: 70px;}
-.app_lang_para {display: block; width: 70px;}
+.app_lang_lang {display: block; width: 80px;}
+.app_lang_main {display: block; width: 80px;}
+.app_lang_para {display: block; width: 80px;}
 
 /* terminal fix width for even columns */
 .fullscreen_on {width: 42px; padding-right: 16px;}
