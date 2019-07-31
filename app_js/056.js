@@ -54,6 +54,54 @@ setTimeout(function() {
     $(".app_lock_n_load").css("display", "none");
     console.log("2 secs // hide lock n load");
   }, 2000);
+
+
+
+  firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+  console.log("*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************** a User is signed in");
+  // hide h1.1st_intro
+  $(".app_intro_splash_text h1.1st_intro").hide();
+  // show intro splash & textillate
+  $(".app_intro_splash_text_wrap").show("slow");
+  // run h1.2nd_intro
+  $(".app_intro_splash_text h1.2nd_intro")
+    .show()
+    .fitText(3.0, { minFontSize: 50, maxFontSize: 100 })
+    .textillate({ in: { effect: "flipInY" } });
+  // run p.msg1
+  $(".app_intro_splash_text p.msg1")
+    .show()
+    .fitText(3.0, { minFontSize: 25, maxFontSize: 48 })
+    .textillate({
+      initialDelay: 1000,
+      in: { delay: 3, shuffle: true },
+      callback: function() {
+        setTimeout(function() {
+          $(".app_intro_splash_text p.msg1").textillate("out");
+        }, 1500);
+      }
+    });
+  console.log("2 secs // running p.msg1");
+  // run p.msg2
+  $(".app_intro_splash_text p.msg2")
+    .show()
+    .fitText(3.0, { minFontSize: 25, maxFontSize: 48 })
+    .textillate({
+      initialDelay: 3500,
+      in: { delay: 8, shuffle: true }
+    });
+  console.log("running p.msg2");
+  // finished intro // hide it and show app
+  setTimeout(function() {
+    $(".app_intro_splash_bg, .app_intro_splash_text").hide("slow");
+    console.log("16 secs // finished intro // hide it and show app");
+  }, 16000);
+
+  } else {
+    // No user is signed in.
+  console.log("*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************** NO User is signed in");
   // show & run first BibleFarm.org intro text
   setTimeout(function() {
     $(".app_intro_splash_text_wrap").show();
@@ -136,7 +184,13 @@ setTimeout(function() {
     }, 10000);
   });
   // END handle choose language
-  /////////////////////////////////////////////////
+  }
+  });
+
+
+
+
+/////////////////////////////////////////////////
 }); // end document ready
 /////////////////////////////////////////////////
 /// END app intro
