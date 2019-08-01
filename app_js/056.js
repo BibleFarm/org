@@ -64,7 +64,7 @@ setTimeout(function() {
   // hide h1.1st_intro
   $(".app_intro_splash_text h1.1st_intro").hide();
   // show intro splash & textillate
-  $(".app_intro_splash_text_wrap").show("slow");
+  $(".app_intro_splash_text_wrap").show();
   // run h1.2nd_intro
   $(".app_intro_splash_text h1.2nd_intro")
     .show()
@@ -116,10 +116,10 @@ setTimeout(function() {
   }, 4000);
   // show intro select language
   setTimeout(function() {
-    $(".app_intro_splash_text_wrap").hide("slow");
+    $(".app_intro_splash_text_wrap").hide();
     // hide 1st_intro
-    $(".app_intro_splash_text h1.1st_intro").hide("slow");
-    $(".intro_select_language").show("slow");
+    $(".app_intro_splash_text h1.1st_intro").hide();
+    $(".intro_select_language").show();
     /* BEGIN choose languaege in app intro for new users */
     // tex_he
     $(".tex_he")
@@ -146,9 +146,9 @@ setTimeout(function() {
   $(".tex").on("click", function(e) {
     console.log("tex clicked");
     // hide language selection
-    $(".intro_select_language").hide("slow");
+    $(".intro_select_language").hide();
     // show intro splash & textillate
-    $(".app_intro_splash_text_wrap").show("slow");
+    $(".app_intro_splash_text_wrap").show();
     // run h1.2nd_intro
     $(".app_intro_splash_text h1.2nd_intro")
       .show()
@@ -5873,7 +5873,10 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
 
       // mouseovers gr
       $( "table#tE_ajax_chapters tbody tr td.gr_txt verse w" ).on('mouseover', function(e) {
-      var this_wstrong_g = $(this).data("wstrong_g");
+        var onMouseOver_gr = this;
+        // delay a bit so we can get to ref comfortably & general moving around
+        mouseover_timer_gr = setInterval(function() {
+      var this_wstrong_g = $(onMouseOver_gr).data("wstrong_g");
       // this word and same word en
       $( "table#tE_ajax_chapters tbody tr td.en_txt" ).find('span[data-wstrong_g=' + this_wstrong_g + ']').css("background", "rgba(255, 179, 0, 0.14)");
       // this word and same word es
@@ -5882,6 +5885,9 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       $( "table#tE_ajax_chapters tbody tr td.gr_txt verse" ).find('w[data-wstrong_g=' + this_wstrong_g + ']').css("background", "rgba(255, 179, 0, 0.14)");
       $( "table#tE_ajax_chapters tbody tr td.gr_tra_txt verse" ).find('w[data-wstrong_g=' + this_wstrong_g + ']').css("background", "rgba(255, 179, 0, 0.14)");
       $( ".click_on_word_to_load" ).show();
+      console.log("RAN mouseover_timer_gr")
+      clearInterval(mouseover_timer_gr);
+      }, 2000); // end mouseover_timer_gr
       });
       // mouseouts gr
       $( "table#tE_ajax_chapters tbody tr td.gr_txt verse w" ).on('mouseout', function(e) {
@@ -5889,11 +5895,16 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       $("table#tE_ajax_chapters tbody tr td.es_txt span").css("background", "");
       $("table#tE_ajax_chapters tbody tr td.gr_txt verse w").css("background", "");
       $("table#tE_ajax_chapters tbody tr td.gr_tra_txt verse w").css("background", "");
+      clearInterval(mouseover_timer_gr);
+// console.log("NOT RAN or mouseout of RAN mouseover_timer_gr");
       });
 
       // mouseovers gr_tra
       $( "table#tE_ajax_chapters tbody tr td.gr_tra_txt verse w" ).on('mouseover', function(e) {
-      var this_wstrong_g = $(this).data("wstrong_g");
+        var onMouseOver_gr_tra = this;
+        // delay a bit so we can get to ref comfortably & general moving around
+        mouseover_timer_gr_tra = setInterval(function() {
+      var this_wstrong_g = $(onMouseOver_gr_tra).data("wstrong_g");
       // this word and same word en
       $( "table#tE_ajax_chapters tbody tr td.en_txt" ).find('span[data-wstrong_g=' + this_wstrong_g + ']').css("background", "lightgreen");
       // this word and same word es
@@ -5901,6 +5912,9 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       // this word and same word he
       $( "table#tE_ajax_chapters tbody tr td.gr_txt verse" ).find('w[data-wstrong_g=' + this_wstrong_g + ']').css("background", "red");
       $( "table#tE_ajax_chapters tbody tr td.gr_tra_txt verse" ).find('w[data-wstrong_g=' + this_wstrong_g + ']').css("background", "hotpink");
+      console.log("RAN mouseover_timer_gr_tra")
+      clearInterval(mouseover_timer_gr_tra);
+      }, 2000); // end mouseover_timer_gr_tra
       });
       // mouseouts gr_tra
       $( "table#tE_ajax_chapters tbody tr td.gr_tra_txt verse w" ).on('mouseout', function(e) {
@@ -5908,12 +5922,17 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       $("table#tE_ajax_chapters tbody tr td.es_txt span").css("background", "");
       $("table#tE_ajax_chapters tbody tr td.gr_txt verse w").css("background", "");
       $("table#tE_ajax_chapters tbody tr td.gr_tra_txt verse w").css("background", "");
+      clearInterval(mouseover_timer_gr_tra);
+// console.log("NOT RAN or mouseout of RAN mouseover_timer_gr_tra");
       });
 
       // mouseovers en
       $( "table#tE_ajax_chapters tbody tr td.en_txt span" ).on('mouseover', function(e) {
-      var this_wstrong_h = $(this).data("wstrong_h");
-      var this_wstrong_g = $(this).data("wstrong_g");
+        var onMouseOver_en = this;
+        // delay a bit so we can get to ref comfortably & general moving around
+        mouseover_timer_en = setInterval(function() {
+      var this_wstrong_h = $(onMouseOver_en).data("wstrong_h");
+      var this_wstrong_g = $(onMouseOver_en).data("wstrong_g");
       // this word and same word gr
       $( "table#tE_ajax_chapters tbody tr td.gr_txt verse" ).find('w[data-wstrong_g=' + this_wstrong_g + ']').css("background", "red");
       $( "table#tE_ajax_chapters tbody tr td.gr_tra_txt verse" ).find('w[data-wstrong_g=' + this_wstrong_g + ']').css("background", "hotpink");
@@ -5926,6 +5945,9 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       // this word and same word he
       $( "table#tE_ajax_chapters tbody tr td.he_txt verse" ).find('w[data-wstrong_h=' + this_wstrong_h + ']').css("background", "red");
       $( "table#tE_ajax_chapters tbody tr td.he_tra_txt verse" ).find('w[data-wstrong_h=' + this_wstrong_h + ']').css("background", "hotpink");
+      console.log("RAN mouseover_timer_en")
+      clearInterval(mouseover_timer_en);
+      }, 2000); // end mouseover_timer_en
       });
       // mouseouts en
       $( "table#tE_ajax_chapters tbody tr td.en_txt span" ).on('mouseout', function(e) {
@@ -5935,12 +5957,17 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       $("table#tE_ajax_chapters tbody tr td.he_tra_txt verse w").css("background", "");
       $("table#tE_ajax_chapters tbody tr td.gr_txt verse w").css("background", "");
       $("table#tE_ajax_chapters tbody tr td.gr_tra_txt verse w").css("background", "");
+      clearInterval(mouseover_timer_en);
+// console.log("NOT RAN or mouseout of RAN mouseover_timer_en");
       });
 
       // mouseovers es
       $( "table#tE_ajax_chapters tbody tr td.es_txt span" ).on('mouseover', function(e) {
-      var this_wstrong_h = $(this).data("wstrong_h");
-      var this_wstrong_g = $(this).data("wstrong_g");
+        var onMouseOver_es = this;
+        // delay a bit so we can get to ref comfortably & general moving around
+        mouseover_timer_es = setInterval(function() {
+      var this_wstrong_h = $(onMouseOver_es).data("wstrong_h");
+      var this_wstrong_g = $(onMouseOver_es).data("wstrong_g");
       // this word and same word gr
       $( "table#tE_ajax_chapters tbody tr td.gr_txt verse" ).find('w[data-wstrong_g=' + this_wstrong_g + ']').css("background", "red");
       $( "table#tE_ajax_chapters tbody tr td.gr_tra_txt verse" ).find('w[data-wstrong_g=' + this_wstrong_g + ']').css("background", "hotpink");
@@ -5953,6 +5980,9 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       // this word and same word he
       $( "table#tE_ajax_chapters tbody tr td.he_txt verse" ).find('w[data-wstrong_h=' + this_wstrong_h + ']').css("background", "red");
       $( "table#tE_ajax_chapters tbody tr td.he_tra_txt verse" ).find('w[data-wstrong_h=' + this_wstrong_h + ']').css("background", "hotpink");
+      console.log("RAN mouseover_timer_es")
+      clearInterval(mouseover_timer_es);
+      }, 2000); // end mouseover_timer_es
       });
       // mouseouts es
       $( "table#tE_ajax_chapters tbody tr td.es_txt span" ).on('mouseout', function(e) {
@@ -5962,14 +5992,19 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       $("table#tE_ajax_chapters tbody tr td.he_tra_txt verse w").css("background", "");
       $("table#tE_ajax_chapters tbody tr td.gr_txt verse w").css("background", "");
       $("table#tE_ajax_chapters tbody tr td.gr_tra_txt verse w").css("background", "");
+      clearInterval(mouseover_timer_es);
+// console.log("NOT RAN or mouseout of RAN mouseover_timer_es");
       });
 
       // mouseovers he
       $( "table#tE_ajax_chapters tbody tr td.he_txt verse w" ).on('mouseover', function(e) {
-      var this_wstrong_h = $(this).data("wstrong_h");
-      var this_wprefix = $(this).data("wprefix").replace("null", "No attached prepositions in this word").replace("b\/", "ב = in, with, by \/ ").replace("c\/", "ו‎ = and, but \/ ").replace("d\/", "ה = the \/ ").replace("l\/", "ל = to, for, toward \/ ").replace("m\/", "מ = from, of, out of \/ ").replace("k\/", "כ = as, like, according to \/ ");
-      var this_wsuffix = $(this).data("wsuffix");
-      var this_wlc_stripped_word = $(this).data("wlc_stripped_word");
+        var onMouseOver_he = this;
+        // delay a bit so we can get to ref comfortably & general moving around
+        mouseover_timer_he = setInterval(function() {
+      var this_wstrong_h = $(onMouseOver_he).data("wstrong_h");
+      var this_wprefix = $(onMouseOver_he).data("wprefix").replace("null", "No attached prepositions in this word").replace("b\/", "ב = in, with, by \/ ").replace("c\/", "ו‎ = and, but \/ ").replace("d\/", "ה = the \/ ").replace("l\/", "ל = to, for, toward \/ ").replace("m\/", "מ = from, of, out of \/ ").replace("k\/", "כ = as, like, according to \/ ");
+      var this_wsuffix = $(onMouseOver_he).data("wsuffix");
+      var this_wlc_stripped_word = $(onMouseOver_he).data("wlc_stripped_word");
       console.log(this_wlc_stripped_word);
       //b = ב = bet = in - with - by
       //c = ו = vav = and - but
@@ -6093,7 +6128,9 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
 
 
 
-
+      console.log("RAN mouseover_timer_he")
+      clearInterval(mouseover_timer_he);
+    }, 2000); // end mouseover_timer_he
       });
       // mouseouts he
       $( "table#tE_ajax_chapters tbody tr td.he_txt verse w" ).on('mouseout', function(e) {
@@ -6101,14 +6138,16 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       $("table#tE_ajax_chapters tbody tr td.es_txt span").css("background", "");
       $("table#tE_ajax_chapters tbody tr td.he_txt verse w").css("background", "");
       $("table#tE_ajax_chapters tbody tr td.he_tra_txt verse w").css("background", "");
-
-
-
+      clearInterval(mouseover_timer_he);
+// console.log("NOT RAN or mouseout of RAN mouseover_timer_he");
       });
 
       // mouseovers he_tra
       $( "table#tE_ajax_chapters tbody tr td.he_tra_txt verse w" ).on('mouseover', function(e) {
-      var this_wstrong_h = $(this).data("wstrong_h");
+        var onMouseOver_he_tra = this;
+        // delay a bit so we can get to ref comfortably & general moving around
+        mouseover_timer_he_tra = setInterval(function() {
+      var this_wstrong_h = $(onMouseOver_he_tra).data("wstrong_h");
       // this word and same word en
       $( "table#tE_ajax_chapters tbody tr td.en_txt" ).find('span[data-wstrong_h=' + this_wstrong_h + ']').css("background", "lightgreen");
       // this word and same word es
@@ -6116,6 +6155,9 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       // this word and same word he
       $( "table#tE_ajax_chapters tbody tr td.he_txt verse" ).find('w[data-wstrong_h=' + this_wstrong_h + ']').css("background", "red");
       $( "table#tE_ajax_chapters tbody tr td.he_tra_txt verse" ).find('w[data-wstrong_h=' + this_wstrong_h + ']').css("background", "hotpink");
+      console.log("RAN mouseover_timer_he_tra")
+      clearInterval(mouseover_timer_he_tra);
+    }, 2000); // end mouseover_timer_he_tra
       });
       // mouseouts he_tra
       $( "table#tE_ajax_chapters tbody tr td.he_tra_txt verse w" ).on('mouseout', function(e) {
@@ -6123,6 +6165,8 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
       $("table#tE_ajax_chapters tbody tr td.es_txt span").css("background", "");
       $("table#tE_ajax_chapters tbody tr td.he_txt verse w").css("background", "");
       $("table#tE_ajax_chapters tbody tr td.he_tra_txt verse w").css("background", "");
+      clearInterval(mouseover_timer_he_tra);
+// console.log("NOT RAN or mouseout of RAN mouseover_timer_he_tra");
       });
 
       //
