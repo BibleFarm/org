@@ -1315,7 +1315,6 @@ position: fixed;
          height: calc(100% - 100px);
          z-index: 2;
          left: 4px;
-         background: black;
     }
      .wrap_top_menu_active { display: block;}
      .wrap_top_menu_items {
@@ -1366,7 +1365,6 @@ position: fixed;
          height: calc(100% - 100px);
          z-index: 2;
          right: 4px;
-         background: black;
     }
      .wrap_top_help_active { display: block;}
 /* END wrap_top_help */
@@ -1404,7 +1402,6 @@ z-index: 2;
          display: block;
          height: calc(100% - 104px);
          width: calc(100% - 8px);
-         background: black;
     }
     /* BEGIN page wrappers */
     /* working here */
@@ -1592,15 +1589,24 @@ text-shadow: 2px 2px 1px #000000;
          margin-left: 0px;
          margin-right: 0px;
     }
-     .std_paragraph_22_left {
-         color: #bebebe;
-         text-shadow: 2px 2px 1px #000000;
-         font-size: 18px;
-         line-height: 22px;
-         text-align: left;
-         margin-left: 0px;
-         margin-right: 0px;
-    }
+    .std_paragraph_22_left {
+        color: #bebebe;
+        text-shadow: 2px 2px 1px #000000;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: left;
+        margin-left: 0px;
+        margin-right: 0px;
+   }
+   .std_paragraph_22_center {
+       color: #bebebe;
+       text-shadow: 2px 2px 1px #000000;
+       font-size: 18px;
+       line-height: 22px;
+       text-align: center;
+       margin-left: 0px;
+       margin-right: 0px;
+  }
      .std_item_sgl_44_left {
          color: #bebebe;
          text-shadow: 2px 2px 1px #000000;
@@ -1746,7 +1752,7 @@ text-shadow: 2px 2px 1px #000000;
          height: 44px;
          background: black;
          font-size: 18px;
-         color: #8b7c66 !important;
+         color: #6f5f48 !important;
          margin: 0 !important;
          padding: 0 !important;
          line-height: 44px;
@@ -1797,6 +1803,9 @@ text-shadow: 2px 2px 1px #000000;
     margin-top: calc(4px + 44px + 4px) !important;
     margin-bottom: calc(4px + 44px + 4px) !important;
     height: calc(100% - 200px) !important;
+}
+.dataTables_empty {
+  color: red;
 }
 /* BEGIN fix search results */
 
@@ -5168,7 +5177,6 @@ display: none;
          font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
          font-size: 17px;
          color: #ae9c80;
-         background: black;
          text-align: center;
          height: 44px;
          border: 0px;
@@ -5178,7 +5186,6 @@ display: none;
          font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
          font-size: 18px;
          color: #ae9c80;
-         background: black;
          text-align: center;
          height: 44px;
          border: 0px;
@@ -5188,7 +5195,6 @@ display: none;
          font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
          font-size: 18px;
          color: #ae9c80;
-         background: black;
          text-align: center;
          height: 44px;
          border: 0px;
@@ -5198,7 +5204,6 @@ display: none;
          font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
          font-size: 18px;
          color: #ae9c80;
-         background: black;
          text-align: center;
          height: 44px;
          border: 0px;
@@ -5208,7 +5213,6 @@ display: none;
          font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
          font-size: 18px;
          color: #ae9c80;
-         background: black;
          text-align: center;
          height: 44px;
          border: 0px;
@@ -5218,7 +5222,6 @@ display: none;
          font-family: "DavidLibre-Regular", sans-serif;
          font-size: 20px;
          color: #ae9c80;
-         background: black;
          text-align: center;
          direction: rtl;
          padding-top: 1px;
@@ -5313,7 +5316,7 @@ display: none;
          -ms-box-sizing: border-box;
          box-sizing: border-box;
          background: #111111;
-         color: #bebebe;
+         color: #D5AD6D;
          text-shadow: 2px 2px 1px #000000;
          font-size: 20px;
     }
@@ -5334,7 +5337,7 @@ display: none;
     /* mark.js adjust search results */
      mark {
          text-shadow: none !important;
-         color: orange !important;
+         color: orange;
          background: black !important;
     }
     /* made with love adjust a bit higher */

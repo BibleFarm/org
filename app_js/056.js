@@ -5751,54 +5751,6 @@ $("#current_section:contains('s12')").html("your current section is the Vision")
           setTimeout(function(){
 
 
-            ////////////////////////////////////////
-            /* BEGIN reorder columns after ajax is loaded */
-            ////////////////////////////////////////
-            // pass 1
-            $("body").find("#tE_ajax_chapters tbody tr td").each(function() {
-            if ($(this).hasClass("he_txt")) {
-            $(this).css("color", "").insertBefore($(this).prevAll('.heb_verse_numbers'));
-            }
-            if ($(this).hasClass("he_tra_txt")) {
-            $(this).css("color", "").insertBefore($(this).prevAll('.he_txt'));
-            }
-            if ($(this).hasClass("en_txt")) {
-            $(this).css("color", "").insertBefore($(this).prevAll('.he_tra_txt'));
-            }
-            if ($(this).hasClass("es_txt")) {
-            $(this).css("color", "").insertBefore($(this).prevAll('.en_txt'));
-            }
-            if ($(this).hasClass("gr_tra_txt")) {
-            $(this).css("color", "").insertBefore($(this).prevAll('.es_txt'));
-            }
-            if ($(this).hasClass("gr_txt")) {
-            $(this).css("color", "").insertBefore($(this).prevAll('.gr_tra_txt'));
-            }
-            });
-            // pass 2
-            $("body").find("#tE_ajax_chapters tbody tr td").each(function() {
-            if ($(this).hasClass("he_txt")) {
-            $(this).css("color", "").insertBefore($(this).prevAll('.heb_verse_numbers'));
-            }
-            if ($(this).hasClass("he_tra_txt")) {
-            $(this).css("color", "").insertBefore($(this).prevAll('.he_txt'));
-            }
-            if ($(this).hasClass("en_txt")) {
-            $(this).css("color", "").insertBefore($(this).prevAll('.he_tra_txt'));
-            }
-            if ($(this).hasClass("es_txt")) {
-            $(this).css("color", "").insertBefore($(this).prevAll('.en_txt'));
-            }
-            if ($(this).hasClass("gr_tra_txt")) {
-            $(this).css("color", "").insertBefore($(this).prevAll('.es_txt'));
-            }
-            if ($(this).hasClass("gr_txt")) {
-            $(this).css("color", "").insertBefore($(this).prevAll('.gr_tra_txt'));
-            }
-            });
-            ////////////////////////////////////////
-            /* END reorder columns after ajax is loaded */
-            ////////////////////////////////////////
 
 
 
@@ -9678,13 +9630,26 @@ $(".panel_colour_preferences").find("#" + colorUserPrefId).trigger({
       // No user is signed in.
             $("#config_name_change").attr("value", "").val("").trigger("change");
             $("#s_last_sharing_code").attr("value", "").val("").trigger("change");
-            // No user is signed in.
+            // wait for Datatables to populate so nav books & chapters get changed too
+            var waitForDatatablesNavToPopulate = setInterval(function() {
+              if (
+                ($("body").find('#example-nav_left_Chapters tbody td').length > 0) &&
+                ($("body").find('#example-nav_left_Verses tbody td').length > 0) &&
+                ($("body").find('#example-browsing_mode_nav_left_Chapters tbody td').length > 0) &&
+                ($("body").find('#example-browsing_mode_nav_left_Verses tbody').length > 0)
+               ) {
+                console.log("waitForDatatablesNavToPopulate ready in DOM upon arrival");
+                // clear the setInterval
+                clearInterval(waitForDatatablesNavToPopulate);
             // trigger click on background
             var backgroundDefaultClass = $("#d_background_class").text();
             $("body").find(".panel_colour_preferences").find("." + backgroundDefaultClass).trigger({
                   type: 'click',
                   which: 1
                 });
+              }
+              }, 1000); // end interval waitForDatatablesNavToPopulate
+
                 // add the style tag // not necessary?
                 var colorDefault = $("#d_color_filter_switches_rgb").text();
                 $( "<style>mark, .active_switch, #name, #email {color : " + colorDefault + " !important;}</style>" ).appendTo( "head" );
@@ -9706,84 +9671,6 @@ $(".panel_colour_preferences").find("#" + colorUserPrefId).trigger({
 ////////////////////////////////////////////////////
 
 
-///////////////////////////////////////////////
-////BEGIN Temporary switch English and Spanish
-///////////////////////////////////////////////
-$(document).ready(function() {
-// app_lang_en_main // terminal main = on
-$('#app_terminal_main_on').on('click', function() {
-  // tran = off / orig = off
-if (
-($("#app_lang_en_main").hasClass("active_switch")) &&
-($("#app_terminal_orig_off").hasClass("active_switch")) &&
-($("#app_terminal_tran_off").hasClass("active_switch"))
-) {
-$("#tE_ajax_chapters tr").each(function() {
-		var tr = $(this);
-		var en = tr.find('td.en_txt');
-		var column = tr.find('td:eq(0)');
-en.insertAfter(column).show();
-});
-}
-});
-// app_lang_en_main // terminal main = off
-$('#app_terminal_main_off').on('click', function() {
-  // tran = off / orig = off
-if (
-($("#app_lang_en_main").hasClass("active_switch")) &&
-($("#app_terminal_orig_off").hasClass("active_switch")) &&
-($("#app_terminal_tran_off").hasClass("active_switch"))
-) {
-$("#tE_ajax_chapters tr").each(function() {
-		var tr = $(this);
-		var en = tr.find('td.en_txt');
-		var column = tr.find('td:eq(0)');
-en.insertAfter(column).hide();
-});
-}
-});
-// app_lang_es_para // terminal para = on
-$('#app_terminal_para_on').on('click', function() {
-  // tran = off / orig = off
-if (
-($("#app_lang_es_para").hasClass("active_switch")) &&
-($("#app_terminal_orig_off").hasClass("active_switch")) &&
-($("#app_terminal_tran_off").hasClass("active_switch"))
-) {
-$("#tE_ajax_chapters tr").each(function() {
-		var tr = $(this);
-		var es = tr.find('td.es_txt');
-		var column = tr.find('td:eq(0)');
-es.insertAfter(column).show();
-});
-}
-});
-// app_lang_es_para // terminal para = off
-$('#app_terminal_para_off').on('click', function() {
-  // tran = off / orig = off
-if (
-($("#app_lang_es_para").hasClass("active_switch")) &&
-($("#app_terminal_orig_off").hasClass("active_switch")) &&
-($("#app_terminal_tran_off").hasClass("active_switch"))
-) {
-$("#tE_ajax_chapters tr").each(function() {
-		var tr = $(this);
-		var es = tr.find('td.es_txt');
-		var column = tr.find('td:eq(0)');
-es.insertAfter(column).hide();
-});
-}
-});
-// temporary trigger these so it load with English only
-$('#app_terminal_main_on').trigger('click');
-$('#app_terminal_para_on').trigger('click');
-
-// end document ready
-});
-// end document ready
-///////////////////////////////////////////////
-////END Temporary switch English and Spanish
-///////////////////////////////////////////////
 
 
 ///////////////////////////////////////////////
@@ -9856,3 +9743,470 @@ $("body").find("button[data-provider-id='password']").find(".firebaseui-idp-text
 ///////////////////////////////////////////////
 ////END login services hack
 ///////////////////////////////////////////////
+
+
+
+
+///////////////////////////////////////////////////
+////BEGIN manual clicks in terminal and language panels
+///////////////////////////////////////////////////
+// BEGIN document ready function
+$(document).ready(function() {
+// BEGIN click function
+$('#app_lang_de_main, #app_lang_de_para, #app_lang_en_main, #app_lang_en_para, #app_lang_es_main, #app_lang_es_para, #app_lang_fr_main, #app_lang_fr_para, #app_lang_it_main, #app_lang_it_para, #app_lang_pl_main, #app_lang_pl_para, #app_lang_pt_main, #app_lang_pt_para, #app_terminal_main_on, #app_terminal_main_off, #app_terminal_para_on, #app_terminal_para_off, #app_terminal_orig_on, #app_terminal_orig_off, #app_terminal_tran_on, #app_terminal_tran_off, #app_terminal_lxxdel_on, #app_terminal_lxxdel_off').on('click', function(e) {
+        var tr = $("#tE_ajax_chapters tbody tr");
+        var text_he_txt = tr.find('td.he_txt').addClass("orig");
+        var text_he_tra_txt = tr.find('td.he_tra_txt').addClass("tran");
+        var text_gr_txt = tr.find('td.gr_txt').addClass("orig");
+        var text_gr_tra_txt = tr.find('td.gr_tra_txt').addClass("tran");
+        var text_lxx_txt = tr.find('td.lxx_txt').addClass("lexxdel");
+        var text_lxx_tra_txt = tr.find('td.lxx_tra_txt').addClass("tran");
+        var text_del_txt = tr.find('td.del_txt').addClass("lexxdel");
+        var text_del_tra_txt = tr.find('td.del_tra_txt').addClass("tran");
+        var text_de = tr.find('td.de_txt');
+        var text_en = tr.find('td.en_txt');
+        var text_es = tr.find('td.es_txt');
+        var text_fr = tr.find('td.fr_txt');
+        var text_it = tr.find('td.it_txt');
+        var text_pl = tr.find('td.pl_txt');
+        var text_pt = tr.find('td.pt_txt');
+// establish de status
+if ( ($("#app_lang_de_main").hasClass("active_switch")) || ($("#app_lang_de_para").hasClass("active_switch")) ) {
+  if ($("#app_lang_de_main").hasClass("active_switch")) {
+$(text_de).removeClass("para").addClass("main").show();
+console.log("text_de is main");
+} else {
+$(text_de).removeClass("main").addClass("para").show();
+console.log("text_de is para");
+}
+} else {
+  $(text_de).removeClass("main").removeClass("para").hide();
+  console.log("text_de hide");
+}
+// establish en status
+if ( ($("#app_lang_en_main").hasClass("active_switch")) || ($("#app_lang_en_para").hasClass("active_switch")) ) {
+  if ($("#app_lang_en_main").hasClass("active_switch")) {
+$(text_en).removeClass("para").addClass("main").show();
+console.log("text_en is main");
+} else {
+$(text_en).removeClass("main").addClass("para").show();
+console.log("text_en is para");
+}
+} else {
+  $(text_en).removeClass("main").removeClass("para").hide();
+  console.log("text_en hide");
+}
+// establish es status
+if ( ($("#app_lang_es_main").hasClass("active_switch")) || ($("#app_lang_es_para").hasClass("active_switch")) ) {
+  if ($("#app_lang_es_main").hasClass("active_switch")) {
+$(text_es).removeClass("para").addClass("main").show();
+console.log("text_es is main");
+} else {
+$(text_es).removeClass("main").addClass("para").show();
+console.log("text_es is para");
+}
+} else {
+  $(text_es).removeClass("main").removeClass("para").hide();
+  console.log("text_es hide");
+}
+// establish fr status
+if ( ($("#app_lang_fr_main").hasClass("active_switch")) || ($("#app_lang_fr_para").hasClass("active_switch")) ) {
+  if ($("#app_lang_fr_main").hasClass("active_switch")) {
+$(text_fr).removeClass("para").addClass("main").show();
+console.log("text_fr is main");
+} else {
+$(text_fr).removeClass("main").addClass("para").show();
+console.log("text_fr is para");
+}
+} else {
+  $(text_fr).removeClass("main").removeClass("para").hide();
+  console.log("text_fr hide");
+}
+// establish it status
+if ( ($("#app_lang_it_main").hasClass("active_switch")) || ($("#app_lang_it_para").hasClass("active_switch")) ) {
+  if ($("#app_lang_it_main").hasClass("active_switch")) {
+$(text_it).removeClass("para").addClass("main").show();
+console.log("text_it is main");
+} else {
+$(text_it).removeClass("main").addClass("para").show();
+console.log("text_it is para");
+}
+} else {
+  $(text_it).removeClass("main").removeClass("para").hide();
+  console.log("text_it hide");
+}
+// establish pl status
+if ( ($("#app_lang_pl_main").hasClass("active_switch")) || ($("#app_lang_pl_para").hasClass("active_switch")) ) {
+  if ($("#app_lang_pl_main").hasClass("active_switch")) {
+$(text_pl).removeClass("para").addClass("main").show();
+console.log("text_pl is main");
+} else {
+$(text_pl).removeClass("main").addClass("para").show();
+console.log("text_pl is para");
+}
+} else {
+  $(text_pl).removeClass("main").removeClass("para").hide();
+  console.log("text_pl hide");
+}
+// establish pt status
+if ( ($("#app_lang_pt_main").hasClass("active_switch")) || ($("#app_lang_pt_para").hasClass("active_switch")) ) {
+  if ($("#app_lang_pt_main").hasClass("active_switch")) {
+$(text_pt).removeClass("para").addClass("main").show();
+console.log("text_pt is main");
+} else {
+$(text_pt).removeClass("main").addClass("para").show();
+console.log("text_pt is para");
+}
+} else {
+  $(text_pt).removeClass("main").removeClass("para").hide();
+  console.log("text_pt hide");
+}
+// establish whether main column is wanted or not
+if ($("#app_terminal_main_on").hasClass("active_switch")) {
+  tr.find('.main').show();
+  console.log(".main is selected");
+} else {
+  tr.find('.main').hide();
+  console.log(".main hide");
+}
+// establish whether para column is wanted or not
+if ($("#app_terminal_para_on").hasClass("active_switch")) {
+  tr.find('.para').show();
+  console.log(".para is selected");
+} else {
+  tr.find('.para').hide();
+  console.log(".para hide");
+}
+// establish whether orig column is wanted or not
+if ($("#app_terminal_orig_on").hasClass("active_switch")) {
+  tr.find('.orig').show();
+  console.log(".orig is selected");
+} else {
+  tr.find('.orig').hide();
+  console.log(".orig hide");
+}
+// establish whether tran column is wanted or not
+if ($("#app_terminal_tran_on").hasClass("active_switch")) {
+  tr.find('.tran').show();
+  console.log(".tran is selected");
+} else {
+  tr.find('.tran').hide();
+  console.log(".tran hide");
+}
+// establish whether lxxdel column is wanted or not
+if ($("#app_terminal_lxxdel_on").hasClass("active_switch")) {
+  tr.find('.lxxdel').show();
+  console.log(".lxxdel is selected");
+} else {
+  tr.find('.lxxdel').hide();
+  console.log(".lxxdel hide");
+}
+////////////////////////////////////////
+//// BEGIN column reorder ////////
+////////////////////////////////////////
+// BEGIN each function
+$("#tE_ajax_chapters tr").each(function() {
+
+		var tr = $(this);
+
+		var heb_verse_numbers = tr.find('td.heb_verse_numbers');
+		var he_txt = tr.find('td.he_txt');
+		var del_txt = tr.find('td.del_txt');
+		var he_tra_txt = tr.find('td.he_tra_txt');
+		var del_tra_txt = tr.find('td.del_tra_txt');
+
+		var de_txt = tr.find('td.de_txt');
+		var en_txt = tr.find('td.en_txt');
+		var es_txt = tr.find('td.es_txt');
+		var fr_txt = tr.find('td.fr_txt');
+		var it_txt = tr.find('td.it_txt');
+		var pl_txt = tr.find('td.pl_txt');
+		var pt_txt = tr.find('td.pt_txt');
+
+		var main = tr.find('td.main');
+		var para = tr.find('td.para');
+
+		var lxx_tra_txt = tr.find('td.lxx_tra_txt');
+		var gr_tra_txt = tr.find('td.gr_tra_txt');
+		var lxx_txt = tr.find('td.lxx_txt');
+		var gr_txt = tr.find('td.gr_txt');
+
+he_txt.insertBefore(heb_verse_numbers);
+del_txt.insertBefore(heb_verse_numbers);
+he_tra_txt.insertBefore(he_txt);
+del_tra_txt.insertBefore(del_txt);
+para.insertBefore(he_tra_txt);
+para.insertBefore(del_tra_txt);
+main.insertBefore(para);
+lxx_tra_txt.insertBefore(main);
+gr_tra_txt.insertBefore(main);
+lxx_txt.insertBefore(lxx_tra_txt);
+gr_txt.insertBefore(gr_tra_txt);
+
+}); // END each function
+////////////////////////////////////////
+//// END column reorder ////////
+////////////////////////////////////////
+}); // END click function
+}); // END document ready function
+///////////////////////////////////////////////////
+////END manual clicks in terminal and language panels
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
+////// BEGIN MutationObserver MutationObserver_Terminal_Languages_tE_ajax_chapters ////
+///////////////////////////////////////////////////////////////////////
+//////////// ATTENTION - THIS DOES NOT WORK INSIDE DOCUMENT READY//////
+///////////////////////////////////////////////////////////////////////
+(function(win) {
+  'use strict';
+
+  var listeners = [],
+  doc = win.document,
+  MutationObserver = win.MutationObserver || win.WebKitMutationObserver,
+  observer;
+
+  function ready(selector, fn) {
+      // Store the selector and callback to be monitored
+      listeners.push({
+          selector: selector,
+          fn: fn
+      });
+      if (!observer) {
+          // Watch for changes in the document
+          observer = new MutationObserver(check);
+          observer.observe(doc.documentElement, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    characterData: true
+          });
+      }
+      // Check if the element is currently in the DOM
+      check();
+  }
+
+  function check() {
+      // Check the DOM for elements matching a stored selector
+      for (var i = 0, len = listeners.length, listener, elements; i < len; i++) {
+          listener = listeners[i];
+          // Query for elements matching the specified selector
+          elements = doc.querySelectorAll(listener.selector);
+          for (var j = 0, jLen = elements.length, element; j < jLen; j++) {
+              element = elements[j];
+              // Make sure the callback isn't invoked with the
+              // same element more than once
+              if (!element.ready) {
+                  element.ready = true;
+                  // Invoke the callback with the element
+                  listener.fn.call(element, element);
+              }
+          }
+      }
+  }
+
+  // Expose `ready`
+  win.ready = ready;
+
+})(this);
+// now try it
+ready(('#tE_ajax_chapters tbody tr:first-child td.he_txt, #tE_ajax_chapters tbody tr:first-child td.he_tra_txt, #tE_ajax_chapters tbody tr:first-child td.gr_txt, #tE_ajax_chapters tbody tr:first-child td.gr_tra_txt, #tE_ajax_chapters tbody tr:first-child td.lxx_txt, #tE_ajax_chapters tbody tr:first-child td.lxx_tra_txt, #tE_ajax_chapters tbody tr:first-child td.del_txt, #tE_ajax_chapters tbody tr:first-child td.del_tra_txt, #tE_ajax_chapters tbody tr:first-child td.de_txt, #tE_ajax_chapters tbody tr:first-child td.en_txt, #tE_ajax_chapters tbody tr:first-child td.es_txt, #tE_ajax_chapters tbody tr:first-child td.fr_txt, #tE_ajax_chapters tbody tr:first-child td.it_txt, #tE_ajax_chapters tbody tr:first-child td.pl_txt, #tE_ajax_chapters tbody tr:first-child td.pt_txt'), function(element) {
+  // do something
+    		var tr = $("#tE_ajax_chapters tbody tr");
+        var text_he_txt = tr.find('td.he_txt').addClass("orig");
+        var text_he_tra_txt = tr.find('td.he_tra_txt').addClass("tran");
+        var text_gr_txt = tr.find('td.gr_txt').addClass("orig");
+        var text_gr_tra_txt = tr.find('td.gr_tra_txt').addClass("tran");
+        var text_lxx_txt = tr.find('td.lxx_txt').addClass("lexxdel");
+        var text_lxx_tra_txt = tr.find('td.lxx_tra_txt').addClass("tran");
+        var text_del_txt = tr.find('td.del_txt').addClass("lexxdel");
+        var text_del_tra_txt = tr.find('td.del_tra_txt').addClass("tran");
+        var text_de = tr.find('td.de_txt');
+        var text_en = tr.find('td.en_txt');
+        var text_es = tr.find('td.es_txt');
+        var text_fr = tr.find('td.fr_txt');
+        var text_it = tr.find('td.it_txt');
+        var text_pl = tr.find('td.pl_txt');
+        var text_pt = tr.find('td.pt_txt');
+// establish de status
+if ( ($("#app_lang_de_main").hasClass("active_switch")) || ($("#app_lang_de_para").hasClass("active_switch")) ) {
+  if ($("#app_lang_de_main").hasClass("active_switch")) {
+$(text_de).removeClass("para").addClass("main").show();
+console.log("text_de is main");
+} else {
+$(text_de).removeClass("main").addClass("para").show();
+console.log("text_de is para");
+}
+} else {
+  $(text_de).removeClass("main").removeClass("para").hide();
+  console.log("text_de hide");
+}
+// establish en status
+if ( ($("#app_lang_en_main").hasClass("active_switch")) || ($("#app_lang_en_para").hasClass("active_switch")) ) {
+  if ($("#app_lang_en_main").hasClass("active_switch")) {
+$(text_en).removeClass("para").addClass("main").show();
+console.log("text_en is main");
+} else {
+$(text_en).removeClass("main").addClass("para").show();
+console.log("text_en is para");
+}
+} else {
+  $(text_en).removeClass("main").removeClass("para").hide();
+  console.log("text_en hide");
+}
+// establish es status
+if ( ($("#app_lang_es_main").hasClass("active_switch")) || ($("#app_lang_es_para").hasClass("active_switch")) ) {
+  if ($("#app_lang_es_main").hasClass("active_switch")) {
+$(text_es).removeClass("para").addClass("main").show();
+console.log("text_es is main");
+} else {
+$(text_es).removeClass("main").addClass("para").show();
+console.log("text_es is para");
+}
+} else {
+  $(text_es).removeClass("main").removeClass("para").hide();
+  console.log("text_es hide");
+}
+// establish fr status
+if ( ($("#app_lang_fr_main").hasClass("active_switch")) || ($("#app_lang_fr_para").hasClass("active_switch")) ) {
+  if ($("#app_lang_fr_main").hasClass("active_switch")) {
+$(text_fr).removeClass("para").addClass("main").show();
+console.log("text_fr is main");
+} else {
+$(text_fr).removeClass("main").addClass("para").show();
+console.log("text_fr is para");
+}
+} else {
+  $(text_fr).removeClass("main").removeClass("para").hide();
+  console.log("text_fr hide");
+}
+// establish it status
+if ( ($("#app_lang_it_main").hasClass("active_switch")) || ($("#app_lang_it_para").hasClass("active_switch")) ) {
+  if ($("#app_lang_it_main").hasClass("active_switch")) {
+$(text_it).removeClass("para").addClass("main").show();
+console.log("text_it is main");
+} else {
+$(text_it).removeClass("main").addClass("para").show();
+console.log("text_it is para");
+}
+} else {
+  $(text_it).removeClass("main").removeClass("para").hide();
+  console.log("text_it hide");
+}
+// establish pl status
+if ( ($("#app_lang_pl_main").hasClass("active_switch")) || ($("#app_lang_pl_para").hasClass("active_switch")) ) {
+  if ($("#app_lang_pl_main").hasClass("active_switch")) {
+$(text_pl).removeClass("para").addClass("main").show();
+console.log("text_pl is main");
+} else {
+$(text_pl).removeClass("main").addClass("para").show();
+console.log("text_pl is para");
+}
+} else {
+  $(text_pl).removeClass("main").removeClass("para").hide();
+  console.log("text_pl hide");
+}
+// establish pt status
+if ( ($("#app_lang_pt_main").hasClass("active_switch")) || ($("#app_lang_pt_para").hasClass("active_switch")) ) {
+  if ($("#app_lang_pt_main").hasClass("active_switch")) {
+$(text_pt).removeClass("para").addClass("main").show();
+console.log("text_pt is main");
+} else {
+$(text_pt).removeClass("main").addClass("para").show();
+console.log("text_pt is para");
+}
+} else {
+  $(text_pt).removeClass("main").removeClass("para").hide();
+  console.log("text_pt hide");
+}
+// establish whether main column is wanted or not
+if ($("#app_terminal_main_on").hasClass("active_switch")) {
+  tr.find('.main').show();
+  console.log(".main is selected");
+} else {
+  tr.find('.main').hide();
+  console.log(".main hide");
+}
+// establish whether para column is wanted or not
+if ($("#app_terminal_para_on").hasClass("active_switch")) {
+  tr.find('.para').show();
+  console.log(".para is selected");
+} else {
+  tr.find('.para').hide();
+  console.log(".para hide");
+}
+// establish whether orig column is wanted or not
+if ($("#app_terminal_orig_on").hasClass("active_switch")) {
+  tr.find('.orig').show();
+  console.log(".orig is selected");
+} else {
+  tr.find('.orig').hide();
+  console.log(".orig hide");
+}
+// establish whether tran column is wanted or not
+if ($("#app_terminal_tran_on").hasClass("active_switch")) {
+  tr.find('.tran').show();
+  console.log(".tran is selected");
+} else {
+  tr.find('.tran').hide();
+  console.log(".tran hide");
+}
+// establish whether lxxdel column is wanted or not
+if ($("#app_terminal_lxxdel_on").hasClass("active_switch")) {
+  tr.find('.lxxdel').show();
+  console.log(".lxxdel is selected");
+} else {
+  tr.find('.lxxdel').hide();
+  console.log(".lxxdel hide");
+}
+////////////////////////////////////////
+//// BEGIN column reorder ////////
+////////////////////////////////////////
+// BEGIN each function
+$("#tE_ajax_chapters tr").each(function() {
+
+		var tr = $(this);
+
+		var heb_verse_numbers = tr.find('td.heb_verse_numbers');
+		var he_txt = tr.find('td.he_txt');
+		var del_txt = tr.find('td.del_txt');
+		var he_tra_txt = tr.find('td.he_tra_txt');
+		var del_tra_txt = tr.find('td.del_tra_txt');
+
+		var de_txt = tr.find('td.de_txt');
+		var en_txt = tr.find('td.en_txt');
+		var es_txt = tr.find('td.es_txt');
+		var fr_txt = tr.find('td.fr_txt');
+		var it_txt = tr.find('td.it_txt');
+		var pl_txt = tr.find('td.pl_txt');
+		var pt_txt = tr.find('td.pt_txt');
+
+		var main = tr.find('td.main');
+		var para = tr.find('td.para');
+
+		var lxx_tra_txt = tr.find('td.lxx_tra_txt');
+		var gr_tra_txt = tr.find('td.gr_tra_txt');
+		var lxx_txt = tr.find('td.lxx_txt');
+		var gr_txt = tr.find('td.gr_txt');
+
+he_txt.insertBefore(heb_verse_numbers);
+del_txt.insertBefore(heb_verse_numbers);
+he_tra_txt.insertBefore(he_txt);
+del_tra_txt.insertBefore(del_txt);
+para.insertBefore(he_tra_txt);
+para.insertBefore(del_tra_txt);
+main.insertBefore(para);
+lxx_tra_txt.insertBefore(main);
+gr_tra_txt.insertBefore(main);
+lxx_txt.insertBefore(lxx_tra_txt);
+gr_txt.insertBefore(gr_tra_txt);
+
+}); // END each function
+////////////////////////////////////////
+//// END column reorder ////////
+////////////////////////////////////////
+}); // END ready function
+///////////////////////////////////////////////////////////////////////
+//////////// ATTENTION - THIS DOES NOT WORK INSIDE DOCUMENT READY//////
+///////////////////////////////////////////////////////////////////////
+////// END MutationObserver MutationObserver_Terminal_Languages_tE_ajax_chapters ////
+///////////////////////////////////////////////////////////////////////
