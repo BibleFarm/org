@@ -2140,17 +2140,22 @@ text-shadow: 2px 2px 1px #000000;
      .table_books_chapters_verses_row > .table_books_col {
          display: inline-block;
          width: 190px;
-         height: 100%;
+         height: calc(100% - 96px);
+position: absolute;
     }
      .table_books_chapters_verses_row > .table_chapters_col {
          display: inline-block;
-         width: 55px;
-         height: 100%;
+         width: 52px;
+         height: calc(100% - 96px);
+position: absolute;
+left: calc(190px + 8px);
     }
      .table_books_chapters_verses_row > .table_verses_col {
          display: inline-block;
-         width: 55px;
-         height: 100%;
+         width: 52px;
+         height: calc(100% - 96px);
+position: absolute;
+left: calc(190px + 8px + 55px + 8px);
     }
      .table_books_chapters_verses_row:after {
          content: '';
@@ -2160,15 +2165,32 @@ text-shadow: 2px 2px 1px #000000;
     }
     /* nav datatables specific */
      #example-nav_left_Teaching tbody td, #example-nav_left_FormerProphets tbody td, #example-nav_left_LatterProphets tbody td, #example-nav_left_TheTwelve tbody td, #example-nav_left_ScrollsOfTruth tbody td, #example-nav_left_FiveScrolls tbody td, #example-nav_left_OtherScrolls tbody td, #example-nav_left_Messiah tbody td, #example-nav_left_Emissaries tbody td, #example-nav_left_Assemblies tbody td, #example-nav_left_Disciples tbody td, #example-nav_left_Vision tbody td, #example-nav_left_Chapters tbody td, #example-nav_left_Verses tbody td {
-         background: #111111;
+       background: hsl(0,0%,8%) !important;
+       background: -moz-radial-gradient(center, ellipse cover, hsl(0,0%,8%)0%, hsl(0,0%,8%)100%) !important;
+       background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(0,0%,8%)), color-stop(100%,hsl(0,0%,0%))) !important;
+       background: -webkit-radial-gradient(center, ellipse cover, hsl(100,0%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+       background: -o-radial-gradient(center, ellipse cover, hsl(0,0%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+       background: -ms-radial-gradient(center, ellipse cover, hsl(0,0%,8%) 0%,hsl(0,0%,0%) 100%) !important;
+       background: radial-gradient(ellipse at center, hsl(0,0%,8%) 0%,hsl(0,0%,0%) 100%) !important;
+       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(0,0%,8%)', endColorstr='#0',GradientType=1 ) !important;
     }
      #example-nav_left_Books_status tbody td, #example-nav_left_Chapters_status tbody td, #example-nav_left_Verses_status tbody td {
          background: aqua;
          height: 44px;
     }
      [id="s1"] tbody td, [id="s2"] tbody td, [id="s3"] tbody td, [id="s4"] tbody td, [id="s5"] tbody td, [id="s6"] tbody td, [id="s7"] tbody td, [id="s8"] tbody td, [id="s9"] tbody td, [id="s10"] tbody td, [id="s11"] tbody td, [id="s12"] tbody td, #example-browsing_mode_nav_left_Chapters tbody td, #example-browsing_mode_nav_left_Verses tbody td {
-         background: #111111;
+       background: hsl(0,0%,8%) !important;
+       background: -moz-radial-gradient(center, ellipse cover, hsl(0,0%,8%)0%, hsl(0,0%,8%)100%) !important;
+       background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(0,0%,8%)), color-stop(100%,hsl(0,0%,0%))) !important;
+       background: -webkit-radial-gradient(center, ellipse cover, hsl(100,0%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+       background: -o-radial-gradient(center, ellipse cover, hsl(0,0%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+       background: -ms-radial-gradient(center, ellipse cover, hsl(0,0%,8%) 0%,hsl(0,0%,0%) 100%) !important;
+       background: radial-gradient(ellipse at center, hsl(0,0%,8%) 0%,hsl(0,0%,0%) 100%) !important;
+       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(0,0%,8%)', endColorstr='#0',GradientType=1 ) !important;
     }
+    #example-nav_left_Teaching,#example-nav_left_FormerProphets,#example-nav_left_LatterProphets,#example-nav_left_TheTwelve,#example-nav_left_ScrollsOfTruth,#example-nav_left_FiveScrolls,#example-nav_left_OtherScrolls,#example-nav_left_Messiah,#example-nav_left_Emissaries,#example-nav_left_Assemblies,#example-nav_left_Disciples,#example-nav_left_Vision,[id="s1"],[id="s2"],[id="s3"],[id="s4"],[id="s5"],[id="s6"],[id="s7"],[id="s8"],[id="s9"],[id="s10"],[id="s11"],[id="s12"] {
+border-bottom: 0px !important;
+}
      #example-browsing_mode_nav_left_Books_status tbody td, #example-browsing_mode_nav_left_Chapters_status tbody td, #example-browsing_mode_nav_left_Verses_status tbody td {
          height: 44px;
     }
@@ -2207,7 +2229,7 @@ text-shadow: 2px 2px 1px #000000;
         padding: 0 !important
     }
      .table_status_books_chapters_verses_row > .table_status_chapters_col {
-         width: 55px;
+         width: 52px;
          height: 44px;
          display: inline-block;
          background: red;
@@ -2222,7 +2244,7 @@ text-shadow: 2px 2px 1px #000000;
         padding: 0 !important
     }
      .table_status_books_chapters_verses_row > .table_status_verses_col {
-         width: 55px;
+         width: 52px;
          height: 44px;
          display: inline-block;
          background: red;
@@ -2323,62 +2345,29 @@ text-shadow: 2px 2px 1px #000000;
 		 padding-top: 4px;
 		 padding-bottom: 4px;
     }
-     .wrap_ref_body_welcome {
-        background: purple;
-    }
-     .wrap_ref_body_analysis {
-        display: none;
-        font-size: 18px;
-        overflow: auto;
-height: 100%;
-padding: 10px;
-    }
-     .wrap_ref_body_lexicons {
-        display: none;
-        font-size: 18px;
-        overflow: auto;
-height: 100%;
-padding: 10px;
-    }
-     .wrap_ref_body_dictionaries {
-        display: none;
-        font-size: 18px;
-        overflow: auto;
-height: 100%;
-padding: 10px;
-    }
-     .wrap_ref_body_encyclopedias {
-        display: none;
-        font-size: 18px;
-        overflow: auto;
-height: 100%;
-padding: 10px;
-    }
-     .wrap_ref_body_topics {
-        display: none;
-        font-size: 18px;
-        overflow: auto;
-height: 100%;
-padding: 10px;
-    }
-     .wrap_ref_body_audio {
-        display: none;
-    }
-     .wrap_ref_body_views {
-        display: none;
-    }
-     .wrap_ref_body_notes {
-        display: none;
-    }
-     .wrap_ref_body_highlights {
-        display: none;
-    }
-     .wrap_ref_body_bookmarks {
-        display: none;
-    }
-     .wrap_ref_body_post {
-        display: none;
-    }
+.wrap_ref_body_welcome,
+.wrap_ref_body_analysis,
+.wrap_ref_body_lexicons,
+.wrap_ref_body_dictionaries,
+.wrap_ref_body_encyclopedias,
+.wrap_ref_body_topics,
+.wrap_ref_body_audio,
+.wrap_ref_body_views,
+.wrap_ref_body_notes,
+.wrap_ref_body_highlights,
+.wrap_ref_body_bookmarks,
+.wrap_ref_body_post {
+display: none;
+font-size: 18px;
+padding-left: 8px;
+padding-right: 8px;
+position: absolute;
+height: calc(100% - 96px);
+}
+.wrap_ref_body_welcome {
+display: block;
+background: purple;
+}
     /* inside the body of each tab */
 
     /* footer */
@@ -4801,16 +4790,20 @@ margin-top: 2px;
 /* ----------------------------------------------- */
 /* BEGIN override SoundManager2 for jovi website specifically
 /* ----------------------------------------------- */
-
+.wrap_ref_body_audio > .wrap_sm2_bar_ui {
+  width: 296px;
+  height: 100%;
+}
 .wrap_ref_body_audio > .wrap_sm2_bar_ui > .sm2-bar-ui {
 position: absolute !important;
-height: calc(100% - 96px);
-top: 48px !important;
-bottom: 46px !important;
+height: calc(100% - 0px);
  left: 0px;
  border-radius: 0px;
  overflow: hidden;
 z-index: 0 !important;
+font-family: "PT_Sans-Narrow-Web-Regular", sans-serif !important;
+font-size: 18px !important;
+min-width: 0em !important;
 }
 .wrap_ref_body_audio > .wrap_sm2_bar_ui > .sm2-bar-ui .bd.sm2-playlist-drawer {
 top: 98px !important;
@@ -4826,11 +4819,16 @@ text-shadow: 2px 2px 1px #000000 !important;
 }
 .wrap_ref_body_audio > .wrap_sm2_bar_ui > .sm2-bar-ui > .sm2-playlist-drawer > .sm2-playlist-wrapper {
 padding: 0 !important;
+    height: calc(100% - 0px) !important;
+    overflow: hidden !important;
 }
 .wrap_ref_body_audio > .wrap_sm2_bar_ui > .sm2-bar-ui > .sm2-playlist-drawer > .sm2-playlist-wrapper > ul.sm2-playlist-bd {
 width: 100% !important;
 background-color: rgba(1,1,1,0.3);
 border: none !important;
+position: absolute;
+    height: 100% !important;
+    top: 0px !important;
 }
 .wrap_ref_body_audio > .wrap_sm2_bar_ui > .sm2-bar-ui .sm2-inline-gradient {
 background: rgba(1,1,1,0.2) !important;
@@ -4847,11 +4845,6 @@ left: 0 !important;
 right: 0 !important;
 background: rgba(1,1,1,0.9);
 padding-right: 4px !important;
-}
-.wrap_ref_body_audio > .wrap_sm2_bar_ui > .sm2-bar-ui {
-  font-family: "PT_Sans-Narrow-Web-Regular", sans-serif !important;
-  font-size: 18px !important;
-  min-width: 0em !important;
 }
 .sm2-progress .sm2-progress-ball {
  background-color: #D5AD6D !important;
@@ -4872,12 +4865,6 @@ top: 98px !important;
 height: 100% !important;
 }
 .sm2-box-shadow {
-}
-.wrap_ref_body_audio > .wrap_sm2_bar_ui > .sm2-bar-ui > .sm2-playlist-drawer > .sm2-playlist-wrapper ul .ps-scrollbar-y {
-    background-color: #D5AD6D !important;
-    right: 0px !important;
-    width: 2px !important;
-    height: 100px !important;
 }
 .sm2-element ul, .sm2-element ul li {
 text-align: left !important;
@@ -5173,7 +5160,10 @@ display: none;
 
 
     /* inputs */
-     .filter_grk {
+    table.filters_requests_all {width:100%}
+    .verse_num_l, .verse_num_r {}
+     .filter_grk,
+     .filter_lxx {
          font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
          font-size: 17px;
          color: #ae9c80;
@@ -5182,7 +5172,8 @@ display: none;
          border: 0px;
          line-height: 44px;
     }
-     .filter_grk_tra {
+     .filter_grk_tra,
+     .filter_lxx_tra {
          font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
          font-size: 18px;
          color: #ae9c80;
@@ -5191,7 +5182,14 @@ display: none;
          border: 0px;
          line-height: 44px;
     }
-     .filter_reg_esp {
+    .filter_de,
+    .filter_en,
+    .filter_es,
+    .filter_fr,
+    .filter_it,
+    .filter_pl,
+    .filter_pt
+      {
          font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
          font-size: 18px;
          color: #ae9c80;
@@ -5200,7 +5198,7 @@ display: none;
          border: 0px;
          line-height: 44px;
     }
-     .filter_reg_eng {
+     .filter_heb_tra, .filter_del_tra {
          font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
          font-size: 18px;
          color: #ae9c80;
@@ -5209,16 +5207,7 @@ display: none;
          border: 0px;
          line-height: 44px;
     }
-     .filter_heb_tra {
-         font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
-         font-size: 18px;
-         color: #ae9c80;
-         text-align: center;
-         height: 44px;
-         border: 0px;
-         line-height: 44px;
-    }
-     .filter_heb {
+     .filter_heb, .filter_del {
          font-family: "DavidLibre-Regular", sans-serif;
          font-size: 20px;
          color: #ae9c80;
@@ -5300,13 +5289,43 @@ display: none;
          padding-left: 4px;
          padding-right: 4px;
     }
-     #searching_grk, #searching_grk_tra, #searching_reg_esp, #searching_reg_eng, #searching_heb_tra, #searching_heb {
+    #searching_grk,
+    #searching_grk_tra,
+    #searching_lxx,
+    #searching_lxx_tra,
+     #searching_de,
+     #searching_en,
+     #searching_es,
+     #searching_fr,
+     #searching_it,
+     #searching_pl,
+     #searching_pt,
+     #searching_del_tra,
+     #searching_del,
+     #searching_heb_tra,
+     #searching_heb
+      {
          height: 0px;
          width: 0px;
          padding-left: 0px;
          padding-right: 0px;
     }
-     #filter_grk, #filter_grk_tra, #filter_reg_esp, #filter_reg_eng, #filter_heb_tra, #filter_heb {
+    #filter_grk,
+    #filter_grk_tra,
+    #filter_lxx,
+    #filter_lxx_tra,
+    #filter_de,
+    #filter_en,
+    #filter_es,
+    #filter_fr,
+    #filter_it,
+    #filter_pl,
+    #filter_pt,
+    #filter_del_tra,
+    #filter_del,
+    #filter_heb_tra,
+    #filter_heb
+     {
          display: none;
          width: 100%;
          width: 100%;
@@ -5388,7 +5407,7 @@ display: none;
     .bf_youtube_container {
       position: absolute;
       width: 100%;
-      height: calc(100% - 96px);
+      height: calc(100% - 0px);
       margin: 0 auto;
       left: 0;
       right: 0;
@@ -5396,7 +5415,7 @@ display: none;
     }
     .RYPP {
       /* Youtube Player With Playlist */
-      width: 100%;
+      width: 312px;
       position: relative;
       padding-right: 250px;
       background: black;
@@ -5637,22 +5656,6 @@ display: none;
       overflow-y: auto;
       height: 100%;
     }
-    /* youtube playlist perfect scrollbar */
-    div.RYPP-items > ol.ps-container > .ps-scrollbar-y-rail {
-      top: 50% !important;
-      width: 10px !important;
-      right: 0px !important;
-      background-color: rgba(213, 173, 109, 0.1) !important;
-      opacity: 1 !important;
-    }
-    div.RYPP-items > ol.ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y {
-      width: 10px !important;
-      height: 50px !important;
-      right: 1px !important;
-      background-color: rgba(213, 173, 109, 0.5) !important;
-      opacity: 1 !important;
-    }
-
     /***************************************************/
     /*******END bf youtube style ********************************************/
     /***************************************************/
@@ -5885,7 +5888,9 @@ table.dataTable tbody tr, #example-nav_left_Books_status tbody td, #example-nav_
 background: none !important;
 background-color: none !important;
 }
-
+.table.dataTable.no-footer {
+  border-bottom: 0px !important;
+}
 
 /********* BEGIN for testing purposes **********************/
 #hidden_cont_build_string_load_bento {
@@ -7029,49 +7034,41 @@ display: inline-block;
 /* /////////////////////////////////// */
 /* // BEGIN perfect scrollbar //////// */
 /* /////////////////////////////////// */
-/* bar visible */
-.wrap_ajaxed>.ps-scrollbar-y-rail>.ps-scrollbar-y,
-.window_body_top_menu_items>.ps-scrollbar-y-rail>.ps-scrollbar-y,
-.wrap_ref_body_analysis>.ps-scrollbar-y-rail>.ps-scrollbar-y,
-.wrap_ref_body_lexicons>.ps-scrollbar-y-rail>.ps-scrollbar-y,
-.wrap_ref_body_dictionaries>.ps-scrollbar-y-rail>.ps-scrollbar-y,
-.wrap_ref_body_encyclopedias>.ps-scrollbar-y-rail>.ps-scrollbar-y,
-.wrap_ref_body_topics>.ps-scrollbar-y-rail>.ps-scrollbar-y
- {
-width: 1px !important;
-right: 0px !important;
+.wrap_ref_body_audio > .wrap_sm2_bar_ui > .sm2-bar-ui > .sm2-playlist-drawer > .sm2-playlist-wrapper ul .ps-scrollbar-y {
+    background-color: #D5AD6D !important;
+    right: 0px !important;
+    width: 7px !important;
+    height: 100px !important;
 }
-/* rail on hover */
-.wrap_ajaxed>.ps-scrollbar-y-rail,
-.window_body_top_menu_items>.ps-scrollbar-y-rail,
-.wrap_ref_body_analysis>.ps-scrollbar-y-rail,
-.wrap_ref_body_lexicons>.ps-scrollbar-y-rail,
-.wrap_ref_body_dictionaries>.ps-scrollbar-y-rail,
-.wrap_ref_body_encyclopedias>.ps-scrollbar-y-rail,
-.wrap_ref_body_topics>.ps-scrollbar-y-rail
- {
-width: 7px !important;
+/* youtube playlist perfect scrollbar */
+div.RYPP-items > ol.ps-container > .ps-scrollbar-y-rail {
+  top: 50% !important;
+  width: 7px !important;
+  right: 0px !important;
+  background-color: rgba(213, 173, 109, 0.1) !important;
+  opacity: 1 !important;
 }
-/* handle */
-.wrap_ajaxed>.ps-scrollbar-y-rail:hover>.ps-scrollbar-y,
-.wrap_ajaxed>.ps-scrollbar-y-rail:active>.ps-scrollbar-y,
-.window_body_top_menu_items>.ps-scrollbar-y-rail:hover>.ps-scrollbar-y,
-.window_body_top_menu_items>.ps-scrollbar-y-rail:active>.ps-scrollbar-y,
-.wrap_ref_body_analysis>.ps-scrollbar-y-rail:hover>.ps-scrollbar-y,
-.wrap_ref_body_analysis>.ps-scrollbar-y-rail:active>.ps-scrollbar-y,
-.wrap_ref_body_lexicons>.ps-scrollbar-y-rail:hover>.ps-scrollbar-y,
-.wrap_ref_body_lexicons>.ps-scrollbar-y-rail:active>.ps-scrollbar-y,
-.wrap_ref_body_dictionaries>.ps-scrollbar-y-rail:hover>.ps-scrollbar-y,
-.wrap_ref_body_dictionaries>.ps-scrollbar-y-rail:active>.ps-scrollbar-y,
-.wrap_ref_body_encyclopedias>.ps-scrollbar-y-rail:hover>.ps-scrollbar-y,
-.wrap_ref_body_encyclopedias>.ps-scrollbar-y-rail:active>.ps-scrollbar-y,
-.wrap_ref_body_topics>.ps-scrollbar-y-rail:hover>.ps-scrollbar-y,
-.wrap_ref_body_topics>.ps-scrollbar-y-rail:active>.ps-scrollbar-y
- {
-width: 7px !important;
+div.RYPP-items > ol.ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y {
+  width: 7px !important;
+  height: 50px !important;
+  right: 0px !important;
+  background-color: rgba(213, 173, 109, 0.5) !important;
+  opacity: 1 !important;
 }
-/* hide them */
-.table_books_col>.ps-scrollbar-y-rail, .table_chapters_col>.ps-scrollbar-y-rail, .table_verses_col>.ps-scrollbar-y-rail, .sm2-playlist-bd>.ps-scrollbar-y-rail {display: none !important}
+.ps-scrollbar-y-rail>.ps-scrollbar-y {
+  width: 1px !important;
+  right: 0px !important;
+  background-color: #D5AD6D !important;
+}
+.ps-container.ps-active-y>.ps-scrollbar-y-rail {
+  width: 14px !important;
+  background-color: transparent !important;
+}
+.ps-scrollbar-y-rail:hover>.ps-scrollbar-y {
+  width: 7px !important;
+  background-color: #D5AD6D !important;
+  opacity: 0.3 !important;
+}
 /* /////////////////////////////////// */
 /* // END perfect scrollbar ////////// */
 /* /////////////////////////////////// */
