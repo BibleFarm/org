@@ -9754,182 +9754,262 @@ $("body").find("button[data-provider-id='password']").find(".firebaseui-idp-text
 $(document).ready(function() {
 // BEGIN click function
 $('#app_lang_de_main, #app_lang_de_para, #app_lang_en_main, #app_lang_en_para, #app_lang_es_main, #app_lang_es_para, #app_lang_fr_main, #app_lang_fr_para, #app_lang_it_main, #app_lang_it_para, #app_lang_pl_main, #app_lang_pl_para, #app_lang_pt_main, #app_lang_pt_para, #app_terminal_main_on, #app_terminal_main_off, #app_terminal_para_on, #app_terminal_para_off, #app_terminal_orig_on, #app_terminal_orig_off, #app_terminal_tran_on, #app_terminal_tran_off, #app_terminal_lxxdel_on, #app_terminal_lxxdel_off').on('click', function(e) {
-        var tr = $("#tE_ajax_chapters tbody tr");
-        var text_he_txt = tr.find('td.he_txt').addClass("orig");
-        var text_he_tra_txt = tr.find('td.he_tra_txt').addClass("tran");
-        var text_gr_txt = tr.find('td.gr_txt').addClass("orig");
-        var text_gr_tra_txt = tr.find('td.gr_tra_txt').addClass("tran");
-        var text_lxx_txt = tr.find('td.lxx_txt').addClass("lexxdel");
-        var text_lxx_tra_txt = tr.find('td.lxx_tra_txt').addClass("tran");
-        var text_del_txt = tr.find('td.del_txt').addClass("lexxdel");
-        var text_del_tra_txt = tr.find('td.del_tra_txt').addClass("tran");
-        var text_de = tr.find('td.de_txt');
-        var text_en = tr.find('td.en_txt');
-        var text_es = tr.find('td.es_txt');
-        var text_fr = tr.find('td.fr_txt');
-        var text_it = tr.find('td.it_txt');
-        var text_pl = tr.find('td.pl_txt');
-        var text_pt = tr.find('td.pt_txt');
-// establish de status
-if ( ($("#app_lang_de_main").hasClass("active_switch")) || ($("#app_lang_de_para").hasClass("active_switch")) ) {
-  if ($("#app_lang_de_main").hasClass("active_switch")) {
-$(text_de).removeClass("para").addClass("main").show();
-console.log("text_de is main");
-} else {
-$(text_de).removeClass("main").addClass("para").show();
-console.log("text_de is para");
-}
-} else {
-  $(text_de).removeClass("main").removeClass("para").hide();
-  console.log("text_de hide");
-}
-// establish en status
-if ( ($("#app_lang_en_main").hasClass("active_switch")) || ($("#app_lang_en_para").hasClass("active_switch")) ) {
-  if ($("#app_lang_en_main").hasClass("active_switch")) {
-$(text_en).removeClass("para").addClass("main").show();
-console.log("text_en is main");
-} else {
-$(text_en).removeClass("main").addClass("para").show();
-console.log("text_en is para");
-}
-} else {
-  $(text_en).removeClass("main").removeClass("para").hide();
-  console.log("text_en hide");
-}
-// establish es status
-if ( ($("#app_lang_es_main").hasClass("active_switch")) || ($("#app_lang_es_para").hasClass("active_switch")) ) {
-  if ($("#app_lang_es_main").hasClass("active_switch")) {
-$(text_es).removeClass("para").addClass("main").show();
-console.log("text_es is main");
-} else {
-$(text_es).removeClass("main").addClass("para").show();
-console.log("text_es is para");
-}
-} else {
-  $(text_es).removeClass("main").removeClass("para").hide();
-  console.log("text_es hide");
-}
-// establish fr status
-if ( ($("#app_lang_fr_main").hasClass("active_switch")) || ($("#app_lang_fr_para").hasClass("active_switch")) ) {
-  if ($("#app_lang_fr_main").hasClass("active_switch")) {
-$(text_fr).removeClass("para").addClass("main").show();
-console.log("text_fr is main");
-} else {
-$(text_fr).removeClass("main").addClass("para").show();
-console.log("text_fr is para");
-}
-} else {
-  $(text_fr).removeClass("main").removeClass("para").hide();
-  console.log("text_fr hide");
-}
-// establish it status
-if ( ($("#app_lang_it_main").hasClass("active_switch")) || ($("#app_lang_it_para").hasClass("active_switch")) ) {
-  if ($("#app_lang_it_main").hasClass("active_switch")) {
-$(text_it).removeClass("para").addClass("main").show();
-console.log("text_it is main");
-} else {
-$(text_it).removeClass("main").addClass("para").show();
-console.log("text_it is para");
-}
-} else {
-  $(text_it).removeClass("main").removeClass("para").hide();
-  console.log("text_it hide");
-}
-// establish pl status
-if ( ($("#app_lang_pl_main").hasClass("active_switch")) || ($("#app_lang_pl_para").hasClass("active_switch")) ) {
-  if ($("#app_lang_pl_main").hasClass("active_switch")) {
-$(text_pl).removeClass("para").addClass("main").show();
-console.log("text_pl is main");
-} else {
-$(text_pl).removeClass("main").addClass("para").show();
-console.log("text_pl is para");
-}
-} else {
-  $(text_pl).removeClass("main").removeClass("para").hide();
-  console.log("text_pl hide");
-}
-// establish pt status
-if ( ($("#app_lang_pt_main").hasClass("active_switch")) || ($("#app_lang_pt_para").hasClass("active_switch")) ) {
-  if ($("#app_lang_pt_main").hasClass("active_switch")) {
-$(text_pt).removeClass("para").addClass("main").show();
-console.log("text_pt is main");
-} else {
-$(text_pt).removeClass("main").addClass("para").show();
-console.log("text_pt is para");
-}
-} else {
-  $(text_pt).removeClass("main").removeClass("para").hide();
-  console.log("text_pt hide");
-}
-// establish whether main column is wanted or not
-if ($("#app_terminal_main_on").hasClass("active_switch")) {
-  tr.find('.main').show();
-  console.log(".main is selected");
-} else {
-  tr.find('.main').hide();
-  console.log(".main hide");
-}
-// establish whether para column is wanted or not
-if ($("#app_terminal_para_on").hasClass("active_switch")) {
-  tr.find('.para').show();
-  console.log(".para is selected");
-} else {
-  tr.find('.para').hide();
-  console.log(".para hide");
-}
-// establish whether orig column is wanted or not
-if ($("#app_terminal_orig_on").hasClass("active_switch")) {
-  tr.find('.orig').show();
-  console.log(".orig is selected");
-} else {
-  tr.find('.orig').hide();
-  console.log(".orig hide");
-}
-// establish whether tran column is wanted or not
-if ($("#app_terminal_tran_on").hasClass("active_switch")) {
-  tr.find('.tran').show();
-  console.log(".tran is selected");
-} else {
-  tr.find('.tran').hide();
-  console.log(".tran hide");
-}
-// establish whether lxxdel column is wanted or not
-if ($("#app_terminal_lxxdel_on").hasClass("active_switch")) {
-  tr.find('.lxxdel').show();
-  console.log(".lxxdel is selected");
-} else {
-  tr.find('.lxxdel').hide();
-  console.log(".lxxdel hide");
-}
+  // output variables
+        var tr_output = $("#tE_ajax_chapters tbody tr");
+        var text_he_txt = tr_output.find('td.he_txt').addClass("orig");
+        var text_he_tra_txt = tr_output.find('td.he_tra_txt').addClass("tran");
+        var text_gr_txt = tr_output.find('td.gr_txt').addClass("orig");
+        var text_gr_tra_txt = tr_output.find('td.gr_tra_txt').addClass("tran");
+        var text_lxx_txt = tr_output.find('td.lxx_txt').addClass("lexxdel");
+        var text_lxx_tra_txt = tr_output.find('td.lxx_tra_txt').addClass("tran");
+        var text_del_txt = tr_output.find('td.del_txt').addClass("lexxdel");
+        var text_del_tra_txt = tr_output.find('td.del_tra_txt').addClass("tran");
+        var text_de = tr_output.find('td.de_txt');
+        var text_en = tr_output.find('td.en_txt');
+        var text_es = tr_output.find('td.es_txt');
+        var text_fr = tr_output.find('td.fr_txt');
+        var text_it = tr_output.find('td.it_txt');
+        var text_pl = tr_output.find('td.pl_txt');
+        var text_pt = tr_output.find('td.pt_txt');
+        // search request variables
+        var tr_search_req = $("#filters_requests_all tbody tr");
+        var search_req_he_txt = tr_search_req.find('td.filter_heb').addClass("orig");
+        var search_req_he_tra_txt = tr_search_req.find('td.filter_heb_tra').addClass("tran");
+        var search_req_gr_txt = tr_search_req.find('td.filter_grk').addClass("orig");
+        var search_req_gr_tra_txt = tr_search_req.find('td.filter_grk_tra').addClass("tran");
+        var search_req_lxx_txt = tr_search_req.find('td.filter_lxx').addClass("lexxdel");
+        var search_req_lxx_tra_txt = tr_search_req.find('td.filter_lxx_tra').addClass("tran");
+        var search_req_del_txt = tr_search_req.find('td.filter_del').addClass("lexxdel");
+        var search_req_del_tra_txt = tr_search_req.find('td.filter_del_tra').addClass("tran");
+        var search_req_de = tr_search_req.find('td.filter_de');
+        var search_req_en = tr_search_req.find('td.filter_en');
+        var search_req_es = tr_search_req.find('td.filter_es');
+        var search_req_fr = tr_search_req.find('td.filter_fr');
+        var search_req_it = tr_search_req.find('td.filter_it');
+        var search_req_pl = tr_search_req.find('td.filter_pl');
+        var search_req_pt = tr_search_req.find('td.filter_pt');
+        // establish de status
+        if ( ($("#app_lang_de_main").hasClass("active_switch")) || ($("#app_lang_de_para").hasClass("active_switch")) ) {
+          if ($("#app_lang_de_main").hasClass("active_switch")) {
+        $(text_de).removeClass("para").addClass("main").show();
+        console.log("text_de is main");
+        $(search_req_de).removeClass("para").addClass("main").show();
+        console.log("search_req_de is main");
+        } else {
+        $(text_de).removeClass("main").addClass("para").show();
+        console.log("text_de is para");
+        $(search_req_de).removeClass("main").addClass("para").show();
+        console.log("search_req_de is para");
+        }
+        } else {
+          $(text_de).removeClass("main").removeClass("para").hide();
+          console.log("text_de hide");
+          $(search_req_de).removeClass("main").removeClass("para").hide();
+          console.log("search_req_de hide");
+        }
+        // establish en status
+        if ( ($("#app_lang_en_main").hasClass("active_switch")) || ($("#app_lang_en_para").hasClass("active_switch")) ) {
+          if ($("#app_lang_en_main").hasClass("active_switch")) {
+        $(text_en).removeClass("para").addClass("main").show();
+        console.log("text_en is main");
+        $(search_req_en).removeClass("para").addClass("main").show();
+        console.log("search_req_en is main");
+        } else {
+        $(text_en).removeClass("main").addClass("para").show();
+        console.log("text_en is para");
+        $(search_req_en).removeClass("main").addClass("para").show();
+        console.log("search_req_en is para");
+        }
+        } else {
+          $(text_en).removeClass("main").removeClass("para").hide();
+          console.log("text_en hide");
+          $(search_req_en).removeClass("main").removeClass("para").hide();
+          console.log("search_req_en hide");
+        }
+        // establish es status
+        if ( ($("#app_lang_es_main").hasClass("active_switch")) || ($("#app_lang_es_para").hasClass("active_switch")) ) {
+          if ($("#app_lang_es_main").hasClass("active_switch")) {
+        $(text_es).removeClass("para").addClass("main").show();
+        console.log("text_es is main");
+        $(search_req_es).removeClass("para").addClass("main").show();
+        console.log("search_req_es is main");
+        } else {
+        $(text_es).removeClass("main").addClass("para").show();
+        console.log("text_es is para");
+        $(search_req_es).removeClass("main").addClass("para").show();
+        console.log("search_req_es is para");
+        }
+        } else {
+          $(text_es).removeClass("main").removeClass("para").hide();
+          console.log("text_es hide");
+          $(search_req_es).removeClass("main").removeClass("para").hide();
+          console.log("search_req_es hide");
+        }
+        // establish fr status
+        if ( ($("#app_lang_fr_main").hasClass("active_switch")) || ($("#app_lang_fr_para").hasClass("active_switch")) ) {
+          if ($("#app_lang_fr_main").hasClass("active_switch")) {
+        $(text_fr).removeClass("para").addClass("main").show();
+        console.log("text_fr is main");
+        $(search_req_fr).removeClass("para").addClass("main").show();
+        console.log("search_req_fr is main");
+        } else {
+        $(text_fr).removeClass("main").addClass("para").show();
+        console.log("text_fr is para");
+        $(search_req_fr).removeClass("main").addClass("para").show();
+        console.log("search_req_fr is para");
+        }
+        } else {
+          $(text_fr).removeClass("main").removeClass("para").hide();
+          console.log("text_fr hide");
+          $(search_req_fr).removeClass("main").removeClass("para").hide();
+          console.log("search_req_fr hide");
+        }
+        // establish it status
+        if ( ($("#app_lang_it_main").hasClass("active_switch")) || ($("#app_lang_it_para").hasClass("active_switch")) ) {
+          if ($("#app_lang_it_main").hasClass("active_switch")) {
+        $(text_it).removeClass("para").addClass("main").show();
+        console.log("text_it is main");
+        $(search_req_it).removeClass("para").addClass("main").show();
+        console.log("search_req_it is main");
+        } else {
+        $(text_it).removeClass("main").addClass("para").show();
+        console.log("text_it is para");
+        $(search_req_it).removeClass("main").addClass("para").show();
+        console.log("search_req_it is para");
+        }
+        } else {
+          $(text_it).removeClass("main").removeClass("para").hide();
+          console.log("text_it hide");
+          $(search_req_it).removeClass("main").removeClass("para").hide();
+          console.log("search_req_it hide");
+        }
+        // establish pl status
+        if ( ($("#app_lang_pl_main").hasClass("active_switch")) || ($("#app_lang_pl_para").hasClass("active_switch")) ) {
+          if ($("#app_lang_pl_main").hasClass("active_switch")) {
+        $(text_pl).removeClass("para").addClass("main").show();
+        console.log("text_pl is main");
+        $(search_req_pl).removeClass("para").addClass("main").show();
+        console.log("search_req_pl is main");
+        } else {
+        $(text_pl).removeClass("main").addClass("para").show();
+        console.log("text_pl is para");
+        $(search_req_pl).removeClass("main").addClass("para").show();
+        console.log("search_req_pl is para");
+        }
+        } else {
+          $(text_pl).removeClass("main").removeClass("para").hide();
+          console.log("text_pl hide");
+          $(search_req_pl).removeClass("main").removeClass("para").hide();
+          console.log("search_req_pl hide");
+        }
+        // establish pt status
+        if ( ($("#app_lang_pt_main").hasClass("active_switch")) || ($("#app_lang_pt_para").hasClass("active_switch")) ) {
+          if ($("#app_lang_pt_main").hasClass("active_switch")) {
+        $(text_pt).removeClass("para").addClass("main").show();
+        console.log("text_pt is main");
+        $(search_req_pt).removeClass("para").addClass("main").show();
+        console.log("search_req_pt is main");
+        } else {
+        $(text_pt).removeClass("main").addClass("para").show();
+        console.log("text_pt is para");
+        $(search_req_pt).removeClass("main").addClass("para").show();
+        console.log("search_req_pt is para");
+        }
+        } else {
+          $(text_pt).removeClass("main").removeClass("para").hide();
+          console.log("text_pt hide");
+          $(search_req_pt).removeClass("main").removeClass("para").hide();
+          console.log("search_req_pt hide");
+        }
+        // establish whether main column is wanted or not
+        if ($("#app_terminal_main_on").hasClass("active_switch")) {
+          tr_output.find('.main').show();
+          console.log(".main is selected");
+          tr_search_req.find('.main').show();
+          console.log(".main is selected");
+        } else {
+          tr_output.find('.main').hide();
+          console.log(".main hide");
+          tr_search_req.find('.main').hide();
+          console.log(".main hide");
+        }
+        // establish whether para column is wanted or not
+        if ($("#app_terminal_para_on").hasClass("active_switch")) {
+          tr_output.find('.para').show();
+          console.log(".para is selected");
+          tr_search_req.find('.para').show();
+          console.log(".para is selected");
+        } else {
+          tr_output.find('.para').hide();
+          console.log(".para hide");
+          tr_search_req.find('.para').hide();
+          console.log(".para hide");
+        }
+        // establish whether orig column is wanted or not
+        if ($("#app_terminal_orig_on").hasClass("active_switch")) {
+          tr_output.find('.orig').show();
+          console.log(".orig is selected");
+          tr_search_req.find('.orig').show();
+          console.log(".orig is selected");
+        } else {
+          tr_output.find('.orig').hide();
+          console.log(".orig hide");
+          tr_search_req.find('.orig').hide();
+          console.log(".orig hide");
+        }
+        // establish whether tran column is wanted or not
+        if ($("#app_terminal_tran_on").hasClass("active_switch")) {
+          tr_output.find('.tran').show();
+          console.log(".tran is selected");
+          tr_search_req.find('.tran').show();
+          console.log(".tran is selected");
+        } else {
+          tr_output.find('.tran').hide();
+          console.log(".tran hide");
+          tr_search_req.find('.tran').hide();
+          console.log(".tran hide");
+        }
+        // establish whether lxxdel column is wanted or not
+        if ($("#app_terminal_lxxdel_on").hasClass("active_switch")) {
+          tr_output.find('.lxxdel').show();
+          console.log(".lxxdel is selected");
+          tr_search_req.find('.lxxdel').show();
+          console.log(".lxxdel is selected");
+        } else {
+          tr_output.find('.lxxdel').hide();
+          console.log(".lxxdel hide");
+          tr_search_req.find('.lxxdel').hide();
+          console.log(".lxxdel hide");
+        }
 ////////////////////////////////////////
 //// BEGIN column reorder ////////
 ////////////////////////////////////////
-// BEGIN each function
+// BEGIN  each function for output
 $("#tE_ajax_chapters tr").each(function() {
 
-		var tr = $(this);
+		var tr_output = $(this);
 
-		var heb_verse_numbers = tr.find('td.heb_verse_numbers');
-		var he_txt = tr.find('td.he_txt');
-		var del_txt = tr.find('td.del_txt');
-		var he_tra_txt = tr.find('td.he_tra_txt');
-		var del_tra_txt = tr.find('td.del_tra_txt');
+		var heb_verse_numbers = tr_output.find('td.heb_verse_numbers');
+		var he_txt = tr_output.find('td.he_txt');
+		var del_txt = tr_output.find('td.del_txt');
+		var he_tra_txt = tr_output.find('td.he_tra_txt');
+		var del_tra_txt = tr_output.find('td.del_tra_txt');
 
-		var de_txt = tr.find('td.de_txt');
-		var en_txt = tr.find('td.en_txt');
-		var es_txt = tr.find('td.es_txt');
-		var fr_txt = tr.find('td.fr_txt');
-		var it_txt = tr.find('td.it_txt');
-		var pl_txt = tr.find('td.pl_txt');
-		var pt_txt = tr.find('td.pt_txt');
+		var de_txt = tr_output.find('td.de_txt');
+		var en_txt = tr_output.find('td.en_txt');
+		var es_txt = tr_output.find('td.es_txt');
+		var fr_txt = tr_output.find('td.fr_txt');
+		var it_txt = tr_output.find('td.it_txt');
+		var pl_txt = tr_output.find('td.pl_txt');
+		var pt_txt = tr_output.find('td.pt_txt');
 
-		var main = tr.find('td.main');
-		var para = tr.find('td.para');
+		var main = tr_output.find('td.main');
+		var para = tr_output.find('td.para');
 
-		var lxx_tra_txt = tr.find('td.lxx_tra_txt');
-		var gr_tra_txt = tr.find('td.gr_tra_txt');
-		var lxx_txt = tr.find('td.lxx_txt');
-		var gr_txt = tr.find('td.gr_txt');
+		var lxx_tra_txt = tr_output.find('td.lxx_tra_txt');
+		var gr_tra_txt = tr_output.find('td.gr_tra_txt');
+		var lxx_txt = tr_output.find('td.lxx_txt');
+		var gr_txt = tr_output.find('td.gr_txt');
 
 he_txt.insertBefore(heb_verse_numbers);
 del_txt.insertBefore(heb_verse_numbers);
@@ -9943,7 +10023,47 @@ gr_tra_txt.insertBefore(main);
 lxx_txt.insertBefore(lxx_tra_txt);
 gr_txt.insertBefore(gr_tra_txt);
 
-}); // END each function
+}); // END  each function for output
+// BEGIN  each function for search requests
+$("#filters_requests_all tr").each(function() {
+
+		var tr_search_req = $(this);
+
+		var verse_num_r = tr_search_req.find('td.verse_num_r');
+		var filter_heb = tr_search_req.find('td.filter_heb');
+		var filter_del = tr_search_req.find('td.filter_del');
+		var filter_heb_tra = tr_search_req.find('td.filter_heb_tra');
+		var filter_del_tra = tr_search_req.find('td.filter_del_tra');
+
+		var de_txt = tr_search_req.find('td.de_txt');
+		var en_txt = tr_search_req.find('td.en_txt');
+		var es_txt = tr_search_req.find('td.es_txt');
+		var fr_txt = tr_search_req.find('td.fr_txt');
+		var it_txt = tr_search_req.find('td.it_txt');
+		var pl_txt = tr_search_req.find('td.pl_txt');
+		var pt_txt = tr_search_req.find('td.pt_txt');
+
+		var main = tr_search_req.find('td.main');
+		var para = tr_search_req.find('td.para');
+
+		var filter_lxx_tra = tr_search_req.find('td.filter_lxx_tra');
+		var filter_grk_tra = tr_search_req.find('td.filter_grk_tra');
+		var filter_lxx = tr_search_req.find('td.filter_lxx');
+		var filter_grk = tr_search_req.find('td.filter_grk');
+
+filter_heb.insertBefore(verse_num_r);
+filter_del.insertBefore(verse_num_r);
+filter_heb_tra.insertBefore(filter_heb);
+filter_del_tra.insertBefore(filter_del);
+para.insertBefore(filter_heb_tra);
+para.insertBefore(filter_del_tra);
+main.insertBefore(para);
+filter_lxx_tra.insertBefore(main);
+filter_grk_tra.insertBefore(main);
+filter_lxx.insertBefore(filter_lxx_tra);
+filter_grk.insertBefore(filter_grk_tra);
+
+}); // END  each function for search requests
 ////////////////////////////////////////
 //// END column reorder ////////
 ////////////////////////////////////////
@@ -10010,183 +10130,262 @@ gr_txt.insertBefore(gr_tra_txt);
 })(this);
 // now try it
 ready(('#tE_ajax_chapters tbody tr:first-child td.he_txt, #tE_ajax_chapters tbody tr:first-child td.he_tra_txt, #tE_ajax_chapters tbody tr:first-child td.gr_txt, #tE_ajax_chapters tbody tr:first-child td.gr_tra_txt, #tE_ajax_chapters tbody tr:first-child td.lxx_txt, #tE_ajax_chapters tbody tr:first-child td.lxx_tra_txt, #tE_ajax_chapters tbody tr:first-child td.del_txt, #tE_ajax_chapters tbody tr:first-child td.del_tra_txt, #tE_ajax_chapters tbody tr:first-child td.de_txt, #tE_ajax_chapters tbody tr:first-child td.en_txt, #tE_ajax_chapters tbody tr:first-child td.es_txt, #tE_ajax_chapters tbody tr:first-child td.fr_txt, #tE_ajax_chapters tbody tr:first-child td.it_txt, #tE_ajax_chapters tbody tr:first-child td.pl_txt, #tE_ajax_chapters tbody tr:first-child td.pt_txt'), function(element) {
-  // do something
-    		var tr = $("#tE_ajax_chapters tbody tr");
-        var text_he_txt = tr.find('td.he_txt').addClass("orig");
-        var text_he_tra_txt = tr.find('td.he_tra_txt').addClass("tran");
-        var text_gr_txt = tr.find('td.gr_txt').addClass("orig");
-        var text_gr_tra_txt = tr.find('td.gr_tra_txt').addClass("tran");
-        var text_lxx_txt = tr.find('td.lxx_txt').addClass("lexxdel");
-        var text_lxx_tra_txt = tr.find('td.lxx_tra_txt').addClass("tran");
-        var text_del_txt = tr.find('td.del_txt').addClass("lexxdel");
-        var text_del_tra_txt = tr.find('td.del_tra_txt').addClass("tran");
-        var text_de = tr.find('td.de_txt');
-        var text_en = tr.find('td.en_txt');
-        var text_es = tr.find('td.es_txt');
-        var text_fr = tr.find('td.fr_txt');
-        var text_it = tr.find('td.it_txt');
-        var text_pl = tr.find('td.pl_txt');
-        var text_pt = tr.find('td.pt_txt');
-// establish de status
-if ( ($("#app_lang_de_main").hasClass("active_switch")) || ($("#app_lang_de_para").hasClass("active_switch")) ) {
-  if ($("#app_lang_de_main").hasClass("active_switch")) {
-$(text_de).removeClass("para").addClass("main").show();
-console.log("text_de is main");
-} else {
-$(text_de).removeClass("main").addClass("para").show();
-console.log("text_de is para");
-}
-} else {
-  $(text_de).removeClass("main").removeClass("para").hide();
-  console.log("text_de hide");
-}
-// establish en status
-if ( ($("#app_lang_en_main").hasClass("active_switch")) || ($("#app_lang_en_para").hasClass("active_switch")) ) {
-  if ($("#app_lang_en_main").hasClass("active_switch")) {
-$(text_en).removeClass("para").addClass("main").show();
-console.log("text_en is main");
-} else {
-$(text_en).removeClass("main").addClass("para").show();
-console.log("text_en is para");
-}
-} else {
-  $(text_en).removeClass("main").removeClass("para").hide();
-  console.log("text_en hide");
-}
-// establish es status
-if ( ($("#app_lang_es_main").hasClass("active_switch")) || ($("#app_lang_es_para").hasClass("active_switch")) ) {
-  if ($("#app_lang_es_main").hasClass("active_switch")) {
-$(text_es).removeClass("para").addClass("main").show();
-console.log("text_es is main");
-} else {
-$(text_es).removeClass("main").addClass("para").show();
-console.log("text_es is para");
-}
-} else {
-  $(text_es).removeClass("main").removeClass("para").hide();
-  console.log("text_es hide");
-}
-// establish fr status
-if ( ($("#app_lang_fr_main").hasClass("active_switch")) || ($("#app_lang_fr_para").hasClass("active_switch")) ) {
-  if ($("#app_lang_fr_main").hasClass("active_switch")) {
-$(text_fr).removeClass("para").addClass("main").show();
-console.log("text_fr is main");
-} else {
-$(text_fr).removeClass("main").addClass("para").show();
-console.log("text_fr is para");
-}
-} else {
-  $(text_fr).removeClass("main").removeClass("para").hide();
-  console.log("text_fr hide");
-}
-// establish it status
-if ( ($("#app_lang_it_main").hasClass("active_switch")) || ($("#app_lang_it_para").hasClass("active_switch")) ) {
-  if ($("#app_lang_it_main").hasClass("active_switch")) {
-$(text_it).removeClass("para").addClass("main").show();
-console.log("text_it is main");
-} else {
-$(text_it).removeClass("main").addClass("para").show();
-console.log("text_it is para");
-}
-} else {
-  $(text_it).removeClass("main").removeClass("para").hide();
-  console.log("text_it hide");
-}
-// establish pl status
-if ( ($("#app_lang_pl_main").hasClass("active_switch")) || ($("#app_lang_pl_para").hasClass("active_switch")) ) {
-  if ($("#app_lang_pl_main").hasClass("active_switch")) {
-$(text_pl).removeClass("para").addClass("main").show();
-console.log("text_pl is main");
-} else {
-$(text_pl).removeClass("main").addClass("para").show();
-console.log("text_pl is para");
-}
-} else {
-  $(text_pl).removeClass("main").removeClass("para").hide();
-  console.log("text_pl hide");
-}
-// establish pt status
-if ( ($("#app_lang_pt_main").hasClass("active_switch")) || ($("#app_lang_pt_para").hasClass("active_switch")) ) {
-  if ($("#app_lang_pt_main").hasClass("active_switch")) {
-$(text_pt).removeClass("para").addClass("main").show();
-console.log("text_pt is main");
-} else {
-$(text_pt).removeClass("main").addClass("para").show();
-console.log("text_pt is para");
-}
-} else {
-  $(text_pt).removeClass("main").removeClass("para").hide();
-  console.log("text_pt hide");
-}
-// establish whether main column is wanted or not
-if ($("#app_terminal_main_on").hasClass("active_switch")) {
-  tr.find('.main').show();
-  console.log(".main is selected");
-} else {
-  tr.find('.main').hide();
-  console.log(".main hide");
-}
-// establish whether para column is wanted or not
-if ($("#app_terminal_para_on").hasClass("active_switch")) {
-  tr.find('.para').show();
-  console.log(".para is selected");
-} else {
-  tr.find('.para').hide();
-  console.log(".para hide");
-}
-// establish whether orig column is wanted or not
-if ($("#app_terminal_orig_on").hasClass("active_switch")) {
-  tr.find('.orig').show();
-  console.log(".orig is selected");
-} else {
-  tr.find('.orig').hide();
-  console.log(".orig hide");
-}
-// establish whether tran column is wanted or not
-if ($("#app_terminal_tran_on").hasClass("active_switch")) {
-  tr.find('.tran').show();
-  console.log(".tran is selected");
-} else {
-  tr.find('.tran').hide();
-  console.log(".tran hide");
-}
-// establish whether lxxdel column is wanted or not
-if ($("#app_terminal_lxxdel_on").hasClass("active_switch")) {
-  tr.find('.lxxdel').show();
-  console.log(".lxxdel is selected");
-} else {
-  tr.find('.lxxdel').hide();
-  console.log(".lxxdel hide");
-}
+  // output variables
+    		var tr_output = $("#tE_ajax_chapters tbody tr");
+        var text_he_txt = tr_output.find('td.he_txt').addClass("orig");
+        var text_he_tra_txt = tr_output.find('td.he_tra_txt').addClass("tran");
+        var text_gr_txt = tr_output.find('td.gr_txt').addClass("orig");
+        var text_gr_tra_txt = tr_output.find('td.gr_tra_txt').addClass("tran");
+        var text_lxx_txt = tr_output.find('td.lxx_txt').addClass("lexxdel");
+        var text_lxx_tra_txt = tr_output.find('td.lxx_tra_txt').addClass("tran");
+        var text_del_txt = tr_output.find('td.del_txt').addClass("lexxdel");
+        var text_del_tra_txt = tr_output.find('td.del_tra_txt').addClass("tran");
+        var text_de = tr_output.find('td.de_txt');
+        var text_en = tr_output.find('td.en_txt');
+        var text_es = tr_output.find('td.es_txt');
+        var text_fr = tr_output.find('td.fr_txt');
+        var text_it = tr_output.find('td.it_txt');
+        var text_pl = tr_output.find('td.pl_txt');
+        var text_pt = tr_output.find('td.pt_txt');
+        // search request variables
+        var tr_search_req = $("#filters_requests_all tbody tr");
+        var search_req_he_txt = tr_search_req.find('td.filter_heb').addClass("orig");
+        var search_req_he_tra_txt = tr_search_req.find('td.filter_heb_tra').addClass("tran");
+        var search_req_gr_txt = tr_search_req.find('td.filter_grk').addClass("orig");
+        var search_req_gr_tra_txt = tr_search_req.find('td.filter_grk_tra').addClass("tran");
+        var search_req_lxx_txt = tr_search_req.find('td.filter_lxx').addClass("lexxdel");
+        var search_req_lxx_tra_txt = tr_search_req.find('td.filter_lxx_tra').addClass("tran");
+        var search_req_del_txt = tr_search_req.find('td.filter_del').addClass("lexxdel");
+        var search_req_del_tra_txt = tr_search_req.find('td.filter_del_tra').addClass("tran");
+        var search_req_de = tr_search_req.find('td.filter_de');
+        var search_req_en = tr_search_req.find('td.filter_en');
+        var search_req_es = tr_search_req.find('td.filter_es');
+        var search_req_fr = tr_search_req.find('td.filter_fr');
+        var search_req_it = tr_search_req.find('td.filter_it');
+        var search_req_pl = tr_search_req.find('td.filter_pl');
+        var search_req_pt = tr_search_req.find('td.filter_pt');
+        // establish de status
+        if ( ($("#app_lang_de_main").hasClass("active_switch")) || ($("#app_lang_de_para").hasClass("active_switch")) ) {
+          if ($("#app_lang_de_main").hasClass("active_switch")) {
+        $(text_de).removeClass("para").addClass("main").show();
+        console.log("text_de is main");
+        $(search_req_de).removeClass("para").addClass("main").show();
+        console.log("search_req_de is main");
+        } else {
+        $(text_de).removeClass("main").addClass("para").show();
+        console.log("text_de is para");
+        $(search_req_de).removeClass("main").addClass("para").show();
+        console.log("search_req_de is para");
+        }
+        } else {
+          $(text_de).removeClass("main").removeClass("para").hide();
+          console.log("text_de hide");
+          $(search_req_de).removeClass("main").removeClass("para").hide();
+          console.log("search_req_de hide");
+        }
+        // establish en status
+        if ( ($("#app_lang_en_main").hasClass("active_switch")) || ($("#app_lang_en_para").hasClass("active_switch")) ) {
+          if ($("#app_lang_en_main").hasClass("active_switch")) {
+        $(text_en).removeClass("para").addClass("main").show();
+        console.log("text_en is main");
+        $(search_req_en).removeClass("para").addClass("main").show();
+        console.log("search_req_en is main");
+        } else {
+        $(text_en).removeClass("main").addClass("para").show();
+        console.log("text_en is para");
+        $(search_req_en).removeClass("main").addClass("para").show();
+        console.log("search_req_en is para");
+        }
+        } else {
+          $(text_en).removeClass("main").removeClass("para").hide();
+          console.log("text_en hide");
+          $(search_req_en).removeClass("main").removeClass("para").hide();
+          console.log("search_req_en hide");
+        }
+        // establish es status
+        if ( ($("#app_lang_es_main").hasClass("active_switch")) || ($("#app_lang_es_para").hasClass("active_switch")) ) {
+          if ($("#app_lang_es_main").hasClass("active_switch")) {
+        $(text_es).removeClass("para").addClass("main").show();
+        console.log("text_es is main");
+        $(search_req_es).removeClass("para").addClass("main").show();
+        console.log("search_req_es is main");
+        } else {
+        $(text_es).removeClass("main").addClass("para").show();
+        console.log("text_es is para");
+        $(search_req_es).removeClass("main").addClass("para").show();
+        console.log("search_req_es is para");
+        }
+        } else {
+          $(text_es).removeClass("main").removeClass("para").hide();
+          console.log("text_es hide");
+          $(search_req_es).removeClass("main").removeClass("para").hide();
+          console.log("search_req_es hide");
+        }
+        // establish fr status
+        if ( ($("#app_lang_fr_main").hasClass("active_switch")) || ($("#app_lang_fr_para").hasClass("active_switch")) ) {
+          if ($("#app_lang_fr_main").hasClass("active_switch")) {
+        $(text_fr).removeClass("para").addClass("main").show();
+        console.log("text_fr is main");
+        $(search_req_fr).removeClass("para").addClass("main").show();
+        console.log("search_req_fr is main");
+        } else {
+        $(text_fr).removeClass("main").addClass("para").show();
+        console.log("text_fr is para");
+        $(search_req_fr).removeClass("main").addClass("para").show();
+        console.log("search_req_fr is para");
+        }
+        } else {
+          $(text_fr).removeClass("main").removeClass("para").hide();
+          console.log("text_fr hide");
+          $(search_req_fr).removeClass("main").removeClass("para").hide();
+          console.log("search_req_fr hide");
+        }
+        // establish it status
+        if ( ($("#app_lang_it_main").hasClass("active_switch")) || ($("#app_lang_it_para").hasClass("active_switch")) ) {
+          if ($("#app_lang_it_main").hasClass("active_switch")) {
+        $(text_it).removeClass("para").addClass("main").show();
+        console.log("text_it is main");
+        $(search_req_it).removeClass("para").addClass("main").show();
+        console.log("search_req_it is main");
+        } else {
+        $(text_it).removeClass("main").addClass("para").show();
+        console.log("text_it is para");
+        $(search_req_it).removeClass("main").addClass("para").show();
+        console.log("search_req_it is para");
+        }
+        } else {
+          $(text_it).removeClass("main").removeClass("para").hide();
+          console.log("text_it hide");
+          $(search_req_it).removeClass("main").removeClass("para").hide();
+          console.log("search_req_it hide");
+        }
+        // establish pl status
+        if ( ($("#app_lang_pl_main").hasClass("active_switch")) || ($("#app_lang_pl_para").hasClass("active_switch")) ) {
+          if ($("#app_lang_pl_main").hasClass("active_switch")) {
+        $(text_pl).removeClass("para").addClass("main").show();
+        console.log("text_pl is main");
+        $(search_req_pl).removeClass("para").addClass("main").show();
+        console.log("search_req_pl is main");
+        } else {
+        $(text_pl).removeClass("main").addClass("para").show();
+        console.log("text_pl is para");
+        $(search_req_pl).removeClass("main").addClass("para").show();
+        console.log("search_req_pl is para");
+        }
+        } else {
+          $(text_pl).removeClass("main").removeClass("para").hide();
+          console.log("text_pl hide");
+          $(search_req_pl).removeClass("main").removeClass("para").hide();
+          console.log("search_req_pl hide");
+        }
+        // establish pt status
+        if ( ($("#app_lang_pt_main").hasClass("active_switch")) || ($("#app_lang_pt_para").hasClass("active_switch")) ) {
+          if ($("#app_lang_pt_main").hasClass("active_switch")) {
+        $(text_pt).removeClass("para").addClass("main").show();
+        console.log("text_pt is main");
+        $(search_req_pt).removeClass("para").addClass("main").show();
+        console.log("search_req_pt is main");
+        } else {
+        $(text_pt).removeClass("main").addClass("para").show();
+        console.log("text_pt is para");
+        $(search_req_pt).removeClass("main").addClass("para").show();
+        console.log("search_req_pt is para");
+        }
+        } else {
+          $(text_pt).removeClass("main").removeClass("para").hide();
+          console.log("text_pt hide");
+          $(search_req_pt).removeClass("main").removeClass("para").hide();
+          console.log("search_req_pt hide");
+        }
+        // establish whether main column is wanted or not
+        if ($("#app_terminal_main_on").hasClass("active_switch")) {
+          tr_output.find('.main').show();
+          console.log(".main is selected");
+          tr_search_req.find('.main').show();
+          console.log(".main is selected");
+        } else {
+          tr_output.find('.main').hide();
+          console.log(".main hide");
+          tr_search_req.find('.main').hide();
+          console.log(".main hide");
+        }
+        // establish whether para column is wanted or not
+        if ($("#app_terminal_para_on").hasClass("active_switch")) {
+          tr_output.find('.para').show();
+          console.log(".para is selected");
+          tr_search_req.find('.para').show();
+          console.log(".para is selected");
+        } else {
+          tr_output.find('.para').hide();
+          console.log(".para hide");
+          tr_search_req.find('.para').hide();
+          console.log(".para hide");
+        }
+        // establish whether orig column is wanted or not
+        if ($("#app_terminal_orig_on").hasClass("active_switch")) {
+          tr_output.find('.orig').show();
+          console.log(".orig is selected");
+          tr_search_req.find('.orig').show();
+          console.log(".orig is selected");
+        } else {
+          tr_output.find('.orig').hide();
+          console.log(".orig hide");
+          tr_search_req.find('.orig').hide();
+          console.log(".orig hide");
+        }
+        // establish whether tran column is wanted or not
+        if ($("#app_terminal_tran_on").hasClass("active_switch")) {
+          tr_output.find('.tran').show();
+          console.log(".tran is selected");
+          tr_search_req.find('.tran').show();
+          console.log(".tran is selected");
+        } else {
+          tr_output.find('.tran').hide();
+          console.log(".tran hide");
+          tr_search_req.find('.tran').hide();
+          console.log(".tran hide");
+        }
+        // establish whether lxxdel column is wanted or not
+        if ($("#app_terminal_lxxdel_on").hasClass("active_switch")) {
+          tr_output.find('.lxxdel').show();
+          console.log(".lxxdel is selected");
+          tr_search_req.find('.lxxdel').show();
+          console.log(".lxxdel is selected");
+        } else {
+          tr_output.find('.lxxdel').hide();
+          console.log(".lxxdel hide");
+          tr_search_req.find('.lxxdel').hide();
+          console.log(".lxxdel hide");
+        }
 ////////////////////////////////////////
 //// BEGIN column reorder ////////
 ////////////////////////////////////////
-// BEGIN each function
+// BEGIN  each function for output
 $("#tE_ajax_chapters tr").each(function() {
 
-		var tr = $(this);
+		var tr_output = $(this);
 
-		var heb_verse_numbers = tr.find('td.heb_verse_numbers');
-		var he_txt = tr.find('td.he_txt');
-		var del_txt = tr.find('td.del_txt');
-		var he_tra_txt = tr.find('td.he_tra_txt');
-		var del_tra_txt = tr.find('td.del_tra_txt');
+		var heb_verse_numbers = tr_output.find('td.heb_verse_numbers');
+		var he_txt = tr_output.find('td.he_txt');
+		var del_txt = tr_output.find('td.del_txt');
+		var he_tra_txt = tr_output.find('td.he_tra_txt');
+		var del_tra_txt = tr_output.find('td.del_tra_txt');
 
-		var de_txt = tr.find('td.de_txt');
-		var en_txt = tr.find('td.en_txt');
-		var es_txt = tr.find('td.es_txt');
-		var fr_txt = tr.find('td.fr_txt');
-		var it_txt = tr.find('td.it_txt');
-		var pl_txt = tr.find('td.pl_txt');
-		var pt_txt = tr.find('td.pt_txt');
+		var de_txt = tr_output.find('td.de_txt');
+		var en_txt = tr_output.find('td.en_txt');
+		var es_txt = tr_output.find('td.es_txt');
+		var fr_txt = tr_output.find('td.fr_txt');
+		var it_txt = tr_output.find('td.it_txt');
+		var pl_txt = tr_output.find('td.pl_txt');
+		var pt_txt = tr_output.find('td.pt_txt');
 
-		var main = tr.find('td.main');
-		var para = tr.find('td.para');
+		var main = tr_output.find('td.main');
+		var para = tr_output.find('td.para');
 
-		var lxx_tra_txt = tr.find('td.lxx_tra_txt');
-		var gr_tra_txt = tr.find('td.gr_tra_txt');
-		var lxx_txt = tr.find('td.lxx_txt');
-		var gr_txt = tr.find('td.gr_txt');
+		var lxx_tra_txt = tr_output.find('td.lxx_tra_txt');
+		var gr_tra_txt = tr_output.find('td.gr_tra_txt');
+		var lxx_txt = tr_output.find('td.lxx_txt');
+		var gr_txt = tr_output.find('td.gr_txt');
 
 he_txt.insertBefore(heb_verse_numbers);
 del_txt.insertBefore(heb_verse_numbers);
@@ -10200,7 +10399,47 @@ gr_tra_txt.insertBefore(main);
 lxx_txt.insertBefore(lxx_tra_txt);
 gr_txt.insertBefore(gr_tra_txt);
 
-}); // END each function
+}); // END  each function for output
+// BEGIN  each function for search requests
+$("#filters_requests_all tr").each(function() {
+
+		var tr_search_req = $(this);
+
+		var verse_num_r = tr_search_req.find('td.verse_num_r');
+		var filter_heb = tr_search_req.find('td.filter_heb');
+		var filter_del = tr_search_req.find('td.filter_del');
+		var filter_heb_tra = tr_search_req.find('td.filter_heb_tra');
+		var filter_del_tra = tr_search_req.find('td.filter_del_tra');
+
+		var de_txt = tr_search_req.find('td.de_txt');
+		var en_txt = tr_search_req.find('td.en_txt');
+		var es_txt = tr_search_req.find('td.es_txt');
+		var fr_txt = tr_search_req.find('td.fr_txt');
+		var it_txt = tr_search_req.find('td.it_txt');
+		var pl_txt = tr_search_req.find('td.pl_txt');
+		var pt_txt = tr_search_req.find('td.pt_txt');
+
+		var main = tr_search_req.find('td.main');
+		var para = tr_search_req.find('td.para');
+
+		var filter_lxx_tra = tr_search_req.find('td.filter_lxx_tra');
+		var filter_grk_tra = tr_search_req.find('td.filter_grk_tra');
+		var filter_lxx = tr_search_req.find('td.filter_lxx');
+		var filter_grk = tr_search_req.find('td.filter_grk');
+
+filter_heb.insertBefore(verse_num_r);
+filter_del.insertBefore(verse_num_r);
+filter_heb_tra.insertBefore(filter_heb);
+filter_del_tra.insertBefore(filter_del);
+para.insertBefore(filter_heb_tra);
+para.insertBefore(filter_del_tra);
+main.insertBefore(para);
+filter_lxx_tra.insertBefore(main);
+filter_grk_tra.insertBefore(main);
+filter_lxx.insertBefore(filter_lxx_tra);
+filter_grk.insertBefore(filter_grk_tra);
+
+}); // END  each function for search requests
 ////////////////////////////////////////
 //// END column reorder ////////
 ////////////////////////////////////////
