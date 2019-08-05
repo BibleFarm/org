@@ -5104,8 +5104,8 @@ border-bottom: 2px solid;
 
 
 /* on and off */
-#app_edit_mode_on, #app_terminal_main_on, #app_terminal_para_on, #app_terminal_orig_on, #app_terminal_tran_on, #app_terminal_lxxdel_on {width: 42px; padding-right: 16px;}
-#app_edit_mode_off, #app_terminal_main_off, #app_terminal_para_off, #app_terminal_orig_off, #app_terminal_tran_off, #app_terminal_lxxdel_off {width: 42px;}
+#app_edit_mode_on, #app_terminal_main_on, #app_terminal_para_on, #app_terminal_orig_on, #app_terminal_tran_on {width: 42px; padding-right: 16px;}
+#app_edit_mode_off, #app_terminal_main_off, #app_terminal_para_off, #app_terminal_orig_off, #app_terminal_tran_off {width: 42px;}
 
 
 
@@ -5162,8 +5162,7 @@ display: none;
     /* inputs */
     table.filters_requests_all {width:100%}
     .verse_num_l, .verse_num_r {}
-     .filter_grk,
-     .filter_lxx {
+     .filter_grk {
          font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
          font-size: 17px;
          color: #ae9c80;
@@ -5172,8 +5171,7 @@ display: none;
          border: 0px;
          line-height: 44px;
     }
-     .filter_grk_tra,
-     .filter_lxx_tra {
+     .filter_grk_tra {
          font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
          font-size: 18px;
          color: #ae9c80;
@@ -5198,7 +5196,7 @@ display: none;
          border: 0px;
          line-height: 44px;
     }
-     .filter_heb_tra, .filter_del_tra {
+     .filter_heb_tra {
          font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
          font-size: 18px;
          color: #ae9c80;
@@ -5207,7 +5205,7 @@ display: none;
          border: 0px;
          line-height: 44px;
     }
-     .filter_heb, .filter_del {
+     .filter_heb {
          font-family: "DavidLibre-Regular", sans-serif;
          font-size: 20px;
          color: #ae9c80;
@@ -5291,8 +5289,6 @@ display: none;
     }
     #searching_grk,
     #searching_grk_tra,
-    #searching_lxx,
-    #searching_lxx_tra,
      #searching_de,
      #searching_en,
      #searching_es,
@@ -5300,8 +5296,6 @@ display: none;
      #searching_it,
      #searching_pl,
      #searching_pt,
-     #searching_del_tra,
-     #searching_del,
      #searching_heb_tra,
      #searching_heb
       {
@@ -5312,8 +5306,6 @@ display: none;
     }
     #filter_grk,
     #filter_grk_tra,
-    #filter_lxx,
-    #filter_lxx_tra,
     #filter_de,
     #filter_en,
     #filter_es,
@@ -5321,8 +5313,6 @@ display: none;
     #filter_it,
     #filter_pl,
     #filter_pt,
-    #filter_del_tra,
-    #filter_del,
     #filter_heb_tra,
     #filter_heb
      {

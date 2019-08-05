@@ -8110,32 +8110,6 @@ var colorSelected = $("#u_color_filter_switches_rgb").val();
 $(this).addClass("active_switch").css("color", colorSelected );
 $("#app_terminal_tran_on").removeClass("active_switch").removeAttr("style");
 });
-///////// app_terminal_lxxdel
-// handle click on app_terminal_lxxdel_on
-$("#app_terminal_lxxdel_on").on("click", function(e) {
-	// update user saved data
-var clickedStatusOn = $(this).text();
-$("#u_terminal_lxxdel_status").text("");
-$("#u_terminal_lxxdel_status").append(clickedStatusOn);
-
-var colorSelected = $("#u_color_filter_switches_rgb").val();
-
-$(this).addClass("active_switch").css("color", colorSelected );
-$("#app_terminal_lxxdel_off").removeClass("active_switch").removeAttr("style");
-});
-// handle click on app_terminal_lxxdel_off
-$("#app_terminal_lxxdel_off").on("click", function(e) {
-	// update user saved data
-var clickedStatusOff = $(this).text();
-$("#u_terminal_lxxdel_status").text("");
-$("#u_terminal_lxxdel_status").append(clickedStatusOff);
-
-var colorSelected = $("#u_color_filter_switches_rgb").val();
-
-$(this).addClass("active_switch").css("color", colorSelected );
-$("#app_terminal_lxxdel_on").removeClass("active_switch").removeAttr("style");
-});
-
 
 
 /// BEGIN ////// app_lang_en
@@ -8146,9 +8120,8 @@ var clickedStatusOn = $(this).text();
 $("#u_lang_en_main").text("");
 $("#u_lang_en_main").text(clickedStatusOn);
 $("#selected_lang_main").text("main column in english");
-$("#selected_lang_orig").text("hebrew & greek original");
-$("#selected_lang_tran").text("hebrew & greek transliteration");
-$("#selected_lang_lxxdel").text("Septuāgintā OT & Delitzsch NT");
+$("#selected_lang_orig").text("hebrew & greek texts");
+$("#selected_lang_tran").text("pronounciation of the texts");
 
 
 var colorSelected = $("#u_color_filter_switches_rgb").val();
@@ -8190,9 +8163,8 @@ var clickedStatusOn = $(this).text();
 $("#u_lang_de_main").text("");
 $("#u_lang_de_main").text(clickedStatusOn);
 $("#selected_lang_main").text("hauptspalte in deutsch");
-$("#selected_lang_orig").text("hebräisch & griechisch original");
-$("#selected_lang_tran").text("hebräisch & griechisch transliter");
-$("#selected_lang_lxxdel").text("Septuāgintā AT & Delitzsch NT");
+$("#selected_lang_orig").text("hebräische & griechische texte");
+$("#selected_lang_tran").text("aussprache der texte");
 
 
 var colorSelected = $("#u_color_filter_switches_rgb").val();
@@ -8235,8 +8207,7 @@ $("#u_lang_fr_main").text("");
 $("#u_lang_fr_main").text(clickedStatusOn);
 $("#selected_lang_main").text("colonne principale en français");
 $("#selected_lang_orig").text("hébreu et grec original");
-$("#selected_lang_tran").text("translittération hébreu et grec");
-$("#selected_lang_lxxdel").text("Septuāgintā AT & Delitzsch NT");
+$("#selected_lang_tran").text("prononciation des textes");
 
 
 var colorSelected = $("#u_color_filter_switches_rgb").val();
@@ -8279,8 +8250,7 @@ $("#u_lang_es_main").text("");
 $("#u_lang_es_main").text(clickedStatusOn);
 $("#selected_lang_main").text("columna principal en español");
 $("#selected_lang_orig").text("hebreo y griego original");
-$("#selected_lang_tran").text("transliteración hebrea y griega");
-$("#selected_lang_lxxdel").text("Septuāgintā AT & Delitzsch NT");
+$("#selected_lang_tran").text("pronunciación de los textos");
 
 
 var colorSelected = $("#u_color_filter_switches_rgb").val();
@@ -8323,8 +8293,7 @@ $("#u_lang_pt_main").text("");
 $("#u_lang_pt_main").text(clickedStatusOn);
 $("#selected_lang_main").text("coluna principal em português");
 $("#selected_lang_orig").text("original hebraico e grego");
-$("#selected_lang_tran").text("transliteração hebraica e grega");
-$("#selected_lang_lxxdel").text("Septuāgintā AT & Delitzsch NT");
+$("#selected_lang_tran").text("pronúncia dos textos");
 
 
 var colorSelected = $("#u_color_filter_switches_rgb").val();
@@ -8367,8 +8336,7 @@ $("#u_lang_it_main").text("");
 $("#u_lang_it_main").text(clickedStatusOn);
 $("#selected_lang_main").text("colonna principale in italiano");
 $("#selected_lang_orig").text("originale ebraico e greco");
-$("#selected_lang_tran").text("traslitterazione ebraica e greca");
-$("#selected_lang_lxxdel").text("Septuāgintā AT & Delitzsch NT");
+$("#selected_lang_tran").text("pronuncia dei testi");
 
 
 var colorSelected = $("#u_color_filter_switches_rgb").val();
@@ -8411,8 +8379,7 @@ $("#u_lang_pl_main").text("");
 $("#u_lang_pl_main").text(clickedStatusOn);
 $("#selected_lang_main").text("polska główna kolumna");
 $("#selected_lang_orig").text("oryginalny hebrajski i grecki");
-$("#selected_lang_tran").text("transliteracja hebrajski i grecki");
-$("#selected_lang_lxxdel").text("Septuāgintā ST & Delitzsch NT");
+$("#selected_lang_tran").text("wymowa tekstów");
 
 
 var colorSelected = $("#u_color_filter_switches_rgb").val();
@@ -9753,17 +9720,13 @@ $("body").find("button[data-provider-id='password']").find(".firebaseui-idp-text
 // BEGIN document ready function
 $(document).ready(function() {
 // BEGIN click function
-$('#app_lang_de_main, #app_lang_de_para, #app_lang_en_main, #app_lang_en_para, #app_lang_es_main, #app_lang_es_para, #app_lang_fr_main, #app_lang_fr_para, #app_lang_it_main, #app_lang_it_para, #app_lang_pl_main, #app_lang_pl_para, #app_lang_pt_main, #app_lang_pt_para, #app_terminal_main_on, #app_terminal_main_off, #app_terminal_para_on, #app_terminal_para_off, #app_terminal_orig_on, #app_terminal_orig_off, #app_terminal_tran_on, #app_terminal_tran_off, #app_terminal_lxxdel_on, #app_terminal_lxxdel_off').on('click', function(e) {
+$('#app_lang_de_main, #app_lang_de_para, #app_lang_en_main, #app_lang_en_para, #app_lang_es_main, #app_lang_es_para, #app_lang_fr_main, #app_lang_fr_para, #app_lang_it_main, #app_lang_it_para, #app_lang_pl_main, #app_lang_pl_para, #app_lang_pt_main, #app_lang_pt_para, #app_terminal_main_on, #app_terminal_main_off, #app_terminal_para_on, #app_terminal_para_off, #app_terminal_orig_on, #app_terminal_orig_off, #app_terminal_tran_on, #app_terminal_tran_off').on('click', function(e) {
   // output variables
         var tr_output = $("#tE_ajax_chapters tbody tr");
         var text_he_txt = tr_output.find('td.he_txt').addClass("orig");
         var text_he_tra_txt = tr_output.find('td.he_tra_txt').addClass("tran");
         var text_gr_txt = tr_output.find('td.gr_txt').addClass("orig");
         var text_gr_tra_txt = tr_output.find('td.gr_tra_txt').addClass("tran");
-        var text_lxx_txt = tr_output.find('td.lxx_txt').addClass("lexxdel");
-        var text_lxx_tra_txt = tr_output.find('td.lxx_tra_txt').addClass("tran");
-        var text_del_txt = tr_output.find('td.del_txt').addClass("lexxdel");
-        var text_del_tra_txt = tr_output.find('td.del_tra_txt').addClass("tran");
         var text_de = tr_output.find('td.de_txt');
         var text_en = tr_output.find('td.en_txt');
         var text_es = tr_output.find('td.es_txt');
@@ -9777,10 +9740,6 @@ $('#app_lang_de_main, #app_lang_de_para, #app_lang_en_main, #app_lang_en_para, #
         var search_req_he_tra_txt = tr_search_req.find('td.filter_heb_tra').addClass("tran");
         var search_req_gr_txt = tr_search_req.find('td.filter_grk').addClass("orig");
         var search_req_gr_tra_txt = tr_search_req.find('td.filter_grk_tra').addClass("tran");
-        var search_req_lxx_txt = tr_search_req.find('td.filter_lxx').addClass("lexxdel");
-        var search_req_lxx_tra_txt = tr_search_req.find('td.filter_lxx_tra').addClass("tran");
-        var search_req_del_txt = tr_search_req.find('td.filter_del').addClass("lexxdel");
-        var search_req_del_tra_txt = tr_search_req.find('td.filter_del_tra').addClass("tran");
         var search_req_de = tr_search_req.find('td.filter_de');
         var search_req_en = tr_search_req.find('td.filter_en');
         var search_req_es = tr_search_req.find('td.filter_es');
@@ -9969,18 +9928,6 @@ $('#app_lang_de_main, #app_lang_de_para, #app_lang_en_main, #app_lang_en_para, #
           tr_search_req.find('.tran').hide();
           console.log(".tran hide");
         }
-        // establish whether lxxdel column is wanted or not
-        if ($("#app_terminal_lxxdel_on").hasClass("active_switch")) {
-          tr_output.find('.lxxdel').show();
-          console.log(".lxxdel is selected");
-          tr_search_req.find('.lxxdel').show();
-          console.log(".lxxdel is selected");
-        } else {
-          tr_output.find('.lxxdel').hide();
-          console.log(".lxxdel hide");
-          tr_search_req.find('.lxxdel').hide();
-          console.log(".lxxdel hide");
-        }
 ////////////////////////////////////////
 //// BEGIN column reorder ////////
 ////////////////////////////////////////
@@ -9990,10 +9937,9 @@ $("#tE_ajax_chapters tr").each(function() {
 		var tr_output = $(this);
 
 		var heb_verse_numbers = tr_output.find('td.heb_verse_numbers');
+
 		var he_txt = tr_output.find('td.he_txt');
-		var del_txt = tr_output.find('td.del_txt');
 		var he_tra_txt = tr_output.find('td.he_tra_txt');
-		var del_tra_txt = tr_output.find('td.del_tra_txt');
 
 		var de_txt = tr_output.find('td.de_txt');
 		var en_txt = tr_output.find('td.en_txt');
@@ -10006,21 +9952,14 @@ $("#tE_ajax_chapters tr").each(function() {
 		var main = tr_output.find('td.main');
 		var para = tr_output.find('td.para');
 
-		var lxx_tra_txt = tr_output.find('td.lxx_tra_txt');
 		var gr_tra_txt = tr_output.find('td.gr_tra_txt');
-		var lxx_txt = tr_output.find('td.lxx_txt');
 		var gr_txt = tr_output.find('td.gr_txt');
 
 he_txt.insertBefore(heb_verse_numbers);
-del_txt.insertBefore(heb_verse_numbers);
 he_tra_txt.insertBefore(he_txt);
-del_tra_txt.insertBefore(del_txt);
 para.insertBefore(he_tra_txt);
-para.insertBefore(del_tra_txt);
 main.insertBefore(para);
-lxx_tra_txt.insertBefore(main);
 gr_tra_txt.insertBefore(main);
-lxx_txt.insertBefore(lxx_tra_txt);
 gr_txt.insertBefore(gr_tra_txt);
 
 }); // END  each function for output
@@ -10030,10 +9969,9 @@ $("#filters_requests_all tr").each(function() {
 		var tr_search_req = $(this);
 
 		var verse_num_r = tr_search_req.find('td.verse_num_r');
+
 		var filter_heb = tr_search_req.find('td.filter_heb');
-		var filter_del = tr_search_req.find('td.filter_del');
 		var filter_heb_tra = tr_search_req.find('td.filter_heb_tra');
-		var filter_del_tra = tr_search_req.find('td.filter_del_tra');
 
 		var de_txt = tr_search_req.find('td.de_txt');
 		var en_txt = tr_search_req.find('td.en_txt');
@@ -10046,21 +9984,14 @@ $("#filters_requests_all tr").each(function() {
 		var main = tr_search_req.find('td.main');
 		var para = tr_search_req.find('td.para');
 
-		var filter_lxx_tra = tr_search_req.find('td.filter_lxx_tra');
 		var filter_grk_tra = tr_search_req.find('td.filter_grk_tra');
-		var filter_lxx = tr_search_req.find('td.filter_lxx');
 		var filter_grk = tr_search_req.find('td.filter_grk');
 
 filter_heb.insertBefore(verse_num_r);
-filter_del.insertBefore(verse_num_r);
 filter_heb_tra.insertBefore(filter_heb);
-filter_del_tra.insertBefore(filter_del);
 para.insertBefore(filter_heb_tra);
-para.insertBefore(filter_del_tra);
 main.insertBefore(para);
-filter_lxx_tra.insertBefore(main);
 filter_grk_tra.insertBefore(main);
-filter_lxx.insertBefore(filter_lxx_tra);
 filter_grk.insertBefore(filter_grk_tra);
 
 }); // END  each function for search requests
@@ -10129,17 +10060,13 @@ filter_grk.insertBefore(filter_grk_tra);
 
 })(this);
 // now try it
-ready(('#tE_ajax_chapters tbody tr:first-child td.he_txt, #tE_ajax_chapters tbody tr:first-child td.he_tra_txt, #tE_ajax_chapters tbody tr:first-child td.gr_txt, #tE_ajax_chapters tbody tr:first-child td.gr_tra_txt, #tE_ajax_chapters tbody tr:first-child td.lxx_txt, #tE_ajax_chapters tbody tr:first-child td.lxx_tra_txt, #tE_ajax_chapters tbody tr:first-child td.del_txt, #tE_ajax_chapters tbody tr:first-child td.del_tra_txt, #tE_ajax_chapters tbody tr:first-child td.de_txt, #tE_ajax_chapters tbody tr:first-child td.en_txt, #tE_ajax_chapters tbody tr:first-child td.es_txt, #tE_ajax_chapters tbody tr:first-child td.fr_txt, #tE_ajax_chapters tbody tr:first-child td.it_txt, #tE_ajax_chapters tbody tr:first-child td.pl_txt, #tE_ajax_chapters tbody tr:first-child td.pt_txt'), function(element) {
+ready(('#tE_ajax_chapters tbody tr:first-child td.he_txt, #tE_ajax_chapters tbody tr:first-child td.he_tra_txt, #tE_ajax_chapters tbody tr:first-child td.gr_txt, #tE_ajax_chapters tbody tr:first-child td.gr_tra_txt,  #tE_ajax_chapters tbody tr:first-child td.de_txt, #tE_ajax_chapters tbody tr:first-child td.en_txt, #tE_ajax_chapters tbody tr:first-child td.es_txt, #tE_ajax_chapters tbody tr:first-child td.fr_txt, #tE_ajax_chapters tbody tr:first-child td.it_txt, #tE_ajax_chapters tbody tr:first-child td.pl_txt, #tE_ajax_chapters tbody tr:first-child td.pt_txt'), function(element) {
   // output variables
     		var tr_output = $("#tE_ajax_chapters tbody tr");
         var text_he_txt = tr_output.find('td.he_txt').addClass("orig");
         var text_he_tra_txt = tr_output.find('td.he_tra_txt').addClass("tran");
         var text_gr_txt = tr_output.find('td.gr_txt').addClass("orig");
         var text_gr_tra_txt = tr_output.find('td.gr_tra_txt').addClass("tran");
-        var text_lxx_txt = tr_output.find('td.lxx_txt').addClass("lexxdel");
-        var text_lxx_tra_txt = tr_output.find('td.lxx_tra_txt').addClass("tran");
-        var text_del_txt = tr_output.find('td.del_txt').addClass("lexxdel");
-        var text_del_tra_txt = tr_output.find('td.del_tra_txt').addClass("tran");
         var text_de = tr_output.find('td.de_txt');
         var text_en = tr_output.find('td.en_txt');
         var text_es = tr_output.find('td.es_txt');
@@ -10153,10 +10080,6 @@ ready(('#tE_ajax_chapters tbody tr:first-child td.he_txt, #tE_ajax_chapters tbod
         var search_req_he_tra_txt = tr_search_req.find('td.filter_heb_tra').addClass("tran");
         var search_req_gr_txt = tr_search_req.find('td.filter_grk').addClass("orig");
         var search_req_gr_tra_txt = tr_search_req.find('td.filter_grk_tra').addClass("tran");
-        var search_req_lxx_txt = tr_search_req.find('td.filter_lxx').addClass("lexxdel");
-        var search_req_lxx_tra_txt = tr_search_req.find('td.filter_lxx_tra').addClass("tran");
-        var search_req_del_txt = tr_search_req.find('td.filter_del').addClass("lexxdel");
-        var search_req_del_tra_txt = tr_search_req.find('td.filter_del_tra').addClass("tran");
         var search_req_de = tr_search_req.find('td.filter_de');
         var search_req_en = tr_search_req.find('td.filter_en');
         var search_req_es = tr_search_req.find('td.filter_es');
@@ -10345,18 +10268,6 @@ ready(('#tE_ajax_chapters tbody tr:first-child td.he_txt, #tE_ajax_chapters tbod
           tr_search_req.find('.tran').hide();
           console.log(".tran hide");
         }
-        // establish whether lxxdel column is wanted or not
-        if ($("#app_terminal_lxxdel_on").hasClass("active_switch")) {
-          tr_output.find('.lxxdel').show();
-          console.log(".lxxdel is selected");
-          tr_search_req.find('.lxxdel').show();
-          console.log(".lxxdel is selected");
-        } else {
-          tr_output.find('.lxxdel').hide();
-          console.log(".lxxdel hide");
-          tr_search_req.find('.lxxdel').hide();
-          console.log(".lxxdel hide");
-        }
 ////////////////////////////////////////
 //// BEGIN column reorder ////////
 ////////////////////////////////////////
@@ -10366,10 +10277,9 @@ $("#tE_ajax_chapters tr").each(function() {
 		var tr_output = $(this);
 
 		var heb_verse_numbers = tr_output.find('td.heb_verse_numbers');
+
 		var he_txt = tr_output.find('td.he_txt');
-		var del_txt = tr_output.find('td.del_txt');
 		var he_tra_txt = tr_output.find('td.he_tra_txt');
-		var del_tra_txt = tr_output.find('td.del_tra_txt');
 
 		var de_txt = tr_output.find('td.de_txt');
 		var en_txt = tr_output.find('td.en_txt');
@@ -10382,21 +10292,14 @@ $("#tE_ajax_chapters tr").each(function() {
 		var main = tr_output.find('td.main');
 		var para = tr_output.find('td.para');
 
-		var lxx_tra_txt = tr_output.find('td.lxx_tra_txt');
 		var gr_tra_txt = tr_output.find('td.gr_tra_txt');
-		var lxx_txt = tr_output.find('td.lxx_txt');
 		var gr_txt = tr_output.find('td.gr_txt');
 
 he_txt.insertBefore(heb_verse_numbers);
-del_txt.insertBefore(heb_verse_numbers);
 he_tra_txt.insertBefore(he_txt);
-del_tra_txt.insertBefore(del_txt);
 para.insertBefore(he_tra_txt);
-para.insertBefore(del_tra_txt);
 main.insertBefore(para);
-lxx_tra_txt.insertBefore(main);
 gr_tra_txt.insertBefore(main);
-lxx_txt.insertBefore(lxx_tra_txt);
 gr_txt.insertBefore(gr_tra_txt);
 
 }); // END  each function for output
@@ -10406,10 +10309,9 @@ $("#filters_requests_all tr").each(function() {
 		var tr_search_req = $(this);
 
 		var verse_num_r = tr_search_req.find('td.verse_num_r');
+
 		var filter_heb = tr_search_req.find('td.filter_heb');
-		var filter_del = tr_search_req.find('td.filter_del');
 		var filter_heb_tra = tr_search_req.find('td.filter_heb_tra');
-		var filter_del_tra = tr_search_req.find('td.filter_del_tra');
 
 		var de_txt = tr_search_req.find('td.de_txt');
 		var en_txt = tr_search_req.find('td.en_txt');
@@ -10422,21 +10324,14 @@ $("#filters_requests_all tr").each(function() {
 		var main = tr_search_req.find('td.main');
 		var para = tr_search_req.find('td.para');
 
-		var filter_lxx_tra = tr_search_req.find('td.filter_lxx_tra');
 		var filter_grk_tra = tr_search_req.find('td.filter_grk_tra');
-		var filter_lxx = tr_search_req.find('td.filter_lxx');
 		var filter_grk = tr_search_req.find('td.filter_grk');
 
 filter_heb.insertBefore(verse_num_r);
-filter_del.insertBefore(verse_num_r);
 filter_heb_tra.insertBefore(filter_heb);
-filter_del_tra.insertBefore(filter_del);
 para.insertBefore(filter_heb_tra);
-para.insertBefore(filter_del_tra);
 main.insertBefore(para);
-filter_lxx_tra.insertBefore(main);
 filter_grk_tra.insertBefore(main);
-filter_lxx.insertBefore(filter_lxx_tra);
 filter_grk.insertBefore(filter_grk_tra);
 
 }); // END  each function for search requests
