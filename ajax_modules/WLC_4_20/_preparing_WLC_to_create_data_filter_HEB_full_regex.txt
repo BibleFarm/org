@@ -1,0 +1,12 @@
+STEP 1 - make book	chapter	verse at the beginning of each line:
+find		(<verse osisID=")(.*?)(\.)(.*?)(\.)(.*?)(">)
+replace		\G e n e s i s\t\4\t\6\t\1\2\3\4\5\6\7
+
+STEP 2 - remove double \r\n:
+find		\r\n\r\n
+replace		\r\n
+
+STEP 3 - change " to ':
+find		"
+replace		'
+

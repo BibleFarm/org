@@ -1332,7 +1332,6 @@ position: fixed;
     }
      .window_body_top_menu_items {
          height: 100%;
-         overflow: auto;
     }
      .top_menu_items_each {
          display: block;
@@ -2717,7 +2716,6 @@ background: purple;
     }
     /* BEGIN accordion_inner_background */
      .accordion_inner_background {
-         background: black;
          padding-left: 4px;
          padding-right: 4px;
     }
@@ -6779,7 +6777,7 @@ right: 0;
 margin: 0 auto;
 text-align: center;
 max-width: 310px;
-height: calc(100% - 44px - 44px - 4px - 44px);
+height: 100%;
 background: black;
 overflow: auto;
 }
@@ -6994,6 +6992,7 @@ display: inline-block;
 }
 .help_body_temp, .console_body_temp {
   padding: 44px;
+  font-size: 18px;
 }
 /* wrap ajaxed sharing page */
  .wrap_ajaxed_sharing_page {
