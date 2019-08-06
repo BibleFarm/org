@@ -5109,8 +5109,8 @@ border-bottom: 2px solid;
 
 /* language_preferences fix column widths */
 .app_lang_lang {display: block; width: 80px;}
-.app_lang_main {display: block; width: 80px;}
-.app_lang_para {display: block; width: 80px;}
+.app_lang_main {display: block; width: 80px; text-align: center;}
+.app_lang_para {display: block; width: 80px; text-align: right;}
 
 /* terminal fix width for even columns */
 .fullscreen_on {width: 42px; padding-right: 16px;}
