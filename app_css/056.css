@@ -1045,17 +1045,21 @@ position: fixed;
       text-shadow: 2px 2px 1px #000000;
       z-index: 6;
     }
-    .app_intro_splash_text h1.1st_intro {
+    .app_intro_splash_text h1.1st_intro, .app_intro_splash_text h1.2nd_intro {
       display: none;
       border-bottom: 0px;
+      text-align: center;
+    margin: 0 auto;
     }
-    .app_intro_splash_text h1.2nd_intro {
-      display: none;
-      border-bottom: 0px;
-    }
-    .app_intro_splash_text msg1,
     .app_intro_splash_text msg1 {
       display: none;
+      text-align: center;
+margin: 0 auto;
+    }
+    .app_intro_splash_text msg2 {
+      display: none;
+      text-align: center;
+margin: 0 auto;
     }
     .app_intro_splash_bg {
       position: fixed;
@@ -1108,16 +1112,13 @@ position: fixed;
       width: 100%;
       height: 100%;
       font-size: 40px;
-      cursor: pointer;
-      z-index: 1000000000;
+      z-index: 5;
+      padding: 12%;
     }
     div.intro_select_language > table {
-      width: 100%;
       height: 100%;
     }
     div.intro_select_language > table tr {
-      width: 100%;
-      height: 14%;
     }
     div.intro_select_language > table tr td {
       width: 100%;
@@ -1129,16 +1130,15 @@ position: fixed;
       text-align: center;
       text-shadow: 2px 2px 1px #000000;
       cursor: pointer;
-      z-index: 1000000000;
+      z-index: 0;
     }
     .tex_he {
       position: fixed;
           display: table-cell;
-          width: 100%;
           color: #d5ad6d;
           text-align: center;
           text-shadow: 2px 2px 1px #000000;
-          z-index: 1000000000;
+          z-index: 0;
           font-family: "DavidLibre-Regular", sans-serif;
           direction: rtl;
           vertical-align: middle;

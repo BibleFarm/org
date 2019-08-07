@@ -73,7 +73,7 @@ setTimeout(function() {
   // run p.msg1
   $(".app_intro_splash_text p.msg1")
     .show()
-    .fitText(3.0, { minFontSize: 25, maxFontSize: 48 })
+    .fitText(3.0, { minFontSize: 26, maxFontSize: 40 })
     .textillate({
       initialDelay: 1000,
       in: { delay: 3, shuffle: true },
@@ -87,7 +87,7 @@ setTimeout(function() {
   // run p.msg2
   $(".app_intro_splash_text p.msg2")
     .show()
-    .fitText(3.0, { minFontSize: 25, maxFontSize: 48 })
+    .fitText(3.0, { minFontSize: 20, maxFontSize: 20 })
     .textillate({
       initialDelay: 3500,
       in: { delay: 8, shuffle: true }
@@ -144,7 +144,7 @@ $("body").find(".show_pure_chat").trigger({type: 'click', which: 1});
     console.log("2 secs // running tex_he");
     // tex
     $(".tex")
-      .fitText(3.0, { minFontSize: 25, maxFontSize: 48 })
+      .fitText(3.0, { minFontSize: 26, maxFontSize: 40 })
       .textillate({ initialDelay: 3000, in: { delay: 120, type: 'char', sequence: true } });
     console.log("8 secs // running tex");
     /* END choose languaege in app intro for new users */
@@ -164,7 +164,7 @@ $("body").find(".show_pure_chat").trigger({type: 'click', which: 1});
     // run p.msg1
     $(".app_intro_splash_text p.msg1")
       .show()
-      .fitText(3.0, { minFontSize: 25, maxFontSize: 48 })
+      .fitText(3.0, { minFontSize: 26, maxFontSize: 40 })
       .textillate({
         initialDelay: 1000,
         in: { delay: 3, shuffle: true },
@@ -178,7 +178,7 @@ $("body").find(".show_pure_chat").trigger({type: 'click', which: 1});
     // run p.msg2
     $(".app_intro_splash_text p.msg2")
       .show()
-      .fitText(3.0, { minFontSize: 25, maxFontSize: 48 })
+      .fitText(3.0, { minFontSize: 20, maxFontSize: 20 })
       .textillate({
         initialDelay: 3500,
         in: { delay: 8, shuffle: true }
