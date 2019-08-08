@@ -144,7 +144,6 @@ $("body").find(".show_pure_chat").trigger({type: 'click', which: 1});
     console.log("2 secs // running tex_he");
     // tex
     $(".tex")
-      .fitText(3.0, { minFontSize: 26, maxFontSize: 40 })
       .textillate({ initialDelay: 3000, in: { delay: 120, type: 'char', sequence: true } });
     console.log("8 secs // running tex");
     /* END choose languaege in app intro for new users */
