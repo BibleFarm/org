@@ -1147,6 +1147,7 @@ margin: 0 auto;
           margin: 0 auto;
           top: 50%;
           left: 50%;
+          line-height: 140px;
           -webkit-transform: translate(-50%, -50%);
           -moz-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
@@ -5948,10 +5949,16 @@ background: black;
 
 
 /*********** BEGIN sharing modals for filter & browsing modes & still working on this *********/
-.wrap_sharing_modal_filter_mode, .wrap_sharing_modal_browsing_mode, .wrap_modal_still_working_on_this {
+.wrap_sharing_modal_filter_mode,
+.wrap_sharing_modal_browsing_mode,
+.wrap_modal_still_working_on_this,
+.wrap_fullscreen_offer {
   display: none;
 }
-.sharing_modal_container_filter_mode, .sharing_modal_container_browsing_mode, .container_modal_still_working_on_this {
+.sharing_modal_container_filter_mode,
+.sharing_modal_container_browsing_mode,
+.container_modal_still_working_on_this,
+.fullscreen_offer_container {
   position: fixed;
   top: 0;
   width:100%;
@@ -5962,7 +5969,10 @@ background: black;
   z-index: 111;
   background: rgba(0, 0, 0, 0.9);
 }
-.sharing_modal_filter_mode, .sharing_modal_browsing_mode, .modal_outer_still_working_on_this {
+.sharing_modal_filter_mode,
+.sharing_modal_browsing_mode,
+.modal_outer_still_working_on_this,
+.fullscreen_offer {
   padding: 20px;
   background-color: black;
   border: 10px solid black;
@@ -5970,22 +5980,26 @@ border-radius: 10px;
 }
 .modal_multi_item_filter_mode,
 .modal_multi_item_browsing_mode,
-.modal_multi_item_still_working_on_this {
+.modal_multi_item_still_working_on_this,
+.modal_multi_item_fullscreen_offer {
   height: 64px;
   text-align: justify;
   border: 0px solid black;
   font-size: 0.1px;
   width: 100%;
 }
-.modal_multi_item_filter_mode > .modal_multi_item_left_filter_mode, .modal_multi_item_browsing_mode > .modal_multi_item_left_browsing_mode,
-.modal_multi_item_still_working_on_this > .modal_multi_item_left_still_working_on_this {
-  height: 64px;
+.modal_multi_item_filter_mode > .modal_multi_item_left_filter_mode,
+.modal_multi_item_browsing_mode > .modal_multi_item_left_browsing_mode,
+.modal_multi_item_still_working_on_this > .modal_multi_item_left_still_working_on_this,
+.modal_multi_item_fullscreen_offer > .modal_multi_item_left {
   display: inline-block;
-  font-size: 20px;
-  text-align: left;
-  line-height: 64px;
-  cursor: pointer;
-}
+      font-size: 20px;
+      text-align: left;
+      cursor: pointer;
+      width: 50px;
+      padding: 10px;
+      margin: 10px;
+    }
 .modal_multi_item_still_working_on_this > .modal_multi_item_center_still_working_on_this {
   height: 64px;
   display: inline-block;
@@ -5995,24 +6009,29 @@ border-radius: 10px;
   cursor: pointer;
 }
 
-.modal_multi_item_filter_mode > .modal_multi_item_right_filter_mode, .modal_multi_item_browsing_mode > .modal_multi_item_right_browsing_mode,
-.modal_multi_item_still_working_on_this > .modal_multi_item_right_still_working_on_this {
-  height: 64px;
+.modal_multi_item_filter_mode > .modal_multi_item_right_filter_mode,
+.modal_multi_item_browsing_mode > .modal_multi_item_right_browsing_mode,
+.modal_multi_item_still_working_on_this > .modal_multi_item_right_still_working_on_this,
+.modal_multi_item_fullscreen_offer > .modal_multi_item_right {
   display: inline-block;
-  font-size: 20px;
-  text-align: right;
-  line-height: 64px;
-  cursor: pointer;
-}
+      font-size: 20px;
+      text-align: right;
+      cursor: pointer;
+      width: 50px;
+      padding: 10px;
+      margin: 10px;
+    }
 .modal_multi_item_filter_mode:after,
 .modal_multi_item_browsing_mode:after,
-.modal_multi_item_still_working_on_this:after {
+.modal_multi_item_still_working_on_this:after,
+.modal_multi_item_fullscreen_offer:after {
   content: "";
   width: 100%;
   /* Ensures there are at least 2 lines of text, so justification works */
   display: inline-block;
 }
-button.sharing_modal_yes_browsing_mode, button.sharing_modal_no_browsing_mode {
+button.sharing_modal_yes_browsing_mode,
+button.sharing_modal_no_browsing_mode {
   background: none !important;
   padding-left: 10px !important;
 padding-right: 10px !important;
@@ -6021,7 +6040,8 @@ padding-bottom: 0px !important;
 color: #ae9c80 !important;
 text-shadow: 2px 2px 1px #000000 !important;
 }
-button.sharing_modal_yes_browsing_mode:hover, button.sharing_modal_no_browsing_mode:hover {
+button.sharing_modal_yes_browsing_mode:hover,
+button.sharing_modal_no_browsing_mode:hover {
   background: none !important;
   padding-left: 10px !important;
 padding-right: 10px !important;
