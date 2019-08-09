@@ -683,7 +683,7 @@ $(document).ready(function() {
   /////////////////////////////////////////////
   // BEGIN enter filtering mode
   /////////////////////////////////////////////
-  $('.filter_grk, .filter_grk_tra, .filter_es, .filter_en, .filter_heb_tra, .filter_heb').on('focus', function(e) {
+  $('.filter_grk, .filter_grk_tra, .filter_de, .filter_en, .filter_es, .filter_fr, .filter_it, .filter_pl, .filter_pt, .filter_heb_tra, .filter_heb').on('focus', function(e) {
     $(".wrap_ajaxed").hide("slow", "linear");
     $("#wrap_ajaxed_cloned_status").hide("slow", "linear");
     $(".mode_filter").show("slow", "linear");
