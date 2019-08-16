@@ -1,0 +1,17 @@
+STEP 1:
+Manually rename the folders
+STEP 2:
+Bulk Rename the files
+
+
+
+
+
+STEP              :
+
+Create a verse tag with ref tag out of each verse:
+
+Find: (<B class="number">)(.*?)(</B>)(.*?)(\r\n)
+Replace: <verse><ref>\2</ref>\1\2\3\4</verse>\5
+
+
