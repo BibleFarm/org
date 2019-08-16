@@ -537,7 +537,7 @@ $(document).ready(function() {
     "info": true,
     "pagingType": "simple",
     "pageLength": 10,
-    "ajax": "../search/data_filter_WLC_test.txt",
+    "ajax": "../search/data_filter_KJV_full.txt",
     "autoWidth": false,
     "scrollX": false,
     "scrollY": true,
