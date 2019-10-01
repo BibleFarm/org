@@ -1509,7 +1509,7 @@ background: none;
   display: none;
 }
 #retrieved_image {
-  min-width: 312vw;
+  max-height: 50%;
 }
 #tbody_case_1_a > .parent {
   text-align: center;

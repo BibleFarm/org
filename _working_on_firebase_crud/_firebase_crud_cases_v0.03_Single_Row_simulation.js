@@ -4987,9 +4987,8 @@ uploadTask.on(firebase.storage.TaskEvent.STATE_CHANGED, // or 'state_changed'
 /////////////////////////////////////////////////////////////////////////////
 
 
-// hide the responsive left little folder
-$("td[tabindex='0']").hide();
-
+// hide show search feature
+$("body").find(".toolbar_case_1_a, #table_case_1_a_filter, #table_case_1_a_info").show("slow");
 
 
 }); // end of the top document ready
