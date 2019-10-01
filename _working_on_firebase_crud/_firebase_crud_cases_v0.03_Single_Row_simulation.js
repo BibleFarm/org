@@ -225,12 +225,12 @@ $(this).find("td:nth-last-child(1)").hide();
    for(var key in data_case_1_a){
   tr_case_1_a += '<tr>' +
 '<td><div class="background_test hidden_folders"><span class="wrap_svg"><i data-fa-symbol="folder_opened" class="fas fa-folder-open fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#folder_opened"></use></svg></span></div></td>' +
-'<td class="column_0_case_1_a"><div class="dt_inner_cell"><img id="retrieved_image" src="' + data_case_1_a[key].column_0_case_1_a + '" alt=""></div></td>' +
-'<td class="column_1_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_1_case_1_a + '</div></td>' +
-'<td class="column_2_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_2_case_1_a + '</div></td>' +
-'<td class="column_3_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_3_case_1_a + '</div></td>' +
-'<td class="column_4_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_4_case_1_a + '</div></td>' +
-'<td class="column_5_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_5_case_1_a + '</div></td>' +
+'<td class="column_0_case_1_a"><div class="dt_inner_cell col_image"><img id="retrieved_image" src="' + data_case_1_a[key].column_0_case_1_a + '" alt=""></div></td>' +
+'<td class="column_1_case_1_a"><div class="dt_inner_cell col_date">' + data_case_1_a[key].column_1_case_1_a + '</div></td>' +
+'<td class="column_2_case_1_a"><div class="dt_inner_cell col_title">' + data_case_1_a[key].column_2_case_1_a + '</div></td>' +
+'<td class="column_3_case_1_a"><div class="dt_inner_cell col_desc">' + data_case_1_a[key].column_3_case_1_a + '</div></td>' +
+'<td class="column_4_case_1_a"><div class="dt_inner_cell col_extra1">' + data_case_1_a[key].column_4_case_1_a + '</div></td>' +
+'<td class="column_5_case_1_a"><div class="dt_inner_cell col_extra2">' + data_case_1_a[key].column_5_case_1_a + '</div></td>' +
 '<td class="column_edit">' +
 '<span class="edit" data-item="' + key + '">' +'<div class="background_test"><span class="wrap_svg"><i data-fa-symbol="edit_pencil" class="fas fa-pencil-alt fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#edit_pencil"></use></svg></span></div></span>' +
 '</td>' +
@@ -323,12 +323,12 @@ console.log("table_case_1_a.destroy was done");
    for(var key in data_case_1_a){
   tr_case_1_a += '<tr>' +
 '<td><div class="background_test hidden_folders"><span class="wrap_svg"><i data-fa-symbol="folder_opened" class="fas fa-folder-open fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#folder_opened"></use></svg></span></div></td>' +
-'<td class="column_0_case_1_a"><div class="dt_inner_cell"><img id="retrieved_image" src="' + data_case_1_a[key].column_0_case_1_a + '" alt=""></div></td>' +
-'<td class="column_1_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_1_case_1_a + '</div></td>' +
-'<td class="column_2_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_2_case_1_a + '</div></td>' +
-'<td class="column_3_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_3_case_1_a + '</div></td>' +
-'<td class="column_4_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_4_case_1_a + '</div></td>' +
-'<td class="column_5_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_5_case_1_a + '</div></td>' +
+'<td class="column_0_case_1_a"><div class="dt_inner_cell col_image"><img id="retrieved_image" src="' + data_case_1_a[key].column_0_case_1_a + '" alt=""></div></td>' +
+'<td class="column_1_case_1_a"><div class="dt_inner_cell col_date">' + data_case_1_a[key].column_1_case_1_a + '</div></td>' +
+'<td class="column_2_case_1_a"><div class="dt_inner_cell col_title">' + data_case_1_a[key].column_2_case_1_a + '</div></td>' +
+'<td class="column_3_case_1_a"><div class="dt_inner_cell col_desc">' + data_case_1_a[key].column_3_case_1_a + '</div></td>' +
+'<td class="column_4_case_1_a"><div class="dt_inner_cell col_extra1">' + data_case_1_a[key].column_4_case_1_a + '</div></td>' +
+'<td class="column_5_case_1_a"><div class="dt_inner_cell col_extra2">' + data_case_1_a[key].column_5_case_1_a + '</div></td>' +
 '<td class="column_edit">' +
 '<span class="edit" data-item="' + key + '">' +'<div class="background_test"><span class="wrap_svg"><i data-fa-symbol="edit_pencil" class="fas fa-pencil-alt fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#edit_pencil"></use></svg></span></div></span>' +
 '</td>' +
@@ -3196,12 +3196,12 @@ console.log("table_case_1_a.destroy was done");
    for(var key in data_case_1_a){
   tr_case_1_a += '<tr>' +
 '<td><div class="background_test hidden_folders"><span class="wrap_svg"><i data-fa-symbol="folder_opened" class="fas fa-folder-open fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#folder_opened"></use></svg></span></div></td>' +
-'<td class="column_0_case_1_a"><div class="dt_inner_cell"><img id="retrieved_image" src="' + data_case_1_a[key].column_0_case_1_a + '" alt=""></div></td>' +
-'<td class="column_1_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_1_case_1_a + '</div></td>' +
-'<td class="column_2_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_2_case_1_a + '</div></td>' +
-'<td class="column_3_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_3_case_1_a + '</div></td>' +
-'<td class="column_4_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_4_case_1_a + '</div></td>' +
-'<td class="column_5_case_1_a"><div class="dt_inner_cell">' + data_case_1_a[key].column_5_case_1_a + '</div></td>' +
+'<td class="column_0_case_1_a"><div class="dt_inner_cell col_image"><img id="retrieved_image" src="' + data_case_1_a[key].column_0_case_1_a + '" alt=""></div></td>' +
+'<td class="column_1_case_1_a"><div class="dt_inner_cell col_date">' + data_case_1_a[key].column_1_case_1_a + '</div></td>' +
+'<td class="column_2_case_1_a"><div class="dt_inner_cell col_title">' + data_case_1_a[key].column_2_case_1_a + '</div></td>' +
+'<td class="column_3_case_1_a"><div class="dt_inner_cell col_desc">' + data_case_1_a[key].column_3_case_1_a + '</div></td>' +
+'<td class="column_4_case_1_a"><div class="dt_inner_cell col_extra1">' + data_case_1_a[key].column_4_case_1_a + '</div></td>' +
+'<td class="column_5_case_1_a"><div class="dt_inner_cell col_extra2">' + data_case_1_a[key].column_5_case_1_a + '</div></td>' +
 '<td class="column_edit">' +
 '<span class="edit" data-item="' + key + '">' +'<div class="background_test"><span class="wrap_svg"><i data-fa-symbol="edit_pencil" class="fas fa-pencil-alt fa-fw"></i><svg class="icon pa2 br2 pointer"><use xlink:href="#edit_pencil"></use></svg></span></div></span>' +
 '</td>' +
@@ -4907,7 +4907,7 @@ $("#authentication").trigger({ type: "click", which: 1 });
       $("body").find(".resp_ch_row_tr").find('td:nth-child(1)').hide();
 } else {
   // editing won't work, so we change text color for public user & change cursor & hide form
-  $("#table_case_1_a_wrapper").find(".dt_inner_cell").css("color", "white").css("cursor", "default");
+  $("#table_case_1_a_wrapper").find(".dt_inner_cell").css("cursor", "default");
   $("#wrap_form_case_1_a").css("visibility", "hidden");
   $("#lock_is_closed").show();
   $("#lock_is_open").hide();
@@ -4988,7 +4988,10 @@ uploadTask.on(firebase.storage.TaskEvent.STATE_CHANGED, // or 'state_changed'
 
 
 // hide show search feature
-$("body").find(".toolbar_case_1_a, #table_case_1_a_filter, #table_case_1_a_info").show("slow");
+$("#lock_and_unlock").on("click",function(e){
+  $("body").find(".toolbar_case_1_a, #table_case_1_a_filter, #table_case_1_a_info").show("slow");
+});
+
 
 
 }); // end of the top document ready

@@ -1520,7 +1520,42 @@ background: none;
 .hidden_folders {
   display: none;
 }
-
+.col_image {
+  color: ;
+}
+.col_date {
+  color: blue;
+  width: calc(100vw - 18px);
+  font-size: 16px;
+  text-align: right;
+}
+.col_title {
+  color: green;
+  width: calc(100vw - 18px);
+  font-size: 26px;
+  text-align: center;
+}
+.col_desc {
+  color: purple;
+  width: calc(100vw - 18px);
+  font-size: 18px;
+  text-align: left;
+}
+.col_extra1 {
+  color: yellow;
+  width: calc(100vw - 18px);
+  font-size: 18px;
+  text-align: right;
+}
+.col_extra2 {
+  color: orange;
+  width: calc(100vw - 18px);
+  font-size: 18px;
+  text-align: right;
+}
+.toolbar_case_1_a, #table_case_1_a_filter, #table_case_1_a_info {
+  display: ;
+}
 /* END SPECIFIC jovi website */
 
 /* this is the end of the @media for the whole site */
