@@ -166,7 +166,9 @@ if (user) {
   console.log("//////////////////////////////// #continue_as_a_visitor_or_ok // changed to OK");
   $("#authentication").text("logout");
 ////////////////////////////////////////////////////////
-if((!$('#email').text().match('smuglovsky@gmail.com')) || (!$('#email').text().match('smuglovsky.code@gmail.com'))) {
+if((!$('#email').text().match('smuglovsky@gmail.com'))
+|| (!$('#email').text().match('smuglovsky.code@gmail.com'))
+|| (!$('#email').text().match('joseoweb@gmail.com'))) {
   $(".logged_in_message_users_case_1_a").show("slow");
   $(".logged_in_message_admin_case_1_a").hide();
 // hide create new record // and edit & delete columns
@@ -359,7 +361,9 @@ console.log("// waitFor_table_to_be_repopulated_after_delete // table has stuff 
 
 ////////////////////////////////////////////////////////
 
-if((!$('#email').text().match('smuglovsky@gmail.com')) || (!$('#email').text().match('smuglovsky.code@gmail.com'))) {
+if((!$('#email').text().match('smuglovsky@gmail.com'))
+|| (!$('#email').text().match('smuglovsky.code@gmail.com'))
+|| (!$('#email').text().match('joseoweb@gmail.com'))) {
 // hide create new record // and edit & delete columns
 $("body").find(".create_case_1_a").hide();
 $("body").find(".table_case_1_a thead th:nth-last-child(2)").hide();
@@ -1340,7 +1344,9 @@ clearInterval(waitFor_table_to_be_populated_on_page_load_from_firebase);
 
 ////////////////////////////////////////////////////////
 
-if((!$('#email').text().match('smuglovsky@gmail.com')) || (!$('#email').text().match('smuglovsky.code@gmail.com'))) {
+if((!$('#email').text().match('smuglovsky@gmail.com'))
+|| (!$('#email').text().match('smuglovsky.code@gmail.com'))
+|| (!$('#email').text().match('joseoweb@gmail.com'))) {
 // hide create new record // and edit & delete columns
 $("body").find(".create_case_1_a").hide();
 $("body").find(".table_case_1_a thead th:nth-last-child(2)").hide();
@@ -2270,7 +2276,9 @@ clearInterval(waitFor_table_to_be_populated_after_create_or_edit_from_firebase);
 
 ////////////////////////////////////////////////////////
 
-if((!$('#email').text().match('smuglovsky@gmail.com')) || (!$('#email').text().match('smuglovsky.code@gmail.com'))) {
+if((!$('#email').text().match('smuglovsky@gmail.com'))
+|| (!$('#email').text().match('smuglovsky.code@gmail.com'))
+|| (!$('#email').text().match('joseoweb@gmail.com'))) {
 // hide create new record // and edit & delete columns
 $("body").find(".create_case_1_a").hide();
 $("body").find(".table_case_1_a thead th:nth-last-child(2)").hide();
@@ -3234,7 +3242,9 @@ console.log("// waitFor_table_to_be_repopulated_after_signout_or_delete_account 
 
 ////////////////////////////////////////////////////////
 
-if((!$('#email').text().match('smuglovsky@gmail.com')) || (!$('#email').text().match('smuglovsky.code@gmail.com'))) {
+if((!$('#email').text().match('smuglovsky@gmail.com'))
+|| (!$('#email').text().match('smuglovsky.code@gmail.com'))
+|| (!$('#email').text().match('joseoweb@gmail.com'))) {
 // hide create new record // and edit & delete columns
 $("body").find(".create_case_1_a").hide();
 $("body").find(".table_case_1_a thead th:nth-last-child(2)").hide();
@@ -4173,7 +4183,9 @@ console.log("// table is empty // suggest creating a new record");
 // clear the setInterval
 clearInterval(checkIf_we_have_an_empty_table);
 ////////////////////////////////////////////////////////
-if((!$('#email').text().match('smuglovsky@gmail.com')) || (!$('#email').text().match('smuglovsky.code@gmail.com'))) {
+if((!$('#email').text().match('smuglovsky@gmail.com'))
+|| (!$('#email').text().match('smuglovsky.code@gmail.com'))
+|| (!$('#email').text().match('joseoweb@gmail.com'))) {
 // hide create new record // and edit & delete columns
 $("body").find(".create_case_1_a").hide();
 $("body").find(".table_case_1_a thead th:nth-last-child(2)").hide();
@@ -4846,7 +4858,9 @@ $(document).ready(function() {
   // Finally react when needed
   function MutationObservingUserEmail() {
 
-if((!$('#email').text().match('smuglovsky@gmail.com')) || (!$('#email').text().match('smuglovsky.code@gmail.com'))) {
+if((!$('#email').text().match('smuglovsky@gmail.com'))
+|| (!$('#email').text().match('smuglovsky.code@gmail.com'))
+|| (!$('#email').text().match('joseoweb@gmail.com'))) {
 // hide create new record // and edit & delete columns
 $(".create_case_1").hide();
 $("#convalidaciones thead th").eq(4).hide();
@@ -4897,7 +4911,9 @@ $("#authentication").trigger({ type: "click", which: 1 });
 // check if an admin is logged in
   var check_if_an_admin_is_logged_in = setInterval(function() {
 
-    if (($("#email").text() == 'smuglovsky@gmail.com') || ($("#email").text() == 'smuglovsky.code@gmail.com')) {
+    if (($("#email").text() == 'smuglovsky@gmail.com')
+    || ($("#email").text() == 'smuglovsky.code@gmail.com')
+    || ($("#email").text() == 'joseoweb@gmail.com')) {
       // editing will work, so we change text color for public user & change cursor & show form
       $("#table_case_1_a_wrapper").find(".dt_inner_cell").css("cursor", "pointer");
       $("#wrap_form_case_1_a").css("visibility", "visible");
