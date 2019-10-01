@@ -1509,22 +1509,13 @@ background: none;
   display: none;
 }
 #retrieved_image {
-  max-height: 30vh;
+  min-width: 312vw;
 }
 #tbody_case_1_a > .parent {
   text-align: center;
 }
 #tbody_case_1_a > .child {
-  text-align: center;
-}
-#tbody_case_1_a > .parent {
-  text-align: center;
-}
-#tbody_case_1_a > .parent {
-  text-align: center;
-}
-#tbody_case_1_a > .parent {
-  text-align: center;
+  text-align: left;
 }
 .hidden_folders {
   display: none;
