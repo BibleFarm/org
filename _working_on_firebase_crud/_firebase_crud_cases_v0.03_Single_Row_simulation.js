@@ -141,6 +141,8 @@ if (user) {
   $("#continue_as_a_visitor_or_ok").text("ok");
   console.log("//////////////////////////////// #continue_as_a_visitor_or_ok // changed to OK");
   $("#authentication").text("logout");
+  $("body").find(".create_case_1_a").show();
+
 } else {
   // No user is signed in.
   console.log("//////////////////////////////// UPON ARRIVAL // NOBODY signed in");
