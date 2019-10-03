@@ -1464,9 +1464,21 @@ table.dataTable {
 /*************************************************************/
 
 
-.cover_while_dt_firebase_is_working_welcome, .cover_while_dt_firebase_is_working_updating {
+.cover_while_dt_firebase_is_working_welcome {
   position: fixed;
   display: block;
+  width: 100vw;
+  height: 100vh;
+  z-index: 14;
+  background: black;
+  top: 0px;
+}
+.rc_logo_big {
+  margin: 0 !important;
+}
+.cover_while_dt_firebase_is_working_updating {
+  position: fixed;
+  display: none;
   width: 100vw;
   height: 100vh;
   z-index: 12;
@@ -1633,7 +1645,10 @@ height: 44px;
 }
 .firebaseui-card-content {
     padding: 0 14px;
-
+}
+.rc_logo_top {
+  margin: 0 !important;
+}
 /* END SPECIFIC jovi website */
 
 /* this is the end of the @media for the whole site */

@@ -11,11 +11,18 @@
 $(document).ready(function() {
 
 // on load we welcome visitor
-  $(".cover_while_dt_firebase_is_working_welcome").show();
-  $(".cover_while_dt_firebase_is_working_updating").hide();
+  setTimeout(function(){
+    $(".cover_while_dt_firebase_is_working_welcome").hide();
+}, 4000);
 
   $("#create_or_update_case_1_a").on("click",function(e){
-$(".cover_while_dt_firebase_is_working_updating").show();
+    $(".cover_while_dt_firebase_is_working_updating").show();
+
+    setTimeout(function(){
+      $(".cover_while_dt_firebase_is_working_updating").hide();
+
+}, 5000);
+
 });
 
 //*************************************************************/
@@ -170,7 +177,7 @@ if (user) {
 ////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////
 // someone clicked #lock_and_unlock
-$(".cover_while_dt_firebase_is_working_welcome").hide();
+// $(".cover_while_dt_firebase_is_working_welcome").hide();
 console.log("we're hiding welcone because a user just came in");
 
 } else {
@@ -2149,7 +2156,7 @@ $('.dataTables_scrollBody').perfectScrollbar({
   wheelPropagation: true,
   scrollXMarginOffset: 2
 });
-$(".cover_while_dt_firebase_is_working_welcome").hide();
+// $(".cover_while_dt_firebase_is_working_welcome").hide();
 console.log("Initial welcome hide");
          },
     mark: {
