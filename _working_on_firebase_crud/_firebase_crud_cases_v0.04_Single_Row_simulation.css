@@ -689,19 +689,14 @@ table {
     font-size: 20px;;
     color: #bebebe;
     text-shadow: 2px 2px 1px #000000;
+    background: red !important;
 
     margin: 0 auto;
   }
   body {
     margin: 0;
     padding: 0;
-
-
-
-
-
-	background: hsl(0,0%,8%) !important;background: -moz-radial-gradient(center, ellipse cover,  hsl(0,0%,8%)0%, hsl(0,0%,8%)100%) !important;background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(0,0%,8%)), color-stop(100%,hsl(0,0%,0%))) !important;background: -webkit-radial-gradient(center, ellipse cover,  hsl(100,0%,20%) 0%,hsl(0,0%,0%) 100%) !important;background: -o-radial-gradient(center, ellipse cover,  hsl(0,0%,20%) 0%,hsl(0,0%,0%) 100%) !important;background: -ms-radial-gradient(center, ellipse cover,  hsl(0,0%,8%) 0%,hsl(0,0%,0%) 100%) !important;background: radial-gradient(ellipse at center,  hsl(0,0%,8%) 0%,hsl(0,0%,0%) 100%) !important;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(0,0%,8%)', endColorstr='#0',GradientType=1 ) !important;
-
+background: red;
 
 
   }
@@ -727,9 +722,22 @@ z-index: 2;
     }
      .wrap_top {
          top: 4px;
+         left: 4px;
     }
+    .wrap_top_below_category_search_area {
+      position: fixed;
+      display: block;
+      width: calc(100% - 8px);
+      height: 4px;
+      background: yellow;
+      left: 4px;
+      z-index: 12;
+      top: calc(88px + 8px);
+    }
+
      .wrap_bot {
          bottom: 4px !important;
+         left: 4px;
          z-index: 11;
     }
     .wrap_bot_above {
@@ -738,6 +746,7 @@ z-index: 2;
       width: calc(100% - 8px);
       height: 4px;
       background: yellow;
+      left: 4px;
       z-index: 11;
       bottom: 48px;
     }
@@ -747,6 +756,7 @@ z-index: 2;
       width: calc(100% - 8px);
       height: 4px;
       background: orange;
+      left: 4px;
       z-index: 11;
       bottom: 0;
     }
@@ -1134,18 +1144,20 @@ font-size: 20px;
 /** END toggle cases ********************************************************/
 /** BEGIN case_1_a ********************************************************/
 .wrap_case_1_a, .wrap_case_2, .wrap_case_3, .wrap_case_4, .wrap_case_5 {
-display: block;
-position: fixed;
-margin: 0 auto;
-left: 0;
-right: 0;
-width: calc(100% - 8px); /* this changes temp while I work */
-height: calc(100% - 104px);
-top: 52px;
-z-index: 11;
+  height: calc(100% - 104px);
+      display: block;
+      position: fixed;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      width: calc(100% - 8px);
+      top: 52px;
+      z-index: 11;
 }
+.dataTables_scrollHead {position: absolute !important;}
 .title_case_1_a {
   width: 100%;
+  height: 44px;
   text-align: center;
   line-height: 44px;
   color: #D5AD6D;
@@ -1649,16 +1661,17 @@ height: 44px;
 }
 #output_category_here {
   position: absolute;
-  display: block;
-  top: 0;
-  width: 100%;
-  height: 44px;
-  background: #222222;
-  color: #D5AD6D;
-  line-height: 44px;
-  text-align: center;
-  z-index: 1;
-}
+      display: block;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 44px;
+      background: #222222;
+      color: #D5AD6D;
+      line-height: 44px;
+      text-align: center;
+      z-index: 1;
+    }
 .firebaseui-idp-button {
   max-width: 250px;
 }

@@ -356,7 +356,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
     "pagingType": "simple",
      //"autoWidth": false,
     "scrollX": false,
-    "scrollY": "calc(100vh - 88px - 60px)",
+    "scrollY": "100vh",
     language: {
       url: 'Red_Cinco.json'
     },
@@ -1336,7 +1336,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
     "pagingType": "simple",
      //"autoWidth": false,
     "scrollX": false,
-    "scrollY": "calc(100vh - 88px - 60px)",
+    "scrollY": "100vh",
     language: {
       url: 'Red_Cinco.json'
     },
@@ -2255,7 +2255,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
     "pagingType": "simple",
      //"autoWidth": false,
     "scrollX": false,
-    "scrollY": "calc(100vh - 88px - 60px)",
+    "scrollY": "100vh",
     language: {
       url: 'Red_Cinco.json'
     },
@@ -3212,7 +3212,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
     "pagingType": "simple",
      //"autoWidth": false,
     "scrollX": false,
-    "scrollY": "calc(100vh - 88px - 60px)",
+    "scrollY": "100vh",
     language: {
       url: 'Red_Cinco.json'
     },
