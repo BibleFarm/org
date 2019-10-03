@@ -729,7 +729,26 @@ z-index: 2;
          top: 4px;
     }
      .wrap_bot {
-         bottom: 4px;
+         bottom: 4px !important;
+         z-index: 11;
+    }
+    .wrap_bot_above {
+      position: fixed;
+      display: block;
+      width: calc(100% - 8px);
+      height: 4px;
+      background: yellow;
+      z-index: 11;
+      bottom: 48px;
+    }
+    .wrap_bot_below {
+      position: fixed;
+      display: block;
+      width: calc(100% - 8px);
+      height: 4px;
+      background: orange;
+      z-index: 11;
+      bottom: 0;
     }
     /* END page wrappers */
 
