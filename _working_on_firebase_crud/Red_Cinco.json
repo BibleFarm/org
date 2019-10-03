@@ -1,0 +1,23 @@
+{
+    "sEmptyTable":     "No data available in table",
+    "sInfo":           "_TOTAL_ articulos ",
+    "sInfoEmpty":      "",
+    "sInfoPostFix":    "",
+    "sInfoThousands":  ",",
+    "sLengthMenu":     "Mostrar _MENU_ Articulos",
+    "sLoadingRecords": "<i>welcome!<br>just a moment, please...</i><br><i>We are loading all 31,102 Bible verses for you...<br>You can study without internet after this :)</i><br><br><i>Help & Support are free.<br>Write any comments or questions right here:<br>_ input _ and _ submit _<br>We will answer as soon as possible.</i><br><a href=\"http://torah.menu/comments_questions_answers.html\">Browse all comments, questions & answers</a>",
+    "sInfoFiltered":   "con >",
+    "sProcessing":     "Processing...",
+    "sSearch":         "",
+    "sZeroRecords":    "<i>Nope. There is nothing like that in the Bible!<br>Check your spelling or make sure you're searching<br>in the desired book or chapter.<br>For example: If you're searching for Moses in Genesis,<br>you'll get this message because the name ''Moses'<br> does not appear in Genesis.<br>On your left nav, at the top, you can reset all to search<br>the whole Bible, or just books, or just chapters<br></i><div class=''><span>If you need help, feel free to ask the team at:</span><br><span><a href='https://www.biblefarm.org' target='_blank' class='bf_links'>www.BibleFarm.org</a></span></div>",
+    "oPaginate": {
+        "sFirst":    "First",
+        "sLast":     "Last",
+        "sNext":     "more",
+        "sPrevious": "back"
+    },
+    "oAria": {
+        "sSortAscending":  ": activate to sort column ascending",
+        "sSortDescending": ": activate to sort column descending"
+    }
+}

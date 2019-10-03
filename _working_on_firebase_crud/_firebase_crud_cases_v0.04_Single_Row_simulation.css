@@ -730,7 +730,6 @@ z-index: 2;
     }
      .wrap_bot {
          bottom: 4px;
-         display: none;
     }
     /* END page wrappers */
 
@@ -950,13 +949,27 @@ font-weight: bold;
 text-align: center;
 line-height: 44px;
 top: 0;
+left: 0;
+}
+#search_launch {
+  position: absolute;
+  display: block;
+  width: 44px;
+  height: 44px;
+cursor: pointer;
+color: #D5AD6D;
+font-size: 14px;
+font-weight: bold;
+text-align: center;
+line-height: 44px;
+top: 0;
 right: 0;
 }
 /** END login ***********************************************************/
 
 /** BEGIN add new record ***********************************************************/
 #add_new_record {
-    position: absolute;
+    position: fixed;
     display: block;
     width: 44px;
     height: 44px;
@@ -966,10 +979,13 @@ right: 0;
     font-weight: bold;
     text-align: center;
     line-height: 44px;
-    top: 0;
-    left: 0;
-}
+    bottom: 60px;
+    right: 16px;
+    z-index: 1111111;
+    background: red;
+    padding-top: 0px;
 
+}
 .fas {
   color: red;
   font-size: 20px;
@@ -977,7 +993,9 @@ right: 0;
   text-shadow: 2px 2px 1px #000000;
   cursor: pointer;
 }
-
+#table_case_1_a_info, #table_case_1_a_filter {
+  display: none;
+}
 /** END add new record ***********************************************************/
 
 
@@ -1076,11 +1094,23 @@ font-size: 20px;
 /* END fix firebase login */
 /** END login_or_not ****************************************************/
 /** BEGIN toggle cases ********************************************************/
-.toggle_case_1, .toggle_case_2, .toggle_case_3, .toggle_case_4, .toggle_case_5 {
-cursor: pointer;
-color: red;
-font-size: 20px;
-font-weight: bold;
+.rc_social {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: #111111;
+}
+.rc_whatsapp, .rc_facebook, .rc_twitter, .rc_instagram, .rc_youtube {
+  display: inline-block;
+  text-align: center;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  cursor: pointer;
+  max-height: 44px;
+  line-height: 44px;
+  max-width: 44px;
 }
 /** END toggle cases ********************************************************/
 /** BEGIN case_1_a ********************************************************/
@@ -1228,6 +1258,7 @@ display: none;
     left: 50%;
     margin: 0 auto;
     width: 100%;
+    height: 480px;
 	max-width: calc(320px - 8px);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -1238,7 +1269,7 @@ display: none;
     color: #d5ad6d;
     text-align: center;
     text-shadow: 2px 2px 1px #000000;
-	background: rgba(0, 0, 0, 0.9);
+	background: black;
     z-index: 1;
 }
 .wrap_dialog_confirm_delete {
@@ -1440,7 +1471,7 @@ table.dataTable {
   height: 100vh;
   z-index: 12;
   background: black;
-  top: 50px;
+  top: 0px;
 }
 /* BEGIN app intro */
 .app_lock_n_load_wrap {
@@ -1565,6 +1596,44 @@ background: none;
 .create_case_1_a, .lock_is_open, .lock_is_closed, .column_delete {
   display: none;
 }
+.create_or_edit_submit_or_cancel_div {
+  display: block;
+  height: 44px;
+  padding: 8px;
+}
+#create_or_update_case_1_a, .cancel_new_or_edit_case_1_a {
+  cursor: pointer;
+text-align: center;
+line-height: 44px;
+padding: 6px;
+background: #222222 !important;
+color: #D5AD6D !important;
+padding: 0 !important;
+width: 100px;
+height: 44px;
+}
+
+.fas {
+  padding-top: 12px;
+}
+#output_category_here {
+  position: absolute;
+  display: block;
+  top: 0;
+  width: 100%;
+  height: 44px;
+  background: #222222;
+  color: #D5AD6D;
+  line-height: 44px;
+  text-align: center;
+  z-index: 1;
+}
+.firebaseui-idp-button {
+  max-width: 250px;
+}
+.firebaseui-card-content {
+    padding: 0 14px;
+
 /* END SPECIFIC jovi website */
 
 /* this is the end of the @media for the whole site */

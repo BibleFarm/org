@@ -30,9 +30,9 @@ $("#continue_as_a_visitor_or_ok").on("click",function(e){
 $(".wrap_login_or_not").toggle("slow");
 });
 // END handle clicks at the login panel
-// BEGIN if logged-in replace text from "continue as a visitor" to "hide this"
+// BEGIN if logged-in replace text from "continuar como visitante" to "hide this"
 
-// BEGIN if logged-in replace text from "continue as a visitor" to "hide this"
+// BEGIN if logged-in replace text from "continuar como visitante" to "hide this"
 
 // land on page with
 $(".wrap_case_1").show("slow");
@@ -148,7 +148,7 @@ if (user) {
   console.log("//////////////////////////////// UPON ARRIVAL // NOBODY signed in");
   $('#email').text("");
   console.log("//////////////////////////////// email field is clear now");
-  $("#continue_as_a_visitor_or_ok").text("continue as a visitor");
+  $("#continue_as_a_visitor_or_ok").text("continuar como visitante");
   console.log("//////////////////////////////// #continue_as_a_visitor_or_ok // changed continue as a visitor");
   $("#authentication").text("login");
 $("body").find(".create_case_1_a").hide();
@@ -180,7 +180,7 @@ console.log("we're hiding welcone because a user just came in");
   console.log("/////////////////////////////// email field is clear now");
   $(".logged_in_message_users_case_1_a").hide();
   $(".logged_in_message_admin_case_1_a").hide();
-  $("#continue_as_a_visitor_or_ok").text("continue as a visitor");
+  $("#continue_as_a_visitor_or_ok").text("continuar como visitante");
   console.log("//////////////////////////////// #continue_as_a_visitor_or_ok // changed continue as a visitor");
   $("#authentication").text("login");
 $("body").find(".create_case_1_a").hide();
@@ -351,7 +351,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
     "scrollX": false,
     "scrollY": "calc(100vh - 88px - 60px)",
     language: {
-      url: 'https://www.biblefarm.org/lang/Escuela_Jose.json'
+      url: 'Red_Cinco.json'
     },
         responsive: {
             details: {
@@ -411,7 +411,7 @@ $('#table_case_1_a_filter label').contents().filter(function() {
 // END remove "Search:" in label
 //////////////////////////////////
 // BEGIN add text inside the placeholder
-$("#table_case_1_a_filter label input").attr("placeholder", "filtrar");
+$("#table_case_1_a_filter label input").attr("placeholder", "buscar");
 // END add text inside the placeholder
 //////////////////////////////////
 // BEGIN resize columns according to what fits or not
@@ -1314,7 +1314,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
     "scrollX": false,
     "scrollY": "calc(100vh - 88px - 60px)",
     language: {
-      url: 'https://www.biblefarm.org/lang/Escuela_Jose.json'
+      url: 'Red_Cinco.json'
     },
         responsive: {
             details: {
@@ -1375,7 +1375,7 @@ $('#table_case_1_a_filter label').contents().filter(function() {
 // END remove "Search:" in label
 //////////////////////////////////
 // BEGIN add text inside the placeholder
-$("#table_case_1_a_filter label input").attr("placeholder", "filtrar");
+$("#table_case_1_a_filter label input").attr("placeholder", "buscar");
 // END add text inside the placeholder
 //////////////////////////////////
 // BEGIN resize columns according to what fits or not
@@ -2216,7 +2216,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
     "scrollX": false,
     "scrollY": "calc(100vh - 88px - 60px)",
     language: {
-      url: 'https://www.biblefarm.org/lang/Escuela_Jose.json'
+      url: 'Red_Cinco.json'
     },
         responsive: {
             details: {
@@ -2276,7 +2276,7 @@ $('#table_case_1_a_filter label').contents().filter(function() {
 // END remove "Search:" in label
 //////////////////////////////////
 // BEGIN add text inside the placeholder
-$("#table_case_1_a_filter label input").attr("placeholder", "filtrar");
+$("#table_case_1_a_filter label input").attr("placeholder", "buscar");
 // END add text inside the placeholder
 //////////////////////////////////
 // BEGIN resize columns according to what fits or not
@@ -3156,7 +3156,7 @@ table_case_1_a = $("#table_case_1_a").DataTable({
     "scrollX": false,
     "scrollY": "calc(100vh - 88px - 60px)",
     language: {
-      url: 'https://www.biblefarm.org/lang/Escuela_Jose.json'
+      url: 'Red_Cinco.json'
     },
         responsive: {
             details: {
@@ -3216,7 +3216,7 @@ $('#table_case_1_a_filter label').contents().filter(function() {
 // END remove "Search:" in label
 //////////////////////////////////
 // BEGIN add text inside the placeholder
-$("#table_case_1_a_filter label input").attr("placeholder", "filtrar");
+$("#table_case_1_a_filter label input").attr("placeholder", "buscar");
 // END add text inside the placeholder
 //////////////////////////////////
 // BEGIN resize columns according to what fits or not
@@ -4783,7 +4783,7 @@ $("td.column_edit").hide();
 $("td.column_delete").hide();
 $("body").find(".resp_ch_row_tr").find('td:nth-child(1)').hide();
 $("body").find(".create_case_1_a").hide();
-$(".title_case_1_a").css("color", "gold");
+$(".title_case_1_a").css("color", "#D5AD6D");
 }
 }, 1000);
 
@@ -4880,6 +4880,54 @@ $(this).css("max-height", "100%");
 }, 1000);
 // END resize Ad images only based on Portrait or Landscape
 
+// BEGIN searh launch
+// launch it & toggle
+$("#search_launch").on("click",function(e){
+$("#table_case_1_a_info, #table_case_1_a_filter").show("slow");
+$("#output_category_here").hide();
+$("#table_case_1_a_filter label input").focus().select();
 
+});
+// click anywhere to restore
+$("#table_case_1_a tbody").on("click",function(e){
+$("#table_case_1_a_info, #table_case_1_a_filter").hide("slow");
+$("#output_category_here").show();
+});
+// END searh launch
+
+///////////////////////////////////////////////
+////BEGIN login hack to Spanish wording
+///////////////////////////////////////////////
+// wait for it to be in DOM
+  var waitForFirebaseUIUponArrival = setInterval(function() {
+    if ($("body").find('.firebaseui-idp-text').length > 0) {
+      console.log("FirebaseUI ready in DOM upon arrival");
+      // clear the setInterval
+      clearInterval(waitForFirebaseUIUponArrival);
+// upon arrival
+$("body").find("button[data-provider-id='google.com']").find(".firebaseui-idp-text-long").text("Iniciar sesión con Google");
+$("body").find("button[data-provider-id='facebook.com']").find(".firebaseui-idp-text-long").text("Iniciar sesión con Facebook");
+$("body").find("button[data-provider-id='twitter.com']").find(".firebaseui-idp-text-long").text("Iniciar sesión con Twitter");
+$("body").find("button[data-provider-id='password']").find(".firebaseui-idp-text-long").text("Iniciar sesión con Email");
+}
+}, 1100);
+// after we signed out
+$("#sign-out").on('click', function() {
+  // wait for it to be in DOM
+    var waitForFirebaseUIAfterSignOut = setInterval(function() {
+      if ($("body").find('.firebaseui-idp-text').length > 0) {
+        console.log("FirebaseUI ready in DOM after SignOut");
+        // clear the setInterval
+        clearInterval(waitForFirebaseUIAfterSignOut);
+$("body").find("button[data-provider-id='google.com']").find(".firebaseui-idp-text-long").text("Iniciar sesión con Google");
+$("body").find("button[data-provider-id='facebook.com']").find(".firebaseui-idp-text-long").text("Iniciar sesión con Facebook");
+$("body").find("button[data-provider-id='twitter.com']").find(".firebaseui-idp-text-long").text("Iniciar sesión con Twitter");
+$("body").find("button[data-provider-id='password']").find(".firebaseui-idp-text-long").text("Iniciar sesión con Email");
+}
+}, 1100);
+});
+///////////////////////////////////////////////
+////END login hack to Spanish wording
+///////////////////////////////////////////////
 
 }); // end of the top document ready
