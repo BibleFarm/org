@@ -734,6 +734,16 @@ z-index: 2;
       z-index: 12;
       top: calc(88px + 8px);
     }
+    .wrap_right_bg_border_fix {
+      position: fixed;
+      display: block;
+      height: 100%;
+      width: 4px;
+      background: yellow;
+      right: 0;
+      z-index: 1111111111111111111111;
+      top: 0;
+    }
 
      .wrap_bot {
          bottom: 4px !important;
@@ -1225,8 +1235,9 @@ table.dataTable thead th, table.dataTable thead td {
 }
 
 .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody {
-  overflow-y: auto !important;
+  overflow-y: hidden !important;
     overflow-x: hidden !important;
+    height: 100vh !important;
 }
 
 table.table_case_1_a tbody {
