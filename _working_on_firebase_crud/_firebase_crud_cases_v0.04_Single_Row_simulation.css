@@ -1225,8 +1225,8 @@ table.dataTable thead th, table.dataTable thead td {
 }
 
 .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody {
-  overflow-y: auto;
-    overflow-x: hidden;
+  overflow-y: auto !important;
+    overflow-x: hidden !important;
 }
 
 table.table_case_1_a tbody {
