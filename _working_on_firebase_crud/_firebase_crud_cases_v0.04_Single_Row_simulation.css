@@ -689,14 +689,14 @@ table {
     font-size: 20px;;
     color: #bebebe;
     text-shadow: 2px 2px 1px #000000;
-    background: red !important;
+    background: black !important;
 
     margin: 0 auto;
   }
   body {
     margin: 0;
     padding: 0;
-background: red;
+background: black;
 
 
   }
@@ -729,7 +729,7 @@ z-index: 2;
       display: block;
       width: calc(100% - 8px);
       height: 4px;
-      background: yellow;
+      background: black;
       left: 4px;
       z-index: 12;
       top: calc(88px + 8px);
@@ -739,7 +739,7 @@ z-index: 2;
       display: block;
       height: 100%;
       width: 4px;
-      background: lime;
+      background: black;
       right: 0;
       z-index: 111111111111111111111;
       top: 0;
@@ -755,7 +755,7 @@ z-index: 2;
       display: block;
       width: calc(100% - 8px);
       height: 4px;
-      background: yellow;
+      background: black;
       left: 4px;
       z-index: 11;
       bottom: 48px;
@@ -765,7 +765,7 @@ z-index: 2;
       display: block;
       width: calc(100% - 8px);
       height: 4px;
-      background: orange;
+      background: black;
       left: 4px;
       z-index: 11;
       bottom: 0;
@@ -1020,7 +1020,7 @@ right: 0;
     line-height: 44px;
     bottom: 60px;
     right: 16px;
-    z-index: 1111111;
+    z-index: 12;
     background: red;
     padding-top: 0px;
 
@@ -1050,7 +1050,7 @@ padding-right: 8px;
 width: 312px;
 height: 312px;
 bottom: 50px;
-background: rgba(0, 0, 0, 0.9);
+background: black;
 z-index: 12;
 }
 .login_or_not {
@@ -1314,7 +1314,7 @@ display: none;
     text-align: center;
     text-shadow: 2px 2px 1px #000000;
 	background: black;
-    z-index: 1;
+    z-index: 12;
 }
 .wrap_dialog_confirm_delete {
 display: none;
@@ -1466,7 +1466,7 @@ padding-right: 18px !important;
 white-space: nowrap;
 }
 .resp_ch_row_table {
-background: yellow;
+background: black;
 width: 100%;
 }
 .resp_ch_row_tr {
@@ -1667,6 +1667,7 @@ color: #D5AD6D !important;
 padding: 0 !important;
 width: 100px;
 height: 44px;
+margin-top: -4px;
 }
 
 .fas {

@@ -256,9 +256,9 @@ refEdit_case_1_a = ref_case_1_a.child(firebase_key_to_edit_case_1_a);
 document.getElementById("create_or_update_case_1_a").value = UPDATE_case_1_a;
 mode_case_1_a = UPDATE_case_1_a;
 ///////////////////////////////////////////////////////
-$("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
+$("#wrap_form_case_1_a").show("slow");
 $("#create_or_update_case_1_a").on("click", function() {
-$("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").hide("slow");
+$("#wrap_form_case_1_a").hide("slow");
 });
 $(".cancel_editing").show();
 $(".cancel_editing, .cancel_new_or_edit_case_1_a").on("click", function() {
@@ -397,15 +397,15 @@ table_case_1_a = $("#table_case_1_a").DataTable({
 //////////////////////////////////////////
 // BEGIN user interface to create or edit
 $("body").find(".create_case_1_a").on("click",function(e){
-$("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
+$("#wrap_form_case_1_a").show("slow");
 $("#column_1_case_1_a").css("background", "yellow").val(((moment().format('YYYY/MM/DD HH:mm', {trim: false}))));
 $("#column_2_case_1_a").focus().select();
 });
 $("#create_or_update_case_1_a").on("click",function(e){
-$("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").hide("slow");
+$("#wrap_form_case_1_a").hide("slow");
 });
 $(".cancel_new_or_edit_case_1_a").on("click",function(e){
-$("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").hide("slow");
+$("#wrap_form_case_1_a").hide("slow");
 });
 // END user interface to create or edit
 //////////////////////////////////
@@ -1380,15 +1380,15 @@ table_case_1_a = $("#table_case_1_a").DataTable({
 //////////////////////////////////////////
 // BEGIN user interface to create or edit
 $("body").find(".create_case_1_a").on("click",function(e){
-$("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
+$("#wrap_form_case_1_a").show("slow");
 $("#column_1_case_1_a").css("background", "yellow").val(((moment().format('YYYY/MM/DD HH:mm', {trim: false}))));
 $("#column_2_case_1_a").focus().select();
 });
 $("#create_or_update_case_1_a").on("click",function(e){
-$("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").hide("slow");
+$("#wrap_form_case_1_a").hide("slow");
 });
 $(".cancel_new_or_edit_case_1_a").on("click",function(e){
-$("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").hide("slow");
+$("#wrap_form_case_1_a").hide("slow");
 });
 // END user interface to create or edit
 //////////////////////////////////
@@ -2300,15 +2300,15 @@ table_case_1_a = $("#table_case_1_a").DataTable({
 //////////////////////////////////////////
 // BEGIN user interface to create or edit
 $("body").find(".create_case_1_a").on("click",function(e){
-$("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
+$("#wrap_form_case_1_a").show("slow");
 $("#column_1_case_1_a").css("background", "yellow").val(((moment().format('YYYY/MM/DD HH:mm', {trim: false}))));
 $("#column_2_case_1_a").focus().select();
 });
 $("#create_or_update_case_1_a").on("click",function(e){
-$("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").hide("slow");
+$("#wrap_form_case_1_a").hide("slow");
 });
 $(".cancel_new_or_edit_case_1_a").on("click",function(e){
-$("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").hide("slow");
+$("#wrap_form_case_1_a").hide("slow");
 });
 // END user interface to create or edit
 //////////////////////////////////
@@ -3259,15 +3259,15 @@ table_case_1_a = $("#table_case_1_a").DataTable({
 //////////////////////////////////////////
 // BEGIN user interface to create or edit
 $("body").find(".create_case_1_a").on("click",function(e){
-$("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
+$("#wrap_form_case_1_a").show("slow");
 $("#column_1_case_1_a").css("background", "yellow").val(((moment().format('YYYY/MM/DD HH:mm', {trim: false}))));
 $("#column_2_case_1_a").focus().select();
 });
 $("#create_or_update_case_1_a").on("click",function(e){
-$("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").hide("slow");
+$("#wrap_form_case_1_a").hide("slow");
 });
 $(".cancel_new_or_edit_case_1_a").on("click",function(e){
-$("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").hide("slow");
+$("#wrap_form_case_1_a").hide("slow");
 });
 // END user interface to create or edit
 //////////////////////////////////
@@ -4146,15 +4146,15 @@ clearInterval(checkIf_we_have_an_empty_table);
 //////////////////////////////////////////
 // BEGIN user interface to create or edit
 $("body").find(".create_case_1_a").on("click",function(e){
-$("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
+$("#wrap_form_case_1_a").show("slow");
 $("#column_1_case_1_a").css("background", "yellow").val(((moment().format('YYYY/MM/DD HH:mm', {trim: false}))));
 $("#column_2_case_1_a").focus().select();
 });
 $("#create_or_update_case_1_a").on("click",function(e){
-$("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").hide("slow");
+$("#wrap_form_case_1_a").hide("slow");
 });
 $(".cancel_new_or_edit_case_1_a").on("click",function(e){
-$("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").hide("slow");
+$("#wrap_form_case_1_a").hide("slow");
 });
 // END user interface to create or edit
 //////////////////////////////////
@@ -4186,9 +4186,9 @@ function edit_case_1_a() {
   document.getElementById("create_or_update_case_1_a").value = UPDATE_case_1_a;
   mode_case_1_a = UPDATE_case_1_a;
   ///////////////////////////////////////////////////////
-  $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
+  $("#wrap_form_case_1_a").show("slow");
   $("#create_or_update_case_1_a").on("click", function() {
-    $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").hide("slow");
+    $("#wrap_form_case_1_a").hide("slow");
   });
   $(".cancel_editing").show();
   $(".cancel_editing, .cancel_new_or_edit_case_1_a").on("click", function() {
@@ -4224,9 +4224,9 @@ function edit_case_1_a() {
   document.getElementById("create_or_update_case_1_a").value = UPDATE_case_1_a;
   mode_case_1_a = UPDATE_case_1_a;
   ///////////////////////////////////////////////////////
-  $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
+  $("#wrap_form_case_1_a").show("slow");
   $("#create_or_update_case_1_a").on("click", function() {
-    $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").hide("slow");
+    $("#wrap_form_case_1_a").hide("slow");
   });
   $(".cancel_editing").show();
   $(".cancel_editing, .cancel_new_or_edit_case_1_a").on("click", function() {
@@ -4262,9 +4262,9 @@ function edit_case_1_a() {
   document.getElementById("create_or_update_case_1_a").value = UPDATE_case_1_a;
   mode_case_1_a = UPDATE_case_1_a;
   ///////////////////////////////////////////////////////
-  $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
+  $("#wrap_form_case_1_a").show("slow");
   $("#create_or_update_case_1_a").on("click", function() {
-    $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").hide("slow");
+    $("#wrap_form_case_1_a").hide("slow");
   });
   $(".cancel_editing").show();
   $(".cancel_editing, .cancel_new_or_edit_case_1_a").on("click", function() {
@@ -4300,9 +4300,9 @@ function edit_case_1_a() {
   document.getElementById("create_or_update_case_1_a").value = UPDATE_case_1_a;
   mode_case_1_a = UPDATE_case_1_a;
   ///////////////////////////////////////////////////////
-  $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
+  $("#wrap_form_case_1_a").show("slow");
   $("#create_or_update_case_1_a").on("click", function() {
-    $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").hide("slow");
+    $("#wrap_form_case_1_a").hide("slow");
   });
   $(".cancel_editing").show();
   $(".cancel_editing, .cancel_new_or_edit_case_1_a").on("click", function() {
@@ -4338,9 +4338,9 @@ function edit_case_1_a() {
   document.getElementById("create_or_update_case_1_a").value = UPDATE_case_1_a;
   mode_case_1_a = UPDATE_case_1_a;
   ///////////////////////////////////////////////////////
-  $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
+  $("#wrap_form_case_1_a").show("slow");
   $("#create_or_update_case_1_a").on("click", function() {
-    $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").hide("slow");
+    $("#wrap_form_case_1_a").hide("slow");
   });
   $(".cancel_editing").show();
   $(".cancel_editing, .cancel_new_or_edit_case_1_a").on("click", function() {
@@ -4383,9 +4383,9 @@ function edit_case_1_a() {
   document.getElementById("create_or_update_case_1_a").value = UPDATE_case_1_a;
   mode_case_1_a = UPDATE_case_1_a;
   ///////////////////////////////////////////////////////
-  $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
+  $("#wrap_form_case_1_a").show("slow");
   $("#create_or_update_case_1_a").on("click", function() {
-    $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").hide("slow");
+    $("#wrap_form_case_1_a").hide("slow");
   });
   $(".cancel_editing").show();
   $(".cancel_editing, .cancel_new_or_edit_case_1_a").on("click", function() {
@@ -4421,9 +4421,9 @@ function edit_case_1_a() {
   document.getElementById("create_or_update_case_1_a").value = UPDATE_case_1_a;
   mode_case_1_a = UPDATE_case_1_a;
   ///////////////////////////////////////////////////////
-  $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
+  $("#wrap_form_case_1_a").show("slow");
   $("#create_or_update_case_1_a").on("click", function() {
-    $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").hide("slow");
+    $("#wrap_form_case_1_a").hide("slow");
   });
   $(".cancel_editing").show();
   $(".cancel_editing, .cancel_new_or_edit_case_1_a").on("click", function() {
@@ -4459,9 +4459,9 @@ function edit_case_1_a() {
   document.getElementById("create_or_update_case_1_a").value = UPDATE_case_1_a;
   mode_case_1_a = UPDATE_case_1_a;
   ///////////////////////////////////////////////////////
-  $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
+  $("#wrap_form_case_1_a").show("slow");
   $("#create_or_update_case_1_a").on("click", function() {
-    $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").hide("slow");
+    $("#wrap_form_case_1_a").hide("slow");
   });
   $(".cancel_editing").show();
   $(".cancel_editing, .cancel_new_or_edit_case_1_a").on("click", function() {
@@ -4497,9 +4497,9 @@ function edit_case_1_a() {
   document.getElementById("create_or_update_case_1_a").value = UPDATE_case_1_a;
   mode_case_1_a = UPDATE_case_1_a;
   ///////////////////////////////////////////////////////
-  $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
+  $("#wrap_form_case_1_a").show("slow");
   $("#create_or_update_case_1_a").on("click", function() {
-    $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").hide("slow");
+    $("#wrap_form_case_1_a").hide("slow");
   });
   $(".cancel_editing").show();
   $(".cancel_editing, .cancel_new_or_edit_case_1_a").on("click", function() {
@@ -4535,9 +4535,9 @@ function edit_case_1_a() {
   document.getElementById("create_or_update_case_1_a").value = UPDATE_case_1_a;
   mode_case_1_a = UPDATE_case_1_a;
   ///////////////////////////////////////////////////////
-  $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").show("slow");
+  $("#wrap_form_case_1_a").show("slow");
   $("#create_or_update_case_1_a").on("click", function() {
-    $("body div.wrap div.wrap_case_1_a #wrap_form_case_1_a").hide("slow");
+    $("#wrap_form_case_1_a").hide("slow");
   });
   $(".cancel_editing").show();
   $(".cancel_editing, .cancel_new_or_edit_case_1_a").on("click", function() {
