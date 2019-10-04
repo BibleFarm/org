@@ -1204,6 +1204,8 @@ $('.dataTables_scrollBody').perfectScrollbar({
   wheelPropagation: true,
   scrollXMarginOffset: 2
 });
+$("body").find(".dataTables_scrollBody").attr("style", "");
+$("body").find(".dataTables_scrollBody").attr("style", "position: relative; overflow-x: hidden !important; overflow-y: hidden !important; max-height: 120vh; width: 100%;");
 }
 /////////////////////////////////////////////////////////////////////////
 ///// END detect if mobile/tablet/touch /////////
@@ -2185,6 +2187,8 @@ $('.dataTables_scrollBody').perfectScrollbar({
   wheelPropagation: true,
   scrollXMarginOffset: 2
 });
+$("body").find(".dataTables_scrollBody").attr("style", "");
+$("body").find(".dataTables_scrollBody").attr("style", "position: relative; overflow-x: hidden !important; overflow-y: hidden !important; max-height: 120vh; width: 100%;");
 }
 /////////////////////////////////////////////////////////////////////////
 ///// END detect if mobile/tablet/touch /////////
@@ -3103,6 +3107,8 @@ $('.dataTables_scrollBody').perfectScrollbar({
   wheelPropagation: true,
   scrollXMarginOffset: 2
 });
+$("body").find(".dataTables_scrollBody").attr("style", "");
+$("body").find(".dataTables_scrollBody").attr("style", "position: relative; overflow-x: hidden !important; overflow-y: hidden !important; max-height: 120vh; width: 100%;");
 }
 /////////////////////////////////////////////////////////////////////////
 ///// END detect if mobile/tablet/touch /////////
@@ -4060,6 +4066,8 @@ $('.dataTables_scrollBody').perfectScrollbar({
   wheelPropagation: true,
   scrollXMarginOffset: 2
 });
+$("body").find(".dataTables_scrollBody").attr("style", "");
+$("body").find(".dataTables_scrollBody").attr("style", "position: relative; overflow-x: hidden !important; overflow-y: hidden !important; max-height: 120vh; width: 100%;");
 }
 /////////////////////////////////////////////////////////////////////////
 ///// END detect if mobile/tablet/touch /////////

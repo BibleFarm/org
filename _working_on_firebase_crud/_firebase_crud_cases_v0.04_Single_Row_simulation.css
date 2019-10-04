@@ -739,9 +739,9 @@ z-index: 2;
       display: block;
       height: 100%;
       width: 4px;
-      background: yellow;
+      background: lime;
       right: 0;
-      z-index: 1111111111111111111111;
+      z-index: 111111111111111111111;
       top: 0;
     }
 
@@ -1235,7 +1235,7 @@ table.dataTable thead th, table.dataTable thead td {
 }
 
 .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody {
-  overflow-y: hidden !important;
+  overflow-y: auto !important;
     overflow-x: hidden !important;
     height: 100vh !important;
 }
@@ -1513,7 +1513,7 @@ table.dataTable {
   display: block;
   width: 100vw;
   height: 100vh;
-  z-index: 14;
+  z-index: 11111111111111111111111;
   background: black;
   top: 0px;
 }
