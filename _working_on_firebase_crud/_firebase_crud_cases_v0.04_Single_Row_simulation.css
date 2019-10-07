@@ -1695,6 +1695,57 @@ margin-top: -4px;
 .rc_logo_top {
   margin: 0 !important;
 }
+
+/* BEGIN Ad & Article on hover desktop / click mobile */
+.click_hover_ad {
+    display: none;
+    position: absolute;
+    z-index: 1111;
+    background: black;
+    width: 300px;
+    height:44px;
+}
+.click_hover_ad_text {
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.click_hover_ad_whatsapp_img {
+  display: inline-block;
+  line-height: 44px;
+  vertical-align: middle;
+  height: 36px;
+  width: auto;
+  margin-bottom: 5px;
+}
+.click_hover_article {
+    display: none;
+    position: absolute;
+    z-index: 1111;
+    background: black;
+    width: 300px;
+    height:44px;
+}
+.click_hover_article_text {
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.click_hover_article_whatsapp_img {
+  display: inline-block;
+  line-height: 44px;
+  vertical-align: middle;
+  height: 36px;
+  width: auto;
+  margin-bottom: 5px;
+}
+/* END Ad & Article on hover desktop / click mobile */
+
+
 /* END SPECIFIC jovi website */
 
 /* this is the end of the @media for the whole site */
