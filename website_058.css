@@ -933,7 +933,7 @@ body {
   padding-bottom: 6px;
   margin: 0 auto;
   top: 44px;
-  background: rgba(1, 1, 1, 0.8) !important;
+  background: black !important;
   z-index: 1;
 }
 .go_center {
@@ -1368,15 +1368,27 @@ a.link_to_youtube_channel:focus {
 /* bf overflow containers */
 .bf_farm_container {
   position: absolute;
-  width: 100%;
-  top: calc(44px + 44px);
-  height: calc(100% - 44px - 86px - 44px);
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  overflow: hidden;
+      width: 100%;
+      top: 19px;
+      height: calc(100% - 44px - 21px - 44px);
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+      overflow: hidden;
+      z-index: -1;
 }
+.bf_farm_container_donate {
+    position: absolute;
+    width: 100%;
+    top: calc(44px + 14px);
+    height: calc(100% - 44px - 86px - 14px);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    overflow: hidden;
+  }
 .bf_facebook_container {
   position: absolute;
   width: 100%;
