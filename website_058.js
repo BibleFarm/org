@@ -1,5 +1,8 @@
 // website v0.58 //
 
+// create dynamically the element
+$("body").one().append('<div class="opacity_cover"></div>');
+console.log("create dynamically opacity_cover element");
 
 ///////////////////////////////////////////////////
 /// BEGIN wrap_sponsor_ads perfectScrollbar ///////
@@ -1230,9 +1233,6 @@ $(document).ready(function() {
     }, 4000);
 
 
-    // create dynamically the element
-    $("body").one().append('<div class="opacity_cover"></div>');
-    console.log("create dynamically opacity_cover element");
           // darken the page to emphasize chat
           $(".opacity_cover").show();
 
@@ -1252,11 +1252,6 @@ $(document).ready(function() {
 
 
 
-  // hide when click outside
-  $(window).click(function() {
-    // hide it
-    $("#PureChatWidget").attr("style", "z-index: -1 !important");
-  });
   // stopPropagation when clicking to show the widget and inside the widget itself
   $(".open_purechat, #PureChatWidget").click(function(event) {
     event.stopPropagation();
