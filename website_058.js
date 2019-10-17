@@ -1161,7 +1161,7 @@ $(document).ready(function() {
   }, 1000);
   ////////////////////
   // show when needed
-  $("#show_pure_chat").on("click", function() {
+  $(".open_purechat").on("click", function() {
     // show it
     $("#PureChatWidget").attr("style", "z-index: 2147483646 !important");
     // hack colors
@@ -1258,7 +1258,7 @@ $(document).ready(function() {
     $("#PureChatWidget").attr("style", "z-index: -1 !important");
   });
   // stopPropagation when clicking to show the widget and inside the widget itself
-  $("#show_pure_chat, #PureChatWidget").click(function(event) {
+  $(".open_purechat, #PureChatWidget").click(function(event) {
     event.stopPropagation();
     console.log("PureChat hide when click outside event.stopPropagation");
   });
