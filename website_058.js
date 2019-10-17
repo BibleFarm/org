@@ -1228,7 +1228,30 @@ $(document).ready(function() {
         .find("#PureChatWidget.purechat.purechat-widget-collapsed")
         .attr("style", "box-shadow: 0px 0px 10px #b3ff00 !important");
     }, 4000);
+
+
+    // create dynamically the element
+    $("body").append('<div class="opacity_cover"></div>');
+    console.log("create dynamically opacity_cover element");
+          // darken the page to emphasize chat
+          $(".opacity_cover").show();
+
+
+
+
   });
+
+
+  // hide when click outside
+  $(".opacity_cover").click(function() {
+    // hide it
+    $("#PureChatWidget").attr("style", "z-index: -1 !important");
+    // bring back to normal
+    $(".opacity_cover").remove();
+    console.log("removed dynamically opacity_cover element");
+  });
+
+
 
   // hide when click outside
   $(window).click(function() {
