@@ -203,7 +203,7 @@ var loadpolitica = setInterval(function() {
 // check if it's empty && visible
 if ( ( $('#politica').hasClass("swiper-slide-visible") ) && ( isEmpty($('.politica')) ) ) {
 		console.log('politica is empty && is visible');
-$(".politica").append('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fbiblefarm.org%2F&tabs=timeline&width=312&height=2000&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=244071169860258" width="312" height="2000" style="border:none;overflow:scroll" scrolling="yes" frameborder="10" allowTransparency="true" allow="encrypted-media"></iframe>');
+$(".politica").append('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRed-Cinco-Pol%C3%ADtica-107881443966133%2F&tabs=timeline&width=312&height=2000&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=244071169860258" width="312" height="2000" style="border:none;overflow:scroll" scrolling="yes" frameborder="10" allowTransparency="true" allow="encrypted-media"></iframe>');
 // clear the setInterval
 clearInterval(loadpolitica);
 	}
@@ -248,7 +248,7 @@ var loaddeportes = setInterval(function() {
 // check if it's empty && visible
 if ( ( $('#deportes').hasClass("swiper-slide-visible") ) && ( isEmpty($('.deportes')) ) ) {
 		console.log('deportes is empty && is visible');
-$(".deportes").append('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgranjasolidaria%2F&tabs=timeline&width=312&height=2000&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=244071169860258" width="312" height="2000" style="border:none;overflow:scroll" scrolling="yes" frameborder="10" allowTransparency="true" allow="encrypted-media"></iframe>');
+$(".deportes").append('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRed-Cinco-Deportes-108965590523332%2F&tabs=timeline&width=312&height=2000&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=244071169860258" width="312" height="2000" style="border:none;overflow:scroll" scrolling="yes" frameborder="10" allowTransparency="true" allow="encrypted-media"></iframe>');
 // clear the setInterval
 clearInterval(loaddeportes);
 	}
