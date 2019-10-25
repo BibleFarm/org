@@ -9300,7 +9300,7 @@ var verse_to_share = $(this).parent().siblings().eq( 0 )
 .text();
 console.log("verse_to_share " + verse_to_share);
 
-var complete_url_to_share_from_browsing_mode = "https://test.biblefarm.org/" + sharing_code + "/" + book_to_share + "-" + chapter_to_share + "-" + verse_to_share + ".html";
+var complete_url_to_share_from_browsing_mode = "https://team.biblefarm.org/" + sharing_code + "/" + book_to_share + "-" + chapter_to_share + "-" + verse_to_share + ".html";
 console.log("complete_url_to_share_from_browsing_mode: " + complete_url_to_share_from_browsing_mode);
 
 // $("#from_filter_mode_url_we_are_going_to").text("");
