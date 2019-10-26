@@ -85,7 +85,7 @@ $(".flex-parent").children(".flex-child").each(function() {
   var swiper_jovi = new Swiper(".swiper-container-main", {
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
-    initialSlide: 1,
+    initialSlide: 2,
     preventClicks: true,
     //    scrollbar: ".swiper-scrollbar",
     //    scrollbarHide: false,
