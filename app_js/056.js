@@ -9300,8 +9300,30 @@ var verse_to_share = $(this).parent().siblings().eq( 0 )
 .text();
 console.log("verse_to_share " + verse_to_share);
 
-var complete_url_to_share_from_browsing_mode = "https://team.biblefarm.org/" + sharing_code + "/" + book_to_share + "-" + chapter_to_share + "-" + verse_to_share + ".html";
+var complete_url_to_share_from_browsing_mode = "https://team.biblefarm.org/" + sharing_code + "/" + book_to_share + "-" + chapter_to_share + "-" + verse_to_share;
 console.log("complete_url_to_share_from_browsing_mode: " + complete_url_to_share_from_browsing_mode);
+
+///////////////////////////////////////////////////
+/// BEGIN clipboard functionality  ///////
+///////////////////////////////////////////////////
+// show the clipboard_js_Target input to satisfy browser requirement
+$("input#clipboard_js_Target").show();
+console.log("showing the clipboard_js_Target input to satisfy browser requirement");
+// clear the clipboard_js_Target input
+$("input#clipboard_js_Target").val("").attr("value", "");
+console.log("cleared the clipboard");
+// fill the clipboard_js_Target input with verse wanted
+$("input#clipboard_js_Target").val(complete_url_to_share_from_browsing_mode).attr("value", complete_url_to_share_from_browsing_mode);
+console.log("filled the clipboard with: " + complete_url_to_share_from_browsing_mode);
+// trigger the click on the clipboard.js Trigger button
+$("button.clipboard_js_Trigger").trigger({type: 'click', which: 1});
+console.log("triggered the click on the hidden button: 'button.clipboard_js_Trigger' which actually stores the url in the clipboard");
+// hide the clipboard_js_Target input after procedure is done
+$("input#clipboard_js_Target").hide();
+console.log("hiding the clipboard_js_Target input after procedure is done");
+///////////////////////////////////////////////////
+/// END clipboard functionality  ///////
+///////////////////////////////////////////////////
 
 // $("#from_filter_mode_url_we_are_going_to").text("");
 // $("#from_browsing_mode_url_we_are_going_to").text("");
@@ -10446,3 +10468,8 @@ filter_grk.insertBefore(filter_grk_tra);
 ///////////////////////////////////////////////////////////////////////
 ////// END MutationObserver MutationObserver_Terminal_Languages_tE_ajax_chapters ////
 ///////////////////////////////////////////////////////////////////////
+
+
+// init clipboard.js
+new ClipboardJS('.clipboard_js_Trigger');
+console.log("ClipboardJS is initiated on class '.clipboard_js_Trigger' ");
