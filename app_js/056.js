@@ -408,6 +408,48 @@ $(document).ready(function() {
         wheelPropagation: true,
         scrollXMarginOffset: 2
       });
+      /////////////////////////////////////
+      // BEGIN clipboard from filter mode
+      /////////////////////////////////////
+      // This grabs the verse to share, creates the URL & puts it in the clipboard
+      $('#example-main tbody').on('click', 'tr td div span', function(e) {
+
+        var div_of_verse_to_share = $(this).parent("div");
+        var actual_verse_to_share = $(div_of_verse_to_share).find(".ref_bk_reg, .ref_ch_reg, .ref_vs_reg ").css("background", "red").text();
+        var replaced_colon_with_dash = actual_verse_to_share.replace(/:/g,'-');
+        var cleaned_up_triple_space = replaced_colon_with_dash.replace(/\s\s\s/g,'-');
+        var cleaned_up_double_space = cleaned_up_triple_space.replace(/\s\s/g,'-');
+        var cleaned_up_single_space = cleaned_up_double_space.replace(/\s/g,'');
+        var complete_url_to_share_from_filtering_mode = "https://team.biblefarm.org/share/" + cleaned_up_single_space.toLowerCase();
+
+        console.log(" *********************************************************************************************************************************************************************************************************************************************************************************************************************************// - complete_url // " + complete_url_to_share_from_filtering_mode);
+
+      ///////////////////////////////////////////////////
+      /// BEGIN clipboard functionality  ///////
+      ///////////////////////////////////////////////////
+      // show the clipboard_js_Target input to satisfy browser requirement
+      $("input#clipboard_js_Target").show();
+      console.log("showing the clipboard_js_Target input to satisfy browser requirement");
+      // clear the clipboard_js_Target input
+      $("input#clipboard_js_Target").val("").attr("value", "");
+      console.log("cleared the clipboard");
+      // fill the clipboard_js_Target input with verse wanted
+      $("input#clipboard_js_Target").val(complete_url_to_share_from_filtering_mode).attr("value", complete_url_to_share_from_filtering_mode);
+      console.log("filled the clipboard with: " + complete_url_to_share_from_filtering_mode);
+      // trigger the click on the clipboard.js Trigger button
+      $("button.clipboard_js_Trigger").trigger({type: 'click', which: 1});
+      console.log("triggered the click on the hidden button: 'button.clipboard_js_Trigger' which actually stores the url in the clipboard");
+      // hide the clipboard_js_Target input after procedure is done
+      $("input#clipboard_js_Target").hide();
+      console.log("hiding the clipboard_js_Target input after procedure is done");
+      ///////////////////////////////////////////////////
+      /// END clipboard functionality  ///////
+      ///////////////////////////////////////////////////
+
+      });
+      /////////////////////////////////////
+      // END clipboard from filter mode
+      /////////////////////////////////////
 
 
 
@@ -549,6 +591,48 @@ $(document).ready(function() {
         wheelPropagation: true,
         scrollXMarginOffset: 2
       });
+      /////////////////////////////////////
+      // BEGIN clipboard from filter mode
+      /////////////////////////////////////
+      // This grabs the verse to share, creates the URL & puts it in the clipboard
+      $('#example-main tbody').on('click', 'tr td div span', function(e) {
+
+        var div_of_verse_to_share = $(this).parent("div");
+        var actual_verse_to_share = $(div_of_verse_to_share).find(".ref_bk_reg, .ref_ch_reg, .ref_vs_reg ").css("background", "red").text();
+        var replaced_colon_with_dash = actual_verse_to_share.replace(/:/g,'-');
+        var cleaned_up_triple_space = replaced_colon_with_dash.replace(/\s\s\s/g,'-');
+        var cleaned_up_double_space = cleaned_up_triple_space.replace(/\s\s/g,'-');
+        var cleaned_up_single_space = cleaned_up_double_space.replace(/\s/g,'');
+        var complete_url_to_share_from_filtering_mode = "https://team.biblefarm.org/share/" + cleaned_up_single_space.toLowerCase();
+
+        console.log(" *********************************************************************************************************************************************************************************************************************************************************************************************************************************// - complete_url // " + complete_url_to_share_from_filtering_mode);
+
+      ///////////////////////////////////////////////////
+      /// BEGIN clipboard functionality  ///////
+      ///////////////////////////////////////////////////
+      // show the clipboard_js_Target input to satisfy browser requirement
+      $("input#clipboard_js_Target").show();
+      console.log("showing the clipboard_js_Target input to satisfy browser requirement");
+      // clear the clipboard_js_Target input
+      $("input#clipboard_js_Target").val("").attr("value", "");
+      console.log("cleared the clipboard");
+      // fill the clipboard_js_Target input with verse wanted
+      $("input#clipboard_js_Target").val(complete_url_to_share_from_filtering_mode).attr("value", complete_url_to_share_from_filtering_mode);
+      console.log("filled the clipboard with: " + complete_url_to_share_from_filtering_mode);
+      // trigger the click on the clipboard.js Trigger button
+      $("button.clipboard_js_Trigger").trigger({type: 'click', which: 1});
+      console.log("triggered the click on the hidden button: 'button.clipboard_js_Trigger' which actually stores the url in the clipboard");
+      // hide the clipboard_js_Target input after procedure is done
+      $("input#clipboard_js_Target").hide();
+      console.log("hiding the clipboard_js_Target input after procedure is done");
+      ///////////////////////////////////////////////////
+      /// END clipboard functionality  ///////
+      ///////////////////////////////////////////////////
+
+      });
+      /////////////////////////////////////
+      // END clipboard from filter mode
+      /////////////////////////////////////
 
 
 
@@ -9286,7 +9370,7 @@ else {
 // BEGIN if user is logged in
 var sharing_code = $("#config_name_change").val();
 console.log("sharing_code " + sharing_code);
-var book_to_share = $(".wrap").find(".book_is_selected").find(".menu_book_reg").text().replace(/\ /g,"-");
+var book_to_share = $(".wrap").find(".book_is_selected").find(".menu_book_reg").text().replace(/\ /g,"-").toLowerCase();
 console.log("book_to_share " + book_to_share);
 
 var chapter_to_share = $(".wrap").find(".chapter_is_selected").text();
@@ -9361,7 +9445,7 @@ console.log("hiding the clipboard_js_Target input after procedure is done");
   });
 */
 // so we're opening a new tab like this
-  window.open(complete_url_to_share_from_browsing_mode, "_blank");
+// commented out until I automation settings -> on verse click create a post on off  window.open(complete_url_to_share_from_browsing_mode, "_blank");
 }
 
 
@@ -10473,50 +10557,3 @@ filter_grk.insertBefore(filter_grk_tra);
 // init clipboard.js
 new ClipboardJS('.clipboard_js_Trigger');
 console.log("ClipboardJS is initiated on class '.clipboard_js_Trigger' ");
-
-
-/////////////////////////////////////
-// BEGIN clipboard from filter mode
-/////////////////////////////////////
-// BEGIN document ready function
-$(document).ready(function() {
-// This grabs the verse to share, creates the URL & puts it in the clipboard
-$('#example-main tbody').on('click', 'tr td div span', function(e) {
-
-  var div_of_verse_to_share = $(this).parent("div");
-  var actual_verse_to_share = $(div_of_verse_to_share).find(".ref_bk_reg, .ref_ch_reg, .ref_vs_reg ").css("background", "red").text();
-  var replaced_colon_with_dash = actual_verse_to_share.replace(/:/g,'-');
-  var cleaned_up_triple_space = replaced_colon_with_dash.replace(/\s\s\s/g,'-');
-  var cleaned_up_double_space = cleaned_up_triple_space.replace(/\s\s/g,'-');
-  var cleaned_up_single_space = cleaned_up_double_space.replace(/\s/g,'');
-  var complete_url_to_share_from_filtering_mode = "https://team.biblefarm.org/share/" + cleaned_up_single_space.toLowerCase();
-
-  console.log(" *********************************************************************************************************************************************************************************************************************************************************************************************************************************// - complete_url // " + complete_url_to_share_from_filtering_mode);
-
-///////////////////////////////////////////////////
-/// BEGIN clipboard functionality  ///////
-///////////////////////////////////////////////////
-// show the clipboard_js_Target input to satisfy browser requirement
-$("input#clipboard_js_Target").show();
-console.log("showing the clipboard_js_Target input to satisfy browser requirement");
-// clear the clipboard_js_Target input
-$("input#clipboard_js_Target").val("").attr("value", "");
-console.log("cleared the clipboard");
-// fill the clipboard_js_Target input with verse wanted
-$("input#clipboard_js_Target").val(complete_url_to_share_from_filtering_mode).attr("value", complete_url_to_share_from_filtering_mode);
-console.log("filled the clipboard with: " + complete_url_to_share_from_filtering_mode);
-// trigger the click on the clipboard.js Trigger button
-$("button.clipboard_js_Trigger").trigger({type: 'click', which: 1});
-console.log("triggered the click on the hidden button: 'button.clipboard_js_Trigger' which actually stores the url in the clipboard");
-// hide the clipboard_js_Target input after procedure is done
-$("input#clipboard_js_Target").hide();
-console.log("hiding the clipboard_js_Target input after procedure is done");
-///////////////////////////////////////////////////
-/// END clipboard functionality  ///////
-///////////////////////////////////////////////////
-
-});
-}); // EBD document ready function
-/////////////////////////////////////
-// END clipboard from filter mode
-/////////////////////////////////////
