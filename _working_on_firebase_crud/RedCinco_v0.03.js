@@ -85,8 +85,8 @@ $(".flex-parent").children(".flex-child").each(function() {
   var swiper_jovi = new Swiper(".swiper-container-main", {
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
-    initialSlide: 2,
-    slidesPerView: 7,
+    initialSlide: 1,
+    slidesPerView: 20,
     spaceBetween: 4,
     preventClicks: true,
     //    scrollbar: ".swiper-scrollbar",
@@ -97,7 +97,7 @@ $(".flex-parent").children(".flex-child").each(function() {
 //    effect: 'cube',
 //    grabCursor: true,
     shortSwipes: false,
-    centeredSlides: true,
+    centeredSlides: false,
 //    slidesPerView: "auto",
     hashnav: true,
 //    coverflowEffect: {
@@ -132,41 +132,50 @@ $(".flex-parent").children(".flex-child").each(function() {
   $(".move_to_bf-general").click(swiper_jovi, function() {
     swiper_jovi.slideTo(1);
   });
-  $(".move_to_bf-nacionales").click(swiper_jovi, function() {
+  $(".move_to_bf-policiales").click(swiper_jovi, function() {
     swiper_jovi.slideTo(2);
   });
-  $(".move_to_bf-politica").click(swiper_jovi, function() {
+  $(".move_to_bf-nacionales").click(swiper_jovi, function() {
     swiper_jovi.slideTo(3);
   });
-  $(".move_to_bf-misiones").click(swiper_jovi, function() {
+  $(".move_to_bf-politica").click(swiper_jovi, function() {
     swiper_jovi.slideTo(4);
   });
-  $(".move_to_bf-policiales").click(swiper_jovi, function() {
+  $(".move_to_bf-misiones").click(swiper_jovi, function() {
     swiper_jovi.slideTo(5);
   });
   $(".move_to_bf-deportes").click(swiper_jovi, function() {
     swiper_jovi.slideTo(6);
   });
-  $(".move_to_bf-cultura_y_espectaculos").click(swiper_jovi, function() {
+  $(".move_to_bf-cultura").click(swiper_jovi, function() {
     swiper_jovi.slideTo(7);
   });
-  $(".move_to_bf-educacion").click(swiper_jovi, function() {
+  $(".move_to_bf-espectaculos").click(swiper_jovi, function() {
     swiper_jovi.slideTo(8);
   });
-  $(".move_to_bf-salud").click(swiper_jovi, function() {
+  $(".move_to_bf-educacion").click(swiper_jovi, function() {
     swiper_jovi.slideTo(9);
   });
-  $(".move_to_bf-tecnologia").click(swiper_jovi, function() {
+  $(".move_to_bf-salud").click(swiper_jovi, function() {
     swiper_jovi.slideTo(10);
   });
-  $(".move_to_bf-mascotas").click(swiper_jovi, function() {
+  $(".move_to_bf-tecnologia").click(swiper_jovi, function() {
     swiper_jovi.slideTo(11);
   });
-  $(".move_to_bf-clasificados").click(swiper_jovi, function() {
+  $(".move_to_bf-mascotas").click(swiper_jovi, function() {
     swiper_jovi.slideTo(12);
   });
-  $(".move_to_bf-radio").click(swiper_jovi, function() {
+  $(".move_to_bf-clasificados").click(swiper_jovi, function() {
     swiper_jovi.slideTo(13);
+  });
+  $(".move_to_bf-profesionales").click(swiper_jovi, function() {
+    swiper_jovi.slideTo(14);
+  });
+  $(".move_to_bf-mediakit").click(swiper_jovi, function() {
+    swiper_jovi.slideTo(15);
+  });
+  $(".move_to_bf-info").click(swiper_jovi, function() {
+    swiper_jovi.slideTo(16);
   });
 ///////////////////////////////////
 // BEGIN load iframes as needed
@@ -188,6 +197,21 @@ clearInterval(loadgeneral);
 	}
 }, 1000);
 ///////////////////////////////////
+////// policiales
+///////////////////////////////////
+var loadpoliciales = setInterval(function() {
+  function isEmpty( el ){
+      return !$.trim(el.html())
+  }
+// check if it's empty && visible
+if ( ( $('#policiales').hasClass("swiper-slide-visible") ) && ( isEmpty($('.policiales')) ) ) {
+		console.log('policiales is empty && is visible');
+$(".policiales").append('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRed-Cinco-Policiales-107124010707450%2F&tabs=timeline&width=312&height=2000&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=244071169860258" width="312" height="2000" style="border:none;overflow:scroll" scrolling="yes" frameborder="10" allowTransparency="true" allow="encrypted-media"></iframe>');
+// clear the setInterval
+clearInterval(loadpoliciales);
+	}
+}, 1000);
+///////////////////////////////////
 ////// nacionales
 ///////////////////////////////////
 var loadnacionales = setInterval(function() {
@@ -197,7 +221,7 @@ var loadnacionales = setInterval(function() {
 // check if it's empty && visible
 if ( ( $('#nacionales').hasClass("swiper-slide-visible") ) && ( isEmpty($('.nacionales')) ) ) {
 		console.log('nacionales is empty && is visible');
-$(".nacionales").append('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgranjasolidaria%2F&tabs=timeline&width=312&height=2000&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=244071169860258" width="312" height="2000" style="border:none;overflow:scroll" scrolling="yes" frameborder="10" allowTransparency="true" allow="encrypted-media"></iframe>');
+$(".nacionales").append('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRed-Cinco-Nacionales-111172713648141%2F&tabs=timeline&width=312&height=2000&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=244071169860258" width="312" height="2000" style="border:none;overflow:scroll" scrolling="yes" frameborder="10" allowTransparency="true" allow="encrypted-media"></iframe>');
 // clear the setInterval
 clearInterval(loadnacionales);
 	}
@@ -233,21 +257,6 @@ clearInterval(loadmisiones);
 	}
 }, 1000);
 ///////////////////////////////////
-////// policiales
-///////////////////////////////////
-var loadpoliciales = setInterval(function() {
-  function isEmpty( el ){
-      return !$.trim(el.html())
-  }
-// check if it's empty && visible
-if ( ( $('#policiales').hasClass("swiper-slide-visible") ) && ( isEmpty($('.policiales')) ) ) {
-		console.log('policiales is empty && is visible');
-$(".policiales").append('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRed-Cinco-Policiales-107124010707450%2F&tabs=timeline&width=312&height=2000&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=244071169860258" width="312" height="2000" style="border:none;overflow:scroll" scrolling="yes" frameborder="10" allowTransparency="true" allow="encrypted-media"></iframe>');
-// clear the setInterval
-clearInterval(loadpoliciales);
-	}
-}, 1000);
-///////////////////////////////////
 ////// deportes
 ///////////////////////////////////
 var loaddeportes = setInterval(function() {
@@ -263,18 +272,33 @@ clearInterval(loaddeportes);
 	}
 }, 1000);
 ///////////////////////////////////
-////// cultura_y_espectaculos
+////// cultura
 ///////////////////////////////////
-var loadcultura_y_espectaculos = setInterval(function() {
+var loadcultura = setInterval(function() {
   function isEmpty( el ){
       return !$.trim(el.html())
   }
 // check if it's empty && visible
-if ( ( $('#cultura_y_espectaculos').hasClass("swiper-slide-visible") ) && ( isEmpty($('.cultura_y_espectaculos')) ) ) {
-		console.log('cultura_y_espectaculos is empty && is visible');
-$(".cultura_y_espectaculos").append('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRed-Cinco-Cultura-102536434521779%2F&tabs=timeline&width=312&height=2000&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=244071169860258" width="312" height="2000" style="border:none;overflow:scroll" scrolling="yes" frameborder="10" allowTransparency="true" allow="encrypted-media"></iframe>');
+if ( ( $('#cultura').hasClass("swiper-slide-visible") ) && ( isEmpty($('.cultura')) ) ) {
+		console.log('cultura is empty && is visible');
+$(".cultura").append('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRed-Cinco-Cultura-102536434521779%2F&tabs=timeline&width=312&height=2000&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=244071169860258" width="312" height="2000" style="border:none;overflow:scroll" scrolling="yes" frameborder="10" allowTransparency="true" allow="encrypted-media"></iframe>');
 // clear the setInterval
-clearInterval(loadcultura_y_espectaculos);
+clearInterval(loadcultura);
+	}
+}, 1000);
+///////////////////////////////////
+////// espectaculos
+///////////////////////////////////
+var loadespectaculos = setInterval(function() {
+  function isEmpty( el ){
+      return !$.trim(el.html())
+  }
+// check if it's empty && visible
+if ( ( $('#espectaculos').hasClass("swiper-slide-visible") ) && ( isEmpty($('.espectaculos')) ) ) {
+		console.log('espectaculos is empty && is visible');
+$(".espectaculos").append('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRed-Cinco-Espect%C3%A1culos-108856270550050%2F&tabs=timeline&width=312&height=2000&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=244071169860258" width="312" height="2000" style="border:none;overflow:scroll" scrolling="yes" frameborder="10" allowTransparency="true" allow="encrypted-media"></iframe>');
+// clear the setInterval
+clearInterval(loadespectaculos);
 	}
 }, 1000);
 ///////////////////////////////////
@@ -332,7 +356,7 @@ var loadmascotas = setInterval(function() {
 // check if it's empty && visible
 if ( ( $('#mascotas').hasClass("swiper-slide-visible") ) && ( isEmpty($('.mascotas')) ) ) {
 		console.log('mascotas is empty && is visible');
-$(".mascotas").append('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgranjasolidaria%2F&tabs=timeline&width=312&height=2000&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=244071169860258" width="312" height="2000" style="border:none;overflow:scroll" scrolling="yes" frameborder="10" allowTransparency="true" allow="encrypted-media"></iframe>');
+$(".mascotas").append('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRed-Cinco-Mascotas-102501234528007%2F&tabs=timeline&width=312&height=2000&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=244071169860258" width="312" height="2000" style="border:none;overflow:scroll" scrolling="yes" frameborder="10" allowTransparency="true" allow="encrypted-media"></iframe>');
 // clear the setInterval
 clearInterval(loadmascotas);
 	}
@@ -347,15 +371,60 @@ var loadclasificados = setInterval(function() {
 // check if it's empty && visible
 if ( ( $('#clasificados').hasClass("swiper-slide-visible") ) && ( isEmpty($('.clasificados')) ) ) {
 		console.log('clasificados is empty && is visible');
-$(".clasificados").append('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgranjasolidaria%2F&tabs=timeline&width=312&height=2000&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=244071169860258" width="312" height="2000" style="border:none;overflow:scroll" scrolling="yes" frameborder="10" allowTransparency="true" allow="encrypted-media"></iframe>');
+$(".clasificados").append('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRed-Cinco-Clasificados-102751944502471%2F&tabs=timeline&width=312&height=2000&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=244071169860258" width="312" height="2000" style="border:none;overflow:scroll" scrolling="yes" frameborder="10" allowTransparency="true" allow="encrypted-media"></iframe>');
 // clear the setInterval
 clearInterval(loadclasificados);
 	}
 }, 1000);
 ///////////////////////////////////
+////// profesionales
+///////////////////////////////////
+var loadprofesionales = setInterval(function() {
+  function isEmpty( el ){
+      return !$.trim(el.html())
+  }
+// check if it's empty && visible
+if ( ( $('#profesionales').hasClass("swiper-slide-visible") ) && ( isEmpty($('.profesionales')) ) ) {
+		console.log('profesionales is empty && is visible');
+$(".profesionales").append('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRed-Cinco-Profesionales-104024767700689%2F&tabs=timeline&width=312&height=2000&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=244071169860258" width="312" height="2000" style="border:none;overflow:scroll" scrolling="yes" frameborder="10" allowTransparency="true" allow="encrypted-media"></iframe>');
+// clear the setInterval
+clearInterval(loadprofesionales);
+	}
+}, 1000);
+///////////////////////////////////
+////// mediakit
+///////////////////////////////////
+var loadmediakit = setInterval(function() {
+  function isEmpty( el ){
+      return !$.trim(el.html())
+  }
+// check if it's empty && visible
+if ( ( $('#mediakit').hasClass("swiper-slide-visible") ) && ( isEmpty($('.mediakit')) ) ) {
+		console.log('mediakit is empty && is visible');
+$(".mediakit").append('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRed-Cinco-Media-Kit-114178356680212%2F&tabs=timeline&width=312&height=2000&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=244071169860258" width="312" height="2000" style="border:none;overflow:scroll" scrolling="yes" frameborder="10" allowTransparency="true" allow="encrypted-media"></iframe>');
+// clear the setInterval
+clearInterval(loadmediakit);
+	}
+}, 1000);
+///////////////////////////////////
+////// info
+///////////////////////////////////
+var loadinfo = setInterval(function() {
+  function isEmpty( el ){
+      return !$.trim(el.html())
+  }
+// check if it's empty && visible
+if ( ( $('#info').hasClass("swiper-slide-visible") ) && ( isEmpty($('.info')) ) ) {
+		console.log('info is empty && is visible');
+$(".info").append('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgranjasolidaria%2F&tabs=timeline&width=312&height=2000&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=244071169860258" width="312" height="2000" style="border:none;overflow:scroll" scrolling="yes" frameborder="10" allowTransparency="true" allow="encrypted-media"></iframe>');
+// clear the setInterval
+clearInterval(loadinfo);
+	}
+}, 1000);
+///////////////////////////////////
 ////// radio
 ///////////////////////////////////
-var loadradio = setInterval(function() {
+/*var loadradio = setInterval(function() {
   function isEmpty( el ){
       return !$.trim(el.html())
   }
@@ -367,7 +436,7 @@ $(".radio").append('<iframe src="https://www.facebook.com/plugins/page.php?href=
 clearInterval(loadradio);
 	}
 }, 1000);
-
+*/
 
 
 ///////////////////////////////////
