@@ -85,8 +85,8 @@ $(".flex-parent").children(".flex-child").each(function() {
   var swiper_jovi = new Swiper(".swiper-container-main", {
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
-    initialSlide: 1,
-    slidesPerView: 20,
+    initialSlide: 2,
+//  slidesPerView: 3,
     spaceBetween: 4,
     preventClicks: true,
     //    scrollbar: ".swiper-scrollbar",
@@ -98,7 +98,7 @@ $(".flex-parent").children(".flex-child").each(function() {
 //    grabCursor: true,
     shortSwipes: false,
     centeredSlides: false,
-//    slidesPerView: "auto",
+    slidesPerView: "auto",
     hashnav: true,
 //    coverflowEffect: {
 //      rotate: 50,
