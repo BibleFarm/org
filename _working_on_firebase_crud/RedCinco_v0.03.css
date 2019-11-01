@@ -775,6 +775,7 @@ body {
   line-height: 44px;
 }
 .bf_wrap_top_logo_desktop {
+  cursor: pointer;
   width: 216px;
   line-height: 44px;
 }
@@ -793,6 +794,8 @@ body {
   display: block;
   width: calc(100% - 328px);
   line-height: 44px;
+  margin-left: 8px;
+    margin-right: 8px;
 }
 .flex-parent {
   display: flex;
@@ -802,14 +805,13 @@ body {
   height: 44px;
 }
 .flex-child {
-    background:none;
-    color:#000000;
+    background:#FF5E33;
+    color:#ffffff;
   line-height: 44px;
   white-space: nowrap;
   padding-left: 8px;
   padding-right: 8px;
   cursor: pointer;
-  text-shadow: 2px 2px 1px #bdbdbd;
   }
   .flex-child:hover {
     background:#c7c7c7;
@@ -918,7 +920,6 @@ body {
 }
 .std_line_44px_left {
   color: #000000;
-  text-shadow: 2px 2px 1px #bdbdbd;
   font-size: 18px;
   line-height: 44px;
   text-align: left;
@@ -1389,9 +1390,12 @@ a.link_to_youtube_channel:focus {
       height: calc(100vh - 150px);
     }
     .padding_left_10px {
+      color: #ffffff;
+      background:#FF5E33;
       cursor: pointer;
       text-align: center;
       font-size: 18px;
+      margin: 4px;
     }
     .padding_left_10px:hover {
       background:#c7c7c7;
@@ -2487,7 +2491,6 @@ max-width: 88px;
   display: block;
   width: 100%;
   text-align: center;
-  background: #c7c7c7;
 }
 .rc_whatsapp, .rc_facebook, .rc_twitter, .rc_instagram, .rc_youtube {
   display: inline-block;
@@ -2511,4 +2514,8 @@ img {
 .pub_312x92 {
   margin-bottom: 4px;
   text-align: center;
+}
+.bf_wrap_top_burger_desktop, .flex-child, .bf_wrap_top_about_desktop, .padding_left_10px, .rc_social, .swiper-button-prev, .swiper-button-next, {
+  background: #FF5E33 !important;
+      color: #ffffff !important;
 }
