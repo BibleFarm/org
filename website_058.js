@@ -528,7 +528,7 @@ var RYPP = (function($, undefined) {
 
       // Default options
       this.options = {
-        update_title_desc: false,
+        update_title_desc: true,
         autoplay: true,
         autonext: true,
         loop: true,
@@ -1261,4 +1261,18 @@ $(document).ready(function() {
 
 ////////////////////////////////////////////////////
 // END PureChat hack
+////////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////////
+// BEGIN fix to sort youtube playlist 
+////////////////////////////////////////////////////
+var elems = $('ol li').detach().sort(function (a, b) {
+  return ($(a).text() > $(b).text() ? -1 
+        : $(a).text() < $(b).text() ? 1 : 0);
+}); 
+$('ol').append(elems);
+////////////////////////////////////////////////////
+// END fix to sort youtube playlist 
 ////////////////////////////////////////////////////
