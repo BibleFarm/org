@@ -506,7 +506,7 @@ var RYPP = (function($, undefined) {
           "https://www.googleapis.com/youtube/v3/playlists?part=snippet&id={{RESOURCES_ID}}&key={{YOUR_API_KEY}}",
         playlist:
           "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId={{RESOURCES_ID}}&key={{YOUR_API_KEY}}",
-        pl_ID: "",
+        pl_ID: "PL-SXzhnj1OgLUY7MqL-RW1FrJSXTpXltA",
         videolist:
           "https://www.googleapis.com/youtube/v3/videos?part=snippet,status&maxResults=50&id={{RESOURCES_ID}}&key={{YOUR_API_KEY}}"
       },
