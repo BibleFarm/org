@@ -843,6 +843,19 @@ var RYPP = (function($, undefined) {
           thu +
           '" class="thumb"></li>'
       ).appendTo(D.$items.find("ol"));
+	  
+////////////////////////////////////////////////////
+// BEGIN fix to sort youtube playlist 
+////////////////////////////////////////////////////
+var elems = $('ol li').detach().sort(function (a, b) {
+  return ($(a).text() > $(b).text() ? -1 
+        : $(a).text() < $(b).text() ? 1 : 0);
+}); 
+$('ol').append(elems);
+////////////////////////////////////////////////////
+// END fix to sort youtube playlist 
+////////////////////////////////////////////////////
+	  
     }
   }; // prototypes
 
@@ -1265,14 +1278,3 @@ $(document).ready(function() {
 
 
 
-////////////////////////////////////////////////////
-// BEGIN fix to sort youtube playlist 
-////////////////////////////////////////////////////
-var elems = $('ol li').detach().sort(function (a, b) {
-  return ($(a).text() > $(b).text() ? -1 
-        : $(a).text() < $(b).text() ? 1 : 0);
-}); 
-$('ol').append(elems);
-////////////////////////////////////////////////////
-// END fix to sort youtube playlist 
-////////////////////////////////////////////////////
