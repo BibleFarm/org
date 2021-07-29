@@ -923,7 +923,7 @@ $(document).ready(function() {
     debug: true
   });
 
-  $(".RYPP .RYPP-playlist").addClass("bgc-0007");
+  $(".RYPP .RYPP-playlist").addClass("bgc-0006");
 });
 ////////////////////////////////////////////////////
 /////////////////////////////////////////////////////

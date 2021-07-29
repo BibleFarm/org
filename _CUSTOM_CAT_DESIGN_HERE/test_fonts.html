@@ -1,0 +1,141 @@
+<html>
+<head>
+<style>
+.CUSTOMER_BACKGROUND_1 {
+position: fixed;
+top: 0px;
+left: 0px;
+}
+.CUSTOMER_BACKGROUND_2 {
+position: fixed;
+top: 1150px;
+left: 0px;
+}
+@font-face {
+  font-family: "Thekingofromance-z8jDX";
+  src: url(../shop_fonts/Thekingofromance-z8jDX.otf) format("opentype");
+}
+@font-face {
+  font-family: "Audiowide-en4g";
+  src: url(../shop_fonts/Audiowide-en4g.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Capsuularegular-Onm3";
+  src: url(../shop_fonts/Capsuularegular-Onm3.ttf) format("truetype");
+}
+@font-face {
+  font-family: "SebneueRegular-eAGm";
+  src: url(../shop_fonts/SebneueRegular-eAGm.otf) format("truetype");
+}
+@font-face {
+  font-family: "SebneueBold-PwMm";
+  src: url(../shop_fonts/SebneueBold-PwMm.otf) format("truetype");
+}
+@font-face {
+  font-family: "NeogreyRegular";
+  src: url(../shop_fonts/NeogreyRegular.otf) format("truetype");
+}
+@font-face {
+  font-family: "NeogreyMedium";
+  src: url(../shop_fonts/NeogreyMedium.otf) format("truetype");
+}
+.Thekingofromance-z8jDX {
+  font-family: "Thekingofromance-z8jDX";
+  top: 200px;
+}
+.Audiowide-en4g {
+  font-family: "Audiowide-en4g";
+  top: 400px;
+}
+.Capsuularegular-Onm3 {
+  font-family: "Capsuularegular-Onm3";
+  top: 600px;
+}
+.SebneueRegular-eAGm {
+  font-family: "SebneueRegular-eAGm";
+  top: 800px;
+}
+.SebneueBold-PwMm {
+  font-family: "SebneueBold-PwMm";
+  top: 1000px;
+}
+.NeogreyRegular {
+  font-family: "NeogreyRegular";
+  top: 1200px;
+}
+.NeogreyMedium {
+  font-family: "NeogreyMedium";
+  top: 1400px;
+}
+.stroked {
+position: fixed;
+display: block;
+width: 1000px;
+height: 800px;
+
+}
+</style>
+</head>
+<body>
+<div class="CUSTOMER_BACKGROUND_1">
+<img class="" width="2717" height="1146" src="../bg-light/L-07.png" alt="" />
+</div>
+<div class="CUSTOMER_BACKGROUND_2">
+<img class="" width="2717" height="1146" src="../bg-light/L-07.png" alt="" />
+</div>
+
+<div class="stroked Thekingofromance-z8jDX"><span>Thekingofromance-z8jDXPero los que esperan a Jehová tendrán nuevas fuerzas 1 Thessalonians 4:31</span></div>
+<div class="stroked Audiowide-en4g"><span>Audiowide-en4gPero los que esperan a Jehová tendrán nuevas fuerzas 1 Thessalonians 4:31</span></div>
+<div class="stroked Capsuularegular-Onm3"><span>Capsuularegular-Onm3Pero los que esperan a Jehová tendrán nuevas fuerzas 1 Thessalonians 4:31</span></div>
+<div class="stroked SebneueRegular-eAGm"><span>SebneueRegular-eAGmPero los que esperan a Jehová tendrán nuevas fuerzas 1 Thessalonians 4:31</span></div>
+<div class="stroked SebneueBold-PwMm"><span>SebneueBold-PwMmPero los que esperan a Jehová tendrán nuevas fuerzas 1 Thessalonians 4:31</span></div>
+<div class="stroked NeogreyRegular"><span>NeogreyRegularPero los que esperan a Jehová tendrán nuevas fuerzas 1 Thessalonians 4:31</span></div>
+<div class="stroked NeogreyMedium"><span>NeogreyMediumPero los que esperan a Jehová tendrán nuevas fuerzas 1 Thessalonians 4:31</span></div>
+
+
+  <!-- jQuery -->
+  <script src="../shop_js/o_jquery-310.min.js" type="text/javascript"></script>
+<!-- _jquery.textfill_0.6.2.js -->
+<script type="text/javascript" src="../shop_js/jquery_textfill_062.js"></script>
+
+
+<script>
+$(document).ready(function (){
+
+	function renderIn_modalVerse() {
+		$('.stroked').html(
+			'<span>' + $('#customize_verse').val() + '</span>'
+		);
+		$('.stroked').textfill({
+			maxFontPixels: 2000
+		});
+	}
+
+
+
+// BEGIN textStroke. text stroke made by http://jsfiddle.net/KjyYV/ hack, thanks to http://readysetdinosaurs.blogspot.com.ar/2013/05/adding-text-strokes-with-jquery-and-css.html https://github.com/simonausten/jquery-textstroke/blob/master/jquery-textstroke.js
+$.fn.textStroke = function(r, colour) {
+var rules = [];
+var steps = 24;
+for (var t=0;t<=(2*Math.PI);t+=(2*Math.PI)/steps){
+var x = r*Math.cos(t);
+var y = r*Math.sin(t);
+x = (Math.abs(x) < 1e-6) ? '0' : x.toString();
+y = (Math.abs(y) < 1e-6) ? '0' : y.toString();
+rules.push( x + "px " + y + "px 0px " + colour );
+}
+this.css('textShadow',rules.join());
+};
+$(function(){
+    $('.stroked').textStroke(2,'#d5ad6d');
+})
+// END textStroke
+
+
+
+});
+
+
+
+</body>
+</html>
