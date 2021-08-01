@@ -1,0 +1,11 @@
+AAA_does_not_work-1-1_s	AAA this does not work	AAA_does_not_work 1:1	Image00001	bgc-0002
+Genesis-1-1	In the beginning God created the heaven and the earth.	1 Thessalonians 1 : 1	Image00002	bgc-0003
+Genesis-1-2	And the earth was without form, and void; and darkness <i>was</i> upon the face of the deep. And the Spirit of God moved upon the face of the waters.	Genesis 1:2	Image00003	bgc-0004
+Genesis-1-3	And God said, Let there be light: and there was light.	Genesis 1:3	Image00004	bgc-0005
+Genesis-1-4	And God saw the light, that <i>it was</i> good: and God divided the light from the darkness.	Genesis 1:4	Image00005	bgc-0006
+Genesis-1-5	And God called the light Day, and the darkness he called Night. And the evening and the morning were the first day.	Genesis 1:5	Image00006	bgc-0007
+Genesis-1-6	And God said, Let there be a firmament in the midst of the waters, and let it divide the waters from the waters.	Genesis 1:6	Image00007	bgc-0008
+Genesis-1-7	And God made the firmament, and divided the waters which <i>were</i> under the firmament from the waters which <i>were</i> above the firmament: and it was so.	Genesis 1:7	Image00008	bgc-0009
+Genesis-1-8	And God called the firmament Heaven. And the evening and the morning were the second day.	Genesis 1:8	Image00009	bgc-0010
+Genesis-1-9	And God said, Let the waters under the heaven be gathered together unto one place, and let the dry <i>land</i> appear: and it was so.	Genesis 1:9	Image00010	bgc-0011
+Genesis-1-10	And God called the dry <i>land</i> Earth; and the gathering together of the waters called he Seas: and God saw that <i>it was</i> good.	Genesis 1:10	Image00011	bgc-0012

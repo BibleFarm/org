@@ -1,18 +1,18 @@
 @font-face {
   font-family: "LoversQuarrel-Regular";
-  src: url(../../../shop/shop_fonts/LoversQuarrel-Regular.ttf) format("truetype");
+  src: url(../../../shop_fonts/LoversQuarrel-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Gruppo-Regular";
-  src: url(../../../shop/shop_fonts/Gruppo-Regular.ttf) format("truetype");
+  src: url(../../../shop_fonts/Gruppo-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "PT_Sans-Narrow-Web-Regular";
-  src: url(../../../shop/shop_fonts/PT_Sans-Narrow-Web-Regular.ttf) format("truetype");
+  src: url(../../../shop_fonts/PT_Sans-Narrow-Web-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: 'OpenSansCondensed-Light';
-  src: url(../../../shop/shop_fonts/OpenSansCondensed-Light.ttf) format("opentype");
+  src: url(../../../shop_fonts/OpenSansCondensed-Light.ttf) format("opentype");
 }
 
 
@@ -453,6 +453,9 @@ padding: 4px;
     padding-right: 40px;
     border-radius: 22px;
     background: black;
+}
+.shipping_included {
+font-size: 50px;
 }
     /* background colors */
      .bgc-0000 {
