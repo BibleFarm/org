@@ -1,0 +1,934 @@
+@font-face {
+  font-family: "LoversQuarrel-Regular";
+  src: url(../shop_fonts/LoversQuarrel-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Gruppo-Regular";
+  src: url(../shop_fonts/Gruppo-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PT_Sans-Narrow-Web-Regular";
+  src: url(../shop_fonts/PT_Sans-Narrow-Web-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'OpenSansCondensed-Light';
+  src: url(../shop_fonts/OpenSansCondensed-Light.ttf) format("opentype");
+}
+
+
+html, body {
+	background: ;
+	margin: 0 auto;
+	  /*    text-shadow: 2px 2px 1px #000000; */
+		  color: #222222;
+		    font-family: "Gruppo-Regular";
+
+}
+.wrap_output {
+	background: black;
+	width: 1200px;
+height: 1200px;
+min-height: 1200px;
+max-height: 1200px;
+}
+.center_image_container {
+position: fixed;
+    display: flex;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    top: 338px;
+    left: 45px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+}
+.blank_mug {
+	position: absolute;
+	top: 0px;
+}
+.dupe_blank_mug {
+	position: absolute;
+	top: 814px;
+}
+.flower_image {
+position: relative;
+    max-width: 90px;
+    max-height: 90px;
+    display: block;
+    margin: 0 auto;
+}
+.top {
+font-family: "Gruppo-Regular";
+}
+.bot {
+font-family: "Gruppo-Regular";
+}
+.top_left {
+	position: absolute;
+	left: 120px;
+	top: 150px;
+	  display: table-cell;
+width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    margin-left: 25px;
+    margin-right: 25px;
+  text-align: center;
+  font-size: 30px;
+}
+.bot_left {
+position: absolute;
+    left: 614px;
+    top: 836px;
+    display: none;
+    width: 411px;
+    /* max-width: 200px; */
+    /* min-width: 200px; */
+    height: 50px;
+    max-height: 50px;
+    min-height: 50px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 50px;
+    filter: drop-shadow(0px 0px 4px #999);
+}
+.dupe_bot_left {
+position: absolute;
+    left: 614px;
+    top: 1318px;
+    display: table-cell;
+    width: 411px;
+    /* max-width: 200px; */
+    /* min-width: 200px; */
+    height: 50px;
+    max-height: 50px;
+    min-height: 50px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 50px;
+    filter: drop-shadow(0px 0px 4px #999);
+}
+.top_center {
+	position: absolute;
+	left: 20px;
+	top: 40px;
+	  display: table-cell;
+width: 190px;
+    max-width: 190px;
+    min-width: 190px;
+    height: 190px;
+    max-height: 190px;
+    min-height: 190px;
+	  text-align: center;
+}
+.selected_bible_verse_fixed_on_mug-table {
+position: fixed;
+    display: none;
+    left: 642px;
+    top: 442px;
+    width: 356px;
+    height: 400px;
+    text-align: center;
+    z-index: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 6px #999);
+}
+.dupe_selected_bible_verse_fixed_on_mug-table {
+position: fixed;
+    display: flex;
+    left: 642px;
+    top: 924px;
+    width: 356px;
+    height: 400px;
+    text-align: center;
+    z-index: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 6px #999);
+}
+.selected_bible_verse_fixed_on_mug {
+display: flex;
+    width: 356px;
+    height: 390px;
+    font-family: 'OpenSansCondensed-Light';
+    font-weight: bold;
+    text-shadow: none;
+    color: #222222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.dupe_selected_bible_verse_fixed_on_mug {
+display: flex;
+    width: 356px;
+    height: 390px;
+    font-family: 'OpenSansCondensed-Light';
+    font-weight: bold;
+    text-shadow: none;
+    color: #222222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.selected_bible_verse_fixed_on_mug_in_modalReviewOrder-table {
+position: fixed;
+    display: flex;
+    left: 114px;
+    top: 260px;
+    width: 180px;
+    height: 214px;
+    text-align: center;
+    z-index: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.5);
+			filter: drop-shadow(0px 0px 4px gray);
+			display: none;
+}
+.dupe_selected_bible_verse_fixed_on_mug_in_modalReviewOrder-table {
+position: fixed;
+    display: flex;
+    left: 114px;
+    top: 260px;
+    width: 180px;
+    height: 214px;
+    text-align: center;
+    z-index: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.5);
+			filter: drop-shadow(0px 0px 4px gray);
+			display: none;
+}
+.selected_bible_verse_fixed_on_mug_in_modalReviewOrder {
+height: 214px;
+    font-family: 'OpenSansCondensed-Light';
+    font-weight: bold;
+    text-shadow: none;
+    color: #222222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.dupe_selected_bible_verse_fixed_on_mug_in_modalReviewOrder {
+height: 214px;
+    font-family: 'OpenSansCondensed-Light';
+    font-weight: bold;
+    text-shadow: none;
+    color: #222222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.bot_center {
+  position: absolute;
+      left: 364px;
+      top: 980px;
+      display: table-cell;
+      width: 740px;
+      max-width: 740px;
+      min-width: 740px;
+      height: 100px;
+      max-height: 100px;
+      min-height: 100px;
+      text-align: center;
+      font-size: 52px;
+      line-height: 100px;
+      filter: drop-shadow(0px 0px 4px #999);
+}
+.dupe_bot_center {
+position: absolute;
+    left: 172px;
+    top: 1318px;
+    display: table-cell;
+    width: 411px;
+    /* max-width: 200px; */
+    /* min-width: 200px; */
+    height: 50px;
+    max-height: 50px;
+    min-height: 50px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 50px;
+    filter: drop-shadow(0px 0px 4px #999);
+}
+.top_right {
+	position: absolute;
+	left: 760px;
+	top: 150px;
+	  display: table-cell;
+width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    margin-left: 25px;
+    margin-right: 25px;
+  text-align: center;
+  font-size: 30px;
+}
+.bot_right {
+position: absolute;
+    left: 155px;
+    top: 420px;
+    display: table-cell;
+    width: 100px;
+    max-width: 100px;
+    min-width: 100px;
+    height: 20px;
+    max-height: 20px;
+    min-height: 20px;
+    text-align: center;
+    font-size: 8px;
+				filter: drop-shadow(0px 0px 2px black);
+				display: none;
+}
+.dupe_bot_right {
+position: absolute;
+    left: 155px;
+    top: 420px;
+    display: table-cell;
+    width: 100px;
+    max-width: 100px;
+    min-width: 100px;
+    height: 20px;
+    max-height: 20px;
+    min-height: 20px;
+    text-align: center;
+    font-size: 8px;
+				filter: drop-shadow(0px 0px 2px black);
+				display: none;
+}
+.wrap_verse_left {
+position: absolute;
+    display: flex;
+    left: 330px;
+    top: 200px;
+    width: 800px;
+    height: 200px;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 6px #999);
+}
+.dupe_wrap_verse_left {
+position: absolute;
+    display: flex;
+    left: 184px;
+    top: 912px;
+    width: 380px;
+    height: 150px;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 6px #999);
+}
+.wrap_verse_center {
+position: absolute;
+    left: 100px;
+    top: 270px;
+    display: table-cell;
+    width: 100px;
+    max-width: 100px;
+    min-width: 100px;
+    height: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    text-align: center;
+}
+.wrap_verse_right {
+position: absolute;
+    left: 100px;
+    top: 270px;
+    display: table-cell;
+    width: 100px;
+    max-width: 100px;
+    min-width: 100px;
+    height: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    text-align: center;
+}
+.name {
+font-family: 'LoversQuarrel-Regular', sans-serif;
+    color: #222222;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 320px;
+}
+.dupe_name {
+font-family: 'LoversQuarrel-Regular', sans-serif;
+    color: #222222;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 105px;
+}
+.verse {
+    font-family: 'LoversQuarrel-Regular', sans-serif;
+display: table-cell;
+    vertical-align: middle;
+    color: #222222;
+    height: 100px;
+    width: 100px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.top_verse {
+    font-family: 'PT_Sans-Narrow-Web-Regular', sans-serif;
+display: table-cell;
+    vertical-align: middle;
+    color: #D5AD6D;
+    height: 190px;
+    width: 190px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: ;
+    padding-right: 0px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.the3dots {
+	position: absolute;
+	top: 110px;
+    font-family: 'PT_Sans-Narrow-Web-Regular', sans-serif;
+	font-size: 40px;
+display: table-cell;
+    vertical-align: middle;
+    color: #D5AD6D;
+    height: 220px;
+    width: 1100px;
+    padding-left: 60px;
+    padding-right: 0px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+white-space: nowrap;
+
+}
+.theverseref {
+	position: absolute;
+	top: 140px;
+    font-family: 'PT_Sans-Narrow-Web-Regular', sans-serif;
+	font-size: 60px;
+display: table-cell;
+    vertical-align: middle;
+    color: #D5AD6D;
+    height: 220px;
+    width: 1100px;
+    padding-left: 60px;
+    padding-right: 0px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+white-space: nowrap;
+}
+.justify {
+	text-align: justify;
+}
+i {
+	/* margin-right: 1.5%; */
+	 font-style: normal;
+}
+span {
+line-height: 120%;
+margin-bottom: 1%;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.mug_mockup_background_image{
+display: ;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+.red {color:#dd0000; font-size: 26px}
+
+.wrap_container_showing_selected_picture_little_Left {
+}
+img.container_showing_selected_picture_little_Left {
+}
+.dupe_wrap_container_showing_selected_picture_little_Left {
+}
+img.dupe_container_showing_selected_picture_little_Left {
+}
+.customCSSforFlowers_table {
+  position: fixed;
+      top: 230px;
+      left: 60px;
+      display: flex;
+      width: 200px;
+      height: 210px;
+      margin: 0 auto;
+      padding: 0;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+}
+.customCSSforFlowers_cell {
+      max-width: 200px !important;
+      max-height: 130px;
+      filter: drop-shadow(2px 4px 8px gray);
+}
+.customCSSforFlowers_flex_little_Left {
+  position: fixed;
+      display: flex;
+      top: 460px;
+      left: 364px;
+      width: 740px;
+      height: 600px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      filter: drop-shadow(2px 4px 8px gray);
+}
+.customCSSforFlowers_item_little_Left {
+    max-width: 740px;
+    max-height: 530px;
+}
+.customCSSforScenery_flex_little_Left {
+position: fixed;
+    display: flex;
+    top: 460px;
+    left: 150px;
+    max-width: 640px;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 4px #999);
+}
+.customCSSforScenery_item_little_Left {
+  display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-width: 640px;
+}
+.dupe_customCSSforFlowers_flex_little_Left {
+position: fixed;
+    display: flex;
+    top: 1040px;
+    left: 207px;
+    width: 340px;
+    height: 264px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(2px 4px 8px gray);
+}
+.dupe_customCSSforFlowers_item_little_Left {
+    max-width: 340px;
+    max-height: 264px;
+}
+.dupe_customCSSforScenery_flex_little_Left {
+position: fixed;
+    display: flex;
+    top: 220px;
+    left: 207px;
+    max-width: 340px;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 4px #999);
+}
+.dupe_customCSSforScenery_item_little_Left {
+  display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-width: 340px;
+}
+.ad_intro {
+position: fixed;
+    display: none;
+    top: 914px;
+    left: 0;
+    width: 1200px;
+    height: 60px;
+    line-height: 80px;
+    text-align: center;
+    font-family: "PT_Sans-Narrow-Web-Regular";
+    font-size: 76px;
+    color: lightgray;
+}
+.ad_big_message_1 {
+  position: fixed;
+      display: none;
+      top: 900px;
+      left: 0px;
+      width: 1200px;
+      height: 300px;
+      line-height: 300px;
+      text-align: left;
+      font-family: "PT_Sans-Narrow-Web-Regular";
+      font-size: 400px;
+      color: #d5ad6d;
+      padding-left: 50px;
+}
+.ad_big_message_2 {
+position: fixed;
+    display: none;
+    top: 279px;
+    left: 0;
+    width: 1200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-family: "PT_Sans-Narrow-Web-Regular";
+    font-size: 121px;
+    color: #d5ad6d;
+}
+.ad_big_message_3 {
+position: fixed;
+    display: none;
+    top: 1008px;
+    left: 0;
+    width: 1200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-family: "PT_Sans-Narrow-Web-Regular";
+    font-size: 88px;
+    color: #d5ad6d;
+}
+.ad_description {
+position: fixed;
+    display: none;
+    top: 1032px;
+    left: 0;
+    width: 1200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-family: "PT_Sans-Narrow-Web-Regular";
+    font-size: 63px;
+    color: lightgray;
+}
+.shop {
+position: fixed;
+    display: block;
+    width: 1200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-family: "PT_Sans-Narrow-Web-Regular";
+    font-size: 90px;
+    color: lightgray;
+	z-index: 1;
+}
+.shop > span {
+}
+.shop_top_center {
+    top: -8px;
+    left: 0;
+    display: none;
+}
+.shop_top_left {
+    top: 0px;
+    left: -460px;
+	display: none;
+}
+.shop_top_right {
+    top: 0px;
+    left: 460px;
+	display: none;
+}
+.shop_bot_center {
+    top: 1072px;
+    left: 0;
+    display: none;
+}
+.shop_bot_left {
+    top: 1394px;
+    left: -424px;
+	display: none;
+}
+.shop_bot_right {
+    top: 1394px;
+    left: 404px;
+	display: none;
+}
+
+
+    /* background colors */
+     .bgc-0000 {
+        background: white !important;
+    }
+     .bgc-0001{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 0%, 10%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0002{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 0%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0003{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0004{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(20, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0005{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(40, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0006{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(60, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0007{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(80, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0008{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(120, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0009{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(160, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0010{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(180, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0011{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(200, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0012{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(240, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0013{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(260, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0014{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(280, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0015{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(300, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0016{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(320, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+
+
+/*
+.bgc-0001	onyx				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 0%, 10%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0002	stone				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 0%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0003	jasper				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0004	sardonyx			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(20, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0005	jacinth				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(40, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0006	sardius				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(60, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0007	topaz				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(80, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0008	emerald				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(120, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0009	chrysolite			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(160, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0010	beryl				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(180, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0011	chrysoprasus		done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(200, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0012	sapphire			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(240, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0013	purple				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(260, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0014	chalcedony			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(280, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0015	amethyst			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(300, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0016	wine				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(320, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+*/
+
+
+
+.DesignCustomerOrdersUI {
+position: fixed;
+display: block;
+top: 1205px;
+left: 0px;
+min-width: 1000px;
+font-size: 80px;
+background: ;
+}
+.DesignCustomerOrdersUI_imput_ORDER {
+min-width: 1000px;
+line-height: 80px;
+font-size: 80px;
+}
+.DesignCustomerOrdersUI_imput_NAME {
+min-width: 1000px;
+line-height: 80px;
+font-size: 80px;
+}
+.DesignCustomerOrdersUI_imput_FLOWER {
+min-width: 1000px;
+line-height: 80px;
+font-size: 80px;
+}
+.DesignCustomerOrdersUI_select_increaseFlowerHeight {
+min-width: 1000px;
+line-height: 80px;
+font-size: 80px;
+}
+.DesignCustomerOrdersUI_select_moveFlowerUpDown {
+min-width: 1000px;
+line-height: 80px;
+font-size: 80px;
+}
+.DesignCustomerOrdersUI_select_increaseFontSize {
+min-width: 1000px;
+line-height: 80px;
+font-size: 80px;
+}
+.DesignCustomerOrdersUI_select_decreaseLineHeight {
+min-width: 1000px;
+line-height: 80px;
+font-size: 80px;
+}
+.DesignCustomerOrdersUI_select_moveRefSideways {
+  min-width: 1000px;
+  line-height: 80px;
+  font-size: 80px;
+}
+.DesignCustomerOrdersUI_imput_VERSE {
+  display: none;
+min-width: 1000px;
+line-height: 80px;
+font-size: 80px;
+}
+.select_book {
+min-width: 1000px;
+line-height: 80px;
+font-size: 80px;
+display: inline-block;
+}
+.select_chapter {
+min-width: 500px;
+line-height: 80px;
+font-size: 80px;
+display: inline-block;
+}
+.select_verse {
+min-width: 500px;
+line-height: 80px;
+font-size: 80px;
+display: inline-block;
+}
+.DesignCustomerOrdersUI_imput_REF {
+  display: none;
+min-width: 1000px;
+line-height: 80px;
+font-size: 80px;
+}
+.DesignCustomerOrdersUI_imput_BG {
+min-width: 1000px;
+line-height: 80px;
+font-size: 80px;
+}
+.DesignCustomerOrdersUI_button {
+min-width: 1000px;
+line-height: 80px;
+font-size: 80px;
+}
+.DesignCustomerOrdersUI_imput_JS_file_name {
+min-width: 1000px;
+line-height: 80px;
+font-size: 80px;
+}
+.DesignCustomerOrdersUI_textarea_JS_file_content {
+width: 3600px;
+height: 1000px;
+font-family: sans-serif;
+font-size: 60px;
+overflow: auto;
+background: lightgray;
+}
+button#create {
+min-width: 1000px;
+line-height: 80px;
+font-size: 80px;
+}
+.wrap_downloadable_image {
+position: fixed;
+display: none;
+top: 0;
+    left: 0px;
+	width: 2717px;
+	height: 1146px;
+	background: blue;
+}
+#capture {
+position: fixed;
+top: 0;
+left: 0;
+width: 2717px;
+height: 1146px;
+}
+#hidden_book_desired, #hidden_chapter_desired, #hidden_verse_desired {display: none;}

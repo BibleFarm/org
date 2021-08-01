@@ -1,0 +1,48 @@
+ // leave this alone
+const puppeteer = require('/home/demo/node_modules/puppeteer');
+
+(async () => {
+
+const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1500}  });
+
+const page = await browser.newPage();
+
+// BEGIN paste here:
+
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/1-Corinthians-13-13.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/1-Corinthians-13-13.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/1-Corinthians-16-14.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/1-Corinthians-16-14.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/2-Corinthians-5-7.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/2-Corinthians-5-7.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/Colossians-3-14.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/Colossians-3-14.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/Ephesians-6-10.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/Ephesians-6-10.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/Galatians-6-9.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/Galatians-6-9.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/Philippians-4-13.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/Philippians-4-13.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/Philippians-4-8.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/Philippians-4-8.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/Romans-10-17.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/Romans-10-17.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/Romans-8-28.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/Romans-8-28.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/Romans-8-37.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/Romans-8-37.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/John-10-28.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/John-10-28.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/John-15-3.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/John-15-3.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/John-3-16.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/John-3-16.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/John-3-7.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/John-3-7.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/2-Chronicles-7-14.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/2-Chronicles-7-14.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/Deuteronomy-31-8.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/Deuteronomy-31-8.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/Isaiah-41-10.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/Isaiah-41-10.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/Jeremiah-29-11.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/Jeremiah-29-11.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/Jeremiah-32-27.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/Jeremiah-32-27.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/Psalms-10-6.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/Psalms-10-6.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/Psalms-118-24.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/Psalms-118-24.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/Psalms-150-6.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/Psalms-150-6.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/Psalms-33-22.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/Psalms-33-22.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/Psalms-34-8.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/Psalms-34-8.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/Psalms-46-1.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/Psalms-46-1.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/Psalms-62-5.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/Psalms-62-5.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/Luke-18-27.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/Luke-18-27.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/Matthew-18-20.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/Matthew-18-20.png' });
+await page.goto('file:///media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Pages/Matthew-6-11.html'); await page.waitForTimeout(1000); await page.screenshot({ path: '/media/demo/ALL-DATA/Github/local-shop/Create_Pages_And_Images/Ads_Items_Mugs/Images/Matthew-6-11.png' });
+
+// END paste here:
+
+await browser.close();
+
+})();
+

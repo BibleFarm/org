@@ -1,0 +1,833 @@
+/* 3816 - 7632 */
+@font-face {
+  font-family: "LoversQuarrel-Regular";
+  src: url(../../../shop/shop_fonts/LoversQuarrel-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Gruppo-Regular";
+  src: url(../../../shop/shop_fonts/Gruppo-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PT_Sans-Narrow-Web-Regular";
+  src: url(../../../shop/shop_fonts/PT_Sans-Narrow-Web-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'OpenSansCondensed-Light';
+  src: url(../../../shop/shop_fonts/OpenSansCondensed-Light.ttf) format("opentype");
+}
+
+
+html, body {
+	background: ;
+	margin: 0 auto;
+	  /*    text-shadow: 2px 2px 1px #000000; */
+		  color: #222222;
+		    font-family: "Gruppo-Regular";
+
+}
+
+.wrap_output {
+width: 7632px;
+height: 7632px;
+overflow: auto;
+}
+.center_image_container {
+position: fixed;
+    display: flex;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    top: 338px;
+    left: 45px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+	}
+.blank_mug {
+	position: absolute;
+	display:none;
+	top: 0;
+}
+.flower_image {
+position: relative;
+    max-width: 90px;
+    max-height: 90px;
+    display: block;
+    margin: 0 auto;
+	}
+.top {
+	  font-family: "Gruppo-Regular";
+}
+.bot {
+	  font-family: "Gruppo-Regular";
+}
+.top_left {
+	position: absolute;
+	left: 120px;
+	top: 150px;
+	  display: table-cell;
+width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    margin-left: 25px;
+    margin-right: 25px;
+  text-align: center;
+  font-size: 30px;
+}
+.bot_left {
+position: absolute;
+    left: 14px;
+    top: 250px;
+    display: none;
+    width: 200px;
+    max-width: 200px;
+    min-width: 200px;
+    height: 50px;
+    max-height: 50px;
+    min-height: 50px;
+    text-align: center;
+    font-size: 18px;
+	filter: drop-shadow(0px 0px 4px #999);
+	}
+.top_center {
+	position: absolute;
+	left: 20px;
+	top: 40px;
+	  display: table-cell;
+width: 190px;
+    max-width: 190px;
+    min-width: 190px;
+    height: 190px;
+    max-height: 190px;
+    min-height: 190px;
+	  text-align: center;
+	}
+	
+.selected_bible_verse_fixed_on_mug-table-above {
+position: absolute;
+    display: flex;
+    left: 144px;
+    top: 0px;
+    width: 7200px;
+    height: 2544px;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    filter: drop-shadow(0px 0px 6px #999);
+	z-index: 2;
+	}
+.selected_bible_verse_fixed_on_mug-above {
+display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    width: 7200px;
+    height: 2544px;
+    font-family: 'LoversQuarrel-Regular';
+    text-shadow: none;
+    color: #222222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	}
+.selected_bible_verse_fixed_on_mug-table-below {
+position: absolute;
+    display: flex;
+    left: 144px;
+    top: 5088px;
+    width: 7200px;
+    height: 2544px;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: flex-end;
+    filter: drop-shadow(0px 0px 6px #999);
+	z-index: 2;
+	}
+.selected_bible_verse_fixed_on_mug-below {
+display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: flex-end;
+    width: 7200px;
+    height: 2544px;
+    font-family: 'LoversQuarrel-Regular';
+    text-shadow: none;
+    color: #222222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	}
+.selected_bible_verse_fixed_on_mug_in_modalReviewOrder-table {
+position: fixed;
+    display: none;
+    left: 114px;
+    top: 262px;
+    width: 180px;
+    height: 208px;
+    text-align: center;
+    z-index: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.5);
+			filter: drop-shadow(0px 0px 4px #999);
+
+}
+.selected_bible_verse_fixed_on_mug_in_modalReviewOrder {
+display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 208px;
+    font-family: 'OpenSansCondensed-Light';
+    font-weight: bold;
+    text-shadow: none;
+    color: #222222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	
+}
+
+	
+.bot_center {
+position: absolute;
+    left: 200px;
+    top: 7032px;
+    display: flex;
+    width: 3616px;
+    height: 400px;
+    text-align: center;
+    font-size: 360px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+	}
+.top_right {
+	position: absolute;
+	left: 760px;
+	top: 150px;
+	  display: table-cell;
+width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    margin-left: 25px;
+    margin-right: 25px;
+  text-align: center;
+  font-size: 30px;
+}
+.bot_right {
+position: absolute;
+    left: 3816px;
+    top: 7032px;
+    display: flex;
+    width: 3616px;
+    height: 400px;
+    text-align: center;
+    font-size: 360px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.wrap_verse_left {
+position: absolute;
+    display: none;
+    left: 36px;
+    top: 310px;
+    width: 110px;
+    height: 36px;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 4px #999);
+	
+	}
+.wrap_verse_center {
+position: absolute;
+    left: 100px;
+    top: 270px;
+    display: table-cell;
+    width: 100px;
+    max-width: 100px;
+    min-width: 100px;
+    height: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    text-align: center;
+	}
+.wrap_verse_right {
+position: absolute;
+    left: 100px;
+    top: 270px;
+    display: table-cell;
+    width: 100px;
+    max-width: 100px;
+    min-width: 100px;
+    height: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    text-align: center;
+}
+.name {
+font-family: 'LoversQuarrel-Regular', sans-serif;
+    color: #222222;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 28px;
+	}
+
+.verse {
+    font-family: 'LoversQuarrel-Regular', sans-serif;
+display: table-cell;
+    vertical-align: middle;
+    color: #222222;
+    height: 100px;
+    width: 100px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.top_verse {
+    font-family: 'PT_Sans-Narrow-Web-Regular', sans-serif;
+display: table-cell;
+    vertical-align: middle;
+    color: #D5AD6D;
+    height: 190px;
+    width: 190px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: ;
+    padding-right: 0px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.the3dots {
+	position: absolute;
+	top: 110px;
+    font-family: 'PT_Sans-Narrow-Web-Regular', sans-serif;
+	font-size: 40px;
+display: table-cell;
+    vertical-align: middle;
+    color: #D5AD6D;
+    height: 220px;
+    width: 1100px;
+    padding-left: 60px;
+    padding-right: 0px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+white-space: nowrap;
+	
+}
+.theverseref {
+	position: absolute;
+	top: 140px;
+    font-family: 'PT_Sans-Narrow-Web-Regular', sans-serif;
+	font-size: 60px;
+display: table-cell;
+    vertical-align: middle;
+    color: #D5AD6D;
+    height: 220px;
+    width: 1100px;
+    padding-left: 60px;
+    padding-right: 0px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+white-space: nowrap;
+}
+.justify {
+	text-align: justify;
+}
+i {
+	/* margin-right: 1.5%; */
+	 font-style: normal;
+}
+span {
+line-height: 120%;
+margin-bottom: 1%;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.mug_mockup_background_image{
+display: ;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+.red {color:#dd0000; font-size: 200px}
+
+.wrapper_to_move_flowers {
+position: absolute;
+display: block;
+top: 0;
+left: 0;
+width: 7632px;
+height: 7232px;
+}
+.wrap_container_showing_selected_picture_little_Left {
+	}
+img.container_showing_selected_picture_little_Left {
+}
+.customCSSforFlowers_table {
+  position: fixed;
+      top: 230px;
+      left: 60px;
+      display: flex;
+      width: 200px;
+      height: 210px;
+      margin: 0 auto;
+      padding: 0;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+}
+.customCSSforFlowers_cell {
+      max-width: 200px !important;
+      max-height: 130px;
+      filter: drop-shadow(2px 4px 8px gray);
+}
+.customCSSforFlowers_flex_little_Left {
+display: table-cell;
+    width: 7632px;
+    height: 7232px;
+    text-align: center;
+    vertical-align: middle;
+    top: 2800px;
+    left: 2800px;
+    min-width: 4400px;
+    min-height: 4400px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(2em 4em 8em black);
+}
+.customCSSforFlowers_item_little_Left {
+    min-width: 4400px;
+    min-height: 4400px;
+}
+.customCSSforScenery_flex_little_Left {
+position: fixed;
+    display: flex;
+    top: 350px;
+    left: 50px;
+    max-width: 112px;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 4px #999);
+}
+.customCSSforScenery_item_little_Left {
+  display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      max-width: 84px;
+}
+
+
+    /* background colors */
+     .bgc-0000 {
+        background: white !important;
+    }
+     .bgc-0001{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 0%, 10%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0002{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 0%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0003{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0004{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(20, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0005{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(40, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0006{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(60, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0007{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(80, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0008{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(120, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0009{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(160, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0010{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(180, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0011{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(200, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0012{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(240, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0013{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(260, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0014{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(280, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0015{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(300, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0016{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(320, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+
+
+/*
+.bgc-0001	onyx				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 0%, 10%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0002	stone				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 0%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0003	jasper				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0004	sardonyx			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(20, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0005	jacinth				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(40, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0006	sardius				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(60, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0007	topaz				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(80, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0008	emerald				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(120, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0009	chrysolite			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(160, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0010	beryl				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(180, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0011	chrysoprasus		done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(200, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0012	sapphire			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(240, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0013	purple				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(260, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0014	chalcedony			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(280, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0015	amethyst			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(300, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0016	wine				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(320, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+*/
+
+/* /////////////////////////////////// */
+/* //BEGIN DESIGN UI //////// */
+/* /////////////////////////////////// */
+.above_font_size_icrease {
+	position: absolute;
+top: 0;
+left: 0px;
+width:600px;
+font-size: 72px;
+text-align: center;
+height: 100px;
+line-height: 100px;
+z-index: 3;
+}
+.above_font_size_decrease {
+	position: absolute;
+top: 0;
+left: 600px;
+width:600px;
+font-size: 72px;
+text-align: center;
+height: 100px;
+line-height: 100px;
+z-index: 3;
+}
+.above_bible_text {
+	position: absolute;
+top: 0;
+left: 1200px;
+width:1200px;
+font-size: 72px;
+text-align: center;
+height: 100px;
+line-height: 100px;
+z-index: 3;
+}
+.below_font_size_icrease {
+	position: absolute;
+top: 7532px;
+left: 0px;
+width:600px;
+font-size: 72px;
+text-align: center;
+height: 100px;
+line-height: 100px;
+z-index: 3;
+}
+.below_font_size_decrease {
+	position: absolute;
+top: 7532px;
+left: 600px;
+width:600px;
+font-size: 72px;
+text-align: center;
+height: 100px;
+line-height: 100px;
+z-index: 3;
+}
+.below_bible_text {
+	position: absolute;
+top: 7532px;
+left: 1200px;
+width:1200px;
+font-size: 72px;
+text-align: center;
+height: 100px;
+line-height: 100px;
+z-index: 3;
+}
+.image_resize_icrease {
+position: absolute;
+    top: 0px;
+    left: 7640px;
+    width: 300px;
+    min-height: 300px;
+    font-size: 72px;
+    text-align: center;
+    height: 72px;
+    line-height: 72px;
+    z-index: 1;
+}
+.image_resize_decrease {
+position: absolute;
+    top: 300px;
+    left: 7640px;
+    width: 300px;
+    min-height: 300px;
+    font-size: 72px;
+    text-align: center;
+    height: 72px;
+    line-height: 72px;
+    z-index: 1;
+}
+.show_UI {
+position: absolute;
+    top: 600px;
+    left: 7640px;
+    width: 300px;
+    min-height: 300px;
+    font-size: 72px;
+    text-align: center;
+    height: 72px;
+    line-height: 72px;
+    z-index: 1;
+}
+.hide_UI {
+position: absolute;
+    top: 900px;
+    left: 7640px;
+    width: 300px;
+    min-height: 300px;
+    font-size: 72px;
+    text-align: center;
+    height: 72px;
+    line-height: 72px;
+    z-index: 1;
+}
+.DesignCustomerOrdersUI_imput_ORDER {
+position: absolute;
+    top: 1250px;
+    left: 7640px;
+    width: 300px;
+    min-height: 300px;
+    font-size: 72px;
+    text-align: center;
+line-height: 80px;
+    font-size: 80px;
+    z-index: 1;
+}
+.doneEditing {
+position: absolute;
+    top: 1600px;
+    left: 7640px;
+    width: 300px;
+    min-height: 300px;
+    font-size: 72px;
+    text-align: center;
+    height: 72px;
+    line-height: 72px;
+    z-index: 1;
+	background: pink;
+}
+.DesignCustomerOrdersUI_button {
+position: absolute;
+    top: 2000px;
+    left: 7640px;
+    width: 300px;
+    min-height: 300px;
+    font-size: 72px;
+    text-align: center;
+    height: 72px;
+    line-height: 72px;
+    z-index: 1;
+}
+.DesignCustomerOrdersUI_imput_JS_file_name {
+position: absolute;
+    top: 2400px;
+    left: 7640px;
+    width: 300px;
+    min-height: 300px;
+    font-size: 72px;
+    text-align: center;
+line-height: 80px;
+    font-size: 80px;
+    z-index: 1;
+}
+.DesignCustomerOrdersUI_textarea_JS_file_content {
+position: absolute;
+    top: 2800px;
+    left: 7640px;
+    width: 300px;
+    min-height: 300px;
+    font-size: 72px;
+    text-align: center;
+line-height: 80px;
+    font-size: 80px;
+    z-index: 1;
+}
+.DesignCustomerOrdersUI_button_createJS {
+position: absolute;
+    top: 3200px;
+    left: 7640px;
+    width: 300px;
+    min-height: 300px;
+    font-size: 72px;
+    text-align: center;
+    height: 72px;
+    line-height: 72px;
+    z-index: 1;
+}
+
+.downloadlink_01_10 {
+position: absolute;
+    top: 3600px;
+    left: 7640px;
+    width: 300px;
+    min-height: 300px;
+    font-size: 72px;
+    text-align: center;
+    height: 72px;
+    line-height: 72px;
+    z-index: 1;
+}
+.margin_t {
+position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 7632px;
+    height: 200px;
+    z-index: 1;
+	background: red;
+}
+.margin_b {
+position: absolute;
+    top: 7432px;
+    left: 0px;
+    width: 7632px;
+    height: 200px;
+    z-index: 1;
+	background: red;
+}
+.margin_l {
+position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 7632px;
+    z-index: 1;
+	background: red;
+}
+.margin_r {
+position: absolute;
+    top: 0px;
+    left: 7432px;
+    width: 200px;
+    height: 7632px;
+    z-index: 1;
+	background: red;
+}
+.guide_flowers_above {
+position: absolute;
+    top: 2550px;
+    left: 0px;
+    width: 7632px;
+    height: 6px;
+    z-index: 1;
+	background: red;
+}
+.guide_flowers_below {
+position: absolute;
+    top: 4682px;
+    left: 0px;
+    width: 7632px;
+    height: 6px;
+    z-index: 1;
+	background: red;
+}
+/* /////////////////////////////////// */
+/* //END DESIGN UI //////// */
+/* /////////////////////////////////// */
+
+.<button class="DesignCustomerOrdersUI_button" id="populate_01_10" style="min-width: 600px;">populate_01_10</button>

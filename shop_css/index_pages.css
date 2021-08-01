@@ -1,0 +1,321 @@
+    tfoot,
+    thead,
+    tr,
+    th,
+    td {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: middle;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    /* *** END css reset tables ***************************************** */
+
+    /* ****************************************************************** */
+
+    @font-face {
+      font-family: "PT_Sans-Narrow-Web-Regular";
+      src: url(../_fonts/PT_Sans-Narrow-Web-Regular.ttf) format("truetype");
+    }
+
+    @font-face {
+      font-family: "Jura-Regular";
+      src: url(../_fonts/Jura-Regular.ttf) format("truetype");
+    }
+
+    html,
+    body {
+      position: relative;
+      height: 100%;
+      font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
+      font-size: 20px;
+      color: #ae9c80;
+      margin: 0 auto;
+      background: black;
+      text-shadow: 2px 2px 1px #000000;
+
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .special_margin_top {
+      margin-top: 48px;
+    }
+
+    .pinterest_pin_this_image {
+      display: none;
+    }
+
+    .wrap_gofundme_modal {}
+
+    /* titlebar */
+
+    .wrap_gofundme_modal_bar {
+      position: fixed;
+      height: 50px;
+      text-align: center;
+      border: 0px solid black;
+      font-size: 20px;
+      font-family: "Jura-Regular";
+      line-height: 50px;
+      width: 100%;
+    }
+
+    .wrap_gofundme_modal_bar_bottom {
+      position: fixed;
+      bottom: 0;
+      height: 50px;
+      text-align: center;
+      border: 0px solid black;
+      font-size: 20px;
+      font-family: "Jura-Regular";
+      line-height: 50px;
+      width: 100%;
+    }
+
+    .red_heart {
+      color: red;
+      font-size: 18px;
+      text-shadow: 1px 1px 2px #000000;
+    }
+
+    .wrap_gofundme_modal_body {
+      display: ;
+    }
+
+    .gofundme_flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      padding-top: 50px;
+      background: black;
+    }
+
+    .gofundme_flex-container > div {
+text-align: center;
+margin-left: 4px;
+margin-right: 4px;
+width: 312px;
+max-width: 312px;
+    }
+
+    .gofundme_widget {
+      min-width: 320px;
+      max-width: 600px !important;
+    }
+
+    .box_shadow {
+      box-shadow: 0px 0px 60px #111111;
+    }
+
+    /* /////////////////////////// */
+
+    /* END gofundme modal  */
+
+    /* /////////////////////////// */
+
+    .bgc-0002 {
+      background: hsl(0, 0%, 15%) !important;
+      background: -moz-radial-gradient(center, ellipse cover, hsl(0, 0%, 15%)0%, hsl(0, 0%, 15%)100%) !important;
+      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, hsl(0, 0%, 15%)), color-stop(100%, hsl(0, 0%, 0%))) !important;
+      background: -webkit-radial-gradient(center, ellipse cover, hsl(100, 100%, 20%) 0%, hsl(0, 0%, 0%) 100%) !important;
+      background: -o-radial-gradient(center, ellipse cover, hsl(0, 100%, 20%) 0%, hsl(0, 0%, 0%) 100%) !important;
+      background: -ms-radial-gradient(center, ellipse cover, hsl(0, 0%, 15%) 0%, hsl(0, 0%, 0%) 100%) !important;
+      background: radial-gradient(ellipse at center, hsl(0, 0%, 15%) 0%, hsl(0, 0%, 0%) 100%) !important;
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(0,0%,15%)', endColorstr='#0', GradientType=1) !important;
+    }
+
+    img.lazyloaded {
+cursor: pointer;
+width: 312px;
+min-width: 312px;
+max-width: 312px;
+height: 164px;
+min-height: 164px;
+max-height: 164px;
+    }
+
+    .sharing_sub_panel {
+display: flex;
+width: 100%;
+margin-bottom: 8px;
+min-width: 312px;
+max-width: 312px;
+height: 44px;
+line-height: 44px;
+margin-top: -4px;
+    }
+
+    .redirect_user {
+      flex-grow: 1;
+      flex-shrink: 1;
+      cursor: pointer;
+      text-align: center;
+      background-color: #111111;
+    }
+
+    .donate_now {
+      flex-grow: 1;
+      flex-shrink: 1;
+      cursor: pointer;
+      text-align: center;
+      background-color: #111111;
+    }
+
+    .open_purechat {
+      flex-grow: 1;
+      flex-shrink: 1;
+      cursor: pointer;
+      text-align: center;
+      background-color: #111111;
+    }
+
+    a.bf_links {
+      color: #d5ad6d;
+    }
+
+    a.bf_links:hover,
+    a.bf_links:focus {
+      color: #dac4a2;
+      text-decoration: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .bf_links {
+      color: #d5ad6d;
+      cursor: pointer;
+    }
+
+    .bf_links:hover,
+    .bf_links:focus {
+      color: #dac4a2;
+      text-decoration: none;
+    }
+
+    .opacity_cover {
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 1;
+    }
+
+    #menu {
+      position: fixed;
+      display: block;
+      color: #d5ad6d;
+      line-height: 44px;
+      height: 44px;
+      width: 44px;
+      text-align: center;
+      top: 4px;
+      left: 4px;
+      cursor: pointer;
+    }
+
+    #search {
+      position: fixed;
+      display: block;
+      color: #d5ad6d;
+      line-height: 44px;
+      height: 44px;
+      width: 44px;
+      text-align: center;
+      top: 4px;
+      left: 4px;
+      cursor: pointer;
+    }
+
+    #donate {
+      position: fixed;
+      display: block;
+      color: #d5ad6d;
+      line-height: 44px;
+      height: 44px;
+      width: 44px;
+      text-align: center;
+      top: 4px;
+      right: calc(4px + 44px);
+      cursor: pointer;
+    }
+
+    #info {
+      position: fixed;
+      display: block;
+      color: #d5ad6d;
+      line-height: 44px;
+      height: 44px;
+      width: 44px;
+      text-align: center;
+      top: 4px;
+      right: 4px;
+      cursor: pointer;
+    }
+
+    .menu_modal {
+      position: fixed;
+      display: none;
+      height: 440px;
+      width: 296px;
+      top: calc(4px + 44px);
+      left: 4px;
+      background: #111111;
+      z-index: 1;
+      padding: 8px;
+      text-shadow: 2px 2px 1px #000000;
+    }
+
+    .menu_modal_text {
+        width: 100%;
+        padding-left: 12px;
+    }
+
+    .menu_icon_clone {
+      position: fixed;
+      display: block;
+      color: #d5ad6d;
+      line-height: 44px;
+      height: 44px;
+      width: 44px;
+      text-align: center;
+      top: 4px;
+      left: 4px;
+      cursor: pointer;
+    }
+
+    .wrap_the_paypal_button {
+      display: inline-block;
+      text-align: center;
+      left: 0;
+      right: 0;
+      width: 100%;
+      padding-top: 5px;
+      height: 60px;
+    }
+	/* fade image in while loading and show a spinner as background image (good for progressive images) */
+
+.lazyload {
+	opacity: 0;
+}
+
+.lazyloading {
+	opacity: 1;
+	transition: opacity 500ms;
+	background: #000000 url(../spinner.gif) no-repeat center;
+}

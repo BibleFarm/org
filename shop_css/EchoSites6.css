@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "PT_Sans-Narrow-Web-Regular";
+  src: url(PT_Sans-Narrow-Web-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Jura-Regular";
+  src: url(Jura-Regular.ttf) format("truetype");
+}
+
+html, body {
+	background: navy;
+	margin: 0 auto;
+font-family: 'Jura-Regular', sans-serif;
+	      text-shadow: 2px 2px 1px #000000;
+		  color: silver;
+}
+.wrap_output {
+	width: 600px;
+	height: 315px;
+	min-height: 315px;
+	max-height: 315px;
+}
+.top {
+}
+.bot {
+}
+.top_left {
+  display: table-cell;
+  background: ;
+  line-height: 50px;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 28px;
+  width: 220px;
+  font-weight: 600;
+}
+.bot_left {
+  display: table-cell;
+  background: ;
+  line-height: 50px;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 28px;
+  width: 220px;
+  font-weight: 600;
+}
+.top_right {
+  display: table-cell;
+  background: ;
+  line-height: 50px;
+  text-align: right;
+  padding-right: 20px;
+  font-size: 28px;
+  width: 340px;
+  font-weight: 600;
+}
+.bot_right {
+  display: table-cell;
+  background: ;
+  line-height: 50px;
+  text-align: right;
+  padding-right: 20px;
+  font-size: 28px;
+  width: 340px;
+  font-weight: 600;
+}
+.wrap_verse {
+width: 550px;
+    max-width: 550px;
+    min-width: 550px;
+    height: 215px;
+    max-height: 215px;
+    min-height: 215px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.verse {
+    font-family: 'PT_Sans-Narrow-Web-Regular', sans-serif;
+display: table-cell;
+    vertical-align: middle;
+    color: #D5AD6D;
+    height: 195px;
+    width: 550px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	text-align: left;
+}
+.justify {
+	text-align: justify;
+}
+i {
+	margin-right: 1.5%;
+}
+span {
+line-height: 120%;
+margin-bottom: 1%;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+     .bgc-0004{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(320, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+}
+
+/*
+onyx				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 0%, 10%) 0%,hsl(0,0%,0%) 100%) !important;
+stone				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 0%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+jasper				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+sardonyx			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(20, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+jacinth				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(40, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+sardius				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(60, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+topaz				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(80, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+emerald				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(120, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+chrysolite			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(160, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+beryl				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(180, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+chrysoprasus		done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(200, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+sapphire			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(240, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+purple				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(260, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+chalcedony			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(280, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+amethyst			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(300, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+wine				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(320, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+sandy				with ❤ by Sandy
+background: -webkit-radial-gradient(center, ellipse cover, hsl(325, 100%, 95%) 0%,hsl(340, 100%, 80%) 100%) !important
+*/

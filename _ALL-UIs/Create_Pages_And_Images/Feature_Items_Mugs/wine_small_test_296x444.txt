@@ -1,0 +1,30 @@
+1-Corinthians-13-13	And now abideth faith, hope, charity, these three; but the greatest of these <i>is</i> charity.	1-Corinthians 13 : 13	F-003	bgc-0003
+1-Corinthians-16-14	Let all your things be done with charity.	1-Corinthians 16 : 14	F-006	bgc-0004
+2-Corinthians-5-7	(For we walk by faith, not by sight:)	2-Corinthians 5 : 7	F-008	bgc-0005
+Colossians-3-14	And above all these things <i>put on</i> charity, which is the bond of perfectness.	Colossians 3 : 14	F-014	bgc-0006
+Ephesians-6-10	Finally, my brethren, be strong in the Lord, and in the power of his might.	Ephesians 6 : 10	F-017	bgc-0007
+Galatians-6-9	And let us not be weary in well doing: for in due season we shall reap, if we faint not.	Galatians 6 : 9	F-018	bgc-0008
+Philippians-4-13	I can do all things through Christ which strengtheneth me.	Philippians 4 : 13	F-081	bgc-0009
+Philippians-4-8	Finally, brethren, whatsoever things are true, whatsoever things <i>are</i> honest, whatsoever things <i>are</i> just, whatsoever things <i>are</i> pure, whatsoever things <i>are</i> lovely, whatsoever things <i>are</i> of good report; if <i>there be</i> any virtue, and if <i>there be</i> any praise, think on these things.	Philippians 4 : 8	F-117	bgc-0010
+Romans-10-17	So then faith <i>cometh</i> by hearing, and hearing by the word of God.	Romans 10 : 17	F-180	bgc-0011
+Romans-8-28	And we know that all things work together for good to them that love God, to them who are the called according to <i>his</i> purpose.	Romans 8 : 28	F-218	bgc-0012
+Romans-8-37	Nay, in all these things we are more than conquerors through him that loved us.	Romans 8 : 37	F-229	bgc-0013
+John-10-28	And I give unto them eternal life; and they shall never perish, neither shall any <i>man</i> pluck them out of my hand.	John 10 : 28	F-230	bgc-0014
+John-15-3	Now ye are clean through the word which I have spoken unto you.	John 15 : 3	F-236	bgc-0015
+John-3-16	For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.	John 3 : 16	F-256	bgc-0016
+John-3-7	Marvel not that I said unto thee, Ye must be born again.	John 3 : 7	F-266	bgc-0003
+2-Chronicles-7-14	If my people, which are called by my name, shall humble themselves, and pray, and seek my face, and turn from their wicked ways; then will I hear from heaven, and will forgive their sin, and will heal their land.	2-Chronicles 7 : 14	F-268	bgc-0004
+Deuteronomy-31-8	And the LORD, he <i>it is</i> that doth go before thee; he will be with thee, he will not fail thee, neither forsake thee: fear not, neither be dismayed.	Deuteronomy 31 : 8	F-270	bgc-0005
+Isaiah-41-10	Fear thou not; for I <i>am</i> with thee: be not dismayed; for I <i>am</i> thy God: I will strengthen thee; yea, I will help thee; yea, I will uphold thee with the right hand of my righteousness.	Isaiah 41 : 10	F-271	bgc-0006
+Jeremiah-29-11	For I know the thoughts that I think toward you, saith the LORD, thoughts of peace, and not of evil, to give you an expected end.	Jeremiah 29 : 11	F-273	bgc-0007
+Jeremiah-32-27	Behold, I <i>am</i> the LORD, the God of all flesh: is there any thing too hard for me?	Jeremiah 32 : 27	F-280	bgc-0008
+Psalms-10-6	He hath said in his heart, I shall not be moved: for <i>I shall</i> never <i>be</i> in adversity.	Psalms 10 : 6	F-282	bgc-0009
+Psalms-118-24	This <i>is</i> the day <i>which</i> the LORD hath made; we will rejoice and be glad in it.	Psalms 118 : 24	F-283	bgc-0010
+Psalms-150-6	Let every thing that hath breath praise the LORD. Praise ye the LORD.	Psalms 150 : 6	F-287	bgc-0011
+Psalms-33-22	Let thy mercy, O LORD, be upon us, according as we hope in thee.	Psalms 33 : 22	F-299	bgc-0012
+Psalms-34-8	O taste and see that the LORD <i>is</i> good: blessed <i>is</i> the man <i>that</i> trusteth in him.	Psalms 34 : 8	F-303	bgc-0013
+Psalms-46-1	God <i>is</i> our refuge and strength, a very present help in trouble.	Psalms 46 : 1	F-306	bgc-0014
+Psalms-62-5	My soul, wait thou only upon God; for my expectation <i>is</i> from him.	Psalms 62 : 5	F-308	bgc-0015
+Luke-18-27	And he said, The things which are impossible with men are possible with God.	Luke 18 : 27	F-313	bgc-0016
+Matthew-18-20	For where two or three are gathered together in my name, there am I in the midst of them.	Matthew 18 : 20	F-329	bgc-0003
+Matthew-6-11	Give us this day our daily bread.	Matthew 6 : 11	F-340	bgc-0003

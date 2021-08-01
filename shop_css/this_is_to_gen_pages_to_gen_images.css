@@ -1,0 +1,390 @@
+@font-face {
+  font-family: "LoversQuarrel-Regular";
+  src: url(../shop_fonts/LoversQuarrel-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Gruppo-Regular";
+  src: url(../shop_fonts/Gruppo-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PT_Sans-Narrow-Web-Regular";
+  src: url(../shop_fonts/PT_Sans-Narrow-Web-Regular.ttf) format("truetype");
+}
+
+
+html, body {
+	background: ;
+	margin: 0 auto;
+	  /*    text-shadow: 2px 2px 1px #000000; */
+		  color: silver;
+}
+
+.wrap_output {
+	background: black;
+	width: 1200px;
+	height: 630px;
+	min-height: 630px;
+	max-height: 630px;
+background-image: url("Preparing-Mug-Mockup-Blank-Image/Preparing-Mug-Mockup-Blank-Image_Transparent.png");
+}
+.center_image_container {
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+width: 1200px;
+height: 630px;
+padding-top: 200px;
+}
+.blank_mug {
+	position: absolute;
+	top: 100px;
+}
+.flower_image {
+	position: relative;
+max-width: 270px;
+max-height: 270px;
+display: block;
+margin: 0 auto;
+}
+.top {
+	  font-family: "Gruppo-Regular";
+}
+.bot {
+	  font-family: "Gruppo-Regular";
+}
+.top_left {
+	position: absolute;
+	left: 120px;
+	top: 150px;
+	  display: table-cell;
+width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    margin-left: 25px;
+    margin-right: 25px;
+  text-align: center;
+  font-size: 30px;
+}
+.bot_left {
+	position: absolute;
+	left: 120px;
+	top: 576px;
+	  display: table-cell;
+width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    margin-left: 25px;
+    margin-right: 25px;
+  text-align: center;
+  font-size: 20px;
+}
+.top_center {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	  display: table-cell;
+width: 1200px;
+    max-width: 1200px;
+    min-width: 1200px;
+    height: 200px;
+    max-height: 200px;
+    min-height: 200px;
+	  text-align: center;
+	}
+.bot_center {
+	position: absolute;
+	left: 448px;
+	top: 558px;
+	  display: table-cell;
+width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    margin-left: 25px;
+    margin-right: 25px;
+  text-align: center;
+  font-size: 20px;
+}
+.top_right {
+	position: absolute;
+	left: 760px;
+	top: 150px;
+	  display: table-cell;
+width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    margin-left: 25px;
+    margin-right: 25px;
+  text-align: center;
+  font-size: 30px;
+}
+.bot_right {
+	position: absolute;
+	left: 760px;
+	top: 576px;
+	  display: table-cell;
+width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    margin-left: 25px;
+    margin-right: 25px;
+  text-align: center;
+  font-size: 20px;
+}
+.wrap_verse_left {
+	position: absolute;
+	left: 130px;
+	top: 270px;
+	  display: table-cell;
+width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    margin-left: 25px;
+    margin-right: 25px;
+	  text-align: center;
+}
+.wrap_verse_center {
+	position: absolute;
+	left: 400px;
+	top: 270px;
+	  display: table-cell;
+width: 100px;
+    max-width: 100px;
+    min-width: 100px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    margin-left: 15px;
+    margin-right: 15px;
+	  text-align: center;
+
+}
+.wrap_verse_right {
+	position: absolute;
+	left: 765px;
+	top: 270px;
+	  display: table-cell;
+width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    margin-left: 25px;
+    margin-right: 25px;
+	  text-align: center;
+}
+.verse {
+    font-family: 'LoversQuarrel-Regular', sans-serif;
+display: table-cell;
+    vertical-align: middle;
+    color: #aeaeae;
+    height: 300px;
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.top_verse {
+    font-family: 'PT_Sans-Narrow-Web-Regular', sans-serif;
+display: table-cell;
+    vertical-align: middle;
+    color: #D5AD6D;
+    height: 220px;
+    width: 1100px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 0px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.the3dots {
+	position: absolute;
+	top: 110px;
+    font-family: 'PT_Sans-Narrow-Web-Regular', sans-serif;
+	font-size: 40px;
+display: table-cell;
+    vertical-align: middle;
+    color: #D5AD6D;
+    height: 220px;
+    width: 1100px;
+    padding-left: 60px;
+    padding-right: 0px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+white-space: nowrap;
+	
+}
+.theverseref {
+	position: absolute;
+	top: 140px;
+    font-family: 'PT_Sans-Narrow-Web-Regular', sans-serif;
+	font-size: 60px;
+display: table-cell;
+    vertical-align: middle;
+    color: #D5AD6D;
+    height: 220px;
+    width: 1100px;
+    padding-left: 60px;
+    padding-right: 0px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+white-space: nowrap;
+}
+.justify {
+	text-align: justify;
+}
+i {
+	/* margin-right: 1.5%; */
+	 font-style: normal;
+}
+span {
+line-height: 120%;
+margin-bottom: 1%;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.mug_mockup_background_image{
+display: ;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+.red {color:#dd0000; font-size: 16px}
+
+.wrap_output {
+	width: 1200px;
+	height: 630px;
+	min-height: 630px;
+	max-height: 630px;
+background-image: url("Preparing-Mug-Mockup-Blank-Image/Preparing-Mug-Mockup-Blank-Image_Transparent.png");
+}
+
+    /* background colors */
+     .bgc-0000 {
+        background: white !important;
+    }
+     .bgc-0001{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 0%, 10%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0002{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 0%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0003{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0004{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(20, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0005{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(40, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0006{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(60, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0007{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(80, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0008{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(120, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0009{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(160, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0010{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(180, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0011{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(200, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0012{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(240, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0013{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(260, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0014{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(280, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0015{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(300, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0016{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(320, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+
+
+/*
+.bgc-0001	onyx				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 0%, 10%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0002	stone				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 0%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0003	jasper				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0004	sardonyx			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(20, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0005	jacinth				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(40, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0006	sardius				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(60, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0007	topaz				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(80, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0008	emerald				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(120, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0009	chrysolite			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(160, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0010	beryl				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(180, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0011	chrysoprasus		done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(200, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0012	sapphire			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(240, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0013	purple				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(260, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0014	chalcedony			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(280, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0015	amethyst			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(300, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0016	wine				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(320, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+*/
