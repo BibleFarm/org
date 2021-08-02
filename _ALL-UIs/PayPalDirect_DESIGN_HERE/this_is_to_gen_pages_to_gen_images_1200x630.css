@@ -1,18 +1,18 @@
 @font-face {
   font-family: "LoversQuarrel-Regular";
-  src: url(../shop_fonts/LoversQuarrel-Regular.ttf) format("truetype");
+  src: url(../../shop_fonts/LoversQuarrel-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Gruppo-Regular";
-  src: url(../shop_fonts/Gruppo-Regular.ttf) format("truetype");
+  src: url(../../shop_fonts/Gruppo-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "PT_Sans-Narrow-Web-Regular";
-  src: url(../shop_fonts/PT_Sans-Narrow-Web-Regular.ttf) format("truetype");
+  src: url(../../shop_fonts/PT_Sans-Narrow-Web-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: 'OpenSansCondensed-Light';
-  src: url(../shop_fonts/OpenSansCondensed-Light.ttf) format("opentype");
+  src: url(../../shop_fonts/OpenSansCondensed-Light.ttf) format("opentype");
 }
 
 
@@ -665,4 +665,40 @@ height: 630px;
 .image_cntainer > img {
 height: 630px;
 width: auto;
+}
+.copied_saving_path_to_clipboard {
+position: fixed;
+    display: none;
+    top: 1189px;
+    left: 0px;
+    text-align: center;
+    width: 400px;
+    height: 100px;
+    z-index: 5;
+    font-size: 50px;
+    background: red;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+.copy_node_command {
+height: 100px;
+    width: 200px;
+    font-size: 30px;
+    background: aqua;
+}
+.copied_node_command_to_clipboard {
+position: fixed;
+    display: none;
+    top: 1000px;
+    left: 1200px;
+    text-align: center;
+    width: 400px;
+    height: 150px;
+    z-index: 5;
+    font-size: 40px;
+    background: brown;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
 }

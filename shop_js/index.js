@@ -9,7 +9,7 @@ $(document).ready(function() {
 /* *************************** */
 $(function () {
   count = 0;
-  wordsArray = ['<span class="customize_title">customize for $10 & free shipping</span>', '<span class="made_title">made with <span class="red_heart">❤</span> at BibleFarm.org</span>'];
+  wordsArray = ['<span class="customize_title">all mugs $10 with shipping included</span>', '<span class="made_title">made with <span class="red_heart">❤</span> at BibleFarm.org</span>'];
   setInterval(function () {
     count++;
     $("#site_title").fadeOut(400, function () {
