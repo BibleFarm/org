@@ -315,14 +315,52 @@ width: 2717px;
 height: 1146px;
 }
 #hidden_book_desired, #hidden_chapter_desired, #hidden_verse_desired {display: none;}
+.copied_saving_path_to_clipboard {
+position: fixed;
+display: none;
+    top: 2508px;
+    left: 1000px;
+    text-align: center;
+    width: 1000px;
+    height: 100px;
+    z-index: 5;
+    font-size: 70px;
+    background: red;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+.copy_node_command {
+    position: fixed;
+    top: 3500px;
+height: 300px;
+    width: 600px;
+    background: aqua;
+    font-size: 100px;
+}
+.copied_node_command_to_clipboard {
+position: fixed;
+    display: none;
+    top: 3500px;
+    left: 700px;
+    text-align: center;
+    width: 800px;
+    height: 300px;
+    z-index: 5;
+    font-size: 80px;
+    background: brown;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
 </style></head>
 
 
 
 <body style="-webkit-font-smoothing: antialiased;">
-  <div id="hidden_book_desired">Psalms</div>
-  <div id="hidden_chapter_desired">37</div>
-  <div id="hidden_verse_desired">4</div>
+  <div id="hidden_book_desired">select</div>
+  <div id="hidden_chapter_desired">0</div>
+  <div id="hidden_verse_desired">0</div>
 
 <div id="capture">
 <div class="CustomCat11ozMugTemplate" style="display: none;">
@@ -341,26 +379,82 @@ height: 1146px;
 <img class="" width="" height="" src="../../mug-side-blank_fixed_perspective_R.png" alt="">
 </div>
 
-<div class="CUSTOMER_NAME_table">
-<span class="CUSTOMER_NAME_table-cell"><span style="font-size: 399px;">Daniella</span></span>
+<div class="CUSTOMER_NAME_table" style="
+    top: -20px;
+    left: 174px;
+">
+<span class="CUSTOMER_NAME_table-cell"><span style="font-size: 212px;font-family: NeogreyRegular;">Josiah</span></span>
+</div>
+<div class="CUSTOMER_NAME_table_2" style="
+    position: fixed;
+    display: none;
+    top: 371px;
+    left: 168px;
+    width: 900px;
+    height: 450px;
+    color: black;
+    filter: drop-shadow(0px 0px 50px #999);
+">
+<span class="CUSTOMER_NAME_table-cell_3" style="
+    display: table-cell;
+    width: 900px;
+    height: 450px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: &quot;LoversQuarrel-Regular&quot;;
+    text-shadow: none;
+    white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+"><span style="font-size: 340px;">Benji</span></span>
 </div>
 
-<div class="CUSTOMER_FLOWER_table" style="top: 430px;">
-<span class="CUSTOMER_FLOWER_table-cell"><img class="CUSTOMER_FLOWER_img" width="" height="" src="../../p-original-size/F-017.png" alt=""></span>
+<div class="CUSTOMER_NAME_table_3" style="
+    position: fixed;
+    display: none;
+    top: 640px;
+    left: 168px;
+    width: 900px;
+    height: 450px;
+    color: black;
+    filter: drop-shadow(0px 0px 50px #999);
+">
+<span class="CUSTOMER_NAME_table-cell_2" style="
+    display: table-cell;
+    width: 900px;
+    height: 450px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: &quot;LoversQuarrel-Regular&quot;;
+    text-shadow: none;
+    white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+"><span style="font-size: 340px;">Katrisha</span></span>
+</div>
+
+<div class="CUSTOMER_FLOWER_table" style="top: 326px;height: 640px;">
+<span class="CUSTOMER_FLOWER_table-cell"><img class="CUSTOMER_FLOWER_img" width="" height="" src="../../p-original-size/s-161.png" alt="" style="
+    max-height: 640px;
+"></span>
 </div>
 
 <div class="MADE_WITH_LOVE_table">
 <span class="MADE_WITH_LOVE_table-cell">
-made with <span class="heart" style="text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.965926px 0.258819px 0px, rgb(0, 0, 0) 0.866025px 0.5px 0px, rgb(0, 0, 0) 0.707107px 0.707107px 0px, rgb(0, 0, 0) 0.5px 0.866025px 0px, rgb(0, 0, 0) 0.258819px 0.965926px 0px, rgb(0, 0, 0) 0px 1px 0px, rgb(0, 0, 0) -0.258819px 0.965926px 0px, rgb(0, 0, 0) -0.5px 0.866025px 0px, rgb(0, 0, 0) -0.707107px 0.707107px 0px, rgb(0, 0, 0) -0.866025px 0.5px 0px, rgb(0, 0, 0) -0.965926px 0.258819px 0px, rgb(0, 0, 0) -1px 0px 0px, rgb(0, 0, 0) -0.965926px -0.258819px 0px, rgb(0, 0, 0) -0.866025px -0.5px 0px, rgb(0, 0, 0) -0.707107px -0.707107px 0px, rgb(0, 0, 0) -0.5px -0.866025px 0px, rgb(0, 0, 0) -0.258819px -0.965926px 0px, rgb(0, 0, 0) 0px -1px 0px, rgb(0, 0, 0) 0.258819px -0.965926px 0px, rgb(0, 0, 0) 0.5px -0.866025px 0px, rgb(0, 0, 0) 0.707107px -0.707107px 0px, rgb(0, 0, 0) 0.866025px -0.5px 0px, rgb(0, 0, 0) 0.965926px -0.258819px 0px, rgb(0, 0, 0) 1px 0px 0px;">❤</span> at BibleCups.com
+made with <span class="heart" style="text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.965926px 0.258819px 0px, rgb(0, 0, 0) 0.866025px 0.5px 0px, rgb(0, 0, 0) 0.707107px 0.707107px 0px, rgb(0, 0, 0) 0.5px 0.866025px 0px, rgb(0, 0, 0) 0.258819px 0.965926px 0px, rgb(0, 0, 0) 0px 1px 0px, rgb(0, 0, 0) -0.258819px 0.965926px 0px, rgb(0, 0, 0) -0.5px 0.866025px 0px, rgb(0, 0, 0) -0.707107px 0.707107px 0px, rgb(0, 0, 0) -0.866025px 0.5px 0px, rgb(0, 0, 0) -0.965926px 0.258819px 0px, rgb(0, 0, 0) -1px 0px 0px, rgb(0, 0, 0) -0.965926px -0.258819px 0px, rgb(0, 0, 0) -0.866025px -0.5px 0px, rgb(0, 0, 0) -0.707107px -0.707107px 0px, rgb(0, 0, 0) -0.5px -0.866025px 0px, rgb(0, 0, 0) -0.258819px -0.965926px 0px, rgb(0, 0, 0) 0px -1px 0px, rgb(0, 0, 0) 0.258819px -0.965926px 0px, rgb(0, 0, 0) 0.5px -0.866025px 0px, rgb(0, 0, 0) 0.707107px -0.707107px 0px, rgb(0, 0, 0) 0.866025px -0.5px 0px, rgb(0, 0, 0) 0.965926px -0.258819px 0px, rgb(0, 0, 0) 1px 0px 0px;">❤</span> at BibleFarm.org
 </span>
 </div>
 
 <div class="CUSTOMER_VERSE_table">
-<span class="CUSTOMER_VERSE_table-cell populated_verse_with_ajax"><span style="font-size: 161px; line-height: 183px;">Delight thyself also in the LORD; and he shall give thee the desires of thine heart. </span></span>
+<span class="CUSTOMER_VERSE_table-cell populated_verse_with_ajax"><span class="special_verse" style="font-size: 288px;line-height: 424px;display: block;">Fear Not</span>
+<span class="special_verse" style="font-size: 200px;line-height: 332px;display: block;">Believe Only</span>
+</span>
 </div>
 
 <div class="CUSTOMER_REF_table">
-<span class="CUSTOMER_REF_table-cell populated_ref_with_ajax">Psalms 37 : 4</span>
+<span class="CUSTOMER_REF_table-cell populated_ref_with_ajax">
+Luke 8 : 50
+</span>
 </div>
 
 </div>
@@ -368,7 +462,7 @@ made with <span class="heart" style="text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(
   <!-- BEGIN DesignCustomerOrdersUI -->
 <div class="DesignCustomerOrdersUI">
 <input class="DesignCustomerOrdersUI_imput_ORDER" name="" type="text" id="order_id" value="" placeholder="Order ID" width="" height="">
-<span id="show_order_id">0011</span>
+<span id="show_order_id">0023</span>
 <br>
 <input class="DesignCustomerOrdersUI_imput_NAME" name="" type="text" id="customize_name" value="" placeholder="Name" width="" height="">
 <span id="show_name"></span>
@@ -395,7 +489,7 @@ made with <span class="heart" style="text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(
 
       <div class="select_book">
         <select id="select_book" class="select_book">
-          <option value="00" class="">select a book</option>
+          <option value="00" class="selected">select a book</option>
           <option value="01">Genesis</option>
           <option value="02">Exodus</option>
           <option value="03">Leviticus</option>
@@ -422,8 +516,8 @@ made with <span class="heart" style="text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(
           <option value="24">Zephaniah</option>
           <option value="25">Haggai</option>
           <option value="26">Zechariah</option>
-          <option value="27" class="">Malachi</option>
-          <option value="28" class="selected">Psalms</option>
+          <option value="27">Malachi</option>
+          <option value="28">Psalms</option>
           <option value="29">Proverbs</option>
           <option value="30">Job</option>
           <option value="31">Song-of-Songs</option>
@@ -466,7 +560,7 @@ made with <span class="heart" style="text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(
       </div>
       <div class="select_chapter">
         <select id="select_chapter" class="select_chapter">
-          <option value="000" class="">0</option>
+          <option value="000" class="selected">0</option>
           <option value="001">1</option>
           <option value="002">2</option>
           <option value="003">3</option>
@@ -503,7 +597,7 @@ made with <span class="heart" style="text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(
           <option value="034">34</option>
           <option value="035">35</option>
           <option value="036">36</option>
-          <option value="037" class="selected">37</option>
+          <option value="037">37</option>
           <option value="038">38</option>
           <option value="039">39</option>
           <option value="040">40</option>
@@ -621,11 +715,11 @@ made with <span class="heart" style="text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(
       </div>
       <div class="select_verse">
         <select id="select_verse" class="select_verse">
-          <option value="000" class="">0</option>
-          <option value="001" class="">1</option>
-          <option value="002" class="">2</option>
-          <option value="003" class="">3</option>
-          <option value="004" class="selected">4</option>
+          <option value="000" class="selected">0</option>
+          <option value="001">1</option>
+          <option value="002">2</option>
+          <option value="003">3</option>
+          <option value="004">4</option>
           <option value="005">5</option>
           <option value="006">6</option>
           <option value="007">7</option>
@@ -1827,7 +1921,7 @@ made with <span class="heart" style="text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(
 
    <br>
    <button id="create">Create node JS File</button>
-   <a download="info.js" id="downloadlink" style="display: none">Download node JS File Here</a>
+   <a download="0018" id="downloadlink" style="display: block;" href="blob:null/b7e99545-ab11-4780-8e54-8ac2f8a04afe">Download node JS File Here</a>
 </div>
 </div>
   <!-- END Design Customer Orders UI -->
@@ -1837,8 +1931,9 @@ made with <span class="heart" style="text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(
 <div class="wrap_downloadable_image">
 </div>
 
-
-
+<div class="copied_saving_path_to_clipboard" style="display: block; overflow: hidden; height: 0px; padding: 0px; margin: 0px; width: 0px; opacity: 0;">copied saving path to clipboard</div>
+<button class="copy_node_command">copy node command</button>
+<div class="copied_node_command_to_clipboard" style="display: none;">copied node command to clipboard</div>
 
   <!-- jQuery -->
   <script src="../../shop_js/o_jquery-310.min.js" type="text/javascript"></script>
@@ -1872,7 +1967,7 @@ $( "#customize_name" ).on( "focus click", function() {
 $( "#customize_flower" ).on( "focus click", function() {
 	function renderIn_modalFlower() {
 		$('.CUSTOMER_FLOWER_table-cell').html(
-			'<img class="CUSTOMER_FLOWER_img" width="" height="" src="../p-original-size/' + $('#customize_flower').val() + '.png" alt="" />'
+			'<img class="CUSTOMER_FLOWER_img" width="" height="" src="../../p-original-size/' + $('#customize_flower').val() + '.png" alt="" />'
 		);
 	}
 	$('#customize_flower').keyup(renderIn_modalFlower);
@@ -2083,6 +2178,23 @@ $( "#removeGuidelines" ).on( "click", function() {
 // END button to remove guidelines
 
     $('#SaveHTMLpage').click(function(){
+	
+// get & copy the path to clipboard, of where I want to save this node js file that creates the landing page & the picture
+var pathToSaveHTMLandJSfiles = "/media/demo/ALL-MY-DATA/org/_ALL-UIs/CUSTOM_CAT_RENDER_HERE//";
+var thisOrderID = $("#order_id").val();
+var completeThingToCopyToClipboard = (pathToSaveHTMLandJSfiles + thisOrderID);
+console.log(completeThingToCopyToClipboard);
+    var $tempElement = $("<input>");
+        $("body").append($tempElement);
+        $tempElement.val(completeThingToCopyToClipboard).select();
+        document.execCommand("Copy");
+        $tempElement.remove();
+// show copied_saving_path_to_clipboard for a sec
+$(".copied_saving_path_to_clipboard").show("slow");
+setTimeout(function(){
+$(".copied_saving_path_to_clipboard").hide();
+}, 2000);
+	
 var order_id = $('#order_id').val();
       // fill the show_order_id div
       $('#show_order_id').text(order_id);
@@ -2112,7 +2224,7 @@ var order_id = $('#order_id').val();
 $('#order_id').on('keyup', function() {
 var idNeeded = $(this).val();
 $('#fname').val(idNeeded);
-$('#fcontent').val("const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 2717, height: 1146}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/CUSTOM_CAT_RENDER_HERE/" + idNeeded + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/CUSTOM_CAT_RENDER_HERE/" + idNeeded + ".png' }); await browser.close(); })();");
+$('#fcontent').val("const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 2717, height: 1146}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-MY-DATA/org/_ALL-UIs/CUSTOM_CAT_RENDER_HERE/" + idNeeded + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-MY-DATA/org/_ALL-UIs/CUSTOM_CAT_RENDER_HERE/" + idNeeded + ".png' }); await browser.close(); })();");
 });
 
 
@@ -2346,7 +2458,7 @@ $(".no_book_nor_chapter_nor_verse_selection_yet").hide();
 var willGrabBook = $('#hidden_book_desired').text();
 var willGrabChapter = $('#hidden_chapter_desired').text();
 var willGrabVerse = $('#hidden_verse_desired').text();
-var completeVerseURLtoGrab = ('../data_files/_YourNameHere_/' + willGrabBook + '/' + willGrabBook + '-' + willGrabChapter + '-' + willGrabVerse + '.html');
+var completeVerseURLtoGrab = ('../../data_files/_YourNameHere_/' + willGrabBook + '/' + willGrabBook + '-' + willGrabChapter + '-' + willGrabVerse + '.html');
 console.log("completeVerseURLtoGrab is: " + completeVerseURLtoGrab);
 // Assign handlers immediately after making the request,
 // and remember the jqxhr object for this request
@@ -2538,7 +2650,7 @@ var step1_next_step2TimeoutID = setTimeout(function() {
 var willGrabBook = $('#hidden_book_desired').text();
 var willGrabChapter = $('#hidden_chapter_desired').text();
 var willGrabVerse = $('#hidden_verse_desired').text();
-var completeVerseURLtoGrab = ('../data_files/_YourNameHere_/' + willGrabBook + '/' + willGrabBook + '-' + willGrabChapter + '-' + willGrabVerse + '.html');
+var completeVerseURLtoGrab = ('../../data_files/_YourNameHere_/' + willGrabBook + '/' + willGrabBook + '-' + willGrabChapter + '-' + willGrabVerse + '.html');
 console.log("completeVerseURLtoGrab is: " + completeVerseURLtoGrab);
 // Assign handlers immediately after making the request,
 // and remember the jqxhr object for this request
@@ -2765,7 +2877,7 @@ var step1_next_step2TimeoutID = setTimeout(function() {
 var willGrabBook = $('#hidden_book_desired').text();
 var willGrabChapter = $('#hidden_chapter_desired').text();
 var willGrabVerse = $('#hidden_verse_desired').text();
-var completeVerseURLtoGrab = ('../data_files/_YourNameHere_/' + willGrabBook + '/' + willGrabBook + '-' + willGrabChapter + '-' + willGrabVerse + '.html');
+var completeVerseURLtoGrab = ('../../data_files/_YourNameHere_/' + willGrabBook + '/' + willGrabBook + '-' + willGrabChapter + '-' + willGrabVerse + '.html');
 console.log("completeVerseURLtoGrab is: " + completeVerseURLtoGrab);
 // Assign handlers immediately after making the request,
 // and remember the jqxhr object for this request
@@ -2920,6 +3032,31 @@ $(".DesignCustomerOrdersUI_imput_ORDER").focus();
 
 
 
+///////////////////////////////////////
+// BEGIN create & copy node command to clipboard
+///////////////////////////////////////
+    $(".copy_node_command").click(function(event){
+
+var changeDirectory = "cd /media/demo/ALL-MY-DATA/org/_ALL-UIs/CUSTOM_CAT_RENDER_HERE/\n";
+var theWordNode = "node ";
+var thisOrderToRun = $("#order_id").val();
+var completeNodeCommandToCopyToClipboard = (changeDirectory + theWordNode + thisOrderToRun + ".js\n");
+console.log(completeNodeCommandToCopyToClipboard);
+var $tempElementTextArea = $("<textarea>");
+        $("body").append($tempElementTextArea);
+        $tempElementTextArea.val(completeNodeCommandToCopyToClipboard).select();
+        document.execCommand("Copy");
+        $tempElementTextArea.remove();
+// show copied_saving_path_to_clipboard for a sec
+$(".copied_node_command_to_clipboard").show("slow");
+setTimeout(function(){
+$(".copied_node_command_to_clipboard").hide();
+}, 2000);
+
+    });
+///////////////////////////////////////
+// END create & copy node command to clipboard
+///////////////////////////////////////
 
 
 

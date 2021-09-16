@@ -341,8 +341,11 @@ height: 1146px;
 <img class="" width="" height="" src="../../mug-side-blank_fixed_perspective_R.png" alt="">
 </div>
 
-<div class="CUSTOMER_NAME_table">
-<span class="CUSTOMER_NAME_table-cell"><span style="font-size: 399px;">Daniella</span></span>
+<div class="CUSTOMER_NAME_table" style="
+    top: 34px;
+    left: 161px;
+">
+<span class="CUSTOMER_NAME_table-cell"><span style="font-size: 370px;">Daniella</span></span>
 </div>
 
 <div class="CUSTOMER_FLOWER_table" style="top: 430px;">
@@ -351,12 +354,12 @@ height: 1146px;
 
 <div class="MADE_WITH_LOVE_table">
 <span class="MADE_WITH_LOVE_table-cell">
-made with <span class="heart" style="text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.965926px 0.258819px 0px, rgb(0, 0, 0) 0.866025px 0.5px 0px, rgb(0, 0, 0) 0.707107px 0.707107px 0px, rgb(0, 0, 0) 0.5px 0.866025px 0px, rgb(0, 0, 0) 0.258819px 0.965926px 0px, rgb(0, 0, 0) 0px 1px 0px, rgb(0, 0, 0) -0.258819px 0.965926px 0px, rgb(0, 0, 0) -0.5px 0.866025px 0px, rgb(0, 0, 0) -0.707107px 0.707107px 0px, rgb(0, 0, 0) -0.866025px 0.5px 0px, rgb(0, 0, 0) -0.965926px 0.258819px 0px, rgb(0, 0, 0) -1px 0px 0px, rgb(0, 0, 0) -0.965926px -0.258819px 0px, rgb(0, 0, 0) -0.866025px -0.5px 0px, rgb(0, 0, 0) -0.707107px -0.707107px 0px, rgb(0, 0, 0) -0.5px -0.866025px 0px, rgb(0, 0, 0) -0.258819px -0.965926px 0px, rgb(0, 0, 0) 0px -1px 0px, rgb(0, 0, 0) 0.258819px -0.965926px 0px, rgb(0, 0, 0) 0.5px -0.866025px 0px, rgb(0, 0, 0) 0.707107px -0.707107px 0px, rgb(0, 0, 0) 0.866025px -0.5px 0px, rgb(0, 0, 0) 0.965926px -0.258819px 0px, rgb(0, 0, 0) 1px 0px 0px;">❤</span> at BibleCups.com
+made with <span class="heart" style="text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.965926px 0.258819px 0px, rgb(0, 0, 0) 0.866025px 0.5px 0px, rgb(0, 0, 0) 0.707107px 0.707107px 0px, rgb(0, 0, 0) 0.5px 0.866025px 0px, rgb(0, 0, 0) 0.258819px 0.965926px 0px, rgb(0, 0, 0) 0px 1px 0px, rgb(0, 0, 0) -0.258819px 0.965926px 0px, rgb(0, 0, 0) -0.5px 0.866025px 0px, rgb(0, 0, 0) -0.707107px 0.707107px 0px, rgb(0, 0, 0) -0.866025px 0.5px 0px, rgb(0, 0, 0) -0.965926px 0.258819px 0px, rgb(0, 0, 0) -1px 0px 0px, rgb(0, 0, 0) -0.965926px -0.258819px 0px, rgb(0, 0, 0) -0.866025px -0.5px 0px, rgb(0, 0, 0) -0.707107px -0.707107px 0px, rgb(0, 0, 0) -0.5px -0.866025px 0px, rgb(0, 0, 0) -0.258819px -0.965926px 0px, rgb(0, 0, 0) 0px -1px 0px, rgb(0, 0, 0) 0.258819px -0.965926px 0px, rgb(0, 0, 0) 0.5px -0.866025px 0px, rgb(0, 0, 0) 0.707107px -0.707107px 0px, rgb(0, 0, 0) 0.866025px -0.5px 0px, rgb(0, 0, 0) 0.965926px -0.258819px 0px, rgb(0, 0, 0) 1px 0px 0px;">❤</span> at BibleFarm.org
 </span>
 </div>
 
 <div class="CUSTOMER_VERSE_table">
-<span class="CUSTOMER_VERSE_table-cell populated_verse_with_ajax"><span style="font-size: 161px; line-height: 183px;">Delight thyself also in the LORD; and he shall give thee the desires of thine heart. </span></span>
+<span class="CUSTOMER_VERSE_table-cell populated_verse_with_ajax"><span style="font-size: 161px; line-height: 183px;">Delight thyself also in the LORD and he shall give thee the desires of thine heart</span></span>
 </div>
 
 <div class="CUSTOMER_REF_table">
@@ -368,7 +371,7 @@ made with <span class="heart" style="text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(
   <!-- BEGIN DesignCustomerOrdersUI -->
 <div class="DesignCustomerOrdersUI">
 <input class="DesignCustomerOrdersUI_imput_ORDER" name="" type="text" id="order_id" value="" placeholder="Order ID" width="" height="">
-<span id="show_order_id">0011</span>
+<span id="show_order_id">0024</span>
 <br>
 <input class="DesignCustomerOrdersUI_imput_NAME" name="" type="text" id="customize_name" value="" placeholder="Name" width="" height="">
 <span id="show_name"></span>
@@ -2112,7 +2115,7 @@ var order_id = $('#order_id').val();
 $('#order_id').on('keyup', function() {
 var idNeeded = $(this).val();
 $('#fname').val(idNeeded);
-$('#fcontent').val("const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 2717, height: 1146}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/CUSTOM_CAT_RENDER_HERE/" + idNeeded + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/CUSTOM_CAT_RENDER_HERE/" + idNeeded + ".png' }); await browser.close(); })();");
+$('#fcontent').val("const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 2717, height: 1146}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-MY-DATA/org/_ALL-UIs/CUSTOM_CAT_RENDER_HERE/" + idNeeded + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-MY-DATA/org/_ALL-UIs/CUSTOM_CAT_RENDER_HERE/" + idNeeded + ".png' }); await browser.close(); })();");
 });
 
 
