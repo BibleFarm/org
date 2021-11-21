@@ -1,0 +1,743 @@
+@font-face {
+  font-family: "LoversQuarrel-Regular";
+  src: url(../../shop_fonts/LoversQuarrel-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Gruppo-Regular";
+  src: url(../../shop_fonts/Gruppo-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PT_Sans-Narrow-Web-Regular";
+  src: url(../../shop_fonts/PT_Sans-Narrow-Web-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'OpenSansCondensed-Light';
+  src: url(../../shop_fonts/OpenSansCondensed-Light.ttf) format("opentype");
+}
+
+
+html, body {
+	background: ;
+	margin: 0 auto;
+	  /*    text-shadow: 2px 2px 1px #000000; */
+		  color: #222222;
+		    font-family: "Gruppo-Regular";
+
+}
+
+.wrap_output {
+background: black;
+    width: 1080px;
+    height: 1920px;
+    min-height: 1920px;
+    max-height: 1920px;
+    color: #D5AD6D;
+}
+.center_image_container {
+position: fixed;
+    display: flex;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    top: 338px;
+    left: 45px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+	}
+.blank_mug {
+	position: absolute;
+	top: -30px;
+}
+.flower_image {
+position: relative;
+    max-width: 90px;
+    max-height: 90px;
+    display: block;
+    margin: 0 auto;
+	}
+.top {
+	  font-family: "Gruppo-Regular";
+}
+.bot {
+	  font-family: "Gruppo-Regular";
+}
+.top_left {
+	position: absolute;
+	left: 120px;
+	top: 150px;
+	  display: table-cell;
+width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    margin-left: 25px;
+    margin-right: 25px;
+  text-align: center;
+  font-size: 30px;
+}
+.bot_left {
+position: absolute;
+    left: 614px;
+    top: 476px;
+    display: table-cell;
+    display: none;
+    width: 411px;
+    /* max-width: 200px; */
+    /* min-width: 200px; */
+    height: 50px;
+    max-height: 50px;
+    min-height: 50px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 50px;
+    filter: drop-shadow(0px 0px 4px #999);
+	}
+.top_center {
+	position: absolute;
+	left: 20px;
+	top: 40px;
+	  display: table-cell;
+width: 190px;
+    max-width: 190px;
+    min-width: 190px;
+    height: 190px;
+    max-height: 190px;
+    min-height: 190px;
+	  text-align: center;
+	}
+	
+.selected_bible_verse_fixed_on_mug-table {
+position: fixed;
+    display: flex;
+    display: none;
+    left: 642px;
+    top: 92px;
+    width: 356px;
+    height: 390px;
+    text-align: center;
+    z-index: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 6px #999);
+}
+
+
+.selected_bible_verse_fixed_on_mug {
+display: flex;
+    width: 356px;
+    height: 390px;
+    font-family: 'OpenSansCondensed-Light';
+    font-weight: bold;
+    text-shadow: none;
+    color: #222222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+	}
+.selected_bible_verse_fixed_on_mug_in_modalReviewOrder-table {
+position: fixed;
+    display: flex;
+    left: 114px;
+    top: 260px;
+    width: 180px;
+    height: 214px;
+    text-align: center;
+    z-index: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.5);
+			filter: drop-shadow(0px 0px 4px gray);
+			display: none;
+
+}
+.selected_bible_verse_fixed_on_mug_in_modalReviewOrder {
+height: 214px;
+    font-family: 'OpenSansCondensed-Light';
+    font-weight: bold;
+    text-shadow: none;
+    color: #222222;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	
+}
+
+	
+.bot_center {
+position: absolute;
+    left: 172px;
+    top: 476px;
+    display: table-cell;
+    display: none;
+    width: 411px;
+    /* max-width: 200px; */
+    /* min-width: 200px; */
+    height: 50px;
+    max-height: 50px;
+    min-height: 50px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 50px;
+    filter: drop-shadow(0px 0px 4px #999);
+	}
+.top_right {
+	position: absolute;
+	left: 760px;
+	top: 150px;
+	  display: table-cell;
+width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+    height: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    margin-left: 25px;
+    margin-right: 25px;
+  text-align: center;
+  font-size: 30px;
+}
+.bot_right {
+position: absolute;
+    left: 155px;
+    top: 420px;
+    display: table-cell;
+    width: 100px;
+    max-width: 100px;
+    min-width: 100px;
+    height: 20px;
+    max-height: 20px;
+    min-height: 20px;
+    text-align: center;
+    font-size: 8px;
+				filter: drop-shadow(0px 0px 2px black);
+				display: none;
+
+	}
+.wrap_verse_left {
+position: absolute;
+    display: flex;
+    display: none;
+    left: 184px;
+    top: 70px;
+    width: 380px;
+    height: 150px;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 6px #999);
+}
+	}
+.wrap_verse_center {
+position: absolute;
+    left: 100px;
+    top: 270px;
+    display: table-cell;
+    width: 100px;
+    max-width: 100px;
+    min-width: 100px;
+    height: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    text-align: center;
+	}
+.wrap_verse_right {
+position: absolute;
+    left: 100px;
+    top: 270px;
+    display: table-cell;
+    width: 100px;
+    max-width: 100px;
+    min-width: 100px;
+    height: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    text-align: center;
+}
+.name {
+font-family: 'LoversQuarrel-Regular', sans-serif;
+    color: #222222;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 105px;
+	}
+
+.verse {
+    font-family: 'LoversQuarrel-Regular', sans-serif;
+display: table-cell;
+    vertical-align: middle;
+    color: #222222;
+    height: 100px;
+    width: 100px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.top_verse {
+    font-family: 'PT_Sans-Narrow-Web-Regular', sans-serif;
+display: table-cell;
+    vertical-align: middle;
+    color: #D5AD6D;
+    height: 190px;
+    width: 190px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: ;
+    padding-right: 0px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.the3dots {
+	position: absolute;
+	top: 110px;
+    font-family: 'PT_Sans-Narrow-Web-Regular', sans-serif;
+	font-size: 40px;
+display: table-cell;
+    vertical-align: middle;
+    color: #D5AD6D;
+    height: 220px;
+    width: 1100px;
+    padding-left: 60px;
+    padding-right: 0px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+white-space: nowrap;
+	
+}
+.theverseref {
+	position: absolute;
+	top: 140px;
+    font-family: 'PT_Sans-Narrow-Web-Regular', sans-serif;
+	font-size: 60px;
+display: table-cell;
+    vertical-align: middle;
+    color: #D5AD6D;
+    height: 220px;
+    width: 1100px;
+    padding-left: 60px;
+    padding-right: 0px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+white-space: nowrap;
+}
+.justify {
+	text-align: justify;
+}
+i {
+	/* margin-right: 1.5%; */
+	 font-style: normal;
+}
+span {
+line-height: 120%;
+margin-bottom: 1%;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.mug_mockup_background_image{
+display: ;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+.red {color:#dd0000; font-size: 74px}
+.red2 {color:#dd0000; font-size: 94px}
+
+.wrap_container_showing_selected_picture_little_Left {
+	}
+img.container_showing_selected_picture_little_Left {
+}
+.customCSSforFlowers_table {
+  position: fixed;
+      top: 230px;
+      left: 60px;
+      display: flex;
+      width: 200px;
+      height: 210px;
+      margin: 0 auto;
+      padding: 0;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+}
+.customCSSforFlowers_cell {
+      max-width: 200px !important;
+      max-height: 130px;
+      filter: drop-shadow(2px 4px 8px gray);
+}
+.customCSSforFlowers_flex_little_Left {
+position: fixed;
+    display: flex;
+    top: 214px;
+    left: 207px;
+    width: 340px;
+    height: 264px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(2px 4px 8px gray);
+}
+.customCSSforFlowers_item_little_Left {
+    max-width: 340px;
+    max-height: 264px;
+}
+.customCSSforScenery_flex_little_Left {
+position: fixed;
+    display: flex;
+    top: 220px;
+    left: 207px;
+    max-width: 340px;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 4px #999);
+}
+.customCSSforScenery_item_little_Left {
+  display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-width: 340px;
+}
+.side_l {
+position: fixed;
+    display: flex;
+    top: 226px;
+    left: 0;
+    width: 1080px;
+    height: 350px;
+    /* line-height: 100px; */
+    text-align: center;
+    font-family: "PT_Sans-Narrow-Web-Regular";
+    font-size: 84px;
+    color: #D5AD6D;
+    background: black;
+    z-index: 100;
+    vertical-align: middle;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.side_l > div.side_l_01 { font-size: 166px; line-height: 150px; }
+.side_l > div.side_l_02 { font-size: 130px; line-height: 132px; }
+.side_l > div.side_l_03 { font-size: 114px; line-height: 132px; }
+.side_l > div.side_l_04 { font-size: 120px; line-height: 132px; }
+.side_l > div.side_l_05 { font-size: 134px; line-height: 132px; }
+.side_l > div.side_l_06 { font-size: 138px; line-height: 132px; }
+.side_r {
+position: fixed;
+    display: block;
+    top: 1254px;
+    left: 0px;
+    width: 1080px;
+    height: 576px;
+    line-height: 100px;
+    text-align: center;
+    font-family: "PT_Sans-Narrow-Web-Regular";
+    font-size: 98px;
+    color: greenyellow;
+    z-index: 100;
+    background: #00000059;
+}
+.side_l {
+line-height: 84px;
+}
+.visit_box {
+position: fixed;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 1200px;
+    height: 100px;
+    /* line-height: 100px; */
+    text-align: center;
+    font-family: "PT_Sans-Narrow-Web-Regular";
+    font-size: 80px;
+    color: #D5AD6D;
+    background: ;
+    z-index: 100;
+}
+.love_box {
+position: fixed;
+    display: block;
+    top: 170px;
+    left: 0px;
+    width: 1080px;
+    height: 100px;
+    /* line-height: 100px; */
+    text-align: center;
+    font-family: "PT_Sans-Narrow-Web-Regular";
+    font-size: 72px;
+    color: lightgray;
+    background: #00000059;
+    z-index: 200;
+}
+.support_next_visit {
+position: fixed;
+    display: block;
+    top: 1354px;
+    left: 0px;
+    width: 1080px;
+    height: 100px;
+    /* line-height: 100px; */
+    text-align: center;
+    font-family: "PT_Sans-Narrow-Web-Regular";
+    font-size: 80px;
+    color: lightgray;
+    background: ;
+    z-index: 100;
+}
+.pointer_to_link {
+position: fixed;
+    display: block;
+    top: 1470px;
+    left: 0px;
+    width: 1080px;
+    height: 100px;
+    /* line-height: 100px; */
+    text-align: left;
+    padding-left: 23px;
+    font-family: "PT_Sans-Narrow-Web-Regular";
+    font-size: 80px;
+    color: lightgray;
+    background: ;
+    z-index: 100;
+}
+.UI_AD_buttons {
+position: fixed;
+    display: flex;
+    top: 650px;
+    left: 0px;
+    width: 1200px;
+    height: 100px;
+    font-family: "PT_Sans-Narrow-Web-Regular";
+    font-size: 80px;
+}
+.UI_AD_photo > button {
+width: 100px;
+height: 100px;
+    font-family: "PT_Sans-Narrow-Web-Regular";
+    font-size: 50px;
+}
+.UI_AD_photo {
+position: fixed;
+    display: block;
+    top: 650px;
+    left: 1100px;
+    width: 1200px;
+    height: 100px;
+    font-family: "PT_Sans-Narrow-Web-Regular";
+    font-size: 50px;
+}
+.UI_AD_photo > .input_photo_post, .input_photo_date, .input_photo_visit, .input_photo_image, .input_photo_grab_local_image, .input_photo_html_page, .input_photo_image_url {
+    width: 1200px;
+    height: 100px;
+    font-family: "PT_Sans-Narrow-Web-Regular";
+    font-size: 50px;
+}
+.UI_AD_photo > .input_photo_date, .input_photo_visit, button {
+background: lightyellow;
+}
+.execute {
+position: fixed;
+top: 1080px;
+left: 1100px;
+    width: 1600px;
+}
+.doneEditing {
+width: 100px;
+height: 100px;
+}
+.wrapper_to_move_flowers {
+width: 100px;
+height: 100px;
+}
+.DesignCustomerOrdersUI_button,
+.DesignCustomerOrdersUI_imput_JS_file_name,
+.DesignCustomerOrdersUI_textarea_JS_file_content,
+.DesignCustomerOrdersUI_button_createJS {
+width: 300px;
+height: 100px;
+}
+    /* background colors */
+     .bgc-0000 {
+        background: white !important;
+    }
+     .bgc-0001{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 0%, 10%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0002{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 0%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0003{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0004{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(20, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0005{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(40, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0006{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(60, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0007{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(80, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0008{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(120, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0009{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(160, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0010{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(180, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0011{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(200, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0012{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(240, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0013{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(260, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0014{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(280, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0015{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(300, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+     .bgc-0016{
+background: -webkit-radial-gradient(center, ellipse cover, hsl(320, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+    }
+
+
+/*
+.bgc-0001	onyx				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 0%, 10%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0002	stone				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 0%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0003	jasper				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(0, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0004	sardonyx			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(20, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0005	jacinth				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(40, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0006	sardius				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(60, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0007	topaz				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(80, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0008	emerald				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(120, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0009	chrysolite			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(160, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0010	beryl				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(180, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0011	chrysoprasus		done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(200, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0012	sapphire			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(240, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0013	purple				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(260, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0014	chalcedony			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(280, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0015	amethyst			done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(300, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+.bgc-0016	wine				done
+background: -webkit-radial-gradient(center, ellipse cover, hsl(320, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
+
+*/
+.image_cntainer {
+position: fixed;
+    display: inline-block;
+    top: 576px;
+    text-align: center;
+    width: 1080px;
+    height: auto;
+}
+.image_cntainer > img {
+height: ;
+width: 1060px;
+}
+.copied_saving_path_to_clipboard {
+position: fixed;
+    display: none;
+    top: 1189px;
+    left: 0px;
+    text-align: center;
+    width: 400px;
+    height: 100px;
+    z-index: 5;
+    font-size: 50px;
+    background: red;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+.copy_node_command {
+height: 100px;
+    width: 200px;
+    font-size: 30px;
+    background: aqua;
+}
+.copied_node_command_to_clipboard {
+position: fixed;
+    display: none;
+    top: 1000px;
+    left: 1200px;
+    text-align: center;
+    width: 400px;
+    height: 150px;
+    z-index: 5;
+    font-size: 40px;
+    background: brown;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
