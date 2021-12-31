@@ -2414,6 +2414,167 @@ max-width: 88px;
 	background: rgba(0, 0, 0, 0.9);
 	z-index: 111;
 }
-     .bgc-0006{
-background: -webkit-radial-gradient(center, ellipse cover, hsl(60, 100%, 15%) 0%,hsl(0,0%,0%) 100%) !important;
-    }
+/* background colors */
+ .bgc-0000 {
+    background: white !important;
+}
+ .bgc-0001{
+    background: hsl(0,0%,8%) !important;
+    background: -moz-radial-gradient(center, ellipse cover, hsl(0,0%,8%)0%, hsl(0,0%,8%)100%) !important;
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(0,0%,8%)), color-stop(100%,hsl(0,0%,0%))) !important;
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(100,0%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -o-radial-gradient(center, ellipse cover, hsl(0,0%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -ms-radial-gradient(center, ellipse cover, hsl(0,0%,8%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: radial-gradient(ellipse at center, hsl(0,0%,8%) 0%,hsl(0,0%,0%) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(0,0%,8%)', endColorstr='#0',GradientType=1 ) !important;
+}
+ .bgc-0002{
+    background: hsl(0,0%,15%) !important;
+    background: -moz-radial-gradient(center, ellipse cover, hsl(0,0%,15%)0%, hsl(0,0%,15%)100%) !important;
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(0,0%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -o-radial-gradient(center, ellipse cover, hsl(0,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -ms-radial-gradient(center, ellipse cover, hsl(0,0%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: radial-gradient(ellipse at center, hsl(0,0%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(0,0%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+ .bgc-0003{
+    background: hsl(0,100%,15%) !important;
+    background: -moz-radial-gradient(center, ellipse cover, hsl(0,100%,15%)0%, hsl(0,100%,15%)100%) !important;
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(0,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -o-radial-gradient(center, ellipse cover, hsl(10,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -ms-radial-gradient(center, ellipse cover, hsl(0,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: radial-gradient(ellipse at center, hsl(0,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(0,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+ .bgc-0004{
+    background: hsl(20,100%,15%) !important;
+    background: -moz-radial-gradient(center, ellipse cover, hsl(20,100%,15%)0%, hsl(20,100%,15%)100%) !important;
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(20,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -o-radial-gradient(center, ellipse cover, hsl(20,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -ms-radial-gradient(center, ellipse cover, hsl(20,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: radial-gradient(ellipse at center, hsl(20,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(20,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+ .bgc-0005{
+    background: hsl(40,100%,15%) !important;
+    background: -moz-radial-gradient(center, ellipse cover, hsl(40,100%,15%)0%, hsl(40,100%,15%)100%) !important;
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(40,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -o-radial-gradient(center, ellipse cover, hsl(30,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -ms-radial-gradient(center, ellipse cover, hsl(40,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: radial-gradient(ellipse at center, hsl(40,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(40,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+ .bgc-0006{
+    background: hsl(60,100%,15%) !important;
+    background: -moz-radial-gradient(center, ellipse cover, hsl(60,100%,15%)0%, hsl(60,100%,15%)100%) !important;
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(60,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -o-radial-gradient(center, ellipse cover, hsl(40,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -ms-radial-gradient(center, ellipse cover, hsl(60,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: radial-gradient(ellipse at center, hsl(60,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(60,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+ .bgc-0007{
+    background: hsl(80,100%,15%) !important;
+    background: -moz-radial-gradient(center, ellipse cover, hsl(80,100%,15%)0%, hsl(80,100%,15%)100%) !important;
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(80,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -o-radial-gradient(center, ellipse cover, hsl(50,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -ms-radial-gradient(center, ellipse cover, hsl(80,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: radial-gradient(ellipse at center, hsl(80,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(80,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+ .bgc-0008{
+    background: hsl(120,100%,15%) !important;
+    background: -moz-radial-gradient(center, ellipse cover, hsl(120,100%,15%)0%, hsl(120,100%,15%)100%) !important;
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(120,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -o-radial-gradient(center, ellipse cover, hsl(70,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -ms-radial-gradient(center, ellipse cover, hsl(120,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: radial-gradient(ellipse at center, hsl(120,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(120,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+ .bgc-0009{
+    background: hsl(160,100%,15%) !important;
+    background: -moz-radial-gradient(center, ellipse cover, hsl(160,100%,15%)0%, hsl(160,100%,15%)100%) !important;
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(160,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -o-radial-gradient(center, ellipse cover, hsl(90,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -ms-radial-gradient(center, ellipse cover, hsl(160,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: radial-gradient(ellipse at center, hsl(160,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(160,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+ .bgc-0010{
+    background: hsl(180,100%,15%) !important;
+    background: -moz-radial-gradient(center, ellipse cover, hsl(180,100%,15%)0%, hsl(180,100%,15%)100%) !important;
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(180,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -o-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -ms-radial-gradient(center, ellipse cover, hsl(180,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: radial-gradient(ellipse at center, hsl(180,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(180,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+ .bgc-0011{
+    background: hsl(200,100%,15%) !important;
+    background: -moz-radial-gradient(center, ellipse cover, hsl(200,100%,15%)0%, hsl(200,100%,15%)100%) !important;
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(200,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -o-radial-gradient(center, ellipse cover, hsl(110,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -ms-radial-gradient(center, ellipse cover, hsl(200,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: radial-gradient(ellipse at center, hsl(200,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(200,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+ .bgc-0012{
+    background: hsl(240,100%,15%) !important;
+    background: -moz-radial-gradient(center, ellipse cover, hsl(240,100%,15%)0%, hsl(240,100%,15%)100%) !important;
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(240,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -o-radial-gradient(center, ellipse cover, hsl(130,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -ms-radial-gradient(center, ellipse cover, hsl(240,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: radial-gradient(ellipse at center, hsl(240,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(240,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+ .bgc-0013{
+    background: hsl(260,100%,15%) !important;
+    background: -moz-radial-gradient(center, ellipse cover, hsl(260,100%,15%)0%, hsl(260,100%,15%)100%) !important;
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(260,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -o-radial-gradient(center, ellipse cover, hsl(140,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -ms-radial-gradient(center, ellipse cover, hsl(260,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: radial-gradient(ellipse at center, hsl(260,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(260,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+ .bgc-0014{
+    background: hsl(280,100%,15%) !important;
+    background: -moz-radial-gradient(center, ellipse cover, hsl(280,100%,15%)0%, hsl(280,100%,15%)100%) !important;
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(280,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -o-radial-gradient(center, ellipse cover, hsl(150,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -ms-radial-gradient(center, ellipse cover, hsl(280,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: radial-gradient(ellipse at center, hsl(280,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(280,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+ .bgc-0015{
+    background: hsl(300,100%,15%) !important;
+    background: -moz-radial-gradient(center, ellipse cover, hsl(300,100%,15%)0%, hsl(300,100%,15%)100%) !important;
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(300,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -o-radial-gradient(center, ellipse cover, hsl(160,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -ms-radial-gradient(center, ellipse cover, hsl(300,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: radial-gradient(ellipse at center, hsl(300,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(300,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
+ .bgc-0016{
+    background: hsl(320,100%,15%) !important;
+    background: -moz-radial-gradient(center, ellipse cover, hsl(320,100%,15%)0%, hsl(320,100%,15%)100%) !important;
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,hsl(320,100%,15%)), color-stop(100%,hsl(0,0%,0%))) !important;
+    background: -webkit-radial-gradient(center, ellipse cover, hsl(100,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -o-radial-gradient(center, ellipse cover, hsl(170,100%,20%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: -ms-radial-gradient(center, ellipse cover, hsl(320,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    background: radial-gradient(ellipse at center, hsl(320,100%,15%) 0%,hsl(0,0%,0%) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(320,100%,15%)', endColorstr='#0',GradientType=1 ) !important;
+}
