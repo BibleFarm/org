@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: "LoversQuarrel-Regular";
   src: url(../../shop_fonts/LoversQuarrel-Regular.ttf) format("truetype");
@@ -109,7 +110,7 @@ width: 190px;
     min-height: 190px;
 	  text-align: center;
 	}
-	
+
 .selected_bible_verse_fixed_on_mug-table {
 position: fixed;
     display: flex;
@@ -172,10 +173,10 @@ height: 214px;
     color: #222222;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-	
+
 }
 
-	
+
 .bot_center {
 position: absolute;
     left: 172px;
@@ -320,7 +321,7 @@ display: table-cell;
   -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 white-space: nowrap;
-	
+
 }
 .theverseref {
 	position: absolute;
@@ -490,7 +491,7 @@ position: fixed;
     /* line-height: 100px; */
     text-align: center;
     font-family: "PT_Sans-Narrow-Web-Regular";
-    font-size: 67px;
+    font-size: 65px;
     color: lightgray;
     background: #00000059;
     z-index: 100;
