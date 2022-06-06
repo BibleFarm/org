@@ -2134,7 +2134,7 @@ $( "#removeGuidelines" ).on( "click", function() {
     $('#SaveHTMLpage').click(function(){
 	
 // get & copy the path to clipboard, of where I want to save this node js file that creates the landing page & the picture
-var pathToSaveHTMLandJSfiles = "/media/demo/ALL-MY-DATA/org/_ALL-UIs/CUSTOM_CAT_RENDER_HERE//";
+var pathToSaveHTMLandJSfiles = "/home/aharon/Documents/GitHub/org/_ALL-UIs/CUSTOM_CAT_RENDER_HERE//";
 var thisOrderID = $("#order_id").val();
 var completeThingToCopyToClipboard = (pathToSaveHTMLandJSfiles + thisOrderID);
 console.log(completeThingToCopyToClipboard);
@@ -2178,7 +2178,7 @@ var order_id = $('#order_id').val();
 $('#order_id').on('keyup', function() {
 var idNeeded = $(this).val();
 $('#fname').val(idNeeded);
-$('#fcontent').val("const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 2717, height: 1146}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-MY-DATA/org/_ALL-UIs/CUSTOM_CAT_RENDER_HERE/" + idNeeded + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-MY-DATA/org/_ALL-UIs/CUSTOM_CAT_RENDER_HERE/" + idNeeded + ".png' }); await browser.close(); })();");
+$('#fcontent').val("const puppeteer = require('/home/aharon/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 2717, height: 1146}  }); const page = await browser.newPage(); await page.goto('file:///home/aharon/Documents/GitHub/org/_ALL-UIs/CUSTOM_CAT_RENDER_HERE/" + idNeeded + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//home/aharon/Documents/GitHub/org/_ALL-UIs/CUSTOM_CAT_RENDER_HERE/" + idNeeded + ".png' }); await browser.close(); })();");
 });
 
 
@@ -2991,7 +2991,7 @@ $(".DesignCustomerOrdersUI_imput_ORDER").focus();
 ///////////////////////////////////////
     $(".copy_node_command").click(function(event){
 
-var changeDirectory = "cd /media/demo/ALL-MY-DATA/org/_ALL-UIs/CUSTOM_CAT_RENDER_HERE/\n";
+var changeDirectory = "cd /home/aharon/Documents/GitHub/org/_ALL-UIs/CUSTOM_CAT_RENDER_HERE/\n";
 var theWordNode = "node ";
 var thisOrderToRun = $("#order_id").val();
 var completeNodeCommandToCopyToClipboard = (changeDirectory + theWordNode + thisOrderToRun + ".js\n");
