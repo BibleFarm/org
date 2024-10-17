@@ -1,5 +1,5 @@
 $(document).ready(function (){
-	
+
 /*
 //Get first five words of of the verse
 function getWords(string){
@@ -13,7 +13,7 @@ var str = $('.top_verse').text();
 $('.top_verse').text('');
 //now write just the first 5 words back to the DOM
 $('<span>' + getWords(str) + '...' + '</span>').appendTo('.top_verse');
-*/	
+*/
 
 // get the first phrase up to any of these: , ; : . ? ! ( )
 
@@ -72,7 +72,7 @@ $(function(){
 
 
 /*
-    var len = $('span').text().length;    
+    var len = $('span').text().length;
     if(len > 60){
         $('.verse').addClass("justify");
 console.log("JUSTIFIED // because // character count is: " + len);
@@ -158,7 +158,7 @@ $("#drag").css({"position":"absolute","top":"100px","left":"100px","border":"1px
 ///////////////////////////////////////
 // clear sides
 $(".side_l, .side_r").hide();
-// define which post I'm creating 
+// define which post I'm creating
 $(".UI_AD_photo > button").on( "click", function() {
 var NeededPostToCreate = $(this).text();
 $(".input_photo_post").val(NeededPostToCreate);
@@ -175,7 +175,7 @@ var NeededPost = $(".input_photo_post").val();
 var NeededDate = $(".input_photo_date").val();
 var NeededVisit = $(".input_photo_visit").val();
 var NeededPhoto = $(".input_photo_image").val();
-var NeededGrabLocalImage = $(".input_photo_grab_local_image").val("../../../../farm-photos-2022/" + NeededDate + "-" + NeededVisit + "/" + NeededDate + "-" + NeededVisit + "_" + NeededPhoto + ".jpg");
+var NeededGrabLocalImage = $(".input_photo_grab_local_image").val("../../../../farm-photos-2024/" + NeededDate + "-" + NeededVisit + "/" + NeededDate + /*"-" + NeededVisit + */"_" + NeededPhoto + ".jpg");
 var NeededHtmlPageName = $(".input_photo_html_page").val(NeededVisit + "-" + NeededPost);
 var NeededImageUrl = $(".input_photo_image_url").val(NeededVisit + "-" + NeededPost + ".png");
 var LocalImageToGrab = $(".input_photo_grab_local_image").val();
