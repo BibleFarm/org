@@ -59,7 +59,7 @@ $(document).ready(function() {
   $(".bf_intro_splash_text p.msg1")
     .fitText(3.0, { minFontSize: 25, maxFontSize: 48 })
     .textillate({
-      initialDelay: 2000,
+      initialDelay: 200,
       in: { delay: 3, shuffle: true },
       callback: function() {
         setTimeout(function() {
@@ -70,7 +70,7 @@ $(document).ready(function() {
 
   $(".bf_intro_splash_text p.msg2")
     .fitText(3.0, { minFontSize: 25, maxFontSize: 48 })
-    .textillate({ initialDelay: 4900, in: { delay: 8, shuffle: true } });
+    .textillate({ initialDelay: 490, in: { delay: 8, shuffle: true } });
   //////////////////////
   ///// END textillate /
   //////////////////////
@@ -81,7 +81,7 @@ $(document).ready(function() {
   }, 500);
   setTimeout(function() {
     $(".bf_intro_splash_bg, .bf_intro_splash_text").hide("slow");
-  }, 12000);
+  }, 7500);
   // automatically move to forced desired page
   //       setTimeout(function() {
   // $('.move_to_bf_farm').trigger('click', function() {
@@ -843,19 +843,19 @@ var RYPP = (function($, undefined) {
           thu +
           '" class="thumb"></li>'
       ).appendTo(D.$items.find("ol"));
-	  
+
 ////////////////////////////////////////////////////
-// BEGIN fix to sort youtube playlist 
+// BEGIN fix to sort youtube playlist
 ////////////////////////////////////////////////////
 var elems = $('ol li').detach().sort(function (a, b) {
-  return ($(a).text() > $(b).text() ? -1 
+  return ($(a).text() > $(b).text() ? -1
         : $(a).text() < $(b).text() ? 1 : 0);
-}); 
+});
 $('ol').append(elems);
 ////////////////////////////////////////////////////
-// END fix to sort youtube playlist 
+// END fix to sort youtube playlist
 ////////////////////////////////////////////////////
-	  
+
     }
   }; // prototypes
 
@@ -1275,6 +1275,3 @@ $(document).ready(function() {
 ////////////////////////////////////////////////////
 // END PureChat hack
 ////////////////////////////////////////////////////
-
-
-
