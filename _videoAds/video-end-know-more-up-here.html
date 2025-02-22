@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <!-- ////////////////////////// -->
+    <!-- ////////////////////////// -->
+    <!-- js entire site & app ///// -->
+    <link rel="stylesheet" type="text/css" href="hope_is_on_the_way.css">
+    <!-- ////////////////////////// -->
+    <!-- ////////////////////////// -->
+<style>
+
+.square1090x1090 {
+  position: fixed;
+  background: #111111;
+  width: 1080px;
+  height: 1080px;
+  top: 10px;
+  left: 0px;
+  text-align:center;
+  color: #d5ad6d;
+  font-size: 100px;
+  z-index: 9999;
+}
+.square1080x1080 {
+    position: fixed;
+    background: black;
+    width: 1060px;
+    height: 1060px;
+    top: 20px;
+    left: 10px;
+    text-align:center;
+    color: #d5ad6d;
+    font-size: 100px;
+    z-index: 9999;
+}
+
+.bottom_video_first_frame {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 1280px;
+  text-align:center;
+  color: #d5ad6d;
+  font-size: 100px;
+  z-index: 9999;
+}
+.final_few_seconds, .hope_is_on_the_way, .all_others_also_bottom {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 1280px;
+  text-align:center;
+  color: #d5ad6d;
+  font-size: 100px;
+  z-index: 9999;
+}
+span.tex {font-size: 50px!important;}
+.intro_select_language {margin-left: 250px;}
+/*
+.tex_he {
+  direction: ltr !important;
+  font-family: "PT_Sans-Narrow-Web-Regular" !important;
+}
+*/
+.bgc-0012 {background: black!important}
+
+.container {
+  position: relative;
+  height: 5rem;
+}
+
+.container {
+  position: relative;
+  height: 10rem;
+}
+
+.arrow-up, .arrow-down {
+    position: absolute;
+    top: 42%;
+    left: 42%;
+    transform: translate(-42%, -42%);
+}
+
+.arrow-up {
+  transform: rotate(180deg);
+}
+
+.arrow-up span, .arrow-down span {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-bottom: 5px solid #d5ad6d;
+    border-right: 5px solid #d5ad6d;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow-up span:nth-child(2),
+.arrow-down span:nth-child(2){
+    animation-delay: -0.2s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+
+.wrapper {
+  height: 7rem;
+  width: 25%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #7ac142;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards
+}
+
+.checkmark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 3;
+  stroke: #7ac142;
+  stroke-miterlimit: 10;
+  margin: 10% auto;
+  box-shadow: inset 0px 0px 0px #7ac142;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0
+  }
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: none
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1)
+  }
+}
+
+/* Failed animation from this really good response in stack overflow, I had luck finding an animation similar to the success one, I suspect is from the same person as it is written the same way
+https://stackoverflow.com/questions/36011117/how-to-draw-x-sign-with-svgcss
+*/
+
+.checkmark__circle__failed {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #ff2b2b;
+  fill: none;
+  animation: stroke-failed 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark__failed {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 3;
+  stroke: #ff2b2b;;
+  stroke-miterlimit: 10;
+  margin: 10% auto;
+  box-shadow: inset 0px 0px 0px #ff2b2b;
+  animation: fill-failed .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.checkmark__check__failed {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 29;
+  stroke-dashoffset: 29;
+  animation: stroke-failed 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke-failed {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scale-failed {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+.know_more_text {
+  position: absolute;
+  display: block;
+  padding-top: 300px;
+  font-size: 100px;
+  padding-top: 100px;
+}
+
+</style>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- ////////////////////////// -->
+    <!-- BEGIN CSS website dependencies -->
+    <!-- ////////////////////////// -->
+    <!-- animate -->
+    <link href="../dependencies/offline_dependency_2018-06-26_animate_3.4.0.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+<div class="square1090x1090"></div>
+<div class="square1080x1080">
+  <div class="container">
+    <div class="arrow-up" style="margin-top: 180px;">
+          <span></span>
+          <span></span>
+        </div>
+  </div>
+  <div class"know_more_text"="" style="margin-top: 480px;">know more up here</div>
+
+</div>
+
+
+<!--
+
+
+
+
+<div class="bottom_video_first_frame">street kids hear the Gospel and believe</div>
+<div class="hope_is_on_the_way" data-in-effect="bounceInDown" data-out-effect="hinge">hope is on the way</div>
+
+<div class="all_others_also_bottom prayer" data-in-effect="bounceInDown" data-out-effect="hinge">prayer</div>
+
+<div class="all_others_also_bottom healthy_treats" data-in-effect="bounceInDown" data-out-effect="hinge">healthy treats</div>
+
+<div class="all_others_also_bottom yogurt" data-in-effect="bounceInDown" data-out-effect="hinge">yogurt</div>
+
+<div class="all_others_also_bottom cake" data-in-effect="bounceInDown" data-out-effect="hinge">cake</div>
+
+<div class="all_others_also_bottom first_and_great" data-in-effect="bounceInDown" data-out-effect="hinge">The First & Great Commandment</div>
+
+<div class="all_others_also_bottom second" data-in-effect="bounceInDown" data-out-effect="hinge">and The Second is like unto it</div>
+
+<div class="all_others_also_bottom coloring_and_crafts" data-in-effect="bounceInDown" data-out-effect="hinge">coloring and crafts</div>
+
+
+<div class="final_few_seconds">street kids hear the Gospel and believe</div>
+    <!-- BEGIN app intro -->
+
+    <div class="app_intro_splash_bg bgc-0012"></div>
+    <div class="app_intro_splash_text_wrap">
+      <div class="app_intro_splash_text">
+        <!--<h1 class="1st_intro">street kids hear the Gospel and believe</h1>-->
+        <p class="msg1" data-in-effect="rotateInDownRight" data-out-effect="hinge">
+          Welcome
+          </p>
+          <h1 class="2nd_intro">BibleFarm.org</h1>
+          <p class="bf_intro_splash_text" data-in-effect="bounceInDown">
+            <!-- let's get into The Word -->
+          </p>
+      </div>
+    </div>
+
+
+
+-->
+
+
+
+    <!-- BEGIN choose languaege in app intro for new users-->
+<!--
+    <div class="intro_select_language bgc-0012">
+      <table>
+        <tr>
+          <td>
+            <span class="tex bf_links" data-in-effect="fadeInUpBig">
+            prayer
+          </span>
+        </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="tex bf_links" data-in-effect="bounceInUp">
+            treats
+          </span>
+        </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="tex bf_links" data-in-effect="fadeInLeftBig">
+            yogurt
+          </span>
+        </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="tex bf_links" data-in-effect="fadeInUpBig">
+            cake
+          </span>
+        </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="tex bf_links" data-in-effect="fadeInRightBig">
+            crafts
+          </span>
+        </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="tex bf_links" data-in-effect="bounceInDown">
+            coloring
+          </span>
+        </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="tex bf_links" data-in-effect="fadeInDownBig">
+            The Word
+          </span>
+        </td>
+        </tr>
+      </table>
+    </div>
+    -->
+    <!-- END choose languaege in app intro for new users-->
+    <!-- END app intro -->
+
+
+
+
+
+  <script src="../dependencies/offline_dependency_2017-11-16_jquery-3.2.1.min.js" type="text/javascript"></script>
+  <!-- lettering -->
+  <script src="../dependencies/offline_dependency_2018-06-26_lettering_0.7.0..min.js"></script>
+    <!-- textillate -->
+    <script src="../dependencies/offline_dependency_2018-06-26_jquery.textillate.min_0.4.0.js"></script>
+    <!-- FitText -->
+    <script src="../dependencies/offline_dependency_2018-06-26_FitText_1.2.js"></script>
+    <!-- firebase app -->
+    <link href="../dependencies/firebase_app_style.css" rel="stylesheet" type="text/css" media="screen" />
+    <!-- firebase ui -->
+    <link type="text/css" rel="stylesheet" href="../dependencies/offline_dependency_2017-11-16_firebaseui-2.4.1.css" />
+    <!-- BEGIN firebase auth app js -->
+    <script type="text/javascript" src="../dependencies/offline_dependency_2017-11-16_firebase-4.6.2.js"></script>
+    <script src="../dependencies/sample-config.js"></script>
+    <script src="../dependencies/common.js"></script>
+    <script src="../dependencies/offline_dependency_2017-11-16_firebaseui-2.4.1.js"></script>
+    <!-- ////////////////////////// -->
+    <!-- END firebase auth app js -->
+    <!-- ////////////////////////// -->
+    <!--<script type="text/javascript" src="hope_is_on_the_way.js"></script>-->
+
+    <script>
+
+    $(document).ready(function() {
+
+    setTimeout(function() {
+$(".bottom_video_first_frame, .final_few_seconds").hide();
+$(".app_intro_splash_text_wrap").hide();
+$(".hope_is_on_the_way,.all_others_also_bottom ").hide();
+}, 7000);
+
+    // show & run first BibleFarm.org intro text
+    setTimeout(function() {
+      //$(".app_intro_splash_text_wrap").show();
+      $(".app_intro_splash_text h1.2nd_intro").hide();
+      $(".app_intro_splash_text p.msg1").hide();
+      $(".app_intro_splash_text p.msg2").hide();
+      /*
+      $(".app_intro_splash_text h1.1st_intro")
+        .show()
+        .fitText(3.0, { minFontSize: 100, maxFontSize: 1000 })
+        .textillate({ in: { effect: "flipInY" } });
+      console.log("4 secs // run 1st_intro BibleFarm.org");
+      */
+    }, 2000);
+    // show intro select language
+    setTimeout(function() {
+      //$(".app_intro_splash_text_wrap").hide();
+      // hide 1st_intro
+      //$(".app_intro_splash_text h1.1st_intro").hide();
+      $(".intro_select_language").show();
+      /* BEGIN choose languaege in app intro for new users */
+      // tex_he
+      $(".hope_is_on_the_way")
+        .show()
+        .fitText(3.0, { minFontSize: 100, maxFontSize: 1000 })
+        .textillate({
+          initialDelay: 0,
+          in: { delay: 0, /*shuffle: true,*/ sync: true },
+          callback: function() {
+            setTimeout(function() {
+              $(".hope_is_on_the_way").hide("slow");
+            }, 3000);
+          }
+        });
+      console.log("2 secs // running tex_he");
+      // tex
+      $(".tex")
+        .textillate({ initialDelay: 3000, in: { delay: 120, type: 'char', sequence: true } });
+      console.log("8 secs // running tex");
+      /* END choose languaege in app intro for new users */
+    }, 8000);
+    // BEGIN handle choose language
+    $(".tex").on("click", function(e) {
+      console.log("tex clicked");
+      // hide language selection
+      $(".intro_select_language").hide();
+      // show intro splash & textillate
+      $(".app_intro_splash_text_wrap").show();
+      // run h1.2nd_intro
+      $(".app_intro_splash_text h1.2nd_intro")
+        .show()
+        .fitText(3.0, { minFontSize: 50, maxFontSize: 100 })
+        .textillate({ in: { effect: "flipInY" } });
+      // run p.msg1
+      $(".app_intro_splash_text p.msg1")
+        .show()
+        .fitText(3.0, { minFontSize: 26, maxFontSize: 40 })
+        .textillate({
+          initialDelay: 1000,
+          in: { delay: 3, shuffle: true },
+          callback: function() {
+            setTimeout(function() {
+              $(".app_intro_splash_text p.msg1").textillate("out");
+            }, 1500);
+          }
+        });
+      console.log("2 secs // running p.msg1");
+      // run p.msg2
+      $(".app_intro_splash_text p.msg2")
+        .show()
+        .fitText(3.0, { minFontSize: 20, maxFontSize: 20 })
+        .textillate({
+          initialDelay: 3500,
+          in: { delay: 8, shuffle: true }
+        });
+      console.log("running p.msg2");
+      // finished intro // hide it and show app
+      setTimeout(function() {
+        $(".app_intro_splash_bg, .app_intro_splash_text").hide("slow");
+        console.log("10 secs // finished intro // hide it and show app");
+      }, 10000);
+
+      // offer fullscreen default is on
+      setTimeout(function() {
+        if ($("#offer_fullscreen_mode_on").hasClass("active_switch")) {
+          $(".wrap_fullscreen_offer").show("slow");
+        }
+      }, 15000);
+    });
+
+
+
+
+setTimeout(function() {
+    $(".prayer")
+      .show()
+      .fitText(3.0, { minFontSize: 100, maxFontSize: 1000 })
+      .textillate({
+        initialDelay: 0,
+        in: { delay: 0, /*shuffle: true,*/ sync: true },
+        callback: function() {
+          setTimeout(function() {
+            $(".prayer").hide("slow");
+          }, 1200);
+        }
+      });
+}, 12000);
+setTimeout(function() {
+    $(".healthy_treats")
+      .show()
+      .fitText(3.0, { minFontSize: 100, maxFontSize: 1000 })
+      .textillate({
+        initialDelay: 0,
+        in: { delay: 0, /*shuffle: true,*/ sync: true },
+        callback: function() {
+          setTimeout(function() {
+            $(".healthy_treats").hide("slow");
+          }, 1200);
+        }
+      });
+}, 14000);
+setTimeout(function() {
+    $(".yogurt")
+      .show()
+      .fitText(3.0, { minFontSize: 100, maxFontSize: 1000 })
+      .textillate({
+        initialDelay: 0,
+        in: { delay: 0, /*shuffle: true,*/ sync: true },
+        callback: function() {
+          setTimeout(function() {
+            $(".yogurt").hide("slow");
+          }, 1200);
+        }
+      });
+}, 16000);
+setTimeout(function() {
+    $(".cake")
+      .show()
+      .fitText(3.0, { minFontSize: 100, maxFontSize: 1000 })
+      .textillate({
+        initialDelay: 0,
+        in: { delay: 0, /*shuffle: true,*/ sync: true },
+        callback: function() {
+          setTimeout(function() {
+            $(".cake").hide("slow");
+          }, 1200);
+        }
+      });
+}, 18000);
+setTimeout(function() {
+    $(".first_and_great")
+      .show()
+      .fitText(3.0, { minFontSize: 100, maxFontSize: 1000 })
+      .textillate({
+        initialDelay: 0,
+        in: { delay: 0, /*shuffle: true,*/ sync: true },
+        callback: function() {
+          setTimeout(function() {
+            $(".first_and_great").hide("slow");
+          }, 1200);
+        }
+      });
+}, 20000);
+setTimeout(function() {
+    $(".second")
+      .show()
+      .fitText(3.0, { minFontSize: 100, maxFontSize: 1000 })
+      .textillate({
+        initialDelay: 0,
+        in: { delay: 0, /*shuffle: true,*/ sync: true },
+        callback: function() {
+          setTimeout(function() {
+            $(".second").hide("slow");
+          }, 1200);
+        }
+      });
+}, 22000);
+setTimeout(function() {
+    $(".coloring_and_crafts")
+      .show()
+      .fitText(3.0, { minFontSize: 100, maxFontSize: 1000 })
+      .textillate({
+        initialDelay: 0,
+        in: { delay: 0, /*shuffle: true,*/ sync: true },
+        callback: function() {
+          setTimeout(function() {
+            $(".coloring_and_crafts").hide("slow");
+          }, 1200);
+        }
+      });
+}, 24000);
+
+
+
+
+
+// last message
+      setTimeout(function() {
+        $(".app_intro_splash_text_wrap").show();
+    $(".final_few_seconds")
+      .show()
+      .fitText(3.0, { minFontSize: 100, maxFontSize: 1000 })
+      .textillate({ in: { effect: "flipInY" } });
+    console.log("4 secs // run 1st_intro BibleFarm.org");
+  }, 26000);
+
+
+    });
+    // END handle choose language
+</script>
+
+  </body>
+</html>
