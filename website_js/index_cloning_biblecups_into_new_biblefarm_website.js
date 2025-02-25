@@ -185,7 +185,7 @@ function getWelcome() {
         var messagesArray = JSON.parse(ajaxRequest.responseText);
         //get random object from array
         var randomIndex = Math.floor(Math.random() * messagesArray.length);
-        var messageObj = messagesArray[1]; // for random, replace the 0 with randomIndex
+        var messageObj = messagesArray[]; // for random, replace the [] with [randomIndex]
         //use that object to set content and color
         var welcomeDiv = document.getElementById("hidden_welcome");
         welcomeDiv.innerHTML = messageObj.ref;
@@ -237,3 +237,44 @@ getWelcome();
 ////////////////////////////////////////////////////
 ////END Infinite Scroll Random Verses ///////////////////////
 ////////////////////////////////////////////////////
+
+
+setInterval(function() {
+
+var objcollection = $('.rendered_date');
+
+  $('.rendered_date').each(function () {
+if(objcollection.length==0)
+{
+  // do something
+}
+else // if it's nott empty, that means rendered_date now has the number of days
+{
+  // do something
+  $(this).css("color", "red");
+
+  // Count days due
+  function daysUntil(year, month, day) {
+    var now = new Date(),
+        dateEnd = new Date(year, month - 1, day), // months are zero-based
+        days = ((dateEnd - now) / 1000/60/60/24) * -1;   // convert milliseconds to days
+
+    return Math.round(days);
+  }
+
+  // Set days due
+  $('.visit_sub_panel_details span.date').each(function () {
+
+      var monthDue = $(this).find('.due-date').text().substr(0,2);
+      var dayDue = $(this).find('.due-date').text().substr(3,2);
+      var yearDue = $(this).find('.due-date').text().substr(6,4);
+
+      $(this).find('.days-due').text(daysUntil(yearDue, monthDue, dayDue));
+
+      $('.due-date').hide();
+
+  });
+
+}
+});
+}, 1000);
