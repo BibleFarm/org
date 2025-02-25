@@ -173,7 +173,7 @@ $(".giving_options_modal").show("slow");
       getWelcome();
       getWelcome();
 /////////////////////////////////////
-// BEGIN get random json record
+// BEGIN function getWelcome get random json record
 /////////////////////////////////////
 function getWelcome() {
   var ajaxRequest = new XMLHttpRequest();
@@ -214,7 +214,7 @@ function getWelcome() {
   ajaxRequest.send();
 }
 /////////////////////////////////////
-// END get random json record
+// END function getWelcome get random json record
 /////////////////////////////////////
 
 $(window).on("resize scroll", function () {
@@ -278,3 +278,34 @@ else // if it's nott empty, that means rendered_date now has the number of days
 }
 });
 }, 1000);
+
+/////////////////////////////////////
+// BEGIN function bringInAllVisitFlexItems
+/////////////////////////////////////
+function bringInAllVisitFlexItems() {
+  $.ajax({
+      url: "ALL_visits_flex_items.html",
+      type : "GET",
+      dataType : "html"
+  }).done(function(data) {
+      var obj = $(data);
+      $("gofundme_flex-container").append(data);
+  }).fail(function(jqXHR, textStatus, errorThrown) {
+
+});
+};
+/////////////////////////////////////
+// END function bringInAllVisitFlexItems get random json record
+/////////////////////////////////////
+$(window).on("resize scroll", function () {
+  var currentscrollHeight = 0;
+    const scrollHeight = $(document).height();
+    const scrollPos = Math.floor($(window).height() + $(window).scrollTop());
+    const isBottom = scrollHeight - 200 < scrollPos;
+    if (isBottom && currentscrollHeight < scrollHeight) {
+/////////////////////////////////////////////
+bringInAllVisitFlexItems();
+/////////////////////////////////////////////
+    //    currentscrollHeight = scrollHeight;
+    }
+});
