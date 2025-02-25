@@ -192,77 +192,13 @@ function getWelcome() {
         welcomeDiv.style.color = messageObj.color;
         // BEGIN / get these things and put them in the hidden divs
   //      var verse = messageObj.ref;
+        var v = messageObj.v;
         var y = messageObj.y;
         var m = messageObj.m;
         var d = messageObj.d;
-        var p = messageObj.p;
   //      $('#hidden_div_verse').html(verse);
   //      $('#hidden_div_ref').html(ref);
         $('.gofundme_flex-container').append('<div class="wrap_featured_item"><div class="placeholder_mug_featured-btn">featured-item-image<img class="m" width="296" height="444" src="https://biblefarm.github.io/farm-photos-' + y + '/' + y + '-' + m + '-' + d + '-' + v + '/' + y + '-' + m + '-' + d + '_0001' + '.jpg" alt="" /></div><div class="visit_sub_panel_details"><span class="visit_number flex_item">visit # ' + v + '</span><span class="date flex_item"><span class=""><span class="rendered_date days-due"></span> days ago</span><span class="added_date due-date">' + m + '/' + d + '/' + y + '</span></span></div></div>');
-
-        $( ".gofundme_flex-container" ).on( "click", ".changeVerse, .addYourName, .changePicture", function(event) {
-          // make sure when user clicks on a featured item, we update the hidden divs BEFORE the other function goes to see what the are
-        var neededBookForThisClick = $(this).parent().find(".changeVerse").attr("book");
-        $('#hidden_book_desired').text(neededBookForThisClick);
-        var neededChapterForThisClick = $(this).parent().find(".changeVerse").attr("chapter");
-        $('#hidden_chapter_desired').text(neededChapterForThisClick);
-        var neededVerseForThisClick = $(this).parent().find(".changeVerse").attr("verse");
-        $('#hidden_verse_desired').text(neededVerseForThisClick);
-
-          // make sure when user clicks on a featured item, they have that picture in the modals
-        var neededPictureForThisClick = $(this).parent().find(".changeVerse").attr("picture");
-        $('#hidden_picture_desired').html(neededPictureForThisClick);
-        var putTogetherSrcUrl = ('p/' + neededPictureForThisClick + '.png');
-        $('.container_showing_selected_picture').attr('src', putTogetherSrcUrl);
-        $('.container_showing_selected_picture_little_Left').attr('src', putTogetherSrcUrl);
-
-
-
-// custom CSS for biblical or flowers displayed in other modals
-var IsItBiblical = neededPictureForThisClick;
- if (IsItBiblical.indexOf("B") > -1) {
-      console.log("it's biblical or flower. Adding custom classes for flowers");
-$('.wrap_container_showing_selected_picture').addClass('customCSSforFlowers_flex');
-$('img.container_showing_selected_picture').addClass('customCSSforFlowers_item');
-$('.wrap_container_showing_selected_picture_little_Left').addClass('customCSSforFlowers_flex_little_Left');
-$('img.container_showing_selected_picture_little_Left').addClass('customCSSforFlowers_item_little_Left');
-console.log("it's biblical or flower. Removing custom classes for scenery");
-$('.wrap_container_showing_selected_picture').removeClass('customCSSforScenery_flex');
-$('img.container_showing_selected_picture').removeClass('customCSSforScenery_item');
-$('.wrap_container_showing_selected_picture_little_Left').removeClass('customCSSforScenery_flex_little_Left');
-$('img.container_showing_selected_picture_little_Left').removeClass('customCSSforScenery_item_little_Left');
- }
-var IsItFlowers = neededPictureForThisClick;
- if (IsItFlowers.indexOf("F") > -1) {
-      console.log("it's biblical or flower. Adding custom classes for flowers");
-$('.wrap_container_showing_selected_picture').addClass('customCSSforFlowers_flex');
-$('img.container_showing_selected_picture').addClass('customCSSforFlowers_item');
-$('.wrap_container_showing_selected_picture_little_Left').addClass('customCSSforFlowers_flex_little_Left');
-$('img.container_showing_selected_picture_little_Left').addClass('customCSSforFlowers_item_little_Left');
-console.log("it's biblical or flower. Removing custom classes for scenery");
-$('.wrap_container_showing_selected_picture').removeClass('customCSSforScenery_flex');
-$('img.container_showing_selected_picture').removeClass('customCSSforScenery_item');
-$('.wrap_container_showing_selected_picture_little_Left').removeClass('customCSSforScenery_flex_little_Left');
-$('img.container_showing_selected_picture_little_Left').removeClass('customCSSforScenery_item_little_Left');
- }
-var IsItScenery = neededPictureForThisClick;
- if (IsItScenery.indexOf("S") > -1) {
-      console.log("it's not biblical or flower. Removing custom classes for flowers");
-$('.wrap_container_showing_selected_picture').removeClass('customCSSforFlowers_flex');
-$('img.container_showing_selected_picture').removeClass('customCSSforFlowers_item');
-$('.wrap_container_showing_selected_picture_little_Left').removeClass('customCSSforFlowers_flex_little_Left');
-$('img.container_showing_selected_picture_little_Left').removeClass('customCSSforFlowers_item_little_Left');
-      console.log("it's not biblical or flower. Adding custom classes for scenery");
-$('.wrap_container_showing_selected_picture').addClass('customCSSforScenery_flex');
-$('img.container_showing_selected_picture').addClass('customCSSforScenery_item');
-$('.wrap_container_showing_selected_picture_little_Left').addClass('customCSSforScenery_flex_little_Left');
-$('img.container_showing_selected_picture_little_Left').addClass('customCSSforScenery_item_little_Left');
- }
-
-
-
-        });
-
 
       } else {
         console.log("Status error: " + ajaxRequest.status);
@@ -273,7 +209,7 @@ $('img.container_showing_selected_picture_little_Left').addClass('customCSSforSc
   };
   ajaxRequest.open(
     "GET",
-    "data_files/visits_y_m_d_p.json"
+    "data_files/visits_v_y_m_d.json"
   );
   ajaxRequest.send();
 }
