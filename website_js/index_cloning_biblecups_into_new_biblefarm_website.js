@@ -294,7 +294,7 @@ function bringInAllVisitFlexItems() {
       dataType : "html"
   }).done(function(data) {
       var obj = $(data);
-      $("gofundme_flex-container").append(data);
+      $(".gofundme_flex-container").append(data);
   }).fail(function(jqXHR, textStatus, errorThrown) {
 
 });
