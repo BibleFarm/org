@@ -287,6 +287,7 @@ else // if it's nott empty, that means rendered_date now has the number of days
 /////////////////////////////////////
 // BEGIN function bringInAllVisitFlexItems
 /////////////////////////////////////
+/*
 function bringInAllVisitFlexItems() {
   $.ajax({
       url: "data_files/ALL_visits_flex_items.html",
@@ -299,6 +300,7 @@ function bringInAllVisitFlexItems() {
 
 });
 };
+*/
 /////////////////////////////////////
 // END function bringInAllVisitFlexItems get random json record
 /////////////////////////////////////
@@ -357,7 +359,10 @@ function bringInAllVisitFlexItems() {
       const isBottom = scrollHeight - 200 < scrollPos;
       if (isBottom && currentscrollHeight < scrollHeight) {
   /////////////////////////////////////////////
-  bringInAllVisitFlexItems();
+//  bringInAllVisitFlexItems();
+
+$('#591').load('https://www.biblefarm.org/index_cloning_biblecups_into_new_biblefarm_website' + ' #591');
+
   setTimeout(function() {
   $(function() {
       $('.lazy').lazy();
