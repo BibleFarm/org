@@ -1,6 +1,30 @@
 /* BEGIN Document Ready ****** */
 $(document).ready(function() {
 /* *************************** */
+/* *************************** */
+/* *************************** */
+/* BEGIN site_title & site_made animation
+/* *************************** */
+/* *************************** */
+/*
+$(function () {
+  count = 0;
+  wordsArray = ['<span class="made_title">Welcome <span class="red_heart">❤</span> to BibleFarm.org</span>', '<span class="customize_title">Children hear The Word and Believe</span>'];
+  setInterval(function () {
+    count++;
+    $("#site_title").fadeOut(400, function () {
+      $(this).html(wordsArray[count % wordsArray.length]).fadeIn(400);
+    });
+  }, 5000);
+});
+*/
+// '<span class="customize_title bf_links">customize for $10 shipping included</span>',
+// '<span class="made_title bf_links">made with <span class="red_heart">❤</span> at BibleFarm.org</span>'
+/* *************************** */
+/* *************************** */
+/* END site_title & site_made animation
+/* *************************** */
+/* *************************** */
 ////////////////////////////////////////////////////
 // BEGIN simple menu
 ////////////////////////////////////////////////////
@@ -26,13 +50,27 @@ $(".menu_modal").show("slow");
 
 // hide any and all modals when click on menu, except menu_modal
 $("#menu").click(function() {
-$(".modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_announce_fundraising, .modal_place_the_order, .about_modal, .help_modal").hide();
+$(".modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_announce_fundraising, .modal_place_the_order, .about_modal, .help_modal, .giving_options_modal").hide();
+$("#PureChatWidget").attr("style", "z-index: -1 !important");
+});
+// hide any and all modals when click on givingOptionsClick, except giving_options_modal
+$("#menu").click(function() {
+$(".modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_announce_fundraising, .modal_place_the_order, .about_modal, .help_modal, .menu_modal").hide();
 $("#PureChatWidget").attr("style", "z-index: -1 !important");
 });
 // hide any and all modals when click outside
 $(".opacity_cover, .wrap_gofundme_modal_bar").click(function() {
-$(".opacity_cover, .menu_modal, .modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_announce_fundraising, .modal_place_the_order, .about_modal, .help_modal").hide();
+$(".opacity_cover, .menu_modal, .modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_announce_fundraising, .modal_place_the_order, .about_modal, .help_modal, .giving_options_modal").hide();
 });
+////////////////////////////////////////////////////
+////BEGIN about modal ///////////////////////
+////////////////////////////////////////////////////
+$( "#about" ).on( "click", function() {
+$( ".about_modal" ).show('slow');
+});
+////////////////////////////////////////////////////
+////END about modal ///////////////////////
+////////////////////////////////////////////////////
 
 /* END Document Ready ****** */
 });
@@ -49,6 +87,217 @@ $(".opacity_cover, .menu_modal, .modal_customize_verse, .modal_customize_name, .
 /* END Jquery Lazy.js
 /* *************************** */
 /* *************************** */
+
 $(function() {
     $('.lazy').lazy();
 });
+
+
+
+$(document).ready(function() {
+
+  // Count days due
+  function daysUntil(year, month, day) {
+    var now = new Date(),
+        dateEnd = new Date(year, month - 1, day), // months are zero-based
+        days = ((dateEnd - now) / 1000/60/60/24) * -1;   // convert milliseconds to days
+
+    return Math.round(days);
+  }
+
+  // Set days due
+  $('.visit_sub_panel_details span.date').each(function () {
+
+      var monthDue = $(this).find('.due-date').text().substr(0,2);
+      var dayDue = $(this).find('.due-date').text().substr(3,2);
+      var yearDue = $(this).find('.due-date').text().substr(6,4);
+
+      $(this).find('.days-due').text(daysUntil(yearDue, monthDue, dayDue));
+
+      $('.due-date').hide();
+
+  });
+
+  $(function() {
+      $('.lazy').lazy();
+  });
+
+
+});
+
+////////////////////////////////////////////////////
+// BEG giving options menu
+////////////////////////////////////////////////////
+$(".givingOptionsClick").on("click", function() {
+  setTimeout(function() {
+  if($('.giving_options_modal').is(':visible'))
+{
+  $(".opacity_cover").hide();
+  $(".giving_options_modal").hide("slow");
+}
+}, 100);
+setTimeout(function() {
+if(!$('.giving_options_modal').is(':visible'))
+{
+$(".opacity_cover").show();
+$(".giving_options_modal").show("slow");
+}
+}, 100);
+});
+////////////////////////////////////////////////////
+// END giving options menu
+////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////
+////BEGIN Infinite Scroll Random Verses ///////////////////////
+////////////////////////////////////////////////////
+      getWelcome();
+      getWelcome();
+      getWelcome();
+      getWelcome();
+      getWelcome();
+      getWelcome();
+      getWelcome();
+      getWelcome();
+      getWelcome();
+      getWelcome();
+/////////////////////////////////////
+// BEGIN get random json record
+/////////////////////////////////////
+function getWelcome() {
+  var ajaxRequest = new XMLHttpRequest();
+  ajaxRequest.onreadystatechange = function () {
+    if (ajaxRequest.readyState == 4) {
+      //the request is completed, now check its status
+      if (ajaxRequest.status == 200) {
+        //turn JSON into array
+        var messagesArray = JSON.parse(ajaxRequest.responseText);
+        //get random object from array
+        var randomIndex = Math.floor(Math.random() * messagesArray.length);
+        var messageObj = messagesArray[randomIndex];
+        //use that object to set content and color
+        var welcomeDiv = document.getElementById("hidden_welcome");
+        welcomeDiv.innerHTML = messageObj.ref;
+        welcomeDiv.style.color = messageObj.color;
+        // BEGIN / get these things and put them in the hidden divs
+  //      var verse = messageObj.ref;
+        var y = messageObj.y;
+        var m = messageObj.m;
+        var d = messageObj.d;
+        var p = messageObj.p;
+  //      $('#hidden_div_verse').html(verse);
+  //      $('#hidden_div_ref').html(ref);
+        $('.gofundme_flex-container').append('<div class="wrap_featured_item"><div class="placeholder_mug_featured-btn">featured-item-image<img class="m" width="296" height="444" src="https://biblefarm.github.io/farm-photos-' + y + '/' + y + '-' + m + '-' + d + '-' + v + '/' + y + '-' + m + '-' + d + '_0001' + '.jpg" alt="" /></div><div class="visit_sub_panel_details"><span class="visit_number flex_item">visit # ' + v + '</span><span class="date flex_item"><span class=""><span class="rendered_date days-due"></span> days ago</span><span class="added_date due-date">' + m + '/' + d + '/' + y + '</span></span></div></div>');
+
+        $( ".gofundme_flex-container" ).on( "click", ".changeVerse, .addYourName, .changePicture", function(event) {
+          // make sure when user clicks on a featured item, we update the hidden divs BEFORE the other function goes to see what the are
+        var neededBookForThisClick = $(this).parent().find(".changeVerse").attr("book");
+        $('#hidden_book_desired').text(neededBookForThisClick);
+        var neededChapterForThisClick = $(this).parent().find(".changeVerse").attr("chapter");
+        $('#hidden_chapter_desired').text(neededChapterForThisClick);
+        var neededVerseForThisClick = $(this).parent().find(".changeVerse").attr("verse");
+        $('#hidden_verse_desired').text(neededVerseForThisClick);
+
+          // make sure when user clicks on a featured item, they have that picture in the modals
+        var neededPictureForThisClick = $(this).parent().find(".changeVerse").attr("picture");
+        $('#hidden_picture_desired').html(neededPictureForThisClick);
+        var putTogetherSrcUrl = ('p/' + neededPictureForThisClick + '.png');
+        $('.container_showing_selected_picture').attr('src', putTogetherSrcUrl);
+        $('.container_showing_selected_picture_little_Left').attr('src', putTogetherSrcUrl);
+
+
+
+// custom CSS for biblical or flowers displayed in other modals
+var IsItBiblical = neededPictureForThisClick;
+ if (IsItBiblical.indexOf("B") > -1) {
+      console.log("it's biblical or flower. Adding custom classes for flowers");
+$('.wrap_container_showing_selected_picture').addClass('customCSSforFlowers_flex');
+$('img.container_showing_selected_picture').addClass('customCSSforFlowers_item');
+$('.wrap_container_showing_selected_picture_little_Left').addClass('customCSSforFlowers_flex_little_Left');
+$('img.container_showing_selected_picture_little_Left').addClass('customCSSforFlowers_item_little_Left');
+console.log("it's biblical or flower. Removing custom classes for scenery");
+$('.wrap_container_showing_selected_picture').removeClass('customCSSforScenery_flex');
+$('img.container_showing_selected_picture').removeClass('customCSSforScenery_item');
+$('.wrap_container_showing_selected_picture_little_Left').removeClass('customCSSforScenery_flex_little_Left');
+$('img.container_showing_selected_picture_little_Left').removeClass('customCSSforScenery_item_little_Left');
+ }
+var IsItFlowers = neededPictureForThisClick;
+ if (IsItFlowers.indexOf("F") > -1) {
+      console.log("it's biblical or flower. Adding custom classes for flowers");
+$('.wrap_container_showing_selected_picture').addClass('customCSSforFlowers_flex');
+$('img.container_showing_selected_picture').addClass('customCSSforFlowers_item');
+$('.wrap_container_showing_selected_picture_little_Left').addClass('customCSSforFlowers_flex_little_Left');
+$('img.container_showing_selected_picture_little_Left').addClass('customCSSforFlowers_item_little_Left');
+console.log("it's biblical or flower. Removing custom classes for scenery");
+$('.wrap_container_showing_selected_picture').removeClass('customCSSforScenery_flex');
+$('img.container_showing_selected_picture').removeClass('customCSSforScenery_item');
+$('.wrap_container_showing_selected_picture_little_Left').removeClass('customCSSforScenery_flex_little_Left');
+$('img.container_showing_selected_picture_little_Left').removeClass('customCSSforScenery_item_little_Left');
+ }
+var IsItScenery = neededPictureForThisClick;
+ if (IsItScenery.indexOf("S") > -1) {
+      console.log("it's not biblical or flower. Removing custom classes for flowers");
+$('.wrap_container_showing_selected_picture').removeClass('customCSSforFlowers_flex');
+$('img.container_showing_selected_picture').removeClass('customCSSforFlowers_item');
+$('.wrap_container_showing_selected_picture_little_Left').removeClass('customCSSforFlowers_flex_little_Left');
+$('img.container_showing_selected_picture_little_Left').removeClass('customCSSforFlowers_item_little_Left');
+      console.log("it's not biblical or flower. Adding custom classes for scenery");
+$('.wrap_container_showing_selected_picture').addClass('customCSSforScenery_flex');
+$('img.container_showing_selected_picture').addClass('customCSSforScenery_item');
+$('.wrap_container_showing_selected_picture_little_Left').addClass('customCSSforScenery_flex_little_Left');
+$('img.container_showing_selected_picture_little_Left').addClass('customCSSforScenery_item_little_Left');
+ }
+
+
+
+        });
+
+
+      } else {
+        console.log("Status error: " + ajaxRequest.status);
+      }
+    } else {
+      console.log("Ignored readyState: " + ajaxRequest.readyState);
+    }
+  };
+  ajaxRequest.open(
+    "GET",
+    "data_files/visits_y_m_d_p.json"
+  );
+  ajaxRequest.send();
+}
+/////////////////////////////////////
+// END get random json record
+/////////////////////////////////////
+
+$(window).on("resize scroll", function () {
+  var currentscrollHeight = 0;
+    const scrollHeight = $(document).height();
+    const scrollPos = Math.floor($(window).height() + $(window).scrollTop());
+    const isBottom = scrollHeight - 200 < scrollPos;
+    if (isBottom && currentscrollHeight < scrollHeight) {
+/////////////////////////////////////////////
+getWelcome();
+getWelcome();
+getWelcome();
+getWelcome();
+getWelcome();
+getWelcome();
+/////////////////////////////////////////////
+    //    currentscrollHeight = scrollHeight;
+    }
+});
+////////////////////////////////////////////////////
+////END Infinite Scroll Random Verses ///////////////////////
+////////////////////////////////////////////////////
