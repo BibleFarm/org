@@ -185,8 +185,8 @@ function getWelcome() {
         var messagesArray = JSON.parse(ajaxRequest.responseText);
         //get random object from array
         //var randomIndex = Math.floor(Math.random() * messagesArray.length);
-        var sorted_Z_to_A_Index = messagesArray.sort().reverse();
-        var messageObj = messagesArray[sorted_Z_to_A_Index]; // for random, replace messagesArray; with messagesArray[randomIndex];
+        //var sorted_Z_to_A_Index = messagesArray.sort().reverse();
+        //var messageObj = messagesArray[sorted_Z_to_A_Index]; // for random, replace messagesArray; with messagesArray[randomIndex];
         //use that object to set content and color
         var welcomeDiv = document.getElementById("hidden_welcome");
         welcomeDiv.innerHTML = messageObj.ref;
