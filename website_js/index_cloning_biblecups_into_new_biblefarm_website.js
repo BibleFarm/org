@@ -360,39 +360,12 @@ function bringInAllVisitFlexItems() {
       if (isBottom && currentscrollHeight < scrollHeight) {
   /////////////////////////////////////////////
 //  bringInAllVisitFlexItems();
-
-$('#591').load('https://www.biblefarm.org/data_files/all_visits_flex_items' + ' #591');
-
-$.ajax({
-        type: 'POST',
-        url: 'https://www.biblefarm.org/data_files/ALL_visits_flex_items',
-        data: {},
-           success: function(data) {
-               alert(data);
-               //$('#renow').val( $(data).find('#now').val() );
-              // $('#rehour').val( $(data).find('#hour').val() );
-              // $('#reday').val( $(data).find('#day').val() );
-               $('.gofundme_flex-container').html( $(data).filter('#591').get(0).outerHTML );
-           }
-    });
-
-
-  setTimeout(function() {
-  $(function() {
-      $('.lazy').lazy();
-  });
-}, 1000);
-
-
-setTimeout(function() {
-$(function() {
-    $('.lazy_2secs').lazy();
-});
-}, 2000);
+if (!$( "#591" ).length) {
+  $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
+};
 
   /////////////////////////////////////////////
-      //    currentscrollHeight = scrollHeight;
-      }
+};
   });
   /////////////////////////////////////
   // END bringInAllVisitFlexItems and lazy the photos
