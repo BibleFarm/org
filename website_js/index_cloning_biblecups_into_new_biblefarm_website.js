@@ -361,7 +361,21 @@ function bringInAllVisitFlexItems() {
   /////////////////////////////////////////////
 //  bringInAllVisitFlexItems();
 
-$('#591').load('https://www.biblefarm.org/index_cloning_biblecups_into_new_biblefarm_website' + ' #591');
+$('#591').load('https://www.biblefarm.org/data_files/all_visits_flex_items' + ' #591');
+
+$.ajax({
+        type: 'POST',
+        url: 'https://www.biblefarm.org/data_files/ALL_visits_flex_items',
+        data: {},
+           success: function(data) {
+               alert(data);
+               //$('#renow').val( $(data).find('#now').val() );
+              // $('#rehour').val( $(data).find('#hour').val() );
+              // $('#reday').val( $(data).find('#day').val() );
+               $('.gofundme_flex-container').html( $(data).filter('#591').get(0).outerHTML );
+           }
+    });
+
 
   setTimeout(function() {
   $(function() {
