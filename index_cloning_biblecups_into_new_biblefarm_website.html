@@ -80,6 +80,15 @@
     <link rel="stylesheet" href="website_css/index_cloning_biblecups_into_new_biblefarm_website.css" />
 
     <style>
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {article {width: 78% !important;}}
+
+    p {
+      padding: 0;
+          margin: 0;
+          padding-top: 8px;
+          padding-bottom: 8px;
+    }
     img.lazy {
       width: 312px;
       height: 176px;
@@ -152,13 +161,17 @@
       margin: 0;
       padding: 0;
     }
+    h3 {
+      padding: 0;
+    margin: 0;
+    }
     .myFixedAtTheBottom {
       position: fixed;
           display: flex;
           bottom: 0;
           text-align: center;
           width: 100%;
-          height: 136px;
+          height: 67px;
           z-index: 999;
           background: rgb(0 0 0 / 95%);
           flex-direction: column;
@@ -171,14 +184,14 @@
       height: 16px;
     }
     .timerDiv {
-      font-size: 18px;
+      font-size: 20px;
     }
     .gold {
       color: #d5ad6d;
       text-shadow: 2px 2px 1px #000000;
     }
     .givingOptions {
-    font-size: 24px;
+    font-size: 26px;
     padding: 8px;
     color: #d5ad6d;
     text-shadow: 2px 2px 1px #000000;
@@ -405,7 +418,7 @@
     }
 
 .giving_options_menu_item {
-  background: #ead5b0;
+  background: white;
 }
 
 .wrap_gofundme_modal_bar {
@@ -460,7 +473,23 @@ article {
       background: #111;
 }
 .givingOptionsClick {
-  font-weight: 700;
+  font-family: 'OpenSansCondensed-Light';
+      font-weight: 700;
+      font-size: 26px;
+      padding: 8px;
+      padding-left: 36px;
+      padding-right: 36px;
+      display: inline-block;
+      border: none;
+      border-radius: 244px;
+      cursor: pointer;
+      color: #d5ad6d;
+      text-shadow: 1px 1px 2px #000000;
+      background: rgb(56, 255, 0);
+      background: -moz-radial-gradient(circle, rgba(56, 255, 0, 1) 0%, rgba(73, 56, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+      background: -webkit-radial-gradient(circle, rgba(56, 255, 0, 1) 0%, rgb(0 30 35) 0%, rgba(0, 0, 0, 1) 100%);
+      background: radial-gradient(circle, rgba(56, 255, 0, 1) 0%, rgb(0 30 35) 0%, rgba(0, 0, 0, 1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#38ff00",endColorstr="#000000",GradientType=1);
 }
 
     </style>
@@ -470,7 +499,7 @@ article {
 
 </head>
 
-<body class="">
+<body>
 <div class="title bgc-0002">BibleFarm.org</div>
 <!-- ///////// -->
 <!-- BEG Hero  -->
@@ -483,37 +512,25 @@ article {
 <!-- BEG H2  -->
       	<h2>THE SEED IS THE WORD</h2>
 <!-- END H2  -->
+<h3>
+  <div class="timerDiv">
+    <span class="timer count-title count-number" data-to="591" data-speed="10000"></span> visits as of today, </span><span id="month">11</span> <span id="day">11</span>, <span id="year">11</span>
+  </div>
+<h3>
       </div>
     </header>
-
 <!-- BEG sticky CTA  -->
             <div class="myFixedAtTheBottom">
               <div class="spacer"></div>
-              <div class="serveAndBelieveText">let's serve & believe together</div>
+            <!--  <div class="serveAndBelieveText">let's serve & believe together</div> -->
               <div class="givingOptions">
-                <button class="shiny-cta givingOptionsClick">
-                <span>giving options</span>
+                <button class="givingOptionsClick">
+                <span>Giving Options</span>
                 </button>
-              </div>
-              <div class="timerDiv">
-                <span class="timer count-title count-number" data-to="591" data-speed="10000"></span> visits as of </span><span id="month">11</span> <span id="day">11</span>, <span id="year">11</span>
               </div>
               <div class="spacer"></div>
             </div>
 
-            <div id="popup_default" class="popup">
-              <div class="popup-overlay"></div>
-                <div class="popup-content">
-                  <a href="#" class="close-popup" data-id="popup_default">&times;</a>
-                  <div class="proj_images">
-                    <div class="payment_images">
-                      <img class="lazy_2secs" data-src="GiveSendGo.png" alt="" />
-                      <img class="lazy_2secs" data-src="PayPal.png" alt="" />
-                      <img class="lazy_2secs" data-src="CashApp.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-            </div>
 <!-- END sticky CTA  -->
 <!-- ///////// -->
 <!-- END Hero  -->
@@ -522,9 +539,10 @@ article {
 <!-- BEG article  -->
 <article>
 <p class="">We're just a few soul winners visiting street kids with healthy treats and the Gospel.</p>
-<p class="">Some may think these street kids are surely hopeless but they're not! Not yet.
-Six out of ten don't live with their mom but with some neighbor. Eight out of ten don't even know their dad's name.
-They roam the streets all day surrounded by older ones who teach them the wrong survival skills.</p>
+<p class="">Some may think these street kids are surely hopeless but they're not! Not yet.</p>
+<p class="">Six out of ten don't live with their mom but with some neighbor.</p>
+<p class="">Eight out of ten don't even know their dad's name.</p>
+<p class="">They roam the streets all day surrounded by older ones who teach them the wrong survival skills.</p>
 <p class="">During the last ten years visiting street kids, I discovered how urgent it is to empower them before their childhood is gone.</p>
 <p class="">Together, while they're still longing for righteousness we can sow the seed. As Jesus said, the seed is The Word. And some seed will fall on good ground.</p>
 </article>
@@ -614,7 +632,9 @@ Six out of ten don't live with their mom but with some neighbor. Eight out of te
 They roam the streets all day surrounded by older ones who teach them the wrong survival skills.</div>
 <div class="about_flexed_item">During the last ten years visiting street kids,<br>I discovered how urgent it is to empower them before their childhood is gone.</div>
 <div class="about_flexed_item">Together, while they're still longing for righteousness we can sow the seed. As Jesus said, the seed is The Word. And some seed will fall on good ground. Let's believe!</div>
-        <div class="about_flexed_item">Help us serve these children: <button type="button" class="FBpixel_link_to_biblefarm givingOptionsClick">Giving Options</button></div>
+
+    <!--    <div class="about_flexed_item">Help us serve these children: -->
+        <!--  <button type="button" class="FBpixel_link_to_biblefarm givingOptionsClick">Giving Options</button></div> -->
       </div>
     </div>
     <!-- ////////////////////////// -->
@@ -844,6 +864,17 @@ if (monthToChange == '12') {$('#month').text('Dec');};
 },500);
 // EBD convert month number to month name in the counter
 // END counter
+
+
+// BEG giving options button hover
+$(function() {
+  $('.givingOptions').hover(function() {
+    $(this).fadeTo(200,.9);
+  }, function() {
+    $(this).fadeTo(200,1);
+  });
+});
+// BEG giving options button hover
 
 </script>
 
