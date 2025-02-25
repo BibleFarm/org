@@ -289,7 +289,7 @@ else // if it's nott empty, that means rendered_date now has the number of days
 /////////////////////////////////////
 function bringInAllVisitFlexItems() {
   $.ajax({
-      url: "ALL_visits_flex_items.html",
+      url: "data_files/ALL_visits_flex_items.html",
       type : "GET",
       dataType : "html"
   }).done(function(data) {
