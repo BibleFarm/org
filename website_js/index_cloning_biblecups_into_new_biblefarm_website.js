@@ -162,6 +162,7 @@ $(".giving_options_modal").show("slow");
 ////////////////////////////////////////////////////
 ////BEGIN Infinite Scroll Random Verses ///////////////////////
 ////////////////////////////////////////////////////
+/*
       getWelcome();
       getWelcome();
       getWelcome();
@@ -172,9 +173,11 @@ $(".giving_options_modal").show("slow");
       getWelcome();
       getWelcome();
       getWelcome();
+*/
 /////////////////////////////////////
 // BEGIN function getWelcome get random json record
 /////////////////////////////////////
+/*
 function getWelcome() {
   var ajaxRequest = new XMLHttpRequest();
   ajaxRequest.onreadystatechange = function () {
@@ -213,10 +216,11 @@ function getWelcome() {
   );
   ajaxRequest.send();
 }
+*/
 /////////////////////////////////////
 // END function getWelcome get random json record
 /////////////////////////////////////
-
+/*
 $(window).on("resize scroll", function () {
   var currentscrollHeight = 0;
     const scrollHeight = $(document).height();
@@ -234,6 +238,7 @@ getWelcome();
     //    currentscrollHeight = scrollHeight;
     }
 });
+*/
 ////////////////////////////////////////////////////
 ////END Infinite Scroll Random Verses ///////////////////////
 ////////////////////////////////////////////////////
