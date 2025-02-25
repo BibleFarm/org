@@ -362,7 +362,7 @@ function bringInAllVisitFlexItems() {
   $(function() {
       $('.lazy').lazy();
   });
-}, 2000);
+}, 1000);
 
   /////////////////////////////////////////////
       //    currentscrollHeight = scrollHeight;
