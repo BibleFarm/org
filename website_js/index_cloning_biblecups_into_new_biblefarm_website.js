@@ -358,9 +358,11 @@ function bringInAllVisitFlexItems() {
       if (isBottom && currentscrollHeight < scrollHeight) {
   /////////////////////////////////////////////
   bringInAllVisitFlexItems();
+  setTimeout(function() {
   $(function() {
       $('.lazy').lazy();
   });
+}, 2000);
 
   /////////////////////////////////////////////
       //    currentscrollHeight = scrollHeight;
