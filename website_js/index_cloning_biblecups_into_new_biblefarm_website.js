@@ -364,6 +364,13 @@ function bringInAllVisitFlexItems() {
   });
 }, 1000);
 
+
+setTimeout(function() {
+$(function() {
+    $('.lazy_2secs').lazy();
+});
+}, 2000);
+
   /////////////////////////////////////////////
       //    currentscrollHeight = scrollHeight;
       }
