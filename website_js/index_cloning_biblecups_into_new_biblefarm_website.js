@@ -409,17 +409,21 @@ $(window).on("resize scroll", function () {
 $('div > div#591').each(function () {
     $('[id="' + this.id + '"]:gt(0)').remove();
 });
-$('.gofundme_flex-container').append($('<div class="ID591isLoaded">').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
-$('div > div#591').each(function () {
-    $('[id="' + this.id + '"]:gt(0)').remove();
-});
-$('div > div#591').each(function () {
-    $('[id="' + this.id + '"]:gt(0)').remove();
-});
-
 /////////////////////////////////////////////
+$('.gofundme_flex-container').append($('<div class="ID591isLoaded">').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
+/////////////////////////////////////////////
+$('div > div#591').each(function () {
+    $('[id="' + this.id + '"]:gt(0)').remove();
+});
+/////////////////////////////////////////////
+$('div > div#591').each(function () {
+    $('[id="' + this.id + '"]:gt(0)').remove();
+});
 };
 /////////////////////////////////////////////
+$('div > div#591').each(function () {
+    $('[id="' + this.id + '"]:gt(0)').remove();
+});
 });
 /////////////////////////////////////
 // END bringInAllVisitFlexItems and lazy the photos
