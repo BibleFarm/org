@@ -404,7 +404,7 @@ $(window).on("resize scroll", function () {
     const scrollHeight = $(document).height();
     const scrollPos = Math.floor($(window).height() + $(window).scrollTop());
     const isBottom = scrollHeight - 200 < scrollPos;
-    if ( (isBottom && currentscrollHeight < scrollHeight) && (!$( "#591" ).length) ) {
+    if (isBottom && currentscrollHeight < scrollHeight) {
 /////////////////////////////////////////////
 $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
 $('#591').each(function () {
