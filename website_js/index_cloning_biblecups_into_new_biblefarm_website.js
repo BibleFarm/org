@@ -399,6 +399,9 @@ $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/
 /////////////////////////////////////
 // BEG bringInAllVisitFlexItems and lazy the photos
 /////////////////////////////////////
+$('div > div#591').each(function () {
+  $('[id="' + this.id + '"]:gt(0)').remove();
+
 $(window).on("resize scroll", function () {
   var currentscrollHeight = 0;
     const scrollHeight = $(document).height();
@@ -423,6 +426,7 @@ $('div > div#591').each(function () {
 /////////////////////////////////////////////
 $('div > div#591').each(function () {
     $('[id="' + this.id + '"]:gt(0)').remove();
+});
 });
 });
 /////////////////////////////////////
