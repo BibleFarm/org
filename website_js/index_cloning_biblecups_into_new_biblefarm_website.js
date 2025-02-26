@@ -72,8 +72,7 @@ $( ".about_modal" ).show('slow');
 ////END about modal ///////////////////////
 ////////////////////////////////////////////////////
 
-/* END Document Ready ****** */
-});
+
 
 /* *************************** */
 /* *************************** */
@@ -400,7 +399,7 @@ $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/
 /////////////////////////////////////
 // BEG bringInAllVisitFlexItems and lazy the photos
 /////////////////////////////////////
-
+if (!$( "#591" ).length) {
 $(window).on("resize scroll", function () {
   var currentscrollHeight = 0;
     const scrollHeight = $(document).height();
@@ -408,15 +407,13 @@ $(window).on("resize scroll", function () {
     const isBottom = scrollHeight - 200 < scrollPos;
     if (isBottom && currentscrollHeight < scrollHeight) {
 /////////////////////////////////////////////
-//  bringInAllVisitFlexItems();
-
 $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
 };
-
 /////////////////////////////////////////////
-
 });
-
+};
 /////////////////////////////////////
 // END bringInAllVisitFlexItems and lazy the photos
 /////////////////////////////////////
+/* END Document Ready ****** */
+});
