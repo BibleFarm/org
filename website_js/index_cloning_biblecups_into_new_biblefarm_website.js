@@ -406,8 +406,8 @@ $(window).on("resize scroll", function () {
     const isBottom = scrollHeight - 200 < scrollPos;
     if (isBottom && currentscrollHeight < scrollHeight) {
 /////////////////////////////////////////////
-$('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
-$('#591').each(function () {
+$('.gofundme_flex-container').append($('<div class="ID591isLoaded">').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
+$('div > div#591').each(function () {
     $('[id="' + this.id + '"]:gt(0)').remove();
 });
 /////////////////////////////////////////////
