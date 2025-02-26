@@ -376,7 +376,9 @@ if (!$( "#591" ).length) {
 /////////////////////////////////////
 // BEG function moreContentNeeded
 /////////////////////////////////////
+/*
 if (!$( "#591" ).length) {
+*/
   $(window).on("resize scroll", function () {
     var currentscrollHeight = 0;
       const scrollHeight = $(document).height();
@@ -384,7 +386,6 @@ if (!$( "#591" ).length) {
       const isBottom = scrollHeight - 200 < scrollPos;
       if (isBottom && currentscrollHeight < scrollHeight) {
 $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
-};
 };
 };
 /////////////////////////////////////
