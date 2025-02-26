@@ -387,7 +387,7 @@ if (!$( "#591" ).length) {
       if (isBottom && currentscrollHeight < scrollHeight) {
 $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
 };
-};
+});
 */
 /////////////////////////////////////
 // END function moreContentNeeded
@@ -409,12 +409,12 @@ $(window).on("resize scroll", function () {
     if (isBottom && currentscrollHeight < scrollHeight) {
 /////////////////////////////////////////////
 //  bringInAllVisitFlexItems();
-if (!$( "#591" ).length) {
+
 $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
 };
 
 /////////////////////////////////////////////
-};
+
 });
 
 /////////////////////////////////////
