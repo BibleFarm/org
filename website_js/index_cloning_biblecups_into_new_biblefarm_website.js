@@ -453,15 +453,15 @@ if ( !$("#591").length) {
           function delayedScrolling () {
               if (!execAsapScrolling)
                   funcScrolling.apply(objScrolling, argsScrolling);
-              timeout = null;
+              timeoutScrolling = null;
           };
 
-          if (timeout)
-              clearTimeout(timeout);
+          if (timeoutScrolling)
+              clearTimeout(timeoutScrolling);
           else if (execAsapScrolling)
               funcScrolling.apply(objScrolling, argsScrolling);
 
-          timeout = setTimeout(delayedScrolling, thresholdScrolling || 100);
+          timeoutScrolling = setTimeout(delayedScrolling, thresholdScrolling || 100);
       };
   }
     // smartresize
