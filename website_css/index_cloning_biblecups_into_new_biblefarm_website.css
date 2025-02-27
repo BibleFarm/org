@@ -162,9 +162,6 @@ max-width: 312px;
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(0,0%,15%)', endColorstr='#0', GradientType=1) !important;
     }
 
-    img.lazyloaded {
-    }
-
     .sharing_sub_panel {
 display: flex;
 width: 100%;
@@ -989,10 +986,6 @@ min-height: 44px;
     padding: 0;
     z-index: 2;
 }
-img.images_inside_modal_customize_picture_biblical {
-  max-width: 180px;
-  max-height: 130px;
-}
 
 .wrap_images_inside_modal_customize_picture_flowers {
   position: fixed;
@@ -1008,11 +1001,6 @@ img.images_inside_modal_customize_picture_biblical {
     margin: 0 auto;
     padding: 0;
     z-index: 2;
-}
-img.images_inside_modal_customize_picture_flowers {
-  max-width: 180px;
-  max-height: 130px;
-  cursor: pointer;
 }
 
 .wrap_images_inside_modal_customize_picture_scenery {
@@ -1030,12 +1018,6 @@ img.images_inside_modal_customize_picture_flowers {
     padding: 0;
     z-index: 2;
 }
-img.images_inside_modal_customize_picture_scenery {
-  max-width: 180px;
-  max-height: 130px;
-  cursor: pointer;
-}
-
 
 
 
@@ -1051,20 +1033,6 @@ height: 42px;
     top: ;
     left: ;
     width: ;
-}
-img.images_inside_modal_customize_backgrounds {
-    text-align: center;
-    vertical-align: middle;
-    position: relative;
-    max-width: 42px;
-    max-height: 42px;
-    margin: 0 auto;
-    cursor: auto !important;
-    min-width: auto !important;
-    width: 42px !important;
-    height: 42px !important;
-    min-height: auto !important;
-	cursor: pointer;
 }
 .made_with_love_fixed_on_mug {
 position: fixed;
@@ -1600,8 +1568,6 @@ display: none;
 
 .wrap_container_showing_selected_picture {
 	}
-img.container_showing_selected_picture {
-}
 .customCSSforScenery_flex {
 position: fixed;
     display: flex;
@@ -1640,8 +1606,6 @@ position: fixed;
 }
 
 .wrap_container_showing_selected_picture_little_Left {
-}
-img.container_showing_selected_picture_little_Left {
 }
 .customCSSforScenery_flex_little_Left {
 position: fixed;
@@ -1685,21 +1649,6 @@ width: 220px;
 height: 220px;
     top: 138px;
     left: 42px;
-}
-img.container_showing_selected_background {
-display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    position: relative;
-    max-width: 134px;
-    max-height: 280px;
-    display: block;
-    margin: 0 auto;
-    cursor: auto !important;
-    min-width: auto !important;
-    height: auto !important;
-    min-height: auto !important;
-	padding-top: 70px;
 }
 .popup_ok_this_picture_selected, .popup_ok_this_background_theme_selected {
 display: none;
