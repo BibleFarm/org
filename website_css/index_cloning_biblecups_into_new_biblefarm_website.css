@@ -2005,16 +2005,6 @@ line-height: 44px;
 margin-top: -4px;
 text-align: center;
 }
-.visit_number, .rendered_date {
-  background: none;
-      border: none;
-      font-family: 'OpenSansCondensed-Light';
-      font-weight: bold;
-      text-shadow: 2px 2px 1px #000000;
-      /*color: #d5ad6d;*/
-    padding: 0;
-    font-size: 20px;
-}
 .giverMessage {
       margin-bottom: 8px;
       min-width: 292px;
@@ -2024,8 +2014,4 @@ text-align: center;
       display: block;
       padding-right: 10px;
       padding-bottom: 10px;
-}
-
-.added_date {
-  display: none;
 }
