@@ -424,7 +424,7 @@ $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/
       };
   }
     // smartresize
-    jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize, scroll', debounce(fn)) : this.trigger(sr); };
+    jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize scroll', debounce(fn)) : this.trigger(sr); };
 
 })(jQuery,'smartresize');
 
