@@ -445,27 +445,27 @@ if ( !$("#591").length) {
 
   // debouncing function from John Hann
   // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
-  var debounceScrolling = function (func, threshold, execAsap) {
-      var timeout;
+  var debounceScrolling = function (funcScrolling, thresholdScrolling, execAsapScrolling) {
+      var timeoutScrolling;
 
       return function debouncedScrolling () {
-          var obj = this, args = arguments;
+          var objScrolling = thisScrolling, argsScrolling = arguments;
           function delayedScrolling () {
-              if (!execAsap)
-                  func.apply(obj, args);
-              timeout = null;
+              if (!execAsapScrolling)
+                  funcScrolling.apply(objScrolling, argsScrolling);
+              Scrollingtimeout = null;
           };
 
-          if (timeout)
-              clearTimeout(timeout);
-          else if (execAsap)
-              func.apply(obj, args);
+          if (Scrollingtimeout)
+              clearTimeout(Scrollingtimeout);
+          else if (ScrollingexecAsap)
+              funcScrolling.apply(objScrolling, argsScrolling);
 
-          timeout = setTimeout(delayed, threshold || 100);
+          timeoutScrolling = setTimeout(delayedScrolling, thresholdScrolling || 100);
       };
   }
     // smartresize
-    jQuery.fn[ss] = function(fn){  return fn ? this.bind('resize', debounceScrolling(fn)) : this.trigger(sr); };
+    jQuery.fn[ss] = function(fnScrolling){  return fnScrolling ? thisScrolling.bind('scroll', debounceScrolling(fnScrolling)) : thisScrolling.trigger(ss); };
 
 })(jQuery,'smartscroll');
 
