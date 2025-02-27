@@ -361,7 +361,7 @@ if ("IntersectionObserver" in window) {
       }
     });
   }, {
-    root: document.querySelector("#container"),
+    root: document.querySelector(".entireDocumentWithoutFirstRowofVisits"),
     rootMargin: "0px 0px 500px 0px"
   });
 
