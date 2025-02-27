@@ -399,6 +399,7 @@ $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/
 /////////////////////////////////////
 // BEG smartresize
 /////////////////////////////////////
+
 (function($,sr){
 
   // debouncing function from John Hann
@@ -423,7 +424,7 @@ $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/
       };
   }
     // smartresize
-    jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
+    jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize, scroll', debounce(fn)) : this.trigger(sr); };
 
 })(jQuery,'smartresize');
 
@@ -435,12 +436,14 @@ if ( !$("#591").length) {
   $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
 };
 });
+
 /////////////////////////////////////
 // END smartresize
 /////////////////////////////////////
 /////////////////////////////////////
 // BEG smartscroll
 /////////////////////////////////////
+/*
 (function($,ss){
 
   // debouncing function from John Hann
@@ -464,7 +467,7 @@ if ( !$("#591").length) {
           timeoutScrolling = setTimeout(delayedScrolling, thresholdScrolling || 100);
       };
   }
-    // smartresize
+    // smartscroll
     jQuery.fn[ss] = function(fnScrolling){  return fnScrolling ? this.bind('scroll', debounceScrolling(fnScrolling)) : this.trigger(ss); };
 
 })(jQuery,'smartscroll');
@@ -477,6 +480,7 @@ if ( !$("#591").length) {
   $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
 };
 });
+*/
 /////////////////////////////////////
 // END smartscroll
 /////////////////////////////////////
