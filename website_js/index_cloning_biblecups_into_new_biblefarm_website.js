@@ -348,56 +348,10 @@ function bringInAllVisitFlexItems() {
 	  });
   });
 
-  /////////////////////////////////////
-  // BEG bringInAllVisitFlexItems and lazy the photos
-  /////////////////////////////////////
-  /*
-  $(window).on("resize scroll", function () {
-    var currentscrollHeight = 0;
-      const scrollHeight = $(document).height();
-      const scrollPos = Math.floor($(window).height() + $(window).scrollTop());
-      const isBottom = scrollHeight - 200 < scrollPos;
-      if (isBottom && currentscrollHeight < scrollHeight) {
-  /////////////////////////////////////////////
-//  bringInAllVisitFlexItems();
-if (!$( "#591" ).length) {
-  $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
-};
-
-  /////////////////////////////////////////////
-};
-  });
-  */
-  /////////////////////////////////////
-  // END bringInAllVisitFlexItems and lazy the photos
-  /////////////////////////////////////
-
-/////////////////////////////////////
-// BEG function moreContentNeeded
-/////////////////////////////////////
-/*
-if (!$( "#591" ).length) {
-
-  $(window).on("resize scroll", function () {
-    var currentscrollHeight = 0;
-      const scrollHeight = $(document).height();
-      const scrollPos = Math.floor($(window).height() + $(window).scrollTop());
-      const isBottom = scrollHeight - 200 < scrollPos;
-      if (isBottom && currentscrollHeight < scrollHeight) {
-$('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
-};
-});
-*/
-/////////////////////////////////////
-// END function moreContentNeeded
-/////////////////////////////////////
-
-
-
 
 
 /////////////////////////////////////
-// BEG smartresize
+// BEG smartResizeOrScroll
 /////////////////////////////////////
 
 (function($,sr){
@@ -423,14 +377,14 @@ $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/
           timeout = setTimeout(delayed, threshold || 100);
       };
   }
-    // smartresize
+    // smartResizeOrScroll
     jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize scroll', debounce(fn)) : this.trigger(sr); };
 
-})(jQuery,'smartresize');
+})(jQuery,'smartResizeOrScroll');
 
 
 // usage:
-$(window).smartresize(function(){
+$(window).smartResizeOrScroll(function(){
   // code that takes it easy...
 if ( !$("#591").length) {
   $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
@@ -438,53 +392,8 @@ if ( !$("#591").length) {
 });
 
 /////////////////////////////////////
-// END smartresize
+// END smartResizeOrScroll
 /////////////////////////////////////
-/////////////////////////////////////
-// BEG smartscroll
-/////////////////////////////////////
-/*
-(function($,ss){
-
-  // debouncing function from John Hann
-  // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
-  var debounceScrolling = function (funcScrolling, thresholdScrolling, execAsapScrolling) {
-      var timeoutScrolling;
-
-      return function debouncedScrolling () {
-          var objScrolling = this, argsScrolling = arguments;
-          function delayedScrolling () {
-              if (!execAsapScrolling)
-                  funcScrolling.apply(objScrolling, argsScrolling);
-              timeoutScrolling = null;
-          };
-
-          if (timeoutScrolling)
-              clearTimeout(timeoutScrolling);
-          else if (execAsapScrolling)
-              funcScrolling.apply(objScrolling, argsScrolling);
-
-          timeoutScrolling = setTimeout(delayedScrolling, thresholdScrolling || 100);
-      };
-  }
-    // smartscroll
-    jQuery.fn[ss] = function(fnScrolling){  return fnScrolling ? this.bind('scroll', debounceScrolling(fnScrolling)) : this.trigger(ss); };
-
-})(jQuery,'smartscroll');
-
-
-// usage:
-$(window).smartscroll(function(){
-  // code that takes it easy...
-if ( !$("#591").length) {
-  $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
-};
-});
-*/
-/////////////////////////////////////
-// END smartscroll
-/////////////////////////////////////
-
 
 
 /* END Document Ready ****** */
