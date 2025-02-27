@@ -449,7 +449,7 @@ if ( !$("#591").length) {
       var timeoutScrolling;
 
       return function debouncedScrolling () {
-          var objScrolling = thisScrolling, argsScrolling = arguments;
+          var objScrolling = this, argsScrolling = arguments;
           function delayedScrolling () {
               if (!execAsapScrolling)
                   funcScrolling.apply(objScrolling, argsScrolling);
@@ -465,7 +465,7 @@ if ( !$("#591").length) {
       };
   }
     // smartresize
-    jQuery.fn[ss] = function(fnScrolling){  return fnScrolling ? thisScrolling.bind('scroll', debounceScrolling(fnScrolling)) : thisScrolling.trigger(ss); };
+    jQuery.fn[ss] = function(fnScrolling){  return fnScrolling ? this.bind('scroll', debounceScrolling(fnScrolling)) : this.trigger(ss); };
 
 })(jQuery,'smartscroll');
 
