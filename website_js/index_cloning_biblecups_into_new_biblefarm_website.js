@@ -396,6 +396,9 @@ $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/
 
 
 
+/////////////////////////////////////
+// BEG smartresize
+/////////////////////////////////////
 (function($,sr){
 
   // debouncing function from John Hann
@@ -432,7 +435,51 @@ if ( !$("#591").length) {
   $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
 };
 });
+/////////////////////////////////////
+// END smartresize
+/////////////////////////////////////
+/////////////////////////////////////
+// BEG smartscroll
+/////////////////////////////////////
+(function($,ss){
 
+  // debouncing function from John Hann
+  // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
+  var debounceScrolling = function (func, threshold, execAsap) {
+      var timeout;
+
+      return function debouncedScrolling () {
+          var obj = this, args = arguments;
+          function delayedScrolling () {
+              if (!execAsap)
+                  func.apply(obj, args);
+              timeout = null;
+          };
+
+          if (timeout)
+              clearTimeout(timeout);
+          else if (execAsap)
+              func.apply(obj, args);
+
+          timeout = setTimeout(delayed, threshold || 100);
+      };
+  }
+    // smartresize
+    jQuery.fn[ss] = function(fn){  return fn ? this.bind('resize', debounceScrolling(fn)) : this.trigger(sr); };
+
+})(jQuery,'smartscroll');
+
+
+// usage:
+$(window).smartscroll(function(){
+  // code that takes it easy...
+if ( !$("#591").length) {
+  $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
+};
+});
+/////////////////////////////////////
+// END smartscroll
+/////////////////////////////////////
 
 
 
