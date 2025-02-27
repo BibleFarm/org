@@ -351,7 +351,6 @@ var lazyloadImages;
 if ("IntersectionObserver" in window) {
   lazyloadImages = document.querySelectorAll(".lazy");
   var imageObserver = new IntersectionObserver(function(entries, observer) {
-    console.log(observer);
     entries.forEach(function(entry) {
       if (entry.isIntersecting) {
         var image = entry.target;
@@ -360,9 +359,6 @@ if ("IntersectionObserver" in window) {
         imageObserver.unobserve(image);
       }
     });
-  }, {
-    root: document.querySelector(".entireDocumentWithoutFirstRowofVisits"),
-    rootMargin: "0px 0px 500px 0px"
   });
 
   lazyloadImages.forEach(function(image) {
@@ -381,7 +377,7 @@ if ("IntersectionObserver" in window) {
         var scrollTop = $(window).scrollTop();
         lazyloadImages.each(function() {
             var el = $(this);
-            if(el.offset().top < window.innerHeight + scrollTop + 500) {
+            if(el.offset().top - scrollTop < window.innerHeight) {
               var url = el.attr("data-src");
               el.attr("src", url);
               el.removeClass("lazy");
