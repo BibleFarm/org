@@ -396,34 +396,43 @@ $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/
 
 
 
-/////////////////////////////////////
-// BEG bringInAllVisitFlexItems and lazy the photos
-/////////////////////////////////////
-$(window).on("resize scroll", function () {
-  var currentscrollHeight = 0;
-    const scrollHeight = $(document).height();
-    const scrollPos = Math.floor($(window).height() + $(window).scrollTop());
-    const isBottom = scrollHeight - 200 < scrollPos;
-    if (isBottom && currentscrollHeight < scrollHeight) {
-/////////////////////////////////////////////
-/*
-$('div > div#591').each(function () {
-    $('[id="' + this.id + '"]:gt(0)').remove();
+(function($,sr){
+
+  // debouncing function from John Hann
+  // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
+  var debounce = function (func, threshold, execAsap) {
+      var timeout;
+
+      return function debounced () {
+          var obj = this, args = arguments;
+          function delayed () {
+              if (!execAsap)
+                  func.apply(obj, args);
+              timeout = null;
+          };
+
+          if (timeout)
+              clearTimeout(timeout);
+          else if (execAsap)
+              func.apply(obj, args);
+
+          timeout = setTimeout(delayed, threshold || 100);
+      };
+  }
+    // smartresize
+    jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
+
+})(jQuery,'smartresize');
+
+
+// usage:
+$(window).smartresize(function(){
+  // code that takes it easy...
+  $('.gofundme_flex-container').append($('<div class="ID591isLoaded">').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
 });
-*/
-/////////////////////////////////////////////
-$('.gofundme_flex-container').append($('<div class="ID591isLoaded">').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
-/////////////////////////////////////////////
-/*
-$('div > div#591').each(function () {
-    $('[id="' + this.id + '"]:gt(0)').remove();
-});
-*/
-/////////////////////////////////////////////
-};
-});
-/////////////////////////////////////
-// END bringInAllVisitFlexItems and lazy the photos
-/////////////////////////////////////
+
+
+
+
 /* END Document Ready ****** */
 });
