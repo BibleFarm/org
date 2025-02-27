@@ -428,7 +428,7 @@ $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/
 // usage:
 $(window).smartresize(function(){
   // code that takes it easy...
-if ( )$("#591").length() == 0 ) {
+if ( $("#591").length() == 0 ) {
   $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
 };
 });
