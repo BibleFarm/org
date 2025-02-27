@@ -449,7 +449,7 @@ if ( !$("#591").length) {
       var timeoutScrolling;
 
       return function debouncedScrolling () {
-          var objScrolling = this, argsScrolling = argumentsScrolling;
+          var objScrolling = this, argsScrolling = arguments;
           function delayedScrolling () {
               if (!execAsapScrolling)
                   funcScrolling.apply(objScrolling, argsScrolling);
