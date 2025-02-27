@@ -449,19 +449,19 @@ if ( !$("#591").length) {
       var timeoutScrolling;
 
       return function debouncedScrolling () {
-          var objScrolling = this, argsScrolling = arguments;
+          var objScrolling = this, argsScrolling = argumentsScrolling;
           function delayedScrolling () {
               if (!execAsapScrolling)
                   funcScrolling.apply(objScrolling, argsScrolling);
-              Scrollingtimeout = null;
+              timeout = null;
           };
 
-          if (Scrollingtimeout)
-              clearTimeout(Scrollingtimeout);
-          else if (ScrollingexecAsap)
+          if (timeout)
+              clearTimeout(timeout);
+          else if (execAsapScrolling)
               funcScrolling.apply(objScrolling, argsScrolling);
 
-          timeoutScrolling = setTimeout(delayedScrolling, thresholdScrolling || 100);
+          timeout = setTimeout(delayedScrolling, thresholdScrolling || 100);
       };
   }
     // smartresize
