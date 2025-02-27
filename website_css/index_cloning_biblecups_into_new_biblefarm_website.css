@@ -117,24 +117,6 @@
       display: ;
     }
 
-    .gofundme_flex-container {
-      position: absolute;
-    top: 1454px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row wrap;
-      padding-top: 50px;
-      background: black;
-    }
-
-    .gofundme_flex-container > div > div {
-text-align: center;
-margin-left: 4px;
-margin-right: 4px;
-width: 312px;
-max-width: 312px;
-    }
 
     .gofundme_widget {
       min-width: 320px;
@@ -385,12 +367,6 @@ max-width: 320px;
 .top_title {
     font-family: 'OpenSansCondensed-Light';
     font-size: 18px;
-}
-.flex_item {
-flex-grow: 1;
-flex-shrink: 1;
-font-size: 18px;
-background: #111111;
 }
 input.order-description {
 border-width: 0px;
@@ -785,13 +761,6 @@ display: inline-block;
 width: 296px;
 height: 296px;
 text-align:center;
-}
-.placeholder_mug_featured-btn {
-display: inline-block;
-width: 296px;
-height: 444px;
-text-align:center;
-font-size: 0px;
 }
 .selected_bible_verse_fixed_on_mug-table {
   position: fixed;
@@ -1739,10 +1708,7 @@ height: 302px;
 ////BEGIN Infinite Scroll Random Verses ///////////////////////
 ///////////////////////////////////////////////////*/
 #hidden_welcome, #hidden_div_verse, #hidden_div_ref {display:none}
-.wrap_featured_item {
-	margin: 4px;
-	background: #111111
-	}
+
 .share {
 position: absolute;
     margin-top: -274px;
@@ -1993,17 +1959,6 @@ a:visited {
   margin: 1vw;
   text-shadow: 0.2vw 0.2vw 0.1vw #000000;
 
-}
-.visit_sub_panel_details {
-display: flex;
-width: 100%;
-margin-bottom: 8px;
-min-width: 312px;
-max-width: 312px;
-height: 44px;
-line-height: 44px;
-margin-top: -4px;
-text-align: center;
 }
 .giverMessage {
       margin-bottom: 8px;

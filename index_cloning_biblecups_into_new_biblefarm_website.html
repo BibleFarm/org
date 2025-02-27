@@ -283,20 +283,28 @@ article {
   width: 100%;
   min-height: 100px;
 }
-
+.gofundme_flex-container {
+  position: absolute;
+  top: 1458px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-top: 50px;
+  background: black;
+}
 /* ////////////////////////////////////////////// */
 /* BEG injected visit videos/pictures/description */
 /* ////////////////////////////////////////////// */
   .wrap_featured_item {
 	margin: 4px;
-	background: #111111
+	background: #111111;
+  height: calc(312px + 176px + 44px);
 	}
   .placeholder_mug_featured-btn {
   display: inline-block;
   width: 296px;
-  height: 444px;
-  text-align:center;
-  font-size: 0px;
+  height: calc(312px + 176px + 44px);
   }
   .visitVid {
     width: 312px;
@@ -313,12 +321,10 @@ article {
   .visit_sub_panel_details {
   display: flex;
   width: 100%;
-  margin-bottom: 8px;
   min-width: 312px;
   max-width: 312px;
   height: 44px;
   line-height: 44px;
-  margin-top: -4px;
   text-align: center;
   }
   .visit_number, .rendered_date {
