@@ -284,14 +284,15 @@ article {
   min-height: 100px;
 }
 .gofundme_flex-container {
-  position: absolute;
-  top: 1458px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  padding-top: 50px;
-  background: black;
+    position: absolute;
+    top: 1458px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-top: 50px;
+    background: black;
+    width: 100%;
 }
 /* ////////////////////////////////////////////// */
 /* BEG injected visit videos/pictures/description */
@@ -299,33 +300,36 @@ article {
   .wrap_featured_item {
 	margin: 4px;
 	background: #111111;
-  height: calc(312px + 176px + 44px);
+  width: 312px;
 	}
   .placeholder_mug_featured-btn {
-  display: inline-block;
-  width: 296px;
-  height: calc(312px + 176px + 44px);
+  display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
   }
   .visitVid {
     width: 312px;
     height: 312px;
-    top: 0;
-    left: 0;
     border: 0;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
   }
   .visitImg {
-    width: 312px;
-    height: 176px;
+    width: 304px;
+    height: 171px;
   }
   .visit_sub_panel_details {
-  display: flex;
-  width: 100%;
-  min-width: 312px;
-  max-width: 312px;
-  height: 44px;
-  line-height: 44px;
-  text-align: center;
+    display: flex;
+    width: 302px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    background: #222222;
+    border: 1px solid #d5ad6d;
+    border-radius: 4px;
   }
   .visit_number, .rendered_date {
     background: none;
@@ -341,7 +345,6 @@ article {
   flex-grow: 1;
   flex-shrink: 1;
   font-size: 18px;
-  background: #111111;
   }
   .added_date {
     display: none;
