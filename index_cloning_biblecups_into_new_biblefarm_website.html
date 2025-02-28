@@ -77,7 +77,7 @@
     <meta name="facebook-domain-verification" content="oeubrg6ao4gu7azjh2yvqqoyyr2osg" />
 <title>BibleFarm.org</title>
 
-    <link rel="stylesheet" href="website_css/index_cloning_biblecups_into_new_biblefarm_website.css" />
+    <!--<link rel="stylesheet" href="website_css/index_cloning_biblecups_into_new_biblefarm_website.css" />-->
 
     <style>
     @font-face {
@@ -104,6 +104,22 @@
         body {
           margin: 0;
           padding: 0;
+        }
+
+        #menu {
+          position: fixed;
+          display: block;
+          color: #d5ad6d;
+          line-height: 32px;
+          height: 36px;
+          width: 44px;
+          text-align: center;
+          top: 4px;
+          left: 4px;
+          cursor: pointer;
+    	  padding-top: 4px;
+    	  padding-bottom:4px;
+        z-index: 3;
         }
 
 
@@ -683,7 +699,7 @@ article {
 
 
     <!-- BEG  -->
-    <button type="button" class="FBpixel_menu" id="menu">menu<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#d5ad6d">
+    <button type="button" class="FBpixel_menu" id="menu"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#d5ad6d">
         <path d="M0 0h24v24H0V0z" fill="none" />
         <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
       </svg></button>
