@@ -59,7 +59,7 @@ $(".modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wra
 $("#PureChatWidget").attr("style", "z-index: -1 !important");
 });
 // hide any and all modals when click outside
-$(".opacity_cover, .wrap_gofundme_modal_bar").click(function() {
+$(".opacity_cover, .wrap_gofundme_modal_bar, .title").click(function() {
 $(".opacity_cover, .menu_modal, .modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_announce_fundraising, .modal_place_the_order, .about_modal, .help_modal, .giving_options_modal").hide();
 });
 ////////////////////////////////////////////////////
