@@ -1,30 +1,5 @@
 /* BEGIN Document Ready ****** */
 $(document).ready(function() {
-/* *************************** */
-/* *************************** */
-/* *************************** */
-/* BEGIN site_title & site_made animation
-/* *************************** */
-/* *************************** */
-/*
-$(function () {
-  count = 0;
-  wordsArray = ['<span class="made_title">Welcome <span class="red_heart">❤</span> to BibleFarm.org</span>', '<span class="customize_title">Children hear The Word and Believe</span>'];
-  setInterval(function () {
-    count++;
-    $("#site_title").fadeOut(400, function () {
-      $(this).html(wordsArray[count % wordsArray.length]).fadeIn(400);
-    });
-  }, 5000);
-});
-*/
-// '<span class="customize_title bf_links">customize for $10 shipping included</span>',
-// '<span class="made_title bf_links">made with <span class="red_heart">❤</span> at BibleFarm.org</span>'
-/* *************************** */
-/* *************************** */
-/* END site_title & site_made animation
-/* *************************** */
-/* *************************** */
 ////////////////////////////////////////////////////
 // BEGIN simple menu
 ////////////////////////////////////////////////////
@@ -47,7 +22,6 @@ $(".menu_modal").show("slow");
 ////////////////////////////////////////////////////
 // END simple menu
 ////////////////////////////////////////////////////
-
 // hide any and all modals when click on menu, except menu_modal
 $("#menu").click(function() {
 $(".modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_announce_fundraising, .modal_place_the_order, .about_modal, .help_modal, .giving_options_modal").hide();
@@ -71,37 +45,6 @@ $( ".about_modal" ).show('slow');
 ////////////////////////////////////////////////////
 ////END about modal ///////////////////////
 ////////////////////////////////////////////////////
-
-
-////////////////////////////////////////////////////
-////BEG NN to find out if I need this ///////////////////////
-////////////////////////////////////////////////////
-  // Count days due
-  function daysUntil(year, month, day) {
-    var now = new Date(),
-        dateEnd = new Date(year, month - 1, day), // months are zero-based
-        days = ((dateEnd - now) / 1000/60/60/24) * -1;   // convert milliseconds to days
-
-    return Math.round(days);
-  }
-
-  // Set days due
-  $('.visit_sub_panel_details span.date').each(function () {
-
-      var monthDue = $(this).find('.due-date').text().substr(0,2);
-      var dayDue = $(this).find('.due-date').text().substr(3,2);
-      var yearDue = $(this).find('.due-date').text().substr(6,4);
-
-      $(this).find('.days-due').text(daysUntil(yearDue, monthDue, dayDue));
-
-      $('.due-date').hide();
-
-  });
-////////////////////////////////////////////////////
-////END NN to find out if I need this ///////////////////////
-////////////////////////////////////////////////////
-
-
 ////////////////////////////////////////////////////
 // BEG giving options menu
 ////////////////////////////////////////////////////
@@ -124,184 +67,9 @@ $(".giving_options_modal").show("slow");
 ////////////////////////////////////////////////////
 // END giving options menu
 ////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
-////////////////////////////////////////////////////
-////BEGIN Infinite Scroll Random Verses ///////////////////////
-////////////////////////////////////////////////////
-/*
-      getWelcome();
-      getWelcome();
-      getWelcome();
-      getWelcome();
-      getWelcome();
-      getWelcome();
-      getWelcome();
-      getWelcome();
-      getWelcome();
-      getWelcome();
-*/
-/////////////////////////////////////
-// BEGIN function getWelcome get random json record
-/////////////////////////////////////
-/*
-function getWelcome() {
-  var ajaxRequest = new XMLHttpRequest();
-  ajaxRequest.onreadystatechange = function () {
-    if (ajaxRequest.readyState == 4) {
-      //the request is completed, now check its status
-      if (ajaxRequest.status == 200) {
-        //turn JSON into array
-        var messagesArray = JSON.parse(ajaxRequest.responseText);
-        //get random object from array
-        var randomIndex = Math.floor(Math.random() * messagesArray.length);
-        var messageObj = messagesArray[randomIndex]; // for random, replace messagesArray; with messagesArray[randomIndex];
-        //use that object to set content and color
-        var welcomeDiv = document.getElementById("hidden_welcome");
-        welcomeDiv.innerHTML = messageObj.ref;
-        welcomeDiv.style.color = messageObj.color;
-        // BEGIN / get these things and put them in the hidden divs
-  //      var verse = messageObj.ref;
-        var v = messageObj.v;
-        var y = messageObj.y;
-        var m = messageObj.m;
-        var d = messageObj.d;
-  //      $('#hidden_div_verse').html(verse);
-  //      $('#hidden_div_ref').html(ref);
-        $('.gofundme_flex-container').append('<div class="wrap_featured_item"><div class="placeholder_mug_featured-btn">featured-item-image<img class="m" width="296" height="444" src="https://biblefarm.github.io/farm-photos-' + y + '/' + y + '-' + m + '-' + d + '-' + v + '/' + y + '-' + m + '-' + d + '_0001' + '.jpg" alt="" /></div><div class="visit_sub_panel_details"><span class="visit_number flex_item">visit # ' + v + '</span><span class="date flex_item"><span class=""><span class="rendered_date days-due"></span> days ago</span><span class="added_date due-date">' + m + '/' + d + '/' + y + '</span></span></div></div>');
-
-      } else {
-        console.log("Status error: " + ajaxRequest.status);
-      }
-    } else {
-      console.log("Ignored readyState: " + ajaxRequest.readyState);
-    }
-  };
-  ajaxRequest.open(
-    "GET",
-    "data_files/visits_v_y_m_d.json"
-  );
-  ajaxRequest.send();
-}
-*/
-/////////////////////////////////////
-// END function getWelcome get random json record
-/////////////////////////////////////
-/*
-$(window).on("resize scroll", function () {
-  var currentscrollHeight = 0;
-    const scrollHeight = $(document).height();
-    const scrollPos = Math.floor($(window).height() + $(window).scrollTop());
-    const isBottom = scrollHeight - 200 < scrollPos;
-    if (isBottom && currentscrollHeight < scrollHeight) {
-/////////////////////////////////////////////
-getWelcome();
-getWelcome();
-getWelcome();
-getWelcome();
-getWelcome();
-getWelcome();
-/////////////////////////////////////////////
-    //    currentscrollHeight = scrollHeight;
-    }
-});
-*/
-////////////////////////////////////////////////////
-////END Infinite Scroll Random Verses ///////////////////////
-////////////////////////////////////////////////////
-
-/////////////////////////////////////
-// BEG NN to find out if I still need this
-/////////////////////////////////////
-setInterval(function() {
-
-var objcollection = $('.rendered_date');
-
-  $('.rendered_date').each(function () {
-if(objcollection.length==0)
-{
-  // do something
-}
-else // if it's nott empty, that means rendered_date now has the number of days
-{
-  // do something
-  // $(this).css("color", "red");
-
-  // Count days due
-  function daysUntil(year, month, day) {
-    var now = new Date(),
-        dateEnd = new Date(year, month - 1, day), // months are zero-based
-        days = ((dateEnd - now) / 1000/60/60/24) * -1;   // convert milliseconds to days
-
-    return Math.round(days);
-  }
-
-  // Set days due
-  $('.visit_sub_panel_details span.date').each(function () {
-
-      var monthDue = $(this).find('.due-date').text().substr(0,2);
-      var dayDue = $(this).find('.due-date').text().substr(3,2);
-      var yearDue = $(this).find('.due-date').text().substr(6,4);
-
-      $(this).find('.days-due').text(daysUntil(yearDue, monthDue, dayDue));
-
-      $('.due-date').hide();
-
-  });
-
-}
-});
-}, 1000);
-/////////////////////////////////////
-// END NN to find out if I still need this
-/////////////////////////////////////
-
-
-
-/////////////////////////////////////
-// BEGIN function bringInAllVisitFlexItems
-/////////////////////////////////////
-/*
-function bringInAllVisitFlexItems() {
-  $.ajax({
-      url: "data_files/ALL_visits_flex_items.html",
-      type : "GET",
-      dataType : "html"
-  }).done(function(data) {
-      var obj = $(data);
-      $(".gofundme_flex-container").append(data);
-  }).fail(function(jqXHR, textStatus, errorThrown) {
-
-});
-};
-*/
-/////////////////////////////////////
-// END function bringInAllVisitFlexItems get random json record
-/////////////////////////////////////
-
-
-
-
-
-
-
-
-
-
 /////////////////////////////////////
 // BEG smartResizeOrScroll
 /////////////////////////////////////
-
 (function($,sr){
 
   // debouncing function from John Hann
@@ -339,35 +107,15 @@ if ( !$("#591").length) {
   $('.gofundme_flex-container').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html');
 };
 });
-
 /////////////////////////////////////
 // END smartResizeOrScroll
-/////////////////////////////////////
-
+////////////////////////////////////
 /////////////////////////////////////
 // BEG lazyloadImages
 /////////////////////////////////////
-var lazyloadImages;
-
-if ("IntersectionObserver" in window) {
-  lazyloadImages = document.querySelectorAll(".lazy");
-  var imageObserver = new IntersectionObserver(function(entries, observer) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        var image = entry.target;
-        image.src = image.dataset.src;
-        image.classList.remove("lazy");
-        imageObserver.unobserve(image);
-      }
-    });
-  });
-
-  lazyloadImages.forEach(function(image) {
-    imageObserver.observe(image);
-  });
-} else {
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyloadImages = document.querySelectorAll("img.lazy");
   var lazyloadThrottleTimeout;
-  lazyloadImages = $(".lazy");
 
   function lazyload () {
     if(lazyloadThrottleTimeout) {
@@ -375,31 +123,28 @@ if ("IntersectionObserver" in window) {
     }
 
     lazyloadThrottleTimeout = setTimeout(function() {
-        var scrollTop = $(window).scrollTop();
-        lazyloadImages.each(function() {
-            var el = $(this);
-            if(el.offset().top - scrollTop < window.innerHeight) {
-              var url = el.attr("data-src");
-              el.attr("src", url);
-              el.removeClass("lazy");
-              lazyloadImages = $(".lazy");
+        var scrollTop = window.pageYOffset;
+        lazyloadImages.forEach(function(img) {
+            if(img.offsetTop < (window.innerHeight + scrollTop)) {
+              img.src = img.dataset.src;
+              img.classList.remove('lazy');
             }
         });
         if(lazyloadImages.length == 0) {
-          $(document).off("scroll");
-          $(window).off("resize");
+          document.removeEventListener("scroll", lazyload);
+          window.removeEventListener("resize", lazyload);
+          window.removeEventListener("orientationChange", lazyload);
         }
     }, 20);
   }
 
-  $(document).on("scroll", lazyload);
-  $(window).on("resize", lazyload);
-}
-
+  document.addEventListener("scroll", lazyload);
+  window.addEventListener("resize", lazyload);
+  window.addEventListener("orientationChange", lazyload);
+});
 /////////////////////////////////////
 // END lazyloadImages
 /////////////////////////////////////
-
 /////////////////////////////////////
 // BEG Today's Date and visit counter
 /////////////////////////////////////
@@ -455,39 +200,31 @@ initLunarPhase();
 				clearInterval(data.interval);
 			}
 			data.interval = setInterval(updateTimer, settings.refreshInterval);
-
 			// initialize the element with the starting value
 			render(value);
-
 			function updateTimer() {
 				value += increment;
 				loopCount++;
-
 				render(value);
-
 				if (typeof(settings.onUpdate) == 'function') {
 					settings.onUpdate.call(self, value);
 				}
-
 				if (loopCount >= loops) {
 					// remove the interval
 					$self.removeData('countTo');
 					clearInterval(data.interval);
 					value = settings.to;
-
-					if (typeof(settings.onComplete) == 'function') {
+				if (typeof(settings.onComplete) == 'function') {
 						settings.onComplete.call(self, value);
 					}
 				}
 			}
-
 			function render(value) {
 				var formattedValue = settings.formatter.call(self, value, settings);
 				$self.html(formattedValue);
 			}
 		});
 	};
-
 	$.fn.countTo.defaults = {
 		from: 0,               // the number the element should start at
 		to: 0,                 // the number the element should end at
@@ -498,12 +235,10 @@ initLunarPhase();
 		onUpdate: null,        // callback method for every time the element is updated
 		onComplete: null       // callback method for when the element finishes updating
 	};
-
 	function formatter(value, settings) {
 		return value.toFixed(settings.decimals);
 	}
 }(jQuery));
-
 jQuery(function ($) {
   // custom formatting example
   $('.count-number').data('countToOptions', {
@@ -511,17 +246,14 @@ jQuery(function ($) {
 	  return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
 	}
   });
-
   // start all the timers
   $('.timer').each(count);
-
   function count(options) {
 	var $this = $(this);
 	options = $.extend({}, options || {}, $this.data('countToOptions') || {});
 	$this.countTo(options);
   }
 });
-
 // BEG convert month number to month name in the counter
 setTimeout(function() {
 var monthToChange = $('#month').text();
@@ -543,7 +275,6 @@ if (monthToChange == '12') {$('#month').text('Dec');};
 /////////////////////////////////////
 // END Today's Date and visit counter
 /////////////////////////////////////
-
 /////////////////////////////////////
 // BEG giving options button hover
 /////////////////////////////////////
@@ -557,7 +288,5 @@ $(function() {
 /////////////////////////////////////
 // END giving options button hover
 /////////////////////////////////////
-
-
 /* END Document Ready ****** */
 });
