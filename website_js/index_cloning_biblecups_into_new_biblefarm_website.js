@@ -235,7 +235,7 @@ if(objcollection.length==0)
 else // if it's nott empty, that means rendered_date now has the number of days
 {
   // do something
-  $(this).css("color", "red");
+  // $(this).css("color", "red");
 
   // Count days due
   function daysUntil(year, month, day) {
