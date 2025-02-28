@@ -107,14 +107,6 @@ if ( !$("#591").length) {
 //  $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
 // add the visit divs
   $('.gofundme_flex-container').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html');
-// add the script to lazy load the videos and images
-  $.getScript( "website_js/jquery-lazyload-any.js", function( data, textStatus, jqxhr ) {
-  console.log( data ); // Data returned
-  console.log( textStatus ); // Success
-  console.log( jqxhr.status ); // 200
-  console.log( "Load was performed." );
-});
-
 };
 });
 /////////////////////////////////////
