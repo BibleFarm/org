@@ -1,74 +1,3 @@
-@font-face {
-  font-family: "OpenSansCondensed-Light";
-  src: url(../shop_fonts/OpenSansCondensed-Light.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Jura-Regular";
-  src: url(../shop_fonts/Jura-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "LoversQuarrel-Regular";
-  src: url(../shop_fonts/LoversQuarrel-Regular.ttf) format("truetype");
-}
-/*
-@font-face {
-  font-family: "NeogreyMedium";
-  src: url(../shop_fonts/NeogreyMedium.otf) format("truetype");
-}
-@font-face {
-  font-family: "Capsuularegular-Onm3";
-  src: url(../shop_fonts/Capsuularegular-Onm3.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Thekingofromance-z8jDX";
-  src: url(../shop_fonts/Thekingofromance-z8jDX.otf) format("opentype");
-}
-*/
-
-
-/* *************************** */
-/* *************************** */
-/* *************************** */
-/* BEGIN Brought in from index_pages.css
-/* *************************** */
-/* *************************** */
-/* *************************** */
-    tfoot,
-    thead,
-    tr,
-    th,
-    td {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: middle;
-    }
-
-    table {
-      border-collapse: collapse;
-      border-spacing: 0;
-    }
-    /* *** END css reset tables ***************************************** */
-    html,
-    body {
-      position: relative;
-      height: 100%;
-      font-family: "OpenSansCondensed-Light", sans-serif;
-      font-size: 20px;
-      font-weight: bold;
-      color: #ae9c80;
-      margin: 0 auto;
-      background: black;
-      text-shadow: 2px 2px 1px #000000;
-
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-    }
 
     .special_margin_top {
       margin-top: 48px;
@@ -78,22 +7,9 @@
       display: none;
     }
 
-    .wrap_gofundme_modal {}
 
     /* titlebar */
 
-    .wrap_gofundme_modal_bar {
-      position: fixed;
-      height: 50px;
-      text-align: center;
-      border: 0px solid black;
-      font-size: 20px;
-      font-family: "OpenSansCondensed-Light",sans-serif;
-      line-height: 50px;
-      width: 100%;
-	  overflow: hidden;
-    z-index: 1;
-    }
 
     .wrap_gofundme_modal_bar_bottom {
       position: fixed;
@@ -113,9 +29,6 @@
       text-shadow: 1px 1px 2px #000000;
     }
 
-    .wrap_gofundme_modal_body {
-      display: ;
-    }
 
 
     .gofundme_widget {
@@ -123,9 +36,6 @@
       max-width: 600px !important;
     }
 
-    .box_shadow {
-      box-shadow: 0px 0px 60px #111111;
-    }
 
     /* /////////////////////////// */
 
@@ -172,40 +82,7 @@ text-align: center;
       background-color: #111111;
     }
 
-    a.bf_links {
-      color: #d5ad6d;
-    }
 
-    a.bf_links:hover,
-    a.bf_links:focus {
-      color: #dac4a2;
-      text-decoration: none;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    .bf_links {
-      color: #d5ad6d;
-      cursor: pointer;
-    }
-
-    .bf_links:hover,
-    .bf_links:focus {
-      color: #dac4a2;
-      text-decoration: none;
-    }
-
-    .opacity_cover {
-      position: fixed;
-      display: none;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      background: rgba(0, 0, 0, 0.9);
-      z-index: 2;
-    }
 
     #menu {
       position: fixed;
@@ -267,18 +144,6 @@ text-align: center;
         padding-left: 12px;
     }
 
-    .menu_icon_clone {
-      position: fixed;
-      display: block;
-      color: #d5ad6d;
-      line-height: 44px;
-      height: 44px;
-      width: 44px;
-      text-align: center;
-      top: 4px;
-      left: 4px;
-      cursor: pointer;
-    }
 
     .wrap_the_paypal_button {
       display: inline-block;
@@ -348,19 +213,6 @@ max-width: 320px;
     align-content: center;
     flex-wrap: nowrap;
 	background: #111111;
-}
-.menu_item {
-    flex: inherit;
-    font-size: 20px;
-    justify-content: center;
-    border-style: solid;
-    border-width: thin;
-    border-radius: 4px;
-    padding: 12px;
-    width: 230px;
-    text-align: center;
-    background: #222222;
-    border: none;
 }
 
 
@@ -1694,11 +1546,6 @@ width: 296px;
 height: 302px;
 }
 
-.customize_title {
-  font-family: "OpenSansCondensed-Light" !important;
-	font-size: 22px !important;
-  font-weight: bold;
-}
 .made_title {
   font-family: "Jura-Regular" !important;
 	font-size: 19px !important;
@@ -1785,24 +1632,6 @@ position: absolute;
 .selected_bible_ref_fixed_on_mug, .rendered_customerName_in_modalName, .made_with_love_fixed_on_mug, .rendered_customerName_in_modalPictures, .rendered_customerName_in_modalReviewOrder, .made_with_love_fixed_on_mug_little_Left, .selected_bible_ref_fixed_on_mug_in_modalReviewOrder {
 font-weight: normal;
 }
-.about_flexed_content {
-  display: flex;
-  flex-direction: row;
-      align-content: center;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .about_flexed_title {
-      padding: 4px;
-          font-family: 'Jura-Regular';
-          font-weight: normal;
-          font-size: 17px;
-    }
-    .about_flexed_item {
-      padding: 7px;
-          line-height: 23px;
-    }
     .help_flexed_content {
       display: flex;
       flex-direction: row;
@@ -1820,14 +1649,6 @@ font-weight: normal;
         .help_flexed_item {
           padding: 4px;
         }
-.wrap_help_icons {
-  display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-}
 .help_icons_flex_item {
   padding: 3px;
 }

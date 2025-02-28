@@ -80,17 +80,67 @@
     <link rel="stylesheet" href="website_css/index_cloning_biblecups_into_new_biblefarm_website.css" />
 
     <style>
-    /* Medium devices (landscape tablets, 768px and up) */
-    p {
-      padding: 0;
-          margin: 0;
-          padding-top: 7px;
-          padding-bottom: 7px;
-          font-size: 20px;
+    @font-face {
+      font-family: "OpenSansCondensed-Light";
+      src: url(../shop_fonts/OpenSansCondensed-Light.ttf) format("truetype");
     }
-    img.lazy_2secs {
-        width: 160px;
-        height: auto;
+    @font-face {
+      font-family: "Jura-Regular";
+      src: url(../shop_fonts/Jura-Regular.ttf) format("truetype");
+    }
+        html,
+        body {
+          position: relative;
+          height: 100%;
+          font-family: "OpenSansCondensed-Light", sans-serif;
+          font-size: 20px;
+          font-weight: bold;
+          color: #ae9c80;
+          margin: 0 auto;
+          background: black;
+          text-shadow: 2px 2px 1px #000000;
+        }
+
+        body {
+          margin: 0;
+          padding: 0;
+        }
+
+
+    .entireDocumentWithoutFirstRowofVisits {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+    .title {
+      position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          display: flex;
+          height: 32px;
+          padding: 4px;
+          font-family: 'Jura-Regular';
+          font-weight: normal;
+          font-size: 20px;
+          z-index: 3;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
+          background: #111;
+    }
+    .bgc-0002 {
+      background: hsl(0, 0%, 15%) !important;
+      background: -moz-radial-gradient(center, ellipse cover, hsl(0, 0%, 15%)0%, hsl(0, 0%, 15%)100%) !important;
+      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, hsl(0, 0%, 15%)), color-stop(100%, hsl(0, 0%, 0%))) !important;
+      background: -webkit-radial-gradient(center, ellipse cover, hsl(100, 100%, 20%) 0%, hsl(0, 0%, 0%) 100%) !important;
+      background: -o-radial-gradient(center, ellipse cover, hsl(0, 100%, 20%) 0%, hsl(0, 0%, 0%) 100%) !important;
+      background: -ms-radial-gradient(center, ellipse cover, hsl(0, 0%, 15%) 0%, hsl(0, 0%, 0%) 100%) !important;
+      background: radial-gradient(ellipse at center, hsl(0, 0%, 15%) 0%, hsl(0, 0%, 0%) 100%) !important;
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(0,0%,15%)', endColorstr='#0', GradientType=1) !important;
     }
     .showcase {
       position: absolute;
@@ -142,6 +192,57 @@
       padding: 0;
     margin: 0;
     }
+    .showcase {
+      position: absolute;
+    	width: 100%;
+    	height:100vh;
+    	background: url('IMG_20250215_154120_564_HDR.jpg') no-repeat center center/cover;
+    }
+    .showcase::after {
+    	content: '';
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+      height:100vh;
+    	z-index: 1;
+    	background: rgba(0, 0, 0, 0.5);
+    	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+    }
+    .showcase-content {
+      z-index: 2;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      width: 100%;
+      top: 50px;
+    }
+    .showcase-content h1 {
+      color: #d5ad6d;
+      font-weight: 400;
+      font-size: 25px;
+      text-shadow: 2px 2px 1px #000000;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .showcase-content h2 {
+      color: #d5ad6d;
+      font-weight: 400;
+      font-size: 35px;
+      text-shadow: 2px 2px 1px #000000;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h3 {
+      padding: 0;
+    margin: 0;
+    }
+    /*.count-title don't seem to need this */
     .myFixedAtTheBottom {
       position: fixed;
           display: flex;
@@ -160,31 +261,117 @@
     .spacer {
       height: 16px;
     }
-    .timerDiv {
-      font-size: 20px;
-    }
-    .gold {
-      color: #d5ad6d;
-      text-shadow: 2px 2px 1px #000000;
-    }
     .givingOptions {
     font-size: 26px;
     padding: 8px;
     color: #d5ad6d;
     text-shadow: 2px 2px 1px #000000;
     }
-    .serveAndBelieveText {
-      font-size: 17.5px;
+    .givingOptionsClick {
+      font-family: 'OpenSansCondensed-Light';
+          font-weight: 700;
+          font-size: 26px;
+          padding: 8px;
+          padding-left: 36px;
+          padding-right: 36px;
+          display: inline-block;
+          border: none;
+          border-radius: 244px;
+          cursor: pointer;
+          color: #d5ad6d;
+          text-shadow: 1px 1px 2px #000000;
+          background: rgb(56, 255, 0);
+          background: -moz-radial-gradient(circle, rgba(56, 255, 0, 1) 0%, rgba(73, 56, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+          background: -webkit-radial-gradient(circle, rgba(56, 255, 0, 1) 0%, rgb(0 30 35) 0%, rgba(0, 0, 0, 1) 100%);
+          background: radial-gradient(circle, rgba(56, 255, 0, 1) 0%, rgb(0 30 35) 0%, rgba(0, 0, 0, 1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#38ff00",endColorstr="#000000",GradientType=1);
     }
-    .payment_images {
+    .FBpixel_menu, .FBpixel_about, .FBpixel_CreateYourOwnDesign {
+      background: none;
+          border: none;
+          font-family: 'OpenSansCondensed-Light';
+          font-weight: bold;
+          text-shadow: 2px 2px 1px #000000;
+          color: #d5ad6d;
+        padding: 0;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .opacity_cover {
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 2;
+    }
+    .menu_icon_clone {
+      position: fixed;
+      display: block;
+      color: #d5ad6d;
+      line-height: 44px;
+      height: 44px;
+      width: 44px;
+      text-align: center;
+      top: 4px;
+      left: 4px;
+      cursor: pointer;
+    }
+    /* wrap_gofundme_modal don't seem to need this */
+    .wrap_gofundme_modal_bar {
+      position: absolute;
+      top: 100vh;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
       display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-wrap: nowrap;
-          align-content: center;
-          flex-direction: column;
+      width: 100%;
+      text-align: center;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
     }
-    .giving_options_modal {
+    .box_shadow {
+      box-shadow: 0px 0px 60px #111111;
+    }
+    a.bf_links {
+      color: #d5ad6d;
+    }
+
+    a.bf_links:hover,
+    a.bf_links:focus {
+      color: #dac4a2;
+      text-decoration: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .bf_links {
+      color: #d5ad6d;
+      cursor: pointer;
+    }
+
+    .bf_links:hover,
+    .bf_links:focus {
+      color: #dac4a2;
+      text-decoration: none;
+    }
+    .red_heart {
+      color: red;
+      font-size: 18px;
+      text-shadow: 1px 1px 2px #000000;
+    }
+    .customize_title {
+      font-family: "OpenSansCondensed-Light" !important;
+    	font-size: 22px !important;
+      font-weight: bold;
+    }
+    .menu_modal {
       position: fixed;
       display: none;
       height: 440px;
@@ -196,27 +383,205 @@
       padding: 8px;
       text-shadow: 2px 2px 1px #000000;
     }
+    .wrap_menu_items {
+    list-style: none;
+    max-width: 320px;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        flex-wrap: nowrap;
+    	background: #111111;
+    }
+    .menu_item {
+        flex: inherit;
+        font-size: 20px;
+        justify-content: center;
+        border-style: solid;
+        border-width: thin;
+        border-radius: 4px;
+        padding: 12px;
+        width: 230px;
+        text-align: center;
+        background: #222222;
+        border: none;
+    }
+    .wrap_help_icons {
+      display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .FBpixel_follow_instagram,
+    .FBpixel_follow_facebook,
+    .FBpixel_contact_whatsapp,
+    .FBpixel_contact_messenger,
+     {
+    background: none;
+        border: none;
+        font-family: 'OpenSansCondensed-Light';
+        font-weight: bold;
+        text-shadow: 2px 2px 1px #000000;
+        color: #d5ad6d;
+        /* padding: 0; */
+        font-size: 20px;
+        cursor: pointer;
+    }
+    help_icons_flex_item
+    .about_modal {
+          position: fixed;
+          display: none;
+          height: 454px;
+          width: 296px;
+          top: calc(4px + 44px);
+          left: 4px;
+          background: #111111;
+          z-index: 2;
+          padding: 8px;
+          text-shadow: 2px 2px 1px #000000;
+        }
+        .about_flexed_content {
+          display: flex;
+          flex-direction: row;
+              align-content: center;
+              justify-content: center;
+              align-items: center;
+              flex-wrap: wrap;
+            }
+            .about_flexed_title {
+              padding: 4px;
+                  font-family: 'Jura-Regular';
+                  font-weight: normal;
+                  font-size: 17px;
+            }
+            .about_flexed_item {
+              padding: 7px;
+                  line-height: 23px;
+            }
+            .giving_options_modal {
+              position: fixed;
+              display: none;
+              height: 440px;
+              width: 296px;
+              top: calc(4px + 44px);
+              left: 4px;
+              background: #111111;
+              z-index: 2;
+              padding: 8px;
+              text-shadow: 2px 2px 1px #000000;
+            }
+            .giving_options_menu_item {
+              background: white;
+            }
+            .gofundme_flex-container {
+                position: absolute;
+                top: 1458px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: row wrap;
+                padding-top: 50px;
+                background: black;
+                width: 100%;
+            }
+            /* ////////////////////////////////////////////// */
+            /* BEG injected visit videos/pictures/description */
+            /* ////////////////////////////////////////////// */
+              .wrap_featured_item {
+            	margin: 4px;
+            	background: #111111;
+              width: 312px;
+              padding-top: 4px;
+              padding-bottom: 4px;
+            	}
+              .placeholder_mug_featured-btn {
+              display: flex;
+                  flex-direction: column;
+                  flex-wrap: nowrap;
+                  align-content: center;
+                  justify-content: center;
+                  align-items: center;
+              }
+              .visitVid {
+                width: 312px;
+                height: 312px;
+                border: 0;
+                margin: 0;
+                padding: 0;
+              }
+              .lazy {
 
-.giving_options_menu_item {
-  background: white;
-}
-
-.wrap_gofundme_modal_bar {
-  position: absolute;
-  top: 100vh;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  display: flex;
-  width: 100%;
-  text-align: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-
-}
+              }
+              .visitImg {
+                width: 304px;
+                height: 171px;
+              }
+              .visit_sub_panel_details {
+                display: flex;
+                width: 302px;
+                height: 44px;
+                line-height: 44px;
+                text-align: center;
+                background: #222222;
+                border: 1px solid #ae9c80;
+                border-bottom-right-radius: 24px;
+                border-bottom-left-radius: 24px;
+              }
+              .visit_number, .rendered_date {
+                background: none;
+                    border: none;
+                    font-family: 'OpenSansCondensed-Light';
+                    font-weight: bold;
+                    text-shadow: 2px 2px 1px #000000;
+                    color: #ae9c80;
+                  padding: 0;
+                  font-size: 18px;
+              }
+              .flex_item {
+              flex-grow: 1;
+              flex-shrink: 1;
+              font-size: 18px;
+              }
+              .added_date {
+                display: none;
+              }
+              .last_thing_in_document {
+                display: block;
+                width: 100%;
+                min-height: 100px;
+              }
+/* ////////////////////////////////////////////// */
+/* END injected visit videos/pictures/description */
+/* ////////////////////////////////////////////// */
+    p {
+      padding: 0;
+          margin: 0;
+          padding-top: 7px;
+          padding-bottom: 7px;
+          font-size: 20px;
+    }
+    img.lazy_2secs {
+        width: 160px;
+        height: auto;
+    }
+    .gold {
+      color: #d5ad6d;
+      text-shadow: 2px 2px 1px #000000;
+    }
+    .payment_images {
+      display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: nowrap;
+          align-content: center;
+          flex-direction: column;
+    }
 article {
   position: absolute;
   top: calc(100vh + 50px);
@@ -232,132 +597,10 @@ article {
   justify-content: center;
   align-items: center;
 }
-.title {
-  position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      display: flex;
-      height: 32px;
-      padding: 4px;
-      font-family: 'Jura-Regular';
-      font-weight: normal;
-      font-size: 20px;
-      z-index: 3;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-content: center;
-      justify-content: center;
-      align-items: center;
-      background: #111;
-}
-.givingOptionsClick {
-  font-family: 'OpenSansCondensed-Light';
-      font-weight: 700;
-      font-size: 26px;
-      padding: 8px;
-      padding-left: 36px;
-      padding-right: 36px;
-      display: inline-block;
-      border: none;
-      border-radius: 244px;
-      cursor: pointer;
-      color: #d5ad6d;
-      text-shadow: 1px 1px 2px #000000;
-      background: rgb(56, 255, 0);
-      background: -moz-radial-gradient(circle, rgba(56, 255, 0, 1) 0%, rgba(73, 56, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
-      background: -webkit-radial-gradient(circle, rgba(56, 255, 0, 1) 0%, rgb(0 30 35) 0%, rgba(0, 0, 0, 1) 100%);
-      background: radial-gradient(circle, rgba(56, 255, 0, 1) 0%, rgb(0 30 35) 0%, rgba(0, 0, 0, 1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#38ff00",endColorstr="#000000",GradientType=1);
-}
-
-.entireDocumentWithoutFirstRowofVisits {
-  display: block;
-  height: 100%;
-  width: 100%;
-}
-
-.last_thing_in_document {
-  display: block;
-  width: 100%;
-  min-height: 100px;
-}
-.gofundme_flex-container {
-    position: absolute;
-    top: 1458px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    padding-top: 50px;
-    background: black;
-    width: 100%;
-}
-/* ////////////////////////////////////////////// */
-/* BEG injected visit videos/pictures/description */
-/* ////////////////////////////////////////////// */
-  .wrap_featured_item {
-	margin: 4px;
-	background: #111111;
-  width: 312px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-	}
-  .placeholder_mug_featured-btn {
-  display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      align-content: center;
-      justify-content: center;
-      align-items: center;
-  }
-  .visitVid {
-    width: 312px;
-    height: 312px;
-    border: 0;
-    margin: 0;
-    padding: 0;
-  }
-  .visitImg {
-    width: 304px;
-    height: 171px;
-  }
-  .visit_sub_panel_details {
-    display: flex;
-    width: 302px;
-    height: 44px;
-    line-height: 44px;
-    text-align: center;
-    background: #222222;
-    border: 1px solid #ae9c80;
-    border-bottom-right-radius: 24px;
-    border-bottom-left-radius: 24px;
-  }
-  .visit_number, .rendered_date {
-    background: none;
-        border: none;
-        font-family: 'OpenSansCondensed-Light';
-        font-weight: bold;
-        text-shadow: 2px 2px 1px #000000;
-        color: #ae9c80;
-      padding: 0;
-      font-size: 18px;
-  }
-  .flex_item {
-  flex-grow: 1;
-  flex-shrink: 1;
-  font-size: 18px;
-  }
-  .added_date {
-    display: none;
-  }
 /* ////////////////////////////////////////////// */
 /* END injected visit videos/pictures/description */
 /* ////////////////////////////////////////////// */
-
-
-    </style>
+</style>
 
   <!-- Facebook Pixel Code -->
   <script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init', '788482661830936');fbq('track', 'PageView');</script><noscript><img height="1" width="1" style="display:none"src="https://www.facebook.com/tr?id=788482661830936&ev=PageView&noscript=1"/></noscript><!-- End Facebook Pixel Code -->
@@ -396,7 +639,6 @@ article {
 <!-- BEG sticky CTA  -->
             <div class="myFixedAtTheBottom">
               <div class="spacer"></div>
-            <!--  <div class="serveAndBelieveText">let's serve & believe together</div> -->
               <div class="givingOptions">
                 <button class="givingOptionsClick">
                 <span>Giving Options</span>
@@ -412,13 +654,13 @@ article {
 
 <!-- BEG article  -->
 <article>
-<p class="">We're just a few soul winners visiting street kids with healthy treats and the Gospel.</p>
-<p class="">Some may think these street kids are surely hopeless but they're not! Not yet.</p>
-<p class="">Six out of ten don't live with their mom but with some neighbor.</p>
-<p class="">Eight out of ten don't even know their dad's name.</p>
-<p class="">They roam the streets all day surrounded by older ones who teach them the wrong survival skills.</p>
-<p class="">During the last ten years visiting street kids, I discovered how urgent it is to empower them before their childhood is gone.</p>
-<p class="">Together, while they're still longing for righteousness we can sow the seed. As Jesus said, the seed is The Word. And some seed will fall on good ground.</p>
+<p>We're just a few soul winners visiting street kids with healthy treats and the Gospel.</p>
+<p>Some may think these street kids are surely hopeless but they're not! Not yet.</p>
+<p>Six out of ten don't live with their mom but with some neighbor.</p>
+<p>Eight out of ten don't even know their dad's name.</p>
+<p>They roam the streets all day surrounded by older ones who teach them the wrong survival skills.</p>
+<p>During the last ten years visiting street kids, I discovered how urgent it is to empower them before their childhood is gone.</p>
+<p>Together, while they're still longing for righteousness we can sow the seed. As Jesus said, the seed is The Word. And some seed will fall on good ground.</p>
 </article>
 <!-- END article  -->
 
@@ -455,11 +697,6 @@ article {
     <div class="wrap_gofundme_modal">
       <!-- BEGIN wrap_gofundme_modal_bar -->
       <div class="wrap_gofundme_modal_bar box_shadow bgc-0002">
-        <!-- BEGIN title_gofundme_modal
-      <span id="site_title" class="title_gofundme_modal box_shadow bf_links"><a class='bf_links top_title' href='https://www.biblefarm.org#app' target='_blank'>customize for $10 shipping included</a></span>
-      <span id="site_made" class="title_gofundme_modal box_shadow bf_links"><span class="title_gofundme_modal box_shadow bf_links"><a class='bf_links' href='https://www.biblefarm.org' target='_blank'>made with <span class="red_heart">❤</span> at BibleFarm.org</a></span>
-       END title_gofundme_modal -->
-        <!--<span id="site_title"><span class="made_title">Welcome <span class="red_heart">❤</span> to BibleFarm.org</span></span>-->
         <span class="customize_title">Children hear The Word and Believe</span>
       </div>
       <!-- END wrap_gofundme_modal_bar -->
@@ -470,7 +707,7 @@ article {
     <div class="menu_modal">
       <ul class="wrap_menu_items">
         <li id="about" class="menu_item bf_links"><button type="button" class="FBpixel_about">about BibleFarm.org</button></li>
-        <li class="CreateYourOwnDesign menu_item bf_links"><button type="button" class="FBpixel_CreateYourOwnDesign"><a href="https://www.facebook.com/smuglovsky/" target='_blank'>send me a Facebook friend request</a></button></li>
+        <li class="menu_item bf_links"><button type="button" class="FBpixel_CreateYourOwnDesign"><a href="https://www.facebook.com/smuglovsky/" target='_blank'>send me a Facebook friend request</a></button></li>
         <li class="CreateYourOwnDesign menu_item bf_links"><button type="button" class="FBpixel_CreateYourOwnDesign givingOptionsClick">Giving Options</button></li>
         <li class="menu_item">follow me
           <div class="wrap_help_icons">
@@ -506,10 +743,7 @@ Six out of ten don't live with their mom but with some neighbor. Eight out of te
 They roam the streets all day surrounded by older ones who teach them the wrong survival skills.</div>
 <div class="about_flexed_item">During the last ten years visiting street kids,<br>I discovered how urgent it is to empower them before their childhood is gone.</div>
 <div class="about_flexed_item">Together, while they're still longing for righteousness we can sow the seed. As Jesus said, the seed is The Word. And some seed will fall on good ground. Let's believe!</div>
-
-    <!--    <div class="about_flexed_item">Help us serve these children: -->
-        <!--  <button type="button" class="FBpixel_link_to_biblefarm givingOptionsClick">Giving Options</button></div> -->
-      </div>
+  </div>
     </div>
     <!-- ////////////////////////// -->
     <!-- BEGIN about_modal -->
