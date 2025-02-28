@@ -103,7 +103,7 @@ $(".giving_options_modal").show("slow");
 $(window).smartResizeOrScroll(function(){
   // code that takes it easy...
 if ( !$("#591").length) {
-  
+
 //  $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
 // add the visit divs
   $('.gofundme_flex-container').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html');
@@ -121,39 +121,34 @@ if ( !$("#591").length) {
 // END smartResizeOrScroll
 ////////////////////////////////////
 /////////////////////////////////////
-// BEG lazyloadImages
+// BEG lazyload videos and images with jquery-lazyload-any.js
 /////////////////////////////////////
-document.addEventListener("DOMContentLoaded", function() {
-  var lazyloadImages = document.querySelectorAll("img.lazy");
-  var lazyloadThrottleTimeout;
+//first the video
+function load(img)
+{
+  img.fadeOut(0, function() {
+    img.fadeIn(1000);
+  });
+}
+$('.lazyload-thumbnail').lazyload({threshold: 200, load: load});
+$('.lazyload-youtube').lazyload({threshold: 200, trigger: 'click'}).append("<span class='play'></span>");
 
-  function lazyload () {
-    if(lazyloadThrottleTimeout) {
-      clearTimeout(lazyloadThrottleTimeout);
-    }
+//then the image
+$('.lazyload').lazyload({
+  // Sets the pixels to load earlier. Setting threshold to 200 causes image to load 200 pixels
+  // before it appears on viewport. It should be greater or equal zero.
+  threshold: 200,
 
-    lazyloadThrottleTimeout = setTimeout(function() {
-        var scrollTop = window.pageYOffset;
-        lazyloadImages.forEach(function(img) {
-            if(img.offsetTop < (window.innerHeight + scrollTop)) {
-              img.src = img.dataset.src;
-              img.classList.remove('lazy');
-            }
-        });
-        if(lazyloadImages.length == 0) {
-          document.removeEventListener("scroll", lazyload);
-          window.removeEventListener("resize", lazyload);
-          window.removeEventListener("orientationChange", lazyload);
-        }
-    }, 20);
-  }
+  // Sets the callback function when the load event is firing.
+  // element: The content in lazyload tag will be returned as a jQuery object.
+  load: function(element) {},
 
-  document.addEventListener("scroll", lazyload);
-  window.addEventListener("resize", lazyload);
-  window.addEventListener("orientationChange", lazyload);
+  // Sets events to trigger lazyload. Default is customized event `appear`, it will trigger when
+  // element appear in screen. You could set other events including each one separated by a space.
+  trigger: "appear"
 });
 /////////////////////////////////////
-// END lazyloadImages
+// END lazyload videos and images with jquery-lazyload-any.js
 /////////////////////////////////////
 /////////////////////////////////////
 // BEG Today's Date and visit counter
@@ -285,6 +280,33 @@ if (monthToChange == '12') {$('#month').text('Dec');};
 /////////////////////////////////////
 // END Today's Date and visit counter
 /////////////////////////////////////
+////////////////////////////////////////////////////
+////BEG the days ago thing ///////////////////////
+////////////////////////////////////////////////////
+  // Count days due
+  function daysUntil(year, month, day) {
+    var now = new Date(),
+        dateEnd = new Date(year, month - 1, day), // months are zero-based
+        days = ((dateEnd - now) / 1000/60/60/24) * -1;   // convert milliseconds to days
+
+    return Math.round(days);
+  }
+
+  // Set days due
+  $('.visit_sub_panel_details span.date').each(function () {
+
+      var monthDue = $(this).find('.due-date').text().substr(0,2);
+      var dayDue = $(this).find('.due-date').text().substr(3,2);
+      var yearDue = $(this).find('.due-date').text().substr(6,4);
+
+      $(this).find('.days-due').text(daysUntil(yearDue, monthDue, dayDue));
+
+      $('.due-date').hide();
+
+  });
+////////////////////////////////////////////////////
+////END the days ago thing ///////////////////////
+////////////////////////////////////////////////////
 /////////////////////////////////////
 // BEG giving options button hover
 /////////////////////////////////////

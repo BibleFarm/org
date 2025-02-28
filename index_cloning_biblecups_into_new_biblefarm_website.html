@@ -889,12 +889,7 @@ They roam the streets all day surrounded by older ones who teach them the wrong 
     <script src="shop_js/offline_dependency_2017-11-16_jquery-3.2.1.min.js"></script>
     <!-- PageVisits.js -->
     <!--<script src="shop_js/PageVisits.js"></script>-->
-    <!-- jquery_textfill_062.js -->
-    <script src="shop_js/jquery_textfill_062.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/timeago@1.6.7/jquery.timeago.min.js"></script>
-
-<script src="website_js/jquery-lazyload-any.js"></script>
+<!-- <script src="website_js/jquery-lazyload-any.js"></script> -->
 
     <!-- Shop_Sample.js -->
     <script src="website_js/index_cloning_biblecups_into_new_biblefarm_website.js"></script>
@@ -903,31 +898,6 @@ They roam the streets all day surrounded by older ones who teach them the wrong 
     <!-- ////////////////////////// -->
 
 <script>
-
-//the video
-function load(img)
-{
-  img.fadeOut(0, function() {
-    img.fadeIn(1000);
-  });
-}
-$('.lazyload-thumbnail').lazyload({threshold: 200, load: load});
-$('.lazyload-youtube').lazyload({threshold: 200, trigger: 'click'}).append("<span class='play'></span>");
-
-//the image
-$('.lazyload').lazyload({
-  // Sets the pixels to load earlier. Setting threshold to 200 causes image to load 200 pixels
-  // before it appears on viewport. It should be greater or equal zero.
-  threshold: 200,
-
-  // Sets the callback function when the load event is firing.
-  // element: The content in lazyload tag will be returned as a jQuery object.
-  load: function(element) {},
-
-  // Sets events to trigger lazyload. Default is customized event `appear`, it will trigger when
-  // element appear in screen. You could set other events including each one separated by a space.
-  trigger: "appear"
-});
 
 </script>
 
