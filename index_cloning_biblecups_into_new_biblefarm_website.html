@@ -82,16 +82,14 @@
     <style>
     @font-face {
       font-family: "OpenSansCondensed-Light";
-      src: url(../shop_fonts/OpenSansCondensed-Light.ttf) format("truetype");
+      src: url(fonts/OpenSansCondensed-Light.ttf) format("truetype");
     }
     @font-face {
       font-family: "Jura-Regular";
-      src: url(../shop_fonts/Jura-Regular.ttf) format("truetype");
+      src: url(fonts/Jura-Regular.ttf) format("truetype");
     }
         html,
         body {
-          position: relative;
-          height: 100%;
           font-family: "OpenSansCondensed-Light", sans-serif;
           font-size: 20px;
           font-weight: bold;
@@ -159,9 +157,8 @@
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='hsl(0,0%,15%)', endColorstr='#0', GradientType=1) !important;
     }
     .showcase {
-      position: absolute;
     	width: 100%;
-    	height:100vh;
+    	height: calc(100vh - 67px);
     	background: url('IMG_20250215_154120_564_HDR.jpg') no-repeat center center/cover;
     }
     .showcase::after {
@@ -170,64 +167,14 @@
     	top: 0;
     	left: 0;
     	width: 100%;
-      height:100vh;
+      height: calc(100vh - 67px);
     	z-index: 1;
     	background: rgba(0, 0, 0, 0.5);
     	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
     }
     .showcase-content {
       z-index: 2;
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      align-items: center;
-      width: 100%;
-      top: 50px;
-    }
-    .showcase-content h1 {
-      color: #d5ad6d;
-      font-weight: 400;
-      font-size: 25px;
-      text-shadow: 2px 2px 1px #000000;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-    .showcase-content h2 {
-      color: #d5ad6d;
-      font-weight: 400;
-      font-size: 35px;
-      text-shadow: 2px 2px 1px #000000;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-    h3 {
-      padding: 0;
-    margin: 0;
-    }
-    .showcase {
-      position: absolute;
-    	width: 100%;
-    	height:100vh;
-    	background: url('IMG_20250215_154120_564_HDR.jpg') no-repeat center center/cover;
-    }
-    .showcase::after {
-    	content: '';
-    	position: absolute;
-    	top: 0;
-    	left: 0;
-    	width: 100%;
-      height:100vh;
-    	z-index: 1;
-    	background: rgba(0, 0, 0, 0.5);
-    	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
-    }
-    .showcase-content {
-      z-index: 2;
-      position: absolute;
+      position: relative;
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -336,7 +283,6 @@
     }
     /* wrap_gofundme_modal don't seem to need this */
     .wrap_gofundme_modal_bar {
-      position: absolute;
       top: 100vh;
       left: 0;
       right: 0;
@@ -503,13 +449,15 @@ button {
               cursor: pointer;
             }
             .gofundme_flex-container {
+              /*
                 position: absolute;
                 top: 1458px;
+                */
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-flow: row wrap;
-                padding-top: 50px;
+                padding-top: 8px;
                 background: black;
                 width: 100%;
             }
@@ -606,7 +554,6 @@ button {
           flex-direction: column;
     }
 article {
-  position: absolute;
   top: calc(100vh + 50px);
   left: 0;
   right: 0;
@@ -675,18 +622,6 @@ article {
 <!-- END Hero  -->
 <!-- ///////// -->
 
-<!-- BEG article  -->
-<article>
-<p>We're just a few soul winners visiting street kids with healthy treats and the Gospel.</p>
-<p>Some may think these street kids are surely hopeless but they're not! Not yet.</p>
-<p>Six out of ten don't live with their mom but with some neighbor.</p>
-<p>Eight out of ten don't even know their dad's name.</p>
-<p>They roam the streets all day surrounded by older ones who teach them the wrong survival skills.</p>
-<p>During the last ten years visiting street kids, I discovered how urgent it is to empower them before their childhood is gone.</p>
-<p>Together, while they're still longing for righteousness we can sow the seed. As Jesus said, the seed is The Word. And some seed will fall on good ground.</p>
-</article>
-<!-- END article  -->
-
 <!-- BEG testimonies  -->
 
 <!-- END testimonies  -->
@@ -717,6 +652,7 @@ article {
         </svg></div>
     </div>
 
+
     <div class="wrap_gofundme_modal">
       <!-- BEGIN wrap_gofundme_modal_bar -->
       <div class="wrap_gofundme_modal_bar box_shadow bgc-0002">
@@ -724,6 +660,21 @@ article {
       </div>
       <!-- END wrap_gofundme_modal_bar -->
     </div>
+
+    <!-- BEG article  -->
+    <article>
+    <p>We're just a few soul winners visiting street kids with healthy treats and the Gospel.</p>
+    <p>Some may think these street kids are surely hopeless but they're not! Not yet.</p>
+    <p>Six out of ten don't live with their mom but with some neighbor.</p>
+    <p>Eight out of ten don't even know their dad's name.</p>
+    <p>They roam the streets all day surrounded by older ones who teach them the wrong survival skills.</p>
+    <p>During the last ten years visiting street kids, I discovered how urgent it is to empower them before their childhood is gone.</p>
+    <p>Together, while they're still longing for righteousness we can sow the seed. As Jesus said, the seed is The Word. And some seed will fall on good ground.</p>
+    </article>
+    <!-- END article  -->
+
+
+
     <!-- ////////////////////////// -->
     <!-- BEGIN menu_modal -->
     <!-- ////////////////////////// -->
@@ -736,10 +687,10 @@ article {
           <div class="wrap_help_icons">
             <!-- Instagram: -->
             <button type="button" class="FBpixel_follow_instagram help_icons_flex_item" style="
-    background: none;"><a href="https://www.instagram.com/biblefarm/"><span class="at-icon-wrapper" style="background-color: rgb(224, 53, 102); line-height: 44px; height: 44px; width: 44px; border-radius: 10%; filter: drop-shadow(black 3px 3px 2px);"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-instagram-1" style="fill: #d5ad6d; width: 44px; height: 44px; line-height: 44px; filter: drop-shadow(black 3px 3px 2px);" class="at-icon at-icon-instagram"><title id="at-svg-instagram-1">Instagram</title><g><path d="M16 5c-2.987 0-3.362.013-4.535.066-1.17.054-1.97.24-2.67.512a5.392 5.392 0 0 0-1.95 1.268 5.392 5.392 0 0 0-1.267 1.95c-.272.698-.458 1.498-.512 2.67C5.013 12.637 5 13.012 5 16s.013 3.362.066 4.535c.054 1.17.24 1.97.512 2.67.28.724.657 1.337 1.268 1.95a5.392 5.392 0 0 0 1.95 1.268c.698.27 1.498.457 2.67.51 1.172.054 1.547.067 4.534.067s3.362-.013 4.535-.066c1.17-.054 1.97-.24 2.67-.51a5.392 5.392 0 0 0 1.95-1.27 5.392 5.392 0 0 0 1.268-1.95c.27-.698.457-1.498.51-2.67.054-1.172.067-1.547.067-4.534s-.013-3.362-.066-4.535c-.054-1.17-.24-1.97-.51-2.67a5.392 5.392 0 0 0-1.27-1.95 5.392 5.392 0 0 0-1.95-1.267c-.698-.272-1.498-.458-2.67-.512C19.363 5.013 18.988 5 16 5zm0 1.982c2.937 0 3.285.01 4.445.064 1.072.05 1.655.228 2.042.38.514.198.88.437 1.265.822.385.385.624.75.823 1.265.15.387.33.97.38 2.042.052 1.16.063 1.508.063 4.445 0 2.937-.01 3.285-.064 4.445-.05 1.072-.228 1.655-.38 2.042-.198.514-.437.88-.822 1.265-.385.385-.75.624-1.265.823-.387.15-.97.33-2.042.38-1.16.052-1.508.063-4.445.063-2.937 0-3.285-.01-4.445-.064-1.072-.05-1.655-.228-2.042-.38-.514-.198-.88-.437-1.265-.822a3.408 3.408 0 0 1-.823-1.265c-.15-.387-.33-.97-.38-2.042-.052-1.16-.063-1.508-.063-4.445 0-2.937.01-3.285.064-4.445.05-1.072.228-1.655.38-2.042.198-.514.437-.88.822-1.265.385-.385.75-.624 1.265-.823.387-.15.97-.33 2.042-.38 1.16-.052 1.508-.063 4.445-.063zm0 12.685a3.667 3.667 0 1 1 0-7.334 3.667 3.667 0 0 1 0 7.334zm0-9.316a5.65 5.65 0 1 0 0 11.3 5.65 5.65 0 0 0 0-11.3zm7.192-.222a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" fill-rule="evenodd"></path></g></svg></span></a></button>
+    background: none;"><a href="https://www.instagram.com/biblefarm/" target="_blank"><span class="at-icon-wrapper" style="background-color: rgb(224, 53, 102); line-height: 44px; height: 44px; width: 44px; border-radius: 10%; filter: drop-shadow(black 3px 3px 2px);"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-instagram-1" style="fill: #d5ad6d; width: 44px; height: 44px; line-height: 44px; filter: drop-shadow(black 3px 3px 2px);" class="at-icon at-icon-instagram"><title id="at-svg-instagram-1">Instagram</title><g><path d="M16 5c-2.987 0-3.362.013-4.535.066-1.17.054-1.97.24-2.67.512a5.392 5.392 0 0 0-1.95 1.268 5.392 5.392 0 0 0-1.267 1.95c-.272.698-.458 1.498-.512 2.67C5.013 12.637 5 13.012 5 16s.013 3.362.066 4.535c.054 1.17.24 1.97.512 2.67.28.724.657 1.337 1.268 1.95a5.392 5.392 0 0 0 1.95 1.268c.698.27 1.498.457 2.67.51 1.172.054 1.547.067 4.534.067s3.362-.013 4.535-.066c1.17-.054 1.97-.24 2.67-.51a5.392 5.392 0 0 0 1.95-1.27 5.392 5.392 0 0 0 1.268-1.95c.27-.698.457-1.498.51-2.67.054-1.172.067-1.547.067-4.534s-.013-3.362-.066-4.535c-.054-1.17-.24-1.97-.51-2.67a5.392 5.392 0 0 0-1.27-1.95 5.392 5.392 0 0 0-1.95-1.267c-.698-.272-1.498-.458-2.67-.512C19.363 5.013 18.988 5 16 5zm0 1.982c2.937 0 3.285.01 4.445.064 1.072.05 1.655.228 2.042.38.514.198.88.437 1.265.822.385.385.624.75.823 1.265.15.387.33.97.38 2.042.052 1.16.063 1.508.063 4.445 0 2.937-.01 3.285-.064 4.445-.05 1.072-.228 1.655-.38 2.042-.198.514-.437.88-.822 1.265-.385.385-.75.624-1.265.823-.387.15-.97.33-2.042.38-1.16.052-1.508.063-4.445.063-2.937 0-3.285-.01-4.445-.064-1.072-.05-1.655-.228-2.042-.38-.514-.198-.88-.437-1.265-.822a3.408 3.408 0 0 1-.823-1.265c-.15-.387-.33-.97-.38-2.042-.052-1.16-.063-1.508-.063-4.445 0-2.937.01-3.285.064-4.445.05-1.072.228-1.655.38-2.042.198-.514.437-.88.822-1.265.385-.385.75-.624 1.265-.823.387-.15.97-.33 2.042-.38 1.16-.052 1.508-.063 4.445-.063zm0 12.685a3.667 3.667 0 1 1 0-7.334 3.667 3.667 0 0 1 0 7.334zm0-9.316a5.65 5.65 0 1 0 0 11.3 5.65 5.65 0 0 0 0-11.3zm7.192-.222a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" fill-rule="evenodd"></path></g></svg></span></a></button>
             <!-- Facebook: -->
             <button type="button" class="FBpixel_follow_facebook help_icons_flex_item" style="
-    background: none;"><a href="https://www.facebook.com/smuglovsky"><span class="at-icon-wrapper" style="background-color: rgb(59, 89, 152); line-height: 44px; height: 44px; width: 44px; border-radius: 10%; filter: drop-shadow(black 3px 3px 2px);"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-facebook-2" style="fill: #d5ad6d; width: 44px; height: 44px; line-height: 44px; filter: drop-shadow(black 3px 3px 2px);" class="at-icon at-icon-facebook"><title id="at-svg-facebook-2">Facebook</title><g><path d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z" fill-rule="evenodd"></path></g></svg></span></a></button>
+    background: none;"><a href="https://www.facebook.com/smuglovsky" target="_blank"><span class="at-icon-wrapper" style="background-color: rgb(59, 89, 152); line-height: 44px; height: 44px; width: 44px; border-radius: 10%; filter: drop-shadow(black 3px 3px 2px);"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-facebook-2" style="fill: #d5ad6d; width: 44px; height: 44px; line-height: 44px; filter: drop-shadow(black 3px 3px 2px);" class="at-icon at-icon-facebook"><title id="at-svg-facebook-2">Facebook</title><g><path d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z" fill-rule="evenodd"></path></g></svg></span></a></button>
           </div>
 
         </li>
@@ -747,10 +698,10 @@ article {
           <div class="wrap_help_icons">
             <!-- WhatsApp: -->
             <button type="button" class="FBpixel_contact_whatsapp help_icons_flex_item" style="
-    background: none;"><a href="https://wa.me/+5493764952222"><span class="at-icon-wrapper" style="background-color: rgb(77, 194, 71); line-height: 44px; height: 44px; width: 44px; border-radius: 10%; filter: drop-shadow(black 3px 3px 2px);"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-whatsapp-7" class="at-icon at-icon-whatsapp" style="fill: #d5ad6d; width: 44px; height: 44px; line-height: 44px; filter: drop-shadow(black 3px 3px 2px);"><title id="at-svg-whatsapp-7">WhatsApp</title><g><path d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd"></path></g></svg></span></a></button>
+    background: none;"><a href="https://wa.me/+5493764952222" target="_blank"><span class="at-icon-wrapper" style="background-color: rgb(77, 194, 71); line-height: 44px; height: 44px; width: 44px; border-radius: 10%; filter: drop-shadow(black 3px 3px 2px);"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-whatsapp-7" class="at-icon at-icon-whatsapp" style="fill: #d5ad6d; width: 44px; height: 44px; line-height: 44px; filter: drop-shadow(black 3px 3px 2px);"><title id="at-svg-whatsapp-7">WhatsApp</title><g><path d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd"></path></g></svg></span></a></button>
             <!-- Messenger: -->
             <button type="button" class="FBpixel_contact_messenger help_icons_flex_item" style="
-    background: none;"><a href="https://www.messenger.com/t/smuglovsky"><span class="at-icon-wrapper" style="background-color: rgb(0, 132, 255); line-height: 44px; height: 44px; width: 44px; border-radius: 10%; filter: drop-shadow(black 3px 3px 2px);"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-messenger-7" style="fill: #d5ad6d; width: 44px; height: 44px; line-height: 44px; filter: drop-shadow(black 3px 3px 2px);" class="at-icon at-icon-messenger"><title id="at-svg-messenger-7">Messenger</title><g><path d="M16 6C9.925 6 5 10.56 5 16.185c0 3.205 1.6 6.065 4.1 7.932V28l3.745-2.056c1 .277 2.058.426 3.155.426 6.075 0 11-4.56 11-10.185C27 10.56 22.075 6 16 6zm1.093 13.716l-2.8-2.988-5.467 2.988 6.013-6.383 2.868 2.988 5.398-2.987-6.013 6.383z" fill-rule="evenodd"></path></g></svg></span></a></button>
+    background: none;"><a href="https://www.messenger.com/t/smuglovsky" target="_blank"><span class="at-icon-wrapper" style="background-color: rgb(0, 132, 255); line-height: 44px; height: 44px; width: 44px; border-radius: 10%; filter: drop-shadow(black 3px 3px 2px);"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-messenger-7" style="fill: #d5ad6d; width: 44px; height: 44px; line-height: 44px; filter: drop-shadow(black 3px 3px 2px);" class="at-icon at-icon-messenger"><title id="at-svg-messenger-7">Messenger</title><g><path d="M16 6C9.925 6 5 10.56 5 16.185c0 3.205 1.6 6.065 4.1 7.932V28l3.745-2.056c1 .277 2.058.426 3.155.426 6.075 0 11-4.56 11-10.185C27 10.56 22.075 6 16 6zm1.093 13.716l-2.8-2.988-5.467 2.988 6.013-6.383 2.868 2.988 5.398-2.987-6.013 6.383z" fill-rule="evenodd"></path></g></svg></span></a></button>
           </div>
         </li>
       </ul>
@@ -782,16 +733,22 @@ They roam the streets all day surrounded by older ones who teach them the wrong 
       <ul class="wrap_menu_items">
 
         <li class="menu_item giving_options_menu_item">
-          <img src="GiveSendGo.png" alt="" />
+          <a href="https://www.givesendgo.com/biblefarm" target="_blank">
+            <img src="GiveSendGo.png" alt="" />
+          </a>
         </li>
 
         <li class="menu_item giving_options_menu_item">
+          <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YCUGUZHYX5Y2Q&source=url" target="_blank">
           <img src="PayPal.png" alt="" />
-        </li>
+        </a>
+      </li>
 
         <li class="menu_item giving_options_menu_item">
+          <a href="https://cash.app/$smuglovsky/" target="_blank">
           <img src="CashApp.png" alt="" />
-        </li>
+        </a>
+      </li>
 
       </ul>
     </div>
