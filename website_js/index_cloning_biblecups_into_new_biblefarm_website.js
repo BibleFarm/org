@@ -108,36 +108,6 @@ if ( !$("#591").length) {
 // add the visit divs
   $('.gofundme_flex-container').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html');
 };
-/////////////////////////////////////
-// BEG lazyload videos and images with jquery-lazyload-any.js
-/////////////////////////////////////
-//first the video
-function load(img)
-{
-  img.fadeOut(0, function() {
-    img.fadeIn(1000);
-  });
-}
-$('.lazyload-thumbnail').lazyload({threshold: 200, load: load});
-$('.lazyload-youtube').lazyload({threshold: 200, trigger: 'click'}).append("<span class='play'></span>");
-
-//then the image
-$('.lazyload').lazyload({
-  // Sets the pixels to load earlier. Setting threshold to 200 causes image to load 200 pixels
-  // before it appears on viewport. It should be greater or equal zero.
-  threshold: 200,
-
-  // Sets the callback function when the load event is firing.
-  // element: The content in lazyload tag will be returned as a jQuery object.
-  load: function(element) {},
-
-  // Sets events to trigger lazyload. Default is customized event `appear`, it will trigger when
-  // element appear in screen. You could set other events including each one separated by a space.
-  trigger: "appear"
-});
-/////////////////////////////////////
-// END lazyload videos and images with jquery-lazyload-any.js
-/////////////////////////////////////
 });
 /////////////////////////////////////
 // END smartResizeOrScroll
