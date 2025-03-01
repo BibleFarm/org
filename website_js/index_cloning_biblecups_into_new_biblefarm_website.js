@@ -107,7 +107,38 @@ if ( !$("#591").length) {
 //  $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
 // add the visit divs
   $('.gofundme_flex-container').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html');
+
+setTimeout(function() {
+////////////////////////////////////////////////////
+////BEG the days ago thing ///////////////////////
+////////////////////////////////////////////////////
+    // Count days due
+    function daysUntil(year, month, day) {
+      var now = new Date(),
+          dateEnd = new Date(year, month - 1, day), // months are zero-based
+          days = ((dateEnd - now) / 1000/60/60/24) * -1;   // convert milliseconds to days
+
+      return Math.round(days);
+    }
+
+    // Set days due
+    $('.visit_sub_panel_details span.date').each(function () {
+
+        var monthDue = $(this).find('.due-date').text().substr(0,2);
+        var dayDue = $(this).find('.due-date').text().substr(3,2);
+        var yearDue = $(this).find('.due-date').text().substr(6,4);
+
+        $(this).find('.days-due').text(daysUntil(yearDue, monthDue, dayDue));
+
+        $('.due-date').hide();
+
+    });
+////////////////////////////////////////////////////
+////END the days ago thing ///////////////////////
+////////////////////////////////////////////////////
+},1000);
 };
+
 });
 /////////////////////////////////////
 // END smartResizeOrScroll
@@ -242,33 +273,6 @@ if (monthToChange == '12') {$('#month').text('Dec');};
 /////////////////////////////////////
 // END Today's Date and visit counter
 /////////////////////////////////////
-////////////////////////////////////////////////////
-////BEG the days ago thing ///////////////////////
-////////////////////////////////////////////////////
-  // Count days due
-  function daysUntil(year, month, day) {
-    var now = new Date(),
-        dateEnd = new Date(year, month - 1, day), // months are zero-based
-        days = ((dateEnd - now) / 1000/60/60/24) * -1;   // convert milliseconds to days
-
-    return Math.round(days);
-  }
-
-  // Set days due
-  $('.visit_sub_panel_details span.date').each(function () {
-
-      var monthDue = $(this).find('.due-date').text().substr(0,2);
-      var dayDue = $(this).find('.due-date').text().substr(3,2);
-      var yearDue = $(this).find('.due-date').text().substr(6,4);
-
-      $(this).find('.days-due').text(daysUntil(yearDue, monthDue, dayDue));
-
-      $('.due-date').hide();
-
-  });
-////////////////////////////////////////////////////
-////END the days ago thing ///////////////////////
-////////////////////////////////////////////////////
 /////////////////////////////////////
 // BEG giving options button hover
 /////////////////////////////////////
