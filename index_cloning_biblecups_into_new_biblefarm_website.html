@@ -571,25 +571,20 @@ article {
 /* END injected visit videos/pictures/description */
 /* ////////////////////////////////////////////// */
 .lazyload-youtube {
-  width: 312px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 0px;
-    width: 304px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
     font-size: 0px;
 }
 .play {
   position: absolute;
+  display: block;
   width: 64px;
   height: 64px;
-  background-image: url(play.png);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+/*  background-image: url(play.png); */
+  background: url(play.png) no-repeat center center/cover;
   -moz-opacity: 0.70;
   opacity: 0.70;
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);
