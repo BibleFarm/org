@@ -472,7 +472,7 @@ $.get("https://www.biblefarm.org/data_files/ALL_visits_flex_items.html", functio
 console.log("I got the data. Status: " + status);
 $('.gofundme_flex-container').append(data);
 });
-},2000);
+},1000);
 ////////////////////////////////////////////////////
 ////BEG the days ago thing ///////////////////////
 ////////////////////////////////////////////////////

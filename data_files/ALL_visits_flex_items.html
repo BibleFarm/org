@@ -1,3 +1,18 @@
+<script>
+/////////////////////////////////////
+// BEG append visit counter and today's date to showcase-content
+/////////////////////////////////////
+setTimeout(function() {
+$('.showcase-content').append('<h3><div class="timerDiv"><span class="timer count-title count-number" data-to="600" data-speed="10000"></span> visits as of today, </span><span id="month">11</span> <span id="day">11</span>, <span id="year">11</span></div></h3>');
+},2000);
+/////////////////////////////////////
+// END append visit counter and today's date to showcase-content
+/////////////////////////////////////
+</script>
+
+
+
+
 <div id="container">
 <div id="264" class="wrap_featured_item">
 
@@ -734,8 +749,8 @@
         img.fadeIn(1000);
       });
     }
-    $('.lazyload-thumbnail').lazyload({threshold: 200, load: load});
-    $('.lazyload-youtube').lazyload({threshold: 200, trigger: 'click'}).append("<span class='play'></span>");
+    $('.lazyload-thumbnail').lazyload({threshold: 1200, load: load});
+    $('.lazyload-youtube').lazyload({threshold: 1200, trigger: 'click'}).append("<span class='play'></span>");
 
     //then the image
     $('.lazyload').lazyload({
