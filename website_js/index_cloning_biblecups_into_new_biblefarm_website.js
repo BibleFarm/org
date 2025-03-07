@@ -102,7 +102,7 @@ $(".giving_options_modal").show("slow");
 // usage:
 $(window).smartResizeOrScroll(function(){
   // code that takes it easy...
-if ( !$("#591").length) {
+if ( !$("#264").length) {
 
 //  $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
 // add the visit divs
