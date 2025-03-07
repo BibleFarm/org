@@ -331,7 +331,7 @@ if (monthToChange == '12') {$('#month').text('Dec');};
 
 
 
-
+/*
 /////////////////////////////////////
 // BEG Today's Date and visit counter
 /////////////////////////////////////
@@ -464,7 +464,7 @@ if (monthToChange == '12') {$('#month').text('Dec');};
 /////////////////////////////////////
 // END Today's Date and visit counter
 /////////////////////////////////////
-
+*/
 
 setTimeout(function() {
 $.get("https://www.biblefarm.org/data_files/ALL_visits_flex_items.html", function(data, status){
