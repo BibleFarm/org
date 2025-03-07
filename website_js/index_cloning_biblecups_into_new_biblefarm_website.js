@@ -472,10 +472,11 @@ $.get("https://www.biblefarm.org/data_files/ALL_visits_flex_items.html", functio
 console.log("I got the data. Status: " + status);
 $('.gofundme_flex-container').append(data);
 });
-
+},2000);
 ////////////////////////////////////////////////////
 ////BEG the days ago thing ///////////////////////
 ////////////////////////////////////////////////////
+setTimeout(function() {
     // Count days due
     function daysUntil(year, month, day) {
       var now = new Date(),
@@ -497,11 +498,13 @@ $('.gofundme_flex-container').append(data);
         $('.due-date').hide();
 
     });
+
+},3000);
 ////////////////////////////////////////////////////
 ////END the days ago thing ///////////////////////
 ////////////////////////////////////////////////////
 
-},2000);
+
 
 
 
