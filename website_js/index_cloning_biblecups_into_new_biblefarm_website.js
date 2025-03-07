@@ -99,6 +99,37 @@ $(".giving_options_modal").show("slow");
 })(jQuery,'smartResizeOrScroll');
 
 
+
+
+/////////////////////////////////////
+// BEG upon landing, wait 2 seconds and get the data
+/////////////////////////////////////
+/*
+setTimeout(function() {
+$.get("https://www.biblefarm.org/data_files/ALL_visits_flex_items.html", function(data, status){
+//  alert("Data: " + data + "\nStatus: " + status);
+console.log("I got the data. Status: " + status);
+});
+
+$(window).smartResizeOrScroll(function(){
+
+$('.gofundme_flex-container').append().load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #container .wrap_featured_item').slice(0);
+
+});
+
+},2000);
+*/
+/////////////////////////////////////
+// END upon landing, wait 2 seconds and get the data
+/////////////////////////////////////
+
+
+
+
+
+
+
+/*
 // usage:
 $(window).smartResizeOrScroll(function(){
   // code that takes it easy...
@@ -107,8 +138,8 @@ if ( !$("#264").length) {
 //  $('.gofundme_flex-container').append($('<div>').load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #' + '591'));
 // add the visit divs
 // $('.gofundme_flex-container').append().load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #container .wrap_featured_item:lt(2)').slice(0,1);
-$('.gofundme_flex-container').append().load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #container .wrap_featured_item').slice(0,1);
-console.log("sliced 0,1");
+var item_1 = $('.gofundme_flex-container').append().load('https://www.biblefarm.org/data_files/ALL_visits_flex_items.html #container .wrap_featured_item').slice(0);
+console.log($(item_1).attr('id'));
 
 setTimeout(function() {
 ////////////////////////////////////////////////////
@@ -142,6 +173,7 @@ setTimeout(function() {
 };
 
 });
+*/
 /////////////////////////////////////
 // END smartResizeOrScroll
 ////////////////////////////////////
