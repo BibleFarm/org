@@ -147,6 +147,7 @@ setTimeout(function() {
 // BEG Today's Date and visit counter
 /////////////////////////////////////
 //gets todays date and calls on the draw function
+/*
 function initLunarPhase(){
   var $date=new Date();
   var $year=$date.getFullYear();
@@ -268,6 +269,7 @@ if (monthToChange == '10') {$('#month').text('Oct');};
 if (monthToChange == '11') {$('#month').text('Nov');};
 if (monthToChange == '12') {$('#month').text('Dec');};
 },500);
+*/
 // EBD convert month number to month name in the counter
 // END counter
 /////////////////////////////////////
