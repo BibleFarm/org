@@ -6,7 +6,38 @@ setTimeout(function() {
 
 $(".showcase").css("background", "url(https://biblefarm.github.io/farm-photos-2018/2018-12-15-263/2018-12-15-263-0002.jpg) no-repeat center center / contain");
 
-$(".last_visit_and_get").append('<div class="visit_sub_panel_details"><span class="date flex_item"><span class=""><span class="rendered_date days-due"></span> days ago</span><span class="added_date due-date">12/24/2018</span></span></div>');
+$(".last_visit_and_get").append('<div class="visit_sub_panel_details_featured"><span class="date"><span class=""><span class="rendered_date days-due"></span> days ago</span><span class="added_date due-date">12/24/2018</span></span></div>');
+
+////////////////////////////////////////////////////
+////BEG the days ago thing FOR THE FIRST & FEATURED VISIT ///////////////////////
+////////////////////////////////////////////////////
+setTimeout(function() {
+    // Count days due
+    function daysUntil(year, month, day) {
+      var now = new Date(),
+          dateEnd = new Date(year, month - 1, day), // months are zero-based
+          days = ((dateEnd - now) / 1000/60/60/24) * -1;   // convert milliseconds to days
+
+      return Math.round(days);
+    }
+
+    // Set days due
+    $('.visit_sub_panel_details_featured span.date').each(function () {
+
+        var monthDue = $(this).find('.due-date').text().substr(0,2);
+        var dayDue = $(this).find('.due-date').text().substr(3,2);
+        var yearDue = $(this).find('.due-date').text().substr(6,4);
+
+        $(this).find('.days-due').text(daysUntil(yearDue, monthDue, dayDue));
+
+        $('.due-date').hide();
+
+    });
+
+},1500);
+////////////////////////////////////////////////////
+////END the days ago thing FOR THE FIRST & FEATURED VISIT ///////////////////////
+////////////////////////////////////////////////////
 
 
 },1000);
