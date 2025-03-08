@@ -158,7 +158,7 @@
     }
     .showcase {
     	width: 100%;
-    	height: calc(100vh - 67px);
+    	height: calc(100vh - 149px);
     	background: url('IMG_20250215_154120_564_HDR.jpg') no-repeat center center/cover;
     }
     .showcase::after {
@@ -662,6 +662,15 @@ article {
   /* **************** */
   /* END progress bar */
   /* **************** */
+
+.get_them_something {
+  font-size: 22px;
+}
+.for_the_next_visit {
+  font-size: 28px;
+}
+
+
 </style>
 
   <!-- Facebook Pixel Code -->
@@ -699,13 +708,42 @@ article {
 </h3>
 -->
       </div>
+
+
+
+
+      <span class="date flex_item last_visit_and_get" style="
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          align-content: flex-end;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+          bottom: calc(0px + 149px);
+          z-index: 2;
+          font-size: 22px;">
+
+          <div class="">this was last visit <span class="rendered_date days-due"  style="font-size: 22px;"></span> days ago</div>
+
+        <span class="added_date due-date" style="display: none;">12/24/2018</span>
+      </span>
+
+
+
+
+
     </header>
 <!-- BEG sticky CTA  -->
             <div class="myFixedAtTheBottom">
               <div class="spacer"></div>
               <div class="givingOptions">
                 <button class="givingOptionsClick">
-                <span>Giving Options</span>
+                  <div class="get_them_something">Get them something</div>
+                  <div class="for_the_next_visit">for the next visit</div>
                 </button>
               </div>
               <div class="spacer"></div>
