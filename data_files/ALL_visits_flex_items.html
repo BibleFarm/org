@@ -3,7 +3,12 @@
 /////////////////////////////////////////////////////////////////
 // 1st of all, update with last visit's -0001.jpg
 setTimeout(function() {
-$(".showcase").css("background", "url(https://biblefarm.github.io/farm-photos-2018/2018-12-15-263/2018-12-15-263-0002.jpg) no-repeat center center / cover");
+
+$(".showcase").css("background", "url(https://biblefarm.github.io/farm-photos-2018/2018-12-15-263/2018-12-15-263-0002.jpg) no-repeat center center / contain");
+
+$(".last_visit_and_get").append('<div class="visit_sub_panel_details"><span class="date flex_item"><span class=""><span class="rendered_date days-due"></span> days ago</span><span class="added_date due-date">12/24/2018</span></span></div>');
+
+
 },1000);
 // 2nd I update with the last visit right down here in the append() -> data-to="  "
 // 3rd I add the new visit down in the -> find: ADD new visits HERE
