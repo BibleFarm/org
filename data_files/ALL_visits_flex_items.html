@@ -2,8 +2,16 @@
 
 /////////////////////////////////////////////////////////////////
 setTimeout(function() {
+  if ( $(window).width() < $(window).height() ) {
 // 1st of all, update with last visit's -0001.jpg
 $(".showcase").css("background", "url(https://biblefarm.github.io/farm-photos-2025/2025-03-01-593/2025-03-01-593-0001.jpg) no-repeat center center / contain");
+console.log("portrait is contain");
+}
+else {
+// and here
+$(".showcase").css("background", "url(https://biblefarm.github.io/farm-photos-2025/2025-03-01-593/2025-03-01-593-0001.jpg) no-repeat center center / cover");
+console.log("landscape is cover");
+};
 // 2nd of all, update with last visit's due-date
 $(".last_visit_and_get").append('<div class="visit_sub_panel_details_featured"><span class="date"><span class="">this was last visit <span class="rendered_date days-due"></span> days ago</span><span class="added_date due-date">03/01/2025</span></span></div>');
 ////////////////////////////////////////////////////
