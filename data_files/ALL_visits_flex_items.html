@@ -1,13 +1,11 @@
 <script>
 
 /////////////////////////////////////////////////////////////////
-// 1st of all, update with last visit's -0001.jpg
 setTimeout(function() {
-
-$(".showcase").css("background", "url(https://biblefarm.github.io/farm-photos-2018/2018-12-15-263/2018-12-15-263-0002.jpg) no-repeat center center / contain");
-
-$(".last_visit_and_get").append('<div class="visit_sub_panel_details_featured"><span class="date"><span class="">this was last visit <span class="rendered_date days-due"></span> days ago</span><span class="added_date due-date">12/24/2018</span></span></div>');
-
+// 1st of all, update with last visit's -0001.jpg
+$(".showcase").css("background", "url(https://biblefarm.github.io/farm-photos-2025/2025-03-01-593/2025-03-01-593-0001.jpg) no-repeat center center / contain");
+// 2nd of all, update with last visit's due-date
+$(".last_visit_and_get").append('<div class="visit_sub_panel_details_featured"><span class="date"><span class="">this was last visit <span class="rendered_date days-due"></span> days ago</span><span class="added_date due-date">03/01/2025</span></span></div>');
 ////////////////////////////////////////////////////
 ////BEG the days ago thing FOR THE FIRST & FEATURED VISIT ///////////////////////
 ////////////////////////////////////////////////////
@@ -17,32 +15,23 @@ setTimeout(function() {
       var now = new Date(),
           dateEnd = new Date(year, month - 1, day), // months are zero-based
           days = ((dateEnd - now) / 1000/60/60/24) * -1;   // convert milliseconds to days
-
       return Math.round(days);
     }
-
     // Set days due
     $('.visit_sub_panel_details_featured span.date').each(function () {
-
         var monthDue = $(this).find('.due-date').text().substr(0,2);
         var dayDue = $(this).find('.due-date').text().substr(3,2);
         var yearDue = $(this).find('.due-date').text().substr(6,4);
-
-        $(this).find('.days-due').text(daysUntil(yearDue, monthDue, dayDue));
-
-        $('.due-date').hide();
-
+      $(this).find('.days-due').text(daysUntil(yearDue, monthDue, dayDue));
+      $('.due-date').hide();
     });
-
 },1500);
 ////////////////////////////////////////////////////
 ////END the days ago thing FOR THE FIRST & FEATURED VISIT ///////////////////////
 ////////////////////////////////////////////////////
-
-
 },1000);
-// 2nd I update with the last visit right down here in the append() -> data-to="  "
-// 3rd I add the new visit down in the -> find: ADD new visits HERE
+// 3rd I update with the last visit right down here in the append() -> data-to="  "
+// 4th and last. I add the new visit down in the -> find: ADD new visits HERE
 // That's it!
 /////////////////////////////////////////////////////////////////
 setTimeout(function() {
@@ -50,7 +39,7 @@ setTimeout(function() {
 // BEG append visit counter and today's date to showcase-content
 /////////////////////////////////////
 //setTimeout(function() {
-$('.showcase-content').append('<h3><div class="timerDiv"><span class="timer count-title count-number" data-to="600" data-speed="10000"></span> visits as of today, </span><span id="month">11</span> <span id="day">11</span>, <span id="year">11</span></div></h3>');
+$('.showcase-content').append('<h3><div class="timerDiv"><span class="timer count-title count-number" data-to="593" data-speed="10000"></span> visits as of today, </span><span id="month">11</span> <span id="day">11</span>, <span id="year">11</span></div></h3>');
 //},2000);
 /////////////////////////////////////
 // END append visit counter and today's date to showcase-content
