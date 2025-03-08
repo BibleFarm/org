@@ -621,7 +621,42 @@ article {
     height: 8px;
   }
 
+  /* **************** */
+  /* BEG progress bar */
+  /* **************** */
+  .loading_progress_bar_container {
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	height: 50vh;
+  }
+  	.loading-bar {
+  		display: flex;
+  		height: 10px;
+  		width: 100%;
+  		max-width: calc(100vw - 100px);
+  		box-shadow: inset 0px 0px 0px 1px #ae9c80;
+  		border-radius: 50px;
+  		overflow: hidden;
+  }
+  		@keyframes progress-animation {
+  			0% {width: 0%;}
+  			20% {width: 10%;}
+  			40% {width: 30%;}
+  			50% {width: 60%;}
+  			100% {width: 100%;}
+  		}
 
+  		.progress-bar {
+  			display: flex;
+  			height: 100%;
+  			width: 100%;
+  			background: #d5ad6d;
+  			animation: progress-animation 3s ease-in-out;
+  		}
+  /* **************** */
+  /* END progress bar */
+  /* **************** */
 </style>
 
   <!-- Facebook Pixel Code -->
@@ -726,6 +761,13 @@ article {
     <p>Together, while they're still longing for righteousness we can sow the seed. As Jesus said, the seed is The Word. And some seed will fall on good ground.</p>
     </article>
     <!-- END article  -->
+    <!-- BEG loading_progress_bar_container  -->
+    <div class="loading_progress_bar_container">
+    	<div class="loading-bar">
+    		<div class="progress-bar"></div>
+    	</div>
+    </div>
+    <!-- END loading_progress_bar_container  -->
 
 
 
