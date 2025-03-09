@@ -230,7 +230,7 @@
     color: #d5ad6d;
     text-shadow: 2px 2px 1px #000000;
     }
-    .givingOptionsClick {
+    .givingOptionsClick_blue { /* original */
       font-family: 'OpenSansCondensed-Light';
           font-weight: 700;
           font-size: 26px;
@@ -249,6 +249,54 @@
           background: radial-gradient(circle, rgba(56, 255, 0, 1) 0%, rgb(0 30 35) 0%, rgba(0, 0, 0, 1) 100%);
           filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#38ff00",endColorstr="#000000",GradientType=1);
     }
+    .givingOptionsClick_gold_black { /* gold with black letters */
+      font-family: 'OpenSansCondensed-Light';
+          font-weight: 700;
+          font-size: 26px;
+          padding: 8px;
+          padding-left: 36px;
+          padding-right: 36px;
+          display: inline-block;
+          border: 1px #222222 solid;
+          border-radius: 244px;
+          cursor: pointer;
+          color: #d5ad6d;
+          text-shadow: 1px 1px 2px #000000;
+          -webkit-text-stroke: black thin;
+          background: rgb(56, 255, 0);
+          background: -moz-radial-gradient(circle, rgba(56, 255, 0, 1) 0%, rgba(73, 56, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+          background: -webkit-radial-gradient(circle, rgba(56, 255, 0, 1) 0%, rgb(0 30 35) 0%, rgba(0, 0, 0, 1) 100%);
+          background: radial-gradient(circle, rgba(56, 255, 0, 1) 0%, rgb(255 189 104) 0%, rgba(0, 0, 0, 1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#38ff00",endColorstr="#000000",GradientType=1);
+      }
+      .givingOptionsClick_purple { /* purple with gold letters */
+        font-family: 'OpenSansCondensed-Light';
+            font-weight: 700;
+            font-size: 26px;
+            padding: 8px;
+            padding-left: 36px;
+            padding-right: 36px;
+            display: inline-block;
+            border: 1px #222222 solid;
+            border-radius: 244px;
+            cursor: pointer;
+            color: #d5ad6d;
+            text-shadow: 1px 1px 2px #000000;
+            background: rgb(56, 255, 0);
+            background: -moz-radial-gradient(circle, rgba(56, 255, 0, 1) 0%, rgba(73, 56, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+            background: -webkit-radial-gradient(circle, rgba(56, 255, 0, 1) 0%, rgb(0 30 35) 0%, rgba(0, 0, 0, 1) 100%);
+            background: radial-gradient(circle, rgba(56, 255, 0, 1) 0%, rgb(0 30 35) 0%, rgba(0, 0, 0, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#38ff00",endColorstr="#000000",GradientType=1);
+            background: radial-gradient(circle, rgba(56, 255, 0, 1) 0%, rgb(44 0 38) 0%, rgba(0, 0, 0, 1) 100%);
+        }
+/*
+radial-gradient(circle, rgba(56, 255, 0, 1) 0%, rgb(44 0 38) 0%, rgba(0, 0, 0, 1) 100%)
+*/
+
+
+
+
+
     .FBpixel_menu, .FBpixel_about, .FBpixel_CreateYourOwnDesign {
       background: none;
           border: none;
@@ -511,7 +559,7 @@ button {
                 border-bottom-left-radius: 24px;
               }
               .visit_sub_panel_details_featured {
-                
+
               }
               .visit_number, .rendered_date {
                 background: none;
@@ -740,7 +788,7 @@ article {
             <div class="myFixedAtTheBottom">
               <div class="spacer"></div>
               <div class="givingOptions">
-                <button class="givingOptionsClick">
+                <button id="givingOptionsClick" class="givingOptionsClick_blue">
                   <div class="get_them_something">Get them something</div>
                   <div class="for_the_next_visit">for the next visit</div>
                 </button>

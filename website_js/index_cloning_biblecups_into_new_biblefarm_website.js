@@ -48,7 +48,7 @@ $( ".about_modal" ).show('slow');
 ////////////////////////////////////////////////////
 // BEG giving options menu
 ////////////////////////////////////////////////////
-$(".givingOptionsClick").on("click", function() {
+$("#givingOptionsClick").on("click", function() {
   setTimeout(function() {
   if($('.giving_options_modal').is(':visible'))
 {
@@ -66,6 +66,22 @@ $(".giving_options_modal").show("slow");
 });
 ////////////////////////////////////////////////////
 // END giving options menu
+////////////////////////////////////////////////////
+////////////////////////////////////////////////////
+// BEG giving options button change background interval
+////////////////////////////////////////////////////
+    var images = ['givingOptionsClick_blue', 'givingOptionsClick_gold_black', 'givingOptionsClick_purple'],
+     i = 0;
+
+    function changeBackground() {
+        $('#givingOptionsClick').attr('class', images[i++]);
+        i = i % images.length;
+    }
+
+    changeBackground();
+    setInterval(changeBackground, 7000);
+////////////////////////////////////////////////////
+// END giving options button change background interval
 ////////////////////////////////////////////////////
 /////////////////////////////////////
 // BEG smartResizeOrScroll
