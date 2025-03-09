@@ -48,7 +48,7 @@ $( ".about_modal" ).show('slow');
 ////////////////////////////////////////////////////
 // BEG giving options menu
 ////////////////////////////////////////////////////
-$("#givingOptionsClick").on("click", function() {
+$("#givingOptionsClick, #givingOptionsClickInsideMenu").on("click", function() {
   setTimeout(function() {
   if($('.giving_options_modal').is(':visible'))
 {
