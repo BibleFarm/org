@@ -738,7 +738,7 @@ article {
       bottom: 0;
       left: 0;
       right: 0;
-      z-index: 2;
+      z-index: 1;
 }
 video {
 /*
@@ -758,6 +758,8 @@ video {
       right: 0;
       z-index: 2;
 */
+z-index: 2;
+
     }
 .unmute_overlay_wrap {
   position: absolute;
@@ -774,10 +776,11 @@ video {
       bottom: 0;
       left: 0;
       right: 0;
-      z-index: 2;
+      z-index: 3;
     }
 .unmute_overlay_button {
   display: flex;
+  z-index: 4;
 }
 button.unmuteClick, button.unmuteTap {
   display: block;
@@ -789,6 +792,7 @@ button.unmuteClick, button.unmuteTap {
       border-radius: 12px;
       font-size: 20px;
       cursor: pointer;
+      z-index: 5;
     }
 .mute_overlay_wrap {
       position: absolute;
@@ -805,10 +809,11 @@ button.unmuteClick, button.unmuteTap {
           bottom: 0;
           left: 0;
           right: 0;
-          z-index: 2;
+          z-index: 3;
         }
 .mute_overlay_button {
       display: flex;
+      z-index: 4;
 }
 button.muteClick, button.muteTap {
     display: none;
@@ -820,6 +825,7 @@ button.muteClick, button.muteTap {
       border-radius: 12px;
       font-size: 16px;
       cursor: pointer;
+      z-index: 5;
     }
 
 /* ****************** */
