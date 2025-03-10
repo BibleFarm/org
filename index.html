@@ -497,6 +497,43 @@ button {
               background: white;
               cursor: pointer;
             }
+
+            .food_modal {
+              position: fixed;
+              display: none;
+              height: 440px;
+              width: 296px;
+              top: calc(4px + 44px);
+              left: 4px;
+              background: #111111;
+              z-index: 2;
+              padding: 8px;
+              text-shadow: 2px 2px 1px #000000;
+            }
+.bg_white {
+  background: white;
+  color: black;
+  text-shadow: 1px 1px 2px #a3a3a3;
+font-size: 20px;
+}
+.wrap_payment_processors {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+background: white;
+}
+.small_payment_processors {
+  background: white;
+  /*
+  width: 98px;
+  height: auto;
+  */
+}
+
+
             .gofundme_flex-container {
                 display: flex;
                 justify-content: center;
@@ -1100,6 +1137,63 @@ They roam the streets all day surrounded by older ones who teach them the wrong 
     <!-- ////////////////////////// -->
     <!-- END giving_options_modal -->
     <!-- ////////////////////////// -->
+
+
+    <!-- ////////////////////////// -->
+    <!-- BEGIN food_modal -->
+    <!-- ////////////////////////// -->
+    <div class="food_modal bg_white">
+      <ul class="wrap_menu_items bg_white">
+
+        <li class="menu_item bg_white">
+
+<span class="food_desc">low fat meat pies</span>
+<img src="meat.jpg" alt="" />
+
+        </li>
+
+        <li class="menu_item bf_links bg_white"><button type="button" class="bf_links FBpixel_CreateYourOwnDesign"><a href="https://www.facebook.com/smuglovsky/" target='_blank'>grilled chicken breast & cheese sticks</a></button></li>
+        <li class="CreateYourOwnDesign menu_item bf_links bg_white"><button id="givingOptionsClickInsideMenu" type="button" class="bf_links FBpixel_CreateYourOwnDesign givingOptionsClick">Giving Options</button></li>
+        <li class="menu_item bg_white">
+          Or your special recipe!
+          <br>
+          Please type it in the comments
+          <br>
+          at checkout or Email me here
+        </li>
+        <li class="menu_item bg_white">click any payment processor below
+          <div class="spacer"></div>
+          <div class="wrap_payment_processors">
+
+
+
+              <a href="https://www.givesendgo.com/biblefarm" target="_blank">
+                <img class="small_payment_processors" src="GiveSendGo.png" alt="" />
+              </a>
+
+              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YCUGUZHYX5Y2Q&source=url" target="_blank">
+              <img class="small_payment_processors" src="PayPal.png" alt="" />
+            </a>
+
+              <a href="https://cash.app/$smuglovsky/" target="_blank">
+              <img class="small_payment_processors" src="CashApp.png" alt="" />
+            </a>
+
+
+
+
+
+
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- ////////////////////////// -->
+    <!-- END food_modal -->
+    <!-- ////////////////////////// -->
+
+
+
 
 
     <!-- ////////////////////////// -->

@@ -1,27 +1,27 @@
 /* BEGIN Document Ready ****** */
 $(document).ready(function() {
-////////////////////////////////////////////////////
-// BEGIN simple menu
-////////////////////////////////////////////////////
-$("#menu").on("click", function() {
+  ////////////////////////////////////////////////////
+  // BEGIN simple menu
+  ////////////////////////////////////////////////////
+  $("#menu").on("click", function() {
+    setTimeout(function() {
+    if($('.menu_modal').is(':visible'))
+  {
+    $(".opacity_cover").hide();
+    $(".menu_modal").hide("slow");
+  }
+  }, 100);
   setTimeout(function() {
-  if($('.menu_modal').is(':visible'))
-{
-  $(".opacity_cover").hide();
-  $(".menu_modal").hide("slow");
-}
-}, 100);
-setTimeout(function() {
-if(!$('.menu_modal').is(':visible'))
-{
-$(".opacity_cover").show();
-$(".menu_modal").show("slow");
-}
-}, 100);
-});
-////////////////////////////////////////////////////
-// END simple menu
-////////////////////////////////////////////////////
+  if(!$('.menu_modal').is(':visible'))
+  {
+  $(".opacity_cover").show();
+  $(".menu_modal").show("slow");
+  }
+  }, 100);
+  });
+  ////////////////////////////////////////////////////
+  // END simple menu
+  ////////////////////////////////////////////////////
 // hide any and all modals when click on menu, except menu_modal
 $("#menu").click(function() {
 $(".modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_announce_fundraising, .modal_place_the_order, .about_modal, .help_modal, .giving_options_modal").hide();
@@ -46,9 +46,9 @@ $( ".about_modal" ).show('slow');
 ////END about modal ///////////////////////
 ////////////////////////////////////////////////////
 ////////////////////////////////////////////////////
-// BEG giving options menu
+// BEG giving options inside menu
 ////////////////////////////////////////////////////
-$("#givingOptionsClick, #givingOptionsClickInsideMenu").on("click", function() {
+$("#givingOptionsClickInsideMenu").on("click", function() {
   setTimeout(function() {
   if($('.giving_options_modal').is(':visible'))
 {
@@ -65,8 +65,31 @@ $(".giving_options_modal").show("slow");
 }, 100);
 });
 ////////////////////////////////////////////////////
-// END giving options menu
+// END giving options inside menu
 ////////////////////////////////////////////////////
+////////////////////////////////////////////////////
+// BEGIN food
+////////////////////////////////////////////////////
+$("#givingOptionsClick").on("click", function() {
+  setTimeout(function() {
+  if($('.food_modal').is(':visible'))
+{
+  $(".opacity_cover").hide();
+  $(".food_modal").hide("slow");
+}
+}, 100);
+setTimeout(function() {
+if(!$('.food_modal').is(':visible'))
+{
+$(".opacity_cover").show();
+$(".food_modal").show("slow");
+}
+}, 100);
+});
+////////////////////////////////////////////////////
+// END food
+////////////////////////////////////////////////////
+
 ////////////////////////////////////////////////////
 // BEG giving options button change background interval
 ////////////////////////////////////////////////////
