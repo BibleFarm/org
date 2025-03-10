@@ -43,6 +43,26 @@ setTimeout(function() {
 ////////////////////////////////////////////////////
 ////END the days ago thing FOR THE FIRST & FEATURED VISIT ///////////////////////
 ////////////////////////////////////////////////////
+////////////////////////////////////////////////////
+////BEG unmute button and show video controls
+////////////////////////////////////////////////////
+var muted = $("video").prop("muted");
+var x = document.getElementById("myVideo");
+$( ".unmuteClick, .unmuteTap" ).on( "click", function() {
+$("video").prop("muted", !muted);
+x.currentTime = 0;
+$( ".unmute_overlay_wrap" ).hide();
+$( ".mute_overlay_wrap" ).hide();
+});
+$( ".muteClick, .muteTap" ).on( "click", function() {
+$("video").prop('muted', true);
+x.currentTime = 0;
+$( ".mute_overlay_wrap" ).hide();
+$( ".unmute_overlay_wrap" ).show();
+});
+////////////////////////////////////////////////////
+////END unmute button and show video controls
+////////////////////////////////////////////////////
 },1000);
 // 3rd I update with the last visit right down here in the append() -> data-to="  "
 // 4th and last. I add the new visit down in the -> find: ADD new visits HERE
