@@ -564,7 +564,6 @@ $(function() {
 ///////////////////////////
 var muted = $("video").prop("muted");
 var x = document.getElementById("myVideo");
-
 $( ".unmuteClick, .unmuteTap" ).on( "click", function() {
 $("video").prop("muted", !muted);
 x.currentTime = 0
