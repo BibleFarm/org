@@ -213,7 +213,7 @@
           bottom: 0;
           text-align: center;
           width: 100%;
-          height: 150px;
+          height: 176px;
           z-index: 999;
           background: rgb(0 0 0 / 95%);
           flex-direction: column;
@@ -881,7 +881,13 @@ button.muteClick, button.muteTap {
       cursor: pointer;
       z-index: 5;
     }
-
+.gold_gradient {
+background: rgb(79,57,22);
+background: -moz-linear-gradient(0deg, rgba(79,57,22,1) 0%, rgba(0,0,0,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(79,57,22,1) 0%, rgba(0,0,0,1) 100%);
+background: linear-gradient(0deg, rgba(79,57,22,1) 0%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4f3916",endColorstr="#000000",GradientType=1);
+}
 /* ****************** */
 /* BEG video landing more in depth intro */
 /* ****************** */
@@ -993,7 +999,9 @@ src="https://www.facebook.com/tr?id=1166569401544077&ev=PageView&noscript=1"
 <!-- BEG sticky CTA  -->
             <div class="myFixedAtTheBottom">
               <div class="spacer"></div>
-              <div class="spacer">Give $20. It's plenty for lots of treats</div>
+              <div class="spacer gold_gradient">
+                <span>&nbsp;</span>Give $20. It's plenty for lots of treats<span>&nbsp;</span>
+              </div>
               <div class="spacer"></div>
               <div class="givingOptions">
                 <button id="givingOptionsClick" class="givingOptionsClick_blue" aria-label="Give">
@@ -1168,8 +1176,8 @@ They roam the streets all day surrounded by older ones who teach them the wrong 
 
         <li class="food_item bg_white">
 
-          <span class="food_desc">Chicken breast sticks</span>
-          <img src="chicken.jpg" alt="chicken" style="width: 125px;padding: 8px;" />
+          <span class="food_desc">Mozzarella sticks</span>
+          <img src="Mozzarella_Sticks.webp" alt="Mozzarella_Sticks" style="width: 125px;padding: 8px;" />
 
         </li>
         <li class="bg_white">
