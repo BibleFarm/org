@@ -1,5 +1,17 @@
 /* BEGIN Document Ready ****** */
 $(document).ready(function() {
+  ///////////////////////////
+  // BEG landing video unmute
+  ///////////////////////////
+  var muted = $("video").prop("muted");
+  var x = document.getElementById("myVideo");
+  $( ".unmuteClick, .unmuteTap" ).on( "click", function() {
+  $("video").prop("muted", !muted);
+  x.currentTime = 0
+  });
+  ///////////////////////////
+  // END landing video unmute
+  ///////////////////////////
   /////////////////////////////////////
   // BEG append visit counter and today's date to showcase-content
   /////////////////////////////////////
@@ -386,18 +398,15 @@ $(function() {
 // END giving options button hover
 /////////////////////////////////////
 
-///////////////////////////
-// BEG landing video unmute
-///////////////////////////
-var muted = $("video").prop("muted");
-var x = document.getElementById("myVideo");
-$( ".unmuteClick, .unmuteTap" ).on( "click", function() {
-$("video").prop("muted", !muted);
-x.currentTime = 0
-});
-///////////////////////////
-// END landing video unmute
-///////////////////////////
+/////////////////////////////////////
+// BEG hide progress bar
+/////////////////////////////////////
+setTimeout(function() {
+$(".loading_progress_bar_container").hide();
+},5000);
+/////////////////////////////////////
+// END hide progress bar
+/////////////////////////////////////
 
 /* END Document Ready ****** */
 });
