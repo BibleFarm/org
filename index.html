@@ -427,6 +427,14 @@ button {
         background: #222222;
         border: none;
     }
+    .food_item {
+      display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    }
     .wrap_help_icons {
       display: flex;
         flex-direction: row;
@@ -527,6 +535,7 @@ background: white;
 }
 .small_payment_processors {
   background: white;
+  height: 60px;
   /*
   width: 98px;
   height: auto;
@@ -942,7 +951,7 @@ src="https://www.facebook.com/tr?id=1166569401544077&ev=PageView&noscript=1"
           right: 0;
           bottom: calc(0px + 149px);
           z-index: 2;
-          font-size: 22px;"></span>
+          font-size: 22px;">$20 covers lots of healthy treats for lots of street kids, while they hear The Word and believe.</span>
 
 
 
@@ -1145,23 +1154,27 @@ They roam the streets all day surrounded by older ones who teach them the wrong 
     <div class="food_modal bg_white">
       <ul class="wrap_menu_items bg_white">
 
-        <li class="menu_item bg_white">
+        <li class="food_item bg_white">
 
-<span class="food_desc">low fat meat pies</span>
-<img src="meat.jpg" alt="" />
+<span class="food_desc">Low fat meat pies</span>
+<img src="meat.jpg" alt="" style="width: 116px;padding: 8px;" />
 
         </li>
 
-        <li class="menu_item bf_links bg_white"><button type="button" class="bf_links FBpixel_CreateYourOwnDesign"><a href="https://www.facebook.com/smuglovsky/" target='_blank'>grilled chicken breast & cheese sticks</a></button></li>
-        <li class="CreateYourOwnDesign menu_item bf_links bg_white"><button id="givingOptionsClickInsideMenu" type="button" class="bf_links FBpixel_CreateYourOwnDesign givingOptionsClick">Giving Options</button></li>
-        <li class="menu_item bg_white">
+        <li class="food_item bg_white">
+
+          <span class="food_desc">Chicken breast sticks</span>
+          <img src="chicken.jpg" alt="" style="width: 116px;padding: 8px;" />
+
+        </li>
+        <li class="food_item bg_white">
           Or your special recipe!
           <br>
           Please type it in the comments
           <br>
           at checkout or Email me here
         </li>
-        <li class="menu_item bg_white">click any payment processor below
+        <li class="food_item bg_white" style="font-size: 20px;padding-left: 12px;">Thank You LORD
           <div class="spacer"></div>
           <div class="wrap_payment_processors">
 
