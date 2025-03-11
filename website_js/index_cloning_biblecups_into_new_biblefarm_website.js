@@ -4,7 +4,7 @@ $(document).ready(function() {
   // BEG append visit counter and today's date to showcase-content
   /////////////////////////////////////
   //setTimeout(function() {
-  $('.showcase-content').append('<h3><div class="timerDiv"><span class="timer count-title count-number" data-to="593" data-speed="10000"></span> visits as of today, </span><span id="month">11</span> <span id="day">11</span>, <span id="year">11</span></div></h3>');
+  $('.showcase-content').append('<h3><div class="timerDiv"><span class="timer count-title count-number" data-to="593" data-speed="10000"></span>593 visits as of today, </span><span id="month">11</span> <span id="day">11</span>, <span id="year">11</span></div></h3>');
   //},2000);
   /////////////////////////////////////
   // END append visit counter and today's date to showcase-content
@@ -32,6 +32,7 @@ $(document).ready(function() {
   }
   initLunarPhase();
   // END today's date
+/*
   // BEG counter
   (function ($) {
   	$.fn.countTo = function (options) {
@@ -119,6 +120,7 @@ $(document).ready(function() {
   	$this.countTo(options);
     }
   });
+  */
   // BEG convert month number to month name in the counter
   setTimeout(function() {
   var monthToChange = $('#month').text();
