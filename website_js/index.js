@@ -584,7 +584,7 @@ $(".food_modal").show("slow");
 ////BEG get the data file ///////////////////////
 ////////////////////////////////////////////////////
 setTimeout(function() {
-$.get("https://www.biblefarm.org/data_files/ALL_visits_flex_items_unminified.html", function(data, status){
+$.get("https://www.biblefarm.org/data_files/ALL_visits_flex_items.html", function(data, status){
 //  alert("Data: " + data + "\nStatus: " + status);
 console.log("I got the data. Status: " + status);
 $('.gofundme_flex-container').append(data);
