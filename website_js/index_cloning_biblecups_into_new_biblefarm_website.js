@@ -93,7 +93,7 @@ $(".food_modal").show("slow");
 ////////////////////////////////////////////////////
 // BEG giving options button change background interval
 ////////////////////////////////////////////////////
-    var images = ['givingOptionsClick_blue', 'givingOptionsClick_gold_black', 'givingOptionsClick_purple'],
+    var images = ['givingOptionsClick_blue', /*'givingOptionsClick_gold_black',*/ 'givingOptionsClick_purple'],
      i = 0;
 
     function changeBackground() {
