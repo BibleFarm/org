@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=5" name="viewport">
     <meta content="no" name="msapplication-tap-highlight">
     <link href="/apple-touch-icon.png?v=057" rel="apple-touch-icon" sizes="180x180">
     <link href="/favicon-32x32.png?v=057" rel="icon" sizes="32x32" type="image/png">
@@ -994,7 +994,7 @@ src="https://www.facebook.com/tr?id=1166569401544077&ev=PageView&noscript=1"
             <div class="myFixedAtTheBottom">
               <div class="spacer"></div>
               <div class="givingOptions">
-                <button id="givingOptionsClick" class="givingOptionsClick_blue">
+                <button id="givingOptionsClick" class="givingOptionsClick_blue" aria-label="Give">
                   <div class="tap_here_to_choose">Tap here to choose</div>
                   <div class="click_here_to_choose">Click here to choose</div>
                   <div class="for_the_next_visit">healthy treats for next visit</div>
@@ -1027,7 +1027,7 @@ src="https://www.facebook.com/tr?id=1166569401544077&ev=PageView&noscript=1"
 
 
     <!-- BEG  -->
-    <button type="button" class="FBpixel_menu" id="menu"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#d5ad6d">
+    <button type="button" class="FBpixel_menu" id="menu" aria-label="menu"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#d5ad6d">
         <path d="M0 0h24v24H0V0z" fill="none" />
         <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
       </svg></button>
@@ -1074,17 +1074,17 @@ src="https://www.facebook.com/tr?id=1166569401544077&ev=PageView&noscript=1"
     <!-- ////////////////////////// -->
     <div class="menu_modal">
       <ul class="wrap_menu_items">
-        <li class="menu_item bf_links FBpixel_about"><button type="button" id="about" class="menu_item bf_links FBpixel_about">about BibleFarm.org</button></li>
-        <li class="menu_item bf_links"><button type="button" class="bf_links FBpixel_CreateYourOwnDesign"><a href="https://www.facebook.com/smuglovsky/" target='_blank'>send me a Facebook friend request</a></button></li>
-        <li class="CreateYourOwnDesign menu_item bf_links"><button id="givingOptionsClickInsideMenu" type="button" class="bf_links FBpixel_CreateYourOwnDesign givingOptionsClick">Giving Options</button></li>
+        <li class="menu_item bf_links FBpixel_about"><button type="button" id="about" class="menu_item bf_links FBpixel_about" aria-label="about">about BibleFarm.org</button></li>
+        <li class="menu_item bf_links"><button type="button" class="bf_links FBpixel_CreateYourOwnDesign" aria-label="friend"><a href="https://www.facebook.com/smuglovsky/" target='_blank'>send me a Facebook friend request</a></button></li>
+        <li class="CreateYourOwnDesign menu_item bf_links"><button id="givingOptionsClickInsideMenu" type="button" class="bf_links FBpixel_CreateYourOwnDesign givingOptionsClick" aria-label="giving">Giving Options</button></li>
         <li class="menu_item">follow me
           <div class="wrap_help_icons">
             <!-- Instagram: -->
             <button type="button" class="FBpixel_follow_instagram help_icons_flex_item" style="
-    background: none;"><a href="https://www.instagram.com/biblefarm/" target="_blank"><span class="at-icon-wrapper" style="background-color: rgb(224, 53, 102); line-height: 44px; height: 44px; width: 44px; border-radius: 10%; filter: drop-shadow(black 3px 3px 2px);"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-instagram-1" style="fill: #d5ad6d; width: 44px; height: 44px; line-height: 44px; filter: drop-shadow(black 3px 3px 2px);" class="at-icon at-icon-instagram"><title id="at-svg-instagram-1">Instagram</title><g><path d="M16 5c-2.987 0-3.362.013-4.535.066-1.17.054-1.97.24-2.67.512a5.392 5.392 0 0 0-1.95 1.268 5.392 5.392 0 0 0-1.267 1.95c-.272.698-.458 1.498-.512 2.67C5.013 12.637 5 13.012 5 16s.013 3.362.066 4.535c.054 1.17.24 1.97.512 2.67.28.724.657 1.337 1.268 1.95a5.392 5.392 0 0 0 1.95 1.268c.698.27 1.498.457 2.67.51 1.172.054 1.547.067 4.534.067s3.362-.013 4.535-.066c1.17-.054 1.97-.24 2.67-.51a5.392 5.392 0 0 0 1.95-1.27 5.392 5.392 0 0 0 1.268-1.95c.27-.698.457-1.498.51-2.67.054-1.172.067-1.547.067-4.534s-.013-3.362-.066-4.535c-.054-1.17-.24-1.97-.51-2.67a5.392 5.392 0 0 0-1.27-1.95 5.392 5.392 0 0 0-1.95-1.267c-.698-.272-1.498-.458-2.67-.512C19.363 5.013 18.988 5 16 5zm0 1.982c2.937 0 3.285.01 4.445.064 1.072.05 1.655.228 2.042.38.514.198.88.437 1.265.822.385.385.624.75.823 1.265.15.387.33.97.38 2.042.052 1.16.063 1.508.063 4.445 0 2.937-.01 3.285-.064 4.445-.05 1.072-.228 1.655-.38 2.042-.198.514-.437.88-.822 1.265-.385.385-.75.624-1.265.823-.387.15-.97.33-2.042.38-1.16.052-1.508.063-4.445.063-2.937 0-3.285-.01-4.445-.064-1.072-.05-1.655-.228-2.042-.38-.514-.198-.88-.437-1.265-.822a3.408 3.408 0 0 1-.823-1.265c-.15-.387-.33-.97-.38-2.042-.052-1.16-.063-1.508-.063-4.445 0-2.937.01-3.285.064-4.445.05-1.072.228-1.655.38-2.042.198-.514.437-.88.822-1.265.385-.385.75-.624 1.265-.823.387-.15.97-.33 2.042-.38 1.16-.052 1.508-.063 4.445-.063zm0 12.685a3.667 3.667 0 1 1 0-7.334 3.667 3.667 0 0 1 0 7.334zm0-9.316a5.65 5.65 0 1 0 0 11.3 5.65 5.65 0 0 0 0-11.3zm7.192-.222a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" fill-rule="evenodd"></path></g></svg></span></a></button>
+    background: none;" aria-label="instagram"><a href="https://www.instagram.com/biblefarm/" target="_blank"><span class="at-icon-wrapper" style="background-color: rgb(224, 53, 102); line-height: 44px; height: 44px; width: 44px; border-radius: 10%; filter: drop-shadow(black 3px 3px 2px);"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-instagram-1" style="fill: #d5ad6d; width: 44px; height: 44px; line-height: 44px; filter: drop-shadow(black 3px 3px 2px);" class="at-icon at-icon-instagram"><title id="at-svg-instagram-1">Instagram</title><g><path d="M16 5c-2.987 0-3.362.013-4.535.066-1.17.054-1.97.24-2.67.512a5.392 5.392 0 0 0-1.95 1.268 5.392 5.392 0 0 0-1.267 1.95c-.272.698-.458 1.498-.512 2.67C5.013 12.637 5 13.012 5 16s.013 3.362.066 4.535c.054 1.17.24 1.97.512 2.67.28.724.657 1.337 1.268 1.95a5.392 5.392 0 0 0 1.95 1.268c.698.27 1.498.457 2.67.51 1.172.054 1.547.067 4.534.067s3.362-.013 4.535-.066c1.17-.054 1.97-.24 2.67-.51a5.392 5.392 0 0 0 1.95-1.27 5.392 5.392 0 0 0 1.268-1.95c.27-.698.457-1.498.51-2.67.054-1.172.067-1.547.067-4.534s-.013-3.362-.066-4.535c-.054-1.17-.24-1.97-.51-2.67a5.392 5.392 0 0 0-1.27-1.95 5.392 5.392 0 0 0-1.95-1.267c-.698-.272-1.498-.458-2.67-.512C19.363 5.013 18.988 5 16 5zm0 1.982c2.937 0 3.285.01 4.445.064 1.072.05 1.655.228 2.042.38.514.198.88.437 1.265.822.385.385.624.75.823 1.265.15.387.33.97.38 2.042.052 1.16.063 1.508.063 4.445 0 2.937-.01 3.285-.064 4.445-.05 1.072-.228 1.655-.38 2.042-.198.514-.437.88-.822 1.265-.385.385-.75.624-1.265.823-.387.15-.97.33-2.042.38-1.16.052-1.508.063-4.445.063-2.937 0-3.285-.01-4.445-.064-1.072-.05-1.655-.228-2.042-.38-.514-.198-.88-.437-1.265-.822a3.408 3.408 0 0 1-.823-1.265c-.15-.387-.33-.97-.38-2.042-.052-1.16-.063-1.508-.063-4.445 0-2.937.01-3.285.064-4.445.05-1.072.228-1.655.38-2.042.198-.514.437-.88.822-1.265.385-.385.75-.624 1.265-.823.387-.15.97-.33 2.042-.38 1.16-.052 1.508-.063 4.445-.063zm0 12.685a3.667 3.667 0 1 1 0-7.334 3.667 3.667 0 0 1 0 7.334zm0-9.316a5.65 5.65 0 1 0 0 11.3 5.65 5.65 0 0 0 0-11.3zm7.192-.222a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" fill-rule="evenodd"></path></g></svg></span></a></button>
             <!-- Facebook: -->
             <button type="button" class="FBpixel_follow_facebook help_icons_flex_item" style="
-    background: none;"><a href="https://www.facebook.com/smuglovsky" target="_blank"><span class="at-icon-wrapper" style="background-color: rgb(59, 89, 152); line-height: 44px; height: 44px; width: 44px; border-radius: 10%; filter: drop-shadow(black 3px 3px 2px);"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-facebook-2" style="fill: #d5ad6d; width: 44px; height: 44px; line-height: 44px; filter: drop-shadow(black 3px 3px 2px);" class="at-icon at-icon-facebook"><title id="at-svg-facebook-2">Facebook</title><g><path d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z" fill-rule="evenodd"></path></g></svg></span></a></button>
+    background: none;" aria-label="facebook"><a href="https://www.facebook.com/smuglovsky" target="_blank"><span class="at-icon-wrapper" style="background-color: rgb(59, 89, 152); line-height: 44px; height: 44px; width: 44px; border-radius: 10%; filter: drop-shadow(black 3px 3px 2px);"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-facebook-2" style="fill: #d5ad6d; width: 44px; height: 44px; line-height: 44px; filter: drop-shadow(black 3px 3px 2px);" class="at-icon at-icon-facebook"><title id="at-svg-facebook-2">Facebook</title><g><path d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z" fill-rule="evenodd"></path></g></svg></span></a></button>
           </div>
 
         </li>
@@ -1092,10 +1092,10 @@ src="https://www.facebook.com/tr?id=1166569401544077&ev=PageView&noscript=1"
           <div class="wrap_help_icons">
             <!-- WhatsApp: -->
             <button type="button" class="FBpixel_contact_whatsapp help_icons_flex_item" style="
-    background: none;"><a href="https://wa.me/+5493764952222" target="_blank"><span class="at-icon-wrapper" style="background-color: rgb(77, 194, 71); line-height: 44px; height: 44px; width: 44px; border-radius: 10%; filter: drop-shadow(black 3px 3px 2px);"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-whatsapp-7" class="at-icon at-icon-whatsapp" style="fill: #d5ad6d; width: 44px; height: 44px; line-height: 44px; filter: drop-shadow(black 3px 3px 2px);"><title id="at-svg-whatsapp-7">WhatsApp</title><g><path d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd"></path></g></svg></span></a></button>
+    background: none;" aria-label="whatsapp"><a href="https://wa.me/+5493764952222" target="_blank"><span class="at-icon-wrapper" style="background-color: rgb(77, 194, 71); line-height: 44px; height: 44px; width: 44px; border-radius: 10%; filter: drop-shadow(black 3px 3px 2px);"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-whatsapp-7" class="at-icon at-icon-whatsapp" style="fill: #d5ad6d; width: 44px; height: 44px; line-height: 44px; filter: drop-shadow(black 3px 3px 2px);"><title id="at-svg-whatsapp-7">WhatsApp</title><g><path d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd"></path></g></svg></span></a></button>
             <!-- Messenger: -->
             <button type="button" class="FBpixel_contact_messenger help_icons_flex_item" style="
-    background: none;"><a href="https://www.messenger.com/t/smuglovsky" target="_blank"><span class="at-icon-wrapper" style="background-color: rgb(0, 132, 255); line-height: 44px; height: 44px; width: 44px; border-radius: 10%; filter: drop-shadow(black 3px 3px 2px);"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-messenger-7" style="fill: #d5ad6d; width: 44px; height: 44px; line-height: 44px; filter: drop-shadow(black 3px 3px 2px);" class="at-icon at-icon-messenger"><title id="at-svg-messenger-7">Messenger</title><g><path d="M16 6C9.925 6 5 10.56 5 16.185c0 3.205 1.6 6.065 4.1 7.932V28l3.745-2.056c1 .277 2.058.426 3.155.426 6.075 0 11-4.56 11-10.185C27 10.56 22.075 6 16 6zm1.093 13.716l-2.8-2.988-5.467 2.988 6.013-6.383 2.868 2.988 5.398-2.987-6.013 6.383z" fill-rule="evenodd"></path></g></svg></span></a></button>
+    background: none;" aria-label="messenger"><a href="https://www.messenger.com/t/smuglovsky" target="_blank"><span class="at-icon-wrapper" style="background-color: rgb(0, 132, 255); line-height: 44px; height: 44px; width: 44px; border-radius: 10%; filter: drop-shadow(black 3px 3px 2px);"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-messenger-7" style="fill: #d5ad6d; width: 44px; height: 44px; line-height: 44px; filter: drop-shadow(black 3px 3px 2px);" class="at-icon at-icon-messenger"><title id="at-svg-messenger-7">Messenger</title><g><path d="M16 6C9.925 6 5 10.56 5 16.185c0 3.205 1.6 6.065 4.1 7.932V28l3.745-2.056c1 .277 2.058.426 3.155.426 6.075 0 11-4.56 11-10.185C27 10.56 22.075 6 16 6zm1.093 13.716l-2.8-2.988-5.467 2.988 6.013-6.383 2.868 2.988 5.398-2.987-6.013 6.383z" fill-rule="evenodd"></path></g></svg></span></a></button>
           </div>
         </li>
       </ul>
@@ -1128,19 +1128,19 @@ They roam the streets all day surrounded by older ones who teach them the wrong 
 
         <li class="menu_item giving_options_menu_item">
           <a href="https://www.givesendgo.com/biblefarm" target="_blank">
-            <img src="GiveSendGo.png" alt="" />
+            <img src="GiveSendGo.png" alt="GiveSendGo" />
           </a>
         </li>
 
         <li class="menu_item giving_options_menu_item">
           <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YCUGUZHYX5Y2Q&source=url" target="_blank">
-          <img src="PayPal.png" alt="" />
+          <img src="PayPal.png" alt="PayPal" />
         </a>
       </li>
 
         <li class="menu_item giving_options_menu_item">
           <a href="https://cash.app/$smuglovsky/" target="_blank">
-          <img src="CashApp.png" alt="" />
+          <img src="CashApp.png" alt="CashApp" />
         </a>
       </li>
 
@@ -1160,14 +1160,14 @@ They roam the streets all day surrounded by older ones who teach them the wrong 
         <li class="food_item bg_white">
 
 <span class="food_desc">Low fat meat pies</span>
-<img src="meat.jpg" alt="" style="width: 125px;padding: 8px;" />
+<img src="meat.jpg" alt="meat" style="width: 125px;padding: 8px;" />
 
         </li>
 
         <li class="food_item bg_white">
 
           <span class="food_desc">Chicken breast sticks</span>
-          <img src="chicken.jpg" alt="" style="width: 125px;padding: 8px;" />
+          <img src="chicken.jpg" alt="chicken" style="width: 125px;padding: 8px;" />
 
         </li>
         <li class="bg_white">
@@ -1184,15 +1184,15 @@ They roam the streets all day surrounded by older ones who teach them the wrong 
 
 
               <a href="https://www.givesendgo.com/biblefarm" target="_blank">
-                <img class="small_payment_processors" src="GiveSendGo.png" alt="" />
+                <img class="small_payment_processors" src="GiveSendGo.png" alt="GiveSendGo" />
               </a>
 
               <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YCUGUZHYX5Y2Q&source=url" target="_blank">
-              <img class="small_payment_processors" src="PayPal.png" alt="" />
+              <img class="small_payment_processors" src="PayPal.png" alt="PayPal" />
             </a>
 
               <a href="https://cash.app/$smuglovsky/" target="_blank">
-              <img class="small_payment_processors" src="CashApp.png" alt="" />
+              <img class="small_payment_processors" src="CashApp.png" alt="CashApp" />
             </a>
 
 
