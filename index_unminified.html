@@ -519,12 +519,32 @@ button {
               padding: 8px;
               text-shadow: 2px 2px 1px #000000;
             }
-.bg_white {
-  background: white;
-  color: black;
-  text-shadow: 1px 1px 2px #a3a3a3;
-font-size: 20px;
-}
+            .wire_or_checks_or_money_orders_modal {
+              position: fixed;
+              display: none;
+              height: 440px;
+              width: 296px;
+              top: calc(4px + 44px);
+              left: 4px;
+              background: #111111;
+              z-index: 2;
+              padding: 8px;
+              text-shadow: 2px 2px 1px #000000;
+            }
+            .bg_white {
+              background: white;
+              color: black;
+              text-shadow: 1px 1px 2px #a3a3a3;
+            font-size: 20px;
+            }
+            .bg_white_wire_checks_money_orders {
+              background: white;
+              color: black;
+              text-shadow: 1px 1px 2px #a3a3a3;
+            font-size: 18px;
+            }
+            .darkred {color: #850000}
+            .darkblue {color: #0000b0}
 .wrap_payment_processors {
   display: flex;
     flex-direction: row;
@@ -536,7 +556,7 @@ background: white;
 }
 .small_payment_processors {
   background: white;
-  height: 60px;
+  height: 56px;
   /*
   width: 98px;
   height: auto;
@@ -891,6 +911,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4f3916",endCo
 /* ****************** */
 /* BEG video landing more in depth intro */
 /* ****************** */
+#wire_or_checks_or_money_orders_click {cursor: pointer; padding: 0}
 </style>
 
 <!-- Meta Pixel Code -->
@@ -1170,45 +1191,40 @@ They roam the streets all day surrounded by older ones who teach them the wrong 
         <li class="food_item bg_white">
 
 <span class="food_desc">Low fat meat pies</span>
-<img src="meat.jpg" alt="meat" style="width: 125px;padding: 8px;" />
+<img src="meat.jpg" alt="meat" style="width: 125px;padding: 2px; padding-left: 12px;" />
 
         </li>
 
         <li class="food_item bg_white">
 
           <span class="food_desc">Mozzarella sticks</span>
-          <img src="Mozzarella_Sticks.webp" alt="Mozzarella_Sticks" style="width: 125px;padding: 8px;" />
+          <img src="Mozzarella_Sticks.webp" alt="Mozzarella_Sticks" style="width: 125px;padding: 2px; padding-left: 19px;" />
 
         </li>
         <li class="bg_white">
-          Or your special recipe!
+          Or your special recipe! Type it in the
           <br>
-          Please type it in the comments
-          <br>
-          at checkout or <a href="mailto:smuglovsky@gmail.com"> email me here</a>
+          comments at checkout or <a href="mailto:smuglovsky@gmail.com"> email me here</a>
         </li>
         <li class="food_item bg_white" style="font-size: 20px;padding-left: 12px;">Thank You LORD
           <div class="spacer"></div>
           <div class="wrap_payment_processors">
 
+              <a href="https://cash.app/$smuglovsky/" target="_blank">
+                <img class="small_payment_processors" src="CashApp.png" alt="CashApp" />
+              </a>
 
+              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YCUGUZHYX5Y2Q&source=url" target="_blank">
+                <img class="small_payment_processors" src="PayPal.png" alt="PayPal" />
+              </a>
 
               <a href="https://www.givesendgo.com/biblefarm" target="_blank">
                 <img class="small_payment_processors" src="GiveSendGo.png" alt="GiveSendGo" />
               </a>
 
-              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YCUGUZHYX5Y2Q&source=url" target="_blank">
-              <img class="small_payment_processors" src="PayPal.png" alt="PayPal" />
-            </a>
-
-              <a href="https://cash.app/$smuglovsky/" target="_blank">
-              <img class="small_payment_processors" src="CashApp.png" alt="CashApp" />
-            </a>
-
-
-
-
-
+              <button id="wire_or_checks_or_money_orders_click">
+                <img class="small_payment_processors" src="mail.png" alt="mail" />
+              </button>
 
           </div>
         </li>
@@ -1216,6 +1232,46 @@ They roam the streets all day surrounded by older ones who teach them the wrong 
     </div>
     <!-- ////////////////////////// -->
     <!-- END food_modal -->
+    <!-- ////////////////////////// -->
+    <!-- ////////////////////////// -->
+    <!-- BEGIN wire_or_checks_or_money_orders_modal -->
+    <!-- ////////////////////////// -->
+    <div class="wire_or_checks_or_money_orders_modal bg_white">
+      <ul class="wrap_menu_items bg_white">
+
+        <li class="food_item bg_white">
+<u>Wire Transfers</u>
+        </li>
+        <li class="bg_white_wire_checks_money_orders">
+Capital One Bank NA<br>Account Name: Alexander Smuglovsky<br>Account Number: 36062706439<br>Routing Number: 031176110
+        </li>
+        <li class="food_item bg_white">
+<u>Checks and Money Orders</u>
+        </li>
+        <li class="bg_white_wire_checks_money_orders">
+          <u class="darkred">First</u>, please print this on the back:
+          <br>
+          <span class="darkblue">For Deposit Only<br>Alexander Smuglovsky<br>Account Number: 36062706439</span>
+      </li>
+      <li class="food_item bg_white">
+          This way the bank knows it's for my account
+      </li>
+          <li class="bg_white_wire_checks_money_orders">
+          <u class="darkred">Then</u>, please regular mail to:
+          <br>
+          <span class="darkblue">
+          Capital One Bank
+          <br>
+          P. O. Box 98707
+          <br>
+          Las Vegas, NV 89193
+        </span>
+        </li>
+
+      </ul>
+    </div>
+    <!-- ////////////////////////// -->
+    <!-- END wire_or_checks_or_money_orders_modal -->
     <!-- ////////////////////////// -->
 
 
@@ -1249,12 +1305,14 @@ They roam the streets all day surrounded by older ones who teach them the wrong 
     <!-- BEGIN JS dependencies -->
     <!-- ////////////////////////// -->
     <!-- jQuery -->
-    <script src="shop_js/offline_dependency_2017-11-16_jquery-3.2.1.min.js"></script>
+    <!--<<script src="shop_js/offline_dependency_2017-11-16_jquery-3.2.1.min.js"></script>-->
     <!-- PageVisits.js -->
     <!--<script src="shop_js/PageVisits.js"></script>-->
-    <script src="website_js/jquery-lazyload-any.js"></script>
-    <!-- Shop_Sample.js -->
-    <script src="website_js/index_unminified.js"></script>
+  <!--<  <script src="website_js/jquery-lazyload-any.js"></script>-->
+    <!-- index_unminified.js -->
+    <!--<<script src="website_js/index_unminified.js"></script>-->
+    <!-- index.js -->
+    <script src="website_js/index.js"></script>
     <!-- ////////////////////////// -->
     <!-- END JS dependencies -->
     <!-- ////////////////////////// -->
