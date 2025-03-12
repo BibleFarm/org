@@ -383,6 +383,11 @@ button {
       color: red;
       font-size: 18px;
       text-shadow: 1px 1px 2px #000000;
+      position: fixed;
+    top: 8px;
+    right: 14px;
+    z-index: 3;
+    cursor: pointer;
     }
     .customize_title {
       font-family: "OpenSansCondensed-Light" !important;
@@ -911,7 +916,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4f3916",endCo
 /* ****************** */
 /* BEG video landing more in depth intro */
 /* ****************** */
-#wire_or_checks_or_money_orders_click {cursor: pointer; padding: 0}
+.wire_or_checks_or_money_orders_click {cursor: pointer; padding: 0}
 </style>
 
 <!-- Meta Pixel Code -->
@@ -945,6 +950,10 @@ src="https://www.facebook.com/tr?id=1166569401544077&ev=PageView&noscript=1"
 
 
 <div class="title bgc-0002">BibleFarm.org</div>
+
+<span class="red_heart">❤</span>
+
+
 <!-- ///////// -->
 <!-- BEG Hero  -->
 <!-- ///////// -->
@@ -1158,10 +1167,10 @@ They roam the streets all day surrounded by older ones who teach them the wrong 
       <ul class="wrap_menu_items">
 
         <li class="menu_item giving_options_menu_item">
-          <a href="https://www.givesendgo.com/biblefarm" target="_blank">
-            <img src="GiveSendGo.png" alt="GiveSendGo" />
-          </a>
-        </li>
+          <a href="https://cash.app/$smuglovsky/" target="_blank">
+          <img src="CashApp.png" alt="CashApp" />
+        </a>
+      </li>
 
         <li class="menu_item giving_options_menu_item">
           <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YCUGUZHYX5Y2Q&source=url" target="_blank">
@@ -1169,10 +1178,16 @@ They roam the streets all day surrounded by older ones who teach them the wrong 
         </a>
       </li>
 
-        <li class="menu_item giving_options_menu_item">
-          <a href="https://cash.app/$smuglovsky/" target="_blank">
-          <img src="CashApp.png" alt="CashApp" />
+      <li class="menu_item giving_options_menu_item">
+        <a href="https://www.givesendgo.com/biblefarm" target="_blank">
+          <img src="GiveSendGo.png" alt="GiveSendGo" />
         </a>
+      </li>
+
+      <li class="menu_item giving_options_menu_item">
+        <button class="wire_or_checks_or_money_orders_click">
+          <img class="small_payment_processors" src="mail.png" alt="mail" />
+        </button>
       </li>
 
       </ul>
@@ -1222,7 +1237,7 @@ They roam the streets all day surrounded by older ones who teach them the wrong 
                 <img class="small_payment_processors" src="GiveSendGo.png" alt="GiveSendGo" />
               </a>
 
-              <button id="wire_or_checks_or_money_orders_click">
+              <button class="wire_or_checks_or_money_orders_click">
                 <img class="small_payment_processors" src="mail.png" alt="mail" />
               </button>
 

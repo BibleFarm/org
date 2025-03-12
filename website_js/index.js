@@ -511,7 +511,7 @@ $(".giving_options_modal").show("slow");
 ////////////////////////////////////////////////////
 // BEGIN food
 ////////////////////////////////////////////////////
-$("#givingOptionsClick").on("click", function() {
+$("#givingOptionsClick, .red_heart").on("click", function() {
   setTimeout(function() {
   if($('.food_modal').is(':visible'))
 {
@@ -535,7 +535,7 @@ $(".food_modal").show("slow");
 ////////////////////////////////////////////////////
 // BEGIN wire_or_checks_or_money_orders_modal
 ////////////////////////////////////////////////////
-$("#wire_or_checks_or_money_orders_click").on("click", function() {
+$(".wire_or_checks_or_money_orders_click").on("click", function() {
   setTimeout(function() {
   if($('.wire_or_checks_or_money_orders_modal').is(':visible'))
 {
