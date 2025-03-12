@@ -511,7 +511,7 @@ $(".giving_options_modal").show("slow");
 ////////////////////////////////////////////////////
 // BEGIN food
 ////////////////////////////////////////////////////
-$("#givingOptionsClick, .red_heart").on("click", function() {
+$("#givingOptionsClick, #give_with_red_heart").on("click", function() {
   setTimeout(function() {
   if($('.food_modal').is(':visible'))
 {
@@ -570,22 +570,6 @@ $(".wire_or_checks_or_money_orders_modal").show("slow");
     setInterval(changeBackground, 7000);
 ////////////////////////////////////////////////////
 // END giving options button change background interval
-////////////////////////////////////////////////////
-////////////////////////////////////////////////////
-// BEG moving heart interval
-////////////////////////////////////////////////////
-    var heartPositionClass = ['rh red_heart_1', 'rh red_heart_2', 'rh red_heart_3', 'rh red_heart_4'],
-     i = 0;
-
-    function changeHeartPosition() {
-        $('#rh').attr('class', heartPositionClass[i++]);
-        i = i % heartPositionClass.length;
-    }
-
-    changeHeartPosition();
-    setInterval(changeHeartPosition, 7000);
-////////////////////////////////////////////////////
-// END moving heart interval
 ////////////////////////////////////////////////////
 /////////////////////////////////////
 // BEG smartResizeOrScroll
