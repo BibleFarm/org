@@ -583,7 +583,7 @@ $(".wire_or_checks_or_money_orders_modal").show("slow");
     }
 
     changeHeartPosition();
-    setInterval(changeHeartPosition, 8000);
+    setInterval(changeHeartPosition, 7000);
 ////////////////////////////////////////////////////
 // END moving heart interval
 ////////////////////////////////////////////////////
