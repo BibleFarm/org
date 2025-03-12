@@ -558,18 +558,34 @@ $(".wire_or_checks_or_money_orders_modal").show("slow");
 ////////////////////////////////////////////////////
 // BEG giving options button change background interval
 ////////////////////////////////////////////////////
-    var images = ['givingOptionsClick_blue', /*'givingOptionsClick_gold_black',*/ 'givingOptionsClick_purple'],
+    var bgGradients = ['givingOptionsClick_blue', /*'givingOptionsClick_gold_black',*/ 'givingOptionsClick_purple'],
      i = 0;
 
     function changeBackground() {
-        $('#givingOptionsClick').attr('class', images[i++]);
-        i = i % images.length;
+        $('#givingOptionsClick').attr('class', bgGradients[i++]);
+        i = i % bgGradients.length;
     }
 
     changeBackground();
     setInterval(changeBackground, 7000);
 ////////////////////////////////////////////////////
 // END giving options button change background interval
+////////////////////////////////////////////////////
+////////////////////////////////////////////////////
+// BEG moving heart interval
+////////////////////////////////////////////////////
+    var heartPositionClass = ['rh red_heart_1', 'rh red_heart_2', 'rh red_heart_3', 'rh red_heart_4'],
+     i = 0;
+
+    function changeHeartPosition() {
+        $('#rh').attr('class', heartPositionClass[i++]);
+        i = i % heartPositionClass.length;
+    }
+
+    changeHeartPosition();
+    setInterval(changeHeartPosition, 8000);
+////////////////////////////////////////////////////
+// END moving heart interval
 ////////////////////////////////////////////////////
 /////////////////////////////////////
 // BEG smartResizeOrScroll
