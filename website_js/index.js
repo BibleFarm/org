@@ -466,15 +466,15 @@ $(document).ready(function() {
   ////////////////////////////////////////////////////
 // hide any and all modals when click on menu, except menu_modal
 $("#menu").click(function() {
-$(".modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_announce_fundraising, .modal_place_the_order, .about_modal, .help_modal, .giving_options_modal, .food_modal, .wire_or_checks_or_money_orders_modal, .myFixedAtTheBottom").hide();
+$(".modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_announce_fundraising, .modal_place_the_order, .about_modal, .statement_modal, .help_modal, .giving_options_modal, .food_modal, .wire_or_checks_or_money_orders_modal, .myFixedAtTheBottom").hide();
 });
 // hide any and all modals when click on givingOptionsClick, except giving_options_modal
 $("#givingOptionsClick").click(function() {
-$(".modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_announce_fundraising, .modal_place_the_order, .about_modal, .help_modal, .menu_modal, .food_modal, .wire_or_checks_or_money_orders_modal, .myFixedAtTheBottom").hide();
+$(".modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_announce_fundraising, .modal_place_the_order, .about_modal, .statement_modal, .help_modal, .menu_modal, .food_modal, .wire_or_checks_or_money_orders_modal, .myFixedAtTheBottom").hide();
 });
 // hide any and all modals when click outside
 $(".opacity_cover, .wrap_gofundme_modal_bar, .title, .myFixedAtTheBottom").click(function() {
-$(".opacity_cover, .menu_modal, .modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_announce_fundraising, .modal_place_the_order, .about_modal, .help_modal, .giving_options_modal, .food_modal, .wire_or_checks_or_money_orders_modal").hide();
+$(".opacity_cover, .menu_modal, .modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_announce_fundraising, .modal_place_the_order, .about_modal, .statement_modal, .help_modal, .giving_options_modal, .food_modal, .wire_or_checks_or_money_orders_modal").hide();
 $(".myFixedAtTheBottom").show();
 });
 ////////////////////////////////////////////////////
@@ -485,6 +485,15 @@ $( ".about_modal" ).show('slow');
 });
 ////////////////////////////////////////////////////
 ////END about modal ///////////////////////
+////////////////////////////////////////////////////
+////////////////////////////////////////////////////
+////BEGIN statement_modal ///////////////////////
+////////////////////////////////////////////////////
+$( "#statement_of_faith" ).on( "click", function() {
+$( ".statement_modal" ).show('slow');
+});
+////////////////////////////////////////////////////
+////END statement_modal ///////////////////////
 ////////////////////////////////////////////////////
 ////////////////////////////////////////////////////
 // BEG giving options inside menu

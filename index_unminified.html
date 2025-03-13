@@ -442,7 +442,7 @@ button {
         border-style: solid;
         border-width: thin;
         border-radius: 4px;
-        padding: 12px;
+        padding: 7px;
         width: 230px;
         text-align: center;
         background: #222222;
@@ -492,9 +492,22 @@ button {
           padding: 8px;
           text-shadow: 2px 2px 1px #000000;
         }
+        .statement_modal {
+              position: fixed;
+              display: none;
+              height: 454px;
+overflow: auto;
+              width: 296px;
+              top: calc(4px + 44px);
+              left: 4px;
+              background: #111111;
+              z-index: 2;
+              padding: 8px;
+              text-shadow: 2px 2px 1px #000000;
+            }
         .about_flexed_content {
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
               align-content: center;
               justify-content: center;
               align-items: center;
@@ -826,7 +839,7 @@ article {
       align-items: center;
       /* width: 296px; */
       /* height: 100%; */
-      top: 0;
+      top: 50px;
       bottom: 0;
       left: 0;
       right: 0;
@@ -1136,6 +1149,7 @@ src="https://www.facebook.com/tr?id=1166569401544077&ev=PageView&noscript=1"
     <div class="menu_modal">
       <ul class="wrap_menu_items">
         <li class="menu_item bf_links FBpixel_about"><button type="button" id="about" class="menu_item bf_links FBpixel_about" aria-label="about">about BibleFarm.org</button></li>
+        <li class="menu_item bf_links FBpixel_about"><button type="button" id="statement_of_faith" class="menu_item bf_links FBpixel_about" aria-label="about">Statement of Faith</button></li>
         <li class="menu_item bf_links"><button type="button" class="bf_links FBpixel_CreateYourOwnDesign" aria-label="friend"><a href="https://www.facebook.com/smuglovsky/" target='_blank'>send me a Facebook friend request</a></button></li>
         <li class="CreateYourOwnDesign menu_item bf_links"><button id="givingOptionsClickInsideMenu" type="button" class="bf_links FBpixel_CreateYourOwnDesign givingOptionsClick" aria-label="giving">Giving Options</button></li>
         <li class="menu_item">follow me
@@ -1179,7 +1193,140 @@ They roam the streets all day surrounded by older ones who teach them the wrong 
   </div>
     </div>
     <!-- ////////////////////////// -->
-    <!-- BEGIN about_modal -->
+    <!-- END about_modal -->
+    <!-- ////////////////////////// -->
+    <!-- ////////////////////////// -->
+    <!-- BEGIN statement_modal -->
+    <!-- ////////////////////////// -->
+    <div class="statement_modal">
+      <div class="about_flexed_content">
+        <div class="about_flexed_title">Statement of Faith</div>
+        <div class="about_flexed_title"></div>
+
+          <div class="about_flexed_item">The Scriptures</div>
+          <div class="about_flexed_item">We believe the Holy Scriptures of the Old and New Testaments to be the Bible, “as it is in truth, the Word of God…” (I Thess. 2:13). We believe in verbal, plenary inspiration in the original writings, and God's preservation of His pure words to every generation (II Timothy 3:16, Psalms 12:6-8).</div>
+
+          <div class="about_flexed_item">We believe that the Scriptures are inerrant, infallible, and God-breathed. This Bible is preserved for the English speaking world without error in the King James Version. We believe the King James Bible to be inerrant. The Bible is our sole and final authority for faith and practice.</div>
+
+          <div class="about_flexed_item">The Godhead</div>
+          <div class="about_flexed_item">We believe in one Triune God, eternally existing in three persons—Father, Son, and Holy Spirit, co-eternal in being, co-identical in nature, co-equal in power and glory, and having the same attributes and perfections (Deuteronomy 6:4; II Corinthians 13:14). We believe that God created the entire universe in six literal, twenty-four-hour days (Genesis 1:1-27).</div>
+
+          <div class="about_flexed_item">The Person and Work of Christ</div>
+          <div class="about_flexed_item">We believe that the Lord Jesus Christ, the eternal Son of God, became man, without ceasing to be God, having been conceived by the Holy Spirit and born of the virgin Mary, in order that He might reveal God and redeem sinful men (John 1:1-2, 14; Luke 1:35; Isaiah 9:6; 7:14; Philippians 2:5-8; Galatians 4:4-5).</div>
+
+          <div class="about_flexed_item">We believe that the Lord Jesus Christ accomplished our redemption through His finished work on the cross as a representative, vicarious, substitutionary sacrifice; and that our justification is made sure by His literal, physical resurrection from the dead (Romans 3:24-25; I Peter 2:24; Ephesians 1:7; I Peter 1:3-5).</div>
+
+          <div class="about_flexed_item">We believe that the Lord Jesus Christ was raised bodily and that He ascended to Heaven and is now exalted at the right hand of God, where, as our High Priest, He fulfills the ministry of Representative, Intercessor, and Advocate (Acts 1:9-10; Hebrews 9:24, 7:25; Romans 8:34; I John 2:1-2).</div>
+
+          <div class="about_flexed_item">The Person and Work of the Holy Spirit</div>
+          <div class="about_flexed_item">We believe that the Holy Spirit is the Person who reproves the world of sin, of righteousness, and of judgment; and that He is the Supernatural Agent in regeneration, indwelling all believers and sealing them unto the day of redemption (John 16:8-11; II Corinthians 3:6; Romans 8:9; Ephesians 1:13-14).</div>
+
+          <div class="about_flexed_item">We believe that the sign gifts of the Holy Spirit, such as speaking in tongues and the gift of healing, were temporary. We believe that speaking in tongues was never the common or necessary sign of the baptism or filling of the Holy Spirit and that ultimate deliverance of the body from sickness or death awaits the consummation of our salvation in the resurrection, though God frequently chooses to answer the prayer of believers for physical healing. (II Corinthians 12:12; I Corinthians 13:8; Hebrews 2:3-4; Mark 16:17-20; I Corinthians 1:22, 14:21-22).</div>
+
+          <div class="about_flexed_item">Satan</div>
+          <div class="about_flexed_item">We believe in the reality of the person of Satan and that he and the fallen angels wage a spiritual warfare against the plan and purposes of God (John 13:2; Acts 5:3; Ephesians 6:11-12).</div>
+
+          <div class="about_flexed_item">We believe that Satan is a created angelic being who rebelled and who tempted man to join him in rebellion against God (Isaiah 14:12-17; Ezekiel 28:11-19; Genesis 3:1-5).</div>
+
+          <div class="about_flexed_item">We believe his power is supernatural, yet limited; and that he cannot act without the permission of God (Job 1:6-12; I John 4:4). Satan's eternal end is everlasting torment in the Lake of Fire (Revelation 20:10).</div>
+
+          <div class="about_flexed_item">Man</div>
+          <div class="about_flexed_item">We believe that man was created in the image and likeness of God, but that in Adam's sin the race fell, inherited a sinful nature, and became alienated from God; and therefore man is totally depraved, and, of himself, utterly unable to remedy his lost conditin (Genesis 1: 26- 27; Romans 3: 2 2-23; Ephesians 2 : 1-3, 12).</div>
+
+          <div class="about_flexed_item">The sacredness of human personality is evident in that God created man in His own image and is mindful of him, and in that Christ died for man; therefore every individual possesses dignity and is worthy of respect and Christian love. lm 8:4-9; Colossians 3:9-11).</div>
+
+          <div class="about_flexed_item">We believe that the only marriage recognized by Scripture is the joining of one man and one woman. (Genesis 2:24; Romans 7:2; 1 Corinthians 7:10; Ephesians 5:22-23)</div>
+
+          <div class="about_flexed_item">We believe that God expressly forbids intimate sexual activity be engaged in outside of a marriage between one man and one woman. We believe that , lesbianism, bisexuality, bestiality, incest, fornication, adultery, and pornography are perversions of God's intended purposes and therefore, sin. We believe that God forbids any attempt to alter one's God-given gender identity by any means, including surgery or appearance. (Genesis 2:24; Genesis 19:5, 13; Genesis 26:8-9; Leviticus 18:1-30; Romans 1:26-29; 1 Corinthians 5:1, 6:9; 1 Thessalonians 4:1-8; Hebrews 13:4)</div>
+
+          <div class="about_flexed_item">The Way of Salvation</div>
+          <div class="about_flexed_item">We believe that the clear message of salvation is “repentance toward God and faith toward our Lord Jesus Christ” (Acts 20:21).</div>
+
+          <div class="about_flexed_item">We believe that salvation is “by grace” plus nothing minus nothing. We believe that Jesus Christ died for every man, and that each individual chooses to accept or reject the grace of God (Hebrews 2:9; I John 2:2).</div>
+
+          <div class="about_flexed_item">We believe that men are justified by faith alone and are accounted righteous before God only through the merit of our Lord and Saviour Jesus Christ. (Ephesians 2:8-10; John 1:12; I Peter 1:18-19)</div>
+
+          <div class="about_flexed_item">We believe that all the redeemed, once saved are kept by God's power and are thus secure in Christ forever. We believe that eternal life is the present possession of every believer (John 6:37-40, 10:27-30; Romans 8:1, 38-39; I Corinthians 1:4-8; I Peter 1:4-5; Jude 1, 2).</div>
+
+          <div class="about_flexed_item">The Church</div>
+          <div class="about_flexed_item">We believe that the New Testament church is a local assembly of baptized believers who have voluntarily joined themselves toge therto carry out the Great Commission. The Lord is doing His work in ths world through local churches. The establishment and continuance of local churches is clearly taught and defined in te New Testa ment Scriptures (Acts 14:27; 20:17, 28-32; I Timothy 3:1-13; Titus 1:5-11).</div>
+
+          <div class="about_flexed_item">We believe in the autonomy of the local church free of any external authority or control. Christ is the o nly head of the church (Acts 13:1-4, 15:19-31, 20:28; Romans 16:1, 4; I Corinthians 3:9,16; 5:4-7,13; I Peter 5:1-4).</div>
+
+          <div class="about_flexed_item">We recognize the ordinances of baptism by immersion in water and the Lord's Supper as a Scriptural means of testimony for local churches in this age (Matthew. 28:19-20; Acts 2:41-42, 18:18; I Corinthians 11:23-26).</div>
+
+          <div class="about_flexed_item">Fundamentalism</div>
+          <div class="about_flexed_item">We affirm without apology the doctrines frequently identified as the “Fundamentals of the Faith,” which include the deity, virgin birth, sinless life, substitutionary death, bodily resurrection, and imminent return of Jesus Christ.</div>
+
+          <div class="about_flexed_item">We believe that a Fundamentalist is defined by their adherence to orthodox theology, orthodox methodology, and will only fellowship with those who do the same.</div>
+
+          <div class="about_flexed_item">Biblical Separation</div>
+          <div class="about_flexed_item">We believe that all the saved should live in such a manner as not to bring reproach upon their Savior and Lord; and, that separation from all religius apostasy, all worldly and sinful pleasures, practices and associations is commanded of God (II Timothy 3:1-5; Romans 12:1, 2, 14:13; I John 2:15-17; II John 9-11; II Corinthians 6:14-7:1).</div>
+
+          <div class="about_flexed_item">Dispensations</div>
+          <div class="about_flexed_item">We believe in the natural divisions of Scriptures as a basis for study. (2 Timothy 2:15)</div>
+
+          <div class="about_flexed_item">The Lord's Day</div>
+          <div class="about_flexed_item">We believe the first day of the week is the Lords Day. (Acts 20:7, Hebrews 10:24-25)</div>
+
+          <div class="about_flexed_item">The Return of Christ</div>
+          <div class="about_flexed_item">We believe the “Blessed Hope” of our Lord's return is literal, personal, visible, imminent, premillennial, and pretribulational. Believers will be caught up to be with the Lord prior to the seven years of tribulation, and at the end of the tribulation Christ will return with His saints to establish His thousand-year reign on the earth (I Thessalonians 4:13-18; Titus 2:13; I Thessalonians 1:10; Revelation 3:10; Zechariah 14:4-11; Revelation 19:11-16, 20:1-6; Psalm 89:3-4).</div>
+
+          <div class="about_flexed_item">Our Eternal State</div>
+          <div class="about_flexed_item">We believe in the bodily resurrection of all men, the saved to eternal life, and the unsaved to judgment and everlasting punishment (Matthew 25:46; John 5:28, 29, 11:25-26; Revelation 20:5-6, 12-13).</div>
+
+          <div class="about_flexed_item">We believe that the souls of the redeemed are, at death, absent from the body and present with the Lord, where in conscious bliss they await the first resurrection, when spirit, soul, and body are reunited to be glorified forever with the Lord (Luke 23:43; Revelation 20:4-6; II Corinthians 5:8; Philippians 1:23, 3:21; I Thessalonians 4:16-17).</div>
+
+          <div class="about_flexed_item">We believe that the souls of unbelievers remain, after death, in conscious misery until the second resurrection, when with soul and body reunited they shall appear at the Great White Throne Judgment, and shall be cast into the Lake of Fire, not to be annihilated, but to suffer everlasting, conscious punishment (Luke 16:19-26; Matthew 25:41-46; II Thessalonians 1:7-9; Jude 6-7; Mark 9:43-48; Revelation 20:11-15).</div>
+
+          <div class="about_flexed_item">Ecumenical Movement</div>
+          <div class="about_flexed_item">We believe that the ecumenical movement is a demonic attempt to unite all Christian denominations around experience to the disregard of biblical doctrine. It emphasizes love at the expense of truth. All fellowship should be grounded in doctrine. (Acts 2:42)</div>
+
+          <div class="about_flexed_item">It is a betrayal of the unity of believers based upon sound doctrine of the historic Christian Faith. Its method of operation is subversive. Its concept of an ecclesiastical Kingdom is not supported by Scripture. We reject all cooperation with this movement. (2 Cor. 6:14-17)</div>
+
+          <div class="about_flexed_item">Unchaste Conduct</div>
+          <div class="about_flexed_item">We believe that God has commanded that no intimate physical activity be engaged in outside of marriage between a man and a woman. We believe that any form of homosexuality, lesbianism, bisexuality, beastiality, incest, fornication, adultery, and pornography is a sinful perversion of God's original intent for a physical relationship between a husband and wife. (Genesis 2:24; Leviticus 18:1-30; Romans 1:20-32; I Corinthians 5:1; 6:9; I Thessalonians 4:l-8; Hebrews 13:4)</div>
+
+          <div class="about_flexed_item">Abortion</div>
+          <div class="about_flexed_item">We believe that human life begins at conception and that the unborn child is a living human being. Abortion constitutes the unjustified, inexcusable taking of unborn human life. Abortion is murder. We reject any teaching that abortions of pregnancies due to rape, incest, birth defects, gender selection, birth or population control, or the mental well-being of the mother are acceptable. (Job 3:16; Psalm 51:5; 139:14-16; Isaiah 44:24; 49:1, 5; Jeremiah 1:5; 20:15-18; Luke 1:44)</div>
+
+          <div class="about_flexed_item">Civil Government</div>
+          <div class="about_flexed_item">We believe that God has ordained and created all authority which consists of three basic institutions: (1) the home, (2) the church, and (3) the state. Every person is subject to these authorities, but all (including the authorities themselves) are answerable to God and are governed by His Word. God has given each institution specific Biblical responsibilities and has balanced those responsibilities with the understanding that no institution has the right to infringe upon the other. The home, the church, and the state are equal and sovereign in their respective Biblically assigned spheres of responsibility under God. (Romans 13:1-7; Ephesians 5:21-6:4; Hebrews 13:17; I Peter 2:13-15)</div>
+
+          <div class="about_flexed_item">Independent Church</div>
+          <div class="about_flexed_item">The New Testament church should be an independent church.  We are not affiliated with any man-made external organization be it a Convention, Association, Fellowship, or National Denomination. Our only Head is the Lord Jesus Christ and our only headquarters is heaven.  We fellowship with sister churches of like precious faith and practice, and support missionaries sent forth by the authority of such churches.</div>
+
+          <div class="about_flexed_item">Baptist Distinctives</div>
+          <div class="about_flexed_item">We believe that the strict, literal interpretation of the Bible makes us Baptists. The Baptist Distinctives are easy to remember using the acronym B.A.P.T.I.S.T.S. Many Christians believe some of these distinctives, but true Baptists believe them all. The Baptist distinctives are listed below:</div>
+
+          <div class="about_flexed_item">Bible Is The Authority</div>
+          <div class="about_flexed_item">The Bible is our sole authority for faith and practice. It is the final authority on all matters of faith, practice, and polity. The tradition of men, human opinion, false science, religious creeds, nor popular opinion override the plain teaching of God's Word. The Bible is inspired and preserved by God and carries His absolute authority. Baptists believe the Bible and strive to live according to its teaching. It is the Divine Revelation of God to man and is the complete and infallible guide to faith and life. (Psalm 12:6-7; 2 Timothy 3:15-17; 1 Thessalonians 2:13; 2 Peter 1:20-21)</div>
+
+          <div class="about_flexed_item">Autonomy of the Local Church</div>
+          <div class="about_flexed_item">Each local church is an independent body accountable to the Lord Jesus Christ. He is the Head of the church. Each church is autonomous, or self-governing, and contains all human authority for leadership within its congregation. No denomination, governmental body, or religious hierarchy may dictate the church's beliefs or practices. A Baptist church may choose to associate with other churches of like faith around mutual interests or ministry opportunities, but one church cannot exert authority over another. (Colossians 1:18; Matthew 18:15-20; Acts 15:22-21; 2 Corinthians 8:1-5, 19, 23)</div>
+
+          <div class="about_flexed_item">Priesthood of the Believer</div>
+          <div class="about_flexed_item">All born-again believers have the privilege of direct access to God. Jesus Christ is the mediator between God and man. We need no other human agent or spiritual mediator. As God's priests, we can study His Word, pray for our needs, intercede for others, offer worship, and serve in His work. Every child of God has equal access to their Heavenly Father. (1 Timothy 2:1-6; 1 Peter 2:5,9; Revelation 5:9,10)</div>
+
+          <div class="about_flexed_item">Two Ordinances</div>
+          <div class="about_flexed_item">The local church is mandated by God to practice two ordinances. 1. Baptism of believers by immersion in water symbolizes sincere faith in Christ's death, burial, and resurrection with the desire to walk in newness of life. 2. The Lord's Supper, or Communion, commemorates Christ's broken body and shed blood giving each believer an opportunity for self-examination and rededication. These are not sacraments to earn salvation, but privileges granted by grace. (Matthew 28:19-20; Romans 6:4; 1 Corinthians 11:23-32)</div>
+
+          <div class="about_flexed_item">Individual Soul Liberty</div>
+          <div class="about_flexed_item">Every individual, believer and unbeliever, possesses the God-given privilege of free will having the liberty to choose what to believe.  No one should be forced to any belief against his or her will.  God speaks to individuals through His Word and His Spirit.  Every person is individually responsible to God and will be judged according to the beliefs and practices he or she freely chooses.  Freedom of choice demands personal responsibility. (John 3:36; Romans 14:4-12; 2 Corinthians 4:2; Titus 1:9)</div>
+
+          <div class="about_flexed_item">Saved Church Membership</div>
+          <div class="about_flexed_item">Local church membership is restricted to individuals who give a believable testimony of personal faith in Christ and have publicly identified with Him in believer's baptism. Church membership is a necessary privilege for believers who follow Christ.  Fellowship, guidance, and encouragement of the local church family are essential for believers to maintain an unwavering testimony and a meaningful life of service. (Acts 2:41-47; 1 Corinthians 12:12,18; 2 Corinthians 6:14; Hebrews 10:23-25)</div>
+
+          <div class="about_flexed_item">Two Offices</div>
+          <div class="about_flexed_item">Scripture mandates two offices for the local church: Pastor and Deacon.  The Pastor leads, feeds, guides, and guards the church at the direction of Christ. The Bible terms “pastor,” “elder,” and “bishop” refer to different responsibilities for the same office. Deacons help the pastor care for the flock so he can give priority to prayer and the ministry of the Word.  The Bible gives qualifications for each office. (1 Timothy 3:1-13; Acts 6:1-7; Philippians 1:1)</div>
+
+          <div class="about_flexed_item">Separation of Church and State</div>
+          <div class="about_flexed_item">God established both civil and local church governments.  They have distinct responsibilities and operations. Neither should control the other. Believers in a free society should influence government toward righteousness, but should not make an unholy alliance for control, influence, or favors.  No government should interfere with the local church's preaching, activities, and ministry. (Matthew 22:15-22; 28:19-20; Romans 13:1-7)</div>
+
+        </div>
+  </div>
+    <!-- ////////////////////////// -->
+    <!-- END statement_modal -->
     <!-- ////////////////////////// -->
     <!-- ////////////////////////// -->
     <!-- BEGIN giving_options_modal -->
