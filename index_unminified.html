@@ -956,11 +956,14 @@ button.muteClick, button.muteTap {
       z-index: 5;
     }
 .gold_gradient {
+  color: #d5ad6d;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px #000000;
   cursor: pointer;
 background: rgb(79,57,22);
 background: -moz-linear-gradient(0deg, rgba(79,57,22,1) 0%, rgba(0,0,0,1) 100%);
 background: -webkit-linear-gradient(0deg, rgba(79,57,22,1) 0%, rgba(0,0,0,1) 100%);
-background: linear-gradient(0deg, rgba(79,57,22,1) 0%, rgba(0,0,0,1) 100%);
+background: linear-gradient(0deg, rgb(46 29 0) 0%, rgba(0, 0, 0, 1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4f3916",endColorstr="#000000",GradientType=1);
 }
 /* ****************** */
@@ -1085,8 +1088,8 @@ src="https://www.facebook.com/tr?id=1166569401544077&ev=PageView&noscript=1"
 <!-- BEG sticky CTA  -->
             <div class="myFixedAtTheBottom">
               <div class="spacer"></div>
-              <div class="gold_gradient">
-                <span>&nbsp;</span>Give $20. It's plenty for lots of treats<span>&nbsp;</span>
+              <div class="">
+                <span>&nbsp;</span><button class="gold_gradient">Give $20. It's plenty for lots of treats</button><span>&nbsp;</span>
               </div>
               <div class="spacer"></div>
               <div class="givingOptions">
