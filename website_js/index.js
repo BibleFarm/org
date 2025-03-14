@@ -520,7 +520,7 @@ $(".giving_options_modal").show("slow");
 ////////////////////////////////////////////////////
 // BEGIN food
 ////////////////////////////////////////////////////
-$("#givingOptionsClick, #give_with_red_heart").on("click", function() {
+$("#givingOptionsClick, #give_with_red_heart, .gold_gradient").on("click", function() {
   setTimeout(function() {
   if($('.food_modal').is(':visible'))
 {
