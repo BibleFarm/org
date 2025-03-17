@@ -404,7 +404,7 @@ $(document).ready(function() {
   console.log("portrait is contain");
   */
   // 1st of all, update with last landing video
-  $(".landing_video_wrap").append('<video id="myVideo" controls autoplay muted loop><source src="https://www.biblefarm.org/videos/FbAd_1_2025_KDENLIVE_1080x1080_ads-1-thisOne-Procuro%20Por%20Voc%C3%AA.mp4" type="video/mp4"></video><div class="unmute_overlay_wrap"><div class="unmute_overlay_button"><button class="unmuteTap" aria-label="unmuteTap">tap to unmute</button></div></div><div class="mute_overlay_wrap"><div class="mute_overlay_button"><button class="muteTap" aria-label="muteTap">tap to mute</button></div></div>');
+  $(".landing_video_wrap").append('<video id="myVideo" controls autoplay muted loop><source src="https://www.biblefarm.org/videos/FbAd_1_2025_KDENLIVE_1080x1080_Landing_Video.mp4" type="video/mp4"></video><div class="unmute_overlay_wrap"><div class="unmute_overlay_button"><button class="unmuteTap" aria-label="unmuteTap">tap to unmute</button></div></div><div class="mute_overlay_wrap"><div class="mute_overlay_button"><button class="muteTap" aria-label="muteTap">tap to mute</button></div></div>');
   $('.tap_here_to_choose').show();
   }
   else {
@@ -414,7 +414,7 @@ $(document).ready(function() {
   console.log("landscape is cover");
   */
   // and here
-  $(".landing_video_wrap").append('<video id="myVideo" controls autoplay muted loop><source src="https://www.biblefarm.org/videos/FbAd_1_2025_KDENLIVE_1080x1080_ads-1-thisOne-Procuro%20Por%20Voc%C3%AA.mp4" type="video/mp4"></video><div class="unmute_overlay_wrap"><div class="unmute_overlay_button"><button class="unmuteClick" aria-label="unmuteClick">click to unmute</button></div></div><div class="mute_overlay_wrap"><div class="mute_overlay_button"><button class="muteClick" aria-label="muteClick">click to mute</button></div></div>');
+  $(".landing_video_wrap").append('<video id="myVideo" controls autoplay muted loop><source src="https://www.biblefarm.org/videos/FbAd_1_2025_KDENLIVE_1080x1080_Landing_Video.mp4" type="video/mp4"></video><div class="unmute_overlay_wrap"><div class="unmute_overlay_button"><button class="unmuteClick" aria-label="unmuteClick">click to unmute</button></div></div><div class="mute_overlay_wrap"><div class="mute_overlay_button"><button class="muteClick" aria-label="muteClick">click to mute</button></div></div>');
   $('.click_here_to_choose').show();
   };
   ////////////////////////////////////////////////////
