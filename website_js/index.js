@@ -253,7 +253,7 @@ $(document).ready(function() {
   // BEG append visit counter and today's date to showcase-content
   /////////////////////////////////////
   //setTimeout(function() {
-  $('.showcase-content').append('<h3><div class="timerDiv"><span class="timer count-title count-number" data-to="643" data-speed="10000"></span>643 visits as of today, </span><span id="month">11</span> <span id="day">11</span>, <span id="year">11</span></div></h3>');
+  $('.showcase-content').append('<h3><div class="timerDiv"><span class="timer count-title count-number" data-to="644" data-speed="10000"></span>644 visits as of today, </span><span id="month">11</span> <span id="day">11</span>, <span id="year">11</span></div></h3>');
   //},2000);
   /////////////////////////////////////
   // END append visit counter and today's date to showcase-content
